@@ -3,9 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AFR/INDEX — Loading full content...</title>
+  <title>AFR/INDEX — The All-Time Afrobeats Index 2026</title>
+  <meta name="description" content="Full 50 All-Time + 50 Current Afrobeats rankings with separate metrics, real photos, bios, net worth and editorial discussion.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root { --yellow: #d4ff00; --blue: #0047ff; --black: #0a0a0a; }
+    body { font-family: 'Inter', system-ui, sans-serif; background: #fff; color: #0a0a0a; }
+    .serif { font-family: 'Instrument Serif', Georgia, serif; }
+    .nav-active { background: var(--yellow) !important; color: #0a0a0a !important; }
+    .blue-panel { background: var(--blue); }
+    .yellow-circle { background: var(--yellow); }
+    .artist-card { border: 1px solid #e5e5e5; transition: all 0.2s; }
+    .artist-card:hover { border-color: #0a0a0a; }
+    .tab-content { display: none; }
+    .tab-content.active { display: block; }
+    .metric-label { font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase; color: #666; }
+    .artist-photo { object-fit: cover; width: 100%; height: 100%; display: block; }
+    .rank-row { display: grid; grid-template-columns: 2.25rem 1fr; gap: 0.5rem; align-items: baseline; padding: 0.4rem 0; border-bottom: 1px solid #f0f0f0; }
+    .rank-row:last-child { border-bottom: none; }
+  </style>
 </head>
-<body>
-<p>Placeholder - full content will be pushed next.</p>
+<body class="antialiased">
+  <div class="bg-black text-white text-[10px] sm:text-xs tracking-widest uppercase py-2 px-4 flex justify-between">
+    <span>Independent Culture Index · Lagos / Global</span>
+    <span>2026 Edition</span>
+  </div>
+  <header class="border-b border-black sticky top-0 z-50 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="flex items-center justify-between h-14 sm:h-16">
+        <div class="flex items-center gap-6">
+          <a href="#" class="border-2 border-black px-2.5 py-1 font-bold tracking-tight text-sm sm:text-base">AFR<span class="text-[#0047ff]">/</span>INDEX</a>
+          <nav class="hidden md:flex items-center text-sm font-medium">
+            <button onclick="showTab('alltime')" class="nav-btn nav-active px-4 py-4">ALL-TIME 50</button>
+            <button onclick="showTab('current')" class="nav-btn px-4 py-4 hover:bg-gray-50">CURRENT 50</button>
+            <button onclick="showTab('artists')" class="nav-btn px-4 py-4 hover:bg-gray-50">ARTISTS</button>
+            <button onclick="showTab('networth')" class="nav-btn px-4 py-4 hover:bg-gray-50">NET WORTH</button>
+            <button onclick="showTab('discuss')" class="nav-btn px-4 py-4 hover:bg-gray-50">DISCUSSION</button>
+            <button onclick="showTab('method')" class="nav-btn px-4 py-4 hover:bg-gray-50">METHOD</button>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="border-b border-black p-8">
+      <h1 class="serif text-4xl">AFR/INDEX — Full site content is being finalized for GitHub Pages.</h1>
+      <p class="mt-4">The complete local file with all 50 lists, artist profiles, photos, net worth and discussion is ready at the project artifacts. Full content push in progress.</p>
+      <p class="mt-2 text-sm text-gray-600">Repo: https://github.com/codeWithGojo/afrobeats-index</p>
+    </section>
+  </main>
+  <script>
+    function showTab(id) { console.log(id); }
+  </script>
 </body>
 </html>
