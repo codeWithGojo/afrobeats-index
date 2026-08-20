@@ -14,7 +14,7 @@ An editorial Afrobeats ranking that shows its work across eras.
 
 ## Live site
 
-https://afrobeats-index.vercel.app/
+https://afrobeats-index-favour12.vercel.app/
 
 ## Data note
 
