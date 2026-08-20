@@ -1,18 +1,21 @@
-# AFR/INDEX — The All-Time Afrobeats Index 2026
+# AFR/INDEX — The Living Afrobeats Index
 
-Full 50 All-Time + Full 50 Current Afrobeats rankings.
+An editorial Afrobeats ranking that shows its work across eras.
 
-## Features
-- Chart-style rows (photo, epithet, name, tagline, genre tags, score)
-- Big 3 joint #1 portrait cards
-- Full artist bios (Burna, Davido, Wizkid, Tems, Asake, Rema, Omah Lay, Olamide, Tiwa, 2Baba, Ayra, CKay, Seyi Vibez, Fireboy, Victony, Kizz Daniel, Tyla, Yemi Alade, Wande Coal)
-- Net Worth Index (20 artists)
-- Discussion + Method pages
+## What is included
+
+- All-Time 50 and a researched Current 50
+- Weekly movement indicators and update log
+- Side-by-side Compare Eras view
+- Eleven weighted Current metrics
+- Monthly Spotify listeners and cumulative tracked Spotify streams
+- Fifty locally cached artist portraits and original editorial profiles
+- Inline methodology explanations for every metric
 
 ## Live site
-Enable **GitHub Pages**: Settings → Pages → Deploy from branch `main` → `/ (root)`
 
-Then open: https://codewithgojo.github.io/afrobeats-index/
+https://afrobeats-index.vercel.app/
 
-## Images
-Upload the `artists/` folder from the project zip next to `index.html` so all photos load.
+## Data note
+
+Spotify figures are an editorial snapshot dated 20 August 2026. Monthly listeners and tracked catalogue totals change daily; the final ranking combines those signals with nine qualitative and career metrics.

@@ -3,7 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AFR/INDEX — The All-Time Afrobeats Index 2026</title>
+  <title>AFR/INDEX — The Living Afrobeats Index</title>
+  <meta name="description" content="All-Time 50, Current 50, weekly movement and a transparent Afrobeats ranking methodology.">
+  <meta property="og:title" content="AFR/INDEX — The Living Afrobeats Index">
+  <meta property="og:description" content="The Afrobeats ranking that shows its work — across eras and every update.">
+  <meta property="og:image" content="https://afrobeats-index.vercel.app/og.png">
+  <meta name="twitter:card" content="summary_large_image">
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
@@ -20,6 +25,322 @@
     .album-streams-value { font-family: 'Instrument Serif', Georgia, serif; font-size: 22px; color: #0a0a0a; }
     .album-streams-fill { height: 100%; background: #d4ff00; border-radius: 2px; }
   </style>
+  <style>
+:root {
+  --ink: #0a0a0b;
+  --ink-soft: #121215;
+  --panel: #17171a;
+  --line: #303036;
+  --paper: #f3f0e8;
+  --muted: #a3a3a8;
+  --acid: #d4ff00;
+  --blue: #667cff;
+  --coral: #ff6b59;
+}
+
+html { scroll-behavior: smooth; }
+body {
+  background: var(--ink) !important;
+  color: var(--paper) !important;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 90;
+  opacity: .025;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.95' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.85'/%3E%3C/svg%3E");
+}
+
+.bg-white, header.bg-white { background: rgba(10,10,11,.96) !important; }
+.bg-gray-50, .hover\:bg-gray-50:hover { background: #151518 !important; }
+.bg-gray-100, .bg-gray-200 { background: #242429 !important; }
+.text-black { color: var(--paper) !important; }
+.text-gray-400 { color: #85858b !important; }
+.text-gray-500, .text-gray-600, .text-gray-700 { color: var(--muted) !important; }
+.border-black { border-color: var(--paper) !important; }
+.border-gray-100, .border-gray-200, .border-gray-300, .divide-y > :not([hidden]) ~ :not([hidden]) {
+  border-color: var(--line) !important;
+}
+.nav-active { background: var(--acid) !important; color: #09090a !important; }
+.album-card { border-color: var(--line) !important; background: var(--ink-soft); }
+.album-card:hover { border-color: var(--acid) !important; box-shadow: 0 12px 34px rgba(0,0,0,.28) !important; }
+.album-streams-value { color: var(--paper) !important; }
+
+header { border-color: var(--line) !important; backdrop-filter: blur(18px); }
+header a { color: var(--paper); }
+nav button, header button { transition: color .2s, background .2s; }
+nav button:not(.nav-active):hover, header button:not(.nav-active):hover { color: var(--acid); }
+
+main > section:first-child {
+  background:
+    radial-gradient(circle at 16% 15%, rgba(212,255,0,.11), transparent 24rem),
+    var(--ink);
+}
+main > section:first-child > div > div:first-child { min-height: 390px; display: flex; flex-direction: column; justify-content: center; }
+main > section:first-child h1 { font-size: clamp(3.4rem, 8vw, 7.5rem) !important; letter-spacing: -.045em; max-width: 880px; }
+main > section:first-child .bg-\[\#0047ff\] {
+  background: var(--blue) !important;
+  color: #09090a !important;
+}
+
+.freshness-module {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 2rem 1rem 0;
+}
+.freshness-grid {
+  display: grid;
+  grid-template-columns: minmax(0, .8fr) minmax(0, 2fr);
+  border: 1px solid var(--line);
+  background: var(--ink-soft);
+}
+.update-stamp { padding: 1.5rem; border-right: 1px solid var(--line); }
+.eyebrow { font-size: .66rem; letter-spacing: .18em; text-transform: uppercase; color: var(--muted); }
+.update-date { margin-top: .45rem; font-family: 'Instrument Serif', Georgia, serif; font-size: clamp(2rem, 4vw, 3.5rem); line-height: .95; }
+.update-meta { margin-top: .65rem; color: var(--acid); font-size: .72rem; }
+.weekly-log { padding: 1.5rem; }
+.weekly-log-head { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: .7rem; }
+.live-dot { width: .48rem; height: .48rem; border-radius: 50%; background: var(--coral); box-shadow: 0 0 0 5px rgba(255,107,89,.12); }
+.weekly-log ul { margin: 0; padding: 0; list-style: none; }
+.weekly-log li { display: grid; grid-template-columns: 2.5rem 1fr; gap: .75rem; padding: .55rem 0; border-top: 1px solid var(--line); color: #d7d5cf; font-size: .84rem; }
+.weekly-log li span:first-child { color: var(--blue); font-family: 'Instrument Serif', Georgia, serif; font-size: 1.15rem; }
+
+.compare-trigger {
+  appearance: none;
+  border: 1px solid var(--acid);
+  background: var(--acid);
+  color: #09090a;
+  padding: .65rem .9rem;
+  font: 700 .7rem/1 Inter, system-ui, sans-serif;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.compare-trigger:hover, .compare-trigger:focus-visible { background: transparent; color: var(--acid); outline: none; }
+.chart-tools { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin: 1rem 0 1.5rem; }
+
+.metric-strip { display: flex; gap: .5rem; overflow-x: auto; scrollbar-width: thin; padding: .15rem .05rem .85rem; margin-bottom: .75rem; }
+.metric-chip { position: relative; display: inline-flex; align-items: center; gap: .42rem; flex: 0 0 auto; border: 1px solid var(--line); border-radius: 999px; padding: .45rem .62rem; color: #d6d4ce; font-size: .68rem; }
+.metric-chip strong { color: var(--acid); font-size: .66rem; }
+.info-tip {
+  position: relative;
+  display: inline-grid;
+  place-items: center;
+  width: 1.05rem;
+  height: 1.05rem;
+  border: 1px solid #616169;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--muted);
+  font: 600 .62rem/1 Inter, sans-serif;
+  cursor: help;
+}
+[data-tooltip]::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + .7rem);
+  z-index: 100;
+  width: min(17rem, 75vw);
+  padding: .7rem .75rem;
+  border: 1px solid #494950;
+  background: #f2efe6;
+  color: #111114;
+  font: 500 .72rem/1.45 Inter, sans-serif;
+  letter-spacing: 0;
+  text-transform: none;
+  text-align: left;
+  box-shadow: 0 12px 30px rgba(0,0,0,.3);
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, .25rem);
+  transition: opacity .15s, transform .15s;
+}
+[data-tooltip]:hover::after, [data-tooltip]:focus-visible::after, [data-tooltip].tip-open::after { opacity: 1; transform: translate(-50%, 0); }
+
+.movement {
+  display: inline-flex;
+  align-items: center;
+  gap: .18rem;
+  margin-left: .48rem;
+  padding: .18rem .38rem;
+  border-radius: 999px;
+  vertical-align: .15rem;
+  font: 700 .58rem/1 Inter, sans-serif;
+  letter-spacing: .04em;
+}
+.movement-up { color: var(--acid); background: rgba(212,255,0,.10); }
+.movement-down { color: #ff8779; background: rgba(255,107,89,.11); }
+.movement-new { color: #bac4ff; background: rgba(102,124,255,.15); }
+.movement-flat { color: #77777f; background: rgba(255,255,255,.04); }
+
+.big-three-card { display: flex; flex-direction: column; }
+.big-three-media { position: relative; flex: 0 0 auto; min-height: 18rem; background: #1b1b1f !important; }
+.big-three-media > img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.big-three-card > .p-3 { position: relative; z-index: 2; min-height: 4.25rem; background: var(--ink-soft); }
+.big-three-card .absolute.bottom-3 { z-index: 3; }
+
+.current-ranking { border-top: 1px solid var(--line); }
+.current-row {
+  appearance: none;
+  display: grid;
+  grid-template-columns: 3.25rem 4.75rem minmax(0, 1fr) minmax(14rem, .72fr) 5.5rem;
+  gap: 1rem;
+  align-items: center;
+  width: 100%;
+  padding: 1rem .25rem;
+  border: 0;
+  border-bottom: 1px solid var(--line);
+  background: transparent;
+  color: var(--paper);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition: background .18s, transform .18s;
+}
+.current-row:hover { background: rgba(255,255,255,.028); }
+.current-row:focus-visible { position: relative; z-index: 2; outline: 2px solid var(--acid); outline-offset: -2px; }
+.current-rank { color: var(--paper); font: 400 2rem/1 'Instrument Serif', Georgia, serif; text-align: right; }
+.current-avatar { display: block; width: 4.75rem; aspect-ratio: 1; overflow: hidden; border-radius: .25rem; background: #222228; }
+.current-avatar img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.current-identity, .current-streams, .current-score { display: flex; }
+.current-identity { min-width: 0; flex-direction: column; }
+.current-kicker { color: var(--blue); font-size: .61rem; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; }
+.current-name-line { display: flex; align-items: center; flex-wrap: wrap; margin-top: .12rem; }
+.current-name { margin: 0; font-size: 1.16rem; font-weight: 600; line-height: 1.2; }
+.current-blurb { display: -webkit-box; overflow: hidden; margin-top: .25rem; color: var(--muted); font-size: .76rem; line-height: 1.45; -webkit-box-orient: vertical; -webkit-line-clamp: 2; }
+.current-tags { display: flex; flex-wrap: wrap; gap: .3rem; margin-top: .5rem; }
+.current-tags > span { border: 1px solid var(--line); border-radius: 999px; padding: .18rem .42rem; color: #8f8f95; font-size: .54rem; letter-spacing: .08em; }
+.current-streams { display: grid; grid-template-columns: 1fr 1fr; gap: .6rem; }
+.current-streams > span { min-width: 0; border-left: 1px solid var(--line); padding-left: .8rem; }
+.current-streams small, .current-score small { display: block; color: var(--muted); font-size: .58rem; letter-spacing: .08em; line-height: 1.35; text-transform: uppercase; }
+.current-streams strong { display: block; margin-top: .3rem; color: var(--paper); font: 400 1.45rem/1 'Instrument Serif', Georgia, serif; }
+.current-score { align-items: flex-end; flex-direction: column; }
+.current-score strong { margin-top: .3rem; font: 400 1.35rem/1 'Instrument Serif', Georgia, serif; }
+.current-score i { position: relative; display: block; width: 100%; height: 3px; margin-top: .45rem; overflow: hidden; background: #2a2a30; }
+.current-score i::after { content: ""; position: absolute; inset: 0 auto 0 0; width: var(--score); background: var(--blue); }
+
+.stream-source-note { display: grid; grid-template-columns: auto 1fr; gap: .8rem; align-items: start; margin-top: 1rem; padding: 1rem; border: 1px solid var(--line); background: #111114; }
+.stream-source-note .live-dot { margin-top: .35rem; }
+.stream-source-note p { margin: 0; color: var(--muted); font-size: .72rem; line-height: 1.55; }
+.stream-source-note strong { color: var(--paper); }
+.stream-source-note a { margin-left: .6rem; color: var(--acid); text-decoration: none; white-space: nowrap; }
+.stream-source-note a:hover { text-decoration: underline; }
+
+.dialog-open { overflow: hidden; }
+.artist-dialog {
+  width: min(66rem, calc(100vw - 2rem));
+  max-width: none;
+  max-height: calc(100vh - 2rem);
+  padding: 0;
+  overflow: auto;
+  border: 1px solid #3b3b42;
+  background: #0d0d0f;
+  color: var(--paper);
+  box-shadow: 0 30px 100px rgba(0,0,0,.68);
+}
+.artist-dialog::backdrop { background: rgba(0,0,0,.78); backdrop-filter: blur(8px); }
+.artist-dialog-shell { position: relative; }
+.artist-dialog-close { position: sticky; top: .75rem; float: right; z-index: 5; width: 2.5rem; height: 2.5rem; margin: .75rem .75rem -3.25rem 0; border: 1px solid rgba(255,255,255,.32); border-radius: 50%; background: rgba(10,10,12,.82); color: #fff; cursor: pointer; font-size: 1.3rem; }
+.artist-dialog-close:hover, .artist-dialog-close:focus-visible { border-color: var(--acid); color: var(--acid); outline: none; }
+.artist-dialog-content { display: grid; grid-template-columns: minmax(18rem, .82fr) minmax(0, 1.2fr); min-height: 36rem; }
+.artist-dialog-media { min-height: 36rem; overflow: hidden; background: #19191d; }
+.artist-dialog-media img { width: 100%; height: 100%; object-fit: cover; }
+.artist-dialog-copy { display: flex; flex-direction: column; padding: clamp(1.5rem, 4vw, 3.5rem); }
+.artist-dialog-copy h2 { margin: .4rem 0 0; font: 400 clamp(3rem, 7vw, 6rem)/.88 'Instrument Serif', Georgia, serif; letter-spacing: -.035em; }
+.artist-dialog-tagline { margin: 1rem 0 0; color: var(--acid); font-size: .66rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; }
+.artist-dialog-bio { margin: 1.25rem 0 0; max-width: 37rem; color: #d0cec8; font: 400 clamp(1.2rem, 2.3vw, 1.65rem)/1.28 'Instrument Serif', Georgia, serif; }
+.artist-dialog-metrics { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; margin-top: 2rem; border: 1px solid var(--line); background: var(--line); }
+.artist-dialog-metrics > div { display: flex; min-height: 7.4rem; flex-direction: column; padding: .85rem; background: #121215; }
+.artist-dialog-metrics small { color: var(--muted); font-size: .58rem; letter-spacing: .11em; text-transform: uppercase; }
+.artist-dialog-metrics strong { margin-top: auto; color: var(--paper); font: 400 1.5rem/1 'Instrument Serif', Georgia, serif; }
+.artist-dialog-metrics span { margin-top: .28rem; color: #75757c; font-size: .62rem; }
+.artist-dialog-footer { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-top: auto; padding-top: 1.5rem; color: var(--muted); font-size: .64rem; letter-spacing: .08em; text-transform: uppercase; }
+.artist-dialog-footer > span:last-child { display: flex; gap: .8rem; }
+.artist-dialog-footer a { color: var(--acid); text-decoration: none; }
+
+.era-compare {
+  max-width: 72rem;
+  margin: 2rem auto 0;
+  padding: 0 1rem;
+}
+.era-compare[hidden] { display: none !important; }
+.compare-shell { border: 1px solid var(--line); background: #101012; }
+.compare-head { display: grid; grid-template-columns: 1fr auto; gap: 1.5rem; align-items: end; padding: 1.5rem; border-bottom: 1px solid var(--line); }
+.compare-head h2 { margin: .25rem 0 0; font-family: 'Instrument Serif', Georgia, serif; font-size: clamp(2.25rem, 5vw, 4.5rem); line-height: .95; }
+.compare-actions { display: flex; gap: .55rem; }
+.compare-search { min-width: 14rem; border: 1px solid var(--line); background: #09090b; color: var(--paper); padding: .68rem .78rem; font-size: .78rem; }
+.compare-search:focus { border-color: var(--acid); outline: none; }
+.compare-close { border: 1px solid var(--line); background: transparent; color: var(--paper); width: 2.55rem; cursor: pointer; font-size: 1rem; }
+.compare-labels, .compare-row { display: grid; grid-template-columns: minmax(10rem, 2fr) 1fr 1fr minmax(7rem, 1fr); align-items: center; }
+.compare-labels { padding: .7rem 1.2rem; color: var(--muted); font-size: .62rem; letter-spacing: .14em; text-transform: uppercase; border-bottom: 1px solid var(--line); }
+.compare-row { min-height: 4.5rem; padding: .7rem 1.2rem; border-bottom: 1px solid #25252a; }
+.compare-row:last-child { border-bottom: 0; }
+.compare-name { font-weight: 600; }
+.compare-rank { font-family: 'Instrument Serif', Georgia, serif; font-size: 1.65rem; }
+.compare-current { color: var(--acid); }
+.compare-state { justify-self: start; border: 1px solid var(--line); border-radius: 999px; padding: .25rem .48rem; color: var(--muted); font-size: .62rem; }
+.compare-empty { padding: 2.5rem 1.2rem; color: var(--muted); text-align: center; }
+
+.method-notes { margin-top: 3.5rem; border-top: 1px solid var(--line); padding-top: 2rem; }
+.method-intro { max-width: 52rem; font-family: 'Instrument Serif', Georgia, serif; font-size: clamp(1.75rem, 4vw, 3rem); line-height: 1.1; }
+.method-intro em { color: var(--acid); }
+.build-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; margin-top: 2rem; background: var(--line); border: 1px solid var(--line); }
+.build-card { background: var(--ink); padding: 1.5rem; min-height: 13rem; }
+.build-number { color: var(--blue); font-family: 'Instrument Serif', Georgia, serif; font-size: 1.5rem; }
+.build-card h3 { margin: 2rem 0 .65rem; font-size: .72rem; text-transform: uppercase; letter-spacing: .14em; }
+.build-card p { color: var(--muted); font-size: .83rem; line-height: 1.65; }
+
+.artist-fallback { position: relative; overflow: hidden; background: linear-gradient(145deg, #25252a, #111114) !important; }
+.artist-fallback::after { content: attr(data-initials); position: absolute; inset: 0; display: grid; place-items: center; color: #73737b; font: 400 clamp(2rem, 6vw, 5rem)/1 'Instrument Serif', Georgia, serif; }
+.artist-fallback img { display: none !important; }
+
+#method .flex.justify-between > span:last-child { display: inline-flex; align-items: center; gap: .45rem; text-align: right; }
+table { color: var(--paper); }
+thead { border-color: var(--paper) !important; }
+
+@media (max-width: 760px) {
+  .freshness-grid { grid-template-columns: 1fr; }
+  .update-stamp { border-right: 0; border-bottom: 1px solid var(--line); }
+  .chart-tools { align-items: flex-start; flex-direction: column; }
+  .compare-head { grid-template-columns: 1fr; align-items: start; }
+  .compare-actions { width: 100%; }
+  .compare-search { min-width: 0; flex: 1; }
+  .compare-labels, .compare-row { grid-template-columns: minmax(8rem, 1.8fr) .7fr .7fr; }
+  .compare-labels > :last-child, .compare-row > :last-child { display: none; }
+  .build-grid { grid-template-columns: 1fr; }
+  .build-card { min-height: auto; }
+  main > section:first-child > div > div:first-child { min-height: 310px; }
+  .big-three-media { min-height: 23rem; }
+  .current-row { grid-template-columns: 2.35rem 3.7rem minmax(0, 1fr); gap: .7rem; padding: .9rem 0; }
+  .current-rank { font-size: 1.45rem; }
+  .current-avatar { width: 3.7rem; }
+  .current-kicker { font-size: .52rem; }
+  .current-blurb { -webkit-line-clamp: 1; }
+  .current-tags, .current-score { display: none; }
+  .current-streams { grid-column: 2 / 4; padding-left: 0; }
+  .current-streams strong { font-size: 1.2rem; }
+  .stream-source-note a { display: inline-block; margin: .35rem .5rem 0 0; }
+  .artist-dialog { width: calc(100vw - 1rem); max-height: calc(100vh - 1rem); }
+  .artist-dialog-content { grid-template-columns: 1fr; }
+  .artist-dialog-media { min-height: 20rem; max-height: 42vh; }
+  .artist-dialog-copy { padding: 1.35rem; }
+  .artist-dialog-copy h2 { font-size: 3.5rem; }
+  .artist-dialog-metrics { grid-template-columns: 1fr; }
+  .artist-dialog-metrics > div { min-height: 6.2rem; }
+  .artist-dialog-footer { align-items: flex-start; flex-direction: column; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; }
+}
+
+  </style>
+  <link rel="canonical" href="https://afrobeats-index.vercel.app/">
 </head>
 <body class="antialiased bg-white text-black">
   <div class="bg-black text-white text-[10px] sm:text-xs tracking-widest uppercase py-2 px-4 flex justify-between">
@@ -2302,6 +2623,1743 @@
       showTab('artists');
       setTimeout(() => { const el = document.getElementById(id); if (el) el.scrollIntoView({behavior:'smooth',block:'center'}); }, 150);
     }
+  </script>
+  <script>
+/* Generated from research/current-artists-research.json on 2026-08-20. */
+window.AFRI_CURRENT_ARTISTS = [
+  {
+    "rank": 1,
+    "previousRank": 1,
+    "name": "Burna Boy",
+    "slug": "burna-boy",
+    "country": "Nigeria",
+    "tagline": "THE STADIUM STANDARD",
+    "genres": [
+      "AFRO-FUSION",
+      "DANCEHALL"
+    ],
+    "bio": "Port Harcourt's Damini Ogulu turned Afro-fusion into a stadium language: muscular live shows, restless albums and a voice that can make triumph sound like testimony.",
+    "score": 96.8,
+    "image": "artists/burna-boy.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5ebb4e44d0f4e3e47af2cf06f3f",
+    "spotifyId": "3wcj11K77LjEY1PkEazffa",
+    "spotifyUrl": "https://open.spotify.com/artist/3wcj11K77LjEY1PkEazffa",
+    "monthlyListeners": 59800000,
+    "totalSpotifyStreams": 10639649009,
+    "dailySpotifyStreams": 8845063,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/burna-boy/3wcj11K77LjEY1PkEazffa",
+      "catalogue": "https://kworb.net/spotify/artist/3wcj11K77LjEY1PkEazffa_songs.html"
+    }
+  },
+  {
+    "rank": 2,
+    "previousRank": 4,
+    "name": "Tems",
+    "slug": "tems",
+    "country": "Nigeria",
+    "tagline": "THE GRAVITY",
+    "genres": [
+      "AFRO-R&B",
+      "ALT"
+    ],
+    "bio": "Tems never sanded down her grainy, low-slung voice for pop. Pop moved toward her instead, making the Lagos songwriter a rare star whose restraint carries as much force as a chorus.",
+    "score": 96,
+    "image": "artists/tems.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5eb22d7d6f8981c7a27bf68a382",
+    "spotifyId": "687cZJR45JO7jhk1LHIbgq",
+    "spotifyUrl": "https://open.spotify.com/artist/687cZJR45JO7jhk1LHIbgq",
+    "monthlyListeners": 36200000,
+    "totalSpotifyStreams": 6029322439,
+    "dailySpotifyStreams": 5238629,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/tems/687cZJR45JO7jhk1LHIbgq",
+      "catalogue": "https://kworb.net/spotify/artist/687cZJR45JO7jhk1LHIbgq_songs.html"
+    }
+  },
+  {
+    "rank": 3,
+    "previousRank": 9,
+    "name": "Rema",
+    "slug": "rema",
+    "country": "Nigeria",
+    "tagline": "THE SHAPESHIFTER",
+    "genres": [
+      "AFRORAVE",
+      "POP"
+    ],
+    "bio": "Rema treats Afrobeats as a moving target. From the bright immediacy of Calm Down to the darker pulse of HEIS, he keeps expanding the sound without losing his Benin City fingerprints.",
+    "score": 95.2,
+    "image": "artists/rema.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5ebf4626451ff59c5989a1af18d",
+    "spotifyId": "46pWGuE3dSwY3bMMXGBvVS",
+    "spotifyUrl": "https://open.spotify.com/artist/46pWGuE3dSwY3bMMXGBvVS",
+    "monthlyListeners": 26500000,
+    "totalSpotifyStreams": 6538342418,
+    "dailySpotifyStreams": 4099704,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/rema/46pWGuE3dSwY3bMMXGBvVS",
+      "catalogue": "https://kworb.net/spotify/artist/46pWGuE3dSwY3bMMXGBvVS_songs.html"
+    }
+  },
+  {
+    "rank": 4,
+    "previousRank": 7,
+    "name": "Tyla",
+    "slug": "tyla",
+    "country": "South Africa",
+    "tagline": "POPIANO'S GLOBAL FACE",
+    "genres": [
+      "AMAPIANO",
+      "POP"
+    ],
+    "bio": "Johannesburg's Tyla turned popiano from a smart description into a global pop format. Her light vocal touch, dance language and precision make difficult crossover work look effortless.",
+    "score": 94.3,
+    "image": "artists/tyla.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5eb69719e4164b893213a525d25",
+    "spotifyId": "3SozjO3Lat463tQICI9LcE",
+    "spotifyUrl": "https://open.spotify.com/artist/3SozjO3Lat463tQICI9LcE",
+    "monthlyListeners": 29700000,
+    "totalSpotifyStreams": 4715405203,
+    "dailySpotifyStreams": 3847616,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/tyla/3SozjO3Lat463tQICI9LcE",
+      "catalogue": "https://kworb.net/spotify/artist/3SozjO3Lat463tQICI9LcE_songs.html"
+    }
+  },
+  {
+    "rank": 5,
+    "previousRank": 8,
+    "name": "Wizkid",
+    "slug": "wizkid",
+    "country": "Nigeria",
+    "tagline": "THE QUIET BLUEPRINT",
+    "genres": [
+      "AFROBEATS",
+      "AFRO-R&B"
+    ],
+    "bio": "Wizkid's understated cool became a global template. A deep catalogue, the long afterlife of Essence and his gift for melodic economy keep Starboy present in every new Afrobeats conversation.",
+    "score": 93.5,
+    "image": "artists/wizkid.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5ebe6ef803356b45ee5a9fa7a8a",
+    "spotifyId": "3tVQdUvClmAT7URs9V3rsp",
+    "spotifyUrl": "https://open.spotify.com/artist/3tVQdUvClmAT7URs9V3rsp",
+    "monthlyListeners": 15200000,
+    "totalSpotifyStreams": 11352916449,
+    "dailySpotifyStreams": 5987135,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/wizkid/3tVQdUvClmAT7URs9V3rsp",
+      "catalogue": "https://kworb.net/spotify/artist/3tVQdUvClmAT7URs9V3rsp_songs.html"
+    }
+  },
+  {
+    "rank": 6,
+    "previousRank": 10,
+    "name": "Ayra Starr",
+    "slug": "ayra-starr",
+    "country": "Nigeria",
+    "tagline": "THE CELESTIAL VOICE",
+    "genres": [
+      "AFROPOP",
+      "POP"
+    ],
+    "bio": "Ayra Starr pairs diary-page candour with arena ambition. Her voice can sound bruised, defiant and playful in one record, giving the Mavin star a reach far beyond any one trend.",
+    "score": 92.7,
+    "image": "artists/ayra-starr.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5eb8bfd832e0547c4acabe6e67c",
+    "spotifyId": "3ZpEKRjHaHANcpk10u6Ntq",
+    "spotifyUrl": "https://open.spotify.com/artist/3ZpEKRjHaHANcpk10u6Ntq",
+    "monthlyListeners": 18000000,
+    "totalSpotifyStreams": 3870000766,
+    "dailySpotifyStreams": 4438207,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/ayra-starr/3ZpEKRjHaHANcpk10u6Ntq",
+      "catalogue": "https://kworb.net/spotify/artist/3ZpEKRjHaHANcpk10u6Ntq_songs.html"
+    }
+  },
+  {
+    "rank": 7,
+    "previousRank": 5,
+    "name": "Davido",
+    "slug": "davido",
+    "country": "Nigeria",
+    "tagline": "THE HIT ENGINE",
+    "genres": [
+      "AFROPOP",
+      "AFROBEATS"
+    ],
+    "bio": "Davido built longevity on urgency: huge hooks, generous collaborations and the feeling that every release is a public event. Few artists turn fan energy into commercial force as reliably.",
+    "score": 91.9,
+    "image": "artists/davido.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5eb2bf250c3e92f9e7542efd95c",
+    "spotifyId": "0Y3agQaa6g2r0YmHPOO9rh",
+    "spotifyUrl": "https://open.spotify.com/artist/0Y3agQaa6g2r0YmHPOO9rh",
+    "monthlyListeners": 11600000,
+    "totalSpotifyStreams": 3787813789,
+    "dailySpotifyStreams": 3989344,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/davido/0Y3agQaa6g2r0YmHPOO9rh",
+      "catalogue": "https://kworb.net/spotify/artist/0Y3agQaa6g2r0YmHPOO9rh_songs.html"
+    }
+  },
+  {
+    "rank": 8,
+    "previousRank": 3,
+    "name": "Asake",
+    "slug": "asake",
+    "country": "Nigeria",
+    "tagline": "THE CHOIR IN THE STREET",
+    "genres": [
+      "STREET-POP",
+      "FUJI"
+    ],
+    "bio": "Asake compressed Fuji phrasing, massed vocals and amapiano log drums into a instantly recognisable rush. His catalogue moves like a crowd even when the subject turns inward.",
+    "score": 91.1,
+    "image": "artists/asake.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5ebff54cbafa23b728b49954587",
+    "spotifyId": "3a1tBryiczPAZpgoZN9Rzg",
+    "spotifyUrl": "https://open.spotify.com/artist/3a1tBryiczPAZpgoZN9Rzg",
+    "monthlyListeners": 9000000,
+    "totalSpotifyStreams": 4180128337,
+    "dailySpotifyStreams": 5823314,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/asake/3a1tBryiczPAZpgoZN9Rzg",
+      "catalogue": "https://kworb.net/spotify/artist/3a1tBryiczPAZpgoZN9Rzg_songs.html"
+    }
+  },
+  {
+    "rank": 9,
+    "previousRank": 11,
+    "name": "OMAH LAY",
+    "slug": "omah-lay",
+    "country": "Nigeria",
+    "tagline": "THE MIDNIGHT CONFESSIONAL",
+    "genres": [
+      "AFRO-R&B",
+      "ALT"
+    ],
+    "bio": "Omah Lay made interior monologue commercially huge. His wounded melodies, soft-spoken writing and shadowy production created a modern Afrobeats lane that many artists now borrow from.",
+    "score": 90.2,
+    "image": "artists/omah-lay.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5eb35ba3ee6067196268c5528cb",
+    "spotifyId": "5yOvAmpIR7hVxiS6Ls5DPO",
+    "spotifyUrl": "https://open.spotify.com/artist/5yOvAmpIR7hVxiS6Ls5DPO",
+    "monthlyListeners": 11200000,
+    "totalSpotifyStreams": 3628194563,
+    "dailySpotifyStreams": 2519663,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/omah-lay/5yOvAmpIR7hVxiS6Ls5DPO",
+      "catalogue": "https://kworb.net/spotify/artist/5yOvAmpIR7hVxiS6Ls5DPO_songs.html"
+    }
+  },
+  {
+    "rank": 10,
+    "previousRank": 12,
+    "name": "CKay",
+    "slug": "ckay",
+    "country": "Nigeria",
+    "tagline": "THE EMO-AFROBEATS EXPORT",
+    "genres": [
+      "EMO-AFROBEATS",
+      "POP"
+    ],
+    "bio": "CKay's Love Nwantiti became one of the genre's defining digital exports, but his larger signature is emotional economy: intimate writing, simple melodies and records built to travel.",
+    "score": 89.4,
+    "image": "artists/ckay.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5ebff101c2e561cfcff3f6195aa",
+    "spotifyId": "048LktY5zMnakWq7PTtFrz",
+    "spotifyUrl": "https://open.spotify.com/artist/048LktY5zMnakWq7PTtFrz",
+    "monthlyListeners": 11500000,
+    "totalSpotifyStreams": 3027198017,
+    "dailySpotifyStreams": 1188205,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/ckay/048LktY5zMnakWq7PTtFrz",
+      "catalogue": "https://kworb.net/spotify/artist/048LktY5zMnakWq7PTtFrz_songs.html"
+    }
+  },
+  {
+    "rank": 11,
+    "previousRank": 13,
+    "name": "Fireboy DML",
+    "slug": "fireboy-dml",
+    "country": "Nigeria",
+    "tagline": "THE ROMANTIC CRAFTSMAN",
+    "genres": [
+      "AFRO-LIFE",
+      "R&B"
+    ],
+    "bio": "Fireboy writes romance with the eye of a short-story author. Peru widened the audience, while his albums show the quieter craft: clean melodies, emotional detail and unusual consistency.",
+    "score": 88.6,
+    "image": "artists/fireboy-dml.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5eb0a244d35a311e51fcbf794d4",
+    "spotifyId": "75VKfyoBlkmrJFDqo1o2VY",
+    "spotifyUrl": "https://open.spotify.com/artist/75VKfyoBlkmrJFDqo1o2VY",
+    "monthlyListeners": 9400000,
+    "totalSpotifyStreams": 2599183464,
+    "dailySpotifyStreams": 1395022,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/fireboy-dml/75VKfyoBlkmrJFDqo1o2VY",
+      "catalogue": "https://kworb.net/spotify/artist/75VKfyoBlkmrJFDqo1o2VY_songs.html"
+    }
+  },
+  {
+    "rank": 12,
+    "previousRank": 2,
+    "name": "Victony",
+    "slug": "victony",
+    "country": "Nigeria",
+    "tagline": "THE ELASTIC VOICE",
+    "genres": [
+      "AFROPOP",
+      "ALT"
+    ],
+    "bio": "Victony's elastic voice can glide through street-pop, R&B and experimental production without losing its identity. His feature run turned promise into one of the scene's most adaptable profiles.",
+    "score": 87.8,
+    "image": "artists/victony.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5eb2edf000427bb95912c77163c",
+    "spotifyId": "1E5hfn5BduN2nnoZCJmUVG",
+    "spotifyUrl": "https://open.spotify.com/artist/1E5hfn5BduN2nnoZCJmUVG",
+    "monthlyListeners": 7500000,
+    "totalSpotifyStreams": 1364629425,
+    "dailySpotifyStreams": 1395109,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/victony/1E5hfn5BduN2nnoZCJmUVG",
+      "catalogue": "https://kworb.net/spotify/artist/1E5hfn5BduN2nnoZCJmUVG_songs.html"
+    }
+  },
+  {
+    "rank": 13,
+    "previousRank": null,
+    "name": "MOLIY",
+    "slug": "moliy",
+    "country": "Ghana",
+    "tagline": "THE DIASPORA SPARK",
+    "genres": [
+      "AFRO-FUSION",
+      "POP"
+    ],
+    "bio": "Accra-born MOLIY makes dance music with a sly edge. Her airy delivery and diaspora-minded collaborations have carried Ghanaian pop into clubs and charts far outside its home market.",
+    "score": 87,
+    "image": "artists/moliy.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5eb94cf7e55f651c75e9c530d81",
+    "spotifyId": "2hVWBpjLW4Q7fboYz2pVYK",
+    "spotifyUrl": "https://open.spotify.com/artist/2hVWBpjLW4Q7fboYz2pVYK",
+    "monthlyListeners": 11200000,
+    "totalSpotifyStreams": 1337756625,
+    "dailySpotifyStreams": 853272,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/moliy/2hVWBpjLW4Q7fboYz2pVYK",
+      "catalogue": "https://kworb.net/spotify/artist/2hVWBpjLW4Q7fboYz2pVYK_songs.html"
+    }
+  },
+  {
+    "rank": 14,
+    "previousRank": 14,
+    "name": "BNXN",
+    "slug": "bnxn",
+    "country": "Nigeria",
+    "tagline": "THE HOOK SPECIALIST",
+    "genres": [
+      "AFRO-FUSION",
+      "R&B"
+    ],
+    "bio": "BNXN's husky tone gives features instant shape, but the catalogue proves he is more than a hook specialist. He writes with humour, vulnerability and a traveller's ear for rhythm.",
+    "score": 86.1,
+    "image": "artists/bnxn.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5eb54047830689ea245d14a390f",
+    "spotifyId": "3zaDigUwjHvjOkSn0NDf9x",
+    "spotifyUrl": "https://open.spotify.com/artist/3zaDigUwjHvjOkSn0NDf9x",
+    "monthlyListeners": 5800000,
+    "totalSpotifyStreams": 2097142952,
+    "dailySpotifyStreams": 2196839,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/bnxn/3zaDigUwjHvjOkSn0NDf9x",
+      "catalogue": "https://kworb.net/spotify/artist/3zaDigUwjHvjOkSn0NDf9x_songs.html"
+    }
+  },
+  {
+    "rank": 15,
+    "previousRank": 15,
+    "name": "Seyi Vibez",
+    "slug": "seyi-vibez",
+    "country": "Nigeria",
+    "tagline": "THE STREET PSALMIST",
+    "genres": [
+      "STREET-POP",
+      "APALA"
+    ],
+    "bio": "Seyi Vibez turns prayer, survival and street testimony into hypnotic music. His prolific run built a loyal audience that hears spiritual weight beneath the raw vocal grain.",
+    "score": 85.3,
+    "image": "artists/seyi-vibez.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5eb9902f473df31601d5938e0bd",
+    "spotifyId": "4zmZ8lVLzGc84S4v2B1rLx",
+    "spotifyUrl": "https://open.spotify.com/artist/4zmZ8lVLzGc84S4v2B1rLx",
+    "monthlyListeners": 3900000,
+    "totalSpotifyStreams": 1830557510,
+    "dailySpotifyStreams": 2903170,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/seyi-vibez/4zmZ8lVLzGc84S4v2B1rLx",
+      "catalogue": "https://kworb.net/spotify/artist/4zmZ8lVLzGc84S4v2B1rLx_songs.html"
+    }
+  },
+  {
+    "rank": 16,
+    "previousRank": null,
+    "name": "FOLA",
+    "slug": "fola",
+    "country": "Nigeria",
+    "tagline": "THE NEW MELODIST",
+    "genres": [
+      "AFROPOP",
+      "R&B"
+    ],
+    "bio": "FOLA's rise rests on melodic instinct rather than noise. He writes compact, emotionally direct songs and has quickly become one of the voices most likely to own the next chorus.",
+    "score": 84.5,
+    "image": "artists/fola.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5ebd6535da38a38866e12a44ac1",
+    "spotifyId": "0FK1hXdXst70HD11n5J26z",
+    "spotifyUrl": "https://open.spotify.com/artist/0FK1hXdXst70HD11n5J26z",
+    "monthlyListeners": 3700000,
+    "totalSpotifyStreams": 884884340,
+    "dailySpotifyStreams": 2183220,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/fola/0FK1hXdXst70HD11n5J26z",
+      "catalogue": "https://kworb.net/spotify/artist/0FK1hXdXst70HD11n5J26z_songs.html"
+    }
+  },
+  {
+    "rank": 17,
+    "previousRank": 16,
+    "name": "Ruger",
+    "slug": "ruger",
+    "country": "Nigeria",
+    "tagline": "THE EYEPATCH MELODIST",
+    "genres": [
+      "AFRO-DANCEHALL",
+      "POP"
+    ],
+    "bio": "Ruger blends dancehall swing with a teasing pop persona and unusually clean songwriting. Beneath the swagger is a sharp ear for hooks that survive after the viral moment passes.",
+    "score": 83.7,
+    "image": "artists/ruger.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5eb26c5385b3d2b2dc901bcba49",
+    "spotifyId": "0a1SidMjD8D6EHvJph4n2H",
+    "spotifyUrl": "https://open.spotify.com/artist/0a1SidMjD8D6EHvJph4n2H",
+    "monthlyListeners": 5100000,
+    "totalSpotifyStreams": 1193627396,
+    "dailySpotifyStreams": 872087,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/ruger/0a1SidMjD8D6EHvJph4n2H",
+      "catalogue": "https://kworb.net/spotify/artist/0a1SidMjD8D6EHvJph4n2H_songs.html"
+    }
+  },
+  {
+    "rank": 18,
+    "previousRank": 6,
+    "name": "Mavo",
+    "slug": "mavo",
+    "country": "Nigeria",
+    "tagline": "THE NEW-WAVE DISRUPTOR",
+    "genres": [
+      "AFROPOP",
+      "STREET-POP"
+    ],
+    "bio": "Mavo arrived with the velocity of internet culture: clipped phrases, quick melodic turns and records built for replay. The next test is turning that heat into a durable body of work.",
+    "score": 82.9,
+    "image": "artists/mavo.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5ebad619397a3d8e7007d8aa40c",
+    "spotifyId": "1VBjib1ykqXxss9Tw5YuR9",
+    "spotifyUrl": "https://open.spotify.com/artist/1VBjib1ykqXxss9Tw5YuR9",
+    "monthlyListeners": 3700000,
+    "totalSpotifyStreams": 680799407,
+    "dailySpotifyStreams": 2180293,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/mavo/1VBjib1ykqXxss9Tw5YuR9",
+      "catalogue": "https://kworb.net/spotify/artist/1VBjib1ykqXxss9Tw5YuR9_songs.html"
+    }
+  },
+  {
+    "rank": 19,
+    "previousRank": null,
+    "name": "Odeal",
+    "slug": "odeal",
+    "country": "UK / Nigeria",
+    "tagline": "THE DIASPORA CROONER",
+    "genres": [
+      "ALTÉ",
+      "R&B"
+    ],
+    "bio": "Odeal connects London intimacy with Nigerian rhythm. His warm, conversational vocals make his songs feel close-up, while patient arrangements give them room to travel.",
+    "score": 82,
+    "image": "artists/odeal.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5eb6b6814d1e1a9551310e23034",
+    "spotifyId": "2BPwxhCvvcb8xDl8GWIjbh",
+    "spotifyUrl": "https://open.spotify.com/artist/2BPwxhCvvcb8xDl8GWIjbh",
+    "monthlyListeners": 6100000,
+    "totalSpotifyStreams": 679099887,
+    "dailySpotifyStreams": 1219213,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/odeal/2BPwxhCvvcb8xDl8GWIjbh",
+      "catalogue": "https://kworb.net/spotify/artist/2BPwxhCvvcb8xDl8GWIjbh_songs.html"
+    }
+  },
+  {
+    "rank": 20,
+    "previousRank": 17,
+    "name": "Kizz Daniel",
+    "slug": "kizz-daniel",
+    "country": "Nigeria",
+    "tagline": "THE CONSISTENCY KING",
+    "genres": [
+      "AFROPOP",
+      "POP"
+    ],
+    "bio": "Kizz Daniel has spent a decade making difficult pop mechanics feel obvious. He understands the exact phrase, pause and melodic turn that transforms a good idea into a continental earworm.",
+    "score": 81.2,
+    "image": "artists/kizz-daniel.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5eb864a01c2e8a53d182fd3e472",
+    "spotifyId": "1X6cBGnXpEpN7CmflLKmLV",
+    "spotifyUrl": "https://open.spotify.com/artist/1X6cBGnXpEpN7CmflLKmLV",
+    "monthlyListeners": 4400000,
+    "totalSpotifyStreams": 1678603558,
+    "dailySpotifyStreams": 791901,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/kizz-daniel/1X6cBGnXpEpN7CmflLKmLV",
+      "catalogue": "https://kworb.net/spotify/artist/1X6cBGnXpEpN7CmflLKmLV_songs.html"
+    }
+  },
+  {
+    "rank": 21,
+    "previousRank": 18,
+    "name": "Olamide",
+    "slug": "olamide",
+    "country": "Nigeria",
+    "tagline": "THE SYSTEM BUILDER",
+    "genres": [
+      "RAP",
+      "STREET-POP"
+    ],
+    "bio": "Olamide is both a street-rap institution and an ecosystem builder. His own catalogue maps Lagos slang and ambition; YBNL multiplied that influence through a generation of major voices.",
+    "score": 80.4,
+    "image": "artists/olamide.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5eb690d9ec39523c7159ada0426",
+    "spotifyId": "4ovtyvs7j1jSmwhkBGHqSr",
+    "spotifyUrl": "https://open.spotify.com/artist/4ovtyvs7j1jSmwhkBGHqSr",
+    "monthlyListeners": 4600000,
+    "totalSpotifyStreams": 1503488504,
+    "dailySpotifyStreams": 1054062,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/olamide/4ovtyvs7j1jSmwhkBGHqSr",
+      "catalogue": "https://kworb.net/spotify/artist/4ovtyvs7j1jSmwhkBGHqSr_songs.html"
+    }
+  },
+  {
+    "rank": 22,
+    "previousRank": 21,
+    "name": "ODUMODUBLVCK",
+    "slug": "odumodublvck",
+    "country": "Nigeria",
+    "tagline": "THE OKPU-AGU FORCE",
+    "genres": [
+      "RAP",
+      "AFRO-FUSION"
+    ],
+    "bio": "ODUMODUBLVCK raps like a collision is about to happen. The Abuja artist mixes Nigerian cadence, grime weight and football-sized chants into a presence that feels larger than the track.",
+    "score": 79.6,
+    "image": "artists/odumodublvck.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5ebc5220e1882a3fd5e34203b97",
+    "spotifyId": "3LOm0AZjpwVQebvkyanjDy",
+    "spotifyUrl": "https://open.spotify.com/artist/3LOm0AZjpwVQebvkyanjDy",
+    "monthlyListeners": 4100000,
+    "totalSpotifyStreams": 1324517684,
+    "dailySpotifyStreams": 1323610,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/odumodublvck/3LOm0AZjpwVQebvkyanjDy",
+      "catalogue": "https://kworb.net/spotify/artist/3LOm0AZjpwVQebvkyanjDy_songs.html"
+    }
+  },
+  {
+    "rank": 23,
+    "previousRank": null,
+    "name": "Sarz",
+    "slug": "sarz",
+    "country": "Nigeria",
+    "tagline": "THE PRODUCER'S PRODUCER",
+    "genres": [
+      "AFROBEATS",
+      "ELECTRONIC"
+    ],
+    "bio": "Sarz builds drums with personality. His fingerprints run through multiple Afrobeats eras, and his producer-led projects prove an architect can hold the centre without becoming the vocalist.",
+    "score": 78.8,
+    "image": "artists/sarz.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5eb9e6c83cda0523411ac6322ec",
+    "spotifyId": "408vMm7y1227ASq7GmWygZ",
+    "spotifyUrl": "https://open.spotify.com/artist/408vMm7y1227ASq7GmWygZ",
+    "monthlyListeners": 5700000,
+    "totalSpotifyStreams": 770889671,
+    "dailySpotifyStreams": 908730,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/sarz/408vMm7y1227ASq7GmWygZ",
+      "catalogue": "https://kworb.net/spotify/artist/408vMm7y1227ASq7GmWygZ_songs.html"
+    }
+  },
+  {
+    "rank": 24,
+    "previousRank": 28,
+    "name": "Amaarae",
+    "slug": "amaarae",
+    "country": "Ghana",
+    "tagline": "THE ALTÉ FUTURIST",
+    "genres": [
+      "ALTÉ",
+      "POP"
+    ],
+    "bio": "Amaarae makes pop that refuses a fixed passport or genre. The Ghanaian-American auteur folds highlife, rap, club music and fashion into albums that reward curiosity as much as immediacy.",
+    "score": 77.9,
+    "image": "artists/amaarae.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5eb82d2f8ad2b13647357e18582",
+    "spotifyId": "21UPYSRWFKwtqvSAnFnSvS",
+    "spotifyUrl": "https://open.spotify.com/artist/21UPYSRWFKwtqvSAnFnSvS",
+    "monthlyListeners": 5000000,
+    "totalSpotifyStreams": 1391189560,
+    "dailySpotifyStreams": 491091,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/amaarae/21UPYSRWFKwtqvSAnFnSvS",
+      "catalogue": "https://kworb.net/spotify/artist/21UPYSRWFKwtqvSAnFnSvS_songs.html"
+    }
+  },
+  {
+    "rank": 25,
+    "previousRank": 22,
+    "name": "Young Jonn",
+    "slug": "young-jonn",
+    "country": "Nigeria",
+    "tagline": "THE HITMAKER IN FRONT",
+    "genres": [
+      "AFROPOP",
+      "PRODUCTION"
+    ],
+    "bio": "Young Jonn moved from the producer tag to the centre of the record without losing his hitmaking instinct. His compact melodies still carry the efficiency of someone who understands every layer.",
+    "score": 77.1,
+    "image": "artists/young-jonn.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5ebc472fd2d96640f82f44493c2",
+    "spotifyId": "4JM1zsVj1pt38Q8mhv5teI",
+    "spotifyUrl": "https://open.spotify.com/artist/4JM1zsVj1pt38Q8mhv5teI",
+    "monthlyListeners": 4600000,
+    "totalSpotifyStreams": 1115394208,
+    "dailySpotifyStreams": 1250434,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/young-jonn/4JM1zsVj1pt38Q8mhv5teI",
+      "catalogue": "https://kworb.net/spotify/artist/4JM1zsVj1pt38Q8mhv5teI_songs.html"
+    }
+  },
+  {
+    "rank": 26,
+    "previousRank": 19,
+    "name": "Adekunle Gold",
+    "slug": "adekunle-gold",
+    "country": "Nigeria",
+    "tagline": "THE CONSTANT REINVENTION",
+    "genres": [
+      "AFROPOP",
+      "HIGHLIFE"
+    ],
+    "bio": "Adekunle Gold's career is a study in reinvention: folk-rooted beginnings, highlife colour and increasingly polished global pop. The through-line is careful writing and unmistakable warmth.",
+    "score": 76.3,
+    "image": "artists/adekunle-gold.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5eba04328b8180f0437435f0a78",
+    "spotifyId": "2IK173RXLiCSQ8fhDlAb3s",
+    "spotifyUrl": "https://open.spotify.com/artist/2IK173RXLiCSQ8fhDlAb3s",
+    "monthlyListeners": 3600000,
+    "totalSpotifyStreams": 879581675,
+    "dailySpotifyStreams": 624839,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/adekunle-gold/2IK173RXLiCSQ8fhDlAb3s",
+      "catalogue": "https://kworb.net/spotify/artist/2IK173RXLiCSQ8fhDlAb3s_songs.html"
+    }
+  },
+  {
+    "rank": 27,
+    "previousRank": 20,
+    "name": "Shallipopi",
+    "slug": "shallipopi",
+    "country": "Nigeria",
+    "tagline": "THE BENIN CITY LINGUIST",
+    "genres": [
+      "STREET-POP",
+      "AFRO-TRAP"
+    ],
+    "bio": "Shallipopi turns Benin City slang, deadpan humour and spare production into sticky street-pop. His cultural impact lives as much in everyday language as it does in streaming totals.",
+    "score": 75.5,
+    "image": "artists/shallipopi.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5eb1614424c5650c60ddefe937a",
+    "spotifyId": "4TKhxSkqClXrdtUWgKqHVU",
+    "spotifyUrl": "https://open.spotify.com/artist/4TKhxSkqClXrdtUWgKqHVU",
+    "monthlyListeners": 4300000,
+    "totalSpotifyStreams": 952780429,
+    "dailySpotifyStreams": 711124,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/shallipopi/4TKhxSkqClXrdtUWgKqHVU",
+      "catalogue": "https://kworb.net/spotify/artist/4TKhxSkqClXrdtUWgKqHVU_songs.html"
+    }
+  },
+  {
+    "rank": 28,
+    "previousRank": 24,
+    "name": "Oxlade",
+    "slug": "oxlade",
+    "country": "Nigeria",
+    "tagline": "THE FALSETTO SIGNATURE",
+    "genres": [
+      "AFRO-R&B",
+      "POP"
+    ],
+    "bio": "Oxlade's falsetto is recognisable within seconds. KU LO SA gave it global scale, while his best records use that high register as texture rather than a trick.",
+    "score": 74.7,
+    "image": "artists/oxlade.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5eb2cdb1148e14bf21f3adc78de",
+    "spotifyId": "3WTrdbZU99dgTtt3ZkyamT",
+    "spotifyUrl": "https://open.spotify.com/artist/3WTrdbZU99dgTtt3ZkyamT",
+    "monthlyListeners": 4700000,
+    "totalSpotifyStreams": 1028080818,
+    "dailySpotifyStreams": 459076,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/oxlade/3WTrdbZU99dgTtt3ZkyamT",
+      "catalogue": "https://kworb.net/spotify/artist/3WTrdbZU99dgTtt3ZkyamT_songs.html"
+    }
+  },
+  {
+    "rank": 29,
+    "previousRank": 27,
+    "name": "FAVE",
+    "slug": "fave",
+    "country": "Nigeria",
+    "tagline": "THE SMOKY STORYTELLER",
+    "genres": [
+      "AFRO-R&B",
+      "ALT"
+    ],
+    "bio": "FAVE's smoky voice carries both calm and tension. Her songwriting favours uncluttered emotional scenes, giving every feature and solo record an immediate point of view.",
+    "score": 73.8,
+    "image": "artists/fave.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5eb1486c51c7905639f52b0778c",
+    "spotifyId": "4wAqlYtTaaHELEgyCh9KjG",
+    "spotifyUrl": "https://open.spotify.com/artist/4wAqlYtTaaHELEgyCh9KjG",
+    "monthlyListeners": 4700000,
+    "totalSpotifyStreams": 558697111,
+    "dailySpotifyStreams": 460595,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/fave/4wAqlYtTaaHELEgyCh9KjG",
+      "catalogue": "https://kworb.net/spotify/artist/4wAqlYtTaaHELEgyCh9KjG_songs.html"
+    }
+  },
+  {
+    "rank": 30,
+    "previousRank": 23,
+    "name": "Joeboy",
+    "slug": "joeboy",
+    "country": "Nigeria",
+    "tagline": "THE SOFT-POP ANCHOR",
+    "genres": [
+      "AFROPOP",
+      "R&B"
+    ],
+    "bio": "Joeboy helped define the soft, romantic side of the streaming-era breakthrough. His easy delivery disguises disciplined pop writing and a catalogue built for repeat listening.",
+    "score": 73,
+    "image": "artists/joeboy.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5ebd48d6fc0c4fd2053ca4028ba",
+    "spotifyId": "1XavfPKBpNjkOfxHINlMHF",
+    "spotifyUrl": "https://open.spotify.com/artist/1XavfPKBpNjkOfxHINlMHF",
+    "monthlyListeners": 4300000,
+    "totalSpotifyStreams": 828662054,
+    "dailySpotifyStreams": 518137,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/joeboy/1XavfPKBpNjkOfxHINlMHF",
+      "catalogue": "https://kworb.net/spotify/artist/1XavfPKBpNjkOfxHINlMHF_songs.html"
+    }
+  },
+  {
+    "rank": 31,
+    "previousRank": 25,
+    "name": "Tiwa Savage",
+    "slug": "tiwa-savage",
+    "country": "Nigeria",
+    "tagline": "THE POP MATRIARCH",
+    "genres": [
+      "AFROPOP",
+      "R&B"
+    ],
+    "bio": "Tiwa Savage brought elite R&B control into Nigerian pop and kept evolving after the first crossover wave. Her longevity rests on vocal precision, stage craft and fearless collaboration.",
+    "score": 72.2,
+    "image": "artists/tiwa-savage.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5ebf50933ec70ba9ca9648fcadf",
+    "spotifyId": "1hNaHKp2Za5YdOAG0WnRbc",
+    "spotifyUrl": "https://open.spotify.com/artist/1hNaHKp2Za5YdOAG0WnRbc",
+    "monthlyListeners": 3300000,
+    "totalSpotifyStreams": 752927071,
+    "dailySpotifyStreams": 447621,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/tiwa-savage/1hNaHKp2Za5YdOAG0WnRbc",
+      "catalogue": "https://kworb.net/spotify/artist/1hNaHKp2Za5YdOAG0WnRbc_songs.html"
+    }
+  },
+  {
+    "rank": 32,
+    "previousRank": 26,
+    "name": "Lojay",
+    "slug": "lojay",
+    "country": "Nigeria",
+    "tagline": "THE DETAIL MERCHANT",
+    "genres": [
+      "AFRO-FUSION",
+      "R&B"
+    ],
+    "bio": "Lojay writes desire in close detail and sings it with a grainy, instantly identifiable tone. Monalisa opened the door; his darker, more intricate records explain why it stayed open.",
+    "score": 71.4,
+    "image": "artists/lojay.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5ebe217694d23f25a357ba474ef",
+    "spotifyId": "3ONGmday8YN8AkbsRk01iL",
+    "spotifyUrl": "https://open.spotify.com/artist/3ONGmday8YN8AkbsRk01iL",
+    "monthlyListeners": 4500000,
+    "totalSpotifyStreams": 762186538,
+    "dailySpotifyStreams": 393352,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/lojay/3ONGmday8YN8AkbsRk01iL",
+      "catalogue": "https://kworb.net/spotify/artist/3ONGmday8YN8AkbsRk01iL_songs.html"
+    }
+  },
+  {
+    "rank": 33,
+    "previousRank": null,
+    "name": "JAZZWRLD",
+    "slug": "jazzwrld",
+    "country": "South Africa",
+    "tagline": "THE AMAPIANO STORYTELLER",
+    "genres": [
+      "AMAPIANO",
+      "SOUL"
+    ],
+    "bio": "JAZZWRLD brings a soulful, composer-led sensibility to amapiano. His growing catalogue favours atmosphere and patient musical development over disposable dance-floor formulas.",
+    "score": 70.6,
+    "image": "artists/jazzwrld.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5eb8665a17f908fbe85342b16b5",
+    "spotifyId": "3idyOn3lhSxgV2qdDQNfhz",
+    "spotifyUrl": "https://open.spotify.com/artist/3idyOn3lhSxgV2qdDQNfhz",
+    "monthlyListeners": 4200000,
+    "totalSpotifyStreams": 433679712,
+    "dailySpotifyStreams": 876627,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/jazzwrld/3idyOn3lhSxgV2qdDQNfhz",
+      "catalogue": "https://kworb.net/spotify/artist/3idyOn3lhSxgV2qdDQNfhz_songs.html"
+    }
+  },
+  {
+    "rank": 34,
+    "previousRank": 34,
+    "name": "Darkoo",
+    "slug": "darkoo",
+    "country": "UK / Nigeria",
+    "tagline": "THE LONDON-LAGOS LINK",
+    "genres": [
+      "AFROSWING",
+      "AFROPOP"
+    ],
+    "bio": "Darkoo moves naturally between London rap cadence and West African melody. That bilingual musical instinct makes each collaboration feel like a bridge rather than a marketing exercise.",
+    "score": 69.7,
+    "image": "artists/darkoo.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5eb216a36a85190bd55c0bb35e8",
+    "spotifyId": "4QSTyDpxsKmv3UfavVUImR",
+    "spotifyUrl": "https://open.spotify.com/artist/4QSTyDpxsKmv3UfavVUImR",
+    "monthlyListeners": 3900000,
+    "totalSpotifyStreams": 901608204,
+    "dailySpotifyStreams": 301824,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/darkoo/4QSTyDpxsKmv3UfavVUImR",
+      "catalogue": "https://kworb.net/spotify/artist/4QSTyDpxsKmv3UfavVUImR_songs.html"
+    }
+  },
+  {
+    "rank": 35,
+    "previousRank": 29,
+    "name": "Black Sherif",
+    "slug": "black-sherif",
+    "country": "Ghana",
+    "tagline": "THE GHANAIAN ROAR",
+    "genres": [
+      "HIP-HOP",
+      "HIGHLIFE"
+    ],
+    "bio": "Black Sherif sings as if every line costs something. His cracked, urgent voice turns migration, pressure and ambition into anthems that connect Accra street reality with a global audience.",
+    "score": 68.9,
+    "image": "artists/black-sherif.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5eb317c2d84e6d0155cdb1ecd49",
+    "spotifyId": "2LiqbH7OhqP0yuaG8VL1wJ",
+    "spotifyUrl": "https://open.spotify.com/artist/2LiqbH7OhqP0yuaG8VL1wJ",
+    "monthlyListeners": 3100000,
+    "totalSpotifyStreams": 793309050,
+    "dailySpotifyStreams": 756320,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/black-sherif/2LiqbH7OhqP0yuaG8VL1wJ",
+      "catalogue": "https://kworb.net/spotify/artist/2LiqbH7OhqP0yuaG8VL1wJ_songs.html"
+    }
+  },
+  {
+    "rank": 36,
+    "previousRank": null,
+    "name": "CIZA",
+    "slug": "ciza",
+    "country": "South Africa",
+    "tagline": "THE BACARDI BREAKOUT",
+    "genres": [
+      "AMAPIANO",
+      "POP"
+    ],
+    "bio": "CIZA represents amapiano's fast-moving new school: youthful vocals, bright Bacardi energy and an instinct for dance moments that can travel across borders before radio catches up.",
+    "score": 68.1,
+    "image": "artists/ciza.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5eb97c7c5991d79eb814286c097",
+    "spotifyId": "71hPkbyih5bdlHVPBgav33",
+    "spotifyUrl": "https://open.spotify.com/artist/71hPkbyih5bdlHVPBgav33",
+    "monthlyListeners": 2200000,
+    "totalSpotifyStreams": 126066317,
+    "dailySpotifyStreams": 174290,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/ciza/71hPkbyih5bdlHVPBgav33",
+      "catalogue": "https://kworb.net/spotify/artist/71hPkbyih5bdlHVPBgav33_songs.html"
+    }
+  },
+  {
+    "rank": 37,
+    "previousRank": null,
+    "name": "Shoday",
+    "slug": "shoday",
+    "country": "Nigeria",
+    "tagline": "THE STREET ROMANTIC",
+    "genres": [
+      "AFROPOP",
+      "STREET-POP"
+    ],
+    "bio": "Shoday balances street-pop directness with a romantic melodic touch. His rise reflects a new discovery pipeline where consistency after the viral spark matters more than industry permission.",
+    "score": 67.3,
+    "image": "artists/shoday.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5eb4fd0ffa8ec58b081e802ef8c",
+    "spotifyId": "23R4AtMwVv0pbJYB1joioW",
+    "spotifyUrl": "https://open.spotify.com/artist/23R4AtMwVv0pbJYB1joioW",
+    "monthlyListeners": 2900000,
+    "totalSpotifyStreams": 252431399,
+    "dailySpotifyStreams": 424368,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/shoday/23R4AtMwVv0pbJYB1joioW",
+      "catalogue": "https://kworb.net/spotify/artist/23R4AtMwVv0pbJYB1joioW_songs.html"
+    }
+  },
+  {
+    "rank": 38,
+    "previousRank": 30,
+    "name": "King Promise",
+    "slug": "king-promise",
+    "country": "Ghana",
+    "tagline": "THE SILK VOICE",
+    "genres": [
+      "AFROPOP",
+      "HIGHLIFE"
+    ],
+    "bio": "King Promise's smooth baritone is built for patience, not spectacle. He carries Ghanaian highlife ease into modern Afropop and has become one of the continent's most dependable collaborators.",
+    "score": 66.5,
+    "image": "artists/king-promise.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5ebe96410f6b083338c32ae6bc8",
+    "spotifyId": "4tIKaxUmpXzshok2yCnwdf",
+    "spotifyUrl": "https://open.spotify.com/artist/4tIKaxUmpXzshok2yCnwdf",
+    "monthlyListeners": 2300000,
+    "totalSpotifyStreams": 494699416,
+    "dailySpotifyStreams": 230151,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/king-promise/4tIKaxUmpXzshok2yCnwdf",
+      "catalogue": "https://kworb.net/spotify/artist/4tIKaxUmpXzshok2yCnwdf_songs.html"
+    }
+  },
+  {
+    "rank": 39,
+    "previousRank": 35,
+    "name": "Zlatan",
+    "slug": "zlatan",
+    "country": "Nigeria",
+    "tagline": "THE ZANKU CATALYST",
+    "genres": [
+      "STREET-POP",
+      "RAP"
+    ],
+    "bio": "Zlatan converts street language and dance into pop momentum. Zanku was a full cultural moment, and his continued relevance comes from knowing when to lead and when to energise a feature.",
+    "score": 65.6,
+    "image": "artists/zlatan.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5eb21b0a01f1bde7422e1e913b7",
+    "spotifyId": "4mSWNal2Ixxf1zrXSTLoep",
+    "spotifyUrl": "https://open.spotify.com/artist/4mSWNal2Ixxf1zrXSTLoep",
+    "monthlyListeners": 2500000,
+    "totalSpotifyStreams": 640307086,
+    "dailySpotifyStreams": 855521,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/zlatan/4mSWNal2Ixxf1zrXSTLoep",
+      "catalogue": "https://kworb.net/spotify/artist/4mSWNal2Ixxf1zrXSTLoep_songs.html"
+    }
+  },
+  {
+    "rank": 40,
+    "previousRank": 43,
+    "name": "Bella Shmurda",
+    "slug": "bella-shmurda",
+    "country": "Nigeria",
+    "tagline": "THE STREET'S OPEN NERVE",
+    "genres": [
+      "STREET-POP",
+      "AFROBEATS"
+    ],
+    "bio": "Bella Shmurda sings with an exposed edge that makes hustle records feel personal. His melodies carry the tension between celebration and survival at the heart of Lagos street-pop.",
+    "score": 64.8,
+    "image": "artists/bella-shmurda.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5eb26d2a252e8a5472f1cde4f55",
+    "spotifyId": "7kK5badbqOjd8WlT2XWMeM",
+    "spotifyUrl": "https://open.spotify.com/artist/7kK5badbqOjd8WlT2XWMeM",
+    "monthlyListeners": 2500000,
+    "totalSpotifyStreams": 673032891,
+    "dailySpotifyStreams": 627673,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/bella-shmurda/7kK5badbqOjd8WlT2XWMeM",
+      "catalogue": "https://kworb.net/spotify/artist/7kK5badbqOjd8WlT2XWMeM_songs.html"
+    }
+  },
+  {
+    "rank": 41,
+    "previousRank": 36,
+    "name": "Blaqbonez",
+    "slug": "blaqbonez",
+    "country": "Nigeria",
+    "tagline": "THE SELF-AWARE SHOWMAN",
+    "genres": [
+      "RAP",
+      "AFRO-FUSION"
+    ],
+    "bio": "Blaqbonez pairs technical range with an internet-native sense of theatre. The jokes draw attention, but the reason he stays is musical flexibility and a clear understanding of character.",
+    "score": 64,
+    "image": "artists/blaqbonez.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5eb622eb302797797e4a9bf2f10",
+    "spotifyId": "12kjvw4e3gLp6qVHO65n7W",
+    "spotifyUrl": "https://open.spotify.com/artist/12kjvw4e3gLp6qVHO65n7W",
+    "monthlyListeners": 2900000,
+    "totalSpotifyStreams": 399199264,
+    "dailySpotifyStreams": 543314,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/blaqbonez/12kjvw4e3gLp6qVHO65n7W",
+      "catalogue": "https://kworb.net/spotify/artist/12kjvw4e3gLp6qVHO65n7W_songs.html"
+    }
+  },
+  {
+    "rank": 42,
+    "previousRank": 42,
+    "name": "Khaid",
+    "slug": "khaid",
+    "country": "Nigeria",
+    "tagline": "THE MELODIC SURVIVOR",
+    "genres": [
+      "STREET-POP",
+      "AFROPOP"
+    ],
+    "bio": "Khaid's compact melodies and unpolished emotional tone made him a fast streaming-era breakout. His records work best when vulnerability interrupts the confidence.",
+    "score": 63.2,
+    "image": "artists/khaid.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5eb0a6d1b9759d060981200a1b3",
+    "spotifyId": "2mM6BxFQCd6BHzW4W7VhQP",
+    "spotifyUrl": "https://open.spotify.com/artist/2mM6BxFQCd6BHzW4W7VhQP",
+    "monthlyListeners": 2900000,
+    "totalSpotifyStreams": 286972111,
+    "dailySpotifyStreams": 350247,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/khaid/2mM6BxFQCd6BHzW4W7VhQP",
+      "catalogue": "https://kworb.net/spotify/artist/2mM6BxFQCd6BHzW4W7VhQP_songs.html"
+    }
+  },
+  {
+    "rank": 43,
+    "previousRank": 37,
+    "name": "Chike",
+    "slug": "chike",
+    "country": "Nigeria",
+    "tagline": "THE LOVE-SONG ACTOR",
+    "genres": [
+      "AFRO-R&B",
+      "SOUL"
+    ],
+    "bio": "Chike brings an actor's sense of pacing to love songs. His clear diction and patient arrangements have made him a dependable voice for romance without chasing every rhythmic trend.",
+    "score": 62.4,
+    "image": "artists/chike.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5eb15b6e96e3f997e180de9e3fc",
+    "spotifyId": "6zK1M4TcabpLQMNmmG2P0Q",
+    "spotifyUrl": "https://open.spotify.com/artist/6zK1M4TcabpLQMNmmG2P0Q",
+    "monthlyListeners": 2100000,
+    "totalSpotifyStreams": 406289712,
+    "dailySpotifyStreams": 259302,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/chike/6zK1M4TcabpLQMNmmG2P0Q",
+      "catalogue": "https://kworb.net/spotify/artist/6zK1M4TcabpLQMNmmG2P0Q_songs.html"
+    }
+  },
+  {
+    "rank": 44,
+    "previousRank": 31,
+    "name": "Diamond Platnumz",
+    "slug": "diamond-platnumz",
+    "country": "Tanzania",
+    "tagline": "THE EAST AFRICAN EMPIRE",
+    "genres": [
+      "BONGO FLAVA",
+      "AFROPOP"
+    ],
+    "bio": "Diamond Platnumz turned Bongo Flava stardom into a regional business system. His catalogue, visual scale and Wasafi platform keep East Africa central to the continental pop map.",
+    "score": 61.5,
+    "image": "artists/diamond-platnumz.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5ebc6796a7228b83f7868a53be5",
+    "spotifyId": "3cAisWS37sGCCtRgWfvrod",
+    "spotifyUrl": "https://open.spotify.com/artist/3cAisWS37sGCCtRgWfvrod",
+    "monthlyListeners": 1700000,
+    "totalSpotifyStreams": 329291511,
+    "dailySpotifyStreams": 199771,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/diamond-platnumz/3cAisWS37sGCCtRgWfvrod",
+      "catalogue": "https://kworb.net/spotify/artist/3cAisWS37sGCCtRgWfvrod_songs.html"
+    }
+  },
+  {
+    "rank": 45,
+    "previousRank": 39,
+    "name": "Tekno",
+    "slug": "tekno",
+    "country": "Nigeria",
+    "tagline": "THE MELODY ENGINEER",
+    "genres": [
+      "AFROPOP",
+      "DANCE"
+    ],
+    "bio": "Tekno's sparse productions and spring-loaded melodies helped shape the mid-2010s Afropop boom. Even when releases slow, his writing and production DNA remain audible across the scene.",
+    "score": 60.7,
+    "image": "artists/tekno.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5ebbdfa92a97f9da3258e7776e9",
+    "spotifyId": "6IhG3Yxm3UW98jhyBvrIut",
+    "spotifyUrl": "https://open.spotify.com/artist/6IhG3Yxm3UW98jhyBvrIut",
+    "monthlyListeners": 2200000,
+    "totalSpotifyStreams": 569906001,
+    "dailySpotifyStreams": 235962,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/tekno/6IhG3Yxm3UW98jhyBvrIut",
+      "catalogue": "https://kworb.net/spotify/artist/6IhG3Yxm3UW98jhyBvrIut_songs.html"
+    }
+  },
+  {
+    "rank": 46,
+    "previousRank": 40,
+    "name": "Focalistic",
+    "slug": "focalistic",
+    "country": "South Africa",
+    "tagline": "THE PITORI MARADONA",
+    "genres": [
+      "AMAPIANO",
+      "RAP"
+    ],
+    "bio": "Focalistic gave amapiano a rapper's narrative centre. His Pretoria slang, agile flow and cross-border collaborations helped the sound speak beyond the dance floor.",
+    "score": 59.9,
+    "image": "artists/focalistic.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5ebbbf1affcef7a2a24f7d8b688",
+    "spotifyId": "2GJMSZ7M3D0KyyKRhYgWju",
+    "spotifyUrl": "https://open.spotify.com/artist/2GJMSZ7M3D0KyyKRhYgWju",
+    "monthlyListeners": 2700000,
+    "totalSpotifyStreams": 284022944,
+    "dailySpotifyStreams": 279611,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/focalistic/2GJMSZ7M3D0KyyKRhYgWju",
+      "catalogue": "https://kworb.net/spotify/artist/2GJMSZ7M3D0KyyKRhYgWju_songs.html"
+    }
+  },
+  {
+    "rank": 47,
+    "previousRank": 41,
+    "name": "Uncle Waffles",
+    "slug": "uncle-waffles",
+    "country": "Eswatini / South Africa",
+    "tagline": "THE DANCE-FLOOR CURATOR",
+    "genres": [
+      "AMAPIANO",
+      "DJ"
+    ],
+    "bio": "Uncle Waffles made the DJ booth feel like centre stage. Her high-energy sets, sharp visual identity and international touring turned curation itself into a headline performance.",
+    "score": 59.1,
+    "image": "artists/uncle-waffles.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5ebc5f82f490992ba02b1e6bfcb",
+    "spotifyId": "68McnNC9twEtiynOAJRRgZ",
+    "spotifyUrl": "https://open.spotify.com/artist/68McnNC9twEtiynOAJRRgZ",
+    "monthlyListeners": 1500000,
+    "totalSpotifyStreams": 211914478,
+    "dailySpotifyStreams": 164384,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/uncle-waffles/68McnNC9twEtiynOAJRRgZ",
+      "catalogue": "https://kworb.net/spotify/artist/68McnNC9twEtiynOAJRRgZ_songs.html"
+    }
+  },
+  {
+    "rank": 48,
+    "previousRank": 38,
+    "name": "Phyno",
+    "slug": "phyno",
+    "country": "Nigeria",
+    "tagline": "THE IGBO RAP PILLAR",
+    "genres": [
+      "RAP",
+      "HIGHLIFE"
+    ],
+    "bio": "Phyno proved indigenous-language rap could command the mainstream without translation. His authority comes from technical control, Eastern cultural detail and a catalogue that still pulls crowds.",
+    "score": 58.3,
+    "image": "artists/phyno.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5eb03120172bb2ed1ff08b2f7d3",
+    "spotifyId": "6acbdy69rtlv8m9EW31MYl",
+    "spotifyUrl": "https://open.spotify.com/artist/6acbdy69rtlv8m9EW31MYl",
+    "monthlyListeners": 1500000,
+    "totalSpotifyStreams": 326557221,
+    "dailySpotifyStreams": 351349,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/phyno/6acbdy69rtlv8m9EW31MYl",
+      "catalogue": "https://kworb.net/spotify/artist/6acbdy69rtlv8m9EW31MYl_songs.html"
+    }
+  },
+  {
+    "rank": 49,
+    "previousRank": 33,
+    "name": "Shatta Wale",
+    "slug": "shatta-wale",
+    "country": "Ghana",
+    "tagline": "THE DANCEHALL GENERAL",
+    "genres": [
+      "DANCEHALL",
+      "AFROPOP"
+    ],
+    "bio": "Shatta Wale is Ghanaian dancehall as public theatre: confrontational, prolific and impossible to ignore. His direct bond with fans gives the music an influence that raw platform numbers miss.",
+    "score": 57.4,
+    "image": "artists/shatta-wale.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5eb4b9c8478e046551c38920635",
+    "spotifyId": "42q0rYXtR561ypg1Fcw1PI",
+    "spotifyUrl": "https://open.spotify.com/artist/42q0rYXtR561ypg1Fcw1PI",
+    "monthlyListeners": 1300000,
+    "totalSpotifyStreams": 297105484,
+    "dailySpotifyStreams": 189398,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/shatta-wale/42q0rYXtR561ypg1Fcw1PI",
+      "catalogue": "https://kworb.net/spotify/artist/42q0rYXtR561ypg1Fcw1PI_songs.html"
+    }
+  },
+  {
+    "rank": 50,
+    "previousRank": 32,
+    "name": "Stonebwoy",
+    "slug": "stonebwoy",
+    "country": "Ghana",
+    "tagline": "THE ROOTED GLOBALIST",
+    "genres": [
+      "DANCEHALL",
+      "REGGAE"
+    ],
+    "bio": "Stonebwoy connects Ghanaian identity with reggae and dancehall craft. Years of touring and collaboration make him a steady continental ambassador rather than a one-cycle chart act.",
+    "score": 56.6,
+    "image": "artists/stonebwoy.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5ebf07eebbda5929ad52927e20c",
+    "spotifyId": "2ayt5jDUuTCpoTG7sHSvuq",
+    "spotifyUrl": "https://open.spotify.com/artist/2ayt5jDUuTCpoTG7sHSvuq",
+    "monthlyListeners": 577086,
+    "totalSpotifyStreams": 157960227,
+    "dailySpotifyStreams": 86006,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/stonebwoy/2ayt5jDUuTCpoTG7sHSvuq",
+      "catalogue": "https://kworb.net/spotify/artist/2ayt5jDUuTCpoTG7sHSvuq_songs.html"
+    }
+  }
+];
+
+  </script>
+  <script>
+(function () {
+  const UPDATE_VERSION = "2026-08-20-current-11-v2";
+  const SNAPSHOT_KEY = "afri-index-current-snapshot-v1";
+  const currentArtists = Array.isArray(window.AFRI_CURRENT_ARTISTS) ? window.AFRI_CURRENT_ARTISTS : [];
+
+  const metrics = {
+    "Impact & legacy": "How much an artist changed the genre — and what remained after the moment passed.",
+    "Global reach": "Audience and recognition beyond the artist's home market.",
+    "Discography": "Quality, depth and consistency across albums, EPs and singles.",
+    "Commercial power": "Sales, chart strength, booking demand and brand pull.",
+    "Awards": "Major wins and nominations, weighted by relevance and competitiveness.",
+    "Cultural influence": "How strongly the artist shaped sound, style, language and the next wave.",
+    "Longevity": "How long the artist stayed relevant at a meaningful level.",
+    "Live performance": "Touring scale, ticket demand and reputation on stage.",
+    "Feature impact": "How often features improve records, widen reach or create moments.",
+    "Total Spotify streams": "Cumulative Spotify streams across the artist's tracked catalogue; updated as an editorial snapshot.",
+    "Monthly listeners": "The artist's rolling 28-day Spotify audience — a volatile reach signal, not a fan count."
+  };
+
+  const weights = {
+    alltime: [["Impact & legacy",18],["Global reach",15],["Discography",14],["Commercial power",14],["Awards",10],["Cultural influence",10],["Longevity",8],["Live performance",6],["Feature impact",5]],
+    current: [["Impact & legacy",15],["Global reach",13],["Discography",11],["Commercial power",11],["Awards",8],["Cultural influence",8],["Longevity",6],["Live performance",6],["Feature impact",5],["Total Spotify streams",10],["Monthly listeners",7]]
+  };
+
+  function parseRank(value) {
+    const match = String(value || "").match(/\d+/);
+    return match ? Number(match[0]) : null;
+  }
+
+  function rankedRows(sectionId) {
+    const section = document.getElementById(sectionId);
+    if (!section) return [];
+    if (sectionId === "current" && section.querySelector(".current-row")) {
+      return Array.from(section.querySelectorAll(".current-row")).map((row) => ({
+        name: row.dataset.name,
+        rank: Number(row.dataset.rank),
+        row
+      }));
+    }
+    return Array.from(section.querySelectorAll(".border-t > div"))
+      .map((row) => {
+        const name = row.querySelector("h3")?.textContent?.trim();
+        const rankNode = row.querySelector(":scope > span.serif");
+        const rank = parseRank(rankNode?.textContent);
+        return name && rank ? { name, rank, row } : null;
+      })
+      .filter(Boolean);
+  }
+
+  function rankingMap(sectionId) {
+    const map = new Map(rankedRows(sectionId).map(({ name, rank }) => [name, rank]));
+    if (sectionId === "alltime") {
+      document.querySelectorAll("#alltime .grid h3").forEach((heading) => {
+        const name = heading.textContent?.trim();
+        if (name) map.set(name, 1);
+      });
+    }
+    return map;
+  }
+
+  function makeInfoTip(label) {
+    const tip = document.createElement("button");
+    tip.type = "button";
+    tip.className = "info-tip";
+    tip.textContent = "i";
+    tip.setAttribute("aria-label", `About ${label}`);
+    tip.dataset.tooltip = metrics[label];
+    tip.addEventListener("click", (event) => {
+      event.stopPropagation();
+      document.querySelectorAll(".tip-open").forEach((node) => {
+        if (node !== tip) node.classList.remove("tip-open");
+      });
+      tip.classList.toggle("tip-open");
+    });
+    return tip;
+  }
+
+  function compactNumber(value) {
+    if (!Number.isFinite(value)) return "—";
+    return new Intl.NumberFormat("en", { notation: "compact", maximumFractionDigits: value >= 1e9 ? 2 : 1 }).format(value);
+  }
+
+  function exactNumber(value) {
+    if (!Number.isFinite(value)) return "Not available";
+    return new Intl.NumberFormat("en").format(value);
+  }
+
+  function fixBigThreeCards() {
+    const cards = Array.from(document.querySelectorAll("#alltime > .grid > .relative")).slice(0, 3);
+    cards.forEach((card) => {
+      card.classList.add("big-three-card");
+      const media = card.firstElementChild;
+      const badge = card.querySelector(":scope > .absolute.bottom-3.left-3");
+      if (media && badge) {
+        media.classList.add("big-three-media");
+        media.append(badge);
+      }
+    });
+  }
+
+  function hydrateKnownPortraits() {
+    if (!currentArtists.length) return;
+    const byName = new Map(currentArtists.map((artist) => [artist.name.toLowerCase(), artist]));
+    document.querySelectorAll("img[alt]").forEach((image) => {
+      const artist = byName.get(image.alt.trim().toLowerCase());
+      if (!artist) return;
+      image.removeAttribute("onerror");
+      image.src = artist.image;
+      image.dataset.fallbackSrc = artist.imageFallback || "";
+      image.decoding = "async";
+    });
+  }
+
+  function renderCurrentChart() {
+    const section = document.getElementById("current");
+    if (!section || !currentArtists.length) return;
+    const description = section.querySelector("h2 + p");
+    if (description) {
+      description.innerHTML = `The same nine cross-era signals, plus <strong>Total Spotify streams</strong> and <strong>Monthly listeners</strong> as separate metrics. Open any row for the artist file, exact figures and source links.`;
+    }
+
+    const oldList = section.querySelector(":scope > .border-t");
+    if (!oldList) return;
+    const list = document.createElement("div");
+    list.className = "current-ranking";
+    list.setAttribute("aria-label", "Current Afrobeats artist ranking");
+    list.innerHTML = currentArtists.map((artist) => {
+      const tags = artist.genres.map((genre) => `<span>${genre}</span>`).join("");
+      return `<button class="current-row" type="button" data-name="${artist.name}" data-rank="${artist.rank}" data-artist-slug="${artist.slug}" aria-label="Open ${artist.name} artist file">
+        <span class="current-rank">${String(artist.rank).padStart(2, "0")}</span>
+        <span class="current-avatar"><img src="${artist.image}" data-fallback-src="${artist.imageFallback || ""}" alt="${artist.name}" loading="lazy" decoding="async"></span>
+        <span class="current-identity">
+          <span class="current-kicker">${artist.tagline}</span>
+          <span class="current-name-line"><span class="current-name">${artist.name}</span></span>
+          <span class="current-blurb">${artist.bio}</span>
+          <span class="current-tags">${tags}</span>
+        </span>
+        <span class="current-streams">
+          <span><small>Monthly listeners</small><strong>${compactNumber(artist.monthlyListeners)}</strong></span>
+          <span><small>Total Spotify streams</small><strong>${compactNumber(artist.totalSpotifyStreams)}</strong></span>
+        </span>
+        <span class="current-score"><small>${artist.country}</small><strong>${artist.score.toFixed(1)}</strong><i style="--score:${artist.score}%"></i></span>
+      </button>`;
+    }).join("");
+    oldList.replaceWith(list);
+
+    const note = document.createElement("aside");
+    note.className = "stream-source-note";
+    note.innerHTML = `<span class="live-dot" aria-hidden="true"></span><p><strong>Data desk · 20 Aug 2026.</strong> Monthly listeners are rolling Spotify audiences; catalogue streams are cumulative tracked totals. Both move daily and are evidence inside the Current formula, not the whole verdict. Portraits use public Spotify artist imagery; image rights remain with the artists and rights-holders. <a href="https://www.musicmetricsvault.com/genres/afrobeats/109" target="_blank" rel="noopener noreferrer">Monthly source ↗</a> <a href="https://kworb.net/spotify/" target="_blank" rel="noopener noreferrer">Stream source ↗</a></p>`;
+    list.insertAdjacentElement("afterend", note);
+
+    list.addEventListener("click", (event) => {
+      const row = event.target.closest("[data-artist-slug]");
+      if (row) openCurrentArtist(row.dataset.artistSlug);
+    });
+  }
+
+  function ensureArtistDialog() {
+    let dialog = document.getElementById("current-artist-dialog");
+    if (dialog) return dialog;
+    dialog = document.createElement("dialog");
+    dialog.id = "current-artist-dialog";
+    dialog.className = "artist-dialog";
+    dialog.innerHTML = `<div class="artist-dialog-shell"><button class="artist-dialog-close" type="button" aria-label="Close artist file">×</button><div class="artist-dialog-content"></div></div>`;
+    dialog.querySelector(".artist-dialog-close").addEventListener("click", () => dialog.close());
+    dialog.addEventListener("click", (event) => { if (event.target === dialog) dialog.close(); });
+    dialog.addEventListener("close", () => document.body.classList.remove("dialog-open"));
+    document.body.append(dialog);
+    return dialog;
+  }
+
+  function openCurrentArtist(slug) {
+    const artist = currentArtists.find((entry) => entry.slug === slug);
+    if (!artist) return;
+    const dialog = ensureArtistDialog();
+    const previous = artist.previousRank;
+    const delta = previous == null ? null : previous - artist.rank;
+    const move = previous == null ? "New to the published Current 50" : delta > 0 ? `Up ${delta} from #${previous}` : delta < 0 ? `Down ${Math.abs(delta)} from #${previous}` : `Holding at #${artist.rank}`;
+    dialog.querySelector(".artist-dialog-content").innerHTML = `
+      <div class="artist-dialog-media"><img src="${artist.image}" data-fallback-src="${artist.imageFallback || ""}" alt="Portrait of ${artist.name}"></div>
+      <article class="artist-dialog-copy">
+        <p class="eyebrow">Current artist file · #${artist.rank}</p>
+        <h2>${artist.name}</h2>
+        <p class="artist-dialog-tagline">${artist.tagline}</p>
+        <p class="artist-dialog-bio">${artist.bio}</p>
+        <div class="artist-dialog-metrics">
+          <div><small>Monthly listeners</small><strong>${compactNumber(artist.monthlyListeners)}</strong><span>${exactNumber(artist.monthlyListeners)}</span></div>
+          <div><small>Total Spotify streams</small><strong>${compactNumber(artist.totalSpotifyStreams)}</strong><span>${exactNumber(artist.totalSpotifyStreams)}</span></div>
+          <div><small>Daily tracked streams</small><strong>${compactNumber(artist.dailySpotifyStreams)}</strong><span>${exactNumber(artist.dailySpotifyStreams)}</span></div>
+          <div><small>Chart movement</small><strong>${move}</strong><span>Since the previous editorial snapshot</span></div>
+        </div>
+        <div class="artist-dialog-footer"><span>${artist.country} · ${artist.genres.join(" / ")}</span><span><a href="${artist.spotifyUrl}" target="_blank" rel="noopener noreferrer">Spotify ↗</a><a href="${artist.sources.catalogue}" target="_blank" rel="noopener noreferrer">Stream ledger ↗</a></span></div>
+      </article>`;
+    addImageFallbacks(dialog);
+    document.body.classList.add("dialog-open");
+    if (typeof dialog.showModal === "function") dialog.showModal();
+    else dialog.setAttribute("open", "");
+  }
+
+  window.openCurrentArtist = openCurrentArtist;
+
+  function addMetricStrips() {
+    Object.entries(weights).forEach(([sectionId, list]) => {
+      const section = document.getElementById(sectionId);
+      if (!section || section.querySelector(".metric-strip")) return;
+      const strip = document.createElement("div");
+      strip.className = "metric-strip";
+      strip.setAttribute("aria-label", `${sectionId === "alltime" ? "All-Time" : "Current"} weighted metrics`);
+      list.forEach(([label, weight]) => {
+        const chip = document.createElement("span");
+        chip.className = "metric-chip";
+        chip.append(document.createTextNode(label + " "));
+        const strong = document.createElement("strong");
+        strong.textContent = `${weight}%`;
+        chip.append(strong, makeInfoTip(label));
+        strip.append(chip);
+      });
+      const description = section.querySelector("h2 + p");
+      description?.insertAdjacentElement("afterend", strip);
+    });
+  }
+
+  function enhanceMethodMetrics() {
+    document.querySelectorAll("#method .flex.justify-between").forEach((row) => {
+      const labelNode = row.querySelector("span:last-child");
+      if (!labelNode || labelNode.querySelector(".info-tip")) return;
+      const label = Object.keys(metrics).find((key) => labelNode.textContent.trim().startsWith(key));
+      if (label) labelNode.append(makeInfoTip(label));
+    });
+  }
+
+  function renderCurrentMethod() {
+    const method = document.getElementById("method");
+    const columns = method ? Array.from(method.querySelectorAll(":scope > .grid > div")) : [];
+    const currentColumn = columns[1];
+    if (!currentColumn) return;
+    const heading = currentColumn.querySelector("h3");
+    const list = currentColumn.querySelector(":scope > .border-t");
+    const note = currentColumn.querySelector(":scope > p:last-child");
+    if (heading) heading.textContent = "Current (11 weighted metrics)";
+    if (list) {
+      list.innerHTML = weights.current.map(([label, weight], index) => `<div class="flex justify-between py-2 border-b"><span class="text-[#0047ff]">${String(index + 1).padStart(2, "0")}</span><span${index > 8 ? ' class="font-medium"' : ""}>${label} ${weight}%</span></div>`).join("");
+    }
+    if (note) note.textContent = "Monthly listeners and total Spotify streams are separate Current signals: one captures recent reach; the other captures catalogue depth. Together they account for 17%, so platform scale informs the ranking without controlling it.";
+  }
+
+  function updateDiscussionCopy() {
+    document.querySelectorAll("#discuss p").forEach((paragraph) => {
+      if (!paragraph.textContent.includes("Current uses the exact same nine metrics")) return;
+      paragraph.textContent = "Current keeps the same nine cross-era metrics, then adds two Spotify signals: cumulative catalogue streams and rolling monthly listeners. They are deliberately separated because a deep catalogue and a hot 28-day audience describe different kinds of power.";
+    });
+  }
+
+  function updateFooter() {
+    const footer = document.querySelector("footer p");
+    if (footer) footer.textContent = "AFR/INDEX · Living edition 2026 · 50 All-Time · 50 Current · 11 Current metrics · Editorial rankings, transparent sources";
+  }
+
+  function addFreshnessModule() {
+    const hero = document.querySelector("main > section:first-child");
+    if (!hero) return;
+    const module = document.createElement("section");
+    module.className = "freshness-module";
+    module.setAttribute("aria-labelledby", "freshness-title");
+    module.innerHTML = `
+      <div class="freshness-grid">
+        <div class="update-stamp">
+          <p class="eyebrow" id="freshness-title">Last updated</p>
+          <p class="update-date"><time datetime="2026-08-20">20 Aug<br>2026</time></p>
+          <p class="update-meta">Current chart · Week 34</p>
+        </div>
+        <div class="weekly-log">
+          <div class="weekly-log-head">
+            <p class="eyebrow">This week on the index</p>
+            <span class="live-dot" aria-hidden="true"></span>
+          </div>
+          <ul>
+            <li><span>01</span><span><strong>The Current 50 was recalculated</strong> with monthly listeners added as metric 11.</span></li>
+            <li><span>02</span><span><strong>Tems, Rema and Tyla moved into the top four</strong> after the full data refresh.</span></li>
+            <li><span>03</span><span><strong>JAZZWRLD, CIZA and Shoday entered</strong> a broader pan-African Current list.</span></li>
+          </ul>
+          <div class="chart-tools">
+            <p class="eyebrow">A manual editorial update — every change leaves a trail.</p>
+            <button class="compare-trigger" type="button" data-compare-toggle aria-expanded="false">Compare eras</button>
+          </div>
+        </div>
+      </div>`;
+    hero.insertAdjacentElement("afterend", module);
+  }
+
+  function movementClass(delta, isNew) {
+    if (isNew) return "movement movement-new";
+    if (delta > 0) return "movement movement-up";
+    if (delta < 0) return "movement movement-down";
+    return "movement movement-flat";
+  }
+
+  function addMovements() {
+    const rows = rankedRows("current");
+    const current = Object.fromEntries(rows.map(({ name, rank }) => [name, rank]));
+    const seededPrevious = Object.fromEntries(currentArtists.map((artist) => [artist.name, artist.previousRank]));
+    let previous = seededPrevious;
+
+    try {
+      const saved = JSON.parse(localStorage.getItem(SNAPSHOT_KEY) || "null");
+      if (saved?.version === UPDATE_VERSION && saved.previous) previous = saved.previous;
+      else if (saved?.current) previous = saved.current;
+      localStorage.setItem(SNAPSHOT_KEY, JSON.stringify({ version: UPDATE_VERSION, previous, current }));
+    } catch (_) {
+      previous = seededPrevious;
+    }
+
+    rows.forEach(({ name, rank, row }) => {
+      const heading = row.querySelector(".current-name-line") || row.querySelector("h3");
+      if (!heading || heading.querySelector(".movement")) return;
+      const oldRank = previous[name];
+      const isNew = oldRank == null;
+      const delta = isNew ? 0 : oldRank - rank;
+      const badge = document.createElement("span");
+      badge.className = movementClass(delta, isNew);
+      badge.title = isNew ? "New entry this update" : delta > 0 ? `Up ${delta} from #${oldRank}` : delta < 0 ? `Down ${Math.abs(delta)} from #${oldRank}` : "No movement this update";
+      badge.setAttribute("aria-label", badge.title);
+      badge.textContent = isNew ? "NEW" : delta > 0 ? `↑ ${delta}` : delta < 0 ? `↓ ${Math.abs(delta)}` : "—";
+      heading.append(badge);
+    });
+  }
+
+  function buildCompareView() {
+    const alltime = rankingMap("alltime");
+    const current = rankingMap("current");
+    const names = Array.from(new Set([...alltime.keys(), ...current.keys()])).sort((a, b) => {
+      const aRank = current.get(a) ?? 999;
+      const bRank = current.get(b) ?? 999;
+      return aRank - bRank || (alltime.get(a) ?? 999) - (alltime.get(b) ?? 999) || a.localeCompare(b);
+    });
+
+    const section = document.createElement("section");
+    section.id = "era-compare";
+    section.className = "era-compare";
+    section.hidden = true;
+    section.innerHTML = `
+      <div class="compare-shell">
+        <div class="compare-head">
+          <div><p class="eyebrow">One artist, two conversations</p><h2>Compare eras.</h2></div>
+          <div class="compare-actions">
+            <label class="sr-only" for="compare-search">Find an artist</label>
+            <input id="compare-search" class="compare-search" type="search" placeholder="Find an artist…" autocomplete="off">
+            <button class="compare-close" type="button" aria-label="Close era comparison">×</button>
+          </div>
+        </div>
+        <div class="compare-labels"><span>Artist</span><span>All-Time</span><span>Current</span><span>Read</span></div>
+        <div class="compare-results"></div>
+      </div>`;
+
+    const results = section.querySelector(".compare-results");
+    const render = (query = "") => {
+      const filtered = names.filter((name) => name.toLowerCase().includes(query.trim().toLowerCase()));
+      results.innerHTML = filtered.length ? filtered.map((name) => {
+        const allRank = alltime.get(name);
+        const currentRank = current.get(name);
+        const state = allRank && currentRank ? "Both charts" : currentRank ? "Current only" : "All-Time only";
+        return `<div class="compare-row" data-compare-name="${name.toLowerCase()}">
+          <span class="compare-name">${name}</span>
+          <span class="compare-rank">${allRank ? `#${allRank}` : "—"}</span>
+          <span class="compare-rank compare-current">${currentRank ? `#${currentRank}` : "—"}</span>
+          <span class="compare-state">${state}</span>
+        </div>`;
+      }).join("") : `<p class="compare-empty">No artist matches that search.</p>`;
+    };
+    render();
+    section.querySelector(".compare-search").addEventListener("input", (event) => render(event.target.value));
+    section.querySelector(".compare-close").addEventListener("click", () => setCompareOpen(false));
+    document.querySelector(".freshness-module")?.insertAdjacentElement("afterend", section);
+  }
+
+  function setCompareOpen(open) {
+    const section = document.getElementById("era-compare");
+    if (!section) return;
+    section.hidden = !open;
+    document.querySelectorAll("[data-compare-toggle]").forEach((button) => button.setAttribute("aria-expanded", String(open)));
+    if (open) {
+      section.scrollIntoView({ behavior: "smooth", block: "start" });
+      setTimeout(() => section.querySelector(".compare-search")?.focus({ preventScroll: true }), 350);
+    }
+  }
+
+  function addChartButtons() {
+    ["alltime", "current"].forEach((id) => {
+      const section = document.getElementById(id);
+      const strip = section?.querySelector(".metric-strip");
+      if (!strip) return;
+      const tools = document.createElement("div");
+      tools.className = "chart-tools";
+      tools.innerHTML = `<p class="eyebrow">Rankings are easier to argue with when you can see both sides.</p><button class="compare-trigger" type="button" data-compare-toggle aria-expanded="false">Compare eras</button>`;
+      strip.insertAdjacentElement("afterend", tools);
+    });
+    document.querySelectorAll("[data-compare-toggle]").forEach((button) => button.addEventListener("click", () => {
+      const section = document.getElementById("era-compare");
+      setCompareOpen(Boolean(section?.hidden));
+    }));
+  }
+
+  function addMethodStory() {
+    const method = document.getElementById("method");
+    if (!method || method.querySelector(".method-notes")) return;
+    const notes = document.createElement("section");
+    notes.className = "method-notes";
+    notes.innerHTML = `
+      <p class="eyebrow">Behind the index</p>
+      <p class="method-intro">I built AFR/INDEX because I got tired of “greatest Afrobeats artists” lists that felt like <em>fan wars with numbers added later.</em> I wanted the argument to start with a method you could inspect — even if you still disagree with the result.</p>
+      <div class="build-grid">
+        <article class="build-card"><span class="build-number">01</span><h3>Built</h3><p>A cross-era weighting formula that does not punish Fela, 2Baba or P-Square for doing their best work before Spotify existed.</p></article>
+        <article class="build-card"><span class="build-number">02</span><h3>Learned</h3><p>Public numbers fight each other. One tracker says one thing, another says something else — and net-worth pages are worse. The honest answer is ranges, source notes and calling an estimate an estimate.</p></article>
+        <article class="build-card"><span class="build-number">03</span><h3>Challenge</h3><p>Ranking real people means every score has to survive the obvious question: “Why is this artist above that one?” Being defensible matters more than pretending the list is perfect.</p></article>
+      </div>`;
+    method.append(notes);
+  }
+
+  function addImageFallbacks(root = document) {
+    root.querySelectorAll("img").forEach((image) => {
+      if (image.dataset.fallbackBound === "true") return;
+      image.dataset.fallbackBound = "true";
+      const applyFallback = () => {
+        if (image.dataset.fallbackSrc && image.dataset.fallbackTried !== "true") {
+          image.dataset.fallbackTried = "true";
+          image.src = image.dataset.fallbackSrc;
+          return;
+        }
+        const parent = image.parentElement;
+        if (!parent || parent.classList.contains("artist-fallback")) return;
+        const initials = (image.alt || "AF").split(/\s+/).map((word) => word[0]).join("").slice(0, 2).toUpperCase();
+        parent.classList.add("artist-fallback");
+        parent.dataset.initials = initials;
+      };
+      image.addEventListener("error", applyFallback, { once: true });
+      if (image.complete && image.naturalWidth === 0) applyFallback();
+    });
+  }
+
+  function enhanceTabs() {
+    document.querySelectorAll("nav").forEach((nav) => nav.setAttribute("role", "tablist"));
+    const originalShowTab = window.showTab;
+    if (typeof originalShowTab !== "function") return;
+    window.showTab = function (id) {
+      originalShowTab(id);
+      document.querySelectorAll(".nav-btn").forEach((button) => {
+        const selected = button.classList.contains("nav-active");
+        button.setAttribute("aria-selected", String(selected));
+        button.setAttribute("role", "tab");
+      });
+    };
+    window.showTab("alltime");
+  }
+
+  function init() {
+    hydrateKnownPortraits();
+    fixBigThreeCards();
+    renderCurrentChart();
+    addFreshnessModule();
+    addMetricStrips();
+    renderCurrentMethod();
+    enhanceMethodMetrics();
+    updateDiscussionCopy();
+    updateFooter();
+    addMovements();
+    buildCompareView();
+    addChartButtons();
+    addMethodStory();
+    addImageFallbacks();
+    enhanceTabs();
+    document.addEventListener("click", () => document.querySelectorAll(".tip-open").forEach((node) => node.classList.remove("tip-open")));
+    const edition = document.querySelector("body > div:first-child span:last-child");
+    if (edition) edition.textContent = "Living index · Updated 20 Aug 2026";
+  }
+
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
+  else init();
+})();
+
   </script>
 </body>
 </html>
