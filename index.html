@@ -339,6 +339,93 @@ thead { border-color: var(--paper) !important; }
   *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; }
 }
 
+/* ============ VS / COMPARE MODULE ============ */
+.vs-shell { max-width: 72rem; margin: 0 auto; }
+.vs-intro { max-width: 46rem; }
+.vs-intro p { color: var(--muted); font-size: .86rem; line-height: 1.6; margin-top: .5rem; }
+.vs-picker {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 1rem;
+  align-items: end;
+  margin: 2rem 0;
+  padding: 1.5rem;
+  border: 1px solid var(--line);
+  background: var(--ink-soft);
+}
+.vs-picker-field { display: flex; flex-direction: column; gap: .4rem; }
+.vs-picker-field label { color: var(--muted); font-size: .62rem; letter-spacing: .12em; text-transform: uppercase; }
+.vs-picker-field select {
+  appearance: none;
+  border: 1px solid var(--line);
+  background: #09090b;
+  color: var(--paper);
+  padding: .7rem .8rem;
+  font: 500 .88rem/1 Inter, sans-serif;
+}
+.vs-picker-field select:focus { border-color: var(--acid); outline: none; }
+.vs-versus-mark { display: flex; align-items: center; justify-content: center; color: var(--acid); font: 400 1.6rem/1 'Instrument Serif', Georgia, serif; padding-bottom: .6rem; }
+.vs-picker-actions { grid-column: 1 / -1; display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; margin-top: .25rem; }
+.vs-random { border: 1px solid var(--line); background: transparent; color: var(--muted); padding: .5rem .75rem; font-size: .68rem; letter-spacing: .06em; text-transform: uppercase; cursor: pointer; }
+.vs-random:hover { border-color: var(--acid); color: var(--acid); }
+.vs-share { border: 1px solid var(--line); background: transparent; color: var(--muted); padding: .5rem .75rem; font-size: .68rem; letter-spacing: .06em; text-transform: uppercase; cursor: pointer; }
+.vs-share:hover { border-color: var(--blue); color: var(--blue); }
+.vs-empty { padding: 3rem 1rem; text-align: center; color: var(--muted); border: 1px dashed var(--line); }
+.vs-result { border: 1px solid var(--line); background: #101012; }
+.vs-heads { display: grid; grid-template-columns: 1fr auto 1fr; border-bottom: 1px solid var(--line); }
+.vs-head { padding: 1.5rem; display: flex; flex-direction: column; align-items: center; text-align: center; gap: .6rem; }
+.vs-head-photo { width: 6rem; height: 6rem; border-radius: 50%; overflow: hidden; background: #1e1e22; border: 2px solid var(--line); }
+.vs-head-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.vs-head h3 { font: 400 1.7rem/1 'Instrument Serif', Georgia, serif; }
+.vs-head .vs-country { color: var(--muted); font-size: .68rem; letter-spacing: .08em; text-transform: uppercase; }
+.vs-head .vs-genres { display: flex; flex-wrap: wrap; gap: .3rem; justify-content: center; }
+.vs-head .vs-genres span { border: 1px solid var(--line); border-radius: 999px; padding: .16rem .4rem; color: #8f8f95; font-size: .54rem; letter-spacing: .06em; }
+.vs-head.vs-winner h3 { color: var(--acid); }
+.vs-head.vs-winner .vs-head-photo { border-color: var(--acid); }
+.vs-crown { display: inline-flex; align-items: center; gap: .3rem; color: var(--acid); font: 700 .6rem/1 Inter, sans-serif; letter-spacing: .1em; text-transform: uppercase; }
+.vs-mid-mark { display: flex; align-items: center; justify-content: center; padding: 1.5rem .5rem; color: #5c5c63; font: 400 2rem/1 'Instrument Serif', Georgia, serif; border-left: 1px solid var(--line); border-right: 1px solid var(--line); }
+.vs-bio-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--line); border-bottom: 1px solid var(--line); }
+.vs-bio-row > div { background: var(--ink-soft); padding: 1.1rem 1.5rem; color: #c7c5bf; font-size: .8rem; line-height: 1.55; }
+.vs-metric { display: grid; grid-template-columns: 1fr 9rem 1fr; align-items: center; padding: .8rem 1.2rem; border-bottom: 1px solid #25252a; gap: .5rem; }
+.vs-metric:last-child { border-bottom: 0; }
+.vs-metric-label { grid-column: 1 / -1; text-align: center; color: var(--muted); font-size: .6rem; letter-spacing: .12em; text-transform: uppercase; margin-bottom: .3rem; }
+.vs-metric-val { font: 400 1.25rem/1 'Instrument Serif', Georgia, serif; padding: .1rem 0; }
+.vs-metric-val.vs-left { text-align: right; padding-right: .5rem; }
+.vs-metric-val.vs-right { text-align: left; padding-left: .5rem; }
+.vs-metric-val.vs-lead { color: var(--acid); }
+.vs-metric-bar { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1fr; height: 4px; background: #232327; overflow: hidden; }
+.vs-metric-bar > span { display: block; height: 100%; }
+.vs-metric-bar .vs-bar-left { background: var(--blue); justify-self: end; }
+.vs-metric-bar .vs-bar-right { background: var(--coral); }
+.vs-verdict { padding: 1.5rem; text-align: center; border-top: 1px solid var(--line); }
+.vs-verdict p { color: var(--muted); font-size: .78rem; max-width: 34rem; margin: .4rem auto 0; line-height: 1.55; }
+.vs-verdict strong { color: var(--paper); }
+.vs-vote { padding: 1.5rem; border-top: 1px solid var(--line); }
+.vs-vote-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: .8rem; }
+.vs-vote-head p.eyebrow { margin: 0; }
+.vs-vote-total { color: var(--muted); font-size: .68rem; }
+.vs-vote-bar { position: relative; display: flex; height: 2.75rem; border: 1px solid var(--line); overflow: hidden; }
+.vs-vote-bar button { flex: 1 1 0; position: relative; border: 0; background: #17171a; color: var(--paper); font: 600 .78rem/1 Inter, sans-serif; cursor: pointer; z-index: 2; transition: color .2s; }
+.vs-vote-bar button:first-child { text-align: left; padding-left: 1rem; }
+.vs-vote-bar button:last-child { text-align: right; padding-right: 1rem; }
+.vs-vote-fill { position: absolute; top: 0; bottom: 0; z-index: 1; transition: width .3s ease; }
+.vs-vote-fill.vs-fill-left { left: 0; background: rgba(102,124,255,.28); }
+.vs-vote-fill.vs-fill-right { right: 0; background: rgba(255,107,89,.28); }
+.vs-vote-pct { display: block; font-size: .62rem; color: var(--muted); margin-top: .2rem; }
+.vs-voted-note { margin-top: .6rem; color: var(--acid); font-size: .66rem; text-align: center; }
+@media (max-width: 760px) {
+  .vs-picker { grid-template-columns: 1fr; }
+  .vs-versus-mark { padding: .25rem 0; }
+  .vs-heads { grid-template-columns: 1fr auto 1fr; }
+  .vs-head { padding: 1rem .5rem; }
+  .vs-head-photo { width: 4rem; height: 4rem; }
+  .vs-head h3 { font-size: 1.2rem; }
+  .vs-head .vs-genres { display: none; }
+  .vs-bio-row { grid-template-columns: 1fr; }
+  .vs-metric { grid-template-columns: 1fr 6rem 1fr; padding: .6rem .5rem; }
+  .vs-metric-val { font-size: 1rem; }
+}
+
   </style>
   <link rel="canonical" href="https://portfolio-favour12.vercel.app/afri-index.html">
 </head>
@@ -355,6 +442,7 @@ thead { border-color: var(--paper) !important; }
           <button onclick="showTab('current')" class="nav-btn px-4 py-4 hover:bg-gray-50">CURRENT 50</button>
           <button onclick="showTab('albums')" class="nav-btn px-4 py-4 hover:bg-gray-50">ALBUMS</button>
           <button onclick="showTab('artists')" class="nav-btn px-4 py-4 hover:bg-gray-50">ARTISTS</button>
+          <button onclick="showTab('vs')" class="nav-btn px-4 py-4 hover:bg-gray-50">VS</button>
           <button onclick="showTab('networth')" class="nav-btn px-4 py-4 hover:bg-gray-50">NET WORTH</button>
           <button onclick="showTab('discuss')" class="nav-btn px-4 py-4 hover:bg-gray-50">DISCUSSION</button>
           <button onclick="showTab('method')" class="nav-btn px-4 py-4 hover:bg-gray-50">METHOD</button>
@@ -365,6 +453,7 @@ thead { border-color: var(--paper) !important; }
         <button onclick="showTab('current')" class="nav-btn px-3 py-1.5 text-xs font-medium whitespace-nowrap bg-gray-100">CURRENT</button>
         <button onclick="showTab('albums')" class="nav-btn px-3 py-1.5 text-xs font-medium whitespace-nowrap bg-gray-100">ALBUMS</button>
         <button onclick="showTab('artists')" class="nav-btn px-3 py-1.5 text-xs font-medium whitespace-nowrap bg-gray-100">ARTISTS</button>
+        <button onclick="showTab('vs')" class="nav-btn px-3 py-1.5 text-xs font-medium whitespace-nowrap bg-gray-100">VS</button>
         <button onclick="showTab('networth')" class="nav-btn px-3 py-1.5 text-xs font-medium whitespace-nowrap bg-gray-100">NET WORTH</button>
         <button onclick="showTab('discuss')" class="nav-btn px-3 py-1.5 text-xs font-medium whitespace-nowrap bg-gray-100">DISCUSS</button>
         <button onclick="showTab('method')" class="nav-btn px-3 py-1.5 text-xs font-medium whitespace-nowrap bg-gray-100">METHOD</button>
@@ -2510,6 +2599,33 @@ thead { border-color: var(--paper) !important; }
       </div>
     </section>
 
+
+    <!-- VS / COMPARE -->
+    <section id="vs" class="tab-content max-w-6xl mx-auto px-4 py-10">
+      <div class="vs-shell">
+        <div class="vs-intro">
+          <h2 class="serif text-3xl sm:text-4xl mb-1">Head to Head</h2>
+          <p>Pick any two artists from the Current 50 and see them side by side — streams, listeners, score, and the community's pick.</p>
+        </div>
+        <div class="vs-picker">
+          <div class="vs-picker-field">
+            <label for="vs-select-a">Artist A</label>
+            <select id="vs-select-a"></select>
+          </div>
+          <div class="vs-versus-mark" aria-hidden="true">VS</div>
+          <div class="vs-picker-field">
+            <label for="vs-select-b">Artist B</label>
+            <select id="vs-select-b"></select>
+          </div>
+          <div class="vs-picker-actions">
+            <button class="vs-random" type="button" id="vs-random-btn">Surprise me</button>
+            <button class="vs-share" type="button" id="vs-share-btn">Copy link to this matchup</button>
+          </div>
+        </div>
+        <div id="vs-output"></div>
+      </div>
+    </section>
+
     <!-- NET WORTH -->
     <section id="networth" class="tab-content max-w-6xl mx-auto px-4 py-10">
       <h2 class="serif text-3xl sm:text-4xl mb-2">Net Worth Index</h2>
@@ -2612,6 +2728,7 @@ thead { border-color: var(--paper) !important; }
         const t = btn.textContent.toLowerCase().replace(/\s+/g,'');
         if ((id==='alltime'&&t.includes('all-time'))||(id==='current'&&t.includes('current'))||
             (id==='albums'&&t.includes('albums'))||(id==='artists'&&t.includes('artists'))||
+            (id==='vs'&&t.includes('vs'))||
             (id==='networth'&&(t.includes('net')||t.includes('worth')))||
             (id==='discuss'&&t.includes('discuss'))||(id==='method'&&t.includes('method'))) {
           btn.classList.add('nav-active'); btn.classList.remove('bg-gray-100');
@@ -4361,5 +4478,219 @@ window.AFRI_CURRENT_ARTISTS = [
 })();
 
   </script>
+
+<script>
+(function () {
+  const VOTE_KEY_PREFIX = "afri-index-vs-vote:";
+  function artists() {
+    return Array.isArray(window.AFRI_CURRENT_ARTISTS) ? window.AFRI_CURRENT_ARTISTS : [];
+  }
+  function bySlug(slug) {
+    return artists().find((a) => a.slug === slug);
+  }
+  function compactNumber(value) {
+    if (!Number.isFinite(value)) return "—";
+    return new Intl.NumberFormat("en", { notation: "compact", maximumFractionDigits: value >= 1e9 ? 2 : 1 }).format(value);
+  }
+  function pairKey(slugA, slugB) {
+    return VOTE_KEY_PREFIX + [slugA, slugB].sort().join("__");
+  }
+  function getVotes(slugA, slugB) {
+    try {
+      const raw = localStorage.getItem(pairKey(slugA, slugB));
+      const parsed = raw ? JSON.parse(raw) : {};
+      return { [slugA]: parsed[slugA] || 0, [slugB]: parsed[slugB] || 0 };
+    } catch (_) {
+      return { [slugA]: 0, [slugB]: 0 };
+    }
+  }
+  function castVote(slugA, slugB, pick) {
+    const votes = getVotes(slugA, slugB);
+    votes[pick] = (votes[pick] || 0) + 1;
+    try {
+      localStorage.setItem(pairKey(slugA, slugB), JSON.stringify(votes));
+      localStorage.setItem(pairKey(slugA, slugB) + ":voted", "1");
+    } catch (_) { /* storage unavailable — vote just won't persist */ }
+    return votes;
+  }
+  function hasVoted(slugA, slugB) {
+    try {
+      return localStorage.getItem(pairKey(slugA, slugB) + ":voted") === "1";
+    } catch (_) {
+      return false;
+    }
+  }
+  function populateSelects() {
+    const list = artists().slice().sort((a, b) => a.name.localeCompare(b.name));
+    const selA = document.getElementById("vs-select-a");
+    const selB = document.getElementById("vs-select-b");
+    if (!selA || !selB || !list.length) return;
+    const options = list.map((a) => `<option value="${a.slug}">${a.name}</option>`).join("");
+    selA.innerHTML = options;
+    selB.innerHTML = options;
+    selA.value = list[0]?.slug;
+    selB.value = list[1]?.slug || list[0]?.slug;
+  }
+  function metricRow(label, a, b, formatFn) {
+    const av = Number(a) || 0;
+    const bv = Number(b) || 0;
+    const total = av + bv;
+    const leftPct = total ? Math.round((av / total) * 100) : 50;
+    const rightPct = 100 - leftPct;
+    const aLead = av > bv;
+    const bLead = bv > av;
+    return `
+      <div class="vs-metric">
+        <span class="vs-metric-label">${label}</span>
+        <span class="vs-metric-val vs-left${aLead ? " vs-lead" : ""}">${formatFn(av)}</span>
+        <span></span>
+        <span class="vs-metric-val vs-right${bLead ? " vs-lead" : ""}">${formatFn(bv)}</span>
+        <div class="vs-metric-bar"><span class="vs-bar-left" style="width:${leftPct}%"></span><span class="vs-bar-right" style="width:${rightPct}%"></span></div>
+      </div>`;
+  }
+  function renderVoteBar(artistA, artistB) {
+    const votes = getVotes(artistA.slug, artistB.slug);
+    const total = votes[artistA.slug] + votes[artistB.slug];
+    const leftPct = total ? Math.round((votes[artistA.slug] / total) * 100) : 50;
+    const rightPct = 100 - leftPct;
+    const voted = hasVoted(artistA.slug, artistB.slug);
+    return `
+      <div class="vs-vote">
+        <div class="vs-vote-head">
+          <p class="eyebrow">Who wins this one? (community pick, this browser)</p>
+          <span class="vs-vote-total">${total} vote${total === 1 ? "" : "s"}</span>
+        </div>
+        <div class="vs-vote-bar">
+          <div class="vs-vote-fill vs-fill-left" style="width:${leftPct}%"></div>
+          <div class="vs-vote-fill vs-fill-right" style="width:${rightPct}%"></div>
+          <button type="button" data-vote-slug="${artistA.slug}" ${voted ? "disabled" : ""}>${artistA.name}<span class="vs-vote-pct">${leftPct}%</span></button>
+          <button type="button" data-vote-slug="${artistB.slug}" ${voted ? "disabled" : ""}>${artistB.name}<span class="vs-vote-pct">${rightPct}%</span></button>
+        </div>
+        ${voted ? '<p class="vs-voted-note">Thanks — your pick is counted for this matchup.</p>' : ""}
+      </div>`;
+  }
+  function renderComparison(slugA, slugB) {
+    const output = document.getElementById("vs-output");
+    if (!output) return;
+    const a = bySlug(slugA);
+    const b = bySlug(slugB);
+    if (!a || !b) {
+      output.innerHTML = `<div class="vs-empty">Pick two artists to compare.</div>`;
+      return;
+    }
+    if (a.slug === b.slug) {
+      output.innerHTML = `<div class="vs-empty">Pick two <em>different</em> artists to compare.</div>`;
+      return;
+    }
+    const aWins = a.score > b.score;
+    const bWins = b.score > a.score;
+    const winner = aWins ? a : bWins ? b : null;
+    const imgTag = (artist) => {
+      const fallback = (artist.imageFallback || "").replace(/'/g, "\\'");
+      return `<img src="${artist.image}" alt="${artist.name}" onerror="if(!this.dataset.tried){this.dataset.tried='1';this.src='${fallback}';}else{this.style.opacity=.25;}">`;
+    };
+    output.innerHTML = `
+      <div class="vs-result">
+        <div class="vs-heads">
+          <div class="vs-head${aWins ? " vs-winner" : ""}">
+            ${aWins ? '<span class="vs-crown">★ Current edge</span>' : ""}
+            <div class="vs-head-photo">${imgTag(a)}</div>
+            <h3>${a.name}</h3>
+            <p class="vs-country">${a.country} · ${a.tagline}</p>
+            <div class="vs-genres">${a.genres.map((g) => `<span>${g}</span>`).join("")}</div>
+          </div>
+          <div class="vs-mid-mark">VS</div>
+          <div class="vs-head${bWins ? " vs-winner" : ""}">
+            ${bWins ? '<span class="vs-crown">★ Current edge</span>' : ""}
+            <div class="vs-head-photo">${imgTag(b)}</div>
+            <h3>${b.name}</h3>
+            <p class="vs-country">${b.country} · ${b.tagline}</p>
+            <div class="vs-genres">${b.genres.map((g) => `<span>${g}</span>`).join("")}</div>
+          </div>
+        </div>
+        <div class="vs-bio-row"><div>${a.bio}</div><div>${b.bio}</div></div>
+        ${metricRow("Current Power Score", a.score, b.score, (v) => v.toFixed(1))}
+        ${metricRow("Monthly listeners", a.monthlyListeners, b.monthlyListeners, compactNumber)}
+        ${metricRow("Total Spotify streams", a.totalSpotifyStreams, b.totalSpotifyStreams, compactNumber)}
+        ${metricRow("Daily tracked streams", a.dailySpotifyStreams, b.dailySpotifyStreams, compactNumber)}
+        <div class="vs-verdict">
+          <p class="eyebrow">Verdict</p>
+          ${winner
+            ? `<p>On the Current Power Score, <strong>${winner.name}</strong> has the edge right now (${winner.score.toFixed(1)} vs ${(winner === a ? b : a).score.toFixed(1)}). Streaming reach and momentum can shift this week to week — vote below with your own take.</p>`
+            : `<p>Dead even on the Current Power Score (${a.score.toFixed(1)}). This one's genuinely a coin flip.</p>`}
+        </div>
+        ${renderVoteBar(a, b)}
+      </div>`;
+    output.querySelectorAll("[data-vote-slug]").forEach((button) => {
+      button.addEventListener("click", () => {
+        if (hasVoted(a.slug, b.slug)) return;
+        castVote(a.slug, b.slug, button.dataset.voteSlug);
+        renderComparison(a.slug, b.slug);
+      });
+    });
+  }
+  function currentPair() {
+    const selA = document.getElementById("vs-select-a");
+    const selB = document.getElementById("vs-select-b");
+    return [selA?.value, selB?.value];
+  }
+  function syncFromUrl() {
+    const params = new URLSearchParams(window.location.search);
+    const vs = params.get("vs");
+    if (!vs) return false;
+    const [slugA, slugB] = vs.split(",").map((s) => s.trim());
+    const selA = document.getElementById("vs-select-a");
+    const selB = document.getElementById("vs-select-b");
+    if (!bySlug(slugA) || !bySlug(slugB) || !selA || !selB) return false;
+    selA.value = slugA;
+    selB.value = slugB;
+    return true;
+  }
+  function initVsSection() {
+    if (!document.getElementById("vs-select-a")) return;
+    populateSelects();
+    const deepLinked = syncFromUrl();
+    const selA = document.getElementById("vs-select-a");
+    const selB = document.getElementById("vs-select-b");
+    const randomBtn = document.getElementById("vs-random-btn");
+    const shareBtn = document.getElementById("vs-share-btn");
+    const rerender = () => {
+      const [slugA, slugB] = currentPair();
+      renderComparison(slugA, slugB);
+    };
+    selA.addEventListener("change", rerender);
+    selB.addEventListener("change", rerender);
+    randomBtn?.addEventListener("click", () => {
+      const list = artists();
+      if (list.length < 2) return;
+      let i = Math.floor(Math.random() * list.length);
+      let j = Math.floor(Math.random() * list.length);
+      while (j === i) j = Math.floor(Math.random() * list.length);
+      selA.value = list[i].slug;
+      selB.value = list[j].slug;
+      rerender();
+    });
+    shareBtn?.addEventListener("click", async () => {
+      const [slugA, slugB] = currentPair();
+      const url = new URL(window.location.href);
+      url.hash = "";
+      url.searchParams.set("vs", `${slugA},${slugB}`);
+      const link = url.toString();
+      try {
+        await navigator.clipboard.writeText(link);
+        shareBtn.textContent = "Link copied!";
+      } catch (_) {
+        window.prompt("Copy this link:", link);
+      }
+      setTimeout(() => { shareBtn.textContent = "Copy link to this matchup"; }, 1800);
+    });
+    rerender();
+    if (deepLinked && typeof window.showTab === "function") window.showTab("vs");
+  }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", initVsSection);
+  else initVsSection();
+})();
+</script>
+
 </body>
 </html>
