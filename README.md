@@ -4,18 +4,22 @@ An editorial Afrobeats ranking that shows its work across eras.
 
 ## What is included
 
-- All-Time 50 and a researched Current 50
-- Weekly movement indicators and update log
-- Side-by-side Compare Eras view
-- Eleven weighted Current metrics
-- Monthly Spotify listeners and cumulative tracked Spotify streams
+- All-Time 50 and a recomputed Current 50
+- Eleven weighted Current inputs with an inspectable score ledger
+- Structured award records scored by tier and result
+- TurnTable certification plaques folded into Commercial Power
+- A 45/30/25 Spotify, Boomplay, and YouTube stream model that reweights verified snapshots automatically
+- Weekly movement, Compare Eras, source links, and update notes
 - Fifty locally cached artist portraits and original editorial profiles
-- Inline methodology explanations for every metric
 
 ## Live site
 
-https://portfolio-favour12.vercel.app/afri-index.html
+https://afrobeats-index.vercel.app/
 
 ## Data note
 
-Spotify figures are an editorial snapshot dated 20 August 2026. Monthly listeners and tracked catalogue totals change daily; the final ranking combines those signals with nine qualitative and career metrics.
+The Current chart uses dated editorial snapshots. Spotify is verified across the Current 50; Boomplay and YouTube fields are integrated and remain explicitly marked pending until verified snapshots are entered. Missing platform values are never guessed.
+
+## Maintenance
+
+Run `npm test` before publishing. If `scripts/ranking-upgrade.js` changes, run `npm run embed` to refresh its embedded copy in `index.html`.
