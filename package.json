@@ -1,0 +1,11 @@
+{
+  "name": "afrobeats-index",
+  "version": "3.0.0",
+  "private": true,
+  "description": "The living, transparent Afrobeats index.",
+  "homepage": "https://afrobeats-index.vercel.app/",
+  "scripts": {
+    "embed": "node scripts/embed-ranking-upgrade.mjs index.html",
+    "test": "node scripts/verify-build.mjs"
+  }
+}
