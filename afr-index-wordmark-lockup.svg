@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 96" width="480" height="96">
+  <rect x="0" y="8" width="80" height="80" rx="18" fill="#d4ff3d"/>
+  <text x="40" y="66" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="42" fill="#0a0a08" text-anchor="middle">A/</text>
+  <text x="100" y="62" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="46" fill="#f2f0e6">AFR<tspan fill="#d4ff3d">/</tspan>INDEX</text>
+</svg>
