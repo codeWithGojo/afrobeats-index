@@ -1,4 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
-  <rect x="0" y="0" width="512" height="512" rx="96" fill="#d4ff3d"/>
-  <text x="256" y="330" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="260" fill="#0a0a08" text-anchor="middle">A/</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="AFR/INDEX">
+  <rect width="512" height="512" rx="72" fill="#c8ff31"/>
+  <path d="M112 354 216 112h68l104 242h-70l-24-62h-94l-24 62Zm112-125h47l-23-62Z" fill="#080b09"/>
+  <path d="m350 382 74-268h44l-75 268Z" fill="#080b09"/>
 </svg>
