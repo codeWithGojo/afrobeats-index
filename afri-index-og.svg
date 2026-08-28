@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#0a0a0b"/>
+  <circle cx="1050" cy="-50" r="330" fill="#667cff" opacity="0.9"/>
+  <circle cx="1120" cy="560" r="250" fill="#d4ff00" opacity="0.95"/>
+  <path d="M0 485 C260 390 410 610 680 500 C860 425 970 405 1200 470 L1200 630 L0 630 Z" fill="#151518"/>
+  <text x="72" y="96" fill="#d4ff00" font-family="Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="7">THE LIVING AFROBEATS INDEX</text>
+  <text x="70" y="285" fill="#ffffff" font-family="Georgia, serif" font-size="138" font-weight="700">AFR/INDEX</text>
+  <text x="76" y="354" fill="#b8b8bf" font-family="Arial, sans-serif" font-size="30">All-Time 50 · Current 50 · Artist Archive</text>
+  <rect x="73" y="412" width="540" height="2" fill="#44444a"/>
+  <text x="74" y="470" fill="#ffffff" font-family="Arial, sans-serif" font-size="23">Rankings with transparent metrics, verified streams</text>
+  <text x="74" y="506" fill="#ffffff" font-family="Arial, sans-serif" font-size="23">and official certification records.</text>
+  <text x="74" y="574" fill="#8e8e95" font-family="Arial, sans-serif" font-size="18">Designed by Favour</text>
+</svg>
