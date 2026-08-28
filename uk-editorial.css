@@ -498,23 +498,58 @@ footer {
   #discuss .space-y-4 { padding-left: 20px; font-size: 24px !important; }
 }
 
-/* Keep mobile search in the header flow instead of covering the swipeable tabs. */
+/* Mobile-first edition: compact, touchable and intentionally editorial. */
 @media (max-width: 640px) {
+  :root {
+    --uk-black: #080b09;
+    --uk-charcoal: #101512;
+    --uk-panel: #171d19;
+    --uk-cream: #f5f1e8;
+    --uk-muted: #aeb5ae;
+    --uk-line: rgba(245, 241, 232, .17);
+    --uk-lime: #c8ff31;
+    --uk-blue: #91a7ff;
+    --uk-red: #ff765d;
+  }
+
+  html { scroll-padding-top: 130px; }
+  body { font-size: 15px; background: var(--uk-black) !important; }
+
+  .masthead-kicker {
+    min-height: 28px !important;
+    padding: 0 12px !important;
+    gap: 16px;
+    font-size: 7px !important;
+    letter-spacing: .12em !important;
+  }
+
+  .masthead-kicker span:first-child { overflow: hidden; text-overflow: ellipsis; }
+  .masthead-kicker span:last-child { flex: 0 0 auto; color: var(--uk-lime); }
+
+  header {
+    top: 0;
+    border-bottom-color: var(--uk-line) !important;
+    background: rgba(8, 11, 9, .96) !important;
+  }
+
+  header > div { padding: 0 12px !important; }
   header .h-14 {
-    gap: .65rem;
+    height: 60px !important;
+    gap: 10px;
   }
 
   .brand-lockup {
-    min-width: 44px !important;
-    flex: 0 0 44px;
-    border-right: 0 !important;
+    min-width: 0 !important;
+    flex: 0 0 118px;
+    padding: 7px 0 !important;
+    border: 0 !important;
   }
 
   .brand-lockup img {
-    width: 34px !important;
-    height: 34px !important;
-    object-fit: cover;
-    object-position: left;
+    width: 118px !important;
+    height: auto !important;
+    object-fit: contain;
+    object-position: left center;
   }
 
   .global-search {
@@ -527,23 +562,357 @@ footer {
     background: transparent !important;
   }
 
+  .global-search::before {
+    content: "⌕";
+    position: absolute;
+    left: 11px;
+    top: 50%;
+    z-index: 2;
+    color: var(--uk-muted);
+    font-size: 18px;
+    line-height: 1;
+    transform: translateY(-53%);
+    pointer-events: none;
+  }
+
   .global-search input {
     width: 100% !important;
     min-width: 0;
-    height: 36px;
+    height: 38px;
+    padding: 0 10px 0 32px !important;
+    border-color: var(--uk-line) !important;
+    border-radius: 8px;
+    background: var(--uk-panel) !important;
+    font-size: 12px !important;
   }
 
+  .global-search input::placeholder { color: #7f877f; }
   .search-results {
-    top: calc(100% + .4rem) !important;
-    left: 0 !important;
+    top: calc(100% + 8px) !important;
+    left: auto !important;
     right: 0 !important;
-    width: auto !important;
+    width: min(290px, calc(100vw - 24px)) !important;
+    max-height: min(56vh, 360px);
+    border-color: var(--uk-line);
+    border-radius: 10px;
+    box-shadow: 0 22px 60px rgba(0, 0, 0, .48);
+  }
+
+  .search-results button {
+    min-height: 46px;
+    padding: 11px 12px;
+    font-size: 12px;
   }
 
   header .md\:hidden {
     position: relative;
     z-index: 1;
-    scroll-padding-inline: 14px;
+    gap: 6px !important;
+    margin: 0 -12px !important;
+    padding: 6px 12px 10px !important;
+    scroll-padding-inline: 12px;
+    scrollbar-width: none;
+    border-top: 1px solid rgba(255, 255, 255, .05);
+  }
+
+  header .md\:hidden::-webkit-scrollbar,
+  #alltime > .grid::-webkit-scrollbar { display: none; }
+
+  header .md\:hidden button {
+    min-height: 34px;
+    padding: 0 12px !important;
+    border: 1px solid var(--uk-line) !important;
+    border-radius: 999px !important;
+    background: transparent !important;
+    color: var(--uk-muted) !important;
+    font-size: 9px !important;
+    font-weight: 800;
+    letter-spacing: .04em;
+  }
+
+  header .md\:hidden button.nav-active {
+    border-color: var(--uk-lime) !important;
+    background: var(--uk-lime) !important;
+    color: var(--uk-black) !important;
+  }
+
+  main > section:first-child { border-color: var(--uk-line) !important; }
+  main > section:first-child > div { display: block !important; }
+  main > section:first-child > div > div:first-child {
+    min-height: 350px !important;
+    padding: 36px 20px 38px !important;
+    background:
+      radial-gradient(circle at 84% 18%, rgba(200, 255, 49, .15), transparent 9rem),
+      linear-gradient(145deg, #161d13 0%, #080b09 60%) !important;
+  }
+
+  main > section:first-child > div > div:first-child::after {
+    content: "AFR/26";
+    position: absolute;
+    right: 20px;
+    bottom: 28px;
+    color: rgba(245, 241, 232, .23);
+    font: 700 9px/1 Inter, sans-serif;
+    letter-spacing: .16em;
+  }
+
+  main > section:first-child p.text-xs {
+    max-width: 230px;
+    font-size: 9px !important;
+    line-height: 1.45;
+  }
+
+  main > section:first-child p.text-xs span {
+    width: 8px !important;
+    height: 8px !important;
+  }
+
+  main > section:first-child h1 {
+    max-width: 335px;
+    margin-top: 28px;
+    font-size: clamp(48px, 14.5vw, 64px) !important;
+    line-height: .91 !important;
+    letter-spacing: -.052em;
+  }
+
+  main > section:first-child h1 + p {
+    max-width: 290px !important;
+    margin-top: 24px !important;
+    font-size: 13px !important;
+    line-height: 1.5;
+  }
+
+  main > section:first-child .lg\:col-span-4 {
+    min-height: 148px !important;
+    padding: 18px 20px !important;
+    flex-direction: row;
+    align-items: flex-end;
+    background: var(--uk-blue) !important;
+  }
+
+  main > section:first-child .lg\:col-span-4 .w-12 {
+    width: 46px !important;
+    height: 46px !important;
+    font-size: 12px !important;
+  }
+
+  main > section:first-child .lg\:col-span-4 h2 {
+    font-size: 28px !important;
+    line-height: .95 !important;
+  }
+
+  main > section:first-child .lg\:col-span-4 p { font-size: 9px !important; }
+
+  .tab-content,
+  .supplement-section {
+    padding: 40px 16px 58px !important;
+  }
+
+  .tab-content > h2,
+  .supplement-section h2,
+  .vs-intro h2 {
+    font-size: clamp(38px, 11vw, 48px) !important;
+    line-height: .94 !important;
+  }
+
+  .tab-content > h2 + p,
+  .supplement-intro,
+  .vs-intro p {
+    margin-top: 10px;
+    font-size: 12px !important;
+    line-height: 1.6;
+  }
+
+  .freshness-module,
+  .era-compare { padding-left: 16px; padding-right: 16px; }
+  .freshness-grid,
+  .compare-shell,
+  .vs-picker,
+  .vs-result { border-radius: 12px; overflow: hidden; }
+
+  .update-stamp,
+  .weekly-log,
+  .compare-head { padding: 16px; }
+
+  .weekly-log li { grid-template-columns: 2rem 1fr; font-size: 11px; }
+
+  #alltime > p.text-xs { color: var(--uk-lime) !important; }
+  #alltime > .grid {
+    display: flex !important;
+    gap: 12px !important;
+    margin: 0 -16px 34px !important;
+    padding: 0 16px 8px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+  }
+
+  #alltime > .grid > .group,
+  #alltime > .grid > .big-three-card {
+    flex: 0 0 min(82vw, 318px);
+    scroll-snap-align: start;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  #alltime > .grid .aspect-\[3\/4\] { aspect-ratio: 4 / 4.65; }
+  #alltime > .border-t { border-color: var(--uk-line) !important; }
+  #alltime > .border-t > .flex {
+    min-height: 88px;
+    gap: 10px !important;
+    padding: 12px 4px !important;
+  }
+
+  #alltime > .border-t > .flex > span:first-child {
+    width: 28px !important;
+    font-size: 24px !important;
+  }
+
+  #alltime > .border-t > .flex > div:nth-child(2) {
+    width: 48px !important;
+    height: 48px !important;
+    border-radius: 8px !important;
+  }
+
+  #alltime > .border-t h3 { font-size: 15px !important; }
+  #alltime > .border-t h3 + p { max-width: 210px; font-size: 10px !important; }
+  #alltime > .border-t .flex-wrap { display: none !important; }
+
+  .chart-tools { gap: 10px; }
+  .compare-trigger { width: 100%; min-height: 44px; border-radius: 8px; }
+  .metric-strip { margin: 0 -16px .75rem; padding: 2px 16px 12px; }
+  .metric-chip { border-radius: 999px; padding: 8px 10px; font-size: 10px; }
+
+  .current-row {
+    grid-template-columns: 34px 52px minmax(0, 1fr) !important;
+    gap: 9px !important;
+    min-height: 0;
+    padding: 13px 0 !important;
+  }
+
+  .current-rank { font-size: 25px !important; }
+  .current-avatar { width: 52px !important; border-radius: 9px; }
+  .current-kicker { font-size: 8px; }
+  .current-name { font-size: 15px; }
+  .current-blurb { font-size: 10px; }
+  .current-streams {
+    grid-column: 2 / 4;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 0 !important;
+    margin-top: 2px;
+    padding: 9px 0 0 !important;
+    border-top: 1px solid var(--uk-line);
+  }
+
+  .current-streams .platform-blend { grid-column: 1 / -1; }
+  .current-streams > span { padding-left: 9px; }
+  .current-streams small { font-size: 8px; }
+  .current-streams strong { font-size: 17px; }
+
+  .trending-module,
+  .sponsored-spotlight,
+  .yearbook-panel,
+  .certification-section,
+  .fifa-soundtrack-section {
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .trending-grid { grid-template-columns: 1fr; }
+  .trending-grid button { min-height: 58px; grid-template-columns: 2rem 1fr auto; align-items: center; }
+  .region-tabs { margin: 0 -16px; padding: 0 16px 12px; scrollbar-width: none; }
+  .region-tab { min-height: 38px; border-radius: 999px; color: var(--uk-cream); background: transparent; }
+  .regional-row { min-height: 72px; grid-template-columns: 36px minmax(0, 1fr) 42px; gap: 8px; background: transparent; color: var(--uk-cream); }
+  .regional-person img { width: 44px; height: 44px; border-radius: 8px; }
+
+  #albums > .grid,
+  #artists > .grid,
+  .supplement-grid,
+  .yearbook-grid,
+  .discussion-grid { grid-template-columns: 1fr !important; }
+
+  .album-card,
+  #artists > .grid > .border,
+  .supplement-card,
+  .discussion-grid article,
+  .news-item {
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .album-card { min-height: 0; padding: 18px !important; }
+  #artists > .grid { gap: 14px !important; }
+  #artists > .grid > .border > .p-5 { padding: 18px !important; }
+  #artists > .grid > .border h3 { font-size: 28px !important; }
+  #artists > .grid > .border .grid-cols-2 { grid-template-columns: 1fr !important; }
+
+  .year-rail { margin: 0 -16px; padding: 12px 16px 6px; scrollbar-width: none; }
+  .year-pill { min-width: 54px; min-height: 40px; border-radius: 999px; }
+  .yearbook-panel { margin-left: -4px; margin-right: -4px; padding: 14px; }
+  .yearbook-row { min-height: 58px; }
+
+  .vs-picker { grid-template-columns: 1fr !important; gap: 12px; padding: 16px; }
+  .vs-picker-field select,
+  .compare-search { min-height: 44px; width: 100%; border-radius: 8px; }
+  .vs-versus-mark { justify-self: center; }
+  .vs-picker-actions { display: grid; grid-template-columns: 1fr; gap: 8px; }
+  .vs-picker-actions button { min-height: 44px; border-radius: 8px; }
+  .vs-heads,
+  .vs-bio-row,
+  .vs-metric-row { grid-template-columns: 1fr 1fr; gap: 8px; }
+  .vs-head-photo { width: 76px; height: 76px; }
+
+  #networth .overflow-x-auto {
+    margin: 18px -16px 0;
+    padding: 0 16px;
+    scrollbar-width: thin;
+  }
+
+  #networth table { min-width: 520px; }
+  #networth th,
+  #networth td { min-height: 48px; padding-top: 13px !important; padding-bottom: 13px !important; }
+
+  #discuss .space-y-4 {
+    padding: 0 !important;
+    border: 0;
+    font: 400 21px/1.28 'Instrument Serif', Georgia, serif !important;
+  }
+
+  #discuss .space-y-4 p {
+    margin: 0;
+    padding: 18px;
+    border: 1px solid var(--uk-line);
+    border-radius: 12px;
+    background: var(--uk-charcoal);
+  }
+
+  #method > .grid { gap: 28px !important; }
+  #method .yearly-method {
+    padding: 16px;
+    border: 1px solid var(--uk-line);
+    border-radius: 12px;
+    background: var(--uk-charcoal);
+  }
+
+  .artist-dialog {
+    width: 100vw;
+    max-height: 100dvh;
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+  }
+
+  .artist-dialog-content { min-height: 100dvh; }
+  .artist-dialog-media { min-height: 280px; max-height: 38vh; }
+  .artist-dialog-copy { padding: 18px; }
+  .artist-dialog-copy h2 { font-size: 44px; }
+  .artist-dialog-metrics { grid-template-columns: 1fr 1fr; }
+  .artist-dialog-metrics > div { min-height: 92px; }
+
+  footer {
+    padding: 28px 18px !important;
+    font-size: 9px !important;
+    line-height: 1.6;
   }
 }
 
