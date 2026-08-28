@@ -114,6 +114,30 @@
     section.querySelectorAll("[data-all-time-slug]").forEach((row) => row.addEventListener("click", () => {
       if (currentBySlug.has(row.dataset.allTimeSlug) && typeof window.openCurrentArtist === "function") window.openCurrentArtist(row.dataset.allTimeSlug);
     }));
+    hydrateAllTimePortraits(section);
+  }
+
+  async function hydrateAllTimePortraits(section) {
+    const aliases = { "2Baba":"2Baba", "P-Square":"P-Square", "D'banj":"D'banj", "Fela Kuti":"Fela Kuti", "Black Coffee":"Black Coffee (DJ)", "Burna Boy":"Burna Boy" };
+    const cards = [...section.querySelectorAll("[data-all-time-slug]")];
+    await Promise.all(cards.map(async card => {
+      if (card.querySelector("img")) return;
+      const name = card.querySelector("h3, .all-time-copy strong")?.textContent.trim();
+      const holder = card.querySelector(".big-three-media, .all-time-avatar");
+      if (!name || !holder) return;
+      const cacheKey = `afri-portrait:${name}`;
+      let source = sessionStorage.getItem(cacheKey);
+      if (!source) {
+        try {
+          const page = encodeURIComponent((aliases[name] || name).replace(/\s+/g, "_"));
+          const response = await fetch(`https://en.wikipedia.org/api/rest_v1/page/summary/${page}`);
+          if (response.ok) source = (await response.json())?.thumbnail?.source || "";
+          if (source) sessionStorage.setItem(cacheKey, source);
+        } catch (_) {}
+      }
+      if (!source) return;
+      holder.innerHTML = `<img src="${escapeHtml(source)}" alt="${escapeHtml(name)}" loading="lazy">`;
+    }));
   }
 
   const regionFor = (country) => {

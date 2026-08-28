@@ -97,19 +97,62 @@
 
   const fmt = new Intl.NumberFormat("en-GB");
   const safe = (value) => String(value ?? "").replace(/[&<>'"]/g, (char) => ({ "&":"&amp;", "<":"&lt;", ">":"&gt;", "'":"&#39;", '"':"&quot;" })[char]);
+  const cleanArtist = (value) => String(value || "").split(/\s+(?:feat\.|ft\.|&|x)\s+|,/i)[0].trim();
+  const key = (value) => String(value || "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+  const localPortraits = {
+    "burna boy":"burna.jpg","wizkid":"wizkid.jpg","davido":"davido.jpg","tiwa savage":"tiwa.jpg","rema":"rema.jpg","tems":"tems.jpg","asake":"asake.jpg","omah lay":"omahlay.jpg","fireboy dml":"fireboy.jpg","ayra starr":"ayra.jpg","kizz daniel":"kizzdaniel.jpg","tyla":"tyla.jpg","ckay":"ckay.jpg","olamide":"olamide.jpg","victony":"victony.jpg","yemi alade":"yemialade.jpg","wande coal":"wandecoal.jpg"
+  };
+
+  function portraitFor(artist) {
+    const primary = key(cleanArtist(artist));
+    const live = (window.AFRI_EMBEDDED_STATE?.artists || []).find(entry => key(entry.name) === primary);
+    return live?.imageFallback || live?.image || localPortraits[primary] || "";
+  }
 
   function row(item, index, year) {
     const metric = item.total
       ? `<strong>${fmt.format(item.total)}</strong><small>verified Spotify plays</small>`
       : `<strong>#${index + 1}</strong><small>${year} catalogue rank</small>`;
-    return `<a class="yearly-entry archive-entry" href="${safe(item.url)}" target="_blank" rel="noopener noreferrer" aria-label="Open ${safe(item.title)} by ${safe(item.artist)} on Spotify"><span class="yearly-rank">${String(index + 1).padStart(2, "0")}</span><span class="yearly-art yearly-art-fallback" aria-hidden="true">${safe(item.artist.slice(0,1))}</span><span><span class="yearly-title">${safe(item.title)}</span><span class="yearly-meta">${safe(item.artist)} · released ${year}</span></span><span class="yearly-count">${metric}</span></a>`;
+    const portrait = portraitFor(item.artist);
+    const art = portrait
+      ? `<img class="yearly-art" src="${safe(portrait)}" alt="${safe(item.title)} artwork" loading="lazy" data-archive-art data-title="${safe(item.title)}" data-artist="${safe(item.artist)}" data-kind="${safe(item.kind || "song")}">`
+      : `<span class="yearly-art yearly-art-fallback" data-archive-placeholder data-title="${safe(item.title)}" data-artist="${safe(item.artist)}" data-kind="${safe(item.kind || "song")}" aria-label="Artwork loading">${safe(item.artist.slice(0,1))}</span>`;
+    return `<a class="yearly-entry archive-entry" href="${safe(item.url)}" target="_blank" rel="noopener noreferrer" aria-label="Open ${safe(item.title)} by ${safe(item.artist)} on Spotify"><span class="yearly-rank">${String(index + 1).padStart(2, "0")}</span>${art}<span><span class="yearly-title">${safe(item.title)}</span><span class="yearly-meta">${safe(item.artist)} · released ${year}</span></span><span class="yearly-count">${metric}</span></a>`;
   }
 
   function currentRows(items, type) {
-    return [...items].sort((a,b) => b.streams_this_year - a.streams_this_year).slice(0, type === "song" ? 15 : 10).map((item,index) => {
+    return [...items].filter(item => Number(item.year) === 2026).sort((a,b) => b.streams_this_year - a.streams_this_year).slice(0, type === "song" ? 15 : 10).map((item,index) => {
       const title = type === "song" ? item.song_title : item.album_title;
-      return row({ title, artist:item.artist, total:item.streams_this_year, url:spotifySearch(title,item.artist) }, index, 2026);
+      return row({ title, artist:item.artist, total:item.streams_this_year, url:spotifySearch(title,item.artist), kind:type }, index, 2026);
     }).join("");
+  }
+
+  async function hydrateArtwork(root) {
+    const targets = [...root.querySelectorAll("[data-archive-art], [data-archive-placeholder]")];
+    await Promise.all(targets.map(async target => {
+      const cacheKey = `afri-art:${target.dataset.kind}:${target.dataset.title}:${target.dataset.artist}`;
+      let image = sessionStorage.getItem(cacheKey);
+      if (!image) {
+        try {
+          const entity = target.dataset.kind === "album" ? "album" : "song";
+          const query = encodeURIComponent(`${target.dataset.title} ${cleanArtist(target.dataset.artist)}`);
+          const response = await fetch(`https://itunes.apple.com/search?term=${query}&entity=${entity}&limit=1&country=NG`);
+          const result = (await response.json()).results?.[0];
+          image = (result?.artworkUrl100 || "").replace(/100x100bb/, "300x300bb");
+          if (image) sessionStorage.setItem(cacheKey, image);
+        } catch (_) {}
+      }
+      if (!image) return;
+      if (target instanceof HTMLImageElement) target.src = image;
+      else {
+        const img = document.createElement("img");
+        img.className = "yearly-art";
+        img.src = image;
+        img.alt = `${target.dataset.title} artwork`;
+        img.loading = "lazy";
+        target.replaceWith(img);
+      }
+    }));
   }
 
   function init() {
@@ -150,9 +193,10 @@
         songsRoot.innerHTML = currentRows(window.AFRI_YEARLY_STREAMS?.songs || [], "song");
         albumsRoot.innerHTML = currentRows(window.AFRI_YEARLY_STREAMS?.albums || [], "album");
       } else if (data) {
-        songsRoot.innerHTML = data.songs.slice(0,15).map((item,index)=>row(item,index,year)).join("");
-        albumsRoot.innerHTML = data.albums.slice(0,10).map((item,index)=>row(item,index,year)).join("");
+        songsRoot.innerHTML = data.songs.slice(0,15).map((item,index)=>row({...item,kind:"song"},index,year)).join("");
+        albumsRoot.innerHTML = data.albums.slice(0,10).map((item,index)=>row({...item,kind:"album"},index,year)).join("");
       }
+      hydrateArtwork(section);
       const method = section.querySelector(".yearly-method");
       if (method) method.innerHTML = current
         ? `<strong>Reading 2026.</strong> These are the live year-to-date Spotify figures in the current data snapshot.`
