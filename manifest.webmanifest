@@ -1,0 +1,12 @@
+{
+  "name": "AFR/INDEX",
+  "short_name": "AFR/INDEX",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0b",
+  "theme_color": "#d4ff00",
+  "icons": [
+    {"src":"afr-index-monogram.png","sizes":"192x192","type":"image/png","purpose":"any maskable"},
+    {"src":"afr-index-monogram.png","sizes":"512x512","type":"image/png","purpose":"any maskable"}
+  ]
+}
