@@ -188,7 +188,7 @@
       });
       select.value = String(year);
       const updated = document.querySelector("[data-yearly-updated]");
-      if (updated) updated.textContent = current ? "26 Aug 2026" : `Archive checked · ${checkedAt}`;
+      if (updated) updated.textContent = current ? "31 Aug 2026" : `Archive checked · ${checkedAt}`;
       if (current) {
         songsRoot.innerHTML = currentRows(window.AFRI_YEARLY_STREAMS?.songs || [], "song");
         albumsRoot.innerHTML = currentRows(window.AFRI_YEARLY_STREAMS?.albums || [], "album");
