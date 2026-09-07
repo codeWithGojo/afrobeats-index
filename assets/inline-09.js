@@ -24,7 +24,7 @@ window.AFRI_YEARLY_STREAMS = {
     { song_title:"Back Outside", artist:"BNXN & Sarz", album_title:"The Game Needs Us", release_date:"2026-04-27", streams_this_year:29745522, last_updated:"2026-08-25", year:2026, artist_slug:"bnxn" },
     { song_title:"Turbulence", artist:"Wizkid & Asake", album_title:"REAL, Vol. 1", release_date:"2026-01-23", streams_this_year:29699158, last_updated:"2026-08-25", year:2026, artist_slug:"wizkid" },
     { song_title:"MCBH", artist:"Asake", album_title:"M$NEY", release_date:"2026-04-30", streams_this_year:27006284, last_updated:"2026-08-25", year:2026, artist_slug:"asake", youtube_views_this_year:1649597, youtube_url:"https://www.youtube.com/watch?v=K4naqEWX7-0" },
-    { song_title:"Paparazzi", artist:"Burna Boy", release_date:"2026-01-02", streams_this_year:23490154, last_updated:"2026-08-25", year:2026, artist_slug:"burna-boy" },
+    { song_title:"Paparazzi", artist:"Shoday & FOLA", album_title:"HYBRID", release_date:"2026-01-02", streams_this_year:30118914, last_updated:"2026-09-07", year:2026, artist_slug:"fola", spotify_url:"https://open.spotify.com/track/4v1WfWIwfplCJKNQmKx9FN", artwork_url:"https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02e10a58a6c8104267978be88c" },
     { song_title:"Chanel", artist:"Blaqbonez feat. Asake", release_date:"2026-05-21", streams_this_year:23413673, last_updated:"2026-08-25", year:2026, artist_slug:"blaqbonez" },
     { song_title:"Aura Salad", artist:"Mavo & SSSoundGawd", album_title:"Breaking", release_date:"2026-02-20", streams_this_year:22494398, last_updated:"2026-08-25", year:2026, artist_slug:"mavo" },
     { song_title:"Wa", artist:"Asake", album_title:"M$NEY", release_date:"2026-04-30", streams_this_year:21701119, last_updated:"2026-08-25", year:2026, artist_slug:"asake" },
@@ -97,10 +97,12 @@ window.AFRI_YEARLY_STREAMS.songs.push(
   const safe = (value) => String(value ?? "").replace(/[&<>'"]/g, (c) => ({"&":"&amp;","<":"&lt;",">":"&gt;","'":"&#39;",'"':"&quot;"})[c]);
   const date = (value) => dateFmt.format(new Date(value + "T00:00:00Z"));
   const art = (item) => {
+    if (item.artwork_url) return `<img class="yearly-art" src="${safe(item.artwork_url)}" alt="${safe((typeLabel(item)))} official release artwork">`;
     const artist = artistBySlug.get(item.artist_slug);
     const src = artist?.imageFallback || "";
     return src ? `<img class="yearly-art" src="${safe(src)}" alt="${safe(item.artist)} artwork thumbnail">` : `<span class="yearly-art yearly-art-fallback" aria-hidden="true">${safe((item.artist || "?").slice(0,1))}</span>`;
   };
+  const typeLabel = (item) => item.song_title || item.album_title || item.artist || "Release";
   const render = (items, type, year) => [...items].filter((item) => item.year === year).sort((a,b) => b.streams_this_year - a.streams_this_year).map((item,index) => {
     const title = type === "album" ? item.album_title : item.song_title;
     const album = type === "song" && item.album_title ? ` · ${safe(item.album_title)}` : "";

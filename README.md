@@ -25,7 +25,7 @@ Spotify figures are an editorial snapshot dated 7 September 2026. Monthly listen
 
 The browser adapters share `getTopTracks(timeRange)` and `getTopArtists(timeRange)` methods through `window.AFRI_MUSIC_SOURCES`.
 
-- Spotify uses OAuth Authorization Code with PKCE and the `user-top-read` scope. Set `window.AFRI_MUSIC_CONFIG.spotifyClientId`, or let a user enter the public Client ID for the current browser session. Add the production page URL as a Spotify redirect URI.
+- Spotify uses OAuth Authorization Code with PKCE and the `user-top-read` scope. Set the public app identifier once at `window.AFRI_MUSIC_CONFIG.spotifyClientId`; visitors then get a single **Connect Spotify** button and never see developer credentials. Add the exact production page URL as a Spotify redirect URI. Never expose the Client Secret.
 - Apple Music uses MusicKit JS. Configure `window.AFRI_MUSIC_CONFIG.appleDeveloperTokenEndpoint` to return `{ "token": "..." }` from a same-origin server route. A directly injected `appleDeveloperToken` is also supported for short-lived deployments; never ship the Apple private key.
 - YouTube Music and Audiomack use CSV, JSON, text import, or manual Afri Index artist selection because dependable public personal-top APIs are not available.
 

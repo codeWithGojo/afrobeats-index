@@ -113,8 +113,11 @@
     const metric = item.total
       ? `<strong>${fmt.format(item.total)}</strong><small>verified Spotify plays</small>`
       : `<strong>#${index + 1}</strong><small>${year} catalogue rank</small>`;
+    const exactArtwork = item.artwork || "";
     const portrait = portraitFor(item.artist);
-    const art = portrait
+    const art = exactArtwork
+      ? `<img class="yearly-art" src="${safe(exactArtwork)}" alt="${safe(item.title)} official release artwork" loading="lazy">`
+      : portrait
       ? `<img class="yearly-art" src="${safe(portrait)}" alt="${safe(item.title)} artwork" loading="lazy" data-archive-art data-title="${safe(item.title)}" data-artist="${safe(item.artist)}" data-kind="${safe(item.kind || "song")}">`
       : `<span class="yearly-art yearly-art-fallback" data-archive-placeholder data-title="${safe(item.title)}" data-artist="${safe(item.artist)}" data-kind="${safe(item.kind || "song")}" aria-label="Artwork loading">${safe(item.artist.slice(0,1))}</span>`;
     return `<a class="yearly-entry archive-entry" href="${safe(item.url)}" target="_blank" rel="noopener noreferrer" aria-label="Open ${safe(item.title)} by ${safe(item.artist)} on Spotify"><span class="yearly-rank">${String(index + 1).padStart(2, "0")}</span>${art}<span><span class="yearly-title">${safe(item.title)}</span><span class="yearly-meta">${safe(item.artist)} · released ${year}</span></span><span class="yearly-count">${metric}</span></a>`;
@@ -123,7 +126,7 @@
   function currentRows(items, type) {
     return [...items].filter(item => Number(item.year) === 2026).sort((a,b) => b.streams_this_year - a.streams_this_year).slice(0, type === "song" ? 15 : 10).map((item,index) => {
       const title = type === "song" ? item.song_title : item.album_title;
-      return row({ title, artist:item.artist, total:item.streams_this_year, url:spotifySearch(title,item.artist), kind:type }, index, 2026);
+      return row({ title, artist:item.artist, total:item.streams_this_year, url:item.spotify_url || spotifySearch(title,item.artist), artwork:item.artwork_url, kind:type }, index, 2026);
     }).join("");
   }
 

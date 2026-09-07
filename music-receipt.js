@@ -14,7 +14,7 @@
 
   class SpotifyAdapter extends MusicSourceAdapter{
     constructor(){super("spotify","Spotify");this.accessToken=null;}
-    get clientId(){return CONFIG.spotifyClientId||sessionStorage.getItem("afri_spotify_client_id")||"";}
+    get clientId(){return CONFIG.spotifyClientId||"";}
     async connect(){
       if(!this.clientId)throw new Error("Add a Spotify app Client ID first.");
       const verifier=randomString(64),challenge=await sha256base64(verifier),oauthState=randomString(24);
@@ -121,7 +121,8 @@
   function renderConnectPanel(){
     const source=receiptState.source;
     if(source==="spotify"){
-      ui.connect.innerHTML=`<p>Spotify can provide your top 50 tracks and artists for all three periods. Afri Index filters that list against its African artist database.</p>${adapters.spotify.clientId?"":'<label for="spotify-client-id">Spotify app Client ID</label><input id="spotify-client-id" autocomplete="off" placeholder="Paste the public Client ID">'}<button type="button" class="connect-action" id="receipt-connect">${adapters.spotify.accessToken?"Reload Spotify data":"Connect Spotify"}</button><p class="receipt-source-note">Your Spotify app must allow <strong>${escapeHtml(redirectUri())}</strong> as a redirect URI.</p>`;
+      const configured=Boolean(adapters.spotify.clientId);
+      ui.connect.innerHTML=`<p>Spotify can provide your top 50 tracks and artists for all three periods. Afri Index filters that list against its African artist database.</p><button type="button" class="connect-action" id="receipt-connect"${configured?"":" disabled"}>${adapters.spotify.accessToken?"Reload Spotify data":configured?"Connect Spotify":"Spotify setup pending"}</button><p class="receipt-source-note">${configured?"One click opens Spotify’s secure sign-in. Afri Index never sees your password.":"Spotify sign-in will be available as soon as the Afri Index Spotify app is approved and configured."}</p>`;
     }else if(source==="apple"){
       ui.connect.innerHTML=`<p>Apple Music uses MusicKit authorization. Apple exposes recent listening rather than Spotify-style lifetime top lists, so the selected period is labelled as the nearest available range.</p><button type="button" class="connect-action" id="receipt-connect">Connect Apple Music</button>`;
     }else{
@@ -130,8 +131,7 @@
     ui.connect.querySelector("#receipt-connect")?.addEventListener("click",connectCurrent);
   }
   async function connectCurrent(){
-    const adapter=adapters[receiptState.source],clientInput=document.getElementById("spotify-client-id");
-    if(clientInput?.value.trim()){sessionStorage.setItem("afri_spotify_client_id",clientInput.value.trim());}
+    const adapter=adapters[receiptState.source];
     setStatus(`Connecting to ${adapter.label}…`);
     try{
       if(receiptState.source==="spotify"&&!adapter.accessToken){await adapter.connect();return;}
