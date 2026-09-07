@@ -1,0 +1,6962 @@
+/* Generated from research/current-artists-research.json on 2026-08-20. */
+window.AFRI_CURRENT_ARTISTS = [
+  {
+    "rank": 1,
+    "previousRank": 1,
+    "name": "Burna Boy",
+    "slug": "burna-boy",
+    "country": "Nigeria",
+    "tagline": "THE STADIUM STANDARD",
+    "genres": [
+      "AFRO-FUSION",
+      "DANCEHALL"
+    ],
+    "bio": "Port Harcourt's Damini Ogulu turned Afro-fusion into a stadium language: muscular live shows, restless albums and a voice that can make triumph sound like testimony.",
+    "score": 96.8,
+    "image": "artists/burna-boy.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5ebb4e44d0f4e3e47af2cf06f3f",
+    "spotifyId": "3wcj11K77LjEY1PkEazffa",
+    "spotifyUrl": "https://open.spotify.com/artist/3wcj11K77LjEY1PkEazffa",
+    "monthlyListeners": 57100303,
+    "totalSpotifyStreams": 10670735615,
+    "dailySpotifyStreams": 9046952,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/burna-boy/3wcj11K77LjEY1PkEazffa",
+      "catalogue": "https://kworb.net/spotify/artist/3wcj11K77LjEY1PkEazffa_songs.html"
+    },
+    "statsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "songs": [
+      {
+        "spotifyId": "6KFWubocLBhrLs31RpEdR9",
+        "title": "Location (feat. Burna Boy)",
+        "streams": 732149861,
+        "dailyStreams": 182685,
+        "fifaEditions": [
+          "FIFA 21 · VOLTA"
+        ],
+        "sourceUrl": "https://allure.vanguardngr.com/2020/09/fireboy-rema-burna-boy-enlisted-for-fifa-21-soundtrack/",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "4LPNkxES0zCGn6S2Y1vmJN",
+        "title": "Last Last",
+        "streams": 605702525,
+        "dailyStreams": 236846,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/4LPNkxES0zCGn6S2Y1vmJN",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "1zIk8RJEKGvoH4FioFnGyJ",
+        "title": "On the Low",
+        "streams": 422354388,
+        "dailyStreams": 252925,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/1zIk8RJEKGvoH4FioFnGyJ",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "4QPEwDdOMhY7rNS05mTyMR",
+        "title": "Own It (feat. Ed Sheeran & Burna Boy)",
+        "streams": 412743748,
+        "dailyStreams": 69075,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/4QPEwDdOMhY7rNS05mTyMR",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "51aYPHVdOL9sIPOZj9dlXK",
+        "title": "Be Honest",
+        "streams": 389704113,
+        "dailyStreams": 86602,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/51aYPHVdOL9sIPOZj9dlXK",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "4N7AXHRMQYh9GHQd5hE6NP",
+        "title": "For My Hand (feat. Ed Sheeran)",
+        "streams": 379254956,
+        "dailyStreams": 134719,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/4N7AXHRMQYh9GHQd5hE6NP",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "0kosUz0jePvjiz4ctmR6wL",
+        "title": "Dai Dai",
+        "streams": 375130817,
+        "dailyStreams": 4092353,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/0kosUz0jePvjiz4ctmR6wL",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "2lEl1iNGpz9r2B7R5BqXSD",
+        "title": "Ye",
+        "streams": 332905835,
+        "dailyStreams": 144019,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/2lEl1iNGpz9r2B7R5BqXSD",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "0WsC4ETIXyiHDMXRaPMvKe",
+        "title": "wgft (feat. Burna Boy)",
+        "streams": 295573622,
+        "dailyStreams": 520782,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/0WsC4ETIXyiHDMXRaPMvKe",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "4RoKNqyZ9622tcAeNPNv5k",
+        "title": "City Boys",
+        "streams": 285723733,
+        "dailyStreams": 134026,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/4RoKNqyZ9622tcAeNPNv5k",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "1PlYxNrefqOBvk52umixt9",
+        "title": "Gbona",
+        "streams": 284345205,
+        "dailyStreams": 148505,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/1PlYxNrefqOBvk52umixt9",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "6xX6zmaXeKzB4u9TiM1XgU",
+        "title": "WE PRAY",
+        "streams": 248730259,
+        "dailyStreams": 174622,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/6xX6zmaXeKzB4u9TiM1XgU",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      }
+    ],
+    "songsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "monthlyListenersLastUpdatedAt": "2026-08-24T11:32:10.115Z"
+  },
+  {
+    "rank": 2,
+    "previousRank": 4,
+    "name": "Tems",
+    "slug": "tems",
+    "country": "Nigeria",
+    "tagline": "THE GRAVITY",
+    "genres": [
+      "AFRO-R&B",
+      "ALT"
+    ],
+    "bio": "Tems never sanded down her grainy, low-slung voice for pop. Pop moved toward her instead, making the Lagos songwriter a rare star whose restraint carries as much force as a chorus.",
+    "score": 96,
+    "image": "artists/tems.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5eb22d7d6f8981c7a27bf68a382",
+    "spotifyId": "687cZJR45JO7jhk1LHIbgq",
+    "spotifyUrl": "https://open.spotify.com/artist/687cZJR45JO7jhk1LHIbgq",
+    "monthlyListeners": 36172638,
+    "totalSpotifyStreams": 6015043303,
+    "dailySpotifyStreams": 5411852,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/tems/687cZJR45JO7jhk1LHIbgq",
+      "catalogue": "https://kworb.net/spotify/artist/687cZJR45JO7jhk1LHIbgq_songs.html"
+    },
+    "statsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "songs": [
+      {
+        "spotifyId": "59nOXPmaKlBfGMDeOVGrIK",
+        "title": "WAIT FOR U (feat. Drake & Tems)",
+        "streams": 1396875426,
+        "dailyStreams": 563866,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/59nOXPmaKlBfGMDeOVGrIK",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "3oTuTpF1F3A7rEC6RKsMRz",
+        "title": "Raindance (feat. Tems)",
+        "streams": 777975227,
+        "dailyStreams": 1866483,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/3oTuTpF1F3A7rEC6RKsMRz",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "31kxPC3ZB9AYwCLyHaqEVX",
+        "title": "Me & U",
+        "streams": 399030574,
+        "dailyStreams": 565675,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/31kxPC3ZB9AYwCLyHaqEVX",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "5FG7Tl93LdH117jEKYl3Cm",
+        "title": "Essence (feat. Tems)",
+        "streams": 392970934,
+        "dailyStreams": 242121,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/5FG7Tl93LdH117jEKYl3Cm",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "2mzM4Y0Rnx2BDZqRnhQ5Q6",
+        "title": "Free Mind",
+        "streams": 318552274,
+        "dailyStreams": 226305,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/2mzM4Y0Rnx2BDZqRnhQ5Q6",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "2QdSb68BzZGMgCbsrFmSLc",
+        "title": "Higher",
+        "streams": 283996591,
+        "dailyStreams": 179890,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/2QdSb68BzZGMgCbsrFmSLc",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "1eDI5oU04SLsXl0TfxfwYf",
+        "title": "Love Me JeJe",
+        "streams": 265654380,
+        "dailyStreams": 213323,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/1eDI5oU04SLsXl0TfxfwYf",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "08XWh5c0BMyD1nKVxxl91z",
+        "title": "Fountains (with Tems)",
+        "streams": 252284035,
+        "dailyStreams": 87037,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/08XWh5c0BMyD1nKVxxl91z",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "1MZtr7IH5qtjIkqrXj8WOJ",
+        "title": "Essence (feat. Justin Bieber & Tems)",
+        "streams": 186903701,
+        "dailyStreams": 114629,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/1MZtr7IH5qtjIkqrXj8WOJ",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "7quB4D2OH6Q5WwzeEga1q5",
+        "title": "Found (feat. Brent Faiyaz)",
+        "streams": 174822719,
+        "dailyStreams": 57149,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/7quB4D2OH6Q5WwzeEga1q5",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "2dFqK2ZkYB9Xc47gr3xXWl",
+        "title": "Replay",
+        "streams": 151264321,
+        "dailyStreams": 54318,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/2dFqK2ZkYB9Xc47gr3xXWl",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "3Xfwu3xtPqmJ4nM4jpBm8O",
+        "title": "Damages",
+        "streams": 142123363,
+        "dailyStreams": 58584,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/3Xfwu3xtPqmJ4nM4jpBm8O",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      }
+    ],
+    "songsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "monthlyListenersLastUpdatedAt": "2026-08-24T11:32:10.115Z"
+  },
+  {
+    "rank": 3,
+    "previousRank": 9,
+    "name": "Rema",
+    "slug": "rema",
+    "country": "Nigeria",
+    "tagline": "THE SHAPESHIFTER",
+    "genres": [
+      "AFRORAVE",
+      "POP"
+    ],
+    "bio": "Rema treats Afrobeats as a moving target. From the bright immediacy of Calm Down to the darker pulse of HEIS, he keeps expanding the sound without losing his Benin City fingerprints.",
+    "score": 95.2,
+    "image": "artists/rema.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5ebf4626451ff59c5989a1af18d",
+    "spotifyId": "46pWGuE3dSwY3bMMXGBvVS",
+    "spotifyUrl": "https://open.spotify.com/artist/46pWGuE3dSwY3bMMXGBvVS",
+    "monthlyListeners": 26634064,
+    "totalSpotifyStreams": 6551005718,
+    "dailySpotifyStreams": 4049092,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/rema/46pWGuE3dSwY3bMMXGBvVS",
+      "catalogue": "https://kworb.net/spotify/artist/46pWGuE3dSwY3bMMXGBvVS_songs.html"
+    },
+    "statsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "songs": [
+      {
+        "spotifyId": "1s7oOCT8vauUh01PbJD6ps",
+        "title": "Calm Down (with Selena Gomez)",
+        "streams": 1939839666,
+        "dailyStreams": 581529,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/1s7oOCT8vauUh01PbJD6ps",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "64B8ewx0cEcn6UHwDm33Gm",
+        "title": "Calm Down",
+        "streams": 748346188,
+        "dailyStreams": 188847,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/64B8ewx0cEcn6UHwDm33Gm",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "1lZI1Dt20u4EsIwLmwiTII",
+        "title": "Soweto - Sped Up",
+        "streams": 286987052,
+        "dailyStreams": 186813,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/1lZI1Dt20u4EsIwLmwiTII",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "62xla8336vUnmxTWNzCfRt",
+        "title": "BUBALU",
+        "streams": 261433433,
+        "dailyStreams": 75697,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/62xla8336vUnmxTWNzCfRt",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "0h1bZv4IoNi4Fx7zu6XM7b",
+        "title": "Soundgasm",
+        "streams": 239218701,
+        "dailyStreams": 103780,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/0h1bZv4IoNi4Fx7zu6XM7b",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "1iBWjQ9af9NnUd5xnQDB3k",
+        "title": "Charm",
+        "streams": 208484703,
+        "dailyStreams": 125006,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/1iBWjQ9af9NnUd5xnQDB3k",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "0SjQBdIddPvKSWxr8vk6QX",
+        "title": "Dumebi",
+        "streams": 196162358,
+        "dailyStreams": 71688,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/0SjQBdIddPvKSWxr8vk6QX",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "4Z5KKoBGxpJo8YbDcGQXd5",
+        "title": "Secondhand (feat. Rema)",
+        "streams": 155963679,
+        "dailyStreams": 447497,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/4Z5KKoBGxpJo8YbDcGQXd5",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "6NOrpcicPUh2eaj8bAD44u",
+        "title": "Baby (Is it a Crime)",
+        "streams": 113892181,
+        "dailyStreams": 102923,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/6NOrpcicPUh2eaj8bAD44u",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "0qlu7Te2J2BuAGFcwb3rjn",
+        "title": "FUN",
+        "streams": 81133869,
+        "dailyStreams": 129819,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/0qlu7Te2J2BuAGFcwb3rjn",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "2QvH1FPHBBWRYA0K9X89le",
+        "title": "Fame - A COLORS ENCORE",
+        "streams": 78476001,
+        "dailyStreams": 33619,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/2QvH1FPHBBWRYA0K9X89le",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "0UYJi0cElsrmNF4iaa1MgM",
+        "title": "Woman",
+        "streams": 70333229,
+        "dailyStreams": 43441,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/0UYJi0cElsrmNF4iaa1MgM",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "1gc2RyrBm1PYdSnG65yuAl",
+        "title": "BENIN BOYS",
+        "streams": 62281738,
+        "dailyStreams": 34371,
+        "fifaEditions": [
+          "EA SPORTS FC 25"
+        ],
+        "sourceUrl": "https://www.ea.com/en/games/ea-sports-fc/fc-25/news/fc-25-soundtrack",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "6ebWhnzsRYPA8NPFw63J8m",
+        "title": "Beamer (Bad Boys)",
+        "streams": 48123716,
+        "dailyStreams": 31543,
+        "fifaEditions": [
+          "FIFA 21 · VOLTA"
+        ],
+        "sourceUrl": "https://www.fifplay.com/fifa-21/soundtrack/rema-beamer-bad-boys-ft-rvssian/",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      }
+    ],
+    "songsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "monthlyListenersLastUpdatedAt": "2026-08-24T11:32:10.115Z"
+  },
+  {
+    "rank": 4,
+    "previousRank": 7,
+    "name": "Tyla",
+    "slug": "tyla",
+    "country": "South Africa",
+    "tagline": "POPIANO'S GLOBAL FACE",
+    "genres": [
+      "AMAPIANO",
+      "POP"
+    ],
+    "bio": "Johannesburg's Tyla turned popiano from a smart description into a global pop format. Her light vocal touch, dance language and precision make difficult crossover work look effortless.",
+    "score": 94.3,
+    "image": "artists/tyla.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5eb69719e4164b893213a525d25",
+    "spotifyId": "3SozjO3Lat463tQICI9LcE",
+    "spotifyUrl": "https://open.spotify.com/artist/3SozjO3Lat463tQICI9LcE",
+    "monthlyListeners": 28448866,
+    "totalSpotifyStreams": 4730549623,
+    "dailySpotifyStreams": 3654607,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/tyla/3SozjO3Lat463tQICI9LcE",
+      "catalogue": "https://kworb.net/spotify/artist/3SozjO3Lat463tQICI9LcE_songs.html"
+    },
+    "statsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "songs": [
+      {
+        "spotifyId": "0wYwXrgGrrU1idueX5A1wJ",
+        "title": "Water",
+        "streams": 1458153870,
+        "dailyStreams": 618261,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/0wYwXrgGrrU1idueX5A1wJ",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "6XODwIPXQmVJS1tRabXDiS",
+        "title": "PUSH 2 START",
+        "streams": 519205027,
+        "dailyStreams": 255749,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/6XODwIPXQmVJS1tRabXDiS",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "2QWAvedowH2qaiQmqIuxWV",
+        "title": "CHANEL",
+        "streams": 400607865,
+        "dailyStreams": 405380,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/2QWAvedowH2qaiQmqIuxWV",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "7axl6v0Yv4ksLVMt6XItpc",
+        "title": "Truth or Dare",
+        "streams": 351538728,
+        "dailyStreams": 176882,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/7axl6v0Yv4ksLVMt6XItpc",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "22YkP95GjCfXkWKyU5k1zZ",
+        "title": "Show Me Love (with Tyla)",
+        "streams": 333684126,
+        "dailyStreams": 344969,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/22YkP95GjCfXkWKyU5k1zZ",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "6XpEm7VJ7TZxZTawH8BCSW",
+        "title": "Jump",
+        "streams": 318311692,
+        "dailyStreams": 83243,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/6XpEm7VJ7TZxZTawH8BCSW",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "40ds3xedbMkWhszkGnZwxi",
+        "title": "ART",
+        "streams": 182184672,
+        "dailyStreams": 67089,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/40ds3xedbMkWhszkGnZwxi",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "6NiiHhJPTeSaJR2TfDzpPz",
+        "title": "IS IT",
+        "streams": 101200359,
+        "dailyStreams": 132949,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/6NiiHhJPTeSaJR2TfDzpPz",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "4rIVgjxHV6yviwGWxn9TXx",
+        "title": "Water - Remix",
+        "streams": 83698493,
+        "dailyStreams": 17890,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/4rIVgjxHV6yviwGWxn9TXx",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "6oa1NzHb7APzhIdxEtme3y",
+        "title": "SHE DID IT AGAIN (feat. Zara Larsson)",
+        "streams": 78567554,
+        "dailyStreams": 366900,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/6oa1NzHb7APzhIdxEtme3y",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "4Q2IUQo8YuoCqiRrDazKK4",
+        "title": "Water",
+        "streams": 78178295,
+        "dailyStreams": 29720,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/4Q2IUQo8YuoCqiRrDazKK4",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "3qeMtqV38UWPZfps7mPTUE",
+        "title": "No.1 (feat. Tems)",
+        "streams": 60898969,
+        "dailyStreams": 22440,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/3qeMtqV38UWPZfps7mPTUE",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      }
+    ],
+    "songsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "monthlyListenersLastUpdatedAt": "2026-08-24T11:32:10.115Z"
+  },
+  {
+    "rank": 5,
+    "previousRank": 8,
+    "name": "Wizkid",
+    "slug": "wizkid",
+    "country": "Nigeria",
+    "tagline": "THE QUIET BLUEPRINT",
+    "genres": [
+      "AFROBEATS",
+      "AFRO-R&B"
+    ],
+    "bio": "Wizkid's understated cool became a global template. A deep catalogue, the long afterlife of Essence and his gift for melodic economy keep Starboy present in every new Afrobeats conversation.",
+    "score": 93.5,
+    "image": "artists/wizkid.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5ebe6ef803356b45ee5a9fa7a8a",
+    "spotifyId": "3tVQdUvClmAT7URs9V3rsp",
+    "spotifyUrl": "https://open.spotify.com/artist/3tVQdUvClmAT7URs9V3rsp",
+    "monthlyListeners": 16998288,
+    "totalSpotifyStreams": 11374722353,
+    "dailySpotifyStreams": 6347895,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/wizkid/3tVQdUvClmAT7URs9V3rsp",
+      "catalogue": "https://kworb.net/spotify/artist/3tVQdUvClmAT7URs9V3rsp_songs.html"
+    },
+    "statsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "songs": [
+      {
+        "spotifyId": "1zi7xx7UVEFkmKfv06H8x0",
+        "title": "One Dance",
+        "streams": 4426048944,
+        "dailyStreams": 1774967,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/1zi7xx7UVEFkmKfv06H8x0",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "5FG7Tl93LdH117jEKYl3Cm",
+        "title": "Essence (feat. Tems)",
+        "streams": 392970934,
+        "dailyStreams": 246350,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/5FG7Tl93LdH117jEKYl3Cm",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "1B5I5yqLpVI5EosZS6bJFs",
+        "title": "Call Me Every Day (feat. Wizkid)",
+        "streams": 210425576,
+        "dailyStreams": 77054,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/1B5I5yqLpVI5EosZS6bJFs",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "1MZtr7IH5qtjIkqrXj8WOJ",
+        "title": "Essence (feat. Justin Bieber & Tems)",
+        "streams": 186903701,
+        "dailyStreams": 100396,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/1MZtr7IH5qtjIkqrXj8WOJ",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "2zYs4BonN2ydkbrRk333SN",
+        "title": "Come Closer (feat. Drake)",
+        "streams": 185252915,
+        "dailyStreams": 121218,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/2zYs4BonN2ydkbrRk333SN",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "054Z6a1OBWAtXMlSs96P53",
+        "title": "Boom (feat. MOTi, Ty Dolla $ign, Wizkid & Kranium)",
+        "streams": 180747577,
+        "dailyStreams": 14142,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/054Z6a1OBWAtXMlSs96P53",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "3Yt1ovsh3v3VEzRuhI1TL5",
+        "title": "Joro",
+        "streams": 168940563,
+        "dailyStreams": 132304,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/3Yt1ovsh3v3VEzRuhI1TL5",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "11RIJRbBfyLlJut96itSFd",
+        "title": "Energy (Stay Far Away)",
+        "streams": 163084098,
+        "dailyStreams": 45935,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/11RIJRbBfyLlJut96itSFd",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "0B3FovCVaGKS5w1FTidEUP",
+        "title": "BROWN SKIN GIRL",
+        "streams": 162151539,
+        "dailyStreams": 33167,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/0B3FovCVaGKS5w1FTidEUP",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "1kEOLjp8iAb8WvoiVC9rzi",
+        "title": "My Love (feat. Major Lazer, WizKid, Dua Lipa) - Spotify Single Version",
+        "streams": 155031054,
+        "dailyStreams": 8383,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/1kEOLjp8iAb8WvoiVC9rzi",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "0NA5xAtDra50d0Lfs2uvoh",
+        "title": "Borrowed Love (feat. Swae Lee & WizKid)",
+        "streams": 139310687,
+        "dailyStreams": 28489,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/0NA5xAtDra50d0Lfs2uvoh",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "51mLQ3w7yR7vjdSTFLWaY5",
+        "title": "Ginger (feat. Burna Boy)",
+        "streams": 136802797,
+        "dailyStreams": 50096,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/51mLQ3w7yR7vjdSTFLWaY5",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      }
+    ],
+    "songsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "monthlyListenersLastUpdatedAt": "2026-08-24T11:32:10.115Z"
+  },
+  {
+    "rank": 6,
+    "previousRank": 10,
+    "name": "Ayra Starr",
+    "slug": "ayra-starr",
+    "country": "Nigeria",
+    "tagline": "THE CELESTIAL VOICE",
+    "genres": [
+      "AFROPOP",
+      "POP"
+    ],
+    "bio": "Ayra Starr pairs diary-page candour with arena ambition. Her voice can sound bruised, defiant and playful in one record, giving the Mavin star a reach far beyond any one trend.",
+    "score": 92.7,
+    "image": "artists/ayra-starr.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5eb8bfd832e0547c4acabe6e67c",
+    "spotifyId": "3ZpEKRjHaHANcpk10u6Ntq",
+    "spotifyUrl": "https://open.spotify.com/artist/3ZpEKRjHaHANcpk10u6Ntq",
+    "monthlyListeners": 20036653,
+    "totalSpotifyStreams": 3881172473,
+    "dailySpotifyStreams": 5320932,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/ayra-starr/3ZpEKRjHaHANcpk10u6Ntq",
+      "catalogue": "https://kworb.net/spotify/artist/3ZpEKRjHaHANcpk10u6Ntq_songs.html"
+    },
+    "statsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "songs": [
+      {
+        "spotifyId": "6a9Z1jUms915w4O7N1PxjY",
+        "title": "Santa",
+        "streams": 924642192,
+        "dailyStreams": 450048,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/6a9Z1jUms915w4O7N1PxjY",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "1xs8bOvm3IzEYmcLJVOc34",
+        "title": "Rush",
+        "streams": 576140357,
+        "dailyStreams": 253803,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/1xs8bOvm3IzEYmcLJVOc34",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "4GXW3Ne1jzdORKHvHjK31V",
+        "title": "Commas",
+        "streams": 178448837,
+        "dailyStreams": 119233,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/4GXW3Ne1jzdORKHvHjK31V",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "4AxG1T6UJJ4xCX4Wz6JDLG",
+        "title": "People (feat. Ayra Starr & Omah Lay)",
+        "streams": 168711203,
+        "dailyStreams": 85486,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/4AxG1T6UJJ4xCX4Wz6JDLG",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "6RALexvW509Dy9kppmNiKT",
+        "title": "Bloody Samaritan",
+        "streams": 121597471,
+        "dailyStreams": 55526,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/6RALexvW509Dy9kppmNiKT",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "1A1ifX8sWzelNpkL5PxcHT",
+        "title": "Last Heartbreak Song (feat. Giveon)",
+        "streams": 119804384,
+        "dailyStreams": 91577,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/1A1ifX8sWzelNpkL5PxcHT",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "5mhM7bfzv52bzfCzlq8vH1",
+        "title": "Ngozi",
+        "streams": 97247807,
+        "dailyStreams": 58121,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/5mhM7bfzv52bzfCzlq8vH1",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "7mOQnTNnEGVAjI0OF49GMj",
+        "title": "Love Don't Cost A Dime - Re-Up",
+        "streams": 92322886,
+        "dailyStreams": 76220,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/7mOQnTNnEGVAjI0OF49GMj",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "1DA2ADZs6O28y2rmdmpekw",
+        "title": "2 Sugar (feat. Ayra Starr)",
+        "streams": 86658948,
+        "dailyStreams": 39670,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/1DA2ADZs6O28y2rmdmpekw",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "4lVEVXrlQlXPdYWMGTwrFe",
+        "title": "Overloading (OVERDOSE)",
+        "streams": 82355842,
+        "dailyStreams": 34586,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/4lVEVXrlQlXPdYWMGTwrFe",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "6VX4hVDmDMfClxp6EwDNQP",
+        "title": "Bad Vibes (feat. Seyi Vibez)",
+        "streams": 80017842,
+        "dailyStreams": 55112,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/6VX4hVDmDMfClxp6EwDNQP",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "0LnXA52XqGjaITaGmIXJJp",
+        "title": "No love",
+        "streams": 76477264,
+        "dailyStreams": 23057,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/0LnXA52XqGjaITaGmIXJJp",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      }
+    ],
+    "songsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "monthlyListenersLastUpdatedAt": "2026-08-24T11:32:10.115Z"
+  },
+  {
+    "rank": 7,
+    "previousRank": 5,
+    "name": "Davido",
+    "slug": "davido",
+    "country": "Nigeria",
+    "tagline": "THE HIT ENGINE",
+    "genres": [
+      "AFROPOP",
+      "AFROBEATS"
+    ],
+    "bio": "Davido built longevity on urgency: huge hooks, generous collaborations and the feeling that every release is a public event. Few artists turn fan energy into commercial force as reliably.",
+    "score": 91.9,
+    "image": "artists/davido.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5eb2bf250c3e92f9e7542efd95c",
+    "spotifyId": "0Y3agQaa6g2r0YmHPOO9rh",
+    "spotifyUrl": "https://open.spotify.com/artist/0Y3agQaa6g2r0YmHPOO9rh",
+    "monthlyListeners": 11562424,
+    "totalSpotifyStreams": 3803469056,
+    "dailySpotifyStreams": 3871078,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/davido/0Y3agQaa6g2r0YmHPOO9rh",
+      "catalogue": "https://kworb.net/spotify/artist/0Y3agQaa6g2r0YmHPOO9rh_songs.html"
+    },
+    "statsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "songs": [
+      {
+        "spotifyId": "2kaH2Z8ezDUKf6fNw250rZ",
+        "title": "UNAVAILABLE (feat. Musa Keys)",
+        "streams": 243948575,
+        "dailyStreams": 71541,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/2kaH2Z8ezDUKf6fNw250rZ",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "7vKXc90NT5WBm3UTT4iTVG",
+        "title": "KANTE (feat. Fave)",
+        "streams": 181746766,
+        "dailyStreams": 206508,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/7vKXc90NT5WBm3UTT4iTVG",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "4JQIGTLXz4oULctglUDpw6",
+        "title": "Sensational (feat. Davido & Lojay)",
+        "streams": 159728006,
+        "dailyStreams": 66398,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/4JQIGTLXz4oULctglUDpw6",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "1hEXElwyPez2z7m5dZ56Mc",
+        "title": "Fall",
+        "streams": 142934249,
+        "dailyStreams": 58170,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/1hEXElwyPez2z7m5dZ56Mc",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "5GyaXqMfcIGHfmTUITFacS",
+        "title": "With You (feat. Omah Lay)",
+        "streams": 131813436,
+        "dailyStreams": 106689,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/5GyaXqMfcIGHfmTUITFacS",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "1mk8ZC9OeTZMr8Wy31LqRj",
+        "title": "FEEL",
+        "streams": 118402986,
+        "dailyStreams": 45839,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/1mk8ZC9OeTZMr8Wy31LqRj",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "04QTmCTsaVjcGaoxj8rSjE",
+        "title": "Know Your Worth (feat. Davido & Tems)",
+        "streams": 95217938,
+        "dailyStreams": 38956,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/04QTmCTsaVjcGaoxj8rSjE",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "7iomfWalCWkg9qmEgz5I2Y",
+        "title": "Funds (feat. ODUMODUBLVCK & Chike)",
+        "streams": 83890478,
+        "dailyStreams": 43812,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/7iomfWalCWkg9qmEgz5I2Y",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "0WeN52xa8nBDBfKsaiKJ0i",
+        "title": "If",
+        "streams": 81026118,
+        "dailyStreams": 31025,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/0WeN52xa8nBDBfKsaiKJ0i",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "3MYG7lZANqw54i2Du7Y0WN",
+        "title": "Blow My Mind",
+        "streams": 79412345,
+        "dailyStreams": 16950,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/3MYG7lZANqw54i2Du7Y0WN",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "4G11wDzAKuCFqApL4g3ixC",
+        "title": "High",
+        "streams": 68262157,
+        "dailyStreams": 50335,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/4G11wDzAKuCFqApL4g3ixC",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "7vAJiDFrFtMYVOrZbOw7jj",
+        "title": "Hayya Hayya (Better Together) - Music from the FIFA World Cup Qatar 2022 Official Soundtrack",
+        "streams": 66883210,
+        "dailyStreams": 34699,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/7vAJiDFrFtMYVOrZbOw7jj",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      }
+    ],
+    "songsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "monthlyListenersLastUpdatedAt": "2026-08-24T11:32:10.115Z"
+  },
+  {
+    "rank": 8,
+    "previousRank": 3,
+    "name": "Asake",
+    "slug": "asake",
+    "country": "Nigeria",
+    "tagline": "THE CHOIR IN THE STREET",
+    "genres": [
+      "STREET-POP",
+      "FUJI"
+    ],
+    "bio": "Asake compressed Fuji phrasing, massed vocals and amapiano log drums into a instantly recognisable rush. His catalogue moves like a crowd even when the subject turns inward.",
+    "score": 91.1,
+    "image": "artists/asake.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5ebff54cbafa23b728b49954587",
+    "spotifyId": "3a1tBryiczPAZpgoZN9Rzg",
+    "spotifyUrl": "https://open.spotify.com/artist/3a1tBryiczPAZpgoZN9Rzg",
+    "monthlyListeners": 9124944,
+    "totalSpotifyStreams": 4207074314,
+    "dailySpotifyStreams": 6112950,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/asake/3a1tBryiczPAZpgoZN9Rzg",
+      "catalogue": "https://kworb.net/spotify/artist/3a1tBryiczPAZpgoZN9Rzg_songs.html"
+    },
+    "statsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "songs": [
+      {
+        "spotifyId": "2qWwuCVeMjF9mUT0S5Iqvl",
+        "title": "Bandana",
+        "streams": 218325475,
+        "dailyStreams": 125567,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/2qWwuCVeMjF9mUT0S5Iqvl",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "5ZtK8XAVnoaGdBXZWCEVCY",
+        "title": "Lonely At The Top",
+        "streams": 197827399,
+        "dailyStreams": 132169,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/5ZtK8XAVnoaGdBXZWCEVCY",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "5ycsqezujKrwviU3VFhci1",
+        "title": "Terminator",
+        "streams": 150497971,
+        "dailyStreams": 69848,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/5ycsqezujKrwviU3VFhci1",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "0Q1bMs3xLQiDEeaneehdxv",
+        "title": "Remember",
+        "streams": 132393213,
+        "dailyStreams": 153518,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/0Q1bMs3xLQiDEeaneehdxv",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "1YgIvHDTvi1vosins1jyAC",
+        "title": "Amapiano",
+        "streams": 125843867,
+        "dailyStreams": 60356,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/1YgIvHDTvi1vosins1jyAC",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "46gfN72BxmLvACx6Pve4XU",
+        "title": "Dull",
+        "streams": 111176812,
+        "dailyStreams": 43815,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/46gfN72BxmLvACx6Pve4XU",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "13VXuHw3O8Yt7VwRIDqSo4",
+        "title": "MMS",
+        "streams": 105547512,
+        "dailyStreams": 101677,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/13VXuHw3O8Yt7VwRIDqSo4",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "3Y1hrPPs0FFtXodEE7HkrN",
+        "title": "Happiness ​(f​eat​. Asake, Gunna​)",
+        "streams": 104005292,
+        "dailyStreams": 79249,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/3Y1hrPPs0FFtXodEE7HkrN",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "5UwxpuGHkwiojKDaPC5ZNu",
+        "title": "Joha",
+        "streams": 103870720,
+        "dailyStreams": 50174,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/5UwxpuGHkwiojKDaPC5ZNu",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "2wgvxtggKVzPkl0smF2UzI",
+        "title": "Organise",
+        "streams": 101109274,
+        "dailyStreams": 36091,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/2wgvxtggKVzPkl0smF2UzI",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "4k4pdUWX8632g7yByxC3rS",
+        "title": "Sungba (feat. Burna Boy) - Remix",
+        "streams": 99665277,
+        "dailyStreams": 43150,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/4k4pdUWX8632g7yByxC3rS",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "0VjzaXw81JQJM61pzWwP8b",
+        "title": "Nzaza",
+        "streams": 97922069,
+        "dailyStreams": 100834,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/0VjzaXw81JQJM61pzWwP8b",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      }
+    ],
+    "songsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "monthlyListenersLastUpdatedAt": "2026-08-24T11:32:10.115Z"
+  },
+  {
+    "rank": 9,
+    "previousRank": 11,
+    "name": "OMAH LAY",
+    "slug": "omah-lay",
+    "country": "Nigeria",
+    "tagline": "THE MIDNIGHT CONFESSIONAL",
+    "genres": [
+      "AFRO-R&B",
+      "ALT"
+    ],
+    "bio": "Omah Lay made interior monologue commercially huge. His wounded melodies, soft-spoken writing and shadowy production created a modern Afrobeats lane that many artists now borrow from.",
+    "score": 90.2,
+    "image": "artists/omah-lay.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5eb35ba3ee6067196268c5528cb",
+    "spotifyId": "5yOvAmpIR7hVxiS6Ls5DPO",
+    "spotifyUrl": "https://open.spotify.com/artist/5yOvAmpIR7hVxiS6Ls5DPO",
+    "monthlyListeners": 11140922,
+    "totalSpotifyStreams": 3639027800,
+    "dailySpotifyStreams": 2602048,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/omah-lay/5yOvAmpIR7hVxiS6Ls5DPO",
+      "catalogue": "https://kworb.net/spotify/artist/5yOvAmpIR7hVxiS6Ls5DPO_songs.html"
+    },
+    "statsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "songs": [
+      {
+        "spotifyId": "1wADwLSkYhrSmy4vdy6BRn",
+        "title": "soso",
+        "streams": 420820768,
+        "dailyStreams": 226454,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/1wADwLSkYhrSmy4vdy6BRn",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "6oOCGD2Sp9UTcDsuDz8Hdu",
+        "title": "understand",
+        "streams": 234548953,
+        "dailyStreams": 94596,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/6oOCGD2Sp9UTcDsuDz8Hdu",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "0zVk3uuV9UhxAt48F3OL12",
+        "title": "HOLY GHOST",
+        "streams": 211046178,
+        "dailyStreams": 97364,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/0zVk3uuV9UhxAt48F3OL12",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "5DS9LiyEdw2zY8bM6kjjgM",
+        "title": "Infinity (feat. Omah Lay)",
+        "streams": 189270018,
+        "dailyStreams": 42332,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/5DS9LiyEdw2zY8bM6kjjgM",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "4AxG1T6UJJ4xCX4Wz6JDLG",
+        "title": "People (feat. Ayra Starr & Omah Lay)",
+        "streams": 168797094,
+        "dailyStreams": 0,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/4AxG1T6UJJ4xCX4Wz6JDLG",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "0ectw8g5yRkC7GNsh6gP4h",
+        "title": "reason",
+        "streams": 153054352,
+        "dailyStreams": 77049,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/0ectw8g5yRkC7GNsh6gP4h",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "65v99AWZyNz3aRmfrT2I7N",
+        "title": "i'm a mess",
+        "streams": 143407065,
+        "dailyStreams": 93789,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/65v99AWZyNz3aRmfrT2I7N",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "5GyaXqMfcIGHfmTUITFacS",
+        "title": "With You (feat. Omah Lay)",
+        "streams": 131813436,
+        "dailyStreams": 108469,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/5GyaXqMfcIGHfmTUITFacS",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "2IhARxCm5lBKHgQvGw8RPo",
+        "title": "attention (with Justin Bieber)",
+        "streams": 130897342,
+        "dailyStreams": 39691,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/2IhARxCm5lBKHgQvGw8RPo",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "7MzPNlEPwAir9GXwhZsHSH",
+        "title": "Bad Influence",
+        "streams": 114781473,
+        "dailyStreams": 55202,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/7MzPNlEPwAir9GXwhZsHSH",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "6NgjdJrK7Bpyvsm8yDtx4H",
+        "title": "Godly",
+        "streams": 88592737,
+        "dailyStreams": 41431,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/6NgjdJrK7Bpyvsm8yDtx4H",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "1sNQMj0Dq0UHrryEQqP4OY",
+        "title": "Another Vibe (feat. Omah Lay)",
+        "streams": 81506445,
+        "dailyStreams": 23383,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/1sNQMj0Dq0UHrryEQqP4OY",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "2YNLzBRGyCAzHEGPO3J2Sb",
+        "title": "Moving",
+        "streams": 64868214,
+        "dailyStreams": 42443,
+        "fifaEditions": [
+          "EA SPORTS FC 25"
+        ],
+        "sourceUrl": "https://www.ea.com/en/games/ea-sports-fc/fc-25/news/fc-25-soundtrack",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      }
+    ],
+    "songsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "monthlyListenersLastUpdatedAt": "2026-08-24T11:32:10.115Z"
+  },
+  {
+    "rank": 10,
+    "previousRank": 12,
+    "name": "CKay",
+    "slug": "ckay",
+    "country": "Nigeria",
+    "tagline": "THE EMO-AFROBEATS EXPORT",
+    "genres": [
+      "EMO-AFROBEATS",
+      "POP"
+    ],
+    "bio": "CKay's Love Nwantiti became one of the genre's defining digital exports, but his larger signature is emotional economy: intimate writing, simple melodies and records built to travel.",
+    "score": 89.4,
+    "image": "artists/ckay.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5ebff101c2e561cfcff3f6195aa",
+    "spotifyId": "048LktY5zMnakWq7PTtFrz",
+    "spotifyUrl": "https://open.spotify.com/artist/048LktY5zMnakWq7PTtFrz",
+    "monthlyListeners": 11380041,
+    "totalSpotifyStreams": 3030386605,
+    "dailySpotifyStreams": 1147084,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/ckay/048LktY5zMnakWq7PTtFrz",
+      "catalogue": "https://kworb.net/spotify/artist/048LktY5zMnakWq7PTtFrz_songs.html"
+    },
+    "statsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "songs": [
+      {
+        "spotifyId": "2Xr1dTzJee307rmrkt8c0g",
+        "title": "love nwantiti (ah ah ah)",
+        "streams": 1058774830,
+        "dailyStreams": 279960,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/2Xr1dTzJee307rmrkt8c0g",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "4gvrJnKCKIPiacNsWVQwEU",
+        "title": "love nwantiti (feat. Dj Yo! & AX'EL) - Remix",
+        "streams": 730923693,
+        "dailyStreams": 185097,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/4gvrJnKCKIPiacNsWVQwEU",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "6bW7YnPQQffit1iwule5Vv",
+        "title": "emiliana",
+        "streams": 317319528,
+        "dailyStreams": 114579,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/6bW7YnPQQffit1iwule5Vv",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "1EYeZGTMCjV7uVey5fNWXM",
+        "title": "love nwantiti (feat. ElGrande Toto) - North African Remix",
+        "streams": 201994417,
+        "dailyStreams": 108613,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/1EYeZGTMCjV7uVey5fNWXM",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "2tQmOuBx8cSjdKYLKboYHt",
+        "title": "love nwantiti (ah ah ah) [feat. Joeboy & Kuami Eugene] [Remix]",
+        "streams": 78459273,
+        "dailyStreams": 26055,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/2tQmOuBx8cSjdKYLKboYHt",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "1VRDHSt6Q0ZfwCGQZrLmtd",
+        "title": "BODY (danz)",
+        "streams": 66076430,
+        "dailyStreams": 71886,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/1VRDHSt6Q0ZfwCGQZrLmtd",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "0bkq8SCKDRY1RBFKIADCQK",
+        "title": "WAHALA (feat. Olamide)",
+        "streams": 63700883,
+        "dailyStreams": 47815,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/0bkq8SCKDRY1RBFKIADCQK",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "450u5gGMGwQXmtLSR7AN2s",
+        "title": "Love Nwantiti (Acoustic Version)",
+        "streams": 30803492,
+        "dailyStreams": 14312,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/450u5gGMGwQXmtLSR7AN2s",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "6zublRIkZocboXucqc8hgB",
+        "title": "Beggie Beggie",
+        "streams": 29718763,
+        "dailyStreams": 22041,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/6zublRIkZocboXucqc8hgB",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "3rRKu7N2zRgb0pF9DLrrBI",
+        "title": "by now",
+        "streams": 29638450,
+        "dailyStreams": 29515,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/3rRKu7N2zRgb0pF9DLrrBI",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "0Jq7lotJVDHAvNfef6ehcJ",
+        "title": "Felony",
+        "streams": 28791807,
+        "dailyStreams": 48461,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/0Jq7lotJVDHAvNfef6ehcJ",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "5FqaXHqw79ILxvJUKvOzxc",
+        "title": "love nwantiti (feat. Franglish) - French Remix",
+        "streams": 26906675,
+        "dailyStreams": 3538,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/5FqaXHqw79ILxvJUKvOzxc",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      }
+    ],
+    "songsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "monthlyListenersLastUpdatedAt": "2026-08-24T11:32:10.115Z"
+  },
+  {
+    "rank": 11,
+    "previousRank": 13,
+    "name": "Fireboy DML",
+    "slug": "fireboy-dml",
+    "country": "Nigeria",
+    "tagline": "THE ROMANTIC CRAFTSMAN",
+    "genres": [
+      "AFRO-LIFE",
+      "R&B"
+    ],
+    "bio": "Fireboy writes romance with the eye of a short-story author. Peru widened the audience, while his albums show the quieter craft: clean melodies, emotional detail and unusual consistency.",
+    "score": 88.6,
+    "image": "artists/fireboy-dml.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5eb0a244d35a311e51fcbf794d4",
+    "spotifyId": "75VKfyoBlkmrJFDqo1o2VY",
+    "spotifyUrl": "https://open.spotify.com/artist/75VKfyoBlkmrJFDqo1o2VY",
+    "monthlyListeners": 9429857,
+    "totalSpotifyStreams": 2612016279,
+    "dailySpotifyStreams": 1582954,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/fireboy-dml/75VKfyoBlkmrJFDqo1o2VY",
+      "catalogue": "https://kworb.net/spotify/artist/75VKfyoBlkmrJFDqo1o2VY_songs.html"
+    },
+    "statsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "songs": [
+      {
+        "spotifyId": "4vb777iaycnlFxVkJMmtfd",
+        "title": "Peru",
+        "streams": 423371448,
+        "dailyStreams": 123865,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/4vb777iaycnlFxVkJMmtfd",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "2qWwuCVeMjF9mUT0S5Iqvl",
+        "title": "Bandana",
+        "streams": 218199908,
+        "dailyStreams": 136157,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/2qWwuCVeMjF9mUT0S5Iqvl",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "2ZFAAhOIIFuIKFWuE59UtM",
+        "title": "Peru",
+        "streams": 149695744,
+        "dailyStreams": 59902,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/2ZFAAhOIIFuIKFWuE59UtM",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "2AKS1HhpLu2rgkojECUm3V",
+        "title": "Playboy",
+        "streams": 115851634,
+        "dailyStreams": 63743,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/2AKS1HhpLu2rgkojECUm3V",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "35056uy2b4M1qJ3Z1ed3sf",
+        "title": "Sere",
+        "streams": 102630854,
+        "dailyStreams": 83593,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/35056uy2b4M1qJ3Z1ed3sf",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "7u0z6FcJDqkZwdpqAqUzmO",
+        "title": "Vibration",
+        "streams": 96347775,
+        "dailyStreams": 62809,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/7u0z6FcJDqkZwdpqAqUzmO",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "5Wxkvvb6pLky16pwq4gBI3",
+        "title": "Dealer",
+        "streams": 81507862,
+        "dailyStreams": 24448,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/5Wxkvvb6pLky16pwq4gBI3",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "6g8vNyogMW32lhHlNcDiwX",
+        "title": "Diana",
+        "streams": 79288318,
+        "dailyStreams": 41561,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/6g8vNyogMW32lhHlNcDiwX",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "3x11dxRSmvNxq46e5IhNCO",
+        "title": "yawa",
+        "streams": 72344225,
+        "dailyStreams": 49923,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/3x11dxRSmvNxq46e5IhNCO",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "03VSnJoeuY3BtyuZ8RSSF4",
+        "title": "everyday",
+        "streams": 53433524,
+        "dailyStreams": 45208,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/03VSnJoeuY3BtyuZ8RSSF4",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "3kv0lHXKrW8oltTe7fYbBq",
+        "title": "Peru - R3HAB Remix",
+        "streams": 49623917,
+        "dailyStreams": 8477,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/3kv0lHXKrW8oltTe7fYbBq",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "3B5slaBuBK0BsuNw570pmx",
+        "title": "Like I Do",
+        "streams": 49511854,
+        "dailyStreams": 49825,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/3B5slaBuBK0BsuNw570pmx",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "0s3ZpsAaVCbWxDhLq2B2wh",
+        "title": "Scatter",
+        "streams": 17970452,
+        "dailyStreams": 6613,
+        "fifaEditions": [
+          "FIFA 21"
+        ],
+        "sourceUrl": "https://punchng.com/fireboy-rema-feature-on-fifa-21-official-soundtracks/",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      }
+    ],
+    "songsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "monthlyListenersLastUpdatedAt": "2026-08-24T11:32:10.115Z"
+  },
+  {
+    "rank": 12,
+    "previousRank": 2,
+    "name": "Victony",
+    "slug": "victony",
+    "country": "Nigeria",
+    "tagline": "THE ELASTIC VOICE",
+    "genres": [
+      "AFROPOP",
+      "ALT"
+    ],
+    "bio": "Victony's elastic voice can glide through street-pop, R&B and experimental production without losing its identity. His feature run turned promise into one of the scene's most adaptable profiles.",
+    "score": 87.8,
+    "image": "artists/victony.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5eb2edf000427bb95912c77163c",
+    "spotifyId": "1E5hfn5BduN2nnoZCJmUVG",
+    "spotifyUrl": "https://open.spotify.com/artist/1E5hfn5BduN2nnoZCJmUVG",
+    "monthlyListeners": 7589119,
+    "totalSpotifyStreams": 1451380317,
+    "dailySpotifyStreams": 1509360,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/victony/1E5hfn5BduN2nnoZCJmUVG",
+      "catalogue": "https://kworb.net/spotify/artist/1E5hfn5BduN2nnoZCJmUVG_songs.html"
+    },
+    "statsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "songs": [
+      {
+        "spotifyId": "1lZI1Dt20u4EsIwLmwiTII",
+        "title": "Soweto - Sped Up",
+        "streams": 286987052,
+        "dailyStreams": 185561,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/1lZI1Dt20u4EsIwLmwiTII",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "7p85HOOjg1q3lqKovxeiOC",
+        "title": "Soweto",
+        "streams": 219932460,
+        "dailyStreams": 47052,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/7p85HOOjg1q3lqKovxeiOC",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "3NBmsIVTPNuqsBP8VtwMPd",
+        "title": "Kolomental",
+        "streams": 71418846,
+        "dailyStreams": 31160,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/3NBmsIVTPNuqsBP8VtwMPd",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "3RMr94P81nO3GtW9MfqNp5",
+        "title": "PITY THIS BOY (with Victony)",
+        "streams": 61073324,
+        "dailyStreams": 53069,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/3RMr94P81nO3GtW9MfqNp5",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "37neENY88EhsuW7ZqJsy6C",
+        "title": "Everything",
+        "streams": 57600096,
+        "dailyStreams": 26451,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/37neENY88EhsuW7ZqJsy6C",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "7CkDjDtJjCZA7AW7RBvrvC",
+        "title": "OHEMA (with Crayon & Bella Shmurda)",
+        "streams": 50291803,
+        "dailyStreams": 16616,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/7CkDjDtJjCZA7AW7RBvrvC",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "6l7opVclJEHReImCPkMc5o",
+        "title": "Stubborn",
+        "streams": 50238165,
+        "dailyStreams": 32971,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/6l7opVclJEHReImCPkMc5o",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "6OeHAhsVn22nStOm1XRHLQ",
+        "title": "Jolene",
+        "streams": 48540549,
+        "dailyStreams": 13920,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/6OeHAhsVn22nStOm1XRHLQ",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "0V9hYbo9uL11hqLP3u0yqA",
+        "title": "Babylon",
+        "streams": 41864014,
+        "dailyStreams": 16126,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/0V9hYbo9uL11hqLP3u0yqA",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "3yCYQ0uzJyX0GwJoF3QvAe",
+        "title": "Holy Father",
+        "streams": 36062794,
+        "dailyStreams": 0,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/3yCYQ0uzJyX0GwJoF3QvAe",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "4ua1W0cz4hQfh3VGQdeDAu",
+        "title": "Apollo",
+        "streams": 35481166,
+        "dailyStreams": 8776,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/4ua1W0cz4hQfh3VGQdeDAu",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "6qS9yoAUIXNfno5t4YLQdn",
+        "title": "Risk",
+        "streams": 34865199,
+        "dailyStreams": 18286,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/6qS9yoAUIXNfno5t4YLQdn",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      }
+    ],
+    "songsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "monthlyListenersLastUpdatedAt": "2026-08-24T11:32:10.115Z"
+  },
+  {
+    "rank": 13,
+    "previousRank": null,
+    "name": "MOLIY",
+    "slug": "moliy",
+    "country": "Ghana",
+    "tagline": "THE DIASPORA SPARK",
+    "genres": [
+      "AFRO-FUSION",
+      "POP"
+    ],
+    "bio": "Accra-born MOLIY makes dance music with a sly edge. Her airy delivery and diaspora-minded collaborations have carried Ghanaian pop into clubs and charts far outside its home market.",
+    "score": 87,
+    "image": "artists/moliy.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5eb94cf7e55f651c75e9c530d81",
+    "spotifyId": "2hVWBpjLW4Q7fboYz2pVYK",
+    "spotifyUrl": "https://open.spotify.com/artist/2hVWBpjLW4Q7fboYz2pVYK",
+    "monthlyListeners": 10756415,
+    "totalSpotifyStreams": 1337756625,
+    "dailySpotifyStreams": 853272,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/moliy/2hVWBpjLW4Q7fboYz2pVYK",
+      "catalogue": "https://kworb.net/spotify/artist/2hVWBpjLW4Q7fboYz2pVYK_songs.html"
+    },
+    "statsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "songs": [
+      {
+        "spotifyId": "0ABKtkw5dRWJwHH5Q3dbws",
+        "title": "SAD GIRLZ LUV MONEY Remix (feat. Kali Uchis and Moliy)",
+        "streams": 610664058,
+        "dailyStreams": 202646,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/0ABKtkw5dRWJwHH5Q3dbws",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "0QCIpQV3twfqo9kh0t8Zza",
+        "title": "SHAKE IT TO THE MAX (FLY) - REMIX",
+        "streams": 491021510,
+        "dailyStreams": 417848,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/0QCIpQV3twfqo9kh0t8Zza",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "2pgDBO0ZAgvye7joSmdDm8",
+        "title": "SAD GIRLZ LUV MONEY",
+        "streams": 52301281,
+        "dailyStreams": 10271,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/2pgDBO0ZAgvye7joSmdDm8",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "1ErzFR9pq5D8XtEU4TcRKd",
+        "title": "Shake It To The Max (FLY)",
+        "streams": 35333803,
+        "dailyStreams": 20846,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/1ErzFR9pq5D8XtEU4TcRKd",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "2wkBr0Fimagbx0cLq0aCn2",
+        "title": "BODY GO",
+        "streams": 23868312,
+        "dailyStreams": 37347,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/2wkBr0Fimagbx0cLq0aCn2",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "5lYLBAH2uSvERWy8GAcBJz",
+        "title": "SAD GIRLZ LUV MONEY Remix (feat. Kali Uchis and Moliy) - Slowed + Reverb",
+        "streams": 22107230,
+        "dailyStreams": 32449,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/5lYLBAH2uSvERWy8GAcBJz",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "6QOOnaoczEeWw4zEICAJyB",
+        "title": "What I Like (with Moliy, Ayetian, & Tyga)",
+        "streams": 17555493,
+        "dailyStreams": 46904,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/6QOOnaoczEeWw4zEICAJyB",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "6Dm6dbBGa8FpEC73fCK7ZO",
+        "title": "Shake It To The Max (Done With Ya Ex)",
+        "streams": 14357254,
+        "dailyStreams": 25175,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/6Dm6dbBGa8FpEC73fCK7ZO",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "6J9aDPnmDkiPAxWhwLV8Zr",
+        "title": "Shake It To The Max (FLY) - Kalash & Maureen Remix",
+        "streams": 13639703,
+        "dailyStreams": 6128,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/6J9aDPnmDkiPAxWhwLV8Zr",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "1GqEu4nDrzncKDnBaf7FKs",
+        "title": "FEEL A WAY",
+        "streams": 12491239,
+        "dailyStreams": 1937,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/1GqEu4nDrzncKDnBaf7FKs",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "1tSYJVpbGD0iPLQPdesHpU",
+        "title": "Shake It To The Max - Tuff Remix",
+        "streams": 4820367,
+        "dailyStreams": 6723,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/1tSYJVpbGD0iPLQPdesHpU",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "7eilm0LI79IVtAKgqPCn28",
+        "title": "Nice n' Sweet (feat. MOLIY)",
+        "streams": 3624479,
+        "dailyStreams": 3817,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/7eilm0LI79IVtAKgqPCn28",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      }
+    ],
+    "songsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "monthlyListenersLastUpdatedAt": "2026-08-24T11:32:10.115Z"
+  },
+  {
+    "rank": 14,
+    "previousRank": 14,
+    "name": "BNXN",
+    "slug": "bnxn",
+    "country": "Nigeria",
+    "tagline": "THE HOOK SPECIALIST",
+    "genres": [
+      "AFRO-FUSION",
+      "R&B"
+    ],
+    "bio": "BNXN's husky tone gives features instant shape, but the catalogue proves he is more than a hook specialist. He writes with humour, vulnerability and a traveller's ear for rhythm.",
+    "score": 86.1,
+    "image": "artists/bnxn.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5eb54047830689ea245d14a390f",
+    "spotifyId": "3zaDigUwjHvjOkSn0NDf9x",
+    "spotifyUrl": "https://open.spotify.com/artist/3zaDigUwjHvjOkSn0NDf9x",
+    "monthlyListeners": 6103366,
+    "totalSpotifyStreams": 2097194844,
+    "dailySpotifyStreams": 2116118,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/bnxn/3zaDigUwjHvjOkSn0NDf9x",
+      "catalogue": "https://kworb.net/spotify/artist/3zaDigUwjHvjOkSn0NDf9x_songs.html"
+    },
+    "statsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "songs": [
+      {
+        "spotifyId": "4Gasn91fsCefnN8zM5GjA8",
+        "title": "Finesse",
+        "streams": 226222983,
+        "dailyStreams": 92429,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/4Gasn91fsCefnN8zM5GjA8",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "0YeUYYOh25Cn57DKTC8uS4",
+        "title": "GWAGWALADA",
+        "streams": 103611096,
+        "dailyStreams": 61442,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/0YeUYYOh25Cn57DKTC8uS4",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "6jdTkoEaer7XNGSblczoSu",
+        "title": "Mood (feat. BNXN)",
+        "streams": 94080951,
+        "dailyStreams": 48111,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/6jdTkoEaer7XNGSblczoSu",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "2jZ2MrAk8iNZk1dsI0Vr5z",
+        "title": "Cold Outside",
+        "streams": 71171204,
+        "dailyStreams": 25803,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/2jZ2MrAk8iNZk1dsI0Vr5z",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "52Krs3LCqtcfeiWUvhxncK",
+        "title": "POE",
+        "streams": 69233633,
+        "dailyStreams": 53840,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/52Krs3LCqtcfeiWUvhxncK",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "4A7sSA10D35HQUNrSOl5Zo",
+        "title": "Propeller (feat. Dave & BNXN)",
+        "streams": 68969260,
+        "dailyStreams": 34356,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/4A7sSA10D35HQUNrSOl5Zo",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "54HwZc6fEmR5EnjRT4oBq5",
+        "title": "Very Soon",
+        "streams": 67880537,
+        "dailyStreams": 113108,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/54HwZc6fEmR5EnjRT4oBq5",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "4jcrO2T6XJ1B7hXsAEJ3ve",
+        "title": "Pidgin & English",
+        "streams": 66292835,
+        "dailyStreams": 81178,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/4jcrO2T6XJ1B7hXsAEJ3ve",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "731NDNG7VQOA2KBnS43jqr",
+        "title": "PRAY",
+        "streams": 59927005,
+        "dailyStreams": 55287,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/731NDNG7VQOA2KBnS43jqr",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "771KDfpsOtJPQmocQpMdkR",
+        "title": "Fi Kan We Kan",
+        "streams": 56768217,
+        "dailyStreams": 49670,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/771KDfpsOtJPQmocQpMdkR",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "6GkFuU6FVfx866bhM1T1Iz",
+        "title": "Ole (feat. BNXN)",
+        "streams": 56288637,
+        "dailyStreams": 46387,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/6GkFuU6FVfx866bhM1T1Iz",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "29e2gdZN35wxeGgDtkXjIa",
+        "title": "Feeling",
+        "streams": 55188947,
+        "dailyStreams": 29934,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/29e2gdZN35wxeGgDtkXjIa",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      }
+    ],
+    "songsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "monthlyListenersLastUpdatedAt": "2026-08-24T11:32:10.115Z"
+  },
+  {
+    "rank": 15,
+    "previousRank": 15,
+    "name": "Seyi Vibez",
+    "slug": "seyi-vibez",
+    "country": "Nigeria",
+    "tagline": "THE STREET PSALMIST",
+    "genres": [
+      "STREET-POP",
+      "APALA"
+    ],
+    "bio": "Seyi Vibez turns prayer, survival and street testimony into hypnotic music. His prolific run built a loyal audience that hears spiritual weight beneath the raw vocal grain.",
+    "score": 85.3,
+    "image": "artists/seyi-vibez.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5eb9902f473df31601d5938e0bd",
+    "spotifyId": "4zmZ8lVLzGc84S4v2B1rLx",
+    "spotifyUrl": "https://open.spotify.com/artist/4zmZ8lVLzGc84S4v2B1rLx",
+    "monthlyListeners": 3900000,
+    "totalSpotifyStreams": 1833566790,
+    "dailySpotifyStreams": 2289846,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/seyi-vibez/4zmZ8lVLzGc84S4v2B1rLx",
+      "catalogue": "https://kworb.net/spotify/artist/4zmZ8lVLzGc84S4v2B1rLx_songs.html"
+    },
+    "statsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "songs": [
+      {
+        "spotifyId": "0YeUYYOh25Cn57DKTC8uS4",
+        "title": "GWAGWALADA",
+        "streams": 103550184,
+        "dailyStreams": 64276,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/0YeUYYOh25Cn57DKTC8uS4",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "6VX4hVDmDMfClxp6EwDNQP",
+        "title": "Bad Vibes (feat. Seyi Vibez)",
+        "streams": 80017842,
+        "dailyStreams": 52264,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/6VX4hVDmDMfClxp6EwDNQP",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "5hphSVebVxTpDfrk09W0hS",
+        "title": "Doha",
+        "streams": 69690820,
+        "dailyStreams": 75001,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/5hphSVebVxTpDfrk09W0hS",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "46oyXrPbCSbk0TLJ1f7w6K",
+        "title": "Different Pattern",
+        "streams": 61965101,
+        "dailyStreams": 33443,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/46oyXrPbCSbk0TLJ1f7w6K",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "4sm7xhaW2PT4iLuTtXaKa1",
+        "title": "99 (feat. Daecolm)",
+        "streams": 60550379,
+        "dailyStreams": 68592,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/4sm7xhaW2PT4iLuTtXaKa1",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "1Ss5QjczHsdYkvNsiBmoqS",
+        "title": "Instagram",
+        "streams": 56595947,
+        "dailyStreams": 37265,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/1Ss5QjczHsdYkvNsiBmoqS",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "4ddpHR6drcPRGPL5jYFluh",
+        "title": "MARIO KART",
+        "streams": 50890698,
+        "dailyStreams": 43567,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/4ddpHR6drcPRGPL5jYFluh",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "0yLPupVmWzIthRHesuR5Wt",
+        "title": "Pressure",
+        "streams": 50245410,
+        "dailyStreams": 39037,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/0yLPupVmWzIthRHesuR5Wt",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "6iHVLqSeDVj70pcVULZzGj",
+        "title": "Cana",
+        "streams": 49484070,
+        "dailyStreams": 45199,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/6iHVLqSeDVj70pcVULZzGj",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "5HH25mofxlRRGJpKpQQWJK",
+        "title": "Giza (feat. Seyi Vibez)",
+        "streams": 47131227,
+        "dailyStreams": 22662,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/5HH25mofxlRRGJpKpQQWJK",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "4kdLYxqvPduwC5oAdXhMLh",
+        "title": "Karma",
+        "streams": 45434674,
+        "dailyStreams": 75315,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/4kdLYxqvPduwC5oAdXhMLh",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "1oFabnkoJ01ksmSmyjELDl",
+        "title": "Where I’m from",
+        "streams": 44333460,
+        "dailyStreams": 44357,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/1oFabnkoJ01ksmSmyjELDl",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      }
+    ],
+    "songsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "monthlyListenersLastUpdatedAt": "2026-08-20T00:00:00.000Z"
+  },
+  {
+    "rank": 16,
+    "previousRank": null,
+    "name": "FOLA",
+    "slug": "fola",
+    "country": "Nigeria",
+    "tagline": "THE NEW MELODIST",
+    "genres": [
+      "AFROPOP",
+      "R&B"
+    ],
+    "bio": "FOLA's rise rests on melodic instinct rather than noise. He writes compact, emotionally direct songs and has quickly become one of the voices most likely to own the next chorus.",
+    "score": 84.5,
+    "image": "artists/fola.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5ebd6535da38a38866e12a44ac1",
+    "spotifyId": "0FK1hXdXst70HD11n5J26z",
+    "spotifyUrl": "https://open.spotify.com/artist/0FK1hXdXst70HD11n5J26z",
+    "monthlyListeners": 3700000,
+    "totalSpotifyStreams": 912253186,
+    "dailySpotifyStreams": 2102824,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/fola/0FK1hXdXst70HD11n5J26z",
+      "catalogue": "https://kworb.net/spotify/artist/0FK1hXdXst70HD11n5J26z_songs.html"
+    },
+    "songs": [
+      {
+        "spotifyId": "28sqVp9vMKEuVHWnmknj7l",
+        "title": "you",
+        "streams": 70067638,
+        "dailyStreams": 118867,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/28sqVp9vMKEuVHWnmknj7l",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "54HwZc6fEmR5EnjRT4oBq5",
+        "title": "Very Soon",
+        "streams": 67537926,
+        "dailyStreams": 114123,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/54HwZc6fEmR5EnjRT4oBq5",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "5ht0zFXsezKxVvu8eMiewq",
+        "title": "One Condition",
+        "streams": 60728312,
+        "dailyStreams": 61193,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/5ht0zFXsezKxVvu8eMiewq",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "3wdV4OJ37JdoLyUJMm50UW",
+        "title": "lost",
+        "streams": 59067091,
+        "dailyStreams": 45445,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/3wdV4OJ37JdoLyUJMm50UW",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "5nmYNuBSh99LNDdZ0iSe2O",
+        "title": "Get Better",
+        "streams": 52560972,
+        "dailyStreams": 64383,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/5nmYNuBSh99LNDdZ0iSe2O",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "3ZR7IlqBPK8TrJyZYfFX9L",
+        "title": "who does that? (feat. Bella Shmurda)",
+        "streams": 51425652,
+        "dailyStreams": 51910,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/3ZR7IlqBPK8TrJyZYfFX9L",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "07eJSSPcNlkR34wVlkrCcY",
+        "title": "Dangbana Riddim",
+        "streams": 48944365,
+        "dailyStreams": 55773,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/07eJSSPcNlkR34wVlkrCcY",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "5EMD7ozaMBD2GJCUHD5nVn",
+        "title": "Feeling",
+        "streams": 46019015,
+        "dailyStreams": 43398,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/5EMD7ozaMBD2GJCUHD5nVn",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "4fdFaCKwETqiiIi1GBNBSK",
+        "title": "alone - Remix",
+        "streams": 41844983,
+        "dailyStreams": 29316,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/4fdFaCKwETqiiIi1GBNBSK",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "4h479A3EU5ZpUg0mlfdNtR",
+        "title": "caricature",
+        "streams": 39425075,
+        "dailyStreams": 77677,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/4h479A3EU5ZpUg0mlfdNtR",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "5oS7MonetNV6SLUyP0t5Xb",
+        "title": "eko",
+        "streams": 30431870,
+        "dailyStreams": 40564,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/5oS7MonetNV6SLUyP0t5Xb",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "4v1WfWIwfplCJKNQmKx9FN",
+        "title": "Paparazzi",
+        "streams": 29118173,
+        "dailyStreams": 64303,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/4v1WfWIwfplCJKNQmKx9FN",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      }
+    ],
+    "songsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "statsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "monthlyListenersLastUpdatedAt": "2026-08-20T00:00:00.000Z"
+  },
+  {
+    "rank": 17,
+    "previousRank": 16,
+    "name": "Ruger",
+    "slug": "ruger",
+    "country": "Nigeria",
+    "tagline": "THE EYEPATCH MELODIST",
+    "genres": [
+      "AFRO-DANCEHALL",
+      "POP"
+    ],
+    "bio": "Ruger blends dancehall swing with a teasing pop persona and unusually clean songwriting. Beneath the swagger is a sharp ear for hooks that survive after the viral moment passes.",
+    "score": 83.7,
+    "image": "artists/ruger.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5eb26c5385b3d2b2dc901bcba49",
+    "spotifyId": "0a1SidMjD8D6EHvJph4n2H",
+    "spotifyUrl": "https://open.spotify.com/artist/0a1SidMjD8D6EHvJph4n2H",
+    "monthlyListeners": 5100000,
+    "totalSpotifyStreams": 1193627396,
+    "dailySpotifyStreams": 872087,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/ruger/0a1SidMjD8D6EHvJph4n2H",
+      "catalogue": "https://kworb.net/spotify/artist/0a1SidMjD8D6EHvJph4n2H_songs.html"
+    },
+    "songs": [
+      {
+        "spotifyId": "6z5y2kdxF4XrEVRFVqdGVL",
+        "title": "Asiwaju",
+        "streams": 230241660,
+        "dailyStreams": 132778,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/6z5y2kdxF4XrEVRFVqdGVL",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "57jUCJelGAISFxuea34lrr",
+        "title": "Girlfriend",
+        "streams": 113246931,
+        "dailyStreams": 70295,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/57jUCJelGAISFxuea34lrr",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "2pempG6Jl7ZHDpCBElQUec",
+        "title": "Dior",
+        "streams": 83102414,
+        "dailyStreams": 53879,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/2pempG6Jl7ZHDpCBElQUec",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "0cnxJjQ8T4GSz87TaIkwDY",
+        "title": "WeWe",
+        "streams": 81098078,
+        "dailyStreams": 63867,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/0cnxJjQ8T4GSz87TaIkwDY",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "1JY0oHjgGulg9YULxx8KW7",
+        "title": "Bounce",
+        "streams": 80546830,
+        "dailyStreams": 64385,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/1JY0oHjgGulg9YULxx8KW7",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "52Krs3LCqtcfeiWUvhxncK",
+        "title": "POE",
+        "streams": 68913304,
+        "dailyStreams": 46854,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/52Krs3LCqtcfeiWUvhxncK",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "5s33nLb8BCeeKep2rfG7To",
+        "title": "Bae Bae",
+        "streams": 51795285,
+        "dailyStreams": 28641,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/5s33nLb8BCeeKep2rfG7To",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "31jkD22MNUrpebszwU7ZFz",
+        "title": "Red Flags",
+        "streams": 47007547,
+        "dailyStreams": 33066,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/31jkD22MNUrpebszwU7ZFz",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "5n4Jw3ohf9JT380HB7hhLw",
+        "title": "Snapchat",
+        "streams": 39755037,
+        "dailyStreams": 32480,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/5n4Jw3ohf9JT380HB7hhLw",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "4EoYs4KY7oHQpJPTuxD7mU",
+        "title": "Romeo Must Die (RMD)",
+        "streams": 38300074,
+        "dailyStreams": 15078,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/4EoYs4KY7oHQpJPTuxD7mU",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "1kW728xFsRBvunN1yiTsNf",
+        "title": "Ilashe",
+        "streams": 29941008,
+        "dailyStreams": 11430,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/1kW728xFsRBvunN1yiTsNf",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "6Ir2Zyt5AZnF2RlqXOFblo",
+        "title": "Toma Toma",
+        "streams": 24397198,
+        "dailyStreams": 13833,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/6Ir2Zyt5AZnF2RlqXOFblo",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      }
+    ],
+    "songsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "statsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "monthlyListenersLastUpdatedAt": "2026-08-20T00:00:00.000Z"
+  },
+  {
+    "rank": 18,
+    "previousRank": 6,
+    "name": "Mavo",
+    "slug": "mavo",
+    "country": "Nigeria",
+    "tagline": "THE NEW-WAVE DISRUPTOR",
+    "genres": [
+      "AFROPOP",
+      "STREET-POP"
+    ],
+    "bio": "Mavo arrived with the velocity of internet culture: clipped phrases, quick melodic turns and records built for replay. The next test is turning that heat into a durable body of work.",
+    "score": 82.9,
+    "image": "artists/mavo.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5ebad619397a3d8e7007d8aa40c",
+    "spotifyId": "1VBjib1ykqXxss9Tw5YuR9",
+    "spotifyUrl": "https://open.spotify.com/artist/1VBjib1ykqXxss9Tw5YuR9",
+    "monthlyListeners": 3700000,
+    "totalSpotifyStreams": 695854296,
+    "dailySpotifyStreams": 2261152,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/mavo/1VBjib1ykqXxss9Tw5YuR9",
+      "catalogue": "https://kworb.net/spotify/artist/1VBjib1ykqXxss9Tw5YuR9_songs.html"
+    },
+    "songs": [
+      {
+        "spotifyId": "1VRDHSt6Q0ZfwCGQZrLmtd",
+        "title": "BODY (danz)",
+        "streams": 65868098,
+        "dailyStreams": 68208,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/1VRDHSt6Q0ZfwCGQZrLmtd",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "12jMMRyPNMTNp3CRmdWMve",
+        "title": "MONEY CONSTANT",
+        "streams": 64937891,
+        "dailyStreams": 143713,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/12jMMRyPNMTNp3CRmdWMve",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "5eVQcRihBkD938y0zfnbJ4",
+        "title": "Tumo Weto",
+        "streams": 56497797,
+        "dailyStreams": 107519,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/5eVQcRihBkD938y0zfnbJ4",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "1heVYYJgIbEmeEQ8ye0YFX",
+        "title": "Big Bum Bum",
+        "streams": 44667631,
+        "dailyStreams": 188308,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/1heVYYJgIbEmeEQ8ye0YFX",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "2h1aaSSMUspQfHKDl5uISY",
+        "title": "Escaladizzy II",
+        "streams": 37973629,
+        "dailyStreams": 42135,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/2h1aaSSMUspQfHKDl5uISY",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "3JN8aItsGqTWapuekI8vxM",
+        "title": "Aura Salad",
+        "streams": 30345721,
+        "dailyStreams": 128465,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/3JN8aItsGqTWapuekI8vxM",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "1Yf58S4QQwxqYSJZm5JxmA",
+        "title": "Shakabulizzy",
+        "streams": 28348990,
+        "dailyStreams": 30647,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/1Yf58S4QQwxqYSJZm5JxmA",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "1w8lSGDuMUgRh7rygMp7VB",
+        "title": "Mofe",
+        "streams": 27496637,
+        "dailyStreams": 89231,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/1w8lSGDuMUgRh7rygMp7VB",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "78lEwmE6xpWtwHhS8D9Fw2",
+        "title": "Escaladizzy",
+        "streams": 24667053,
+        "dailyStreams": 31198,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/78lEwmE6xpWtwHhS8D9Fw2",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "3yzs58LteW16AjEb4J5vvi",
+        "title": "Shakabulizzy - Remix",
+        "streams": 20956535,
+        "dailyStreams": 23302,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/3yzs58LteW16AjEb4J5vvi",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "5DuhLCBVuGRYVoV64ucaWh",
+        "title": "Galorizzy",
+        "streams": 16292978,
+        "dailyStreams": 30129,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/5DuhLCBVuGRYVoV64ucaWh",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "15lsGpVs9AwnaerYU0Kddi",
+        "title": "No",
+        "streams": 15685589,
+        "dailyStreams": 25997,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/15lsGpVs9AwnaerYU0Kddi",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      }
+    ],
+    "songsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "statsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "monthlyListenersLastUpdatedAt": "2026-08-20T00:00:00.000Z"
+  },
+  {
+    "rank": 19,
+    "previousRank": null,
+    "name": "Odeal",
+    "slug": "odeal",
+    "country": "UK / Nigeria",
+    "tagline": "THE DIASPORA CROONER",
+    "genres": [
+      "ALTÉ",
+      "R&B"
+    ],
+    "bio": "Odeal connects London intimacy with Nigerian rhythm. His warm, conversational vocals make his songs feel close-up, while patient arrangements give them room to travel.",
+    "score": 82,
+    "image": "artists/odeal.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5eb6b6814d1e1a9551310e23034",
+    "spotifyId": "2BPwxhCvvcb8xDl8GWIjbh",
+    "spotifyUrl": "https://open.spotify.com/artist/2BPwxhCvvcb8xDl8GWIjbh",
+    "monthlyListeners": 6142568,
+    "totalSpotifyStreams": 679976742,
+    "dailySpotifyStreams": 1083293,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/odeal/2BPwxhCvvcb8xDl8GWIjbh",
+      "catalogue": "https://kworb.net/spotify/artist/2BPwxhCvvcb8xDl8GWIjbh_songs.html"
+    },
+    "statsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "songs": [
+      {
+        "spotifyId": "3w2PO4US2zMxFDxEjWT9yB",
+        "title": "Be Easy",
+        "streams": 86383041,
+        "dailyStreams": 40084,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/3w2PO4US2zMxFDxEjWT9yB",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "1Y3hIs5TYN18Ymvnhd8At2",
+        "title": "Coffee (Don't Read Signs)",
+        "streams": 60677037,
+        "dailyStreams": 20826,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/1Y3hIs5TYN18Ymvnhd8At2",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "7lNFaTHV5IH8xaSXPqllOn",
+        "title": "Blame U",
+        "streams": 52508460,
+        "dailyStreams": 74836,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/7lNFaTHV5IH8xaSXPqllOn",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "30nn36X7wfesAGAkvGero4",
+        "title": "Soh-Soh",
+        "streams": 50871988,
+        "dailyStreams": 30545,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/30nn36X7wfesAGAkvGero4",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "2egIlhalVEVQhvt9W11u82",
+        "title": "Miami (feat. Leon Thomas)",
+        "streams": 41814036,
+        "dailyStreams": 74502,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/2egIlhalVEVQhvt9W11u82",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "0LxTBLGeMgCTJZvcX8rI4c",
+        "title": "Intro (Landmine)",
+        "streams": 26717184,
+        "dailyStreams": 3080,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/0LxTBLGeMgCTJZvcX8rI4c",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "5vTNC4ONe5kc1rlGbjOEZs",
+        "title": "Gaslight 101",
+        "streams": 23320094,
+        "dailyStreams": 27869,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/5vTNC4ONe5kc1rlGbjOEZs",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "3XmHd0NqN5O4e7Vnv8fb8q",
+        "title": "Nights In The Sun (feat. Wizkid)",
+        "streams": 21926255,
+        "dailyStreams": 55096,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/3XmHd0NqN5O4e7Vnv8fb8q",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "7n1nwXK2rEsixUkwtRtETK",
+        "title": "You, The World Vs Me",
+        "streams": 21839603,
+        "dailyStreams": 8550,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/7n1nwXK2rEsixUkwtRtETK",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "43JEzpUepmETKeTwqLWauB",
+        "title": "London Summers",
+        "streams": 17549335,
+        "dailyStreams": 31371,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/43JEzpUepmETKeTwqLWauB",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "1CqcGbXZrpJJygqUM8PW05",
+        "title": "My Heart",
+        "streams": 17104943,
+        "dailyStreams": 27364,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/1CqcGbXZrpJJygqUM8PW05",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "2AsdsBTAtp5EckmvsbUKtH",
+        "title": "ONOME",
+        "streams": 14561628,
+        "dailyStreams": 11236,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/2AsdsBTAtp5EckmvsbUKtH",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      }
+    ],
+    "songsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "monthlyListenersLastUpdatedAt": "2026-08-24T11:32:10.115Z"
+  },
+  {
+    "rank": 20,
+    "previousRank": 17,
+    "name": "Kizz Daniel",
+    "slug": "kizz-daniel",
+    "country": "Nigeria",
+    "tagline": "THE CONSISTENCY KING",
+    "genres": [
+      "AFROPOP",
+      "POP"
+    ],
+    "bio": "Kizz Daniel has spent a decade making difficult pop mechanics feel obvious. He understands the exact phrase, pause and melodic turn that transforms a good idea into a continental earworm.",
+    "score": 81.2,
+    "image": "artists/kizz-daniel.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5eb864a01c2e8a53d182fd3e472",
+    "spotifyId": "1X6cBGnXpEpN7CmflLKmLV",
+    "spotifyUrl": "https://open.spotify.com/artist/1X6cBGnXpEpN7CmflLKmLV",
+    "monthlyListeners": 4400000,
+    "totalSpotifyStreams": 1674514902,
+    "dailySpotifyStreams": 834086,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/kizz-daniel/1X6cBGnXpEpN7CmflLKmLV",
+      "catalogue": "https://kworb.net/spotify/artist/1X6cBGnXpEpN7CmflLKmLV_songs.html"
+    },
+    "statsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "songs": [
+      {
+        "spotifyId": "3nT2nrfb3FMLg03W4mPaBl",
+        "title": "Cough (Odo)",
+        "streams": 152296391,
+        "dailyStreams": 70811,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/3nT2nrfb3FMLg03W4mPaBl",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "0DgafxynfsJ0FFdvtAsxBI",
+        "title": "Nesesari",
+        "streams": 140755206,
+        "dailyStreams": 34549,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/0DgafxynfsJ0FFdvtAsxBI",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "36tVdsRWDbPBekxVYEWhph",
+        "title": "Buga (Lo Lo Lo)",
+        "streams": 125328320,
+        "dailyStreams": 37554,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/36tVdsRWDbPBekxVYEWhph",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "0YeUYYOh25Cn57DKTC8uS4",
+        "title": "GWAGWALADA",
+        "streams": 103611096,
+        "dailyStreams": 67871,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/0YeUYYOh25Cn57DKTC8uS4",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "03DxO8kGNrEGr1VjPSdQs2",
+        "title": "Lie",
+        "streams": 94920942,
+        "dailyStreams": 44466,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/03DxO8kGNrEGr1VjPSdQs2",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "4yaPPFIafaVaMRHZ5IHkbA",
+        "title": "No Wahala - Remix",
+        "streams": 83295429,
+        "dailyStreams": 74978,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/4yaPPFIafaVaMRHZ5IHkbA",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "3wdV4OJ37JdoLyUJMm50UW",
+        "title": "lost",
+        "streams": 59207711,
+        "dailyStreams": 46394,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/3wdV4OJ37JdoLyUJMm50UW",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "1DrfpnLvbwndPScRLwbUE0",
+        "title": "Pour Me Water",
+        "streams": 53157099,
+        "dailyStreams": 15092,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/1DrfpnLvbwndPScRLwbUE0",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "4WYbYaibpIWj1FLbMUH2Yb",
+        "title": "Showa",
+        "streams": 38946401,
+        "dailyStreams": 10690,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/4WYbYaibpIWj1FLbMUH2Yb",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "2Ydj7wgn4ZrFFQsfFBTTYJ",
+        "title": "Eh God (Barnabas)",
+        "streams": 38370553,
+        "dailyStreams": 9094,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/2Ydj7wgn4ZrFFQsfFBTTYJ",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "6PdAiqbKP3Zmr3YHRdgT1y",
+        "title": "Sooner",
+        "streams": 38324677,
+        "dailyStreams": 15314,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/6PdAiqbKP3Zmr3YHRdgT1y",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "6nnZHjSHt0ZNtx4bIUky9P",
+        "title": "Boys Are Bad",
+        "streams": 37230171,
+        "dailyStreams": 5410,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/6nnZHjSHt0ZNtx4bIUky9P",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      }
+    ],
+    "songsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "monthlyListenersLastUpdatedAt": "2026-08-20T00:00:00.000Z"
+  },
+  {
+    "rank": 21,
+    "previousRank": 18,
+    "name": "Olamide",
+    "slug": "olamide",
+    "country": "Nigeria",
+    "tagline": "THE SYSTEM BUILDER",
+    "genres": [
+      "RAP",
+      "STREET-POP"
+    ],
+    "bio": "Olamide is both a street-rap institution and an ecosystem builder. His own catalogue maps Lagos slang and ambition; YBNL multiplied that influence through a generation of major voices.",
+    "score": 80.4,
+    "image": "artists/olamide.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5eb690d9ec39523c7159ada0426",
+    "spotifyId": "4ovtyvs7j1jSmwhkBGHqSr",
+    "spotifyUrl": "https://open.spotify.com/artist/4ovtyvs7j1jSmwhkBGHqSr",
+    "monthlyListeners": 4600000,
+    "totalSpotifyStreams": 1503488504,
+    "dailySpotifyStreams": 1054062,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/olamide/4ovtyvs7j1jSmwhkBGHqSr",
+      "catalogue": "https://kworb.net/spotify/artist/4ovtyvs7j1jSmwhkBGHqSr_songs.html"
+    },
+    "statsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "songs": [
+      {
+        "spotifyId": "5DS9LiyEdw2zY8bM6kjjgM",
+        "title": "Infinity (feat. Omah Lay)",
+        "streams": 189270018,
+        "dailyStreams": 42332,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/5DS9LiyEdw2zY8bM6kjjgM",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "1YgIvHDTvi1vosins1jyAC",
+        "title": "Amapiano",
+        "streams": 125510145,
+        "dailyStreams": 62120,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/1YgIvHDTvi1vosins1jyAC",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "7gTMfanHTRr80Tulx1lDzQ",
+        "title": "Omo Ope (feat. Olamide)",
+        "streams": 69246171,
+        "dailyStreams": 39453,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/7gTMfanHTRr80Tulx1lDzQ",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "0bkq8SCKDRY1RBFKIADCQK",
+        "title": "WAHALA (feat. Olamide)",
+        "streams": 63442675,
+        "dailyStreams": 44104,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/0bkq8SCKDRY1RBFKIADCQK",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "4sm7xhaW2PT4iLuTtXaKa1",
+        "title": "99 (feat. Daecolm)",
+        "streams": 60207404,
+        "dailyStreams": 72447,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/4sm7xhaW2PT4iLuTtXaKa1",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "558ULLj8yY2vT8XGtgY0q9",
+        "title": "Loading",
+        "streams": 52731452,
+        "dailyStreams": 12770,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/558ULLj8yY2vT8XGtgY0q9",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "5dVJTSZhL2n81ZkT4PZu0x",
+        "title": "Jinja",
+        "streams": 51675013,
+        "dailyStreams": 18955,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/5dVJTSZhL2n81ZkT4PZu0x",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "3uTe5oVxtAO1cnsJm4uFCJ",
+        "title": "KANA",
+        "streams": 38993207,
+        "dailyStreams": 20865,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/3uTe5oVxtAO1cnsJm4uFCJ",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "0U6EtYtNKv8t3o9cjniLn2",
+        "title": "New Religion",
+        "streams": 33325638,
+        "dailyStreams": 28867,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/0U6EtYtNKv8t3o9cjniLn2",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "65cRt4uGMzo51AzXqptVsX",
+        "title": "Billionaires Club",
+        "streams": 31124489,
+        "dailyStreams": 30585,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/65cRt4uGMzo51AzXqptVsX",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "3dEqPYFBUAOU0fqpudVnJW",
+        "title": "Want",
+        "streams": 29871694,
+        "dailyStreams": 2417,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/3dEqPYFBUAOU0fqpudVnJW",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "0UKX2OlSnobdX77f0Y1jok",
+        "title": "Kai!",
+        "streams": 29855619,
+        "dailyStreams": 14355,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/0UKX2OlSnobdX77f0Y1jok",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "title": "Skelele",
+        "streams": 0,
+        "dailyStreams": 0,
+        "fifaEditions": [
+          "FIFA 23 · VOLTA"
+        ],
+        "sourceUrl": "https://www.goal.com/en/news/fifa-23-soundtrack-artists-songs-music/blt79f30b23b2269a17",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z",
+        "manualOnly": true
+      }
+    ],
+    "songsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "monthlyListenersLastUpdatedAt": "2026-08-20T00:00:00.000Z"
+  },
+  {
+    "rank": 22,
+    "previousRank": 21,
+    "name": "ODUMODUBLVCK",
+    "slug": "odumodublvck",
+    "country": "Nigeria",
+    "tagline": "THE OKPU-AGU FORCE",
+    "genres": [
+      "RAP",
+      "AFRO-FUSION"
+    ],
+    "bio": "ODUMODUBLVCK raps like a collision is about to happen. The Abuja artist mixes Nigerian cadence, grime weight and football-sized chants into a presence that feels larger than the track.",
+    "score": 79.6,
+    "image": "artists/odumodublvck.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5ebc5220e1882a3fd5e34203b97",
+    "spotifyId": "3LOm0AZjpwVQebvkyanjDy",
+    "spotifyUrl": "https://open.spotify.com/artist/3LOm0AZjpwVQebvkyanjDy",
+    "monthlyListeners": 4100000,
+    "totalSpotifyStreams": 1334127766,
+    "dailySpotifyStreams": 1308700,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/odumodublvck/3LOm0AZjpwVQebvkyanjDy",
+      "catalogue": "https://kworb.net/spotify/artist/3LOm0AZjpwVQebvkyanjDy_songs.html"
+    },
+    "songs": [
+      {
+        "spotifyId": "2LP8KwtvzUx1onvXKQCoKR",
+        "title": "WOTOWOTO SEASONING (feat. Black Sherif)",
+        "streams": 85622904,
+        "dailyStreams": 63772,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/2LP8KwtvzUx1onvXKQCoKR",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "7LZkMeX1k8PXQJ0SVYn1A5",
+        "title": "Funds (feat. ODUMODUBLVCK & Chike)",
+        "streams": 83720705,
+        "dailyStreams": 40324,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/7LZkMeX1k8PXQJ0SVYn1A5",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "6BWgLorAwF17ofyu8361HM",
+        "title": "Cast",
+        "streams": 74696860,
+        "dailyStreams": 32149,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/6BWgLorAwF17ofyu8361HM",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "668HhzscVthVZSXi7cjhOt",
+        "title": "BLOOD ON THE DANCE FLOOR (feat. Bloody Civilian and Wale)",
+        "streams": 69093384,
+        "dailyStreams": 39779,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/668HhzscVthVZSXi7cjhOt",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "4OnCrs3h948Ee4yLLTcaRx",
+        "title": "JUJU (with Smur Lee & Shallipopi)",
+        "streams": 67152485,
+        "dailyStreams": 21422,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/4OnCrs3h948Ee4yLLTcaRx",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "3RMr94P81nO3GtW9MfqNp5",
+        "title": "PITY THIS BOY (with Victony)",
+        "streams": 60861046,
+        "dailyStreams": 66583,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/3RMr94P81nO3GtW9MfqNp5",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "3vr9oX942YBLxEtG0pwofN",
+        "title": "DOG EAT DOG II (feat. Cruel Santino and Bella Shmurda)",
+        "streams": 53754485,
+        "dailyStreams": 54473,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/3vr9oX942YBLxEtG0pwofN",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "0OWPr4POCQ7iH9BGmTxOZV",
+        "title": "LEGOLAS",
+        "streams": 37912162,
+        "dailyStreams": 80722,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/0OWPr4POCQ7iH9BGmTxOZV",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "7vWJ0vpT8M3UVPkTea9E4D",
+        "title": "DECLAN RICE",
+        "streams": 36822344,
+        "dailyStreams": 11981,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/7vWJ0vpT8M3UVPkTea9E4D",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "4XYpWMW1ec7GJW2Eq8UA9k",
+        "title": "Dog Eat Dog",
+        "streams": 32432587,
+        "dailyStreams": 30415,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/4XYpWMW1ec7GJW2Eq8UA9k",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "4zGLBKonWuLSeK35mrUXf0",
+        "title": "BIG TIME (feat. Wizkid)",
+        "streams": 31367290,
+        "dailyStreams": 40766,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/4zGLBKonWuLSeK35mrUXf0",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "3wxFGa444tOpit0dsToPd6",
+        "title": "INDUSTRY MACHINE",
+        "streams": 29301912,
+        "dailyStreams": 56150,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/3wxFGa444tOpit0dsToPd6",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      }
+    ],
+    "songsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "statsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "monthlyListenersLastUpdatedAt": "2026-08-20T00:00:00.000Z"
+  },
+  {
+    "rank": 23,
+    "previousRank": null,
+    "name": "Sarz",
+    "slug": "sarz",
+    "country": "Nigeria",
+    "tagline": "THE PRODUCER'S PRODUCER",
+    "genres": [
+      "AFROBEATS",
+      "ELECTRONIC"
+    ],
+    "bio": "Sarz builds drums with personality. His fingerprints run through multiple Afrobeats eras, and his producer-led projects prove an architect can hold the centre without becoming the vocalist.",
+    "score": 78.8,
+    "image": "artists/sarz.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5eb9e6c83cda0523411ac6322ec",
+    "spotifyId": "408vMm7y1227ASq7GmWygZ",
+    "spotifyUrl": "https://open.spotify.com/artist/408vMm7y1227ASq7GmWygZ",
+    "monthlyListeners": 5700000,
+    "totalSpotifyStreams": 779847858,
+    "dailySpotifyStreams": 895807,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/sarz/408vMm7y1227ASq7GmWygZ",
+      "catalogue": "https://kworb.net/spotify/artist/408vMm7y1227ASq7GmWygZ_songs.html"
+    },
+    "songs": [
+      {
+        "spotifyId": "3baPniPXS0iEII8rDUJdYP",
+        "title": "Monalisa",
+        "streams": 280291788,
+        "dailyStreams": 108492,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/3baPniPXS0iEII8rDUJdYP",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "3Y1hrPPs0FFtXodEE7HkrN",
+        "title": "Happiness ​(f​eat​. Asake, Gunna​)",
+        "streams": 103705226,
+        "dailyStreams": 80147,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/3Y1hrPPs0FFtXodEE7HkrN",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "1zwZ26A7OA5wTrA3FejCLL",
+        "title": "Monalisa",
+        "streams": 87805943,
+        "dailyStreams": 45642,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/1zwZ26A7OA5wTrA3FejCLL",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "1HJr3tp2LIrvXFexwiyn7s",
+        "title": "Getting Paid ​(f​eat​. Asake, Wizkid, Skillibeng​)",
+        "streams": 42085318,
+        "dailyStreams": 49060,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/1HJr3tp2LIrvXFexwiyn7s",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "5WTj1jVzufTuSzFMyjy60M",
+        "title": "Back Outside",
+        "streams": 39304803,
+        "dailyStreams": 238594,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/5WTj1jVzufTuSzFMyjy60M",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "2isb6crrhgFJ3zxBFa5fXG",
+        "title": "MAD",
+        "streams": 32785973,
+        "dailyStreams": 40899,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/2isb6crrhgFJ3zxBFa5fXG",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "2M6LmH53eUJdyG00LjKouA",
+        "title": "LV N ATTN feat. Wizkid",
+        "streams": 19651812,
+        "dailyStreams": 6372,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/2M6LmH53eUJdyG00LjKouA",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "4Y8tHeZl44iRob0CrAvzBh",
+        "title": "Billions ​(f​eat​. Lojay)",
+        "streams": 15321012,
+        "dailyStreams": 9014,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/4Y8tHeZl44iRob0CrAvzBh",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "68QuFtCfPduslrBZYqy3mq",
+        "title": "TROBUL",
+        "streams": 14086185,
+        "dailyStreams": 11631,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/68QuFtCfPduslrBZYqy3mq",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "1iYBlO1RGEFeDnG3AH4gUE",
+        "title": "Mademoiselle (feat. ODUMODUBLVCK, Shallipopi, Theodora, Zeina)",
+        "streams": 13835586,
+        "dailyStreams": 15154,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/1iYBlO1RGEFeDnG3AH4gUE",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "7xT2yRQ78cVbpt3lOoMPwz",
+        "title": "Tonongo",
+        "streams": 13259516,
+        "dailyStreams": 6082,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/7xT2yRQ78cVbpt3lOoMPwz",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "4c0l2xJLaY8PBS7yi37Ry3",
+        "title": "Already",
+        "streams": 11465448,
+        "dailyStreams": 78225,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/4c0l2xJLaY8PBS7yi37Ry3",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      }
+    ],
+    "songsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "statsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "monthlyListenersLastUpdatedAt": "2026-08-20T00:00:00.000Z"
+  },
+  {
+    "rank": 24,
+    "previousRank": 28,
+    "name": "Amaarae",
+    "slug": "amaarae",
+    "country": "Ghana",
+    "tagline": "THE ALTÉ FUTURIST",
+    "genres": [
+      "ALTÉ",
+      "POP"
+    ],
+    "bio": "Amaarae makes pop that refuses a fixed passport or genre. The Ghanaian-American auteur folds highlife, rap, club music and fashion into albums that reward curiosity as much as immediacy.",
+    "score": 77.9,
+    "image": "artists/amaarae.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5eb82d2f8ad2b13647357e18582",
+    "spotifyId": "21UPYSRWFKwtqvSAnFnSvS",
+    "spotifyUrl": "https://open.spotify.com/artist/21UPYSRWFKwtqvSAnFnSvS",
+    "monthlyListeners": 5000000,
+    "totalSpotifyStreams": 1391189560,
+    "dailySpotifyStreams": 491091,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/amaarae/21UPYSRWFKwtqvSAnFnSvS",
+      "catalogue": "https://kworb.net/spotify/artist/21UPYSRWFKwtqvSAnFnSvS_songs.html"
+    },
+    "statsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "songs": [
+      {
+        "spotifyId": "0ABKtkw5dRWJwHH5Q3dbws",
+        "title": "SAD GIRLZ LUV MONEY Remix (feat. Kali Uchis and Moliy)",
+        "streams": 610664058,
+        "dailyStreams": 202646,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/0ABKtkw5dRWJwHH5Q3dbws",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "23uUytja1B1mUOOIoygf6u",
+        "title": "Angels in Tibet",
+        "streams": 144463793,
+        "dailyStreams": 45546,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/23uUytja1B1mUOOIoygf6u",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "6gQrm0rwg6hok8IxzysD8m",
+        "title": "Reckless & Sweet",
+        "streams": 54241885,
+        "dailyStreams": 17387,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/6gQrm0rwg6hok8IxzysD8m",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "2pgDBO0ZAgvye7joSmdDm8",
+        "title": "SAD GIRLZ LUV MONEY",
+        "streams": 52301281,
+        "dailyStreams": 10271,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/2pgDBO0ZAgvye7joSmdDm8",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "6KS5iyM4uDuJ6oAacMSXha",
+        "title": "Princess Going Digital",
+        "streams": 43216282,
+        "dailyStreams": 34457,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/6KS5iyM4uDuJ6oAacMSXha",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "1jFcVCd4gKDiwmj7JsD8Jd",
+        "title": "Sossaup",
+        "streams": 40506645,
+        "dailyStreams": 12464,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/1jFcVCd4gKDiwmj7JsD8Jd",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "11bJ1ws3dathgY9uzADUhL",
+        "title": "In The Night (feat. Jorja Smith & Amaarae)",
+        "streams": 35304932,
+        "dailyStreams": 10968,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/11bJ1ws3dathgY9uzADUhL",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "6YfdjmTC0sbDWCt8KBSQ2Q",
+        "title": "This Is What I Mean",
+        "streams": 26939076,
+        "dailyStreams": 5885,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/6YfdjmTC0sbDWCt8KBSQ2Q",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "5lYLBAH2uSvERWy8GAcBJz",
+        "title": "SAD GIRLZ LUV MONEY Remix (feat. Kali Uchis and Moliy) - Slowed + Reverb",
+        "streams": 22107230,
+        "dailyStreams": 32449,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/5lYLBAH2uSvERWy8GAcBJz",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "0kbnm3YwSygTFeWZlCGfCw",
+        "title": "LEAVE ME ALONE",
+        "streams": 20431057,
+        "dailyStreams": 2523,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/0kbnm3YwSygTFeWZlCGfCw",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "7sFukIJffFFLwnazXIbqP5",
+        "title": "KUBOLOR (feat. Amaarae)",
+        "streams": 20409478,
+        "dailyStreams": 5079,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/7sFukIJffFFLwnazXIbqP5",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "7dEXXV4xk5OpEdswCWC3GX",
+        "title": "Wasted Eyes",
+        "streams": 19016755,
+        "dailyStreams": 6093,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/7dEXXV4xk5OpEdswCWC3GX",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      }
+    ],
+    "songsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "monthlyListenersLastUpdatedAt": "2026-08-20T00:00:00.000Z"
+  },
+  {
+    "rank": 25,
+    "previousRank": 22,
+    "name": "Young Jonn",
+    "slug": "young-jonn",
+    "country": "Nigeria",
+    "tagline": "THE HITMAKER IN FRONT",
+    "genres": [
+      "AFROPOP",
+      "PRODUCTION"
+    ],
+    "bio": "Young Jonn moved from the producer tag to the centre of the record without losing his hitmaking instinct. His compact melodies still carry the efficiency of someone who understands every layer.",
+    "score": 77.1,
+    "image": "artists/young-jonn.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5ebc472fd2d96640f82f44493c2",
+    "spotifyId": "4JM1zsVj1pt38Q8mhv5teI",
+    "spotifyUrl": "https://open.spotify.com/artist/4JM1zsVj1pt38Q8mhv5teI",
+    "monthlyListeners": 4600000,
+    "totalSpotifyStreams": 1115394208,
+    "dailySpotifyStreams": 1250434,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/young-jonn/4JM1zsVj1pt38Q8mhv5teI",
+      "catalogue": "https://kworb.net/spotify/artist/4JM1zsVj1pt38Q8mhv5teI_songs.html"
+    },
+    "songs": [
+      {
+        "spotifyId": "33okuzZlDmJYJtA7hM4hxK",
+        "title": "Xtra Cool",
+        "streams": 93350361,
+        "dailyStreams": 83870,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/33okuzZlDmJYJtA7hM4hxK",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "0UJMgRVNBrnMmAeZ8p1iMc",
+        "title": "Aquafina",
+        "streams": 81822036,
+        "dailyStreams": 30559,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/0UJMgRVNBrnMmAeZ8p1iMc",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "4KZMoDuxwSYP63bhbnMqe3",
+        "title": "Stronger",
+        "streams": 69542815,
+        "dailyStreams": 49270,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/4KZMoDuxwSYP63bhbnMqe3",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "4sm7xhaW2PT4iLuTtXaKa1",
+        "title": "99 (feat. Daecolm)",
+        "streams": 60207404,
+        "dailyStreams": 72447,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/4sm7xhaW2PT4iLuTtXaKa1",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "4jyZRIiSAEkziHwhZsfmXc",
+        "title": "Terminator (feat. Young Jonn)",
+        "streams": 58237827,
+        "dailyStreams": 26540,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/4jyZRIiSAEkziHwhZsfmXc",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "1tOp1bXhT9tvydSAGDHdQy",
+        "title": "Stamina",
+        "streams": 48906547,
+        "dailyStreams": 14854,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/1tOp1bXhT9tvydSAGDHdQy",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "75c5cm8y5Fzb6aTZM3MOpN",
+        "title": "Bahamas",
+        "streams": 40585177,
+        "dailyStreams": 30661,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/75c5cm8y5Fzb6aTZM3MOpN",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "2UxfLzrOzdHlwrIzjhsHT2",
+        "title": "2Factor",
+        "streams": 39708659,
+        "dailyStreams": 67474,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/2UxfLzrOzdHlwrIzjhsHT2",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "1t7x7trXiq1rz0EN6g9JP0",
+        "title": "Sharpally",
+        "streams": 38351326,
+        "dailyStreams": 33905,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/1t7x7trXiq1rz0EN6g9JP0",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "2iCI6gHilTbSiD8a138KMU",
+        "title": "Che Che (feat. Asake)",
+        "streams": 35667809,
+        "dailyStreams": 42405,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/2iCI6gHilTbSiD8a138KMU",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "2eknBYpfzA4Mp5zWHMGac5",
+        "title": "If You Leave",
+        "streams": 35635433,
+        "dailyStreams": 9596,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/2eknBYpfzA4Mp5zWHMGac5",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "076RE7aySa8m09ct8Cwvnr",
+        "title": "Dada (feat. Davido) [Remix]",
+        "streams": 35221627,
+        "dailyStreams": 24365,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/076RE7aySa8m09ct8Cwvnr",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      }
+    ],
+    "songsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "statsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "monthlyListenersLastUpdatedAt": "2026-08-20T00:00:00.000Z"
+  },
+  {
+    "rank": 26,
+    "previousRank": 19,
+    "name": "Adekunle Gold",
+    "slug": "adekunle-gold",
+    "country": "Nigeria",
+    "tagline": "THE CONSTANT REINVENTION",
+    "genres": [
+      "AFROPOP",
+      "HIGHLIFE"
+    ],
+    "bio": "Adekunle Gold's career is a study in reinvention: folk-rooted beginnings, highlife colour and increasingly polished global pop. The through-line is careful writing and unmistakable warmth.",
+    "score": 76.3,
+    "image": "artists/adekunle-gold.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5eba04328b8180f0437435f0a78",
+    "spotifyId": "2IK173RXLiCSQ8fhDlAb3s",
+    "spotifyUrl": "https://open.spotify.com/artist/2IK173RXLiCSQ8fhDlAb3s",
+    "monthlyListeners": 3600000,
+    "totalSpotifyStreams": 879581675,
+    "dailySpotifyStreams": 624839,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/adekunle-gold/2IK173RXLiCSQ8fhDlAb3s",
+      "catalogue": "https://kworb.net/spotify/artist/2IK173RXLiCSQ8fhDlAb3s_songs.html"
+    },
+    "songs": [
+      {
+        "spotifyId": "49ytLGEP5S20N3AhB5YuwJ",
+        "title": "Party No Dey Stop (with Zinoleesky)",
+        "streams": 118405468,
+        "dailyStreams": 93860,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/49ytLGEP5S20N3AhB5YuwJ",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "4G11wDzAKuCFqApL4g3ixC",
+        "title": "High",
+        "streams": 68046517,
+        "dailyStreams": 45131,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/4G11wDzAKuCFqApL4g3ixC",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "2Iv3GHM3xFKIPbYSnhJAXO",
+        "title": "Okay",
+        "streams": 56963476,
+        "dailyStreams": 38325,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/2Iv3GHM3xFKIPbYSnhJAXO",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "7IehzBxyvb9egSpZFXZwTe",
+        "title": "Antidote (feat. Adekunle Gold)",
+        "streams": 54239365,
+        "dailyStreams": 7205,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/7IehzBxyvb9egSpZFXZwTe",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "7e9FvhmqibLIhZ6x8bKyT4",
+        "title": "Sinner",
+        "streams": 46702423,
+        "dailyStreams": 16680,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/7e9FvhmqibLIhZ6x8bKyT4",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "6iC4xfqow6iAsRhPh5IrWz",
+        "title": "PAMI (feat. Wizkid, Adekunle Gold & Omah Lay)",
+        "streams": 41260682,
+        "dailyStreams": 21542,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/6iC4xfqow6iAsRhPh5IrWz",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "7g2j8MYcb4PJsI2C9OzEsx",
+        "title": "Something Different",
+        "streams": 32235652,
+        "dailyStreams": 15759,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/7g2j8MYcb4PJsI2C9OzEsx",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "2GVeh0VTzmdRKQ1VDie5zT",
+        "title": "It Is What It Is",
+        "streams": 24765342,
+        "dailyStreams": 17384,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/2GVeh0VTzmdRKQ1VDie5zT",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "3XmvXK6pJRewCn6mAfmsdS",
+        "title": "Ogaranya",
+        "streams": 20836170,
+        "dailyStreams": 13797,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/3XmvXK6pJRewCn6mAfmsdS",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "5XYFwMy9hJ45a6NoavtyEa",
+        "title": "D O D O - Adekunle Gold Version",
+        "streams": 18670153,
+        "dailyStreams": 2682,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/5XYFwMy9hJ45a6NoavtyEa",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "7BglTfVmbUUOCQUNof4RBF",
+        "title": "One Woman",
+        "streams": 18359970,
+        "dailyStreams": 3562,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/7BglTfVmbUUOCQUNof4RBF",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "1iHqhI5BZ5LoV4DiG0c9Iv",
+        "title": "AG Baby",
+        "streams": 17464414,
+        "dailyStreams": 9977,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/1iHqhI5BZ5LoV4DiG0c9Iv",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      }
+    ],
+    "songsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "statsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "monthlyListenersLastUpdatedAt": "2026-08-20T00:00:00.000Z"
+  },
+  {
+    "rank": 27,
+    "previousRank": 20,
+    "name": "Shallipopi",
+    "slug": "shallipopi",
+    "country": "Nigeria",
+    "tagline": "THE BENIN CITY LINGUIST",
+    "genres": [
+      "STREET-POP",
+      "AFRO-TRAP"
+    ],
+    "bio": "Shallipopi turns Benin City slang, deadpan humour and spare production into sticky street-pop. His cultural impact lives as much in everyday language as it does in streaming totals.",
+    "score": 75.5,
+    "image": "artists/shallipopi.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5eb1614424c5650c60ddefe937a",
+    "spotifyId": "4TKhxSkqClXrdtUWgKqHVU",
+    "spotifyUrl": "https://open.spotify.com/artist/4TKhxSkqClXrdtUWgKqHVU",
+    "monthlyListeners": 4300000,
+    "totalSpotifyStreams": 952780429,
+    "dailySpotifyStreams": 711124,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/shallipopi/4TKhxSkqClXrdtUWgKqHVU",
+      "catalogue": "https://kworb.net/spotify/artist/4TKhxSkqClXrdtUWgKqHVU_songs.html"
+    },
+    "songs": [
+      {
+        "spotifyId": "4rkqxE9ddoatZOtbYKwJBb",
+        "title": "Laho",
+        "streams": 99844027,
+        "dailyStreams": 79393,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/4rkqxE9ddoatZOtbYKwJBb",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "6BWgLorAwF17ofyu8361HM",
+        "title": "Cast",
+        "streams": 74696860,
+        "dailyStreams": 32149,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/6BWgLorAwF17ofyu8361HM",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "6XBIOtdSL47qn201KKNCA0",
+        "title": "JUJU (feat. Shallipopi)",
+        "streams": 67092827,
+        "dailyStreams": 23308,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/6XBIOtdSL47qn201KKNCA0",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "4UAHJM3uKVHRyMOe5O8EhF",
+        "title": "Laho II",
+        "streams": 66149179,
+        "dailyStreams": 62698,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/4UAHJM3uKVHRyMOe5O8EhF",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "1gc2RyrBm1PYdSnG65yuAl",
+        "title": "BENIN BOYS",
+        "streams": 62045471,
+        "dailyStreams": 39523,
+        "fifaEditions": [
+          "EA SPORTS FC 25"
+        ],
+        "sourceUrl": "https://www.ea.com/en/games/ea-sports-fc/fc-25/news/fc-25-soundtrack",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "3s4WNh0WnfhwvIlrp6RTBj",
+        "title": "ZAAZAA",
+        "streams": 61622133,
+        "dailyStreams": 49128,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/3s4WNh0WnfhwvIlrp6RTBj",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "3w0eFAME3IxlonearUIaXJ",
+        "title": "Ewo",
+        "streams": 49177371,
+        "dailyStreams": 42796,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/3w0eFAME3IxlonearUIaXJ",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "2h1aaSSMUspQfHKDl5uISY",
+        "title": "Escaladizzy II",
+        "streams": 37764250,
+        "dailyStreams": 45649,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/2h1aaSSMUspQfHKDl5uISY",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "5O7fTE396BVFRTkQv5ENSo",
+        "title": "Ex Convict",
+        "streams": 32886800,
+        "dailyStreams": 14841,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/5O7fTE396BVFRTkQv5ENSo",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "3tEzyNbV0BS9AS0HRSsy3Q",
+        "title": "High Tension",
+        "streams": 30677551,
+        "dailyStreams": 22711,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/3tEzyNbV0BS9AS0HRSsy3Q",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "7CIhImlbs2RtT58oKnvROT",
+        "title": "Puff & Pass (Remix)",
+        "streams": 24090818,
+        "dailyStreams": 14121,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/7CIhImlbs2RtT58oKnvROT",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "0CbmiJiGy6sN4RJ75mJthR",
+        "title": "Free Service",
+        "streams": 23677295,
+        "dailyStreams": 11812,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/0CbmiJiGy6sN4RJ75mJthR",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      }
+    ],
+    "songsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "statsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "monthlyListenersLastUpdatedAt": "2026-08-20T00:00:00.000Z"
+  },
+  {
+    "rank": 28,
+    "previousRank": 24,
+    "name": "Oxlade",
+    "slug": "oxlade",
+    "country": "Nigeria",
+    "tagline": "THE FALSETTO SIGNATURE",
+    "genres": [
+      "AFRO-R&B",
+      "POP"
+    ],
+    "bio": "Oxlade's falsetto is recognisable within seconds. KU LO SA gave it global scale, while his best records use that high register as texture rather than a trick.",
+    "score": 74.7,
+    "image": "artists/oxlade.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5eb2cdb1148e14bf21f3adc78de",
+    "spotifyId": "3WTrdbZU99dgTtt3ZkyamT",
+    "spotifyUrl": "https://open.spotify.com/artist/3WTrdbZU99dgTtt3ZkyamT",
+    "monthlyListeners": 4700000,
+    "totalSpotifyStreams": 1032378295,
+    "dailySpotifyStreams": 474225,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/oxlade/3WTrdbZU99dgTtt3ZkyamT",
+      "catalogue": "https://kworb.net/spotify/artist/3WTrdbZU99dgTtt3ZkyamT_songs.html"
+    },
+    "songs": [
+      {
+        "spotifyId": "2WigMwGJysIh9fRnSJvpjn",
+        "title": "KU LO SA - A COLORS SHOW",
+        "streams": 446954645,
+        "dailyStreams": 176204,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/2WigMwGJysIh9fRnSJvpjn",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "0HihDC6qQ8MChAhjfW3gMU",
+        "title": "KU LO SA (with Camila Cabello)",
+        "streams": 117732463,
+        "dailyStreams": 60759,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/0HihDC6qQ8MChAhjfW3gMU",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "1lcSY9kXL2PG8HYuDlV4KW",
+        "title": "INTOXYCATED",
+        "streams": 64893417,
+        "dailyStreams": 24371,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/1lcSY9kXL2PG8HYuDlV4KW",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "1UM3RVanAaakxcx9GkfNTL",
+        "title": "KOLO (feat. Oxlade)",
+        "streams": 47683760,
+        "dailyStreams": 15396,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/1UM3RVanAaakxcx9GkfNTL",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "6NYaKDhK6xOuylauWDuLrP",
+        "title": "KU LO SA",
+        "streams": 47549388,
+        "dailyStreams": 31210,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/6NYaKDhK6xOuylauWDuLrP",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "1bm5UdBLCNkdu6pxBOrckt",
+        "title": "AWAY",
+        "streams": 38177639,
+        "dailyStreams": 14772,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/1bm5UdBLCNkdu6pxBOrckt",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "2ZnwdA7kfDCq7xgLO8a9hX",
+        "title": "Wait For You (feat. Oxlade)",
+        "streams": 37670333,
+        "dailyStreams": 11616,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/2ZnwdA7kfDCq7xgLO8a9hX",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "2CMt3DR8liQaAga4qer5cY",
+        "title": "02",
+        "streams": 22957651,
+        "dailyStreams": 7460,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/2CMt3DR8liQaAga4qer5cY",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "3iku98AV0OLiSHPRvv4lRe",
+        "title": "DKT",
+        "streams": 18387168,
+        "dailyStreams": 4119,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/3iku98AV0OLiSHPRvv4lRe",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "1C4ndHztUaefeUlbCue2wt",
+        "title": "OLOLUFE",
+        "streams": 16010987,
+        "dailyStreams": 11425,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/1C4ndHztUaefeUlbCue2wt",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "5FNrbC6EKv4HXqz5MOPZm7",
+        "title": "Ojuju",
+        "streams": 15213124,
+        "dailyStreams": 6425,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/5FNrbC6EKv4HXqz5MOPZm7",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "5Ky8pIlNDaSQtxfY45dqMw",
+        "title": "Non Living Thing (feat. Oxlade)",
+        "streams": 12231505,
+        "dailyStreams": 7387,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/5Ky8pIlNDaSQtxfY45dqMw",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      }
+    ],
+    "songsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "statsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "monthlyListenersLastUpdatedAt": "2026-08-20T00:00:00.000Z"
+  },
+  {
+    "rank": 29,
+    "previousRank": 27,
+    "name": "FAVE",
+    "slug": "fave",
+    "country": "Nigeria",
+    "tagline": "THE SMOKY STORYTELLER",
+    "genres": [
+      "AFRO-R&B",
+      "ALT"
+    ],
+    "bio": "FAVE's smoky voice carries both calm and tension. Her songwriting favours uncluttered emotional scenes, giving every feature and solo record an immediate point of view.",
+    "score": 73.8,
+    "image": "artists/fave.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5eb1486c51c7905639f52b0778c",
+    "spotifyId": "4wAqlYtTaaHELEgyCh9KjG",
+    "spotifyUrl": "https://open.spotify.com/artist/4wAqlYtTaaHELEgyCh9KjG",
+    "monthlyListeners": 4700000,
+    "totalSpotifyStreams": 563194985,
+    "dailySpotifyStreams": 444954,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/fave/4wAqlYtTaaHELEgyCh9KjG",
+      "catalogue": "https://kworb.net/spotify/artist/4wAqlYtTaaHELEgyCh9KjG_songs.html"
+    },
+    "songs": [
+      {
+        "spotifyId": "7vKXc90NT5WBm3UTT4iTVG",
+        "title": "KANTE (feat. Fave)",
+        "streams": 181540258,
+        "dailyStreams": 203995,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/7vKXc90NT5WBm3UTT4iTVG",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "77eZIuMTB9HrQ86L4ljqEX",
+        "title": "Baby Riddim",
+        "streams": 98274247,
+        "dailyStreams": 47709,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/77eZIuMTB9HrQ86L4ljqEX",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "7mFrwc86C3vZKobwpK0jdH",
+        "title": "Beautifully",
+        "streams": 44666997,
+        "dailyStreams": 11868,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/7mFrwc86C3vZKobwpK0jdH",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "3GAu2fSg9deV207noxMKl0",
+        "title": "Fever",
+        "streams": 34207015,
+        "dailyStreams": 7602,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/3GAu2fSg9deV207noxMKl0",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "3dEqPYFBUAOU0fqpudVnJW",
+        "title": "Want",
+        "streams": 29883542,
+        "dailyStreams": 2459,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/3dEqPYFBUAOU0fqpudVnJW",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "6VQMo5jaGsonAAPCRkfkQO",
+        "title": "Mr Man",
+        "streams": 21267917,
+        "dailyStreams": 17166,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/6VQMo5jaGsonAAPCRkfkQO",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "4wOu789QwIa8c860A3Dklw",
+        "title": "Intentions (feat. Urban Chords)",
+        "streams": 18495791,
+        "dailyStreams": 25393,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/4wOu789QwIa8c860A3Dklw",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "3XgMPbJEgl2uLuNqZVErNG",
+        "title": "In Love",
+        "streams": 18297385,
+        "dailyStreams": 7908,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/3XgMPbJEgl2uLuNqZVErNG",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "0bHVQDfkxCU4JOTIRBbNgR",
+        "title": "Obsessed",
+        "streams": 16976343,
+        "dailyStreams": 5177,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/0bHVQDfkxCU4JOTIRBbNgR",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "6vSENiRRJpAgbt04LuDn1t",
+        "title": "Cold War (with FAVE)",
+        "streams": 16147073,
+        "dailyStreams": 10581,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/6vSENiRRJpAgbt04LuDn1t",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "0qhfALctZENRjIITNtqWti",
+        "title": "Deep",
+        "streams": 10726593,
+        "dailyStreams": 9914,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/0qhfALctZENRjIITNtqWti",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "3KYr6W5lVYhR5FtOwZKL4q",
+        "title": "N.B.U",
+        "streams": 10232411,
+        "dailyStreams": 8071,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/3KYr6W5lVYhR5FtOwZKL4q",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      }
+    ],
+    "songsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "statsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "monthlyListenersLastUpdatedAt": "2026-08-20T00:00:00.000Z"
+  },
+  {
+    "rank": 30,
+    "previousRank": 23,
+    "name": "Joeboy",
+    "slug": "joeboy",
+    "country": "Nigeria",
+    "tagline": "THE SOFT-POP ANCHOR",
+    "genres": [
+      "AFROPOP",
+      "R&B"
+    ],
+    "bio": "Joeboy helped define the soft, romantic side of the streaming-era breakthrough. His easy delivery disguises disciplined pop writing and a catalogue built for repeat listening.",
+    "score": 73,
+    "image": "artists/joeboy.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5ebd48d6fc0c4fd2053ca4028ba",
+    "spotifyId": "1XavfPKBpNjkOfxHINlMHF",
+    "spotifyUrl": "https://open.spotify.com/artist/1XavfPKBpNjkOfxHINlMHF",
+    "monthlyListeners": 4300000,
+    "totalSpotifyStreams": 833153038,
+    "dailySpotifyStreams": 470533,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/joeboy/1XavfPKBpNjkOfxHINlMHF",
+      "catalogue": "https://kworb.net/spotify/artist/1XavfPKBpNjkOfxHINlMHF_songs.html"
+    },
+    "songs": [
+      {
+        "spotifyId": "4s6x56uNiNCAA87yzqTz5G",
+        "title": "Sip (Alcohol)",
+        "streams": 175974322,
+        "dailyStreams": 21278,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/4s6x56uNiNCAA87yzqTz5G",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "140dx97IbJbQhIMd7AaHeb",
+        "title": "love nwantiti (ah ah ah) [feat. Joeboy & Kuami Eugene] [Remix]",
+        "streams": 78356277,
+        "dailyStreams": 26327,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/140dx97IbJbQhIMd7AaHeb",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "0Yz6pPFinS7EKfaZRMY4uT",
+        "title": "Baby",
+        "streams": 51274703,
+        "dailyStreams": 27153,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/0Yz6pPFinS7EKfaZRMY4uT",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "2AaZJAh9FifPCQdba87Hzr",
+        "title": "Body & Soul",
+        "streams": 46348611,
+        "dailyStreams": 28226,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/2AaZJAh9FifPCQdba87Hzr",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "2hQG5UZ0DZD0lCpq3rwoWx",
+        "title": "Nobody",
+        "streams": 40582455,
+        "dailyStreams": 13669,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/2hQG5UZ0DZD0lCpq3rwoWx",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "74CA9T8IpFzrLNFV6EoY3a",
+        "title": "Adenuga (feat. Qing Madi)",
+        "streams": 35106097,
+        "dailyStreams": 23251,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/74CA9T8IpFzrLNFV6EoY3a",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "4PfR2vNZ3ig9OCyZmWsQL2",
+        "title": "Low Key (feat. Humby)",
+        "streams": 32329427,
+        "dailyStreams": 19816,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/4PfR2vNZ3ig9OCyZmWsQL2",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "3WpcyBBiFVZ66DfWH0xXjm",
+        "title": "Duffel Bag",
+        "streams": 28522317,
+        "dailyStreams": 8098,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/3WpcyBBiFVZ66DfWH0xXjm",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "62cC7k1opRIS9sdviJnVj5",
+        "title": "Abeg",
+        "streams": 23682751,
+        "dailyStreams": 15258,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/62cC7k1opRIS9sdviJnVj5",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "1SVbs1tnlr3FpfxrFle27o",
+        "title": "Door",
+        "streams": 19084003,
+        "dailyStreams": 0,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/1SVbs1tnlr3FpfxrFle27o",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "4cPKw3rzgmaU4zixJe6wge",
+        "title": "Normally",
+        "streams": 18615294,
+        "dailyStreams": 15648,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/4cPKw3rzgmaU4zixJe6wge",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "0VNYzFooNvcPvhpM988aor",
+        "title": "Contour",
+        "streams": 15801168,
+        "dailyStreams": 8069,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/0VNYzFooNvcPvhpM988aor",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      }
+    ],
+    "songsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "statsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "monthlyListenersLastUpdatedAt": "2026-08-20T00:00:00.000Z"
+  },
+  {
+    "rank": 31,
+    "previousRank": 25,
+    "name": "Tiwa Savage",
+    "slug": "tiwa-savage",
+    "country": "Nigeria",
+    "tagline": "THE POP MATRIARCH",
+    "genres": [
+      "AFROPOP",
+      "R&B"
+    ],
+    "bio": "Tiwa Savage brought elite R&B control into Nigerian pop and kept evolving after the first crossover wave. Her longevity rests on vocal precision, stage craft and fearless collaboration.",
+    "score": 72.2,
+    "image": "artists/tiwa-savage.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5ebf50933ec70ba9ca9648fcadf",
+    "spotifyId": "1hNaHKp2Za5YdOAG0WnRbc",
+    "spotifyUrl": "https://open.spotify.com/artist/1hNaHKp2Za5YdOAG0WnRbc",
+    "monthlyListeners": 3300000,
+    "totalSpotifyStreams": 764854070,
+    "dailySpotifyStreams": 431965,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/tiwa-savage/1hNaHKp2Za5YdOAG0WnRbc",
+      "catalogue": "https://kworb.net/spotify/artist/1hNaHKp2Za5YdOAG0WnRbc_songs.html"
+    },
+    "songs": [
+      {
+        "spotifyId": "4yaPPFIafaVaMRHZ5IHkbA",
+        "title": "No Wahala - Remix",
+        "streams": 82470666,
+        "dailyStreams": 81225,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/4yaPPFIafaVaMRHZ5IHkbA",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "18t2ofQiViidZHxOBVjpD1",
+        "title": "Koroba",
+        "streams": 70464081,
+        "dailyStreams": 40722,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/18t2ofQiViidZHxOBVjpD1",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "1tOp1bXhT9tvydSAGDHdQy",
+        "title": "Stamina",
+        "streams": 48971122,
+        "dailyStreams": 14561,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/1tOp1bXhT9tvydSAGDHdQy",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "6U9jxxdQ6TNzjshIpwWMTf",
+        "title": "Ma Lo",
+        "streams": 47685786,
+        "dailyStreams": 16265,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/6U9jxxdQ6TNzjshIpwWMTf",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "0IeTiOC1lnJUtS3l61bX93",
+        "title": "Who Is Your Guy? (Remix)",
+        "streams": 41359596,
+        "dailyStreams": 19244,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/0IeTiOC1lnJUtS3l61bX93",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "3J5IO8OLj05dRaZjHBHS8D",
+        "title": "Loaded",
+        "streams": 32357958,
+        "dailyStreams": 12145,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/3J5IO8OLj05dRaZjHBHS8D",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "3KZK9MF3bAixN5UWOHVTbf",
+        "title": "KEYS TO THE KINGDOM",
+        "streams": 27713698,
+        "dailyStreams": 3190,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/3KZK9MF3bAixN5UWOHVTbf",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "0anKcfsH7buw9ieaqpE0U9",
+        "title": "Like",
+        "streams": 24543390,
+        "dailyStreams": 21284,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/0anKcfsH7buw9ieaqpE0U9",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "40t1l3IPtEIjlhAUPxn7jd",
+        "title": "Toma Toma",
+        "streams": 24447174,
+        "dailyStreams": 13465,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/40t1l3IPtEIjlhAUPxn7jd",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "3Z9B9GQ2fFx4IRCG8bbWys",
+        "title": "Somebody’s Son (Ft Brandy)",
+        "streams": 23080671,
+        "dailyStreams": 5079,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/3Z9B9GQ2fFx4IRCG8bbWys",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "4yF6ykrqb0iDtMjPtQMG8O",
+        "title": "Dis Love",
+        "streams": 22601415,
+        "dailyStreams": 8962,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/4yF6ykrqb0iDtMjPtQMG8O",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "2Z0Qu4ZhXGzJDo6faZ8CKl",
+        "title": "All Over",
+        "streams": 20936630,
+        "dailyStreams": 5425,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/2Z0Qu4ZhXGzJDo6faZ8CKl",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      }
+    ],
+    "songsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "statsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "monthlyListenersLastUpdatedAt": "2026-08-20T00:00:00.000Z"
+  },
+  {
+    "rank": 32,
+    "previousRank": 26,
+    "name": "Lojay",
+    "slug": "lojay",
+    "country": "Nigeria",
+    "tagline": "THE DETAIL MERCHANT",
+    "genres": [
+      "AFRO-FUSION",
+      "R&B"
+    ],
+    "bio": "Lojay writes desire in close detail and sings it with a grainy, instantly identifiable tone. Monalisa opened the door; his darker, more intricate records explain why it stayed open.",
+    "score": 71.4,
+    "image": "artists/lojay.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5ebe217694d23f25a357ba474ef",
+    "spotifyId": "3ONGmday8YN8AkbsRk01iL",
+    "spotifyUrl": "https://open.spotify.com/artist/3ONGmday8YN8AkbsRk01iL",
+    "monthlyListeners": 4500000,
+    "totalSpotifyStreams": 756674946,
+    "dailySpotifyStreams": 397560,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/lojay/3ONGmday8YN8AkbsRk01iL",
+      "catalogue": "https://kworb.net/spotify/artist/3ONGmday8YN8AkbsRk01iL_songs.html"
+    },
+    "songs": [
+      {
+        "spotifyId": "3baPniPXS0iEII8rDUJdYP",
+        "title": "Monalisa",
+        "streams": 280631150,
+        "dailyStreams": 110459,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/3baPniPXS0iEII8rDUJdYP",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "44G2gUVQvNNZ6w3i05tR4n",
+        "title": "Sensational (feat. Davido & Lojay)",
+        "streams": 159661608,
+        "dailyStreams": 65936,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/44G2gUVQvNNZ6w3i05tR4n",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "1zwZ26A7OA5wTrA3FejCLL",
+        "title": "Monalisa",
+        "streams": 87924266,
+        "dailyStreams": 46141,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/1zwZ26A7OA5wTrA3FejCLL",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "0P2ytSdEAFp0FICrJwnu4Y",
+        "title": "MOTO",
+        "streams": 29051081,
+        "dailyStreams": 13932,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/0P2ytSdEAFp0FICrJwnu4Y",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "1tKsfYB65Kz74yk0HMCdcH",
+        "title": "Running",
+        "streams": 20562958,
+        "dailyStreams": 5355,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/1tKsfYB65Kz74yk0HMCdcH",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "2M6LmH53eUJdyG00LjKouA",
+        "title": "LV N ATTN feat. Wizkid",
+        "streams": 19671955,
+        "dailyStreams": 6542,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/2M6LmH53eUJdyG00LjKouA",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "4Y8tHeZl44iRob0CrAvzBh",
+        "title": "Billions ​(f​eat​. Lojay)",
+        "streams": 15354067,
+        "dailyStreams": 9550,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/4Y8tHeZl44iRob0CrAvzBh",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "7xT2yRQ78cVbpt3lOoMPwz",
+        "title": "Tonongo",
+        "streams": 13279596,
+        "dailyStreams": 6229,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/7xT2yRQ78cVbpt3lOoMPwz",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "6Y22KIQd0RSREshosQvN2B",
+        "title": "I Wish (feat. Libianca)",
+        "streams": 9480906,
+        "dailyStreams": 2053,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/6Y22KIQd0RSREshosQvN2B",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "3SA6Rfor4ghxWbyxxdpV3c",
+        "title": "Arizona",
+        "streams": 8736760,
+        "dailyStreams": 2162,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/3SA6Rfor4ghxWbyxxdpV3c",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "6h7dPRxYew3L5J30eysmxu",
+        "title": "Mwah!",
+        "streams": 7554987,
+        "dailyStreams": 5371,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/6h7dPRxYew3L5J30eysmxu",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "1o4wQxpJ95kUgxs6mWsEVe",
+        "title": "LEADER!",
+        "streams": 7176296,
+        "dailyStreams": 1833,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/1o4wQxpJ95kUgxs6mWsEVe",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      }
+    ],
+    "songsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "statsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "monthlyListenersLastUpdatedAt": "2026-08-20T00:00:00.000Z"
+  },
+  {
+    "rank": 33,
+    "previousRank": null,
+    "name": "JAZZWRLD",
+    "slug": "jazzwrld",
+    "country": "South Africa",
+    "tagline": "THE AMAPIANO STORYTELLER",
+    "genres": [
+      "AMAPIANO",
+      "SOUL"
+    ],
+    "bio": "JAZZWRLD brings a soulful, composer-led sensibility to amapiano. His growing catalogue favours atmosphere and patient musical development over disposable dance-floor formulas.",
+    "score": 70.6,
+    "image": "artists/jazzwrld.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5eb8665a17f908fbe85342b16b5",
+    "spotifyId": "3idyOn3lhSxgV2qdDQNfhz",
+    "spotifyUrl": "https://open.spotify.com/artist/3idyOn3lhSxgV2qdDQNfhz",
+    "monthlyListeners": 4200000,
+    "totalSpotifyStreams": 433679712,
+    "dailySpotifyStreams": 876627,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/jazzwrld/3idyOn3lhSxgV2qdDQNfhz",
+      "catalogue": "https://kworb.net/spotify/artist/3idyOn3lhSxgV2qdDQNfhz_songs.html"
+    },
+    "songs": [
+      {
+        "spotifyId": "7c5uGV9Rys18JP2570ykTu",
+        "title": "Isaka (6am)",
+        "streams": 54365054,
+        "dailyStreams": 39183,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/7c5uGV9Rys18JP2570ykTu",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "4lz4aKs60vUoyZP4pNy3aD",
+        "title": "Isaka II (6am) [with Tems, Omah Lay, Thukuthela, JAZZWRLD, Lekaa Beats]",
+        "streams": 50040983,
+        "dailyStreams": 91490,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/4lz4aKs60vUoyZP4pNy3aD",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "6xlxghvkH5yDv93NoHlWOx",
+        "title": "Bengicela (feat. JAZZWRLD)",
+        "streams": 48358889,
+        "dailyStreams": 64517,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/6xlxghvkH5yDv93NoHlWOx",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "24fRfn3FOM4xk02aE4wief",
+        "title": "Vuka (feat. Thukuthela)",
+        "streams": 42518425,
+        "dailyStreams": 23212,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/24fRfn3FOM4xk02aE4wief",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "1rb8u0m3l3oq59vUqW1O7p",
+        "title": "Uzizwa Kanjan",
+        "streams": 42240882,
+        "dailyStreams": 35350,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/1rb8u0m3l3oq59vUqW1O7p",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "0y7lIKJXlNFPcqVCxfnvOO",
+        "title": "uValo (feat. Dlala Thukzin)",
+        "streams": 38661392,
+        "dailyStreams": 50180,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/0y7lIKJXlNFPcqVCxfnvOO",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "3Ov08eLMxqkNmvtlV9Truu",
+        "title": "Tholukuthi (Clap Song) (feat. MaWhoo)",
+        "streams": 26731018,
+        "dailyStreams": 26937,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/3Ov08eLMxqkNmvtlV9Truu",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "2XSmD2t2OZ5oMZhuZzJB4P",
+        "title": "uMA weNGANE",
+        "streams": 20298212,
+        "dailyStreams": 22904,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/2XSmD2t2OZ5oMZhuZzJB4P",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "3eRaSAk4a6gjsHK2omZbU4",
+        "title": "uMoya",
+        "streams": 18615864,
+        "dailyStreams": 17391,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/3eRaSAk4a6gjsHK2omZbU4",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "6pxSzYqPAfjFAhzkw9cCCN",
+        "title": "I Know Who I Be (with JAZZWRLD & GL_Ceejay)",
+        "streams": 15393050,
+        "dailyStreams": 292587,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/6pxSzYqPAfjFAhzkw9cCCN",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "1YwkMl9hCzyinkiioqo6kl",
+        "title": "Vele Uyena (Risk It All) (feat. Elaine, JAZZWRLD, Thukuthela & Solaariss)",
+        "streams": 12491273,
+        "dailyStreams": 21120,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/1YwkMl9hCzyinkiioqo6kl",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "6WAgkWtdNWXoZf8ZFkH5j1",
+        "title": "Amaphutha",
+        "streams": 9369645,
+        "dailyStreams": 16029,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/6WAgkWtdNWXoZf8ZFkH5j1",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      }
+    ],
+    "songsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "statsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "monthlyListenersLastUpdatedAt": "2026-08-20T00:00:00.000Z"
+  },
+  {
+    "rank": 34,
+    "previousRank": 34,
+    "name": "Darkoo",
+    "slug": "darkoo",
+    "country": "UK / Nigeria",
+    "tagline": "THE LONDON-LAGOS LINK",
+    "genres": [
+      "AFROSWING",
+      "AFROPOP"
+    ],
+    "bio": "Darkoo moves naturally between London rap cadence and West African melody. That bilingual musical instinct makes each collaboration feel like a bridge rather than a marketing exercise.",
+    "score": 69.7,
+    "image": "artists/darkoo.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5eb216a36a85190bd55c0bb35e8",
+    "spotifyId": "4QSTyDpxsKmv3UfavVUImR",
+    "spotifyUrl": "https://open.spotify.com/artist/4QSTyDpxsKmv3UfavVUImR",
+    "monthlyListeners": 3900000,
+    "totalSpotifyStreams": 907173427,
+    "dailySpotifyStreams": 304521,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/darkoo/4QSTyDpxsKmv3UfavVUImR",
+      "catalogue": "https://kworb.net/spotify/artist/4QSTyDpxsKmv3UfavVUImR_songs.html"
+    },
+    "songs": [
+      {
+        "spotifyId": "2qbkYhZy5gNl8HrK2XwddI",
+        "title": "Body (Remix) [feat. ArrDee, E1 (3x3), ZT (3x3), Bugzy Malone, Buni, Fivio Foreign & Darkoo]",
+        "streams": 377374027,
+        "dailyStreams": 43137,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/2qbkYhZy5gNl8HrK2XwddI",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "0yoXHeL4gJg0DNheK4xqJB",
+        "title": "Gangsta",
+        "streams": 101430489,
+        "dailyStreams": 16975,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/0yoXHeL4gJg0DNheK4xqJB",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "3tAtzyDBeoiVkaIHwZHUJt",
+        "title": "Sugarcane - Remix",
+        "streams": 84361846,
+        "dailyStreams": 53618,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/3tAtzyDBeoiVkaIHwZHUJt",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "3eRaxLLhyYHKr8oiR6NeYI",
+        "title": "Favourite Girl (with Rema)",
+        "streams": 68054470,
+        "dailyStreams": 39813,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/3eRaxLLhyYHKr8oiR6NeYI",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "6UTXf9k0H3JDus2ZZDwGpC",
+        "title": "Favourite Girl",
+        "streams": 63402454,
+        "dailyStreams": 22453,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/6UTXf9k0H3JDus2ZZDwGpC",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "65cRt4uGMzo51AzXqptVsX",
+        "title": "Billionaires Club",
+        "streams": 31183277,
+        "dailyStreams": 30119,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/65cRt4uGMzo51AzXqptVsX",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "58paGzudpZjF11LrsgkxCP",
+        "title": "Focus On Me (All The Sexy Girls In The Club)",
+        "streams": 28235798,
+        "dailyStreams": 13670,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/58paGzudpZjF11LrsgkxCP",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "2koM4vqlpUzeRbNkjsDBwF",
+        "title": "Always (feat. Black Sherif)",
+        "streams": 27406564,
+        "dailyStreams": 13249,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/2koM4vqlpUzeRbNkjsDBwF",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "4wjF5qRnHcY4ewjlKNdDL4",
+        "title": "Juicy",
+        "streams": 23796644,
+        "dailyStreams": 2430,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/4wjF5qRnHcY4ewjlKNdDL4",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "1YmUKhaDgVWSHTp2ky3bws",
+        "title": "Like Dat",
+        "streams": 15120373,
+        "dailyStreams": 16986,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/1YmUKhaDgVWSHTp2ky3bws",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "13HwOA5rfBYsrWEj4fW4wy",
+        "title": "Right Now",
+        "streams": 14917446,
+        "dailyStreams": 5423,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/13HwOA5rfBYsrWEj4fW4wy",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "4gMeFvrCAGRtPQpQmXjE4u",
+        "title": "Downfall",
+        "streams": 13827008,
+        "dailyStreams": 741,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/4gMeFvrCAGRtPQpQmXjE4u",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      }
+    ],
+    "songsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "statsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "monthlyListenersLastUpdatedAt": "2026-08-20T00:00:00.000Z"
+  },
+  {
+    "rank": 35,
+    "previousRank": 29,
+    "name": "Black Sherif",
+    "slug": "black-sherif",
+    "country": "Ghana",
+    "tagline": "THE GHANAIAN ROAR",
+    "genres": [
+      "HIP-HOP",
+      "HIGHLIFE"
+    ],
+    "bio": "Black Sherif sings as if every line costs something. His cracked, urgent voice turns migration, pressure and ambition into anthems that connect Accra street reality with a global audience.",
+    "score": 68.9,
+    "image": "artists/black-sherif.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5eb317c2d84e6d0155cdb1ecd49",
+    "spotifyId": "2LiqbH7OhqP0yuaG8VL1wJ",
+    "spotifyUrl": "https://open.spotify.com/artist/2LiqbH7OhqP0yuaG8VL1wJ",
+    "monthlyListeners": 3100000,
+    "totalSpotifyStreams": 793309050,
+    "dailySpotifyStreams": 756320,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/black-sherif/2LiqbH7OhqP0yuaG8VL1wJ",
+      "catalogue": "https://kworb.net/spotify/artist/2LiqbH7OhqP0yuaG8VL1wJ_songs.html"
+    },
+    "songs": [
+      {
+        "spotifyId": "2LP8KwtvzUx1onvXKQCoKR",
+        "title": "WOTOWOTO SEASONING (feat. Black Sherif)",
+        "streams": 85442859,
+        "dailyStreams": 61875,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/2LP8KwtvzUx1onvXKQCoKR",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "2LqvzGaZniHiZ9CXhzkclD",
+        "title": "Kwaku The Traveller",
+        "streams": 64852890,
+        "dailyStreams": 25025,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/2LqvzGaZniHiZ9CXhzkclD",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "4DdaGKeVkjQbPHzpoHGafk",
+        "title": "Second Sermon - Remix",
+        "streams": 42766423,
+        "dailyStreams": 21799,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/4DdaGKeVkjQbPHzpoHGafk",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "5zNWfIlGEVQ72uzVOGgAiZ",
+        "title": "Oil in my Head",
+        "streams": 42446132,
+        "dailyStreams": 23489,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/5zNWfIlGEVQ72uzVOGgAiZ",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "3F6xtKBO2YixpP8lFJTiGo",
+        "title": "Konongo Zongo",
+        "streams": 32906143,
+        "dailyStreams": 15366,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/3F6xtKBO2YixpP8lFJTiGo",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "0rkpKiWmsAs2VApWKJQRuY",
+        "title": "Soja",
+        "streams": 31564639,
+        "dailyStreams": 19283,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/0rkpKiWmsAs2VApWKJQRuY",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "2dZ0GjY40Y2OYzRaiD8yYq",
+        "title": "So it Goes",
+        "streams": 30327231,
+        "dailyStreams": 35246,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/2dZ0GjY40Y2OYzRaiD8yYq",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "3bdntVS2dHPTPitwms9gLK",
+        "title": "Sacrifice",
+        "streams": 29776633,
+        "dailyStreams": 42929,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/3bdntVS2dHPTPitwms9gLK",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "2koM4vqlpUzeRbNkjsDBwF",
+        "title": "Always (feat. Black Sherif)",
+        "streams": 27274065,
+        "dailyStreams": 14959,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/2koM4vqlpUzeRbNkjsDBwF",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "6YfdjmTC0sbDWCt8KBSQ2Q",
+        "title": "This Is What I Mean",
+        "streams": 26939076,
+        "dailyStreams": 5885,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/6YfdjmTC0sbDWCt8KBSQ2Q",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "5pXffsFBnfGGFG7Gjz7moX",
+        "title": "Run",
+        "streams": 26751909,
+        "dailyStreams": 19133,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/5pXffsFBnfGGFG7Gjz7moX",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "12jJRu9yInIX7oTxoXtM0S",
+        "title": "Lomo Lomo",
+        "streams": 22890723,
+        "dailyStreams": 15324,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/12jJRu9yInIX7oTxoXtM0S",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      }
+    ],
+    "songsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "statsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "monthlyListenersLastUpdatedAt": "2026-08-20T00:00:00.000Z"
+  },
+  {
+    "rank": 36,
+    "previousRank": null,
+    "name": "CIZA",
+    "slug": "ciza",
+    "country": "South Africa",
+    "tagline": "THE BACARDI BREAKOUT",
+    "genres": [
+      "AMAPIANO",
+      "POP"
+    ],
+    "bio": "CIZA represents amapiano's fast-moving new school: youthful vocals, bright Bacardi energy and an instinct for dance moments that can travel across borders before radio catches up.",
+    "score": 68.1,
+    "image": "artists/ciza.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5eb97c7c5991d79eb814286c097",
+    "spotifyId": "71hPkbyih5bdlHVPBgav33",
+    "spotifyUrl": "https://open.spotify.com/artist/71hPkbyih5bdlHVPBgav33",
+    "monthlyListeners": 2200000,
+    "totalSpotifyStreams": 126066317,
+    "dailySpotifyStreams": 174290,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/ciza/71hPkbyih5bdlHVPBgav33",
+      "catalogue": "https://kworb.net/spotify/artist/71hPkbyih5bdlHVPBgav33_songs.html"
+    },
+    "songs": [
+      {
+        "spotifyId": "7c5uGV9Rys18JP2570ykTu",
+        "title": "Isaka (6am)",
+        "streams": 54281941,
+        "dailyStreams": 40863,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/7c5uGV9Rys18JP2570ykTu",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "4lz4aKs60vUoyZP4pNy3aD",
+        "title": "Isaka II (6am) [with Tems, Omah Lay, Thukuthela, JAZZWRLD, Lekaa Beats]",
+        "streams": 49948175,
+        "dailyStreams": 91974,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/4lz4aKs60vUoyZP4pNy3aD",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "4X4cghVmisiTbcu59iLLZ8",
+        "title": "HOW FAR - Remix",
+        "streams": 5113302,
+        "dailyStreams": 20452,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/4X4cghVmisiTbcu59iLLZ8",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "03WvkBrL2NrkJkpnEGAEzY",
+        "title": "Isaka (6am) &friends Mix - In Beirut",
+        "streams": 3952041,
+        "dailyStreams": 3797,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/03WvkBrL2NrkJkpnEGAEzY",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "1069XUmotw0wPoWpq20jAL",
+        "title": "Bank Notification (feat. Madumane)",
+        "streams": 2146464,
+        "dailyStreams": 895,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/1069XUmotw0wPoWpq20jAL",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "5ncLgVY26bAfHhUjTm7Sz4",
+        "title": "Isaka (6am) Vanco Mix - In Joburg",
+        "streams": 1995875,
+        "dailyStreams": 3806,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/5ncLgVY26bAfHhUjTm7Sz4",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "6hVC8HTAsehbyNsbg1SMZo",
+        "title": "Abantu",
+        "streams": 1175989,
+        "dailyStreams": 1641,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/6hVC8HTAsehbyNsbg1SMZo",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "2cwXgbiBHguLs0gxjxjj8a",
+        "title": "Baddi Ah",
+        "streams": 1055269,
+        "dailyStreams": 1211,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/2cwXgbiBHguLs0gxjxjj8a",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "2PndMEPHoxjDcfPWQQJUme",
+        "title": "Isaka (6am) Nektunez Mix - In Ghana",
+        "streams": 939886,
+        "dailyStreams": 979,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/2PndMEPHoxjDcfPWQQJUme",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "0F4NG5PvVdTMB5YV4j0fQa",
+        "title": "Shona Phantsi / On Da Floor",
+        "streams": 790691,
+        "dailyStreams": 503,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/0F4NG5PvVdTMB5YV4j0fQa",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "1871DA3kqBKQRzoxeNnMoR",
+        "title": "Carolina (feat. Major League DJz and Abidoza)",
+        "streams": 623802,
+        "dailyStreams": 28,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/1871DA3kqBKQRzoxeNnMoR",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "783s9jQYL85ipURwgyIB6I",
+        "title": "Yivule",
+        "streams": 501410,
+        "dailyStreams": 2110,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/783s9jQYL85ipURwgyIB6I",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      }
+    ],
+    "songsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "statsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "monthlyListenersLastUpdatedAt": "2026-08-20T00:00:00.000Z"
+  },
+  {
+    "rank": 37,
+    "previousRank": null,
+    "name": "Shoday",
+    "slug": "shoday",
+    "country": "Nigeria",
+    "tagline": "THE STREET ROMANTIC",
+    "genres": [
+      "AFROPOP",
+      "STREET-POP"
+    ],
+    "bio": "Shoday balances street-pop directness with a romantic melodic touch. His rise reflects a new discovery pipeline where consistency after the viral spark matters more than industry permission.",
+    "score": 67.3,
+    "image": "artists/shoday.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5eb4fd0ffa8ec58b081e802ef8c",
+    "spotifyId": "23R4AtMwVv0pbJYB1joioW",
+    "spotifyUrl": "https://open.spotify.com/artist/23R4AtMwVv0pbJYB1joioW",
+    "monthlyListeners": 2900000,
+    "totalSpotifyStreams": 255944327,
+    "dailySpotifyStreams": 425961,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/shoday/23R4AtMwVv0pbJYB1joioW",
+      "catalogue": "https://kworb.net/spotify/artist/23R4AtMwVv0pbJYB1joioW_songs.html"
+    },
+    "songs": [
+      {
+        "spotifyId": "1p0zeYPLjmIGtw1DzmshZO",
+        "title": "Nakupenda",
+        "streams": 45576062,
+        "dailyStreams": 149325,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/1p0zeYPLjmIGtw1DzmshZO",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "6ovxhOjCU6SzPLtfNnzVQk",
+        "title": "Casablanca (feat. Ayo Maff)",
+        "streams": 31150314,
+        "dailyStreams": 18432,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/6ovxhOjCU6SzPLtfNnzVQk",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "4v1WfWIwfplCJKNQmKx9FN",
+        "title": "Paparazzi",
+        "streams": 29266246,
+        "dailyStreams": 67351,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/4v1WfWIwfplCJKNQmKx9FN",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "4xVj25uTjTZCaHbSFbYwAE",
+        "title": "Hey Jago",
+        "streams": 23093937,
+        "dailyStreams": 19107,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/4xVj25uTjTZCaHbSFbYwAE",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "63cOYqSjpQXEBrMTkBQwrp",
+        "title": "Gaddem",
+        "streams": 18735879,
+        "dailyStreams": 18525,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/63cOYqSjpQXEBrMTkBQwrp",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "2eebUd6k95mHXHfk5R4sdo",
+        "title": "Queen N More",
+        "streams": 11036199,
+        "dailyStreams": 5506,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/2eebUd6k95mHXHfk5R4sdo",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "1VKuyyLDO7FuMmDsfNdC18",
+        "title": "Shoday Kilode",
+        "streams": 10536331,
+        "dailyStreams": 12500,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/1VKuyyLDO7FuMmDsfNdC18",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "35GYZiwsChDekQjFVViXed",
+        "title": "Sweet",
+        "streams": 9458739,
+        "dailyStreams": 5678,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/35GYZiwsChDekQjFVViXed",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "11OYE0acEZL5GVOd9xphwh",
+        "title": "Welele",
+        "streams": 9399041,
+        "dailyStreams": 19180,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/11OYE0acEZL5GVOd9xphwh",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "1Lucx7odEIW0CVQoVuu5jk",
+        "title": "Screaming Beauty",
+        "streams": 8435529,
+        "dailyStreams": 5320,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/1Lucx7odEIW0CVQoVuu5jk",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "1M3BEwBeC4HtMv5V0KowiK",
+        "title": "OBT (feat. BhadBoi OML)",
+        "streams": 6526160,
+        "dailyStreams": 13783,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/1M3BEwBeC4HtMv5V0KowiK",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "48fNM8TUHTZbndUYoWnEUy",
+        "title": "Bobo",
+        "streams": 6083787,
+        "dailyStreams": 3486,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/48fNM8TUHTZbndUYoWnEUy",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      }
+    ],
+    "songsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "statsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "monthlyListenersLastUpdatedAt": "2026-08-20T00:00:00.000Z"
+  },
+  {
+    "rank": 38,
+    "previousRank": 30,
+    "name": "King Promise",
+    "slug": "king-promise",
+    "country": "Ghana",
+    "tagline": "THE SILK VOICE",
+    "genres": [
+      "AFROPOP",
+      "HIGHLIFE"
+    ],
+    "bio": "King Promise's smooth baritone is built for patience, not spectacle. He carries Ghanaian highlife ease into modern Afropop and has become one of the continent's most dependable collaborators.",
+    "score": 66.5,
+    "image": "artists/king-promise.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5ebe96410f6b083338c32ae6bc8",
+    "spotifyId": "4tIKaxUmpXzshok2yCnwdf",
+    "spotifyUrl": "https://open.spotify.com/artist/4tIKaxUmpXzshok2yCnwdf",
+    "monthlyListeners": 2300000,
+    "totalSpotifyStreams": 494699416,
+    "dailySpotifyStreams": 230151,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/king-promise/4tIKaxUmpXzshok2yCnwdf",
+      "catalogue": "https://kworb.net/spotify/artist/4tIKaxUmpXzshok2yCnwdf_songs.html"
+    },
+    "songs": [
+      {
+        "spotifyId": "3tAtzyDBeoiVkaIHwZHUJt",
+        "title": "Sugarcane - Remix",
+        "streams": 84038175,
+        "dailyStreams": 49443,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/3tAtzyDBeoiVkaIHwZHUJt",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "4jyZRIiSAEkziHwhZsfmXc",
+        "title": "Terminator (feat. Young Jonn)",
+        "streams": 58131586,
+        "dailyStreams": 26375,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/4jyZRIiSAEkziHwhZsfmXc",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "3iRrUDOMR01Qlfr4YT6wUa",
+        "title": "Terminator",
+        "streams": 55045202,
+        "dailyStreams": 23498,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/3iRrUDOMR01Qlfr4YT6wUa",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "0WD5tXJt8jLHe8H7mz1yMk",
+        "title": "Perfect Combi",
+        "streams": 30702573,
+        "dailyStreams": 11588,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/0WD5tXJt8jLHe8H7mz1yMk",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "4tAX2qe0TX7O69B65OQmCg",
+        "title": "Commando",
+        "streams": 30498683,
+        "dailyStreams": 4608,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/4tAX2qe0TX7O69B65OQmCg",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "7JVUJLsVXysVpSWChbnz9I",
+        "title": "10 Toes (feat. Omah Lay)",
+        "streams": 25835795,
+        "dailyStreams": 6337,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/7JVUJLsVXysVpSWChbnz9I",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "3QcdMy9PR9uFWMYXI7VfAy",
+        "title": "Paris",
+        "streams": 22122680,
+        "dailyStreams": 11151,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/3QcdMy9PR9uFWMYXI7VfAy",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "1dLK5QXjob5l4xk4M8QTyl",
+        "title": "Tokyo",
+        "streams": 12670584,
+        "dailyStreams": 5589,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/1dLK5QXjob5l4xk4M8QTyl",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "60HGKB4wbcZhClLTYIjzNw",
+        "title": "Can't Let You Go (feat. King Promise)",
+        "streams": 11428574,
+        "dailyStreams": 8068,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/60HGKB4wbcZhClLTYIjzNw",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "3KybqFROlrZOhTwyrByBPV",
+        "title": "Favourite Story",
+        "streams": 9662935,
+        "dailyStreams": 5462,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/3KybqFROlrZOhTwyrByBPV",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "4bJ6gzpOnxPJjq42m1dxT9",
+        "title": "Ginger",
+        "streams": 9350466,
+        "dailyStreams": 2401,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/4bJ6gzpOnxPJjq42m1dxT9",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "3QwJb7WT9zHxmT224KajLi",
+        "title": "Slow Down",
+        "streams": 8144989,
+        "dailyStreams": 1568,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/3QwJb7WT9zHxmT224KajLi",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      }
+    ],
+    "songsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "statsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "monthlyListenersLastUpdatedAt": "2026-08-20T00:00:00.000Z"
+  },
+  {
+    "rank": 39,
+    "previousRank": 35,
+    "name": "Zlatan",
+    "slug": "zlatan",
+    "country": "Nigeria",
+    "tagline": "THE ZANKU CATALYST",
+    "genres": [
+      "STREET-POP",
+      "RAP"
+    ],
+    "bio": "Zlatan converts street language and dance into pop momentum. Zanku was a full cultural moment, and his continued relevance comes from knowing when to lead and when to energise a feature.",
+    "score": 65.6,
+    "image": "artists/zlatan.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5eb21b0a01f1bde7422e1e913b7",
+    "spotifyId": "4mSWNal2Ixxf1zrXSTLoep",
+    "spotifyUrl": "https://open.spotify.com/artist/4mSWNal2Ixxf1zrXSTLoep",
+    "monthlyListeners": 2500000,
+    "totalSpotifyStreams": 640307086,
+    "dailySpotifyStreams": 855521,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/zlatan/4mSWNal2Ixxf1zrXSTLoep",
+      "catalogue": "https://kworb.net/spotify/artist/4mSWNal2Ixxf1zrXSTLoep_songs.html"
+    },
+    "songs": [
+      {
+        "spotifyId": "5nmYNuBSh99LNDdZ0iSe2O",
+        "title": "Get Better",
+        "streams": 52421836,
+        "dailyStreams": 65597,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/5nmYNuBSh99LNDdZ0iSe2O",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "4cxyQw1AKCVqa9JVSN7njk",
+        "title": "Killin Dem",
+        "streams": 47410417,
+        "dailyStreams": 0,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/4cxyQw1AKCVqa9JVSN7njk",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "1p0zeYPLjmIGtw1DzmshZO",
+        "title": "Nakupenda",
+        "streams": 44992502,
+        "dailyStreams": 147239,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/1p0zeYPLjmIGtw1DzmshZO",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "5KV5UXd1uNZZafWTudrVft",
+        "title": "IDK (feat. Zlatan)",
+        "streams": 40410325,
+        "dailyStreams": 18377,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/5KV5UXd1uNZZafWTudrVft",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "2h1aaSSMUspQfHKDl5uISY",
+        "title": "Escaladizzy II",
+        "streams": 37805089,
+        "dailyStreams": 45277,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/2h1aaSSMUspQfHKDl5uISY",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "08tSNwcNYM9yjuYF9jFvOu",
+        "title": "PICANTO (feat. Zlatan and ECko Miles)",
+        "streams": 28641082,
+        "dailyStreams": 20727,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/08tSNwcNYM9yjuYF9jFvOu",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "3eWpfsYgd5OL2QdwcVcF6Q",
+        "title": "Bust Down",
+        "streams": 28040063,
+        "dailyStreams": 19270,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/3eWpfsYgd5OL2QdwcVcF6Q",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "66OmUVUiuja0zp423wGqhr",
+        "title": "Cash App",
+        "streams": 23543976,
+        "dailyStreams": 24110,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/66OmUVUiuja0zp423wGqhr",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "6XEv0xIrDhwolBuzju8v5y",
+        "title": "Giveaway",
+        "streams": 14981367,
+        "dailyStreams": 19813,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/6XEv0xIrDhwolBuzju8v5y",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "2fnO0WWQC44sjKwk1Ey68o",
+        "title": "That Guy",
+        "streams": 14135453,
+        "dailyStreams": 18068,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/2fnO0WWQC44sjKwk1Ey68o",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "24NCQmCRmHlUr1syzQ6fse",
+        "title": "MOTION SICKNESS (feat. Zlatan)",
+        "streams": 14076460,
+        "dailyStreams": 133000,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/24NCQmCRmHlUr1syzQ6fse",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "2OES8BEd3LwImek13bYb1p",
+        "title": "10 Bottles",
+        "streams": 12967968,
+        "dailyStreams": 9098,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/2OES8BEd3LwImek13bYb1p",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      }
+    ],
+    "songsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "statsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "monthlyListenersLastUpdatedAt": "2026-08-20T00:00:00.000Z"
+  },
+  {
+    "rank": 40,
+    "previousRank": 43,
+    "name": "Bella Shmurda",
+    "slug": "bella-shmurda",
+    "country": "Nigeria",
+    "tagline": "THE STREET'S OPEN NERVE",
+    "genres": [
+      "STREET-POP",
+      "AFROBEATS"
+    ],
+    "bio": "Bella Shmurda sings with an exposed edge that makes hustle records feel personal. His melodies carry the tension between celebration and survival at the heart of Lagos street-pop.",
+    "score": 64.8,
+    "image": "artists/bella-shmurda.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5eb26d2a252e8a5472f1cde4f55",
+    "spotifyId": "7kK5badbqOjd8WlT2XWMeM",
+    "spotifyUrl": "https://open.spotify.com/artist/7kK5badbqOjd8WlT2XWMeM",
+    "monthlyListeners": 2500000,
+    "totalSpotifyStreams": 680400499,
+    "dailySpotifyStreams": 630544,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/bella-shmurda/7kK5badbqOjd8WlT2XWMeM",
+      "catalogue": "https://kworb.net/spotify/artist/7kK5badbqOjd8WlT2XWMeM_songs.html"
+    },
+    "songs": [
+      {
+        "spotifyId": "3vr9oX942YBLxEtG0pwofN",
+        "title": "DOG EAT DOG II (feat. Cruel Santino and Bella Shmurda)",
+        "streams": 53754485,
+        "dailyStreams": 53965,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/3vr9oX942YBLxEtG0pwofN",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "3ZR7IlqBPK8TrJyZYfFX9L",
+        "title": "who does that? (feat. Bella Shmurda)",
+        "streams": 51218011,
+        "dailyStreams": 50713,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/3ZR7IlqBPK8TrJyZYfFX9L",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "7CkDjDtJjCZA7AW7RBvrvC",
+        "title": "OHEMA (with Crayon & Bella Shmurda)",
+        "streams": 50225337,
+        "dailyStreams": 16791,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/7CkDjDtJjCZA7AW7RBvrvC",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "07eJSSPcNlkR34wVlkrCcY",
+        "title": "Dangbana Riddim",
+        "streams": 48892273,
+        "dailyStreams": 56050,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/07eJSSPcNlkR34wVlkrCcY",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "1YUrCnmAEQbdmTeucn3WCl",
+        "title": "Philo",
+        "streams": 39094832,
+        "dailyStreams": 29673,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/1YUrCnmAEQbdmTeucn3WCl",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "35UGCXaOBmhBUmKK81NQBH",
+        "title": "PARIWO",
+        "streams": 25517676,
+        "dailyStreams": 21478,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/35UGCXaOBmhBUmKK81NQBH",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "6rXfbZDPYQLWMinO552iwv",
+        "title": "Triumphant (feat. Bella Shmurda)",
+        "streams": 24278974,
+        "dailyStreams": 28578,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/6rXfbZDPYQLWMinO552iwv",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "66OmUVUiuja0zp423wGqhr",
+        "title": "Cash App",
+        "streams": 23571261,
+        "dailyStreams": 24303,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/66OmUVUiuja0zp423wGqhr",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "3FrEGCA1DGPzeq7VSi1R3a",
+        "title": "HBP Remix (with Bella Shmurda)",
+        "streams": 21372906,
+        "dailyStreams": 18759,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/3FrEGCA1DGPzeq7VSi1R3a",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "0mCxHKr5bp05PMdD7jU4rW",
+        "title": "Al-Jannah",
+        "streams": 19169863,
+        "dailyStreams": 15142,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/0mCxHKr5bp05PMdD7jU4rW",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "6x8X3xSbcxM8S4Vo454ZEh",
+        "title": "Jehovah",
+        "streams": 14824703,
+        "dailyStreams": 14960,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/6x8X3xSbcxM8S4Vo454ZEh",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "5KwMIwDR0H6npTnEPdTGz9",
+        "title": "Vision 2020",
+        "streams": 14570222,
+        "dailyStreams": 22294,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/5KwMIwDR0H6npTnEPdTGz9",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      }
+    ],
+    "songsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "statsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "monthlyListenersLastUpdatedAt": "2026-08-20T00:00:00.000Z"
+  },
+  {
+    "rank": 41,
+    "previousRank": 36,
+    "name": "Blaqbonez",
+    "slug": "blaqbonez",
+    "country": "Nigeria",
+    "tagline": "THE SELF-AWARE SHOWMAN",
+    "genres": [
+      "RAP",
+      "AFRO-FUSION"
+    ],
+    "bio": "Blaqbonez pairs technical range with an internet-native sense of theatre. The jokes draw attention, but the reason he stays is musical flexibility and a clear understanding of character.",
+    "score": 64,
+    "image": "artists/blaqbonez.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5eb622eb302797797e4a9bf2f10",
+    "spotifyId": "12kjvw4e3gLp6qVHO65n7W",
+    "spotifyUrl": "https://open.spotify.com/artist/12kjvw4e3gLp6qVHO65n7W",
+    "monthlyListeners": 2900000,
+    "totalSpotifyStreams": 399199264,
+    "dailySpotifyStreams": 543314,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/blaqbonez/12kjvw4e3gLp6qVHO65n7W",
+      "catalogue": "https://kworb.net/spotify/artist/12kjvw4e3gLp6qVHO65n7W_songs.html"
+    },
+    "songs": [
+      {
+        "spotifyId": "6JVQBlA628faJmvQbeyBHT",
+        "title": "Chanel (feat. Asake)",
+        "streams": 33687098,
+        "dailyStreams": 237427,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/6JVQBlA628faJmvQbeyBHT",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "08PSIQHP9odhZKX87tlK56",
+        "title": "LIKE ICE SPICE",
+        "streams": 25816324,
+        "dailyStreams": 13367,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/08PSIQHP9odhZKX87tlK56",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "7q82Rs7vQn8bJcwj8uE0Af",
+        "title": "HALLELUJAH (feat. Blaqbonez)",
+        "streams": 25368135,
+        "dailyStreams": 8260,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/7q82Rs7vQn8bJcwj8uE0Af",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "5vgsQoqAfSc1EDefHIp4Oc",
+        "title": "wo wo - remix",
+        "streams": 16834504,
+        "dailyStreams": 5305,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/5vgsQoqAfSc1EDefHIp4Oc",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "7ydy7ryXw7XM5QtE3bNYaW",
+        "title": "NO SLEEP $$ (feat. Young Jonn)",
+        "streams": 16387024,
+        "dailyStreams": 15823,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/7ydy7ryXw7XM5QtE3bNYaW",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "6mHwUPpljnYwbzuua5jY3N",
+        "title": "BACK IN UNI",
+        "streams": 14510488,
+        "dailyStreams": 8200,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/6mHwUPpljnYwbzuua5jY3N",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "60qIa2znv2BICoDyJS8rNv",
+        "title": "TECHNICIAN (feat. Blaqbonez & Lekaa Beats)",
+        "streams": 14473871,
+        "dailyStreams": 6387,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/60qIa2znv2BICoDyJS8rNv",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "7MQ2FWFVuim1L1O3wXjkdZ",
+        "title": "Bling (feat. Amaarae & Buju)",
+        "streams": 14236904,
+        "dailyStreams": 6772,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/7MQ2FWFVuim1L1O3wXjkdZ",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "2GG6ETOQ8jiXcKYrwhNi0M",
+        "title": "NYEM EGO (feat. Jeriq)",
+        "streams": 13513763,
+        "dailyStreams": 7189,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/2GG6ETOQ8jiXcKYrwhNi0M",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "4yoX4Lav25xp7PFm4rEQ4A",
+        "title": "W For Wetego (feat. Young Jonn, Phyno & DJ 808)",
+        "streams": 10762982,
+        "dailyStreams": 11475,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/4yoX4Lav25xp7PFm4rEQ4A",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "4b1QPILybO6T7MUHNPdaIl",
+        "title": "Despacito (feat. FOLA)",
+        "streams": 10043665,
+        "dailyStreams": 19980,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/4b1QPILybO6T7MUHNPdaIl",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "3ROxsysonklH3nDNwctDRx",
+        "title": "Louder (feat. Ayo Maff & Bella Shmurda)",
+        "streams": 9805432,
+        "dailyStreams": 8366,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/3ROxsysonklH3nDNwctDRx",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      }
+    ],
+    "songsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "statsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "monthlyListenersLastUpdatedAt": "2026-08-20T00:00:00.000Z"
+  },
+  {
+    "rank": 42,
+    "previousRank": 42,
+    "name": "Khaid",
+    "slug": "khaid",
+    "country": "Nigeria",
+    "tagline": "THE MELODIC SURVIVOR",
+    "genres": [
+      "STREET-POP",
+      "AFROPOP"
+    ],
+    "bio": "Khaid's compact melodies and unpolished emotional tone made him a fast streaming-era breakout. His records work best when vulnerability interrupts the confidence.",
+    "score": 63.2,
+    "image": "artists/khaid.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5eb0a6d1b9759d060981200a1b3",
+    "spotifyId": "2mM6BxFQCd6BHzW4W7VhQP",
+    "spotifyUrl": "https://open.spotify.com/artist/2mM6BxFQCd6BHzW4W7VhQP",
+    "monthlyListeners": 2900000,
+    "totalSpotifyStreams": 291095318,
+    "dailySpotifyStreams": 412304,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/khaid/2mM6BxFQCd6BHzW4W7VhQP",
+      "catalogue": "https://kworb.net/spotify/artist/2mM6BxFQCd6BHzW4W7VhQP_songs.html"
+    },
+    "songs": [
+      {
+        "spotifyId": "5tCxCYuFA57AhVtHqxP7kr",
+        "title": "KAMIKAZE",
+        "streams": 66186261,
+        "dailyStreams": 102770,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/5tCxCYuFA57AhVtHqxP7kr",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "7qxtOyjZ2zSaxBPH8fLyNi",
+        "title": "Carry Me Go",
+        "streams": 33581712,
+        "dailyStreams": 19802,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/7qxtOyjZ2zSaxBPH8fLyNi",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "7wMYtt3SEquaep8sWCdQqp",
+        "title": "Jolie",
+        "streams": 31554804,
+        "dailyStreams": 38297,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/7wMYtt3SEquaep8sWCdQqp",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "6I5AVpJDWXIrWv7io1voYB",
+        "title": "Anabella",
+        "streams": 25616723,
+        "dailyStreams": 18679,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/6I5AVpJDWXIrWv7io1voYB",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "0WSxRM0rcUH9vqfsPcoDvx",
+        "title": "Jara",
+        "streams": 19478729,
+        "dailyStreams": 52801,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/0WSxRM0rcUH9vqfsPcoDvx",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "3Q78lDuzWs50Gry1eQA7NX",
+        "title": "WITH YOU",
+        "streams": 16916892,
+        "dailyStreams": 12492,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/3Q78lDuzWs50Gry1eQA7NX",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "1xet6MZrk4Zr5ebis0EF1Q",
+        "title": "Run Away (OMALICHA)",
+        "streams": 16381869,
+        "dailyStreams": 20047,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/1xet6MZrk4Zr5ebis0EF1Q",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "4oACaY1ep3NULWvjh9xqak",
+        "title": "FOR YOU",
+        "streams": 11483637,
+        "dailyStreams": 27765,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/4oACaY1ep3NULWvjh9xqak",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "5rOGgvxkgMOn5ZhyLHLDFz",
+        "title": "Way Back",
+        "streams": 9652473,
+        "dailyStreams": 7936,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/5rOGgvxkgMOn5ZhyLHLDFz",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "2M3mZOLJc4rnosgHWbJhCE",
+        "title": "Jigga (feat. Khaid)",
+        "streams": 8419640,
+        "dailyStreams": 9125,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/2M3mZOLJc4rnosgHWbJhCE",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "5vNL6mCfgM4SzLB7xy4KXa",
+        "title": "I Don't Care",
+        "streams": 7783581,
+        "dailyStreams": 4775,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/5vNL6mCfgM4SzLB7xy4KXa",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "16iNDnZBlHEDPg8ZBAX9LC",
+        "title": "Orobo",
+        "streams": 6573717,
+        "dailyStreams": 2194,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/16iNDnZBlHEDPg8ZBAX9LC",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      }
+    ],
+    "songsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "statsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "monthlyListenersLastUpdatedAt": "2026-08-20T00:00:00.000Z"
+  },
+  {
+    "rank": 43,
+    "previousRank": 37,
+    "name": "Chike",
+    "slug": "chike",
+    "country": "Nigeria",
+    "tagline": "THE LOVE-SONG ACTOR",
+    "genres": [
+      "AFRO-R&B",
+      "SOUL"
+    ],
+    "bio": "Chike brings an actor's sense of pacing to love songs. His clear diction and patient arrangements have made him a dependable voice for romance without chasing every rhythmic trend.",
+    "score": 62.4,
+    "image": "artists/chike.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5eb15b6e96e3f997e180de9e3fc",
+    "spotifyId": "6zK1M4TcabpLQMNmmG2P0Q",
+    "spotifyUrl": "https://open.spotify.com/artist/6zK1M4TcabpLQMNmmG2P0Q",
+    "monthlyListeners": 2100000,
+    "totalSpotifyStreams": 406289712,
+    "dailySpotifyStreams": 259302,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/chike/6zK1M4TcabpLQMNmmG2P0Q",
+      "catalogue": "https://kworb.net/spotify/artist/6zK1M4TcabpLQMNmmG2P0Q_songs.html"
+    },
+    "songs": [
+      {
+        "spotifyId": "7LZkMeX1k8PXQJ0SVYn1A5",
+        "title": "Funds (feat. ODUMODUBLVCK & Chike)",
+        "streams": 83478748,
+        "dailyStreams": 45832,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/7LZkMeX1k8PXQJ0SVYn1A5",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "7nomKLY56JGEOE0N3V1yGs",
+        "title": "Egwu",
+        "streams": 75526490,
+        "dailyStreams": 27774,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/7nomKLY56JGEOE0N3V1yGs",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "5rTC3tKShDyYK0wk0rq96X",
+        "title": "Running (To You)",
+        "streams": 39336535,
+        "dailyStreams": 18869,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/5rTC3tKShDyYK0wk0rq96X",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "2825Zwd0EnzzDxFOhDsRQC",
+        "title": "Could This Be Love",
+        "streams": 21683658,
+        "dailyStreams": 12294,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/2825Zwd0EnzzDxFOhDsRQC",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "4CD22b7uYHwxaWxiJlqSz8",
+        "title": "If You No Love",
+        "streams": 19204511,
+        "dailyStreams": 17371,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/4CD22b7uYHwxaWxiJlqSz8",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "0Ml7Z0Wv9RAqtZqFJzsGzd",
+        "title": "Roju",
+        "streams": 17362221,
+        "dailyStreams": 13247,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/0Ml7Z0Wv9RAqtZqFJzsGzd",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "6Uh5S2WjXoFPkgcVHaQV0d",
+        "title": "Realness",
+        "streams": 16490409,
+        "dailyStreams": 18535,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/6Uh5S2WjXoFPkgcVHaQV0d",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "0yhFIVB0TrbaP4tY0ODSr3",
+        "title": "Hard to Find",
+        "streams": 9592728,
+        "dailyStreams": 10433,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/0yhFIVB0TrbaP4tY0ODSr3",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "1pi9XMrwEocfCRlDiEDrHM",
+        "title": "Love Egbugomo",
+        "streams": 9303334,
+        "dailyStreams": 16683,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/1pi9XMrwEocfCRlDiEDrHM",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "1E9OXQIN9zhGpaVNATJTyS",
+        "title": "Easy To Love",
+        "streams": 8618049,
+        "dailyStreams": 3404,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/1E9OXQIN9zhGpaVNATJTyS",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "3ovSaVUTDOtxfDw5xh9qJ4",
+        "title": "Knee Down",
+        "streams": 8093868,
+        "dailyStreams": 1589,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/3ovSaVUTDOtxfDw5xh9qJ4",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "0HNQq6OQvAC7cm4vkVDox7",
+        "title": "Ego Oyibo",
+        "streams": 7462713,
+        "dailyStreams": 5321,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/0HNQq6OQvAC7cm4vkVDox7",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      }
+    ],
+    "songsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "statsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "monthlyListenersLastUpdatedAt": "2026-08-20T00:00:00.000Z"
+  },
+  {
+    "rank": 44,
+    "previousRank": 31,
+    "name": "Diamond Platnumz",
+    "slug": "diamond-platnumz",
+    "country": "Tanzania",
+    "tagline": "THE EAST AFRICAN EMPIRE",
+    "genres": [
+      "BONGO FLAVA",
+      "AFROPOP"
+    ],
+    "bio": "Diamond Platnumz turned Bongo Flava stardom into a regional business system. His catalogue, visual scale and Wasafi platform keep East Africa central to the continental pop map.",
+    "score": 61.5,
+    "image": "artists/diamond-platnumz.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5ebc6796a7228b83f7868a53be5",
+    "spotifyId": "3cAisWS37sGCCtRgWfvrod",
+    "spotifyUrl": "https://open.spotify.com/artist/3cAisWS37sGCCtRgWfvrod",
+    "monthlyListeners": 1700000,
+    "totalSpotifyStreams": 329291511,
+    "dailySpotifyStreams": 199771,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/diamond-platnumz/3cAisWS37sGCCtRgWfvrod",
+      "catalogue": "https://kworb.net/spotify/artist/3cAisWS37sGCCtRgWfvrod_songs.html"
+    },
+    "songs": [
+      {
+        "spotifyId": "442DDArcRLNRxEeF75jRVk",
+        "title": "Shu! (feat. Chley)",
+        "streams": 25461776,
+        "dailyStreams": 20890,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/442DDArcRLNRxEeF75jRVk",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "4oLRZYEW6Fl4KPSPziFwxi",
+        "title": "African Beauty (feat. Omarion)",
+        "streams": 22497280,
+        "dailyStreams": 9871,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/4oLRZYEW6Fl4KPSPziFwxi",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "1fsSipH7Us9jNb1QmpVUk8",
+        "title": "Time To Party (feat. Diamond Platnumz)",
+        "streams": 21484237,
+        "dailyStreams": 5739,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/1fsSipH7Us9jNb1QmpVUk8",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "4gSVIEdq1I3rSLwPTKTXxR",
+        "title": "Inama (feat. Fally Ipupa)",
+        "streams": 18721417,
+        "dailyStreams": 9758,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/4gSVIEdq1I3rSLwPTKTXxR",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "5mjxSIPHAMNk40q0nON5Cb",
+        "title": "Komasava (Comment Ça Va)",
+        "streams": 18240863,
+        "dailyStreams": 13785,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/5mjxSIPHAMNk40q0nON5Cb",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "0gHFDbhx2RFBrhJplPxlcT",
+        "title": "Jugni",
+        "streams": 17732989,
+        "dailyStreams": 3036,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/0gHFDbhx2RFBrhJplPxlcT",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "1qiHxdihSes6DA9hkAKFyg",
+        "title": "Enjoy",
+        "streams": 13992139,
+        "dailyStreams": 6467,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/1qiHxdihSes6DA9hkAKFyg",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "4105eJHPqLaEDmdCo6qUUq",
+        "title": "Kolo Kolo",
+        "streams": 13738786,
+        "dailyStreams": 5842,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/4105eJHPqLaEDmdCo6qUUq",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "6BnKiK0FwqJoqCdVKh442g",
+        "title": "Love You Die (feat. Diamond Platnumz)",
+        "streams": 13654735,
+        "dailyStreams": 6516,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/6BnKiK0FwqJoqCdVKh442g",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "7IM5Blpr2xlz9hFBgr79cC",
+        "title": "Wasted Energy (feat. Kaash Paige & Diamond Platnumz) - Remix",
+        "streams": 10701286,
+        "dailyStreams": 485,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/7IM5Blpr2xlz9hFBgr79cC",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "5Qw24XOtM4IWD4ZYjoi4TL",
+        "title": "Tayari",
+        "streams": 9371451,
+        "dailyStreams": 1145,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/5Qw24XOtM4IWD4ZYjoi4TL",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "5Z3QIgK5wevEGkBueKLU2A",
+        "title": "Marry You (feat. Ne-Yo)",
+        "streams": 9258816,
+        "dailyStreams": 4250,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/5Z3QIgK5wevEGkBueKLU2A",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      }
+    ],
+    "songsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "statsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "monthlyListenersLastUpdatedAt": "2026-08-20T00:00:00.000Z"
+  },
+  {
+    "rank": 45,
+    "previousRank": 39,
+    "name": "Tekno",
+    "slug": "tekno",
+    "country": "Nigeria",
+    "tagline": "THE MELODY ENGINEER",
+    "genres": [
+      "AFROPOP",
+      "DANCE"
+    ],
+    "bio": "Tekno's sparse productions and spring-loaded melodies helped shape the mid-2010s Afropop boom. Even when releases slow, his writing and production DNA remain audible across the scene.",
+    "score": 60.7,
+    "image": "artists/tekno.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5ebbdfa92a97f9da3258e7776e9",
+    "spotifyId": "6IhG3Yxm3UW98jhyBvrIut",
+    "spotifyUrl": "https://open.spotify.com/artist/6IhG3Yxm3UW98jhyBvrIut",
+    "monthlyListeners": 2200000,
+    "totalSpotifyStreams": 556213522,
+    "dailySpotifyStreams": 199718,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/tekno/6IhG3Yxm3UW98jhyBvrIut",
+      "catalogue": "https://kworb.net/spotify/artist/6IhG3Yxm3UW98jhyBvrIut_songs.html"
+    },
+    "songs": [
+      {
+        "spotifyId": "36tVdsRWDbPBekxVYEWhph",
+        "title": "Buga (Lo Lo Lo)",
+        "streams": 125328320,
+        "dailyStreams": 37870,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/36tVdsRWDbPBekxVYEWhph",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "6ofWjr2zffePlKq3WOnBSF",
+        "title": "Pana",
+        "streams": 89139051,
+        "dailyStreams": 28956,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/6ofWjr2zffePlKq3WOnBSF",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "1yvFoBp2Bq1ilD0518ZpQx",
+        "title": "DON'T JEALOUS ME",
+        "streams": 43097762,
+        "dailyStreams": 5166,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/1yvFoBp2Bq1ilD0518ZpQx",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "3QjgCsPJH5Z2VnTCDYPurE",
+        "title": "Skeletun",
+        "streams": 41507818,
+        "dailyStreams": 16834,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/3QjgCsPJH5Z2VnTCDYPurE",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "4t59zVbRoCgnvyQ9hM3xP1",
+        "title": "Duro",
+        "streams": 34500327,
+        "dailyStreams": 19954,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/4t59zVbRoCgnvyQ9hM3xP1",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "6xhxjkhzbf4kfDSCOEYgqZ",
+        "title": "GO",
+        "streams": 32622712,
+        "dailyStreams": 0,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/6xhxjkhzbf4kfDSCOEYgqZ",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "2YzhSj3vzAC6UDpFEwTMLF",
+        "title": "Freak Me (feat. Tekno)",
+        "streams": 18824841,
+        "dailyStreams": 1176,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/2YzhSj3vzAC6UDpFEwTMLF",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "2kYH4uxrTEQDxMlK27goJC",
+        "title": "Yawa",
+        "streams": 17087127,
+        "dailyStreams": 10875,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/2kYH4uxrTEQDxMlK27goJC",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "7edx6ymY719QjyBpWNKyj7",
+        "title": "Jogodo",
+        "streams": 16618833,
+        "dailyStreams": 11476,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/7edx6ymY719QjyBpWNKyj7",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "2S81GqH8jtb6ZUM0wrux4v",
+        "title": "Enjoy",
+        "streams": 14092149,
+        "dailyStreams": 5722,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/2S81GqH8jtb6ZUM0wrux4v",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "2MUkw4KIzDBVE0toHWHgFY",
+        "title": "Wash",
+        "streams": 11160197,
+        "dailyStreams": 8372,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/2MUkw4KIzDBVE0toHWHgFY",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "1w4q12DyxWXE2yrjJOtqQ0",
+        "title": "Diana",
+        "streams": 10725735,
+        "dailyStreams": 11965,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/1w4q12DyxWXE2yrjJOtqQ0",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      }
+    ],
+    "songsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "statsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "monthlyListenersLastUpdatedAt": "2026-08-20T00:00:00.000Z"
+  },
+  {
+    "rank": 46,
+    "previousRank": 40,
+    "name": "Focalistic",
+    "slug": "focalistic",
+    "country": "South Africa",
+    "tagline": "THE PITORI MARADONA",
+    "genres": [
+      "AMAPIANO",
+      "RAP"
+    ],
+    "bio": "Focalistic gave amapiano a rapper's narrative centre. His Pretoria slang, agile flow and cross-border collaborations helped the sound speak beyond the dance floor.",
+    "score": 59.9,
+    "image": "artists/focalistic.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5ebbbf1affcef7a2a24f7d8b688",
+    "spotifyId": "2GJMSZ7M3D0KyyKRhYgWju",
+    "spotifyUrl": "https://open.spotify.com/artist/2GJMSZ7M3D0KyyKRhYgWju",
+    "monthlyListeners": 2700000,
+    "totalSpotifyStreams": 284022944,
+    "dailySpotifyStreams": 279611,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/focalistic/2GJMSZ7M3D0KyyKRhYgWju",
+      "catalogue": "https://kworb.net/spotify/artist/2GJMSZ7M3D0KyyKRhYgWju_songs.html"
+    },
+    "songs": [
+      {
+        "spotifyId": "2UxfLzrOzdHlwrIzjhsHT2",
+        "title": "2Factor",
+        "streams": 39708659,
+        "dailyStreams": 69689,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/2UxfLzrOzdHlwrIzjhsHT2",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "2mqNeI4vUehnhVwSkCrQnR",
+        "title": "Champion Sound",
+        "streams": 27737759,
+        "dailyStreams": 8426,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/2mqNeI4vUehnhVwSkCrQnR",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "0mGcsaIOK2wL7ECV3BN5XD",
+        "title": "WATAWI (feat. Davido, Focalistic & Abidoza)",
+        "streams": 18793128,
+        "dailyStreams": 11911,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/0mGcsaIOK2wL7ECV3BN5XD",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "659qsb8NZaTuNubJDk1gaD",
+        "title": "Dlala Ka Yona (feat. Focalistic, Ricky Lenyora, Uncool MC & Mellow & Sleazy)",
+        "streams": 17232965,
+        "dailyStreams": 19200,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/659qsb8NZaTuNubJDk1gaD",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "71JcMmqaJ2rGxxTcufwkSg",
+        "title": "Ke Star (feat. Virgo Deep) - Remix",
+        "streams": 15958823,
+        "dailyStreams": 11852,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/71JcMmqaJ2rGxxTcufwkSg",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "5ZDw1sqZQDlC5aV7ir6kkN",
+        "title": "Tobetsa Remake (feat. Focalistic, Daliwonga & ShaunMusiq & Ftears)",
+        "streams": 11539792,
+        "dailyStreams": 2599,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/5ZDw1sqZQDlC5aV7ir6kkN",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "6slJQ4C1xXTVspSBxQ5Nrt",
+        "title": "A-Z (Yashi Moto)",
+        "streams": 8851614,
+        "dailyStreams": 4920,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/6slJQ4C1xXTVspSBxQ5Nrt",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "6NC6bUY7tAIgr5xvzzZnBR",
+        "title": "Tiya Mfana (Mzokwana) [feat. Sims Noreng]",
+        "streams": 8368212,
+        "dailyStreams": 737,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/6NC6bUY7tAIgr5xvzzZnBR",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "1VvejtPvKN93gWv0Y27BfE",
+        "title": "Khekheleza (Dlala Dlala) [feat. Thama Tee & Eeque]",
+        "streams": 7945922,
+        "dailyStreams": 1646,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/1VvejtPvKN93gWv0Y27BfE",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "7uhOIYLVWbBZ6ISBoyiMrl",
+        "title": "Ke Star (feat. Vigro Deep)",
+        "streams": 6209581,
+        "dailyStreams": 1401,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/7uhOIYLVWbBZ6ISBoyiMrl",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "0UCv4K0MMGf7OLKAcKYFwR",
+        "title": "Pabi Jo (feat. Lajere man & DJ DADAMAN)",
+        "streams": 5747273,
+        "dailyStreams": 1123,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/0UCv4K0MMGf7OLKAcKYFwR",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "4X4cghVmisiTbcu59iLLZ8",
+        "title": "HOW FAR - Remix",
+        "streams": 5190254,
+        "dailyStreams": 21517,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/4X4cghVmisiTbcu59iLLZ8",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      }
+    ],
+    "songsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "statsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "monthlyListenersLastUpdatedAt": "2026-08-20T00:00:00.000Z"
+  },
+  {
+    "rank": 47,
+    "previousRank": 41,
+    "name": "Uncle Waffles",
+    "slug": "uncle-waffles",
+    "country": "Eswatini / South Africa",
+    "tagline": "THE DANCE-FLOOR CURATOR",
+    "genres": [
+      "AMAPIANO",
+      "DJ"
+    ],
+    "bio": "Uncle Waffles made the DJ booth feel like centre stage. Her high-energy sets, sharp visual identity and international touring turned curation itself into a headline performance.",
+    "score": 59.1,
+    "image": "artists/uncle-waffles.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5ebc5f82f490992ba02b1e6bfcb",
+    "spotifyId": "68McnNC9twEtiynOAJRRgZ",
+    "spotifyUrl": "https://open.spotify.com/artist/68McnNC9twEtiynOAJRRgZ",
+    "monthlyListeners": 1500000,
+    "totalSpotifyStreams": 211914478,
+    "dailySpotifyStreams": 164384,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/uncle-waffles/68McnNC9twEtiynOAJRRgZ",
+      "catalogue": "https://kworb.net/spotify/artist/68McnNC9twEtiynOAJRRgZ_songs.html"
+    },
+    "songs": [
+      {
+        "spotifyId": "4AWW74UqPDyH7V7S4qtmQx",
+        "title": "Wadibusa (feat. Royal MusiQ, OHP Sage, & Pcee)",
+        "streams": 41027394,
+        "dailyStreams": 15074,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/4AWW74UqPDyH7V7S4qtmQx",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "4foPE26gCg9uNJKTV8Mi4C",
+        "title": "ZENZELE (feat. Royal MusiQ, Uncool MC, Xduppy, & CowBoii)",
+        "streams": 38226183,
+        "dailyStreams": 44922,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/4foPE26gCg9uNJKTV8Mi4C",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "2qp7rTcFVz67fz88JSnbkU",
+        "title": "Yahyuppiyah (feat. Pcee, EeQue & Chley)",
+        "streams": 34046594,
+        "dailyStreams": 10937,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/2qp7rTcFVz67fz88JSnbkU",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "1AJ6gqIBqBVQEgfdqQkbFY",
+        "title": "Tanzania (feat. Sino Msolo and Boibizza)",
+        "streams": 22423436,
+        "dailyStreams": 6011,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/1AJ6gqIBqBVQEgfdqQkbFY",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "1NQCinyxiglxekxXVPEhnC",
+        "title": "Peacock Revisit (feat. Ice Beats Slide & Sbuda Maleather)",
+        "streams": 20552044,
+        "dailyStreams": 4400,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/1NQCinyxiglxekxXVPEhnC",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "2J8TIoje5sqUoz4I3JIZkI",
+        "title": "UYAH! (feat. 2wo Bunnies, Jay Music, & Imbongi Yosizi)",
+        "streams": 9275856,
+        "dailyStreams": 7803,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/2J8TIoje5sqUoz4I3JIZkI",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "1Gl6h6NPDoP7t06c0C3pwo",
+        "title": "BAPHI (feat. Royal MusiQ, Mark Khoza, CowBoii, & Uncool MC)",
+        "streams": 8164886,
+        "dailyStreams": 5437,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/1Gl6h6NPDoP7t06c0C3pwo",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "0OHyYITe0u4akdCEkApT4y",
+        "title": "Ke Nakwela (feat. Dj Maphorisa, Uncool MC, Ricky Lenyora & Gipa Entertainment)",
+        "streams": 6720659,
+        "dailyStreams": 4266,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/0OHyYITe0u4akdCEkApT4y",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "0S4v8Xpbv2qCeYzhVnhULh",
+        "title": "Tanzania - Rampa Remix",
+        "streams": 5643878,
+        "dailyStreams": 2305,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/0S4v8Xpbv2qCeYzhVnhULh",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "4gmWsIp3hWds3cTRiAV3BO",
+        "title": "uMalume Wako (feat. DJ Stresser and Given Kau)",
+        "streams": 3591426,
+        "dailyStreams": 1185,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/4gmWsIp3hWds3cTRiAV3BO",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "5pBg2NLbsJMKiXa6gw5zrY",
+        "title": "Echoes (feat. Tony Duardo, Manana & Lusanda)",
+        "streams": 2850069,
+        "dailyStreams": 385,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/5pBg2NLbsJMKiXa6gw5zrY",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "6p3YiHY1uGsoTMVIASShNz",
+        "title": "Uwelona (feat. Tony Duardo, Boi Bizza, Nvcho and Sino Msolo)",
+        "streams": 2450343,
+        "dailyStreams": 649,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/6p3YiHY1uGsoTMVIASShNz",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      }
+    ],
+    "songsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "statsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "monthlyListenersLastUpdatedAt": "2026-08-20T00:00:00.000Z"
+  },
+  {
+    "rank": 48,
+    "previousRank": 38,
+    "name": "Phyno",
+    "slug": "phyno",
+    "country": "Nigeria",
+    "tagline": "THE IGBO RAP PILLAR",
+    "genres": [
+      "RAP",
+      "HIGHLIFE"
+    ],
+    "bio": "Phyno proved indigenous-language rap could command the mainstream without translation. His authority comes from technical control, Eastern cultural detail and a catalogue that still pulls crowds.",
+    "score": 58.3,
+    "image": "artists/phyno.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5eb03120172bb2ed1ff08b2f7d3",
+    "spotifyId": "6acbdy69rtlv8m9EW31MYl",
+    "spotifyUrl": "https://open.spotify.com/artist/6acbdy69rtlv8m9EW31MYl",
+    "monthlyListeners": 1500000,
+    "totalSpotifyStreams": 330247844,
+    "dailySpotifyStreams": 402978,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/phyno/6acbdy69rtlv8m9EW31MYl",
+      "catalogue": "https://kworb.net/spotify/artist/6acbdy69rtlv8m9EW31MYl_songs.html"
+    },
+    "songs": [
+      {
+        "spotifyId": "5bzGTHcgxBVPuRNW5Yx1SX",
+        "title": "Do I (Remix)",
+        "streams": 31813336,
+        "dailyStreams": 10162,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/5bzGTHcgxBVPuRNW5Yx1SX",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "7vuPAT6r64yBfCWFySA086",
+        "title": "Fada Fada",
+        "streams": 14445624,
+        "dailyStreams": 12266,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/7vuPAT6r64yBfCWFySA086",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "00d0ILlSL8Np5IhVIyAP02",
+        "title": "Ride For You",
+        "streams": 11429021,
+        "dailyStreams": 24696,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/00d0ILlSL8Np5IhVIyAP02",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "2HU9rJ9WAiyJf7y3o6GRrS",
+        "title": "W For Wetego (feat. Young Jonn, Phyno & DJ 808)",
+        "streams": 10810306,
+        "dailyStreams": 11795,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/2HU9rJ9WAiyJf7y3o6GRrS",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "0qhfALctZENRjIITNtqWti",
+        "title": "Deep",
+        "streams": 10726593,
+        "dailyStreams": 9914,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/0qhfALctZENRjIITNtqWti",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "3cfhp41X9KaU07Ld0Ifte9",
+        "title": "Do I",
+        "streams": 10678987,
+        "dailyStreams": 1769,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/3cfhp41X9KaU07Ld0Ifte9",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "7j7pWcqJrHE7xtsKirb0sB",
+        "title": "Connect",
+        "streams": 9270149,
+        "dailyStreams": 9760,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/7j7pWcqJrHE7xtsKirb0sB",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "3AmcpUoHdrnK7NfhPTG7QE",
+        "title": "Back Outside",
+        "streams": 8867718,
+        "dailyStreams": 7457,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/3AmcpUoHdrnK7NfhPTG7QE",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "09KqpiC1s599qgsbhcudgu",
+        "title": "Ask Of Me Now",
+        "streams": 7778597,
+        "dailyStreams": 14256,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/09KqpiC1s599qgsbhcudgu",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "6rQQVTjTtnix0y3ovZ1FkB",
+        "title": "Egedege (feat. Theresa Onuorah, Flavour & Phyno)",
+        "streams": 7654348,
+        "dailyStreams": 7846,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/6rQQVTjTtnix0y3ovZ1FkB",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "3KTIJ4dEcjt43fk3SGFIL5",
+        "title": "Shutdown",
+        "streams": 7445555,
+        "dailyStreams": 3633,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/3KTIJ4dEcjt43fk3SGFIL5",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "70Y5c9SimCfgEiO4koOPIo",
+        "title": "Uzo Ano",
+        "streams": 7268090,
+        "dailyStreams": 19338,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/70Y5c9SimCfgEiO4koOPIo",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      }
+    ],
+    "songsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "statsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "monthlyListenersLastUpdatedAt": "2026-08-20T00:00:00.000Z"
+  },
+  {
+    "rank": 49,
+    "previousRank": 33,
+    "name": "Shatta Wale",
+    "slug": "shatta-wale",
+    "country": "Ghana",
+    "tagline": "THE DANCEHALL GENERAL",
+    "genres": [
+      "DANCEHALL",
+      "AFROPOP"
+    ],
+    "bio": "Shatta Wale is Ghanaian dancehall as public theatre: confrontational, prolific and impossible to ignore. His direct bond with fans gives the music an influence that raw platform numbers miss.",
+    "score": 57.4,
+    "image": "artists/shatta-wale.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5eb4b9c8478e046551c38920635",
+    "spotifyId": "42q0rYXtR561ypg1Fcw1PI",
+    "spotifyUrl": "https://open.spotify.com/artist/42q0rYXtR561ypg1Fcw1PI",
+    "monthlyListeners": 1300000,
+    "totalSpotifyStreams": 297105484,
+    "dailySpotifyStreams": 189398,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/shatta-wale/42q0rYXtR561ypg1Fcw1PI",
+      "catalogue": "https://kworb.net/spotify/artist/42q0rYXtR561ypg1Fcw1PI_songs.html"
+    },
+    "songs": [
+      {
+        "spotifyId": "6tgEc2O1uFHcZDKPoo6PC8",
+        "title": "ALREADY",
+        "streams": 174301431,
+        "dailyStreams": 35293,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/6tgEc2O1uFHcZDKPoo6PC8",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "4S0UUI7C5TRoktM4gnkh06",
+        "title": "ON GOD",
+        "streams": 17889255,
+        "dailyStreams": 21412,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/4S0UUI7C5TRoktM4gnkh06",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "5WhQjosiEw8r0CKaLSjwkr",
+        "title": "Ayoo",
+        "streams": 6360021,
+        "dailyStreams": 4703,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/5WhQjosiEw8r0CKaLSjwkr",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "4kmZpOIbvnfb0bJFPa6RJm",
+        "title": "Hossana",
+        "streams": 5864439,
+        "dailyStreams": 3292,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/4kmZpOIbvnfb0bJFPa6RJm",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "5OypUWwk0Q0404YXjIeRQf",
+        "title": "KILLA JI MI",
+        "streams": 5344410,
+        "dailyStreams": 6488,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/5OypUWwk0Q0404YXjIeRQf",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "0T3pdh1lMx9htNsQ3tDy9n",
+        "title": "Taking Over",
+        "streams": 5086766,
+        "dailyStreams": 3608,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/0T3pdh1lMx9htNsQ3tDy9n",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "2Uwc1B06VYc4XWvuAQxw5j",
+        "title": "Pancake",
+        "streams": 4971137,
+        "dailyStreams": 10650,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/2Uwc1B06VYc4XWvuAQxw5j",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "4BoTvPsNH6ijLrdlIV1kbA",
+        "title": "Denge II",
+        "streams": 4124857,
+        "dailyStreams": 1532,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/4BoTvPsNH6ijLrdlIV1kbA",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "6ZjFLGj3lBrMRhySPmuT5f",
+        "title": "Hol' It",
+        "streams": 3855832,
+        "dailyStreams": 798,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/6ZjFLGj3lBrMRhySPmuT5f",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "59BXqiS3Bee0Cx7gjpuJBJ",
+        "title": "Shoulder",
+        "streams": 3637416,
+        "dailyStreams": 6138,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/59BXqiS3Bee0Cx7gjpuJBJ",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "2uhNP5JVU6OVoL5lOvH1tR",
+        "title": "One Shot (feat. Shatta Wale & Sarkodie)",
+        "streams": 3360430,
+        "dailyStreams": 961,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/2uhNP5JVU6OVoL5lOvH1tR",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "1TVbFZoD8zqf6b2xycRvqf",
+        "title": "My Level",
+        "streams": 3296633,
+        "dailyStreams": 2456,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/1TVbFZoD8zqf6b2xycRvqf",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      }
+    ],
+    "songsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "statsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "monthlyListenersLastUpdatedAt": "2026-08-20T00:00:00.000Z"
+  },
+  {
+    "rank": 50,
+    "previousRank": 32,
+    "name": "Stonebwoy",
+    "slug": "stonebwoy",
+    "country": "Ghana",
+    "tagline": "THE ROOTED GLOBALIST",
+    "genres": [
+      "DANCEHALL",
+      "REGGAE"
+    ],
+    "bio": "Stonebwoy connects Ghanaian identity with reggae and dancehall craft. Years of touring and collaboration make him a steady continental ambassador rather than a one-cycle chart act.",
+    "score": 56.6,
+    "image": "artists/stonebwoy.jpg",
+    "imageFallback": "https://i.scdn.co/image/ab6761610000e5ebf07eebbda5929ad52927e20c",
+    "spotifyId": "2ayt5jDUuTCpoTG7sHSvuq",
+    "spotifyUrl": "https://open.spotify.com/artist/2ayt5jDUuTCpoTG7sHSvuq",
+    "monthlyListeners": 577086,
+    "totalSpotifyStreams": 157960227,
+    "dailySpotifyStreams": 86006,
+    "sources": {
+      "monthly": "https://www.musicmetricsvault.com/artists/stonebwoy/2ayt5jDUuTCpoTG7sHSvuq",
+      "catalogue": "https://kworb.net/spotify/artist/2ayt5jDUuTCpoTG7sHSvuq_songs.html"
+    },
+    "songs": [
+      {
+        "spotifyId": "0H6vpbW0UOtVpm3RgiwSkx",
+        "title": "Bounce It (feat. Stonebwoy)",
+        "streams": 14395736,
+        "dailyStreams": 993,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/0H6vpbW0UOtVpm3RgiwSkx",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "2ZuZUUpVLwR2O5qcStq5mm",
+        "title": "Activate",
+        "streams": 9951885,
+        "dailyStreams": 4184,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/2ZuZUUpVLwR2O5qcStq5mm",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "6zF39FfmenMgLFBuzc7Qi1",
+        "title": "Into The Future",
+        "streams": 8733561,
+        "dailyStreams": 3369,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/6zF39FfmenMgLFBuzc7Qi1",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "6NF74WOBrfQtjEKY7amPSC",
+        "title": "Therapy",
+        "streams": 7521114,
+        "dailyStreams": 824,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/6NF74WOBrfQtjEKY7amPSC",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "0x7K0Gxgm4rNPB5Kx12Bvn",
+        "title": "Likor (feat. Stonebwoy)",
+        "streams": 5902313,
+        "dailyStreams": 1405,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/0x7K0Gxgm4rNPB5Kx12Bvn",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "5ZJ81fstHbyBGPLy9MMmMM",
+        "title": "Life & Money",
+        "streams": 5277908,
+        "dailyStreams": 1385,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/5ZJ81fstHbyBGPLy9MMmMM",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "6fgLdXzfEhqcN86aiZwr1C",
+        "title": "Shoot You",
+        "streams": 4967627,
+        "dailyStreams": 400,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/6fgLdXzfEhqcN86aiZwr1C",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "7BmPzGYb06i6fzLrbd5M9r",
+        "title": "Apotheke",
+        "streams": 4649919,
+        "dailyStreams": 705,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/7BmPzGYb06i6fzLrbd5M9r",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "6RiEnoLPx58xDeahzT1rG9",
+        "title": "Go Higher",
+        "streams": 3932332,
+        "dailyStreams": 1711,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/6RiEnoLPx58xDeahzT1rG9",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "7fOZ3358MNZ2n9b3wWqzV7",
+        "title": "Ever Lasting",
+        "streams": 3700224,
+        "dailyStreams": 2782,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/7fOZ3358MNZ2n9b3wWqzV7",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "2Xl0NNatBF6rSzCKttgqQO",
+        "title": "Nominate",
+        "streams": 3663575,
+        "dailyStreams": 596,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/2Xl0NNatBF6rSzCKttgqQO",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      },
+      {
+        "spotifyId": "7CPNPqx2MlwIdPlkvJSaZt",
+        "title": "More Of You",
+        "streams": 3653887,
+        "dailyStreams": 423,
+        "fifaEditions": [],
+        "sourceUrl": "https://open.spotify.com/track/7CPNPqx2MlwIdPlkvJSaZt",
+        "lastVerifiedAt": "2026-08-24T11:32:10.115Z"
+      }
+    ],
+    "songsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "statsLastUpdatedAt": "2026-08-24T11:32:10.115Z",
+    "monthlyListenersLastUpdatedAt": "2026-08-20T00:00:00.000Z"
+  }
+];
