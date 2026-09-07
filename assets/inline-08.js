@@ -286,7 +286,7 @@
   }
 
   function eventRows(events) {
-    if (!events.length) return `<p class="tour-empty">No verified dates are currently listed. A failed or unavailable provider refresh never removes the previous good schedule.</p>`;
+    if (!events.length) return `<p class="tour-empty">No sourced future dates are listed for this artist in this window. <a href="/calendar/live">Browse the live calendar ↗</a></p>`;
     return events.map((event) => `
       <div class="tour-event">
         <div><strong>${escapeHtml(event.title || "Live date")}</strong><small><span class="tour-city">${escapeHtml(event.city)}</span> · ${escapeHtml(event.venue)}</small></div>
@@ -300,7 +300,7 @@
     const activeCutoff = Date.now() + 60 * 86_400_000;
     const active = upcoming.filter((event) => Date.parse(event.date) <= activeCutoff);
     return `<section>
-      <div class="live-section-head"><div><p>Live desk</p><h3>Touring & cities</h3></div><p>${snapshot ? `${escapeHtml(snapshot.provider)} · ${escapeHtml(dateLabel(snapshot.updatedAt))}` : "Provider connection pending"}</p></div>
+      <div class="live-section-head"><div><p>Live desk</p><h3>Touring & cities</h3></div><p>${snapshot ? `${escapeHtml(snapshot.provider)} · ${escapeHtml(dateLabel(snapshot.updatedAt))}` : "No future listing in the connected sources"}</p></div>
       <div class="tour-tabs" role="tablist"><button class="tour-tab is-active" type="button" data-tour-tab="active">Currently touring</button><button class="tour-tab" type="button" data-tour-tab="upcoming">Upcoming</button></div>
       <div class="tour-list" data-tour-panel="active">${eventRows(active)}</div>
       <div class="tour-list" data-tour-panel="upcoming" hidden>${eventRows(upcoming)}</div>

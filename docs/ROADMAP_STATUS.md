@@ -1,47 +1,42 @@
-# Afri Index roadmap status
+# Afri Index roadmap status — 7 September 2026
 
-## Implemented and wired
+## Delivered in this release
 
-- Separate Supabase project: Afri Index, `ficjgvrsmrqbpiirrflj`, eu-west-1, free plan quoted $0/month.
-- Receipt genres, flags, rising markers, discovery, four palettes. Removed YouTube Music and Audiomack receipt adapters.
-- Private persisted receipts for signed-in users; explicit public publication, UUID routes, PNG Open Graph previews, account-owned deletion.
-- Shared-receipt comparison by artist Jaccard overlap; track overlap separately. Group ranked-point receipts for 3–8 unique receipt IDs.
-- Wrapped Story export at 1080×1920. Uses the selected listening window and clearly states annual totals/discovery dates are unavailable.
-- Per-artist 1080×1920 ranking PNGs and 1200×630 Open Graph PNGs; native image share, X and WhatsApp links.
-- Email magic-link account UI, profiles, watchlists, rank-change digest, public visibility control; see auth activation dependency below.
-- All eleven weight controls and validation; recalculation is gated on complete component-score evidence.
-- Catalogue concentration explorer; explicitly a stream proxy, not official score decomposition.
-- Sourced corrections queue, pre-moderated artist-only comments, reports; review in protected Supabase dashboard.
-- Movers and watch pick from rank snapshots; title-based collaboration explorer with explicit coverage limits.
-- Specialist board routes with evidence gates. No invented rankings for unverified fields.
-- Two/three-artist comparison; authenticated weekly voting; Sunday result publication job.
-- Nightly listener refresh (02:00 UTC), observation timestamps, rounded-count flags, retain-last-good failures. First run updated 49 artists, retained Khaid.
-- Current/weekly JSON and CSV, embeddable Top 10, artist/week/receipt/compare/profile routes, command search, printable edition and broadsheet toggle.
-- Scoped public-chart service-worker caching, offline reader and generated home-screen icons; no auth/session/private data caches.
+- Supabase Auth SDK replaces the discarded-refresh-token session implementation. Browser sessions persist and refresh; sign-out uses the provider. Email, code and expired-link errors appear beside the sign-in control. Canonical callback: `/account`. Legacy `/studio/board` redirects there.
+- Private receipt saving uses the same refreshed account session. Owner-only downloads work without making receipts public. Public publication remains an explicit action.
+- Public `/boards` pages: nine women in the Current 50, thirteen sourced veterans, forty guest-credit artists across 104 explicit-feature recordings, and a coverage-limited producer-credit index across eight recordings. Final Current scores are preserved; women/veterans have separate initial weekly publication records.
+- Forty sourced career biographies and nine women's eligibility records. Career eligibility uses calendar-year precision. Missing identities/years are excluded, not guessed.
+- `/calendar/awards`, `/calendar/live`, `/calendar/certifications`: 31 newly sourced records, 40 merged awards/live records and 26 existing certification records. Grammys, Headies, Trace, BET and TurnTable are represented; confirmed future Grammy milestones and Tyla/Asake listings retain source links. Exact days and sold-out flags are never inferred.
+- `/api/data` now feeds the main site's existing award/tour views from the same export. Artist pages expose the calendar, certifications and geographic-data coverage.
+- The sandbox live-reorders a two-streaming-input scenario for the Current 50. Nine missing editorial marks stay disabled. Complete/partial published matrices can be consumed when supplied; missing selected inputs exclude only affected artists. Derived streaming indices are explicitly distinguished from the official score.
+- `/collaborations` is an interactive SVG artist/producer credit network with click-to-expand artist nodes and supporting recordings.
+- Dated Spotify JSON imports produce annual African listening-event/minute summaries and Wrapped exports. Raw exports stay in the browser; saved receipts contain only selected summary fields. Coverage is explicit; streaming API rolling ranges are not described as complete calendar years.
+- `/api/edition?week=YYYY-Www` produces a five-page Current 50 PDF with date, scores, movement and page counts. Browser print and broadsheet views remain available.
+- Opt-in weekly web push: public VAPID configuration, authenticated subscription controls, protected sender configuration, deployed Edge sender, and daily edition check at 18:15 UTC. Per-edition/endpoint delivery claims prevent duplicate sends. Expired endpoints are removed. Sender currently processes at most 1,000 subscriptions per run; failed deliveries do not retry the same edition.
+- Public command navigation on the homepage and secondary pages. Finished board/calendar destinations are available without going through Studio.
 
-## External activation requirements / incomplete acceptance criteria
+## Previously implemented and retained
 
-1. **Public email sign-in:** configure Supabase Auth Site URL and redirect allowlist to `https://afrobeats-index.vercel.app/studio/board` and connect custom SMTP. Supabase default email delivery is restricted; no test messages were sent. Account-dependent features cannot be considered end-to-end verified until a real login succeeds.
-2. **Ranking inputs:** supply the original 50×11 component-score matrix and its scales. The existing database only publishes final scores and formula weights. Until then the sandbox does not invent a recomputation.
-3. **Specialist data:** verify women’s-board eligibility, career-start years, rank 51–75 candidates, producer/songwriter/feature credits, and territory-level streams. Existing Current 50 alone cannot legitimately produce complete new boards or entry forecasts.
-4. **Live events/certifications:** the data model and calendar render verified entries, but additional recording-body results, upcoming dates and award-impact mappings require research/import. Existing source guides are shown unchanged.
-5. **Annual Wrapped:** Spotify top ranges and Apple recent listening are not calendar-year histories. Real annual summaries, minutes and discovery dates require dated listening exports or an appropriate provider feed.
-6. **Push:** subscription table exists, but collecting subscriptions is gated until a VAPID sender and weekly delivery service are configured.
-7. **Design/coverage:** collaboration explorer is currently a linked connection panel derived from explicit song-title credits, not a complete producer/artist visual network. Weekly edition export uses browser print-to-PDF, without custom page-count footer. Weekly bracket currently supports a single editorial matchup, not a multi-round tournament.
-8. **New board updates:** data-backed specialist boards need publication records and separate movement histories before they can be described as complete locked boards.
+Receipt themes, country/genre/rising markers, discovery, Spotify/Apple Music/manual modes; public receipt URLs and PNG previews; comparisons and 3–8-receipt group images; ranking-card Story/OG PNGs; profiles/watchlists; correction and moderated-comment queues; catalogue stream concentration; two/three-artist comparison; authenticated weekly matchup voting; JSON/CSV/widget exports; scoped offline public-chart caching; nightly monthly-listener refresh with retain-last-good failure handling.
 
-## Verification
+## Remaining acceptance criteria and external dependencies
 
-- Supabase security advisors returned no warnings after initial schema and jobs.
-- Transactional RLS checks passed owner read, cross-user invisibility and cross-user insert rejection; test rows rolled back.
-- Actual PNG byte dimensions validated for both share sizes; unknown artist returns 404.
-- Nightly Edge Function completed a real run, 49 successes / 1 retained failure; scheduled jobs active.
-- JavaScript syntax and local build validated. Public sign-in, human moderation and push delivery remain untested until configuration is supplied.
+1. **Production login acceptance is still pending.** Email auth is enabled in Supabase; social providers are disabled. The app uses the public project configuration, not a server-side SMTP environment variable. Available management tools cannot inspect/change Supabase Auth redirect allowlists or SMTP configuration, or inspect Vercel environment variables. Set Site URL to `https://afrobeats-index.vercel.app` and allow `https://afrobeats-index.vercel.app/account` (retain the legacy callback during migration). A real user must complete sign-in, refresh and sign-out before account-dependent features are called end-to-end verified. If the provider reports restricted delivery, configure a production SMTP sender.
+2. **Full official sandbox:** every stored factors array is empty; neither the repository nor database contains the original 50×11 published marks. Supply the original nine editorial inputs and scales. Current derived stream previews are useful but do not reconstruct those missing marks.
+3. **Local/international streams:** connected public totals and listener feeds contain no complete country-origin stream counts. An authorized artist/distributor export is required. Nationality and regional chart samples cannot substitute. Coverage pages show the gap instead of fabricated percentages.
+4. **Full new boards:** Current 51–75, entry forecasts and a complete Producer/Songwriter 25 need additional ranked candidates, source credits and scoring evidence. Current 50 contains only nine eligible women; no filler ranks are published. Guest reach is association, not causal guest-verse uplift. Producer points divide the observed recording streams equally among credited producers, not royalty splits.
+5. **Weekly specialist maintenance:** initial women/veteran editions are stored; editorial publication must create subsequent board editions for movement histories. Guest/producer credit samples are not yet separately archived locked editions. No historical movement is invented.
+6. **Award impact/annual discovery:** results are tied to the published 8% Awards factor, but no unsupported per-win point schedule exists. An import's first observed play is not proof of the user's first-ever discovery. Partial-year exports remain labelled partial coverage.
+7. **Push/user flows:** the sender ran successfully with zero subscriptions. Actual opted-in device delivery and logged-in receipt/profile/group interaction still require a real user session. Bracket is a single weekly matchup, not a multi-round tournament.
+8. **Data freshness:** newly researched entries are checked 2026-09-07. Inherited certification records retain their original dates; the release does not falsely claim they were all reverified today.
 
-## Operational details
+## Verification and security
 
-- Public read key only is in `community-config.json`; service-role access exists only inside Supabase-managed Edge runtime.
-- No streaming-provider tokens are persisted to database records.
-- Public ranking endpoint: CDN caching plus a per-instance 60/minute throttle; not a global distributed quota.
-- Receipt/comment/correction creation: maximum 30 per user per day, enforced at the database.
-- Locked weekly data is copied from the same existing artist snapshot by `scripts/export-data.cjs`; live monthly observations never rewrite an archived edition or official rank.
+- Nine local tests cover genuine scenario reshuffling/immutability, partial-input exclusion, explicit-credit deduplication, evidence/score preservation, calendar provenance, exact Story/OG PNG sizes, unknown-artist rejection, public-only shared configuration, and dated-history filtering/privacy.
+- Build, JavaScript syntax and whitespace checks pass. The PDF renderer produced a valid five-page document and was visually inspected.
+- Existing RLS tests checked owner access, cross-user invisibility and rejected cross-user insertion. New notification settings/delivery tables have RLS and no client privileges/policies: intentionally service-only. Advisor informational notices identify those intentional no-policy tables. Password leak protection is disabled on this email-passwordless project; no password login was introduced.
+- Weekly push Edge Function is active, scheduled, and returned a successful zero-recipient run. Actual notification receipt is not yet verified.
+- Service secrets exist only in protected database/runtime configuration. Only publishable keys are shipped to browsers. Raw provider tokens and history exports are not persisted as receipt data.
+- Official archived ranks remain independent of nightly observations and scenario sliders. Public API rate limiting is per instance, not a global quota; user content has database-enforced daily limits.
+
+Deployment and browser acceptance results are recorded with the release verification rather than inferred from a successful local build.

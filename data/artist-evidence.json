@@ -1,0 +1,522 @@
+[
+  {
+    "artist_slug": "burna-boy",
+    "career_started": 2010,
+    "gender": null,
+    "evidence": {
+      "biography": {
+        "url": "https://en.wikipedia.org/wiki/Burna_Boy",
+        "checked_at": "2026-09-07",
+        "career_excerpt": "2010\u2013present",
+        "precision": "year"
+      }
+    }
+  },
+  {
+    "artist_slug": "tems",
+    "career_started": 2018,
+    "gender": "woman",
+    "evidence": {
+      "biography": {
+        "url": "https://en.wikipedia.org/wiki/Tems",
+        "checked_at": "2026-09-07",
+        "career_excerpt": "2018\u2013present",
+        "precision": "year"
+      }
+    }
+  },
+  {
+    "artist_slug": "tyla",
+    "career_started": 2019,
+    "gender": "woman",
+    "evidence": {
+      "biography": {
+        "url": "https://en.wikipedia.org/wiki/Tyla",
+        "checked_at": "2026-09-07",
+        "career_excerpt": "2019\u2013present",
+        "precision": "year"
+      }
+    }
+  },
+  {
+    "artist_slug": "wizkid",
+    "career_started": 2001,
+    "gender": null,
+    "evidence": {
+      "biography": {
+        "url": "https://en.wikipedia.org/wiki/Wizkid",
+        "checked_at": "2026-09-07",
+        "career_excerpt": "2001\u2013present [ A ]",
+        "precision": "year"
+      }
+    }
+  },
+  {
+    "artist_slug": "ayra-starr",
+    "career_started": 2021,
+    "gender": "woman",
+    "evidence": {
+      "biography": {
+        "url": "https://en.wikipedia.org/wiki/Ayra_Starr",
+        "checked_at": "2026-09-07",
+        "career_excerpt": "2021\u2013present",
+        "precision": "year"
+      }
+    }
+  },
+  {
+    "artist_slug": "davido",
+    "career_started": 2010,
+    "gender": null,
+    "evidence": {
+      "biography": {
+        "url": "https://en.wikipedia.org/wiki/Davido",
+        "checked_at": "2026-09-07",
+        "career_excerpt": "2010\u2013present",
+        "precision": "year"
+      }
+    }
+  },
+  {
+    "artist_slug": "asake",
+    "career_started": 2018,
+    "gender": null,
+    "evidence": {
+      "biography": {
+        "url": "https://en.wikipedia.org/wiki/Asake",
+        "checked_at": "2026-09-07",
+        "career_excerpt": "2018\u2013present",
+        "precision": "year"
+      }
+    }
+  },
+  {
+    "artist_slug": "omah-lay",
+    "career_started": 2019,
+    "gender": null,
+    "evidence": {
+      "biography": {
+        "url": "https://en.wikipedia.org/wiki/Omah_Lay",
+        "checked_at": "2026-09-07",
+        "career_excerpt": "2019\u2013present",
+        "precision": "year"
+      }
+    }
+  },
+  {
+    "artist_slug": "ckay",
+    "career_started": 2016,
+    "gender": null,
+    "evidence": {
+      "biography": {
+        "url": "https://en.wikipedia.org/wiki/CKay",
+        "checked_at": "2026-09-07",
+        "career_excerpt": "2016\u2013present",
+        "precision": "year"
+      }
+    }
+  },
+  {
+    "artist_slug": "fireboy-dml",
+    "career_started": 2014,
+    "gender": null,
+    "evidence": {
+      "biography": {
+        "url": "https://en.wikipedia.org/wiki/Fireboy_Dml",
+        "checked_at": "2026-09-07",
+        "career_excerpt": "2014\u2013present",
+        "precision": "year"
+      }
+    }
+  },
+  {
+    "artist_slug": "victony",
+    "career_started": 2017,
+    "gender": null,
+    "evidence": {
+      "biography": {
+        "url": "https://en.wikipedia.org/wiki/Victony",
+        "checked_at": "2026-09-07",
+        "career_excerpt": "2017\u2013present",
+        "precision": "year"
+      }
+    }
+  },
+  {
+    "artist_slug": "moliy",
+    "career_started": 2020,
+    "gender": "woman",
+    "evidence": {
+      "biography": {
+        "url": "https://en.wikipedia.org/wiki/Moliy",
+        "checked_at": "2026-09-07",
+        "career_excerpt": "2020\u2013present",
+        "precision": "year"
+      }
+    }
+  },
+  {
+    "artist_slug": "bnxn",
+    "career_started": 2018,
+    "gender": null,
+    "evidence": {
+      "biography": {
+        "url": "https://en.wikipedia.org/wiki/Bnxn",
+        "checked_at": "2026-09-07",
+        "career_excerpt": "2018\u2013present",
+        "precision": "year"
+      }
+    }
+  },
+  {
+    "artist_slug": "seyi-vibez",
+    "career_started": 2015,
+    "gender": null,
+    "evidence": {
+      "biography": {
+        "url": "https://en.wikipedia.org/wiki/Seyi_Vibez",
+        "checked_at": "2026-09-07",
+        "career_excerpt": "2015\u2013present",
+        "precision": "year"
+      }
+    }
+  },
+  {
+    "artist_slug": "fola",
+    "career_started": 2014,
+    "gender": null,
+    "evidence": {
+      "biography": {
+        "url": "https://en.wikipedia.org/wiki/Fola_(singer)",
+        "checked_at": "2026-09-07",
+        "career_excerpt": "2014\u2013present",
+        "precision": "year"
+      }
+    }
+  },
+  {
+    "artist_slug": "mavo",
+    "career_started": 2023,
+    "gender": null,
+    "evidence": {
+      "biography": {
+        "url": "https://en.wikipedia.org/wiki/Mavo_(musician)",
+        "checked_at": "2026-09-07",
+        "career_excerpt": "2023\u2013present",
+        "precision": "year"
+      }
+    }
+  },
+  {
+    "artist_slug": "odeal",
+    "career_started": 2014,
+    "gender": null,
+    "evidence": {
+      "biography": {
+        "url": "https://en.wikipedia.org/wiki/Odeal",
+        "checked_at": "2026-09-07",
+        "career_excerpt": "2014\u2013present",
+        "precision": "year"
+      }
+    }
+  },
+  {
+    "artist_slug": "kizz-daniel",
+    "career_started": 2013,
+    "gender": null,
+    "evidence": {
+      "biography": {
+        "url": "https://en.wikipedia.org/wiki/Kizz_Daniel",
+        "checked_at": "2026-09-07",
+        "career_excerpt": "2013\u2013present",
+        "precision": "year"
+      }
+    }
+  },
+  {
+    "artist_slug": "olamide",
+    "career_started": 2010,
+    "gender": null,
+    "evidence": {
+      "biography": {
+        "url": "https://en.wikipedia.org/wiki/Olamide",
+        "checked_at": "2026-09-07",
+        "career_excerpt": "2010\u2013present",
+        "precision": "year"
+      }
+    }
+  },
+  {
+    "artist_slug": "odumodublvck",
+    "career_started": 2017,
+    "gender": null,
+    "evidence": {
+      "biography": {
+        "url": "https://en.wikipedia.org/wiki/Odumodublvck",
+        "checked_at": "2026-09-07",
+        "career_excerpt": "2017\u2013present",
+        "precision": "year"
+      }
+    }
+  },
+  {
+    "artist_slug": "sarz",
+    "career_started": 2007,
+    "gender": null,
+    "evidence": {
+      "biography": {
+        "url": "https://en.wikipedia.org/wiki/Sarz",
+        "checked_at": "2026-09-07",
+        "career_excerpt": "2007\u2013present",
+        "precision": "year"
+      }
+    }
+  },
+  {
+    "artist_slug": "amaarae",
+    "career_started": 2010,
+    "gender": "woman",
+    "evidence": {
+      "biography": {
+        "url": "https://en.wikipedia.org/wiki/Amaarae",
+        "checked_at": "2026-09-07",
+        "career_excerpt": "2010\u2013present",
+        "precision": "year"
+      }
+    }
+  },
+  {
+    "artist_slug": "young-jonn",
+    "career_started": 2010,
+    "gender": null,
+    "evidence": {
+      "biography": {
+        "url": "https://en.wikipedia.org/wiki/Young_Jonn",
+        "checked_at": "2026-09-07",
+        "career_excerpt": "2010 \u2013 present",
+        "precision": "year"
+      }
+    }
+  },
+  {
+    "artist_slug": "adekunle-gold",
+    "career_started": 2010,
+    "gender": null,
+    "evidence": {
+      "biography": {
+        "url": "https://en.wikipedia.org/wiki/Adekunle_Gold",
+        "checked_at": "2026-09-07",
+        "career_excerpt": "2010\u2013present",
+        "precision": "year"
+      }
+    }
+  },
+  {
+    "artist_slug": "shallipopi",
+    "career_started": 2015,
+    "gender": null,
+    "evidence": {
+      "biography": {
+        "url": "https://en.wikipedia.org/wiki/Shallipopi",
+        "checked_at": "2026-09-07",
+        "career_excerpt": "2015\u2013present",
+        "precision": "year"
+      }
+    }
+  },
+  {
+    "artist_slug": "fave",
+    "career_started": 2019,
+    "gender": "woman",
+    "evidence": {
+      "biography": {
+        "url": "https://en.wikipedia.org/wiki/Fave_(singer)",
+        "checked_at": "2026-09-07",
+        "career_excerpt": "2019\u2013Present",
+        "precision": "year"
+      }
+    }
+  },
+  {
+    "artist_slug": "joeboy",
+    "career_started": 2017,
+    "gender": null,
+    "evidence": {
+      "biography": {
+        "url": "https://en.wikipedia.org/wiki/Joeboy",
+        "checked_at": "2026-09-07",
+        "career_excerpt": "2017\u2013present",
+        "precision": "year"
+      }
+    }
+  },
+  {
+    "artist_slug": "tiwa-savage",
+    "career_started": 1996,
+    "gender": "woman",
+    "evidence": {
+      "biography": {
+        "url": "https://en.wikipedia.org/wiki/Tiwa_Savage",
+        "checked_at": "2026-09-07",
+        "career_excerpt": "1996\u2013present",
+        "precision": "year"
+      }
+    }
+  },
+  {
+    "artist_slug": "darkoo",
+    "career_started": 2017,
+    "gender": "woman",
+    "evidence": {
+      "biography": {
+        "url": "https://en.wikipedia.org/wiki/Darkoo",
+        "checked_at": "2026-09-07",
+        "career_excerpt": "2017\u2013present",
+        "precision": "year"
+      }
+    }
+  },
+  {
+    "artist_slug": "ciza",
+    "career_started": 2019,
+    "gender": null,
+    "evidence": {
+      "biography": {
+        "url": "https://en.wikipedia.org/wiki/Ciza",
+        "checked_at": "2026-09-07",
+        "career_excerpt": "2019\u2013present",
+        "precision": "year"
+      }
+    }
+  },
+  {
+    "artist_slug": "shoday",
+    "career_started": 2021,
+    "gender": null,
+    "evidence": {
+      "biography": {
+        "url": "https://en.wikipedia.org/wiki/Shoday",
+        "checked_at": "2026-09-07",
+        "career_excerpt": "2021\u2013present",
+        "precision": "year"
+      }
+    }
+  },
+  {
+    "artist_slug": "bella-shmurda",
+    "career_started": 2017,
+    "gender": null,
+    "evidence": {
+      "biography": {
+        "url": "https://en.wikipedia.org/wiki/Bella_Shmurda",
+        "checked_at": "2026-09-07",
+        "career_excerpt": "2017\u2013present",
+        "precision": "year"
+      }
+    }
+  },
+  {
+    "artist_slug": "blaqbonez",
+    "career_started": 2012,
+    "gender": null,
+    "evidence": {
+      "biography": {
+        "url": "https://en.wikipedia.org/wiki/Blaqbonez",
+        "checked_at": "2026-09-07",
+        "career_excerpt": "2012 \u2013 present",
+        "precision": "year"
+      }
+    }
+  },
+  {
+    "artist_slug": "khaid",
+    "career_started": 2022,
+    "gender": null,
+    "evidence": {
+      "biography": {
+        "url": "https://en.wikipedia.org/wiki/Khaid",
+        "checked_at": "2026-09-07",
+        "career_excerpt": "2022\u2013present",
+        "precision": "year"
+      }
+    }
+  },
+  {
+    "artist_slug": "diamond-platnumz",
+    "career_started": 2010,
+    "gender": null,
+    "evidence": {
+      "biography": {
+        "url": "https://en.wikipedia.org/wiki/Diamond_Platnumz",
+        "checked_at": "2026-09-07",
+        "career_excerpt": "2010\u2013present",
+        "precision": "year"
+      }
+    }
+  },
+  {
+    "artist_slug": "focalistic",
+    "career_started": 2016,
+    "gender": null,
+    "evidence": {
+      "biography": {
+        "url": "https://en.wikipedia.org/wiki/Focalistic",
+        "checked_at": "2026-09-07",
+        "career_excerpt": "2016\u2013present",
+        "precision": "year"
+      }
+    }
+  },
+  {
+    "artist_slug": "uncle-waffles",
+    "career_started": 2020,
+    "gender": "woman",
+    "evidence": {
+      "biography": {
+        "url": "https://en.wikipedia.org/wiki/Uncle_Waffles",
+        "checked_at": "2026-09-07",
+        "career_excerpt": "2020\u2013present",
+        "precision": "year"
+      }
+    }
+  },
+  {
+    "artist_slug": "phyno",
+    "career_started": 2003,
+    "gender": null,
+    "evidence": {
+      "biography": {
+        "url": "https://en.wikipedia.org/wiki/Phyno",
+        "checked_at": "2026-09-07",
+        "career_excerpt": "2003\u2013present",
+        "precision": "year"
+      }
+    }
+  },
+  {
+    "artist_slug": "shatta-wale",
+    "career_started": 2004,
+    "gender": null,
+    "evidence": {
+      "biography": {
+        "url": "https://en.wikipedia.org/wiki/Shatta_Wale",
+        "checked_at": "2026-09-07",
+        "career_excerpt": "2004\u2013present",
+        "precision": "year"
+      }
+    }
+  },
+  {
+    "artist_slug": "stonebwoy",
+    "career_started": 2009,
+    "gender": null,
+    "evidence": {
+      "biography": {
+        "url": "https://en.wikipedia.org/wiki/Stonebwoy",
+        "checked_at": "2026-09-07",
+        "career_excerpt": "2009\u2013present",
+        "precision": "year"
+      }
+    }
+  }
+]

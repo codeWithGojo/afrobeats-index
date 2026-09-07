@@ -114,7 +114,7 @@
     ui.status.textContent=message;ui.status.className=`receipt-status${type?` is-${type}`:""}`;
   }
   function invalidateReceipt(){
-    receiptState.blob=null;receiptState.snapshot=null;window.dispatchEvent(new Event("afri:receipt-invalidated"));
+    receiptState.blob=null;receiptState.snapshot=null;receiptState.annual=null;window.dispatchEvent(new Event("afri:receipt-invalidated"));
     [ui.download,ui.share,ui.tweet,ui.print].forEach(button=>{if(button)button.disabled=true;});
     document.getElementById("receipt-discovery").hidden=true;
   }
@@ -179,6 +179,8 @@
   function importData(text){
     setSource("manual");
     invalidateReceipt();
+    receiptState.selected=[];
+    try{const items=JSON.parse(text);if(Array.isArray(items)&&items.some(x=>x.ts||x.endTime)){const year=Number(document.getElementById('receipt-history-year').value),annual=window.AfriHistory.summarize(items,year,knownArtist);if(annual.events){receiptState.annual=annual;receiptState.tracks=annual.tracks;receiptState.artists=annual.artists;receiptState.filteredOut=0;setStatus(`${annual.events} matching African listening events in ${year}; ${annual.minutes} minutes imported. Generate, then choose Wrapped.`,'success');return;}setStatus('No dated African listening events match this year. Check the year and file.','error');receiptState.tracks=[];receiptState.artists=[];return;}}catch{}
     const tracks=parseImport(text),filtered=filterAfrican(tracks,[]);receiptState.tracks=filtered.tracks;receiptState.artists=uniqueArtists(filtered.tracks);receiptState.filteredOut=filtered.filteredOut;
     if(!tracks.length)setStatus("No readable rows were found. Try “Track, Artist, Plays” CSV columns.","error");else if(!filtered.tracks.length)setStatus("The import worked, but none of its artists matched the Afri Index African artist database.","error");else setStatus(`${filtered.tracks.length} African tracks imported. ${filtered.filteredOut} unmatched tracks were left out.`,"success");
   }
@@ -201,9 +203,10 @@
     receiptState.issuedAt=new Date().toISOString();
     receiptState.snapshot={tracks,artists};
     renderDiscoveries(tracks,artists);
-    drawReceipt(tracks,artists);ui.canvas.toBlob(blob=>{receiptState.blob=blob;[ui.download,ui.share,ui.tweet,ui.print].forEach(button=>button.disabled=false);window.dispatchEvent(new CustomEvent("afri:receipt-generated",{detail:{tracks,artists,source:receiptState.source,range:receiptState.range,theme:receiptState.theme,issuedAt:receiptState.issuedAt}}));},"image/png");
-    setStatus(`Receipt ready with ${tracks.length} track${tracks.length===1?"":"s"} and ${artists.length} artist${artists.length===1?"":"s"}.`,"success");ui.outputNote.textContent=`${SOURCE_LABELS[receiptState.source]} · ${RANGE_LABELS[receiptState.range]} · African matches only`;
+    drawReceipt(tracks,artists);ui.canvas.toBlob(blob=>{receiptState.blob=blob;[ui.download,ui.share,ui.tweet,ui.print].forEach(button=>button.disabled=false);window.dispatchEvent(new CustomEvent("afri:receipt-generated",{detail:{tracks,artists,...receiptMetadata()}}));},"image/png");
+    setStatus(`Receipt ready with ${tracks.length} track${tracks.length===1?"":"s"} and ${artists.length} artist${artists.length===1?"":"s"}.`,"success");ui.outputNote.textContent=receiptState.annual?`Imported ${receiptState.annual.year} · African listening events`:`${SOURCE_LABELS[receiptState.source]} · ${RANGE_LABELS[receiptState.range]} · African matches only`;
   }
+  function receiptMetadata(){const a=receiptState.annual;return {source:a?'import':receiptState.source,range:a?String(a.year):receiptState.range,theme:receiptState.theme,issuedAt:receiptState.issuedAt,...(a?{annual:{year:a.year,events:a.events,minutes:a.minutes,first:a.first,last:a.last}}:{})};}
   function artistLabel(name){
     const artist=knownArtist(name),flag=insights.flag(artist?.country);
     return `${flag?flag+" ":""}${name}${insights.rising(artist)?" · 🔥 Rising":""}`;
@@ -229,8 +232,8 @@
     ctx.textBaseline="top";ctx.textAlign="center";ctx.fillStyle=palette.accent;
     ctx.font="900 34px Arial";ctx.fillText("AFR / INDEX",width/2,58);
     ctx.font="700 18px monospace";ctx.fillText("MUSIC RECEIPT",width/2,108);ctx.fillStyle=palette.ink;
-    ctx.font="15px monospace";ctx.fillText(`${SOURCE_LABELS[receiptState.source].toUpperCase()} · ${receiptState.source==="apple"?"RECENT LISTENING":RANGE_LABELS[receiptState.range].toUpperCase()}`,width/2,148);
-    dash(ctx,48,192,width-48,192);ctx.textAlign="left";ctx.font="700 16px monospace";ctx.fillText("NO.  TRACK / ARTIST",50,217);ctx.textAlign="right";ctx.fillText("PLAYS / AFR",width-50,217);dash(ctx,48,252,width-48,252);let y=278;
+    ctx.font="15px monospace";ctx.fillText(receiptState.annual?`IMPORTED HISTORY · ${receiptState.annual.year}`:`${SOURCE_LABELS[receiptState.source].toUpperCase()} · ${receiptState.source==="apple"?"RECENT LISTENING":RANGE_LABELS[receiptState.range].toUpperCase()}`,width/2,148);
+    dash(ctx,48,192,width-48,192);ctx.textAlign="left";ctx.font="700 16px monospace";ctx.fillText("NO.  TRACK / ARTIST",50,217);ctx.textAlign="right";ctx.fillText(receiptState.annual?"EVENTS":"PLAYS / AFR",width-50,217);dash(ctx,48,252,width-48,252);let y=278;
     tracks.forEach((track,index)=>{
       const names=track.artists?.length?track.artists:[track.artist];const artist=names.map(knownArtist).find(Boolean);
       ctx.textAlign="left";ctx.fillStyle=palette.ink;ctx.font="700 18px monospace";ctx.fillText(String(index+1).padStart(2,"0"),50,y);drawEllipsis(ctx,String(track.title).toUpperCase(),95,y,420);
@@ -247,20 +250,21 @@
     drawBarcode(ctx,50,y,width-100,82,receiptSeed(tracks,artists));y+=108;ctx.textAlign="center";ctx.fillStyle=palette.accent;ctx.font="700 16px monospace";ctx.fillText("THANKS FOR SHOPPING AT AFRI INDEX",width/2,y);y+=30;ctx.fillStyle=palette.muted;ctx.font="14px monospace";ctx.fillText("AFROBEATS-INDEX.VERCEL.APP",width/2,y);
   }
   function drawWrapped(data){
+    const annual=receiptState.annual;if(annual)data={tracks:annual.tracks,artists:annual.artists};
     const canvas=ui.canvas;canvas.width=1080;canvas.height=1920;const ctx=canvas.getContext("2d");
-    ctx.fillStyle="#3B2A0F";ctx.fillRect(0,0,1080,1920);ctx.strokeStyle="#C9962F";ctx.lineWidth=3;ctx.strokeRect(30,30,1020,1860);ctx.textBaseline="top";ctx.fillStyle="#EFCB7A";ctx.font="900 42px Arial";ctx.fillText("AFR / INDEX",80,90);ctx.font="bold 110px Georgia";ctx.fillText("Afri Wrapped",80,210);ctx.font="bold 170px Georgia";ctx.fillText(String(new Date().getFullYear()),80,350);
-    const topGenre=insights.distribution(data.tracks,data.artists,knownArtist)[0]?.genre||"Unclassified";
+    ctx.fillStyle="#3B2A0F";ctx.fillRect(0,0,1080,1920);ctx.strokeStyle="#C9962F";ctx.lineWidth=3;ctx.strokeRect(30,30,1020,1860);ctx.textBaseline="top";ctx.fillStyle="#EFCB7A";ctx.font="900 42px Arial";ctx.fillText("AFR / INDEX",80,90);ctx.font="bold 110px Georgia";ctx.fillText("Afri Wrapped",80,210);ctx.font="bold 170px Georgia";ctx.fillText(String(annual?.year||new Date().getFullYear()),80,350);
+    const topGenre=annual?.topGenre||insights.distribution(data.tracks,data.artists,knownArtist)[0]?.genre||"Unclassified";
     const blocks=[["TOP ARTIST",data.artists[0]?.name||"No artist selection"],["TOP TRACK",data.tracks[0]?.title||"No track selection"],["TOP GENRE",topGenre]];
     blocks.forEach(([label,value],i)=>{ctx.fillStyle="#C9962F";ctx.font="26px monospace";ctx.fillText(label,80,610+i*215);ctx.fillStyle="#F0DCAE";ctx.font="bold 62px Georgia";drawEllipsis(ctx,value,80,660+i*215,910);});
-    const rising=data.artists.find(a=>insights.rising(knownArtist(a.name)));ctx.fillStyle="#EFCB7A";ctx.font="26px monospace";ctx.fillText("A RISING ARTIST IN YOUR PICKS",80,1320);ctx.font="bold 48px Georgia";drawEllipsis(ctx,rising?.name||"Keep discovering",80,1370,910);ctx.fillStyle="#F0DCAE";ctx.font="25px monospace";ctx.fillText(`${SOURCE_LABELS[receiptState.source]} · ${receiptState.source==="apple"?"Recent listening":RANGE_LABELS[receiptState.range]}`,80,1510);ctx.font="22px monospace";ctx.fillText("Selected listening window, not a calendar-year audit.",80,1560);ctx.fillText("Annual minutes and discovery dates unavailable.",80,1600);ctx.strokeStyle="#8A6A2F";ctx.beginPath();ctx.moveTo(80,1700);ctx.lineTo(1000,1700);ctx.stroke();ctx.fillStyle="#EFCB7A";ctx.font="26px monospace";ctx.fillText("THANKS FOR SHOPPING AT AFRI INDEX",80,1750);ctx.font="20px monospace";ctx.fillText("AFROBEATS-INDEX.VERCEL.APP",80,1810);
-    ui.outputNote.textContent="Wrapped · 1080 × 1920 · Uses the selected listening window";
+    const rising=data.artists.find(a=>insights.rising(knownArtist(a.name)));ctx.fillStyle="#EFCB7A";ctx.font="26px monospace";ctx.fillText("A RISING ARTIST IN YOUR PICKS",80,1320);ctx.font="bold 48px Georgia";drawEllipsis(ctx,rising?.name||"Keep discovering",80,1370,910);ctx.fillStyle="#F0DCAE";ctx.font="25px monospace";ctx.fillText(annual?`Imported history · ${annual.year}`:`${SOURCE_LABELS[receiptState.source]} · ${receiptState.source==="apple"?"Recent listening":RANGE_LABELS[receiptState.range]}`,80,1510);ctx.font="22px monospace";ctx.fillText(annual?`${annual.minutes.toLocaleString()} African minutes · ${annual.events.toLocaleString()} listening events`:"Selected listening window, not a calendar-year audit.",80,1560);ctx.fillText(annual?`Import coverage: ${annual.first.slice(0,10)} to ${annual.last.slice(0,10)}`:"Annual minutes require a dated history import.",80,1600);ctx.strokeStyle="#8A6A2F";ctx.beginPath();ctx.moveTo(80,1700);ctx.lineTo(1000,1700);ctx.stroke();ctx.fillStyle="#EFCB7A";ctx.font="26px monospace";ctx.fillText("THANKS FOR SHOPPING AT AFRI INDEX",80,1750);ctx.font="20px monospace";ctx.fillText("AFROBEATS-INDEX.VERCEL.APP",80,1810);
+    ui.outputNote.textContent=annual?`Wrapped · ${annual.year} · Imported coverage, not necessarily a complete year`:"Wrapped · 1080 × 1920 · Uses the selected listening window";
   }
   function dash(ctx,x1,y1,x2,y2){const p=insights.themes[receiptState.theme];ctx.save();ctx.setLineDash(p.solid?[]:[8,7]);ctx.strokeStyle=p.rule;ctx.lineWidth=2;ctx.beginPath();ctx.moveTo(x1,y1);ctx.lineTo(x2,y2);ctx.stroke();ctx.restore();}
   function drawEllipsis(ctx,text,x,y,maxWidth){let value=text;if(ctx.measureText(value).width<=maxWidth){ctx.fillText(value,x,y);return;}while(value.length&&ctx.measureText(`${value}…`).width>maxWidth)value=value.slice(0,-1);ctx.fillText(`${value}…`,x,y);}
   function compactNumber(value){return new Intl.NumberFormat("en",{notation:"compact",maximumFractionDigits:1}).format(value).toUpperCase();}
   function receiptSeed(tracks,artists){return normalize([...tracks.map(t=>t.title),...artists.map(a=>a.name)].join(""));}
   function drawBarcode(ctx,x,y,width,height,seed){ctx.save();ctx.fillStyle=insights.themes[receiptState.theme].barcode;let cursor=x;for(let i=0;cursor<x+width;i++){const code=seed.charCodeAt(i%Math.max(1,seed.length))||37,bar=2+(code+i)%6,gap=2+(code*i)%4;if((code+i)%3!==0)ctx.fillRect(cursor,y,bar,height-((code+i)%4)*8);cursor+=bar+gap;}ctx.restore();}
-  function receiptText(){const data=receiptState.snapshot||currentReceiptData(),names=data.artists.slice(0,5).map(a=>a.name).join(", ");return `My Afri Index Music Receipt: ${names||"African music on repeat"}. ${RANGE_LABELS[receiptState.range]} via ${SOURCE_LABELS[receiptState.source]}. #AfriIndex #Afrobeats`;}
+  function receiptText(){const data=receiptState.snapshot||currentReceiptData(),names=data.artists.slice(0,5).map(a=>a.name).join(", ");return `My Afri Index Music Receipt: ${names||"African music on repeat"}. ${receiptState.annual?receiptState.annual.year+" imported history":RANGE_LABELS[receiptState.range]+" via "+SOURCE_LABELS[receiptState.source]}. #AfriIndex #Afrobeats`;}
   function download(){if(!receiptState.blob)return;const url=URL.createObjectURL(receiptState.blob),a=document.createElement("a");a.href=url;a.download=`afri-index-music-receipt-${new Date().toISOString().slice(0,10)}.png`;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}
   async function share(){if(!receiptState.blob)return;const file=new File([receiptState.blob],"afri-index-music-receipt.png",{type:"image/png"}),text=receiptText();try{if(navigator.canShare?.({files:[file]})){await navigator.share({title:"My Afri Index Music Receipt",text,files:[file]});}else if(navigator.share){await navigator.share({title:"My Afri Index Music Receipt",text});}else{await navigator.clipboard.writeText(text);download();setStatus("Caption copied and receipt downloaded. Add both to your Instagram Story or post.","success");}}catch(error){if(error.name!=="AbortError")setStatus("Sharing was blocked. Download the PNG and share it from your gallery.","error");}}
   function tweet(){window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(receiptText())}`,"_blank","noopener,noreferrer");}
@@ -283,7 +287,7 @@
     document.getElementById("receipt-import-button").addEventListener("click",()=>importData(ui.importText.value));
     ui.file.addEventListener("change",async()=>{const file=ui.file.files?.[0];if(file){ui.importText.value=await file.text();importData(ui.importText.value);}});
     document.getElementById("receipt-generate").addEventListener("click",generateReceipt);ui.download.addEventListener("click",download);ui.share.addEventListener("click",share);ui.tweet.addEventListener("click",tweet);ui.print.addEventListener("click",printReceipt);
-    document.getElementById("receipt-wrapped")?.addEventListener("click",()=>{const data=receiptState.snapshot;if(!data){setStatus("Generate a receipt before creating Wrapped.","error");return;}drawWrapped(data);ui.canvas.toBlob(blob=>{receiptState.blob=blob;},"image/png");});
+    document.getElementById("receipt-wrapped")?.addEventListener("click",()=>{const data=receiptState.snapshot;if(!data){setStatus("Generate a receipt before creating Wrapped.","error");return;}drawWrapped(data);ui.canvas.toBlob(blob=>{receiptState.blob=blob;window.dispatchEvent(new CustomEvent("afri:receipt-generated",{detail:{...data,...receiptMetadata(),format:"wrapped"}}));},"image/png");});
     document.querySelectorAll("[data-receipt-theme]").forEach(button=>button.addEventListener("click",()=>{
       receiptState.theme=button.dataset.receiptTheme;
       document.querySelectorAll("[data-receipt-theme]").forEach(b=>{const selected=b===button;b.classList.toggle("is-selected",selected);b.setAttribute("aria-pressed",String(selected));});
@@ -292,6 +296,7 @@
     }));
     const artistSlug=new URLSearchParams(location.search).get("artist");
     if(artistSlug&&artistDatabase().some(a=>a.slug===artistSlug))window.openCurrentArtist?.(artistSlug);
+    document.getElementById("receipt-history-year")?.addEventListener("change",()=>{if(ui.importText.value.trim())importData(ui.importText.value);else invalidateReceipt();});
     renderConnectPanel();drawReceipt([],[]);handleSpotifyCallback();
   }
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",bind);else bind();

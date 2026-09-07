@@ -39,7 +39,8 @@
     .album-rank { font-family: 'Instrument Serif', Georgia, serif; font-size: 28px; color: #0047ff; line-height: 1; margin-bottom: 8px; }
     .album-streams-value { font-family: 'Instrument Serif', Georgia, serif; font-size: 22px; color: #0a0a0a; }
     .album-streams-fill { height: 100%; background: #d4ff00; border-radius: 2px; }
-  </style>
+  .afri-command{background:#171719;color:#e8e6d8;border:1px solid #4a4940;width:min(620px,95vw);max-height:85vh;padding:24px}.afri-command::backdrop{background:#000a}.afri-command a{display:block;padding:10px;border-bottom:1px solid #4a4940}.afri-command input{width:100%;color:#fff;background:#222;padding:12px;margin:16px 0}
+</style>
   <style>
 :root {
   --ink: #0a0a0b;
@@ -1166,7 +1167,8 @@ footer {
             <label class="file-button" for="receipt-file-input">Choose CSV or JSON</label>
             <input id="receipt-file-input" type="file" accept=".csv,.json,.txt,text/csv,application/json,text/plain">
             <label class="sr-only" for="receipt-import-text">Paste listening data</label>
-            <textarea id="receipt-import-text" rows="5" placeholder="track,artist,plays&#10;Soweto,Victony,42"></textarea>
+            <label for="receipt-history-year">Year for dated listening-history imports</label><input id="receipt-history-year" type="number" min="2008" max="2100" value="2026"><p>Spotify streaming-history JSON is processed in your browser. Wrapped uses only matching African listening events for the selected year.</p>
+<textarea id="receipt-import-text" rows="5" placeholder="track,artist,plays&#10;Soweto,Victony,42"></textarea>
             <button type="button" id="receipt-import-button" class="receipt-secondary">Use imported data</button>
           </details>
 
@@ -3497,6 +3499,7 @@ footer {
 <script src="refresh-2026-streams.js"></script>
 <script src="music-receipt-config.js"></script>
 <script src="receipt-insights.js"></script>
+<script src="history-summary.js" defer></script>
 <script src="music-receipt.js"></script>
 <script src="receipt-store.js"></script>
 <script src="roadmap-nav.js"></script>

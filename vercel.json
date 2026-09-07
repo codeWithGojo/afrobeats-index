@@ -25,6 +25,26 @@
     {
       "source": "/vs/:path*",
       "destination": "/api/view?path=vs/:path*"
+    },
+    {
+      "source": "/boards/:path*",
+      "destination": "/api/view?path=boards/:path*"
+    },
+    {
+      "source": "/calendar/:path*",
+      "destination": "/api/view?path=calendar/:path*"
+    },
+    {
+      "source": "/account",
+      "destination": "/api/view?path=account"
+    },
+    {
+      "source": "/discover",
+      "destination": "/api/view?path=studio"
+    },
+    {
+      "source": "/collaborations",
+      "destination": "/api/view?path=studio/graph"
     }
   ],
   "functions": {
@@ -32,5 +52,22 @@
       "includeFiles": "assets/DejaVuSans.ttf"
     }
   },
-  "outputDirectory": "."
+  "outputDirectory": ".",
+  "redirects": [
+    {
+      "source": "/studio/boards",
+      "destination": "/boards",
+      "permanent": true
+    },
+    {
+      "source": "/studio/calendar",
+      "destination": "/calendar/awards",
+      "permanent": true
+    },
+    {
+      "source": "/studio/board",
+      "destination": "/account",
+      "permanent": true
+    }
+  ]
 }

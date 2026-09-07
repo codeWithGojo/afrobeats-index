@@ -1,0 +1,513 @@
+[
+  {
+    "artist_slug": "tyla",
+    "kind": "award",
+    "title": "Grammy Awards · Best African Music Performance",
+    "event_date": "2026-02-01",
+    "details": {
+      "body": "Grammy Awards",
+      "work": "Push 2 Start",
+      "result": "winner",
+      "year": 2026,
+      "metric": "Awards",
+      "weight": 8
+    },
+    "source_url": "https://musicinafrica.net/magazine/grammys-2026-tyla-wins-best-african-music-performance/",
+    "verified_at": "2026-09-07T00:00:00Z"
+  },
+  {
+    "artist_slug": "burna-boy",
+    "kind": "nomination",
+    "title": "Grammy Awards · Best African Music Performance",
+    "event_date": "2026-02-01",
+    "details": {
+      "body": "Grammy Awards",
+      "work": "Love",
+      "result": "nominee",
+      "year": 2026,
+      "metric": "Awards",
+      "weight": 8
+    },
+    "source_url": "https://musicinafrica.net/magazine/grammys-2026-tyla-wins-best-african-music-performance/",
+    "verified_at": "2026-09-07T00:00:00Z"
+  },
+  {
+    "artist_slug": "davido",
+    "kind": "nomination",
+    "title": "Grammy Awards · Best African Music Performance",
+    "event_date": "2026-02-01",
+    "details": {
+      "body": "Grammy Awards",
+      "work": "With You",
+      "result": "nominee",
+      "year": 2026,
+      "metric": "Awards",
+      "weight": 8
+    },
+    "source_url": "https://musicinafrica.net/magazine/grammys-2026-tyla-wins-best-african-music-performance/",
+    "verified_at": "2026-09-07T00:00:00Z"
+  },
+  {
+    "artist_slug": "omah-lay",
+    "kind": "nomination",
+    "title": "Grammy Awards · Best African Music Performance",
+    "event_date": "2026-02-01",
+    "details": {
+      "body": "Grammy Awards",
+      "work": "With You",
+      "result": "nominee",
+      "year": 2026,
+      "metric": "Awards",
+      "weight": 8
+    },
+    "source_url": "https://musicinafrica.net/magazine/grammys-2026-tyla-wins-best-african-music-performance/",
+    "verified_at": "2026-09-07T00:00:00Z"
+  },
+  {
+    "artist_slug": "ayra-starr",
+    "kind": "nomination",
+    "title": "Grammy Awards · Best African Music Performance",
+    "event_date": "2026-02-01",
+    "details": {
+      "body": "Grammy Awards",
+      "work": "Gimme Dat",
+      "result": "nominee",
+      "year": 2026,
+      "metric": "Awards",
+      "weight": 8
+    },
+    "source_url": "https://musicinafrica.net/magazine/grammys-2026-tyla-wins-best-african-music-performance/",
+    "verified_at": "2026-09-07T00:00:00Z"
+  },
+  {
+    "artist_slug": "wizkid",
+    "kind": "nomination",
+    "title": "Grammy Awards · Best African Music Performance",
+    "event_date": "2026-02-01",
+    "details": {
+      "body": "Grammy Awards",
+      "work": "Gimme Dat",
+      "result": "nominee",
+      "year": 2026,
+      "metric": "Awards",
+      "weight": 8
+    },
+    "source_url": "https://musicinafrica.net/magazine/grammys-2026-tyla-wins-best-african-music-performance/",
+    "verified_at": "2026-09-07T00:00:00Z"
+  },
+  {
+    "artist_slug": null,
+    "kind": "award",
+    "title": "69th Grammy Awards",
+    "event_date": "2027-02-07",
+    "details": {
+      "body": "Grammy Awards",
+      "status": "scheduled",
+      "venue": "Crypto.com Arena, Los Angeles",
+      "metric": "Awards"
+    },
+    "source_url": "https://www.grammy.com/news/2027-grammys-show-air-date-nominations-announced/",
+    "verified_at": "2026-09-07T00:00:00Z"
+  },
+  {
+    "artist_slug": null,
+    "kind": "nomination",
+    "title": "2027 Grammy nominations announced",
+    "event_date": "2026-11-16",
+    "details": {
+      "body": "Grammy Awards",
+      "status": "scheduled",
+      "metric": "Awards"
+    },
+    "source_url": "https://www.grammy.com/news/2027-grammys-show-air-date-nominations-announced/",
+    "verified_at": "2026-09-07T00:00:00Z"
+  },
+  {
+    "artist_slug": "tems",
+    "kind": "award",
+    "title": "The Headies · Best Recording of the Year",
+    "event_date": null,
+    "details": {
+      "body": "The Headies",
+      "year": 2025,
+      "work": "Burning",
+      "result": "winner",
+      "metric": "Awards",
+      "weight": 8
+    },
+    "source_url": "https://theheadies.com/17th-headies-nominees-winners/",
+    "verified_at": "2026-09-07T00:00:00Z"
+  },
+  {
+    "artist_slug": "ayra-starr",
+    "kind": "award",
+    "title": "The Headies · Best R&B Single",
+    "event_date": null,
+    "details": {
+      "body": "The Headies",
+      "year": 2025,
+      "work": "Last Heartbreak Song",
+      "result": "winner",
+      "metric": "Awards",
+      "weight": 8
+    },
+    "source_url": "https://theheadies.com/17th-headies-nominees-winners/",
+    "verified_at": "2026-09-07T00:00:00Z"
+  },
+  {
+    "artist_slug": "odumodublvck",
+    "kind": "award",
+    "title": "The Headies · Next Rated",
+    "event_date": null,
+    "details": {
+      "body": "The Headies",
+      "year": 2025,
+      "work": "",
+      "result": "winner",
+      "metric": "Awards",
+      "weight": 8
+    },
+    "source_url": "https://theheadies.com/17th-headies-nominees-winners/",
+    "verified_at": "2026-09-07T00:00:00Z"
+  },
+  {
+    "artist_slug": "rema",
+    "kind": "award",
+    "title": "The Headies · Afrobeats Album of the Year",
+    "event_date": null,
+    "details": {
+      "body": "The Headies",
+      "year": 2025,
+      "work": "HEIS",
+      "result": "winner",
+      "metric": "Awards",
+      "weight": 8
+    },
+    "source_url": "https://theheadies.com/17th-headies-nominees-winners/",
+    "verified_at": "2026-09-07T00:00:00Z"
+  },
+  {
+    "artist_slug": "rema",
+    "kind": "award",
+    "title": "Trace Awards · Album of the Year",
+    "event_date": "2025-02-26",
+    "details": {
+      "body": "Trace Awards",
+      "year": 2025,
+      "work": "HEIS",
+      "result": "winner",
+      "metric": "Awards",
+      "weight": 8
+    },
+    "source_url": "https://www.bizcommunity.com/article/trace-awards-2025-winners-announced-921004a",
+    "verified_at": "2026-09-07T00:00:00Z"
+  },
+  {
+    "artist_slug": "rema",
+    "kind": "award",
+    "title": "Trace Awards · Best Male Artist",
+    "event_date": "2025-02-26",
+    "details": {
+      "body": "Trace Awards",
+      "year": 2025,
+      "work": "",
+      "result": "winner",
+      "metric": "Awards",
+      "weight": 8
+    },
+    "source_url": "https://www.bizcommunity.com/article/trace-awards-2025-winners-announced-921004a",
+    "verified_at": "2026-09-07T00:00:00Z"
+  },
+  {
+    "artist_slug": "tyla",
+    "kind": "award",
+    "title": "Trace Awards · Best Female Artist",
+    "event_date": "2025-02-26",
+    "details": {
+      "body": "Trace Awards",
+      "year": 2025,
+      "work": "",
+      "result": "winner",
+      "metric": "Awards",
+      "weight": 8
+    },
+    "source_url": "https://www.bizcommunity.com/article/trace-awards-2025-winners-announced-921004a",
+    "verified_at": "2026-09-07T00:00:00Z"
+  },
+  {
+    "artist_slug": "diamond-platnumz",
+    "kind": "award",
+    "title": "Trace Awards · Best Global African Artist",
+    "event_date": "2025-02-26",
+    "details": {
+      "body": "Trace Awards",
+      "year": 2025,
+      "work": "",
+      "result": "winner",
+      "metric": "Awards",
+      "weight": 8
+    },
+    "source_url": "https://www.bizcommunity.com/article/trace-awards-2025-winners-announced-921004a",
+    "verified_at": "2026-09-07T00:00:00Z"
+  },
+  {
+    "artist_slug": "ayra-starr",
+    "kind": "award",
+    "title": "Trace Awards · Best West African Artist",
+    "event_date": "2025-02-26",
+    "details": {
+      "body": "Trace Awards",
+      "year": 2025,
+      "work": "",
+      "result": "winner",
+      "metric": "Awards",
+      "weight": 8
+    },
+    "source_url": "https://www.bizcommunity.com/article/trace-awards-2025-winners-announced-921004a",
+    "verified_at": "2026-09-07T00:00:00Z"
+  },
+  {
+    "artist_slug": "asake",
+    "kind": "award",
+    "title": "TurnTable Music Awards · No. 1 Artiste",
+    "event_date": null,
+    "details": {
+      "body": "TurnTable Music Awards",
+      "year": 2023,
+      "work": "",
+      "result": "winner",
+      "metric": "Awards",
+      "weight": 8
+    },
+    "source_url": "https://www.turntablecharts.com/news/1206",
+    "verified_at": "2026-09-07T00:00:00Z"
+  },
+  {
+    "artist_slug": "asake",
+    "kind": "award",
+    "title": "TurnTable Music Awards · No. 1 Song",
+    "event_date": null,
+    "details": {
+      "body": "TurnTable Music Awards",
+      "year": 2023,
+      "work": "Lonely At The Top",
+      "result": "winner",
+      "metric": "Awards",
+      "weight": 8
+    },
+    "source_url": "https://www.turntablecharts.com/news/1206",
+    "verified_at": "2026-09-07T00:00:00Z"
+  },
+  {
+    "artist_slug": "asake",
+    "kind": "award",
+    "title": "TurnTable Music Awards · No. 1 Album",
+    "event_date": null,
+    "details": {
+      "body": "TurnTable Music Awards",
+      "year": 2023,
+      "work": "Work of Art",
+      "result": "winner",
+      "metric": "Awards",
+      "weight": 8
+    },
+    "source_url": "https://www.turntablecharts.com/news/1206",
+    "verified_at": "2026-09-07T00:00:00Z"
+  },
+  {
+    "artist_slug": "tiwa-savage",
+    "kind": "award",
+    "title": "TurnTable Music Awards · No. 1 Music Video",
+    "event_date": null,
+    "details": {
+      "body": "TurnTable Music Awards",
+      "year": 2023,
+      "work": "Who Is Your Guy (Remix)",
+      "result": "winner",
+      "metric": "Awards",
+      "weight": 8
+    },
+    "source_url": "https://www.turntablecharts.com/news/1206",
+    "verified_at": "2026-09-07T00:00:00Z"
+  },
+  {
+    "artist_slug": "tems",
+    "kind": "nomination",
+    "title": "BET Awards · Best Female R&B / Pop Artist",
+    "event_date": null,
+    "details": {
+      "body": "BET Awards",
+      "year": 2026,
+      "result": "nominee",
+      "metric": "Awards",
+      "weight": 8
+    },
+    "source_url": "https://www.bet.com/bet-awards/nominees",
+    "verified_at": "2026-09-07T00:00:00Z"
+  },
+  {
+    "artist_slug": "tyla",
+    "kind": "tour",
+    "title": "Tyla · The A*Pop World Tour",
+    "event_date": "2026-11-12",
+    "details": {
+      "city": "Wheatland, CA",
+      "venue": "Hard Rock Live Sacramento",
+      "status": "scheduled",
+      "sold_out": null,
+      "metric": "Live performance"
+    },
+    "source_url": "https://www.ticketmaster.com/tyla-tickets/artist/798720",
+    "verified_at": "2026-09-07T00:00:00Z"
+  },
+  {
+    "artist_slug": "tyla",
+    "kind": "tour",
+    "title": "Tyla · The A*Pop World Tour",
+    "event_date": "2026-11-13",
+    "details": {
+      "city": "San Francisco, CA",
+      "venue": "Bill Graham Civic Auditorium",
+      "status": "scheduled",
+      "sold_out": null,
+      "metric": "Live performance"
+    },
+    "source_url": "https://www.ticketmaster.com/tyla-tickets/artist/798720",
+    "verified_at": "2026-09-07T00:00:00Z"
+  },
+  {
+    "artist_slug": "tyla",
+    "kind": "tour",
+    "title": "Tyla · The A*Pop World Tour",
+    "event_date": "2026-11-17",
+    "details": {
+      "city": "Seattle, WA",
+      "venue": "WAMU Theater",
+      "status": "scheduled",
+      "sold_out": null,
+      "metric": "Live performance"
+    },
+    "source_url": "https://www.ticketmaster.com/tyla-tickets/artist/798720",
+    "verified_at": "2026-09-07T00:00:00Z"
+  },
+  {
+    "artist_slug": "tyla",
+    "kind": "tour",
+    "title": "Tyla · The A*Pop World Tour",
+    "event_date": "2026-11-20",
+    "details": {
+      "city": "Denver, CO",
+      "venue": "Fillmore Auditorium",
+      "status": "scheduled",
+      "sold_out": null,
+      "metric": "Live performance"
+    },
+    "source_url": "https://www.ticketmaster.com/tyla-tickets/artist/798720",
+    "verified_at": "2026-09-07T00:00:00Z"
+  },
+  {
+    "artist_slug": "tyla",
+    "kind": "tour",
+    "title": "Tyla · The A*Pop World Tour",
+    "event_date": "2026-11-22",
+    "details": {
+      "city": "Chicago, IL",
+      "venue": "Aragon Ballroom",
+      "status": "scheduled",
+      "sold_out": null,
+      "metric": "Live performance"
+    },
+    "source_url": "https://www.ticketmaster.com/tyla-tickets/artist/798720",
+    "verified_at": "2026-09-07T00:00:00Z"
+  },
+  {
+    "artist_slug": "tyla",
+    "kind": "tour",
+    "title": "Tyla · The A*Pop World Tour",
+    "event_date": "2026-11-25",
+    "details": {
+      "city": "Boston, MA",
+      "venue": "MGM Music Hall at Fenway",
+      "status": "scheduled",
+      "sold_out": null,
+      "metric": "Live performance"
+    },
+    "source_url": "https://www.ticketmaster.com/tyla-tickets/artist/798720",
+    "verified_at": "2026-09-07T00:00:00Z"
+  },
+  {
+    "artist_slug": "tyla",
+    "kind": "tour",
+    "title": "Tyla · The A*Pop World Tour",
+    "event_date": "2026-11-28",
+    "details": {
+      "city": "Brooklyn, NY",
+      "venue": "Brooklyn Paramount",
+      "status": "scheduled",
+      "sold_out": null,
+      "metric": "Live performance"
+    },
+    "source_url": "https://www.ticketmaster.com/tyla-tickets/artist/798720",
+    "verified_at": "2026-09-07T00:00:00Z"
+  },
+  {
+    "artist_slug": "tyla",
+    "kind": "tour",
+    "title": "Tyla · The A*Pop World Tour",
+    "event_date": "2026-11-29",
+    "details": {
+      "city": "Brooklyn, NY",
+      "venue": "Brooklyn Paramount",
+      "status": "scheduled",
+      "sold_out": null,
+      "metric": "Live performance"
+    },
+    "source_url": "https://www.ticketmaster.com/tyla-tickets/artist/798720",
+    "verified_at": "2026-09-07T00:00:00Z"
+  },
+  {
+    "artist_slug": "tyla",
+    "kind": "tour",
+    "title": "Tyla · The A*Pop World Tour",
+    "event_date": "2026-12-02",
+    "details": {
+      "city": "Washington, DC",
+      "venue": "The Anthem",
+      "status": "scheduled",
+      "sold_out": null,
+      "metric": "Live performance"
+    },
+    "source_url": "https://www.ticketmaster.com/tyla-tickets/artist/798720",
+    "verified_at": "2026-09-07T00:00:00Z"
+  },
+  {
+    "artist_slug": "tyla",
+    "kind": "tour",
+    "title": "Tyla · The A*Pop World Tour",
+    "event_date": "2026-10-15",
+    "details": {
+      "city": "London, UK",
+      "venue": "O2 Academy Brixton",
+      "status": "scheduled",
+      "sold_out": null,
+      "metric": "Live performance"
+    },
+    "source_url": "https://www.livenation.co.uk/event/tyla-the-a-pop-world-tour-london-tickets-edp1687909",
+    "verified_at": "2026-09-07T00:00:00Z"
+  },
+  {
+    "artist_slug": "asake",
+    "kind": "tour",
+    "title": "Asake · In God We Trust World Tour",
+    "event_date": "2026-10-24",
+    "details": {
+      "city": "Paris, France",
+      "venue": "Accor Arena",
+      "status": "scheduled",
+      "sold_out": null,
+      "metric": "Live performance"
+    },
+    "source_url": "https://www.ticketmaster.com/asake-tickets/artist/3025951",
+    "verified_at": "2026-09-07T00:00:00Z"
+  }
+]
