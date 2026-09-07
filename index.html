@@ -1123,10 +1123,8 @@ footer {
           <fieldset class="receipt-fieldset">
             <legend>1. Choose a source</legend>
             <div class="source-picker" role="radiogroup" aria-label="Music source">
-              <button type="button" class="source-option is-selected" data-receipt-source="spotify" aria-pressed="true"><strong>Spotify</strong><span>Connect with OAuth</span></button>
-              <button type="button" class="source-option" data-receipt-source="apple" aria-pressed="false"><strong>Apple Music</strong><span>MusicKit connection</span></button>
-              <button type="button" class="source-option" data-receipt-source="youtube" aria-pressed="false"><strong>YouTube Music</strong><span>Paste or import</span></button>
-              <button type="button" class="source-option" data-receipt-source="audiomack" aria-pressed="false"><strong>Audiomack</strong><span>Import or manual</span></button>
+              <button type="button" class="source-option is-selected" data-receipt-source="spotify" aria-pressed="true"><strong>Spotify</strong><span>Your top listening</span></button>
+              <button type="button" class="source-option" data-receipt-source="apple" aria-pressed="false"><strong>Apple Music</strong><span>Your recent listening</span></button>
               <button type="button" class="source-option" data-receipt-source="manual" aria-pressed="false"><strong>Manual</strong><span>Pick from the index</span></button>
             </div>
           </fieldset>
@@ -1137,6 +1135,16 @@ footer {
               <button type="button" data-receipt-range="short_term" aria-pressed="true" class="is-selected">4 weeks</button>
               <button type="button" data-receipt-range="medium_term" aria-pressed="false">6 months</button>
               <button type="button" data-receipt-range="long_term" aria-pressed="false">All-time</button>
+            </div>
+          </fieldset>
+
+          <fieldset class="receipt-fieldset">
+            <legend>3. Choose your receipt theme</legend>
+            <div class="receipt-theme-picker" aria-label="Receipt theme">
+              <button type="button" data-receipt-theme="classic" aria-pressed="true" class="is-selected">Classic<span>Cream &amp; ink</span></button>
+              <button type="button" data-receipt-theme="amapiano" aria-pressed="false">Amapiano dark<span>After-hours lime</span></button>
+              <button type="button" data-receipt-theme="owambe" aria-pressed="false">Naija Owambe<span>Brown &amp; gold</span></button>
+              <button type="button" data-receipt-theme="mono" aria-pressed="false">Monochrome<span>Paper &amp; black</span></button>
             </div>
           </fieldset>
 
@@ -1178,6 +1186,11 @@ footer {
             <button type="button" id="receipt-print" disabled>Print</button>
           </div>
           <p id="receipt-output-note">Your receipt will appear here.</p>
+          <section id="receipt-discovery" class="receipt-discovery" hidden aria-labelledby="receipt-discovery-title">
+            <h3 id="receipt-discovery-title">Your next discovery</h3>
+            <p>Similar sounds and rising artists from the index.</p>
+            <div id="receipt-discovery-list"></div>
+          </section>
         </div>
       </div>
     </section>
@@ -3483,6 +3496,7 @@ footer {
 <script src="assets/inline-12.js"></script>
 <script src="refresh-2026-streams.js"></script>
 <script src="music-receipt-config.js"></script>
+<script src="receipt-insights.js"></script>
 <script src="music-receipt.js"></script>
 <script src="yearbook-2018.js"></script>
 </body>
