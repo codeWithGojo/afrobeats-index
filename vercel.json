@@ -31,5 +31,6 @@
     "api/card.js": {
       "includeFiles": "assets/DejaVuSans.ttf"
     }
-  }
+  },
+  "outputDirectory": "."
 }
