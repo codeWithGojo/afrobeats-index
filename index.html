@@ -1172,7 +1172,7 @@ footer {
 
           <div id="receipt-status" class="receipt-status" role="status">Choose a source to begin.</div>
           <button type="button" id="receipt-generate" class="receipt-primary">Generate my receipt</button>
-          <p class="receipt-privacy">Your listening data stays in this browser. Afri Index does not upload or store it.</p>
+          <p class="receipt-privacy">Listening stays in this browser unless you sign in. Signed-in receipts are saved privately. Publish share link makes that receipt public; you can delete it from My board.</p>
         </div>
 
         <div class="receipt-output" aria-live="polite">
@@ -1183,7 +1183,7 @@ footer {
             <button type="button" id="receipt-download" disabled>Download PNG</button>
             <button type="button" id="receipt-share" disabled>Share receipt</button>
             <button type="button" id="receipt-tweet" disabled>Share on X</button>
-            <button type="button" id="receipt-print" disabled>Print</button>
+            <button type="button" id="receipt-print" disabled>Print</button><button type="button" id="receipt-wrapped">Wrapped Story</button>
           </div>
           <p id="receipt-output-note">Your receipt will appear here.</p>
           <section id="receipt-discovery" class="receipt-discovery" hidden aria-labelledby="receipt-discovery-title">
@@ -3498,6 +3498,8 @@ footer {
 <script src="music-receipt-config.js"></script>
 <script src="receipt-insights.js"></script>
 <script src="music-receipt.js"></script>
+<script src="receipt-store.js"></script>
+<script src="roadmap-nav.js"></script>
 <script src="yearbook-2018.js"></script>
 </body>
 </html>

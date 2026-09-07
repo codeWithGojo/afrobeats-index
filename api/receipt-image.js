@@ -1,0 +1,2 @@
+const {db}=require('../lib/shared.cjs');
+module.exports=async(req,res)=>{try{const id=String(req.query.id||'');if(!/^[a-f0-9-]{36}$/.test(id))return res.status(400).end();const rows=await db(`receipts?id=eq.${id}&public=eq.true&select=image`);if(!rows.length)return res.status(404).end();const image=rows[0].image;if(!image.startsWith('data:image/png;base64,'))return res.status(404).end();res.setHeader('Content-Type','image/png');res.setHeader('Cache-Control','no-store');res.end(Buffer.from(image.split(',')[1],'base64'));}catch{res.status(503).end();}};

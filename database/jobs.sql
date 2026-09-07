@@ -1,0 +1,12 @@
+alter table public.artist_metrics add column approximate boolean not null default false;
+create table public.refresh_runs(day date primary key,status text not null,updated integer not null default 0,failed jsonb not null default '[]',finished_at timestamptz);
+alter table public.refresh_runs enable row level security;
+create policy refresh_public_read on public.refresh_runs for select to anon,authenticated using(true);
+grant select on public.refresh_runs to anon,authenticated;
+create table public.bracket_results(week text not null references public.brackets(week),choice text not null,votes integer not null,primary key(week,choice));
+alter table public.bracket_results enable row level security;
+create policy results_read on public.bracket_results for select to anon,authenticated using(true);
+grant select on public.bracket_results to anon,authenticated;
+create extension if not exists pg_cron;
+create extension if not exists pg_net with schema extensions;
+select cron.schedule('afri-publish-bracket-results','10 18 * * 0',$$insert into public.bracket_results(week,choice,votes) select b.week,c.choice,count(v.user_id) from public.brackets b cross join lateral (values(b.artist_a),(b.artist_b)) as c(choice) left join public.votes v on v.week=b.week and v.choice=c.choice where b.closes_at<=now() group by b.week,c.choice on conflict(week,choice) do update set votes=excluded.votes$$);

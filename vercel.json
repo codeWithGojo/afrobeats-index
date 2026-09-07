@@ -1,4 +1,35 @@
 {
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/studio/:path*",
+      "destination": "/api/view?path=studio/:path*"
+    },
+    {
+      "source": "/receipt/:id",
+      "destination": "/api/view?path=receipt/:id"
+    },
+    {
+      "source": "/current/:artist",
+      "destination": "/api/view?path=current/:artist"
+    },
+    {
+      "source": "/u/:username",
+      "destination": "/api/view?path=u/:username"
+    },
+    {
+      "source": "/week/:week",
+      "destination": "/api/view?path=week/:week"
+    },
+    {
+      "source": "/vs/:path*",
+      "destination": "/api/view?path=vs/:path*"
+    }
+  ],
+  "functions": {
+    "api/card.js": {
+      "includeFiles": "assets/DejaVuSans.ttf"
+    }
+  }
 }

@@ -114,7 +114,7 @@
     ui.status.textContent=message;ui.status.className=`receipt-status${type?` is-${type}`:""}`;
   }
   function invalidateReceipt(){
-    receiptState.blob=null;receiptState.snapshot=null;
+    receiptState.blob=null;receiptState.snapshot=null;window.dispatchEvent(new Event("afri:receipt-invalidated"));
     [ui.download,ui.share,ui.tweet,ui.print].forEach(button=>{if(button)button.disabled=true;});
     document.getElementById("receipt-discovery").hidden=true;
   }
@@ -201,7 +201,7 @@
     receiptState.issuedAt=new Date().toISOString();
     receiptState.snapshot={tracks,artists};
     renderDiscoveries(tracks,artists);
-    drawReceipt(tracks,artists);ui.canvas.toBlob(blob=>{receiptState.blob=blob;[ui.download,ui.share,ui.tweet,ui.print].forEach(button=>button.disabled=false);},"image/png");
+    drawReceipt(tracks,artists);ui.canvas.toBlob(blob=>{receiptState.blob=blob;[ui.download,ui.share,ui.tweet,ui.print].forEach(button=>button.disabled=false);window.dispatchEvent(new CustomEvent("afri:receipt-generated",{detail:{tracks,artists,source:receiptState.source,range:receiptState.range,theme:receiptState.theme,issuedAt:receiptState.issuedAt}}));},"image/png");
     setStatus(`Receipt ready with ${tracks.length} track${tracks.length===1?"":"s"} and ${artists.length} artist${artists.length===1?"":"s"}.`,"success");ui.outputNote.textContent=`${SOURCE_LABELS[receiptState.source]} · ${RANGE_LABELS[receiptState.range]} · African matches only`;
   }
   function artistLabel(name){
@@ -246,6 +246,15 @@
     ctx.fillText(`ISSUED ${new Date(receiptState.issuedAt||Date.now()).toLocaleString([], {dateStyle:"medium",timeStyle:"short"})}`,50,y);y+=38;
     drawBarcode(ctx,50,y,width-100,82,receiptSeed(tracks,artists));y+=108;ctx.textAlign="center";ctx.fillStyle=palette.accent;ctx.font="700 16px monospace";ctx.fillText("THANKS FOR SHOPPING AT AFRI INDEX",width/2,y);y+=30;ctx.fillStyle=palette.muted;ctx.font="14px monospace";ctx.fillText("AFROBEATS-INDEX.VERCEL.APP",width/2,y);
   }
+  function drawWrapped(data){
+    const canvas=ui.canvas;canvas.width=1080;canvas.height=1920;const ctx=canvas.getContext("2d");
+    ctx.fillStyle="#3B2A0F";ctx.fillRect(0,0,1080,1920);ctx.strokeStyle="#C9962F";ctx.lineWidth=3;ctx.strokeRect(30,30,1020,1860);ctx.textBaseline="top";ctx.fillStyle="#EFCB7A";ctx.font="900 42px Arial";ctx.fillText("AFR / INDEX",80,90);ctx.font="bold 110px Georgia";ctx.fillText("Afri Wrapped",80,210);ctx.font="bold 170px Georgia";ctx.fillText(String(new Date().getFullYear()),80,350);
+    const topGenre=insights.distribution(data.tracks,data.artists,knownArtist)[0]?.genre||"Unclassified";
+    const blocks=[["TOP ARTIST",data.artists[0]?.name||"No artist selection"],["TOP TRACK",data.tracks[0]?.title||"No track selection"],["TOP GENRE",topGenre]];
+    blocks.forEach(([label,value],i)=>{ctx.fillStyle="#C9962F";ctx.font="26px monospace";ctx.fillText(label,80,610+i*215);ctx.fillStyle="#F0DCAE";ctx.font="bold 62px Georgia";drawEllipsis(ctx,value,80,660+i*215,910);});
+    const rising=data.artists.find(a=>insights.rising(knownArtist(a.name)));ctx.fillStyle="#EFCB7A";ctx.font="26px monospace";ctx.fillText("A RISING ARTIST IN YOUR PICKS",80,1320);ctx.font="bold 48px Georgia";drawEllipsis(ctx,rising?.name||"Keep discovering",80,1370,910);ctx.fillStyle="#F0DCAE";ctx.font="25px monospace";ctx.fillText(`${SOURCE_LABELS[receiptState.source]} · ${receiptState.source==="apple"?"Recent listening":RANGE_LABELS[receiptState.range]}`,80,1510);ctx.font="22px monospace";ctx.fillText("Selected listening window, not a calendar-year audit.",80,1560);ctx.fillText("Annual minutes and discovery dates unavailable.",80,1600);ctx.strokeStyle="#8A6A2F";ctx.beginPath();ctx.moveTo(80,1700);ctx.lineTo(1000,1700);ctx.stroke();ctx.fillStyle="#EFCB7A";ctx.font="26px monospace";ctx.fillText("THANKS FOR SHOPPING AT AFRI INDEX",80,1750);ctx.font="20px monospace";ctx.fillText("AFROBEATS-INDEX.VERCEL.APP",80,1810);
+    ui.outputNote.textContent="Wrapped · 1080 × 1920 · Uses the selected listening window";
+  }
   function dash(ctx,x1,y1,x2,y2){const p=insights.themes[receiptState.theme];ctx.save();ctx.setLineDash(p.solid?[]:[8,7]);ctx.strokeStyle=p.rule;ctx.lineWidth=2;ctx.beginPath();ctx.moveTo(x1,y1);ctx.lineTo(x2,y2);ctx.stroke();ctx.restore();}
   function drawEllipsis(ctx,text,x,y,maxWidth){let value=text;if(ctx.measureText(value).width<=maxWidth){ctx.fillText(value,x,y);return;}while(value.length&&ctx.measureText(`${value}…`).width>maxWidth)value=value.slice(0,-1);ctx.fillText(`${value}…`,x,y);}
   function compactNumber(value){return new Intl.NumberFormat("en",{notation:"compact",maximumFractionDigits:1}).format(value).toUpperCase();}
@@ -274,6 +283,7 @@
     document.getElementById("receipt-import-button").addEventListener("click",()=>importData(ui.importText.value));
     ui.file.addEventListener("change",async()=>{const file=ui.file.files?.[0];if(file){ui.importText.value=await file.text();importData(ui.importText.value);}});
     document.getElementById("receipt-generate").addEventListener("click",generateReceipt);ui.download.addEventListener("click",download);ui.share.addEventListener("click",share);ui.tweet.addEventListener("click",tweet);ui.print.addEventListener("click",printReceipt);
+    document.getElementById("receipt-wrapped")?.addEventListener("click",()=>{const data=receiptState.snapshot;if(!data){setStatus("Generate a receipt before creating Wrapped.","error");return;}drawWrapped(data);ui.canvas.toBlob(blob=>{receiptState.blob=blob;},"image/png");});
     document.querySelectorAll("[data-receipt-theme]").forEach(button=>button.addEventListener("click",()=>{
       receiptState.theme=button.dataset.receiptTheme;
       document.querySelectorAll("[data-receipt-theme]").forEach(b=>{const selected=b===button;b.classList.toggle("is-selected",selected);b.setAttribute("aria-pressed",String(selected));});

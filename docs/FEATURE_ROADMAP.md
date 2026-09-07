@@ -2,14 +2,7 @@
 
 ## Implementation status
 
-- Implemented: remove YouTube Music and Audiomack from Music Receipt. Keep Spotify, Apple Music, and manual/import mode.
-- Implemented: Phase 1 items 1–5 (artist-derived genres, country flags, snapshot-based rising badges, discovery links, four receipt themes).
-- Pending: Phase 1 comparison and Phase 1b persisted receipts; a shared backend must be configured first.
-- Pending: Phases 2–11. The requirements below remain the source of truth.
-- Backend discovery: the connected Supabase account exposes one inactive project, not yet confirmed as belonging to Afri Index. No database changes made.
-- Data dependencies: geographic stream breakdowns, producer/songwriter credits, tour schedules, weekly ranking history, and candidates outside the Current 50 need sourced data before those boards can publish reliable results.
-- Do not label recent listening as yearly listening or invent minutes, play counts, trend windows, rank movements, or source timestamps.
-
+See [ROADMAP_STATUS.md](ROADMAP_STATUS.md) for the current release, verification results, and remaining data/service dependencies. The requirements below remain the acceptance criteria.
 
 Organized by phase. Each phase is a self-contained prompt you can hand to a coding assistant. Build roughly in order — later phases depend on things earlier phases establish (persisted receipts, the ranking engine, etc).
 
