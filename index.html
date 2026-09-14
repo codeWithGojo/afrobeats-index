@@ -1002,4 +1002,2508 @@ footer {
     .issue-panel p:last-child{max-width:320px;margin:22px 0 0;color:var(--uk-muted);font-size:14px;line-height:1.6}
 
     .freshness-grid{grid-template-columns:minmax(260px,.75fr) minmax(0,2fr)}
-    .sync-st
+    .sync-status{grid-column:1/-1;display:flex;align-items:center;justify-content:space-between;gap:18px;padding:12px 18px;border-bottom:1px solid var(--uk-line);background:#0b0b0d}
+    .sync-state{display:flex;align-items:center;gap:10px;color:var(--uk-cream);font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+    .sync-state .live-dot{width:7px;height:7px;background:var(--uk-lime);box-shadow:0 0 0 4px rgba(201,245,0,.09)}
+    .status-pill{border:1px solid var(--uk-lime);padding:5px 8px;color:var(--uk-lime);font:700 10px/1 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.08em}
+    .sync-status>span:last-child{color:var(--uk-muted);font:500 11px/1.4 ui-monospace,SFMono-Regular,Menlo,monospace}
+    .update-pair{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:10px}
+    .update-pair>div+div{border-left:1px solid var(--uk-line);padding-left:18px}
+    .update-date{font-size:clamp(34px,4vw,60px)}
+    .next-refresh{margin-top:8px;color:var(--uk-cream);font:400 clamp(24px,2.5vw,38px)/1 'Instrument Serif',Georgia,serif}
+    .weekly-log-head{margin-bottom:2px}
+    .weekly-log ul{display:grid;gap:8px}
+    .weekly-log li{grid-template-columns:6.4rem minmax(0,1fr);min-height:unset!important;padding:10px 0 10px 14px;border-top:0!important;border-left:1px solid var(--uk-blue);font-size:13px;line-height:1.5}
+    .weekly-log li span:first-child{align-self:start;width:max-content;padding:4px 7px;background:#222228;color:#c9c8c4!important;font:600 10px/1 ui-monospace,SFMono-Regular,Menlo,monospace!important;letter-spacing:.04em}
+    .weekly-log .chart-tools{margin:16px 0 0;padding-top:14px;border-top:1px solid var(--uk-line)}
+    .compare-text{appearance:none;border:0;background:none;color:var(--uk-lime);padding:4px 0;font:700 11px/1 Inter,sans-serif;letter-spacing:.1em;text-decoration:underline;text-underline-offset:4px;text-transform:uppercase;cursor:pointer}
+
+    #current>.current-scope-copy{max-width:800px;margin-bottom:24px!important}
+    .metric-audit{display:grid;grid-template-columns:1fr 1fr;margin:0 0 22px;border:1px solid #171719;background:#171719;gap:1px}
+    .metric-group{padding:20px;background:#0d0d0f}
+    .metric-group-head{display:flex;align-items:end;justify-content:space-between;gap:12px;margin-bottom:14px;padding-bottom:12px;border-bottom:1px solid var(--uk-line)}
+    .metric-group-head span{color:var(--uk-muted);font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+    .metric-group-head strong{color:var(--uk-lime);font:400 30px/1 'Instrument Serif',Georgia,serif}
+    .metric-group-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 18px}
+    .metric-audit .metric-chip{display:flex;justify-content:space-between;border:0;border-bottom:1px solid var(--uk-line);padding:8px 0;background:transparent;color:#d6d4ce;font-size:11px}
+    .metric-audit .metric-chip strong{margin-left:auto;color:var(--uk-lime)}
+    .metric-audit .info-tip{margin-left:6px;flex:0 0 auto}
+    .methodology-rail{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:20px;margin:0 0 28px;padding:16px 18px;border:1px solid #171719;background:var(--uk-charcoal)}
+    .methodology-rail p{margin:0;color:var(--uk-muted);font-size:12px;line-height:1.5}
+    .methodology-rail strong{display:block;margin-bottom:3px;color:var(--uk-cream);font-size:13px;text-transform:uppercase;letter-spacing:.08em}
+    .methodology-actions{display:flex;align-items:center;gap:18px;white-space:nowrap}
+    .methodology-link{color:var(--uk-cream);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;text-decoration:underline;text-underline-offset:4px}
+
+    @media(max-width:900px){.index-hero-grid{grid-template-columns:1fr}.index-hero-copy,.issue-panel{min-height:auto}.index-hero-copy{padding:46px 24px 0}.index-hero-copy h1{font-size:clamp(60px,15vw,104px)}.issue-panel{padding:34px 24px;gap:70px}.freshness-grid{grid-template-columns:1fr}.sync-status{grid-column:1}.update-stamp{border-right:0!important;border-bottom:1px solid var(--uk-line)}.metric-audit{grid-template-columns:1fr}.methodology-rail{grid-template-columns:1fr}.methodology-actions{white-space:normal;flex-wrap:wrap}}
+    @media(max-width:600px){.scope-rail{grid-template-columns:1fr}.scope-rail div{display:flex;align-items:baseline;justify-content:space-between;padding:13px 15px}.scope-rail strong{font-size:21px}.sync-status{align-items:flex-start;flex-direction:column}.update-pair{grid-template-columns:1fr}.update-pair>div+div{border-left:0;border-top:1px solid var(--uk-line);padding:14px 0 0}.weekly-log li{grid-template-columns:5.7rem minmax(0,1fr);padding-left:10px}.metric-group-list{grid-template-columns:1fr}.methodology-actions{align-items:flex-start;flex-direction:column;gap:12px}}
+  </style>
+  <link rel="stylesheet" href="music-receipt.css">
+</head>
+<body class="antialiased bg-white text-black">
+  <div class="masthead-kicker bg-black text-white text-[10px] sm:text-xs tracking-widest uppercase py-2 px-4 flex justify-between">
+    <span>Independent Culture Index · Lagos / Global</span><span id="live-update-label">Living Index · Updated 28 Aug 2026</span>
+  </div>
+  <header class="border-b border-black sticky top-0 z-50 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex items-center justify-between h-14">
+        <a href="#" onclick="showTab('alltime'); return false;" class="brand-lockup" aria-label="AFR/INDEX home"><img src="afr-index-wordmark-lockup.svg" alt="AFR/INDEX"></a>
+        <nav class="hidden md:flex text-sm font-medium nav-scroll">
+          <button onclick="showTab('current')" class="nav-btn nav-active px-3 py-4">CURRENT 50</button>
+          <button onclick="showTab('receipt')" class="nav-btn px-3 py-4 hover:bg-gray-50">MUSIC RECEIPT</button>
+          <button onclick="showTab('alltime')" class="nav-btn px-3 py-4 hover:bg-gray-50">ALL-TIME 50</button>
+          <button onclick="showTab('regions')" class="nav-btn px-3 py-4 hover:bg-gray-50">REGIONS</button>
+          <button onclick="showTab('underground')" class="nav-btn px-3 py-4">UNDERGROUND</button>
+          <button onclick="showTab('albums')" class="nav-btn px-3 py-4 hover:bg-gray-50">ALBUMS</button>
+          <button onclick="showTab('yearly')" class="nav-btn px-3 py-4 hover:bg-gray-50">2026 STREAMS</button>
+          <button onclick="showTab('artists')" class="nav-btn px-3 py-4 hover:bg-gray-50">ARTISTS</button>
+          <button onclick="showTab('vs')" class="nav-btn px-3 py-4 hover:bg-gray-50">VS</button>
+          <button onclick="showTab('networth')" class="nav-btn px-3 py-4 hover:bg-gray-50">NET WORTH</button>
+          <button onclick="showTab('discuss')" class="nav-btn px-3 py-4 hover:bg-gray-50">DISCUSSION</button>
+          <button onclick="showTab('method')" class="nav-btn px-3 py-4 hover:bg-gray-50">METHOD</button>
+          <button onclick="showTab('top100')" class="nav-btn px-3 py-4 hover:bg-gray-50">TOP 100</button>
+          <button onclick="showTab('news')" class="nav-btn px-3 py-4 hover:bg-gray-50">NEWS</button>
+        </nav>
+        <div class="global-search" role="search">
+          <label class="sr-only" for="artist-global-search">Search artists</label>
+          <input id="artist-global-search" type="search" placeholder="Search artists…" autocomplete="off">
+          <div id="artist-search-results" class="search-results" role="listbox"></div>
+        </div>
+      </div>
+      <div class="flex md:hidden overflow-x-auto gap-1 pb-2 nav-scroll" style="scrollbar-width:none">
+        <button onclick="showTab('current')" class="nav-btn nav-active px-3 py-1.5 text-xs font-medium whitespace-nowrap">CURRENT</button>
+        <button onclick="showTab('receipt')" class="nav-btn px-3 py-1.5 text-xs font-medium whitespace-nowrap bg-gray-100">RECEIPT</button>
+        <button onclick="showTab('alltime')" class="nav-btn px-3 py-1.5 text-xs font-medium whitespace-nowrap bg-gray-100">ALL-TIME</button>
+        <button onclick="showTab('regions')" class="nav-btn px-3 py-1.5 text-xs font-medium whitespace-nowrap bg-gray-100">REGIONS</button>
+        <button onclick="showTab('underground')" class="nav-btn px-3 py-1.5 text-xs font-medium whitespace-nowrap bg-gray-100">UNDERGROUND</button>
+        <button onclick="showTab('albums')" class="nav-btn px-3 py-1.5 text-xs font-medium whitespace-nowrap bg-gray-100">ALBUMS</button>
+        <button onclick="showTab('yearly')" class="nav-btn px-3 py-1.5 text-xs font-medium whitespace-nowrap bg-gray-100">2026 STREAMS</button>
+        <button onclick="showTab('artists')" class="nav-btn px-3 py-1.5 text-xs font-medium whitespace-nowrap bg-gray-100">ARTISTS</button>
+        <button onclick="showTab('vs')" class="nav-btn px-3 py-1.5 text-xs font-medium whitespace-nowrap bg-gray-100">VS</button>
+        <button onclick="showTab('networth')" class="nav-btn px-3 py-1.5 text-xs font-medium whitespace-nowrap bg-gray-100">NET WORTH</button>
+        <button onclick="showTab('discuss')" class="nav-btn px-3 py-1.5 text-xs font-medium whitespace-nowrap bg-gray-100">DISCUSS</button>
+        <button onclick="showTab('method')" class="nav-btn px-3 py-1.5 text-xs font-medium whitespace-nowrap bg-gray-100">METHOD</button>
+        <button onclick="showTab('top100')" class="nav-btn px-3 py-1.5 text-xs font-medium whitespace-nowrap bg-gray-100">TOP 100</button>
+        <button onclick="showTab('news')" class="nav-btn px-3 py-1.5 text-xs font-medium whitespace-nowrap bg-gray-100">NEWS</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="index-hero">
+      <div class="index-hero-grid">
+        <div class="index-hero-copy">
+          <p class="index-eyebrow">Independent, sourced, pan-African</p>
+          <h1>The Afrobeats<br>Index.</h1>
+          <p>Two definitive rankings built for scrutiny: 50 All-Time artists, 50 Current artists and a transparent 11-metric formula.</p>
+          <div class="scope-rail" aria-label="Index scope">
+            <div><span>All-Time</span><strong>50 artists</strong></div>
+            <div><span>Current</span><strong>50 artists</strong></div>
+            <div><span>Method</span><strong>11 metrics</strong></div>
+          </div>
+        </div>
+        <aside class="issue-panel" aria-label="Editorial issue">
+          <div class="issue-disc">02</div>
+          <div>
+            <p class="issue-label">Issue 02 / 2026</p>
+            <h2>THE LIVING<br>AFROBEATS<br>INDEX</h2>
+            <p>A sourced record of legacy, reach, streaming power and the artists shaping the sound now.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="receipt" class="tab-content music-receipt-page" aria-labelledby="receipt-title">
+      <header class="receipt-page-head">
+        <p class="receipt-kicker">Your listening, indexed</p>
+        <h2 id="receipt-title">Music Receipt</h2>
+        <p>Connect a service or build it yourself. Only African artists matched to the Afri Index database appear on the receipt.</p>
+      </header>
+
+      <div class="receipt-workspace">
+        <div class="receipt-controls">
+          <fieldset class="receipt-fieldset">
+            <legend>1. Choose a source</legend>
+            <div class="source-picker" role="radiogroup" aria-label="Music source">
+              <button type="button" class="source-option is-selected" data-receipt-source="spotify" aria-pressed="true"><strong>Spotify</strong><span>Your top listening</span></button>
+              <button type="button" class="source-option" data-receipt-source="apple" aria-pressed="false"><strong>Apple Music</strong><span>Your recent listening</span></button>
+              <button type="button" class="source-option" data-receipt-source="manual" aria-pressed="false"><strong>Manual</strong><span>Pick from the index</span></button>
+            </div>
+          </fieldset>
+
+          <fieldset class="receipt-fieldset">
+            <legend>2. Choose a period</legend>
+            <div class="range-picker" role="radiogroup" aria-label="Listening period">
+              <button type="button" data-receipt-range="short_term" aria-pressed="true" class="is-selected">4 weeks</button>
+              <button type="button" data-receipt-range="medium_term" aria-pressed="false">6 months</button>
+              <button type="button" data-receipt-range="long_term" aria-pressed="false">All-time</button>
+            </div>
+          </fieldset>
+
+          <fieldset class="receipt-fieldset">
+            <legend>3. Choose your receipt theme</legend>
+            <div class="receipt-theme-picker" aria-label="Receipt theme">
+              <button type="button" data-receipt-theme="classic" aria-pressed="true" class="is-selected">Classic<span>Cream &amp; ink</span></button>
+              <button type="button" data-receipt-theme="amapiano" aria-pressed="false">Amapiano dark<span>After-hours lime</span></button>
+              <button type="button" data-receipt-theme="owambe" aria-pressed="false">Naija Owambe<span>Brown &amp; gold</span></button>
+              <button type="button" data-receipt-theme="mono" aria-pressed="false">Monochrome<span>Paper &amp; black</span></button>
+            </div>
+          </fieldset>
+
+          <div id="receipt-connect-panel" class="connect-panel" aria-live="polite"></div>
+
+          <section id="receipt-manual-panel" class="manual-panel" hidden aria-labelledby="manual-title">
+            <div class="manual-heading"><div><span>Manual fallback</span><h3 id="manual-title">Pick 5–10 artists</h3></div><strong id="manual-count">0 / 10</strong></div>
+            <label for="receipt-artist-search">Search the Afri Index artist database</label>
+            <input id="receipt-artist-search" type="search" autocomplete="off" placeholder="Try Burna Boy, Tyla or Tems">
+            <div id="receipt-artist-results" class="receipt-search-results" role="listbox"></div>
+            <div id="receipt-selected-artists" class="selected-artists" aria-live="polite"></div>
+            <label for="receipt-track-list">Favourite tracks <span>(optional, one “Track — Artist” per line)</span></label>
+            <textarea id="receipt-track-list" rows="4" placeholder="I AM — Omah Lay&#10;Rush — Ayra Starr"></textarea>
+          </section>
+
+          <details class="receipt-import">
+            <summary>Import listening data</summary>
+            <p>Paste CSV, JSON, or simple lines. Use columns such as <code>track, artist, plays</code>.</p>
+            <label class="file-button" for="receipt-file-input">Choose CSV or JSON</label>
+            <input id="receipt-file-input" type="file" accept=".csv,.json,.txt,text/csv,application/json,text/plain">
+            <label class="sr-only" for="receipt-import-text">Paste listening data</label>
+            <label for="receipt-history-year">Year for dated listening-history imports</label><input id="receipt-history-year" type="number" min="2008" max="2100" value="2026"><p>Spotify streaming-history JSON is processed in your browser. Wrapped uses only matching African listening events for the selected year.</p>
+<textarea id="receipt-import-text" rows="5" placeholder="track,artist,plays&#10;Soweto,Victony,42"></textarea>
+            <button type="button" id="receipt-import-button" class="receipt-secondary">Use imported data</button>
+          </details>
+
+          <div id="receipt-status" class="receipt-status" role="status">Choose a source to begin.</div>
+          <button type="button" id="receipt-generate" class="receipt-primary">Generate my receipt</button>
+          <p class="receipt-privacy">Listening stays in this browser unless you sign in. Signed-in receipts are saved privately. Publish share link makes that receipt public; you can delete it from My board.</p>
+        </div>
+
+        <div class="receipt-output" aria-live="polite">
+          <div class="receipt-preview-shell">
+            <canvas id="music-receipt-canvas" width="720" height="1280" aria-label="Generated Afri Index music receipt">Your generated music receipt image appears here.</canvas>
+          </div>
+          <div class="receipt-actions">
+            <button type="button" id="receipt-download" disabled>Download PNG</button>
+            <button type="button" id="receipt-share" disabled>Share receipt</button>
+            <button type="button" id="receipt-tweet" disabled>Share on X</button>
+            <button type="button" id="receipt-print" disabled>Print</button><button type="button" id="receipt-wrapped">Wrapped Story</button>
+          </div>
+          <p id="receipt-output-note">Your receipt will appear here.</p>
+          <section id="receipt-discovery" class="receipt-discovery" hidden aria-labelledby="receipt-discovery-title">
+            <h3 id="receipt-discovery-title">Your next discovery</h3>
+            <p>Similar sounds and rising artists from the index.</p>
+            <div id="receipt-discovery-list"></div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <!-- ALL-TIME -->
+    <section id="alltime" class="tab-content max-w-6xl mx-auto px-4 py-10">
+      <h2 class="serif text-3xl sm:text-4xl mb-1">All-Time Chart — Top 50</h2>
+      <p class="text-sm text-gray-500 mb-8">Impact &amp; legacy 18% · Global reach 15% · Discography 14% · Commercial power 14% · Awards 10% · Cultural influence 10% · Longevity 8% · Live 6% · Feature impact 5%. <strong>No streams.</strong></p>
+
+      <p class="text-xs tracking-widest uppercase text-gray-500 mb-3">The Big 3 — Joint Number 1</p>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-10">
+        <div class="relative border border-gray-200 overflow-hidden cursor-pointer group" onclick="openArtist('burna')">
+          <div class="aspect-[3/4] bg-gray-200"><img src="burna.jpg" alt="Burna Boy" class="artist-photo" onerror="this.style.opacity=0.3"></div>
+          <div class="absolute top-3 left-3 serif text-5xl text-white drop-shadow-lg">1</div>
+          <div class="absolute bottom-3 left-3"><span class="bg-[#d4ff00] text-black text-[10px] font-bold px-2 py-1 uppercase">Joint No. 1</span></div>
+          <div class="p-3"><h3 class="font-semibold">Burna Boy</h3><p class="text-xs text-gray-500">The African Giant</p></div>
+        </div>
+        <div class="relative border border-gray-200 overflow-hidden cursor-pointer group" onclick="openArtist('davido')">
+          <div class="aspect-[3/4] bg-gray-200"><img src="davido.jpg" alt="Davido" class="artist-photo" onerror="this.style.opacity=0.3"></div>
+          <div class="absolute top-3 left-3 serif text-5xl text-white drop-shadow-lg">1</div>
+          <div class="absolute bottom-3 left-3"><span class="bg-[#d4ff00] text-black text-[10px] font-bold px-2 py-1 uppercase">Joint No. 1</span></div>
+          <div class="p-3"><h3 class="font-semibold">Davido</h3><p class="text-xs text-gray-500">The Hitmaker</p></div>
+        </div>
+        <div class="relative border border-gray-200 overflow-hidden cursor-pointer group" onclick="openArtist('wizkid')">
+          <div class="aspect-[3/4] bg-gray-200"><img src="wizkid.jpg" alt="Wizkid" class="artist-photo" onerror="this.style.opacity=0.3"></div>
+          <div class="absolute top-3 left-3 serif text-5xl text-white drop-shadow-lg">1</div>
+          <div class="absolute bottom-3 left-3"><span class="bg-[#d4ff00] text-black text-[10px] font-bold px-2 py-1 uppercase">Joint No. 1</span></div>
+          <div class="p-3"><h3 class="font-semibold">Wizkid</h3><p class="text-xs text-gray-500">Starboy</p></div>
+        </div>
+      </div>
+
+      <div class="border-t border-gray-200">
+        
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">4</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-100 flex items-center justify-center text-lg font-bold text-gray-400">F</div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">THE ORIGINATOR</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Fela Kuti</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Invented Afrobeat. Without him there is no Afrobeats.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFROBEAT</span><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">HIGHLIFE</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">1960s–1997</p>
+        <p class="serif text-xl mt-1">94.2</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:94%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100 cursor-pointer hover:bg-gray-50" onclick="openArtist('2baba')">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">5</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-200"><img src="2baba.jpg" alt="2Baba" class="w-full h-full object-cover" onerror="this.style.opacity=0.2"></div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">THE BRIDGE</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">2Baba</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">African Queen. Bridged the 2000s into the global era.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFROBEATS</span><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">R&B</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">1990s–now</p>
+        <p class="serif text-xl mt-1">91.5</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:91%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">6</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-100 flex items-center justify-center text-lg font-bold text-gray-400">P</div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">THE DUO</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">P-Square</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Continental hit factory. Chop My Money defined a generation.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFROBEATS</span><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">R&B</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">2000s–now</p>
+        <p class="serif text-xl mt-1">89.0</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:89%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">7</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-100 flex items-center justify-center text-lg font-bold text-gray-400">D</div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">THE CROSSOVER</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">D’banj</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Oliver Twist. Mo’ Hits era. First true global push.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFROBEATS</span><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">POP</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">2004–now</p>
+        <p class="serif text-xl mt-1">87.5</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:87%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100 cursor-pointer hover:bg-gray-50" onclick="openArtist('olamide')">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">8</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-200"><img src="olamide.jpg" alt="Olamide" class="w-full h-full object-cover" onerror="this.style.opacity=0.2"></div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">STREET KING</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Olamide</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">YBNL empire. Pipeline for Asake, Fireboy and more.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">STREET-POP</span><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">RAP</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">2010–now</p>
+        <p class="serif text-xl mt-1">86.8</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:86%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100 cursor-pointer hover:bg-gray-50" onclick="openArtist('tiwa')">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">9</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-200"><img src="tiwa.jpg" alt="Tiwa Savage" class="w-full h-full object-cover" onerror="this.style.opacity=0.2"></div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">THE STANDARD</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Tiwa Savage</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Longest-running female force. Set the standard.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFROBEATS</span><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">R&B</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">2010–now</p>
+        <p class="serif text-xl mt-1">85.5</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:85%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100 cursor-pointer hover:bg-gray-50" onclick="openArtist('tems')">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">10</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-200"><img src="tems.jpg" alt="Tems" class="w-full h-full object-cover" onerror="this.style.opacity=0.2"></div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">THE VOICE</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Tems</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Critical and commercial gravity that redefined the lane.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFRO-R&B</span><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">ALT</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">2018–now</p>
+        <p class="serif text-xl mt-1">84.8</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:84%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100 cursor-pointer hover:bg-gray-50" onclick="openArtist('rema')">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">11</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-200"><img src="rema.jpg" alt="Rema" class="w-full h-full object-cover" onerror="this.style.opacity=0.2"></div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">THE ALIEN</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Rema</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Calm Down global monster. Cracked Gen Z worldwide.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFROBEATS</span><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">POP</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">2019–now</p>
+        <p class="serif text-xl mt-1">84.0</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:84%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100 cursor-pointer hover:bg-gray-50" onclick="openArtist('asake')">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">12</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-200"><img src="asake.jpg" alt="Asake" class="w-full h-full object-cover" onerror="this.style.opacity=0.2"></div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">MR MONEY</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Asake</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Street-to-stadium. Fuji + Amapiano became Lagos sound.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">STREET-POP</span><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">FUJI</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">2022–now</p>
+        <p class="serif text-xl mt-1">83.2</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:83%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100 cursor-pointer hover:bg-gray-50" onclick="openArtist('wandecoal')">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">13</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-200"><img src="wandecoal.jpg" alt="Wande Coal" class="w-full h-full object-cover" onerror="this.style.opacity=0.2"></div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">THE BLUEPRINT</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Wande Coal</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Mushin 2 Mo’ Hits. Vocal blueprint of an era.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFROBEATS</span><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">R&B</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">2006–now</p>
+        <p class="serif text-xl mt-1">81.0</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:81%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100 cursor-pointer hover:bg-gray-50" onclick="openArtist('yemialade')">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">14</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-200"><img src="yemialade.jpg" alt="Yemi Alade" class="w-full h-full object-cover" onerror="this.style.opacity=0.2"></div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">MAMA AFRICA</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Yemi Alade</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Johnny. Africa’s biggest female touring act for years.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFROBEATS</span><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFROPOP</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">2012–now</p>
+        <p class="serif text-xl mt-1">80.0</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:80%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">15</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-100 flex items-center justify-center text-lg font-bold text-gray-400">F</div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">HIGHLIFE KING</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Flavour</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Nwa Baby. Highlife-Afrobeats bridge.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">HIGHLIFE</span><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFROBEATS</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">2005–now</p>
+        <p class="serif text-xl mt-1">78.5</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:78%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100 cursor-pointer hover:bg-gray-50" onclick="openArtist('kizzdaniel')">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">16</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-200"><img src="kizzdaniel.jpg" alt="Kizz Daniel" class="w-full h-full object-cover" onerror="this.style.opacity=0.2"></div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">CONSISTENCY</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Kizz Daniel</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Earworm hooks across a decade. Flyboy Inc.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFROBEATS</span><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">POP</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">2014–now</p>
+        <p class="serif text-xl mt-1">78.0</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:78%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">17</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-100 flex items-center justify-center text-lg font-bold text-gray-400">T</div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">MELODY ARCHITECT</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Tekno</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Pana. Influenced a generation of producers.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFROBEATS</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">2015–now</p>
+        <p class="serif text-xl mt-1">76.5</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:76%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">18</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-100 flex items-center justify-center text-lg font-bold text-gray-400">A</div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">AG BABY</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Adekunle Gold</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Highlife revivalist turned global soft-boy.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">HIGHLIFE</span><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFROBEATS</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">2015–now</p>
+        <p class="serif text-xl mt-1">75.8</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:75%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100 cursor-pointer hover:bg-gray-50" onclick="openArtist('fireboy')">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">19</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-200"><img src="fireboy.jpg" alt="Fireboy DML" class="w-full h-full object-cover" onerror="this.style.opacity=0.2"></div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">THE STORYTELLER</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Fireboy DML</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Peru. Emotional Afrobeats. YBNL flagship voice.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFROBEATS</span><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">R&B</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">2019–now</p>
+        <p class="serif text-xl mt-1">75.0</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:75%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100 cursor-pointer hover:bg-gray-50" onclick="openArtist('ckay')">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">20</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-200"><img src="ckay.jpg" alt="CKay" class="w-full h-full object-cover" onerror="this.style.opacity=0.2"></div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">LOVE NWANTITI</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">CKay</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">TikTok-to-global. Slow-burn proof of concept.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFROBEATS</span><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">R&B</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">2017–now</p>
+        <p class="serif text-xl mt-1">74.5</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:74%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">21</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-100 flex items-center justify-center text-lg font-bold text-gray-400">M</div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">BANKU</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Mr Eazi</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Cross-border dealmaker. Africa to LatAm to Europe.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">BANKU</span><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFROBEATS</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria/Ghana</p>
+        <p class="text-xs text-gray-400">2014–now</p>
+        <p class="serif text-xl mt-1">73.0</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:73%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">22</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-100 flex items-center justify-center text-lg font-bold text-gray-400">S</div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">GHANA KING</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Sarkodie</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Technical excellence and longevity.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">HIP-HOP</span><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFROBEATS</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Ghana</p>
+        <p class="text-xs text-gray-400">2005–now</p>
+        <p class="serif text-xl mt-1">72.0</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:72%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">23</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-100 flex items-center justify-center text-lg font-bold text-gray-400">P</div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">IGBO RAP</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Phyno</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Fada Fada. Eastern street credibility.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">RAP</span><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFROBEATS</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">2010–now</p>
+        <p class="serif text-xl mt-1">70.5</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:70%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">24</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-100 flex items-center justify-center text-lg font-bold text-gray-400">I</div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">OLEKU</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Ice Prince</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Early 2010s rap-Afrobeats crossover.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">RAP</span><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFROBEATS</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">2009–now</p>
+        <p class="serif text-xl mt-1">69.0</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:69%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">25</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-100 flex items-center justify-center text-lg font-bold text-gray-400">9</div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">GONGO ASO</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">9ice</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Street highlife that defined late 2000s Lagos.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">HIGHLIFE</span><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFROBEATS</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">2007–now</p>
+        <p class="serif text-xl mt-1">68.0</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:68%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">26</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-100 flex items-center justify-center text-lg font-bold text-gray-400">S</div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">HARMONY</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Styl-Plus</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Olufunmi. Early romantic Afrobeats standard.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">R&B</span><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFROBEATS</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">2000s</p>
+        <p class="serif text-xl mt-1">66.5</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:66%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">27</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-100 flex items-center justify-center text-lg font-bold text-gray-400">R</div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">MAD OVER YOU</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Runtown</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Smooth continental hitmaker.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFROBEATS</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">2014–now</p>
+        <p class="serif text-xl mt-1">65.5</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:65%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">28</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-100 flex items-center justify-center text-lg font-bold text-gray-400">T</div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">DEM MAMA</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Timaya</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Dancehall-Afrobeats from the South-South.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">DANCEHALL</span><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFROBEATS</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">2005–now</p>
+        <p class="serif text-xl mt-1">64.5</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:64%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">29</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-100 flex items-center justify-center text-lg font-bold text-gray-400">D</div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">MAVIN ARCHITECT</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Don Jazzy</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Producer-executive who built the modern system.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">PRODUCTION</span><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFROBEATS</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">2004–now</p>
+        <p class="serif text-xl mt-1">64.0</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:64%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">30</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-100 flex items-center justify-center text-lg font-bold text-gray-400">M</div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">DMW</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Mayorkun</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Consistent hits and youth appeal.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFROBEATS</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">2016–now</p>
+        <p class="serif text-xl mt-1">62.0</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:62%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">31</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-100 flex items-center justify-center text-lg font-bold text-gray-400">S</div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">ALT VOICE</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Simi</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Songwriting depth and vocal identity.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFRO-R&B</span><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">ALT</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">2014–now</p>
+        <p class="serif text-xl mt-1">61.0</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:61%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">32</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-100 flex items-center justify-center text-lg font-bold text-gray-400">J</div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">BABY</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Joeboy</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Early Mavin breakthrough. Clean romantic Afrobeats.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFROBEATS</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">2019–now</p>
+        <p class="serif text-xl mt-1">60.0</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:60%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">33</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-100 flex items-center justify-center text-lg font-bold text-gray-400">O</div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">KUOLA</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Oxlade</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Distinctive tone. Alté-adjacent lane.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFRO-R&B</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">2018–now</p>
+        <p class="serif text-xl mt-1">59.0</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:59%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">34</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-100 flex items-center justify-center text-lg font-bold text-gray-400">R</div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">ASIWAJU</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Ruger</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Smooth street romance. Jonzing World.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFROBEATS</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">2020–now</p>
+        <p class="serif text-xl mt-1">58.5</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:58%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">35</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-100 flex items-center justify-center text-lg font-bold text-gray-400">B</div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">KWAKU</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Black Sherif</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Ghana’s new voice. Cross-border heat.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">HIP-HOP</span><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFROBEATS</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Ghana</p>
+        <p class="text-xs text-gray-400">2021–now</p>
+        <p class="serif text-xl mt-1">57.5</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:57%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">36</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-100 flex items-center justify-center text-lg font-bold text-gray-400">S</div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">BHIM</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Stonebwoy</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Ghana dancehall-Afrobeats bridge.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">DANCEHALL</span><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFROBEATS</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Ghana</p>
+        <p class="text-xs text-gray-400">2012–now</p>
+        <p class="serif text-xl mt-1">56.5</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:56%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">37</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-100 flex items-center justify-center text-lg font-bold text-gray-400">S</div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">SHATTA</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Shatta Wale</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Ghana dancehall king. Massive local weight.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">DANCEHALL</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Ghana</p>
+        <p class="text-xs text-gray-400">2010–now</p>
+        <p class="serif text-xl mt-1">55.5</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:55%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">38</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-100 flex items-center justify-center text-lg font-bold text-gray-400">D</div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">WASAFI</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Diamond Platnumz</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">East African empire. Continental streaming power.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">BONGO</span><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFROBEATS</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Tanzania</p>
+        <p class="text-xs text-gray-400">2010–now</p>
+        <p class="serif text-xl mt-1">55.0</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:55%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">39</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-100 flex items-center justify-center text-lg font-bold text-gray-400">K</div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">SMOOTH</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">King Promise</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Ghana’s consistent Afropop force.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFROPOP</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Ghana</p>
+        <p class="text-xs text-gray-400">2016–now</p>
+        <p class="serif text-xl mt-1">53.5</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:53%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">40</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-100 flex items-center justify-center text-lg font-bold text-gray-400">K</div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">TOUCH IT</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">KiDi</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Ghana-Nigeria crossover appeal.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFROBEATS</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Ghana</p>
+        <p class="text-xs text-gray-400">2017–now</p>
+        <p class="serif text-xl mt-1">52.5</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:52%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">41</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-100 flex items-center justify-center text-lg font-bold text-gray-400">F</div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">AZONTO</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Fuse ODG</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">UK-Ghana bridge that helped globalise the sound.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFROBEATS</span><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AZONTO</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">UK/Ghana</p>
+        <p class="text-xs text-gray-400">2011–now</p>
+        <p class="serif text-xl mt-1">51.5</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:51%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">42</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-100 flex items-center justify-center text-lg font-bold text-gray-400">A</div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">DROGBA</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Afro B</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Viral UK-Afrobeats moment.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFROBEATS</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">UK</p>
+        <p class="text-xs text-gray-400">2017–now</p>
+        <p class="serif text-xl mt-1">50.0</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:50%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">43</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-100 flex items-center justify-center text-lg font-bold text-gray-400">N</div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">TONIGHT</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Nonso Amadi</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Alté-adjacent R&B-Afrobeats hybrid.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFRO-R&B</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">2016–now</p>
+        <p class="serif text-xl mt-1">49.0</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:49%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">44</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-100 flex items-center justify-center text-lg font-bold text-gray-400">C</div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">EMOTIONAL</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Chike</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Storytelling. Boo of the Booless and beyond.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFRO-R&B</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">2017–now</p>
+        <p class="serif text-xl mt-1">48.0</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:48%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">45</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-100 flex items-center justify-center text-lg font-bold text-gray-400">B</div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">ART ROCK</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Brymo</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Critical favourite. Independent path.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">ALT</span><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFROBEATS</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">2010–now</p>
+        <p class="serif text-xl mt-1">47.0</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:47%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">46</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-100 flex items-center justify-center text-lg font-bold text-gray-400">L</div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">MASKED ONE</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Lagbaja</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Social commentary through music.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFROBEAT</span><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">HIGHLIFE</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">1990s–now</p>
+        <p class="serif text-xl mt-1">46.0</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:46%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">47</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-100 flex items-center justify-center text-lg font-bold text-gray-400">K</div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">JUJU LEGEND</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">King Sunny Ade</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Global African music pioneer before Afrobeats.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">JUJU</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">1960s–now</p>
+        <p class="serif text-xl mt-1">45.0</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:45%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">48</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-100 flex items-center justify-center text-lg font-bold text-gray-400">T</div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">THE DRUMMER</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Tony Allen</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Fela’s drummer. Rhythmic foundation of Afrobeat.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFROBEAT</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">1960s–2020</p>
+        <p class="serif text-xl mt-1">44.0</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:44%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">49</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-100 flex items-center justify-center text-lg font-bold text-gray-400">W</div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">IJOYA</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Weird MC</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Early female rap-Afrobeats presence.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">RAP</span><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFROBEATS</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">2000s</p>
+        <p class="serif text-xl mt-1">42.0</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:42%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">50</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-100 flex items-center justify-center text-lg font-bold text-gray-400">B</div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">ERA HITS</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Bracket · Olu Maintain · Skales</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Mid-tier hits that filled the culture.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFROBEATS</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">2000s–2010s</p>
+        <p class="serif text-xl mt-1">40.0</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:40%"></div></div>
+      </div>
+    </div>
+      </div>
+    </section>
+
+    <!-- CURRENT -->
+    <section id="current" class="tab-content active max-w-6xl mx-auto px-4 py-10">
+      <h2 class="serif text-3xl sm:text-4xl mb-1">Current Power Chart — Top 50</h2>
+      <p class="current-scope-copy text-sm text-gray-500 mb-8">The Current index measures who holds power now. Nine cross-era signals carry 83% of the score; two streaming signals carry 17%.</p>
+      <div class="border-t border-gray-200">
+        
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100 cursor-pointer hover:bg-gray-50" onclick="openArtist('burna')">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">1=</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-200"><img src="burna.jpg" alt="Burna Boy" class="w-full h-full object-cover" onerror="this.style.opacity=0.2"></div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">THE AFRICAN GIANT</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Burna Boy</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Highest live + cultural weight. Stadium standard.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFRO-FUSION</span><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFROBEATS</span><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">DANCEHALL</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">2010–now</p>
+        <p class="serif text-xl mt-1">95.0</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:95%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100 cursor-pointer hover:bg-gray-50" onclick="openArtist('victony')">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">2</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-200"><img src="victony.jpg" alt="Victony" class="w-full h-full object-cover" onerror="this.style.opacity=0.2"></div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">THE CLIMBER</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Victony</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Biggest climber. Power ranking heat.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFROBEATS</span><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">STREET</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">2020–now</p>
+        <p class="serif text-xl mt-1">92.0</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:92%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100 cursor-pointer hover:bg-gray-50" onclick="openArtist('asake')">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">3</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-200"><img src="asake.jpg" alt="Asake" class="w-full h-full object-cover" onerror="this.style.opacity=0.2"></div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">MR MONEY</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Asake</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Street + Audiomack + cultural events.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">STREET-POP</span><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">FUJI</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">2022–now</p>
+        <p class="serif text-xl mt-1">91.5</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:91%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100 cursor-pointer hover:bg-gray-50" onclick="openArtist('tems')">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">4</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-200"><img src="tems.jpg" alt="Tems" class="w-full h-full object-cover" onerror="this.style.opacity=0.2"></div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">THE VOICE</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Tems</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">YTD stream leader. Critical + commercial force.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFRO-R&B</span><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">ALT</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">2018–now</p>
+        <p class="serif text-xl mt-1">90.5</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:90%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100 cursor-pointer hover:bg-gray-50" onclick="openArtist('davido')">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">5</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-200"><img src="davido.jpg" alt="Davido" class="w-full h-full object-cover" onerror="this.style.opacity=0.2"></div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">THE HITMAKER</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Davido</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Hit consistency + strongest fanbase energy.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFROPOP</span><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFROBEATS</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">2011–now</p>
+        <p class="serif text-xl mt-1">90.0</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:90%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">6</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-100 flex items-center justify-center text-lg font-bold text-gray-400">M</div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">NEW HEAT</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Mavo</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Rising hard. Simultaneous runs.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFROBEATS</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">2024–now</p>
+        <p class="serif text-xl mt-1">88.0</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:88%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100 cursor-pointer hover:bg-gray-50" onclick="openArtist('tyla')">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">7</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-200"><img src="tyla.jpg" alt="Tyla" class="w-full h-full object-cover" onerror="this.style.opacity=0.2"></div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">WATER</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Tyla</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Global pop crossover. Water still active worldwide.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AMAPIANO</span><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">POP</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">South Africa</p>
+        <p class="text-xs text-gray-400">2023–now</p>
+        <p class="serif text-xl mt-1">87.5</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:87%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100 cursor-pointer hover:bg-gray-50" onclick="openArtist('wizkid')">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">8</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-200"><img src="wizkid.jpg" alt="Wizkid" class="w-full h-full object-cover" onerror="this.style.opacity=0.2"></div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">STARBOY</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Wizkid</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Catalogue still elite. Enduring global cool.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFROBEATS</span><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFRO-R&B</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">2009–now</p>
+        <p class="serif text-xl mt-1">87.0</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:87%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100 cursor-pointer hover:bg-gray-50" onclick="openArtist('rema')">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">9</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-200"><img src="rema.jpg" alt="Rema" class="w-full h-full object-cover" onerror="this.style.opacity=0.2"></div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">THE ALIEN</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Rema</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Calm Down + HEIS. Global reach expanding.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFROBEATS</span><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">POP</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">2019–now</p>
+        <p class="serif text-xl mt-1">86.0</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:86%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100 cursor-pointer hover:bg-gray-50" onclick="openArtist('ayra')">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">10</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-200"><img src="ayra.jpg" alt="Ayra Starr" class="w-full h-full object-cover" onerror="this.style.opacity=0.2"></div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">THE PACKAGE</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Ayra Starr</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Fashion + music. Strong monthly listeners.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFROBEATS</span><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">POP</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">2021–now</p>
+        <p class="serif text-xl mt-1">85.0</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:85%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100 cursor-pointer hover:bg-gray-50" onclick="openArtist('seyivibez')">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">11</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-200"><img src="seyivibez.jpg" alt="Seyi Vibez" class="w-full h-full object-cover" onerror="this.style.opacity=0.2"></div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">STREET FORCE</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Seyi Vibez</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Audiomack dominance. Pure street heat.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">STREET-POP</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">2021–now</p>
+        <p class="serif text-xl mt-1">84.0</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:84%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100 cursor-pointer hover:bg-gray-50" onclick="openArtist('omahlay')">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">12</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-200"><img src="omahlay.jpg" alt="Omah Lay" class="w-full h-full object-cover" onerror="this.style.opacity=0.2"></div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">AFRO-DEPRESSION</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Omah Lay</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Boy Alone. Emotional lane. Consistent streams.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFROBEATS</span><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">R&B</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">2019–now</p>
+        <p class="serif text-xl mt-1">83.5</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:83%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">13</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-100 flex items-center justify-center text-lg font-bold text-gray-400">B</div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">STREET MOMENTUM</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Balloranking</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Rising power ranking presence.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">STREET-POP</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">2022–now</p>
+        <p class="serif text-xl mt-1">82.0</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:82%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">14</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-100 flex items-center justify-center text-lg font-bold text-gray-400">B</div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">GWAGWALADA</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">BNXN</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Steady mid-tier global presence.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFROBEATS</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">2019–now</p>
+        <p class="serif text-xl mt-1">81.0</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:81%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">15</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-100 flex items-center justify-center text-lg font-bold text-gray-400">F</div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">NEW WAVE</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">FOLA</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Simultaneous chart presence.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFROBEATS</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">2024–now</p>
+        <p class="serif text-xl mt-1">80.0</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:80%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">16</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-200"><img src="fireboy.jpg" alt="Fireboy DML" class="w-full h-full object-cover" onerror="this.style.opacity=0.2"></div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">THE STORYTELLER</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Fireboy DML</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Peru legacy + consistent YBNL output.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFROBEATS</span><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">R&B</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">2019–now</p>
+        <p class="serif text-xl mt-1">79.0</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:79%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">17</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-100 flex items-center justify-center text-lg font-bold text-gray-400">Y</div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">XTRA COOL</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Young Jonn</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Producer-artist. Street radio runs.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFROBEATS</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">2020–now</p>
+        <p class="serif text-xl mt-1">78.0</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:78%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100 cursor-pointer hover:bg-gray-50" onclick="openArtist('ckay')">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">18</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-200"><img src="ckay.jpg" alt="CKay" class="w-full h-full object-cover" onerror="this.style.opacity=0.2"></div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">LOVE NWANTITI</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">CKay</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Catalogue still pulling global numbers.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFROBEATS</span><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">R&B</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">2017–now</p>
+        <p class="serif text-xl mt-1">77.0</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:77%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">19</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-100 flex items-center justify-center text-lg font-bold text-gray-400">R</div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">ASIWAJU</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Ruger</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Smooth street romance. Steady releases.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFROBEATS</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">2020–now</p>
+        <p class="serif text-xl mt-1">76.0</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:76%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">20</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-100 flex items-center justify-center text-lg font-bold text-gray-400">A</div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">CLIMBER</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Ayo Maff</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">New heat. Power ranking climber.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFROBEATS</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">2023–now</p>
+        <p class="serif text-xl mt-1">75.0</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:75%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">21</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-100 flex items-center justify-center text-lg font-bold text-gray-400">B</div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">KWAKU</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Black Sherif</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Ghana flag. Cross-border features.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">HIP-HOP</span><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFROBEATS</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Ghana</p>
+        <p class="text-xs text-gray-400">2021–now</p>
+        <p class="serif text-xl mt-1">74.0</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:74%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">22</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-100 flex items-center justify-center text-lg font-bold text-gray-400">O</div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">THE ACT</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">ODUMODUBLVCK</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Rap-Afrobeats hybrid. Conversation starter.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">RAP</span><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFROBEATS</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">2020–now</p>
+        <p class="serif text-xl mt-1">73.0</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:73%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">23</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-100 flex items-center justify-center text-lg font-bold text-gray-400">T</div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">STREET-POP</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">TML Vibez</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Audiomack strong. Consistent.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">STREET-POP</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">2021–now</p>
+        <p class="serif text-xl mt-1">72.0</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:72%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">24</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-100 flex items-center justify-center text-lg font-bold text-gray-400">S</div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">THE PRODUCER</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Sarz</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Beats that define the era.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">PRODUCTION</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">2010–now</p>
+        <p class="serif text-xl mt-1">71.0</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:71%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">25</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-200"><img src="kizzdaniel.jpg" alt="Kizz Daniel" class="w-full h-full object-cover" onerror="this.style.opacity=0.2"></div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">CONSISTENCY</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Kizz Daniel</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Still delivering radio records.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFROBEATS</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">2014–now</p>
+        <p class="serif text-xl mt-1">70.5</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:70%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100 cursor-pointer hover:bg-gray-50" onclick="openArtist('olamide')">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">26</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-200"><img src="olamide.jpg" alt="Olamide" class="w-full h-full object-cover" onerror="this.style.opacity=0.2"></div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">YBNL BOSS</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Olamide</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Still shaping the street pipeline.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">STREET-POP</span><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">RAP</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">2010–now</p>
+        <p class="serif text-xl mt-1">70.0</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:70%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">27</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-100 flex items-center justify-center text-lg font-bold text-gray-400">S</div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">BENIN ENERGY</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Shallipopi</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Viral street anthems.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">STREET-POP</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">2022–now</p>
+        <p class="serif text-xl mt-1">68.0</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:68%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">28</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-100 flex items-center justify-center text-lg font-bold text-gray-400">M</div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">SAD GIRLZ</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Moliy</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Ghana-adjacent heat. Viral ripple.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFROBEATS</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Ghana</p>
+        <p class="text-xs text-gray-400">2021–now</p>
+        <p class="serif text-xl mt-1">67.0</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:67%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">29</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-100 flex items-center justify-center text-lg font-bold text-gray-400">J</div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">EMERGING</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">JAZZWRLD</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Production and artist presence.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFROBEATS</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">2023–now</p>
+        <p class="serif text-xl mt-1">66.0</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:66%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">30</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-100 flex items-center justify-center text-lg font-bold text-gray-400">T</div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">MELODY</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Tekno</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Catalogue still influential.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFROBEATS</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">2015–now</p>
+        <p class="serif text-xl mt-1">65.0</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:65%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">31</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-100 flex items-center justify-center text-lg font-bold text-gray-400">D</div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">WASAFI</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Diamond Platnumz</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">East African streaming empire.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">BONGO</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Tanzania</p>
+        <p class="text-xs text-gray-400">2010–now</p>
+        <p class="serif text-xl mt-1">64.0</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:64%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">32</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-100 flex items-center justify-center text-lg font-bold text-gray-400">B</div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">CASH APP</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Bella Shmurda</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Street presence residual.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">STREET-POP</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">2019–now</p>
+        <p class="serif text-xl mt-1">63.0</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:63%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">33</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-100 flex items-center justify-center text-lg font-bold text-gray-400">A</div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">AG BABY</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Adekunle Gold</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Steady soft-boy global lane.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">HIGHLIFE</span><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFROBEATS</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">2015–now</p>
+        <p class="serif text-xl mt-1">62.0</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:62%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">34</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-100 flex items-center justify-center text-lg font-bold text-gray-400">Z</div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">MARLIAN</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Zinoleesky</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Street-pop consistency.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">STREET-POP</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">2019–now</p>
+        <p class="serif text-xl mt-1">61.0</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:61%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">35</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-100 flex items-center justify-center text-lg font-bold text-gray-400">B</div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">RAP</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Blaqbonez</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Chocolate City and beyond.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">RAP</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">2017–now</p>
+        <p class="serif text-xl mt-1">60.0</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:60%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">36</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-100 flex items-center justify-center text-lg font-bold text-gray-400">S</div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">STREET</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Shoday</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Newer wave presence.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">STREET-POP</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">2022–now</p>
+        <p class="serif text-xl mt-1">59.0</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:59%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">37</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-100 flex items-center justify-center text-lg font-bold text-gray-400">S</div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">SHATTA</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Shatta Wale</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Ghana cultural weight.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">DANCEHALL</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Ghana</p>
+        <p class="text-xs text-gray-400">2010–now</p>
+        <p class="serif text-xl mt-1">58.0</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:58%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100 cursor-pointer hover:bg-gray-50" onclick="openArtist('tiwa')">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">38</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-200"><img src="tiwa.jpg" alt="Tiwa Savage" class="w-full h-full object-cover" onerror="this.style.opacity=0.2"></div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">THE STANDARD</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Tiwa Savage</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Longevity. Still delivering and touring.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFROBEATS</span><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">R&B</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">2010–now</p>
+        <p class="serif text-xl mt-1">57.5</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:57%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">39</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-100 flex items-center justify-center text-lg font-bold text-gray-400">T</div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">STREET</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">T.I Blaze</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Underground-to-mainstream runs.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">STREET-POP</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">2020–now</p>
+        <p class="serif text-xl mt-1">56.0</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:56%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">40</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-100 flex items-center justify-center text-lg font-bold text-gray-400">K</div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">NEW WAVE</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Khaid</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Power ranking presence.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFROBEATS</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">2022–now</p>
+        <p class="serif text-xl mt-1">55.0</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:55%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">41</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-100 flex items-center justify-center text-lg font-bold text-gray-400">J</div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">MAVIN</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Joeboy</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Clean romantic Afrobeats still charting.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFROBEATS</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">2019–now</p>
+        <p class="serif text-xl mt-1">54.0</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:54%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">42</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-100 flex items-center justify-center text-lg font-bold text-gray-400">O</div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">KUOLA</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Oxlade</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Distinctive tone. Alternative lane.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFRO-R&B</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">2018–now</p>
+        <p class="serif text-xl mt-1">53.0</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:53%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">43</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-100 flex items-center justify-center text-lg font-bold text-gray-400">K</div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">SMOOTH</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">King Promise</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Ghana Afropop. Regional radio.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFROPOP</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Ghana</p>
+        <p class="text-xs text-gray-400">2016–now</p>
+        <p class="serif text-xl mt-1">52.0</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:52%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">44</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-100 flex items-center justify-center text-lg font-bold text-gray-400">P</div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">WATCHLIST</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Priesst</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Akonuche momentum. 2026 watchlist.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFROBEATS</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">2021–now</p>
+        <p class="serif text-xl mt-1">51.0</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:51%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">45</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-100 flex items-center justify-center text-lg font-bold text-gray-400">6</div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">MENACE</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">6uff</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Street anthem producer-artist.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">STREET-POP</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">2022–now</p>
+        <p class="serif text-xl mt-1">50.0</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:50%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">46</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-100 flex items-center justify-center text-lg font-bold text-gray-400">Z</div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">ZANKU</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Zlatan</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Street cultural imprint.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">STREET-POP</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">2018–now</p>
+        <p class="serif text-xl mt-1">49.0</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:49%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">47</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-100 flex items-center justify-center text-lg font-bold text-gray-400">C</div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">EMOTIONAL</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Chike</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Steady catalogue growth.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFRO-R&B</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">2017–now</p>
+        <p class="serif text-xl mt-1">48.0</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:48%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">48</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-100 flex items-center justify-center text-lg font-bold text-gray-400">P</div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">IGBO RAP</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Phyno</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Enduring Eastern credibility.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">RAP</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">2010–now</p>
+        <p class="serif text-xl mt-1">47.0</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:47%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">49</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-100 flex items-center justify-center text-lg font-bold text-gray-400">M</div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">DMW</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Mayorkun</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Youth appeal and consistent output.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFROBEATS</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">2016–now</p>
+        <p class="serif text-xl mt-1">46.0</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:46%"></div></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 sm:gap-5 py-4 border-b border-gray-100">
+      <span class="serif text-2xl sm:text-3xl text-black w-10 sm:w-12 shrink-0 text-right">50</span>
+      <div class="w-14 h-14 sm:w-16 sm:h-16 rounded overflow-hidden shrink-0 bg-gray-100 flex items-center justify-center text-lg font-bold text-gray-400">L</div>
+      <div class="flex-1 min-w-0">
+        <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">MID-TIER</p>
+        <h3 class="font-semibold text-lg sm:text-xl leading-tight">Lojay · Magixx · Fave</h3>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Heat that keeps the culture moving.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFROBEATS</span></div>
+      </div>
+      <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
+        <p class="text-xs text-gray-500">Nigeria</p>
+        <p class="text-xs text-gray-400">2019–now</p>
+        <p class="serif text-xl mt-1">45.0</p>
+        <div class="w-full h-1 bg-gray-200 rounded mt-1"><div class="h-full bg-[#0047ff] rounded" style="width:45%"></div></div>
+      </div>
+    </div>
+      </div>
+    </section>
+
+    <!-- REGIONAL INDEX -->
+    <section id="regions" class="tab-content max-w-6xl mx-auto px-4 py-10">
+      <p class="text-xs tracking-widest uppercase text-[#0047ff] mb-2">One continent · distinct scenes</p>
+      <h2 class="serif text-3xl sm:text-4xl mb-2">Regional Power Index</h2>
+      <p class="text-sm text-gray-500 mb-6">Explore the Current 50 by scene. Regional rank is derived from the published Current score; global rank stays visible for context.</p>
+      <div id="regional-index"></div>
+    </section>
+
+    <!-- ============ ALBUMS ============ -->
+    <section id="albums" class="tab-content max-w-6xl mx-auto px-4 py-10">
+      <h2 class="serif text-3xl sm:text-4xl mb-1">Most Streamed Albums</h2>
+      <p class="text-sm text-gray-500 mb-8">All-time Spotify numbers for landmark Afrobeats &amp; African projects (approx. as of mid-2026). Editorial shortlist of the projects that defined the era.</p>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="album-card">
+          <div class="album-rank">01</div>
+          <h3 class="font-semibold text-lg">Rave &amp; Roses</h3>
+          <p class="text-sm text-gray-500 mb-2">Rema · 2022</p>
+          <p class="album-streams-value">~3.4B</p>
+          <p class="text-xs text-gray-500 mt-1">Spotify (incl. Ultra)</p>
+          <div class="w-full h-1.5 bg-gray-100 rounded mt-3"><div class="album-streams-fill" style="width:100%"></div></div>
+          <p class="text-xs text-gray-600 mt-3">Calm Down turned it into the most-streamed Afrobeats album ever. Global pop moment.</p>
+        </div>
+        <div class="album-card">
+          <div class="album-rank">02</div>
+          <h3 class="font-semibold text-lg">Tyla</h3>
+          <p class="text-sm text-gray-500 mb-2">Tyla · 2024</p>
+          <p class="album-streams-value">~3.1B</p>
+          <p class="text-xs text-gray-500 mt-1">Spotify</p>
+          <div class="w-full h-1.5 bg-gray-100 rounded mt-3"><div class="album-streams-fill" style="width:91%"></div></div>
+          <p class="text-xs text-gray-600 mt-3">Water became a worldwide earworm. South African popiano breakthrough.</p>
+        </div>
+        <div class="album-card">
+          <div class="album-rank">03</div>
+          <h3 class="font-semibold text-lg">Love, Damini</h3>
+          <p class="text-sm text-gray-500 mb-2">Burna Boy · 2022</p>
+          <p class="album-streams-value">~1.7B</p>
+          <p class="text-xs text-gray-500 mt-1">Spotify</p>
+          <div class="w-full h-1.5 bg-gray-100 rounded mt-3"><div class="album-streams-fill" style="width:50%"></div></div>
+          <p class="text-xs text-gray-600 mt-3">Last Last era. Peak commercial + critical balance for the African Giant.</p>
+        </div>
+        <div class="album-card">
+          <div class="album-rank">04</div>
+          <h3 class="font-semibold text-lg">Boy Alone</h3>
+          <p class="text-sm text-gray-500 mb-2">Omah Lay · 2022</p>
+          <p class="album-streams-value">~1.4B</p>
+          <p class="text-xs text-gray-500 mt-1">Spotify (Deluxe)</p>
+          <div class="w-full h-1.5 bg-gray-100 rounded mt-3"><div class="album-streams-fill" style="width:41%"></div></div>
+          <p class="text-xs text-gray-600 mt-3">Emotional blueprint. One of the purest streaming catalogues in the genre.</p>
+        </div>
+        <div class="album-card">
+          <div class="album-rank">05</div>
+          <h3 class="font-semibold text-lg">The Year I Turned 21</h3>
+          <p class="text-sm text-gray-500 mb-2">Ayra Starr · 2024</p>
+          <p class="album-streams-value">~1.4B</p>
+          <p class="text-xs text-gray-500 mt-1">Spotify</p>
+          <div class="w-full h-1.5 bg-gray-100 rounded mt-3"><div class="album-streams-fill" style="width:41%"></div></div>
+          <p class="text-xs text-gray-600 mt-3">Rush + Commas run. Defined the new female wave.</p>
+        </div>
+        <div class="album-card">
+          <div class="album-rank">06</div>
+          <h3 class="font-semibold text-lg">African Giant</h3>
+          <p class="text-sm text-gray-500 mb-2">Burna Boy · 2019</p>
+          <p class="album-streams-value">~1.3B</p>
+          <p class="text-xs text-gray-500 mt-1">Spotify</p>
+          <div class="w-full h-1.5 bg-gray-100 rounded mt-3"><div class="album-streams-fill" style="width:38%"></div></div>
+          <p class="text-xs text-gray-600 mt-3">The album that announced the stadium era. Still growing.</p>
+        </div>
+        <div class="album-card">
+          <div class="album-rank">07</div>
+          <h3 class="font-semibold text-lg">Made In Lagos</h3>
+          <p class="text-sm text-gray-500 mb-2">Wizkid · 2020</p>
+          <p class="album-streams-value">~1.2B+</p>
+          <p class="text-xs text-gray-500 mt-1">Spotify (Deluxe)</p>
+          <div class="w-full h-1.5 bg-gray-100 rounded mt-3"><div class="album-streams-fill" style="width:36%"></div></div>
+          <p class="text-xs text-gray-600 mt-3">Essence. The coolest global Afrobeats statement of the decade.</p>
+        </div>
+        <div class="album-card">
+          <div class="album-rank">08</div>
+          <h3 class="font-semibold text-lg">The First</h3>
+          <p class="text-sm text-gray-500 mb-2">CKay · 2021</p>
+          <p class="album-streams-value">~1.0B+</p>
+          <p class="text-xs text-gray-500 mt-1">Spotify</p>
+          <div class="w-full h-1.5 bg-gray-100 rounded mt-3"><div class="album-streams-fill" style="width:30%"></div></div>
+          <p class="text-xs text-gray-600 mt-3">Love Nwantiti carried it into the billions. Viral history.</p>
+        </div>
+        <div class="album-card">
+          <div class="album-rank">09</div>
+          <h3 class="font-semibold text-lg">Playboy</h3>
+          <p class="text-sm text-gray-500 mb-2">Fireboy DML · 2022</p>
+          <p class="album-streams-value">~1.0B</p>
+          <p class="text-xs text-gray-500 mt-1">Spotify</p>
+          <div class="w-full h-1.5 bg-gray-100 rounded mt-3"><div class="album-streams-fill" style="width:29%"></div></div>
+          <p class="text-xs text-gray-600 mt-3">Peru + YBNL polish. Smooth crossover success.</p>
+        </div>
+        <div class="album-card">
+          <div class="album-rank">10</div>
+          <h3 class="font-semibold text-lg">Work of Art</h3>
+          <p class="text-sm text-gray-500 mb-2">Asake · 2023</p>
+          <p class="album-streams-value">~650M+</p>
+          <p class="text-xs text-gray-500 mt-1">Spotify / Nigeria dominant</p>
+          <div class="w-full h-1.5 bg-gray-100 rounded mt-3"><div class="album-streams-fill" style="width:20%"></div></div>
+          <p class="text-xs text-gray-600 mt-3">Street anthem machine. Dominated Nigerian streaming charts.</p>
+        </div>
+        <div class="album-card">
+          <div class="album-rank">11</div>
+          <h3 class="font-semibold text-lg">Timeless</h3>
+          <p class="text-sm text-gray-500 mb-2">Davido · 2023</p>
+          <p class="album-streams-value">~820M+</p>
+          <p class="text-xs text-gray-500 mt-1">Spotify</p>
+          <div class="w-full h-1.5 bg-gray-100 rounded mt-3"><div class="album-streams-fill" style="width:24%"></div></div>
+          <p class="text-xs text-gray-600 mt-3">Unavailable, Feel. Peak hitmaker form.</p>
+        </div>
+        <div class="album-card">
+          <div class="album-rank">12</div>
+          <h3 class="font-semibold text-lg">Mr. Money With The Vibe</h3>
+          <p class="text-sm text-gray-500 mb-2">Asake · 2022</p>
+          <p class="album-streams-value">~630M+</p>
+          <p class="text-xs text-gray-500 mt-1">Spotify / local power</p>
+          <div class="w-full h-1.5 bg-gray-100 rounded mt-3"><div class="album-streams-fill" style="width:19%"></div></div>
+          <p class="text-xs text-gray-600 mt-3">The breakthrough. Organise + Sungba energy that shifted the streets.</p>
+        </div>
+      </div>
+      <p class="text-xs text-gray-500 mt-8">Numbers are approximate Spotify totals (global) compiled from public trackers mid-2026. Local platforms (Boomplay, Audiomack) push several of these even higher in Africa.</p>
+    </section>
+
+    <!-- YEAR-SCOPED STREAMING -->
+    <section id="yearly" class="tab-content max-w-6xl mx-auto px-4 py-10">
+      <div class="yearly-streams-head">
+        <div>
+          <p class="text-xs tracking-widest uppercase text-[#0047ff] mb-2">Click a year · 2010–2026 archive</p>
+          <h2 class="serif text-3xl sm:text-4xl">Streaming in <span data-yearly-label>2026</span></h2>
+        </div>
+        <div class="text-right"><label class="sr-only" for="yearly-year-select">Leaderboard year</label><select id="yearly-year-select" class="year-select"></select><p class="text-xs text-gray-500 mt-2">Last updated<br><strong data-yearly-updated>26 Aug 2026</strong></p></div>
+      </div>
+      <div class="yearly-streams-grid">
+        <article aria-labelledby="yearly-albums-title">
+          <p class="text-xs tracking-widest uppercase text-gray-500 mb-1">Top 10 · release-year archive</p>
+          <h3 id="yearly-albums-title" class="serif text-3xl mb-2">Most Streamed Albums — <span data-yearly-label>2026</span></h3>
+          <p class="text-sm text-gray-500 mb-5">Any project with meaningful activity in the selected calendar year, ordered strictly by verified streams.</p>
+          <div id="yearly-albums-list" class="yearly-list"></div>
+        </article>
+        <article aria-labelledby="yearly-songs-title">
+          <p class="text-xs tracking-widest uppercase text-gray-500 mb-1">Top 15 · release-year archive</p>
+          <h3 id="yearly-songs-title" class="serif text-3xl mb-2">Most Streamed Songs — <span data-yearly-label>2026</span></h3>
+          <p class="text-sm text-gray-500 mb-5">Any song with meaningful activity in the selected calendar year, ordered strictly by chart-attributed streams.</p>
+          <div id="yearly-songs-list" class="yearly-list"></div>
+        </article>
+      </div>
+      <aside class="yearly-method text-sm">
+        <strong>Reading the numbers.</strong> Album figures are global Spotify release totals. Song figures are streams accumulated while charting in Spotify Nigeria’s Top 200. YouTube views are shown only when a clean official-video mapping is verified; they do not change rank. Boomplay is not included at release level until a comparable public ledger is available.
+      </aside>
+    </section>
+
+    <!-- ARTISTS -->
+    <section id="artists" class="tab-content max-w-6xl mx-auto px-4 py-10">
+      <h2 class="serif text-3xl sm:text-4xl mb-2">Artist Archive</h2>
+      <p class="text-sm text-gray-500 mb-8">Full profiles. Click ranked names to jump here.</p>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+
+        <div class="border border-gray-200 overflow-hidden" id="burna">
+          <div class="aspect-[16/10] bg-gray-200"><img src="burna.jpg" alt="Burna Boy" class="artist-photo"></div>
+          <div class="p-5">
+            <h3 class="font-semibold text-xl">Burna Boy</h3>
+            <p class="text-sm text-gray-500 mb-2">Damini Ebunoluwa Ogulu · b. 1991</p>
+            <p class="text-sm text-gray-700 mb-3">The African Giant. First Nigerian solo artist to win Best Global Music Album at the Grammys. Highest concert grosses on the continent.</p>
+            <div class="grid grid-cols-2 gap-2 text-sm mb-3">
+              <div><p class="metric-label">Biggest Achievements</p><p>Grammy (Twice as Tall), stadium tours, ~$40M+ concert revenue</p></div>
+              <div><p class="metric-label">Hobby</p><p>Fashion, cars, deep music listening</p></div>
+              <div><p class="metric-label">Show Fee (Intl)</p><p>$800k – $1.5M+</p></div>
+              <div><p class="metric-label">Est. Annual Earnings</p><p>$17M+</p></div>
+            </div>
+            <p class="text-xs text-gray-500 border-t pt-2"><span class="font-medium text-black">Fun fact:</span> Grandson of Benson Idonije (Fela’s first manager).</p>
+          </div>
+        </div>
+
+        <div class="border border-gray-200 overflow-hidden" id="davido">
+          <div class="aspect-[16/10] bg-gray-200"><img src="davido.jpg" alt="Davido" class="artist-photo"></div>
+          <div class="p-5">
+            <h3 class="font-semibold text-xl">Davido</h3>
+            <p class="text-sm text-gray-500 mb-2">David Adedeji Adeleke · b. 1992</p>
+            <p class="text-sm text-gray-700 mb-3">OBO. Hit after hit for over a decade. One of the strongest fan armies in African music.</p>
+            <div class="grid grid-cols-2 gap-2 text-sm mb-3">
+              <div><p class="metric-label">Biggest Achievements</p><p>Multiple BET Awards, Timeless world tour, DMW</p></div>
+              <div><p class="metric-label">Hobby</p><p>Football, family, philanthropy</p></div>
+              <div><p class="metric-label">Show Fee (Intl)</p><p>$500k – $800k</p></div>
+              <div><p class="metric-label">Est. Annual Earnings</p><p>$13–15M</p></div>
+            </div>
+            <p class="text-xs text-gray-500 border-t pt-2"><span class="font-medium text-black">Fun fact:</span> Built the career on work rate despite family wealth.</p>
+          </div>
+        </div>
+
+        <div class="border border-gray-200 overflow-hidden" id="wizkid">
+          <div class="aspect-[16/10] bg-gray-200"><img src="wizkid.jpg" alt="Wizkid" class="artist-photo"></div>
+          <div class="p-5">
+            <h3 class="font-semibold text-xl">Wizkid</h3>
+            <p class="text-sm text-gray-500 mb-2">Ayodeji Ibrahim Balogun · b. 1990</p>
+            <p class="text-sm text-gray-700 mb-3">The Starboy. From Ojuelegba to global stages. Made in Lagos and Essence rewrote the rules.</p>
+            <div class="grid grid-cols-2 gap-2 text-sm mb-3">
+              <div><p class="metric-label">Biggest Achievements</p><p>Grammy (Brown Skin Girl), Essence global #1, O2 sell-outs</p></div>
+              <div><p class="metric-label">Hobby</p><p>Football (Arsenal), sneakers</p></div>
+              <div><p class="metric-label">Show Fee (Intl)</p><p>$800k – $1.2M</p></div>
+              <div><p class="metric-label">Est. Annual Earnings</p><p>$15–17M</p></div>
+            </div>
+            <p class="text-xs text-gray-500 border-t pt-2"><span class="font-medium text-black">Fun fact:</span> Still records a lot of music in the middle of the night in Lagos.</p>
+          </div>
+        </div>
+
+        <div class="border border-gray-200 overflow-hidden" id="tems">
+          <div class="aspect-[16/10] bg-gray-200"><img src="tems.jpg" alt="Tems" class="artist-photo"></div>
+          <div class="p-5">
+            <h3 class="font-semibold text-xl">Tems</h3>
+            <p class="text-sm text-gray-500 mb-2">Temilade Openiyi · b. 1995</p>
+            <p class="text-sm text-gray-700 mb-3">The voice. Distinctive alto. Critical darling with massive commercial numbers.</p>
+            <div class="grid grid-cols-2 gap-2 text-sm mb-3">
+              <div><p class="metric-label">Biggest Achievements</p><p>Grammy wins for “Wait for U” (2023) and “Love Me JeJe” (2025), Hot 100 entries, YTD stream leader</p></div>
+              <div><p class="metric-label">Hobby</p><p>Writing, quiet creative time</p></div>
+              <div><p class="metric-label">Show Fee</p><p>$50k – $150k+</p></div>
+              <div><p class="metric-label">Est. Annual Earnings</p><p>$4–6M</p></div>
+            </div>
+            <p class="text-xs text-gray-500 border-t pt-2"><span class="font-medium text-black">Fun fact:</span> Worked digital marketing before music fully took off.</p>
+          </div>
+        </div>
+
+        <div class="border border-gray-200 overflow-hidden" id="asake">
+          <div class="aspect-[16/10] bg-gray-200"><img src="asake.jpg" alt="Asake" class="artist-photo"></div>
+          <div class="p-5">
+            <h3 class="font-semibold text-xl">Asake</h3>
+            <p class="text-sm text-gray-500 mb-2">Ahmed Ololade · b. 1995</p>
+            <p class="text-sm text-gray-700 mb-3">YBNL street-to-stadium. Fuji + Amapiano fusion that became the new Lagos sound.</p>
+            <div class="grid grid-cols-2 gap-2 text-sm mb-3">
+              <div><p class="metric-label">Biggest Achievements</p><p>Multiple #1 albums, sold-out O2, cultural phenomenon</p></div>
+              <div><p class="metric-label">Hobby</p><p>Football, fashion, the streets</p></div>
+              <div><p class="metric-label">Show Fee</p><p>$100k – $300k+</p></div>
+              <div><p class="metric-label">Est. Annual Earnings</p><p>$6–8M</p></div>
+            </div>
+            <p class="text-xs text-gray-500 border-t pt-2"><span class="font-medium text-black">Fun fact:</span> Studying Theatre Arts at LASU when music blew.</p>
+          </div>
+        </div>
+
+        <div class="border border-gray-200 overflow-hidden" id="rema">
+          <div class="aspect-[16/10] bg-gray-200"><img src="rema.jpg" alt="Rema" class="artist-photo"></div>
+          <div class="p-5">
+            <h3 class="font-semibold text-xl">Rema</h3>
+            <p class="text-sm text-gray-500 mb-2">Divine Ikubor · b. 2000</p>
+            <p class="text-sm text-gray-700 mb-3">The young alien. Calm Down became a global monster. HEIS showed range.</p>
+            <div class="grid grid-cols-2 gap-2 text-sm mb-3">
+              <div><p class="metric-label">Biggest Achievements</p><p>Calm Down 1B+ streams, Coachella, diamond certs</p></div>
+              <div><p class="metric-label">Hobby</p><p>Cars, fashion, gaming</p></div>
+              <div><p class="metric-label">Show Fee</p><p>$200k – $500k+</p></div>
+              <div><p class="metric-label">Est. Annual Earnings</p><p>$7M+</p></div>
+            </div>
+            <p class="text-xs text-gray-500 border-t pt-2"><span class="font-medium text-black">Fun fact:</span> Discovered via Instagram by D’Prince.</p>
+          </div>
+        </div>
+
+        <div class="border border-gray-200 overflow-hidden" id="omahlay">
+          <div class="aspect-[16/10] bg-gray-200"><img src="omahlay.jpg" alt="Omah Lay" class="artist-photo"></div>
+          <div class="p-5">
+            <h3 class="font-semibold text-xl">Omah Lay</h3>
+            <p class="text-sm text-gray-500 mb-2">Stanley Omah Didia · b. 1997 · Port Harcourt</p>
+            <p class="text-sm text-gray-700 mb-3">Afro-depression. Boy Alone. One of the most distinctive emotional voices in modern Afrobeats. Consistent streams and a lane that is entirely his.</p>
+            <div class="grid grid-cols-2 gap-2 text-sm mb-3">
+              <div><p class="metric-label">Biggest Achievements</p><p>Boy Alone, What Have We Done, massive streaming catalogue</p></div>
+              <div><p class="metric-label">Hobby</p><p>Music production, quiet time, writing</p></div>
+              <div><p class="metric-label">Show Fee</p><p>$40k – $120k</p></div>
+              <div><p class="metric-label">Est. Annual Earnings</p><p>$3–6M</p></div>
+            </div>
+            <p class="text-xs text-gray-500 border-t pt-2"><span class="font-medium text-black">Fun fact:</span> Started as a producer before stepping fully into the artist lane.</p>
+          </div>
+        </div>
+
+        <div class="border border-gray-200 overflow-hidden" id="olamide">
+          <div class="aspect-[16/10] bg-gray-200"><img src="olamide.jpg" alt="Olamide" class="artist-photo"></div>
+          <div class="p-5">
+            <h3 class="font-semibold text-xl">Olamide</h3>
+            <p class="text-sm text-gray-500 mb-2">Olamide Adedeji · b. 1989</p>
+            <p class="text-sm text-gray-700 mb-3">Street king. YBNL boss. Consistency for 15+ years. Launched Asake, Fireboy and a generation.</p>
+            <div class="grid grid-cols-2 gap-2 text-sm mb-3">
+              <div><p class="metric-label">Biggest Achievements</p><p>YBNL empire, Street OT, mentor to multiple stars</p></div>
+              <div><p class="metric-label">Hobby</p><p>Football, the streets, A&amp;R</p></div>
+              <div><p class="metric-label">Show Fee</p><p>$150k – $400k</p></div>
+              <div><p class="metric-label">Est. Annual Earnings</p><p>$5–10M+</p></div>
+            </div>
+            <p class="text-xs text-gray-500 border-t pt-2"><span class="font-medium text-black">Fun fact:</span> Still very much in the streets and the studio.</p>
+          </div>
+        </div>
+
+        <div class="border border-gray-200 overflow-hidden" id="tiwa">
+          <div class="aspect-[16/10] bg-gray-200"><img src="tiwa.jpg" alt="Tiwa Savage" class="artist-photo"></div>
+          <div class="p-5">
+            <h3 class="font-semibold text-xl">Tiwa Savage</h3>
+            <p class="text-sm text-gray-500 mb-2">Tiwatope Savage · b. 1980</p>
+            <p class="text-sm text-gray-700 mb-3">Longest-running female force in modern Afrobeats. Set the standard for women in the genre.</p>
+            <div class="grid grid-cols-2 gap-2 text-sm mb-3">
+              <div><p class="metric-label">Biggest Achievements</p><p>Once Upon a Time, R.E.D, Celia, enduring brand</p></div>
+              <div><p class="metric-label">Hobby</p><p>Fashion, motherhood, performance</p></div>
+              <div><p class="metric-label">Show Fee</p><p>$80k – $200k+</p></div>
+              <div><p class="metric-label">Est. Annual Earnings</p><p>$3–6M</p></div>
+            </div>
+            <p class="text-xs text-gray-500 border-t pt-2"><span class="font-medium text-black">Fun fact:</span> Trained at Berklee College of Music.</p>
+          </div>
+        </div>
+
+        <div class="border border-gray-200 overflow-hidden" id="2baba">
+          <div class="aspect-[16/10] bg-gray-200"><img src="2baba.jpg" alt="2Baba" class="artist-photo"></div>
+          <div class="p-5">
+            <h3 class="font-semibold text-xl">2Baba (2Face Idibia)</h3>
+            <p class="text-sm text-gray-500 mb-2">Innocent Ujah Idibia · b. 1975</p>
+            <p class="text-sm text-gray-700 mb-3">African Queen is still one of the most important songs in the genre. Bridged the old into the new.</p>
+            <div class="grid grid-cols-2 gap-2 text-sm mb-3">
+              <div><p class="metric-label">Biggest Achievements</p><p>African Queen, Grass 2 Grace, cultural elder status</p></div>
+              <div><p class="metric-label">Hobby</p><p>Family, activism, mentoring</p></div>
+              <div><p class="metric-label">Show Fee</p><p>$100k – $250k</p></div>
+              <div><p class="metric-label">Est. Annual Earnings</p><p>$2–5M</p></div>
+            </div>
+            <p class="text-xs text-gray-500 border-t pt-2"><span class="font-medium text-black">Fun fact:</span> African Queen still charts conversations two decades later.</p>
+          </div>
+        </div>
+
+        <div class="border border-gray-200 overflow-hidden" id="ayra">
+          <div class="aspect-[16/10] bg-gray-200"><img src="ayra.jpg" alt="Ayra Starr" class="artist-photo"></div>
+          <div class="p-5">
+            <h3 class="font-semibold text-xl">Ayra Starr</h3>
+            <p class="text-sm text-gray-500 mb-2">Oyinkansola Sarah Aderibigbe · b. 2002</p>
+            <p class="text-sm text-gray-700 mb-3">Mavin’s sharpest new-generation export. Fashion-runway presence and radio-dominant hooks.</p>
+            <div class="grid grid-cols-2 gap-2 text-sm mb-3">
+              <div><p class="metric-label">Biggest Achievements</p><p>Rush global breakthrough, strong monthly listeners</p></div>
+              <div><p class="metric-label">Hobby</p><p>Fashion, dance, creative direction</p></div>
+              <div><p class="metric-label">Show Fee</p><p>$50k – $150k+</p></div>
+              <div><p class="metric-label">Est. Annual Earnings</p><p>$3–5M</p></div>
+            </div>
+            <p class="text-xs text-gray-500 border-t pt-2"><span class="font-medium text-black">Fun fact:</span> Started as a model. Visual and sonic package is intentional.</p>
+          </div>
+        </div>
+
+        <div class="border border-gray-200 overflow-hidden" id="ckay">
+          <div class="aspect-[16/10] bg-gray-200"><img src="ckay.jpg" alt="CKay" class="artist-photo"></div>
+          <div class="p-5">
+            <h3 class="font-semibold text-xl">CKay</h3>
+            <p class="text-sm text-gray-500 mb-2">Chukwuka Ekweani · b. 1995</p>
+            <p class="text-sm text-gray-700 mb-3">Love Nwantiti became a global TikTok and streaming phenomenon. Proved slow-burners can dominate.</p>
+            <div class="grid grid-cols-2 gap-2 text-sm mb-3">
+              <div><p class="metric-label">Biggest Achievements</p><p>Love Nwantiti global smash, multi-platinum</p></div>
+              <div><p class="metric-label">Hobby</p><p>Production, melody craft</p></div>
+              <div><p class="metric-label">Show Fee</p><p>$40k – $120k</p></div>
+              <div><p class="metric-label">Est. Annual Earnings</p><p>$2–4M</p></div>
+            </div>
+            <p class="text-xs text-gray-500 border-t pt-2"><span class="font-medium text-black">Fun fact:</span> The song that broke him was years old before it exploded.</p>
+          </div>
+        </div>
+
+        <div class="border border-gray-200 overflow-hidden" id="seyivibez">
+          <div class="aspect-[16/10] bg-gray-200"><img src="seyivibez.jpg" alt="Seyi Vibez" class="artist-photo"></div>
+          <div class="p-5">
+            <h3 class="font-semibold text-xl">Seyi Vibez</h3>
+            <p class="text-sm text-gray-500 mb-2">Balogun Afolabi Oluwaloseyi · b. 2000</p>
+            <p class="text-sm text-gray-700 mb-3">Street-pop force. Dominates Audiomack and the Lagos streets.</p>
+            <div class="grid grid-cols-2 gap-2 text-sm mb-3">
+              <div><p class="metric-label">Biggest Achievements</p><p>Multiple street anthems, Audiomack dominance</p></div>
+              <div><p class="metric-label">Hobby</p><p>Fashion, the streets, freestyles</p></div>
+              <div><p class="metric-label">Show Fee</p><p>$30k – $100k</p></div>
+              <div><p class="metric-label">Est. Annual Earnings</p><p>$2–5M</p></div>
+            </div>
+            <p class="text-xs text-gray-500 border-t pt-2"><span class="font-medium text-black">Fun fact:</span> One of the purest current street voices.</p>
+          </div>
+        
+        <div class="border border-gray-200 overflow-hidden" id="fireboy">
+          <div class="aspect-[16/10] bg-gray-200"><img src="fireboy.jpg" alt="Fireboy DML" class="artist-photo"></div>
+          <div class="p-5">
+            <h3 class="font-semibold text-xl">Fireboy DML</h3>
+            <p class="text-sm text-gray-500 mb-2">Adedamola Adefolahan · b. 1996</p>
+            <p class="text-sm text-gray-700 mb-3">YBNL flagship voice. Peru became a global moment. Emotional Afrobeats storytelling with a distinctive tone.</p>
+            <div class="grid grid-cols-2 gap-2 text-sm mb-3">
+              <div><p class="metric-label">Biggest Achievements</p><p>Peru (Ed Sheeran remix), multiple YBNL albums, O2 shows</p></div>
+              <div><p class="metric-label">Hobby</p><p>Writing, football, quiet creative time</p></div>
+              <div><p class="metric-label">Show Fee</p><p>$50k – $150k</p></div>
+              <div><p class="metric-label">Est. Annual Earnings</p><p>$3–5M</p></div>
+            </div>
+            <p class="text-xs text-gray-500 border-t pt-2"><span class="font-medium text-black">Fun fact:</span> Signed to YBNL after Olamide heard his early demos.</p>
+          </div>
+        </div>
+
+        <div class="border border-gray-200 overflow-hidden" id="victony">
+          <div class="aspect-[16/10] bg-gray-200"><img src="victony.jpg" alt="Victony" class="artist-photo"></div>
+          <div class="p-5">
+            <h3 class="font-semibold text-xl">Victony</h3>
+            <p class="text-sm text-gray-500 mb-2">Anthony Victor · b. 2001</p>
+            <p class="text-sm text-gray-700 mb-3">One of the sharpest climbers in the Current chart. Street polish, strong features, and power-ranking heat.</p>
+            <div class="grid grid-cols-2 gap-2 text-sm mb-3">
+              <div><p class="metric-label">Biggest Achievements</p><p>Stubborn, Soweto remix energy, rapid power ranking rise</p></div>
+              <div><p class="metric-label">Hobby</p><p>Fashion, football, studio time</p></div>
+              <div><p class="metric-label">Show Fee</p><p>$25k – $80k</p></div>
+              <div><p class="metric-label">Est. Annual Earnings</p><p>$2–4M</p></div>
+            </div>
+            <p class="text-xs text-gray-500 border-t pt-2"><span class="font-medium text-black">Fun fact:</span> Survived a serious accident in 2021 and returned stronger.</p>
+          </div>
+        </div>
+
+        <div class="border border-gray-200 overflow-hidden" id="kizzdaniel">
+          <div class="aspect-[16/10] bg-gray-200"><img src="kizzdaniel.jpg" alt="Kizz Daniel" class="artist-photo"></div>
+          <div class="p-5">
+            <h3 class="font-semibold text-xl">Kizz Daniel</h3>
+            <p class="text-sm text-gray-500 mb-2">Oluwatobiloba Daniel Anidugbe · b. 1994</p>
+            <p class="text-sm text-gray-700 mb-3">Consistency king. Earworm hooks for a decade. Flyboy Inc. and a catalogue full of radio records.</p>
+            <div class="grid grid-cols-2 gap-2 text-sm mb-3">
+              <div><p class="metric-label">Biggest Achievements</p><p>Buga, Soft, multiple continental hits, Flyboy Inc</p></div>
+              <div><p class="metric-label">Hobby</p><p>Football, fashion, business</p></div>
+              <div><p class="metric-label">Show Fee</p><p>$60k – $150k</p></div>
+              <div><p class="metric-label">Est. Annual Earnings</p><p>$4–7M</p></div>
+            </div>
+            <p class="text-xs text-gray-500 border-t pt-2"><span class="font-medium text-black">Fun fact:</span> Left G-Worldwide to build Flyboy Inc independently.</p>
+          </div>
+        </div>
+
+        <div class="border border-gray-200 overflow-hidden" id="tyla">
+          <div class="aspect-[16/10] bg-gray-200"><img src="tyla.jpg" alt="Tyla" class="artist-photo"></div>
+          <div class="p-5">
+            <h3 class="font-semibold text-xl">Tyla</h3>
+            <p class="text-sm text-gray-500 mb-2">Tyla Laura Seethal · b. 2002 · Johannesburg</p>
+            <p class="text-sm text-gray-700 mb-3">Water became a global pop moment. South African star who crossed into mainstream Western charts with amapiano-pop energy.</p>
+            <div class="grid grid-cols-2 gap-2 text-sm mb-3">
+              <div><p class="metric-label">Biggest Achievements</p><p>Water viral global hit, Grammy attention, Hot 100 success</p></div>
+              <div><p class="metric-label">Hobby</p><p>Dance, fashion, performance craft</p></div>
+              <div><p class="metric-label">Show Fee</p><p>$50k – $200k+</p></div>
+              <div><p class="metric-label">Est. Annual Earnings</p><p>$5–12M</p></div>
+            </div>
+            <p class="text-xs text-gray-500 border-t pt-2"><span class="font-medium text-black">Fun fact:</span> Calls her sound “popiano” — pop meets amapiano.</p>
+          </div>
+        </div>
+
+        <div class="border border-gray-200 overflow-hidden" id="yemialade">
+          <div class="aspect-[16/10] bg-gray-200"><img src="yemialade.jpg" alt="Yemi Alade" class="artist-photo"></div>
+          <div class="p-5">
+            <h3 class="font-semibold text-xl">Yemi Alade</h3>
+            <p class="text-sm text-gray-500 mb-2">Yemi Eberechi Alade · b. 1989</p>
+            <p class="text-sm text-gray-700 mb-3">Johnny made her a continental star. One of Africa’s biggest female touring acts for years. Mama Africa energy.</p>
+            <div class="grid grid-cols-2 gap-2 text-sm mb-3">
+              <div><p class="metric-label">Biggest Achievements</p><p>Johnny, multiple AFRIMA awards, major continental tours</p></div>
+              <div><p class="metric-label">Hobby</p><p>Fashion, dance, advocacy</p></div>
+              <div><p class="metric-label">Show Fee</p><p>$50k – $150k</p></div>
+              <div><p class="metric-label">Est. Annual Earnings</p><p>$2–5M</p></div>
+            </div>
+            <p class="text-xs text-gray-500 border-t pt-2"><span class="font-medium text-black">Fun fact:</span> Studied geography at university before music fully took over.</p>
+          </div>
+        </div>
+
+        <div class="border border-gray-200 overflow-hidden" id="wandecoal">
+          <div class="aspect-[16/10] bg-gray-200"><img src="wandecoal.jpg" alt="Wande Coal" class="artist-photo"></div>
+          <div class="p-5">
+            <h3 class="font-semibold text-xl">Wande Coal</h3>
+            <p class="text-sm text-gray-500 mb-2">Oluwatobi Wande Ojosipe · b. 1985</p>
+            <p class="text-sm text-gray-700 mb-3">Mushin to Mo’ Hits. Bumper to Bumper era vocal blueprint. One of the purest voices of the modern Afrobeats foundation.</p>
+            <div class="grid grid-cols-2 gap-2 text-sm mb-3">
+              <div><p class="metric-label">Biggest Achievements</p><p>Mushin 2 Mo’ Hits, Bumper to Bumper, Come My Way</p></div>
+              <div><p class="metric-label">Hobby</p><p>Football, studio craft, family</p></div>
+              <div><p class="metric-label">Show Fee</p><p>$40k – $100k</p></div>
+              <div><p class="metric-label">Est. Annual Earnings</p><p>$1–3M</p></div>
+            </div>
+            <p class="text-xs text-gray-500 border-t pt-2"><span class="font-medium text-black">Fun fact:</span> Still regarded by many artists as a vocal reference point.</p>
+          </div>
+        </div>
+</div>
+
+      </div>
+    </section>
+
+
+    <!-- VS / COMPARE -->
+    <section id="vs" class="tab-content max-w-6xl mx-auto px-4 py-10">
+      <div class="vs-shell">
+        <div class="vs-intro">
+          <h2 class="serif text-3xl sm:text-4xl mb-1">Head to Head</h2>
+          <p>Pick any two artists from the Current 50 and see them side by side — streams, listeners, score, and the community's pick.</p>
+        </div>
+        <div class="vs-picker">
+          <div class="vs-picker-field">
+            <label for="vs-select-a">Artist A</label>
+            <select id="vs-select-a"></select>
+          </div>
+          <div class="vs-versus-mark" aria-hidden="true">VS</div>
+          <div class="vs-picker-field">
+            <label for="vs-select-b">Artist B</label>
+            <select id="vs-select-b"></select>
+          </div>
+          <div class="vs-picker-actions">
+            <button class="vs-random" type="button" id="vs-random-btn">Surprise me</button>
+            <button class="vs-share" type="button" id="vs-share-btn">Copy link to this matchup</button>
+          </div>
+        </div>
+        <div id="vs-output"></div>
+      </div>
+    </section>
+
+    <!-- NET WORTH -->
+    <section id="networth" class="tab-content max-w-6xl mx-auto px-4 py-10">
+      <h2 class="serif text-3xl sm:text-4xl mb-2">Net Worth Index</h2>
+      <p class="text-sm text-gray-500 mb-6">Estimated 2026 figures. Ranges from public reports.</p>
+      <div class="overflow-x-auto">
+        <table class="w-full text-sm">
+          <thead><tr class="border-b-2 border-black text-left">
+            <th class="py-3 pr-4">#</th><th class="py-3 pr-4">Artist</th><th class="py-3 pr-4">Est. Net Worth</th><th class="py-3 hidden sm:table-cell">Primary Drivers</th>
+          </tr></thead>
+          <tbody class="divide-y">
+            <tr><td class="py-3 pr-4 serif text-lg text-[#0047ff]">1</td><td class="py-3 pr-4 font-medium">Wizkid</td><td class="py-3 pr-4">$50–89M</td><td class="py-3 text-gray-500 hidden sm:table-cell">Catalogue, tours, endorsements</td></tr>
+            <tr><td class="py-3 pr-4 serif text-lg text-[#0047ff]">2</td><td class="py-3 pr-4 font-medium">Davido</td><td class="py-3 pr-4">$45–80M</td><td class="py-3 text-gray-500 hidden sm:table-cell">Tours, brand deals, music</td></tr>
+            <tr><td class="py-3 pr-4 serif text-lg text-[#0047ff]">3</td><td class="py-3 pr-4 font-medium">Burna Boy</td><td class="py-3 pr-4">$40–60M</td><td class="py-3 text-gray-500 hidden sm:table-cell">Stadium tours, streams, fashion</td></tr>
+            <tr><td class="py-3 pr-4 serif text-lg text-[#0047ff]">4</td><td class="py-3 pr-4 font-medium">Don Jazzy</td><td class="py-3 pr-4">$35–50M</td><td class="py-3 text-gray-500 hidden sm:table-cell">Mavin empire</td></tr>
+            <tr><td class="py-3 pr-4 serif text-lg text-[#0047ff]">5</td><td class="py-3 pr-4 font-medium">Olamide</td><td class="py-3 pr-4">$15–35M</td><td class="py-3 text-gray-500 hidden sm:table-cell">YBNL, business</td></tr>
+            <tr><td class="py-3 pr-4 serif text-lg text-[#0047ff]">6</td><td class="py-3 pr-4 font-medium">Rema</td><td class="py-3 pr-4">$18–25M</td><td class="py-3 text-gray-500 hidden sm:table-cell">Calm Down royalties, tours</td></tr>
+            <tr><td class="py-3 pr-4 serif text-lg text-[#0047ff]">7</td><td class="py-3 pr-4 font-medium">Tiwa Savage</td><td class="py-3 pr-4">$10–15M</td><td class="py-3 text-gray-500 hidden sm:table-cell">Longevity, endorsements</td></tr>
+            <tr><td class="py-3 pr-4 serif text-lg text-[#0047ff]">8</td><td class="py-3 pr-4 font-medium">Asake</td><td class="py-3 pr-4">$8–15M</td><td class="py-3 text-gray-500 hidden sm:table-cell">Rapid rise, tours</td></tr>
+            <tr><td class="py-3 pr-4 serif text-lg text-[#0047ff]">9</td><td class="py-3 pr-4 font-medium">Tems</td><td class="py-3 pr-4">$8–12M</td><td class="py-3 text-gray-500 hidden sm:table-cell">Streams, features</td></tr>
+            <tr><td class="py-3 pr-4 serif text-lg text-[#0047ff]">10</td><td class="py-3 pr-4 font-medium">2Baba</td><td class="py-3 pr-4">$11–15M</td><td class="py-3 text-gray-500 hidden sm:table-cell">Legacy catalogue</td></tr>
+            <tr><td class="py-3 pr-4 serif text-lg text-[#0047ff]">11</td><td class="py-3 pr-4 font-medium">Omah Lay</td><td class="py-3 pr-4">$3–6M</td><td class="py-3 text-gray-500 hidden sm:table-cell">Boy Alone, streaming catalogue</td></tr>
+            <tr><td class="py-3 pr-4 serif text-lg text-[#0047ff]">12</td><td class="py-3 pr-4 font-medium">Ayra Starr</td><td class="py-3 pr-4">$5–10M</td><td class="py-3 text-gray-500 hidden sm:table-cell">Breakthrough, deals</td></tr>
+            <tr><td class="py-3 pr-4 serif text-lg text-[#0047ff]">13</td><td class="py-3 pr-4 font-medium">Fireboy DML</td><td class="py-3 pr-4">$4–8M</td><td class="py-3 text-gray-500 hidden sm:table-cell">Peru, YBNL</td></tr>
+            <tr><td class="py-3 pr-4 serif text-lg text-[#0047ff]">14</td><td class="py-3 pr-4 font-medium">Kizz Daniel</td><td class="py-3 pr-4">$5–9M</td><td class="py-3 text-gray-500 hidden sm:table-cell">Hit consistency</td></tr>
+            <tr><td class="py-3 pr-4 serif text-lg text-[#0047ff]">15</td><td class="py-3 pr-4 font-medium">CKay</td><td class="py-3 pr-4">$4–7M</td><td class="py-3 text-gray-500 hidden sm:table-cell">Love Nwantiti royalties</td></tr>
+            <tr><td class="py-3 pr-4 serif text-lg text-[#0047ff]">16</td><td class="py-3 pr-4 font-medium">Seyi Vibez</td><td class="py-3 pr-4">$3–6M</td><td class="py-3 text-gray-500 hidden sm:table-cell">Audiomack, street heat</td></tr>
+            <tr><td class="py-3 pr-4 serif text-lg text-[#0047ff]">17</td><td class="py-3 pr-4 font-medium">Victony</td><td class="py-3 pr-4">$2–5M</td><td class="py-3 text-gray-500 hidden sm:table-cell">Rising power ranking</td></tr>
+            <tr><td class="py-3 pr-4 serif text-lg text-[#0047ff]">18</td><td class="py-3 pr-4 font-medium">Tyla</td><td class="py-3 pr-4">$5–12M</td><td class="py-3 text-gray-500 hidden sm:table-cell">Water global breakthrough</td></tr>
+            <tr><td class="py-3 pr-4 serif text-lg text-[#0047ff]">19</td><td class="py-3 pr-4 font-medium">Diamond Platnumz</td><td class="py-3 pr-4">$10–18M</td><td class="py-3 text-gray-500 hidden sm:table-cell">Wasafi empire</td></tr>
+            <tr><td class="py-3 pr-4 serif text-lg text-[#0047ff]">20</td><td class="py-3 pr-4 font-medium">Sarkodie</td><td class="py-3 pr-4">$8–15M</td><td class="py-3 text-gray-500 hidden sm:table-cell">Ghana longevity</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- DISCUSSION -->
+    <section id="discuss" class="tab-content max-w-6xl mx-auto px-4 py-10">
+      <h2 class="serif text-3xl sm:text-4xl mb-4">Discussion</h2>
+      <div class="max-w-3xl space-y-4 text-gray-700 text-sm sm:text-base leading-relaxed">
+        <p>The All-Time list ignores streams on purpose. Spotify did not exist when Fela, 2Baba and P-Square defined the sound. The nine-metric formula works across eras without platform data that only the modern generation has.</p>
+        <p>The Big 3 sit joint #1 because each owns a different part of the modern story: Burna the albums and stadiums, Davido the hits and the army, Wizkid the cool and the catalogue.</p>
+        <p>Current uses the exact same nine metrics as All-Time, then adds Streams as a 10th metric. That is the only difference. Newer acts with heavy platform numbers move up; legacy weight still counts.</p>
+        <p>Omah Lay is included with a full profile — Boy Alone and the emotional lane he owns are part of the modern story.</p>
+      </div>
+    </section>
+
+    <!-- METHOD -->
+    <section id="method" class="tab-content max-w-6xl mx-auto px-4 py-10">
+      <h2 class="serif text-3xl sm:text-4xl mb-6">Method</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div>
+          <h3 class="font-semibold text-lg mb-3">All-Time (no streams)</h3>
+          <div class="border-t text-sm space-y-0">
+            <div class="flex justify-between py-2 border-b"><span class="text-[#0047ff]">01</span><span>Impact &amp; legacy 18%</span></div>
+            <div class="flex justify-between py-2 border-b"><span class="text-[#0047ff]">02</span><span>Global reach 15%</span></div>
+            <div class="flex justify-between py-2 border-b"><span class="text-[#0047ff]">03</span><span>Discography 14%</span></div>
+            <div class="flex justify-between py-2 border-b"><span class="text-[#0047ff]">04</span><span>Commercial power 14%</span></div>
+            <div class="flex justify-between py-2 border-b"><span class="text-[#0047ff]">05</span><span>Awards 10%</span></div>
+            <div class="flex justify-between py-2 border-b"><span class="text-[#0047ff]">06</span><span>Cultural influence 10%</span></div>
+            <div class="flex justify-between py-2 border-b"><span class="text-[#0047ff]">07</span><span>Longevity 8%</span></div>
+            <div class="flex justify-between py-2 border-b"><span class="text-[#0047ff]">08</span><span>Live performance 6%</span></div>
+            <div class="flex justify-between py-2 border-b"><span class="text-[#0047ff]">09</span><span>Feature impact 5%</span></div>
+          </div>
+          <p class="text-xs text-gray-500 mt-3">Streams excluded so the formula stays fair across generations.</p>
+        </div>
+        <div>
+          <h3 class="font-semibold text-lg mb-3">Current (same metrics + streams)</h3>
+          <div class="border-t text-sm">
+            <div class="flex justify-between py-2 border-b"><span class="text-[#0047ff]">01</span><span>Impact &amp; legacy 16%</span></div>
+            <div class="flex justify-between py-2 border-b"><span class="text-[#0047ff]">02</span><span>Global reach 14%</span></div>
+            <div class="flex justify-between py-2 border-b"><span class="text-[#0047ff]">03</span><span>Discography 12%</span></div>
+            <div class="flex justify-between py-2 border-b"><span class="text-[#0047ff]">04</span><span>Commercial power 12%</span></div>
+            <div class="flex justify-between py-2 border-b"><span class="text-[#0047ff]">05</span><span>Awards 9%</span></div>
+            <div class="flex justify-between py-2 border-b"><span class="text-[#0047ff]">06</span><span>Cultural influence 9%</span></div>
+            <div class="flex justify-between py-2 border-b"><span class="text-[#0047ff]">07</span><span>Longevity 7%</span></div>
+            <div class="flex justify-between py-2 border-b"><span class="text-[#0047ff]">08</span><span>Live performance 6%</span></div>
+            <div class="flex justify-between py-2 border-b"><span class="text-[#0047ff]">09</span><span>Feature impact 5%</span></div>
+            <div class="flex justify-between py-2 border-b"><span class="text-[#0047ff]">10</span><span class="font-medium">Streams 10%</span></div>
+          </div>
+          <p class="text-xs text-gray-500 mt-3">Same core formula as All-Time. Streams (Spotify, Boomplay, Audiomack, YouTube) added as the 10th metric.</p>
+        </div>
+      </div>
+      <div class="yearly-method mt-10">
+        <h3 class="font-semibold text-lg mb-2">Calendar-year album &amp; song lists</h3>
+        <p class="text-sm text-gray-700"><strong>Eligibility:</strong> any album or song with meaningful streaming activity during the selected calendar year qualifies, regardless of release date. A 2025 release still climbing in 2026 is therefore eligible. Each entry stores an explicit year so prior editions can be archived instead of overwritten.</p>
+        <p class="text-sm text-gray-700 mt-3"><strong>Albums:</strong> global Spotify project totals reported by Kworb, ordered strictly by <code>streams_this_year</code>. <strong>Songs:</strong> Spotify Nigeria Top-200 chart streams, also ordered strictly by <code>streams_this_year</code>. YouTube is an auxiliary song signal when an official video can be mapped, not part of the ranking. Boomplay is excluded at release level until a consistent public ledger is available.</p>
+        <p class="text-sm text-gray-700 mt-3"><strong>Refresh:</strong> weekly. Each row carries its own verification timestamp, and the leaderboard header shows the newest successful update.</p>
+      </div>
+      <div class="yearly-method mt-6">
+        <h3 class="font-semibold text-lg mb-2">Awards &amp; certifications audit</h3>
+        <p class="text-sm text-gray-700"><strong>Awards:</strong> Wikipedia’s artist award table or dedicated “awards and nominations” list is used as the coverage guide. Where that guide publishes totals by award body, AFR/INDEX displays the complete body-level ledger plus total wins and nominations; individual highlighted results retain a direct source link. Wikipedia is a discovery guide, not the final authority.</p>
+        <p class="text-sm text-gray-700 mt-3"><strong>Certifications:</strong> only Gold, Platinum, Multi-Platinum or Diamond entries matched to public recording-body registers are displayed. RIAA, BPI, Music Canada and SNEP register links remain visible on every profile, including profiles with no matched plaque in the current snapshot. Markets use different thresholds, so certifications are never combined into one global total.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-black mt-8 py-8 text-center text-xs text-gray-500">
+    <p>AFR/INDEX · 2026 · Full 50 All-Time · Full 50 Current · Albums · Real photos · Omah Lay included</p>
+  </footer>
+
+  <script src="assets/inline-02.js"></script>
+  <script src="assets/inline-03.js"></script>
+<script src="assets/inline-04.js"></script>
+<script src="assets/inline-05.js"></script>
+
+<script src="assets/inline-06.js"></script>
+
+<script src="assets/inline-07.js"></script>
+<script src="assets/inline-08.js"></script>
+
+<script src="assets/inline-09.js"></script>
+
+<script src="assets/inline-10.js"></script>
+
+<script src="assets/inline-11.js"></script>
+
+<script src="assets/inline-12.js"></script>
+<script src="refresh-2026-streams.js"></script>
+<script src="refresh-2026-09-14.js"></script>
+<script src="music-receipt-config.js"></script>
+<script src="receipt-insights.js"></script>
+<script src="history-summary.js" defer></script>
+<script src="music-receipt.js"></script>
+<script src="receipt-store.js"></script>
+<script src="roadmap-nav.js"></script>
+<script src="yearbook-2018.js"></script>
+</body>
+</html>
