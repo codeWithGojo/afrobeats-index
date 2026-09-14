@@ -293,7 +293,7 @@
       <div class="freshness-grid">
         <div class="sync-status">
           <span class="sync-state"><span class="live-dot" aria-hidden="true"></span>Index status <span class="status-pill">LIVE · VERIFIED SNAPSHOT</span></span>
-          <span>Last successful data sync · 07 Sep 2026 · 01:00 WAT</span>
+          <span>Last successful data sync · 14 Sep 2026 · 08:38 WAT</span>
         </div>
         <div class="update-stamp">
           <div class="update-pair">
