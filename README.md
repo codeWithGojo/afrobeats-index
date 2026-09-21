@@ -19,7 +19,7 @@ https://afrobeats-index.vercel.app/
 
 ## Data note
 
-Spotify figures are an editorial snapshot dated 7 September 2026. Monthly listeners and tracked catalogue totals change daily; the final ranking combines those signals with nine qualitative and career metrics.
+Spotify figures are an editorial snapshot checked on 21 September 2026. Kworb's latest available artist-ledger dates range from 18–20 September. Monthly listeners use each publisher's latest returned value; unavailable providers retain the prior verified value rather than becoming zero. The final ranking combines those signals with nine qualitative and career metrics.
 
 ## Music Receipt platform setup
 

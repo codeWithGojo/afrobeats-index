@@ -146,7 +146,7 @@
 
     const note = document.createElement("aside");
     note.className = "stream-source-note";
-    note.innerHTML = `<span class="live-dot" aria-hidden="true"></span><p><strong>Data desk · 28 Aug 2026.</strong> Monthly listeners are rolling Spotify audiences; catalogue streams are cumulative tracked totals. Both move daily and are evidence inside the Current formula, not the whole verdict. Portraits use public Spotify artist imagery; image rights remain with the artists and rights-holders. <a href="https://www.musicmetricsvault.com/genres/afrobeats/109" target="_blank" rel="noopener noreferrer">Monthly source ↗</a> <a href="https://kworb.net/spotify/" target="_blank" rel="noopener noreferrer">Stream source ↗</a></p>`;
+    note.innerHTML = `<span class="live-dot" aria-hidden="true"></span><p><strong>Data desk · 21 Sep 2026.</strong> Monthly listeners are rolling Spotify audiences; catalogue streams are cumulative tracked totals. Both move daily and are evidence inside the Current formula, not the whole verdict. Portraits use public Spotify artist imagery; image rights remain with the artists and rights-holders. <a href="https://www.musicmetricsvault.com/genres/afrobeats/109" target="_blank" rel="noopener noreferrer">Monthly source ↗</a> <a href="https://kworb.net/spotify/" target="_blank" rel="noopener noreferrer">Stream source ↗</a></p>`;
     list.insertAdjacentElement("afterend", note);
 
     list.addEventListener("click", (event) => {
@@ -293,12 +293,12 @@
       <div class="freshness-grid">
         <div class="sync-status">
           <span class="sync-state"><span class="live-dot" aria-hidden="true"></span>Index status <span class="status-pill">LIVE · VERIFIED SNAPSHOT</span></span>
-          <span>Last successful data sync · 14 Sep 2026 · 08:38 WAT</span>
+          <span>Last successful data sync · 21 Sep 2026 · 08:06 WAT</span>
         </div>
         <div class="update-stamp">
           <div class="update-pair">
             <div><p class="eyebrow" id="freshness-title">Last updated</p><p class="update-date"><time datetime="2026-08-28">28 Aug<br>2026</time></p></div>
-            <div><p class="eyebrow">Next refresh</p><p class="next-refresh"><time datetime="2026-09-14">14 Sep<br>2026</time></p></div>
+            <div><p class="eyebrow">Next refresh</p><p class="next-refresh"><time datetime="2026-09-21">21 Sep<br>2026</time></p></div>
           </div>
           <p class="update-meta">Current chart · Weekly editorial cadence</p>
         </div>
