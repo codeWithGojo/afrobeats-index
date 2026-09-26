@@ -1038,6 +1038,7 @@ footer {
     @media(max-width:600px){.scope-rail{grid-template-columns:1fr}.scope-rail div{display:flex;align-items:baseline;justify-content:space-between;padding:13px 15px}.scope-rail strong{font-size:21px}.sync-status{align-items:flex-start;flex-direction:column}.update-pair{grid-template-columns:1fr}.update-pair>div+div{border-left:0;border-top:1px solid var(--uk-line);padding:14px 0 0}.weekly-log li{grid-template-columns:5.7rem minmax(0,1fr);padding-left:10px}.metric-group-list{grid-template-columns:1fr}.methodology-actions{align-items:flex-start;flex-direction:column;gap:12px}}
   </style>
   <link rel="stylesheet" href="music-receipt.css">
+  <link rel="stylesheet" href="ui-refresh.css">
 </head>
 <body class="antialiased bg-white text-black">
   <div class="masthead-kicker bg-black text-white text-[10px] sm:text-xs tracking-widest uppercase py-2 px-4 flex justify-between">
@@ -1046,44 +1047,34 @@ footer {
   <header class="border-b border-black sticky top-0 z-50 bg-white">
     <div class="max-w-6xl mx-auto px-4">
       <div class="flex items-center justify-between h-14">
-        <a href="#" onclick="showTab('alltime'); return false;" class="brand-lockup" aria-label="AFR/INDEX home"><img src="afr-index-wordmark-lockup.svg" alt="AFR/INDEX"></a>
-        <nav class="hidden md:flex text-sm font-medium nav-scroll">
-          <button onclick="showTab('current')" class="nav-btn nav-active px-3 py-4">CURRENT 50</button>
-          <button onclick="showTab('receipt')" class="nav-btn px-3 py-4 hover:bg-gray-50">MUSIC RECEIPT</button>
-          <button onclick="showTab('alltime')" class="nav-btn px-3 py-4 hover:bg-gray-50">ALL-TIME 50</button>
-          <button onclick="showTab('regions')" class="nav-btn px-3 py-4 hover:bg-gray-50">REGIONS</button>
-          <button onclick="showTab('underground')" class="nav-btn px-3 py-4">UNDERGROUND</button>
-          <button onclick="showTab('albums')" class="nav-btn px-3 py-4 hover:bg-gray-50">ALBUMS</button>
-          <button onclick="showTab('yearly')" class="nav-btn px-3 py-4 hover:bg-gray-50">2026 STREAMS</button>
-          <button onclick="showTab('artists')" class="nav-btn px-3 py-4 hover:bg-gray-50">ARTISTS</button>
-          <button onclick="showTab('vs')" class="nav-btn px-3 py-4 hover:bg-gray-50">VS</button>
-          <button onclick="showTab('networth')" class="nav-btn px-3 py-4 hover:bg-gray-50">NET WORTH</button>
-          <button onclick="showTab('discuss')" class="nav-btn px-3 py-4 hover:bg-gray-50">DISCUSSION</button>
-          <button onclick="showTab('method')" class="nav-btn px-3 py-4 hover:bg-gray-50">METHOD</button>
-          <button onclick="showTab('top100')" class="nav-btn px-3 py-4 hover:bg-gray-50">TOP 100</button>
-          <button onclick="showTab('news')" class="nav-btn px-3 py-4 hover:bg-gray-50">NEWS</button>
+        <a href="#" onclick="showTab('current'); return false;" class="brand-lockup" aria-label="AFR/INDEX home"><img src="afr-index-wordmark-lockup.svg" alt="AFR/INDEX"></a>
+        <nav class="primary-nav nav-scroll" aria-label="Explore Afri Index">
+          <button onclick="showTab('current')" class="nav-btn nav-active" data-tab="current">Current 50</button>
+          <button onclick="showTab('alltime')" class="nav-btn" data-tab="alltime">All-Time 50</button>
+          <button onclick="showTab('receipt')" class="nav-btn" data-tab="receipt">Music Receipt</button>
+          <button onclick="showTab('yearly')" class="nav-btn" data-tab="yearly">2026 Streams</button>
+          <button onclick="showTab('artists')" class="nav-btn" data-tab="artists">Artists</button>
+          <details class="more-menu" id="more-menu"><summary>Explore more <span aria-hidden="true">⌄</span></summary>
+            <div class="more-panel" id="more-nav">
+              <button onclick="showTab('regions')" class="nav-btn" data-tab="regions">Regions</button>
+              <button onclick="showTab('underground')" class="nav-btn" data-tab="underground">Underground</button>
+              <button onclick="showTab('albums')" class="nav-btn" data-tab="albums">Albums</button>
+              <button onclick="showTab('vs')" class="nav-btn" data-tab="vs">Artist vs Artist</button>
+              <button onclick="showTab('networth')" class="nav-btn" data-tab="networth">Net Worth</button>
+              <button onclick="showTab('discuss')" class="nav-btn" data-tab="discuss">Discussion</button>
+              <button onclick="showTab('method')" class="nav-btn" data-tab="method">Method</button>
+              <button onclick="showTab('top100')" class="nav-btn" data-tab="top100">Nigeria Top 100</button>
+              <button onclick="showTab('news')" class="nav-btn" data-tab="news">News</button>
+              <button onclick="showTab('yearly')" class="nav-btn more-mobile-only" data-tab="yearly">2026 Streams</button>
+              <button onclick="showTab('artists')" class="nav-btn more-mobile-only" data-tab="artists">Artists</button>
+            </div>
+          </details>
         </nav>
         <div class="global-search" role="search">
           <label class="sr-only" for="artist-global-search">Search artists</label>
           <input id="artist-global-search" type="search" placeholder="Search artists…" autocomplete="off">
           <div id="artist-search-results" class="search-results" role="listbox"></div>
         </div>
-      </div>
-      <div class="flex md:hidden overflow-x-auto gap-1 pb-2 nav-scroll" style="scrollbar-width:none">
-        <button onclick="showTab('current')" class="nav-btn nav-active px-3 py-1.5 text-xs font-medium whitespace-nowrap">CURRENT</button>
-        <button onclick="showTab('receipt')" class="nav-btn px-3 py-1.5 text-xs font-medium whitespace-nowrap bg-gray-100">RECEIPT</button>
-        <button onclick="showTab('alltime')" class="nav-btn px-3 py-1.5 text-xs font-medium whitespace-nowrap bg-gray-100">ALL-TIME</button>
-        <button onclick="showTab('regions')" class="nav-btn px-3 py-1.5 text-xs font-medium whitespace-nowrap bg-gray-100">REGIONS</button>
-        <button onclick="showTab('underground')" class="nav-btn px-3 py-1.5 text-xs font-medium whitespace-nowrap bg-gray-100">UNDERGROUND</button>
-        <button onclick="showTab('albums')" class="nav-btn px-3 py-1.5 text-xs font-medium whitespace-nowrap bg-gray-100">ALBUMS</button>
-        <button onclick="showTab('yearly')" class="nav-btn px-3 py-1.5 text-xs font-medium whitespace-nowrap bg-gray-100">2026 STREAMS</button>
-        <button onclick="showTab('artists')" class="nav-btn px-3 py-1.5 text-xs font-medium whitespace-nowrap bg-gray-100">ARTISTS</button>
-        <button onclick="showTab('vs')" class="nav-btn px-3 py-1.5 text-xs font-medium whitespace-nowrap bg-gray-100">VS</button>
-        <button onclick="showTab('networth')" class="nav-btn px-3 py-1.5 text-xs font-medium whitespace-nowrap bg-gray-100">NET WORTH</button>
-        <button onclick="showTab('discuss')" class="nav-btn px-3 py-1.5 text-xs font-medium whitespace-nowrap bg-gray-100">DISCUSS</button>
-        <button onclick="showTab('method')" class="nav-btn px-3 py-1.5 text-xs font-medium whitespace-nowrap bg-gray-100">METHOD</button>
-        <button onclick="showTab('top100')" class="nav-btn px-3 py-1.5 text-xs font-medium whitespace-nowrap bg-gray-100">TOP 100</button>
-        <button onclick="showTab('news')" class="nav-btn px-3 py-1.5 text-xs font-medium whitespace-nowrap bg-gray-100">NEWS</button>
       </div>
     </div>
   </header>
@@ -1094,7 +1085,8 @@ footer {
         <div class="index-hero-copy">
           <p class="index-eyebrow">Independent, sourced, pan-African</p>
           <h1>The Afrobeats<br>Index.</h1>
-          <p>Two definitive rankings built for scrutiny: 50 All-Time artists, 50 Current artists and a transparent 11-metric formula.</p>
+          <p>Where African music stands now. Explore the Current 50, trace the all-time greats, and see the evidence behind every placement.</p>
+          <a class="hero-action" href="#current" onclick="showTab('current'); document.getElementById('current').scrollIntoView({behavior:'smooth'}); return false;">Explore the Current 50 <span aria-hidden="true">↗</span></a>
           <div class="scope-rail" aria-label="Index scope">
             <div><span>All-Time</span><strong>50 artists</strong></div>
             <div><span>Current</span><strong>50 artists</strong></div>
@@ -3507,5 +3499,6 @@ footer {
 <script src="receipt-store.js"></script>
 <script src="roadmap-nav.js"></script>
 <script src="yearbook-2018.js"></script>
+<script src="ui-refresh.js"></script>
 </body>
 </html>
