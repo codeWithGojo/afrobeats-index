@@ -1051,11 +1051,12 @@ footer {
         <nav class="primary-nav nav-scroll" aria-label="Explore Afri Index">
           <button onclick="showTab('current')" class="nav-btn nav-active" data-tab="current">Current 50</button>
           <button onclick="showTab('alltime')" class="nav-btn" data-tab="alltime">All-Time 50</button>
-          <button onclick="showTab('receipt')" class="nav-btn" data-tab="receipt">Music Receipt</button>
+          <button onclick="showTab('receipt')" class="nav-btn" data-tab="receipt" aria-label="Music Receipt"><span class="nav-label-desktop">Music </span>Receipt</button>
           <button onclick="showTab('yearly')" class="nav-btn" data-tab="yearly">2026 Streams</button>
           <button onclick="showTab('artists')" class="nav-btn" data-tab="artists">Artists</button>
-          <details class="more-menu" id="more-menu"><summary>Explore more <span aria-hidden="true">⌄</span></summary>
+          <details class="more-menu" id="more-menu"><summary aria-label="Explore more"><span class="nav-label-desktop">Explore more</span><span class="nav-label-mobile">More</span><span aria-hidden="true">⌄</span></summary>
             <div class="more-panel" id="more-nav">
+              <button onclick="showTab('alltime')" class="nav-btn more-mobile-only" data-tab="alltime">All-Time 50</button>
               <button onclick="showTab('regions')" class="nav-btn" data-tab="regions">Regions</button>
               <button onclick="showTab('underground')" class="nav-btn" data-tab="underground">Underground</button>
               <button onclick="showTab('albums')" class="nav-btn" data-tab="albums">Albums</button>
