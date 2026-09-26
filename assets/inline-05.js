@@ -225,9 +225,12 @@
         rail.className = "methodology-rail";
         rail.innerHTML = `<p><strong>How the Current score works</strong>Cross-era evidence keeps the ranking grounded; Spotify catalogue streams and monthly listeners measure present scale without controlling the result.</p><div class="methodology-actions"><button class="methodology-link" type="button" data-method-link>Read full method</button><button class="compare-text" type="button" data-compare-toggle aria-expanded="false">Compare eras ↗</button></div>`;
         rail.querySelector("[data-method-link]").addEventListener("click", () => showTab("method"));
+        const disclosure = document.createElement("details");
+        disclosure.className = "method-disclosure";
+        disclosure.innerHTML = `<summary><span><strong>How this ranking is scored</strong><small>11 weighted signals · sourced artist files</small></span><span aria-hidden="true">+</span></summary>`;
+        disclosure.append(audit, rail);
         const description = section.querySelector("h2 + p");
-        description?.insertAdjacentElement("afterend", audit);
-        audit.insertAdjacentElement("afterend", rail);
+        description?.insertAdjacentElement("afterend", disclosure);
         return;
       }
       const strip = document.createElement("div");
@@ -290,32 +293,16 @@
     module.className = "freshness-module";
     module.setAttribute("aria-labelledby", "freshness-title");
     module.innerHTML = `
-      <div class="freshness-grid">
-        <div class="sync-status">
-          <span class="sync-state"><span class="live-dot" aria-hidden="true"></span>Index status <span class="status-pill">LIVE · VERIFIED SNAPSHOT</span></span>
-          <span>Last successful data sync · 21 Sep 2026 · 08:06 WAT</span>
-        </div>
-        <div class="update-stamp">
-          <div class="update-pair">
-            <div><p class="eyebrow" id="freshness-title">Last updated</p><p class="update-date"><time datetime="2026-08-28">28 Aug<br>2026</time></p></div>
-            <div><p class="eyebrow">Next refresh</p><p class="next-refresh"><time datetime="2026-09-21">21 Sep<br>2026</time></p></div>
-          </div>
-          <p class="update-meta">Current chart · Weekly editorial cadence</p>
-        </div>
-        <div class="weekly-log">
-          <div class="weekly-log-head">
-            <p class="eyebrow">Update ledger</p>
-          </div>
-          <ul>
-            <li><span>07 SEP 2026</span><span><strong>All 50 Spotify artist ledgers and the Nigeria Top 100 were refreshed</strong> from their live source pages.</span></li>
-            <li><span>28 AUG 2026</span><span><strong>Tems, Rema and Tyla moved into the top four</strong> after the full data refresh.</span></li>
-            <li><span>28 AUG 2026</span><span><strong>JAZZWRLD, CIZA and Shoday entered</strong> a broader pan-African Current list.</span></li>
-          </ul>
-          <div class="chart-tools">
-            <p class="eyebrow">Every published change leaves a dated trail.</p>
-            <button class="compare-text" type="button" data-compare-toggle aria-expanded="false">Compare eras ↗</button>
-          </div>
-        </div>
+      <div class="freshness-bar">
+        <span class="sync-state"><span class="live-dot" aria-hidden="true"></span><strong id="freshness-title">Current edition</strong><span>Data snapshot · <time datetime="2026-09-21">21 Sep 2026</time></span></span>
+        <div class="freshness-actions"><button class="compare-text" type="button" data-compare-toggle aria-expanded="false">Compare eras ↗</button>
+          <details class="update-details"><summary>Update notes <span aria-hidden="true">⌄</span></summary>
+            <div class="weekly-log"><p class="eyebrow">Update ledger</p><ul>
+              <li><span>21 SEP 2026</span><span>Latest successful data snapshot.</span></li>
+              <li><span>07 SEP 2026</span><span>All 50 Spotify artist ledgers and the Nigeria Top 100 were refreshed from their live source pages.</span></li>
+              <li><span>28 AUG 2026</span><span>Tems, Rema and Tyla moved into the top four; JAZZWRLD, CIZA and Shoday entered the Current list.</span></li>
+            </ul></div>
+          </details></div>
       </div>`;
     hero.insertAdjacentElement("afterend", module);
   }
@@ -502,7 +489,7 @@
     enhanceTabs();
     document.addEventListener("click", () => document.querySelectorAll(".tip-open").forEach((node) => node.classList.remove("tip-open")));
     const edition = document.querySelector("body > div:first-child span:last-child");
-    if (edition) edition.textContent = "Living index · Updated 28 Aug 2026";
+    if (edition) edition.textContent = "Living index · Updated 21 Sep 2026";
   }
 
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
