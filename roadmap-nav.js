@@ -4,7 +4,7 @@
  const original=window.showTab;if(original)window.showTab=function(id){original(id);const url=new URL(location.href);url.searchParams.set('tab',id);history.replaceState({},'',url);};
  if('serviceWorker'in navigator)navigator.serviceWorker.register('/sw.js').catch(()=>{});
  const destinations=[['/boards','BOARDS'],['/calendar/awards','AWARDS'],['/calendar/live','LIVE'],['/account','MY BOARD'],['/studio/sandbox','SANDBOX']];
- const nav=document.querySelector('.nav-scroll');if(nav)for(const [href,title] of destinations){const a=document.createElement('a');a.href=href;a.textContent=title+' ↗';a.className='nav-btn';nav.append(a);}
+ const nav=document.getElementById('more-nav');if(nav)for(const [href,title] of destinations){const a=document.createElement('a');a.href=href;a.textContent=title+' ↗';a.className='nav-destination';nav.append(a);}
  const params=new URLSearchParams(location.search);if(params.get('tab')&&document.getElementById(params.get('tab')))window.showTab?.(params.get('tab'));
  const dialog=document.createElement('dialog');dialog.className='afri-command';dialog.innerHTML='<form method="dialog"><button aria-label="Close search">Close</button></form><label>Jump to an artist or view<input type="search" autofocus></label><div></div>';document.body.append(dialog);
  const input=dialog.querySelector('input'),results=dialog.querySelector('div');let all=[];
