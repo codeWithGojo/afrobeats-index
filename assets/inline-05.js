@@ -146,7 +146,7 @@
 
     const note = document.createElement("aside");
     note.className = "stream-source-note";
-    note.innerHTML = `<span class="live-dot" aria-hidden="true"></span><p><strong>Data desk · 28 Sep 2026.</strong> Monthly listeners are rolling Spotify audiences; catalogue streams are cumulative tracked totals. Both move daily and are evidence inside the Current formula, not the whole verdict. Portraits use public Spotify artist imagery; image rights remain with the artists and rights-holders. <a href="https://www.musicmetricsvault.com/genres/afrobeats/109" target="_blank" rel="noopener noreferrer">Monthly source ↗</a> <a href="https://kworb.net/spotify/" target="_blank" rel="noopener noreferrer">Stream source ↗</a></p>`;
+    note.innerHTML = `<span class="live-dot" aria-hidden="true"></span><p><strong>Data desk · 5 Oct 2026.</strong> Monthly listeners are rolling Spotify audiences; catalogue streams are cumulative tracked totals. Both move daily and are evidence inside the Current formula, not the whole verdict. Portraits use public Spotify artist imagery; image rights remain with the artists and rights-holders. <a href="https://www.musicmetricsvault.com/genres/afrobeats/109" target="_blank" rel="noopener noreferrer">Monthly source ↗</a> <a href="https://kworb.net/spotify/" target="_blank" rel="noopener noreferrer">Stream source ↗</a></p>`;
     list.insertAdjacentElement("afterend", note);
 
     list.addEventListener("click", (event) => {
@@ -294,7 +294,7 @@
     module.setAttribute("aria-labelledby", "freshness-title");
     module.innerHTML = `
       <div class="freshness-bar">
-        <span class="sync-state"><span class="live-dot" aria-hidden="true"></span><strong id="freshness-title">Current edition</strong><span>Data snapshot · <time datetime="2026-09-28">28 Sep 2026</time></span></span>
+        <span class="sync-state"><span class="live-dot" aria-hidden="true"></span><strong id="freshness-title">Current edition</strong><span>Data snapshot · <time datetime="2026-10-05">5 Oct 2026</time></span></span>
         <div class="freshness-actions"><button class="compare-text" type="button" data-compare-toggle aria-expanded="false">Compare eras ↗</button>
           <details class="update-details"><summary>Update notes <span aria-hidden="true">⌄</span></summary>
             <div class="weekly-log"><p class="eyebrow">Update ledger</p><ul>
