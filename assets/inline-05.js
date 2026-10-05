@@ -1,5 +1,5 @@
 (function () {
-  const UPDATE_VERSION = "2026-08-20-current-11-v2";
+  const UPDATE_VERSION = "2026-10-05-current-refresh";
   const SNAPSHOT_KEY = "afri-index-current-snapshot-v1";
   const currentArtists = Array.isArray(window.AFRI_CURRENT_ARTISTS) ? window.AFRI_CURRENT_ARTISTS : [];
 
@@ -489,7 +489,7 @@
     enhanceTabs();
     document.addEventListener("click", () => document.querySelectorAll(".tip-open").forEach((node) => node.classList.remove("tip-open")));
     const edition = document.querySelector("body > div:first-child span:last-child");
-    if (edition) edition.textContent = "Living index · Updated 28 Sep 2026";
+    if (edition) edition.textContent = "Living index · Updated 5 Oct 2026";
   }
 
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);

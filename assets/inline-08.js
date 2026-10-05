@@ -34,6 +34,12 @@
     document.querySelectorAll(".current-row[data-artist-slug]").forEach((row) => {
       const artist = incoming.get(row.dataset.artistSlug);
       if (!artist) return;
+      row.dataset.rank=artist.rank;
+      const rank=row.querySelector('.current-rank');if(rank)rank.textContent=String(artist.rank).padStart(2,'0');
+      const score=row.querySelector('.current-score strong');if(score)score.textContent=Number(artist.score).toFixed(1);
+      row.querySelector('.current-score i')?.style.setProperty('--score',`${artist.score}%`);
+      const badge=row.querySelector('.movement');
+      if(badge){const delta=artist.previousRank-artist.rank;badge.textContent=delta>0?`↑ ${delta}`:delta<0?`↓ ${-delta}`:'—';badge.className='movement '+(delta>0?'movement-up':delta<0?'movement-down':'movement-flat');badge.title=delta?`${delta>0?'Up':'Down'} ${Math.abs(delta)} from #${artist.previousRank}`:'No movement this update';badge.setAttribute('aria-label',badge.title);}
       const metricBlocks = row.querySelectorAll(".current-streams span");
       if (metricBlocks[0]) metricBlocks[0].querySelector("strong").textContent = compact(artist.monthlyListeners);
       if (metricBlocks[1]) metricBlocks[1].querySelector("strong").textContent = compact(artist.totalSpotifyStreams);
@@ -43,6 +49,9 @@
         if (small && !small.querySelector("em")) small.insertAdjacentHTML("beforeend", `<em>Updated ${escapeHtml(dateLabel(updatedAt))}</em>`);
       });
     });
+    const list=document.querySelector('.current-ranking');
+    if(list) [...state.artists].sort((a,b)=>a.rank-b.rank).forEach(a=>{const row=list.querySelector(`[data-artist-slug="${a.slug}"]`);if(row)list.append(row);});
+    current.sort((a,b)=>a.rank-b.rank);
   }
 
   const regionFor = (country) => {
