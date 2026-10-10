@@ -23,8 +23,8 @@
   <link rel="apple-touch-icon" sizes="180x180" href="afr-index-monogram.png">
   <link rel="manifest" href="manifest.webmanifest">
   <script src="assets/inline-01.js"></script>
+  <link rel="stylesheet" href="assets/tailwind.css">
   <link rel="stylesheet" href="uk-editorial.css">
-  <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     body { font-family: 'Inter', system-ui, sans-serif; }
@@ -1040,7 +1040,7 @@ footer {
   <link rel="stylesheet" href="music-receipt.css">
   <link rel="stylesheet" href="ui-refresh.css">
 </head>
-<body class="antialiased bg-white text-black">
+<body class="antialiased bg-white text-black" data-design="editorial">
   <div class="masthead-kicker bg-black text-white text-[10px] sm:text-xs tracking-widest uppercase py-2 px-4 flex justify-between">
     <span>Independent Culture Index · Lagos / Global</span><span id="live-update-label">Living Index · Updated 5 Oct 2026</span>
   </div>
@@ -1085,22 +1085,20 @@ footer {
       <div class="index-hero-grid">
         <div class="index-hero-copy">
           <p class="index-eyebrow">Independent, sourced, pan-African</p>
-          <h1>The Afrobeats<br>Index.</h1>
-          <p>Where African music stands now. Explore the Current 50, trace the all-time greats, and see the evidence behind every placement.</p>
-          <a class="hero-action" href="#current" onclick="showTab('current'); document.getElementById('current').scrollIntoView({behavior:'smooth'}); return false;">Explore the Current 50 <span aria-hidden="true">↗</span></a>
+          <h1>The Afrobeats Index.</h1>
+          <p>The artists shaping African music, ranked with context. Follow today’s chart or trace the catalogue, reach and legacy behind each name.</p>
+          <a class="hero-action" href="#current" onclick="showTab('current'); document.getElementById('current').scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'}); return false;">Explore the Current 50 <span aria-hidden="true">↗</span></a>
           <div class="scope-rail" aria-label="Index scope">
             <div><span>All-Time</span><strong>50 artists</strong></div>
             <div><span>Current</span><strong>50 artists</strong></div>
             <div><span>Method</span><strong>11 metrics</strong></div>
           </div>
         </div>
-        <aside class="issue-panel" aria-label="Editorial issue">
-          <div class="issue-disc">02</div>
-          <div>
-            <p class="issue-label">Issue 02 / 2026</p>
-            <h2>THE LIVING<br>AFROBEATS<br>INDEX</h2>
-            <p>A sourced record of legacy, reach, streaming power and the artists shaping the sound now.</p>
-          </div>
+        <aside class="issue-panel" aria-label="Explore the index">
+          <p class="issue-label">Beyond the current chart</p>
+          <a href="?tab=alltime" onclick="showTab('alltime'); return false;"><span><strong>All-Time 50</strong><small>Legacy across generations</small></span><span aria-hidden="true">↗</span></a>
+          <a href="?tab=yearly" onclick="showTab('yearly'); return false;"><span><strong>2026 Streams</strong><small>This year’s songs and albums</small></span><span aria-hidden="true">↗</span></a>
+          <a href="?tab=receipt" onclick="showTab('receipt'); return false;"><span><strong>Music Receipt</strong><small>Your African music on repeat</small></span><span aria-hidden="true">↗</span></a>
         </aside>
       </div>
     </section>
@@ -1192,7 +1190,7 @@ footer {
 
     <!-- ALL-TIME -->
     <section id="alltime" class="tab-content max-w-6xl mx-auto px-4 py-10">
-      <h2 class="serif text-3xl sm:text-4xl mb-1">All-Time Chart — Top 50</h2>
+      <h2 class="serif text-3xl sm:text-4xl mb-1">All-Time 50</h2>
       <p class="text-sm text-gray-500 mb-8">Impact &amp; legacy 18% · Global reach 15% · Discography 14% · Commercial power 14% · Awards 10% · Cultural influence 10% · Longevity 8% · Live 6% · Feature impact 5%. <strong>No streams.</strong></p>
 
       <p class="text-xs tracking-widest uppercase text-gray-500 mb-3">The Big 3 — Joint Number 1</p>
@@ -2022,7 +2020,7 @@ footer {
 
     <!-- CURRENT -->
     <section id="current" class="tab-content active max-w-6xl mx-auto px-4 py-10">
-      <h2 class="serif text-3xl sm:text-4xl mb-1">Current Power Chart — Top 50</h2>
+      <h2 class="serif text-3xl sm:text-4xl mb-1">Current 50</h2>
       <p class="current-scope-copy text-sm text-gray-500 mb-8">The Current index measures who holds power now. Nine cross-era signals carry 83% of the score; two streaming signals carry 17%.</p>
       <div class="border-t border-gray-200">
         

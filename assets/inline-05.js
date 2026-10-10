@@ -283,7 +283,7 @@
 
   function updateFooter() {
     const footer = document.querySelector("footer p");
-    if (footer) footer.textContent = "AFR/INDEX · Living edition 2026 · 50 All-Time · 50 Current · 11 Current metrics · Editorial rankings, transparent sources";
+    if (footer) footer.textContent = "AFR/INDEX · African music, in context. · Editorial rankings & transparent sources";
   }
 
   function addFreshnessModule() {

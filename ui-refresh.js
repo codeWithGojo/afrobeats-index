@@ -17,7 +17,29 @@
     }
   }
 
+  function fallbackArtwork(image) {
+    if (!(image instanceof HTMLImageElement) || !image.matches('#yearly .yearly-art')) return;
+    const row = image.closest('[data-yearly-artist]');
+    const artist = (window.AFRI_CURRENT_ARTISTS || []).find((entry) => entry.slug === row?.dataset.yearlyArtist);
+    const fallback = artist?.imageFallback || artist?.image;
+    if (fallback && !image.dataset.artFallback) {
+      image.dataset.artFallback = 'true';
+      image.alt = `${artist.name} portrait; release artwork unavailable`;
+      image.src = fallback;
+      return;
+    }
+    const placeholder = document.createElement('span');
+    placeholder.className = 'yearly-art yearly-art-fallback';
+    placeholder.textContent = (artist?.name || row?.querySelector('.yearly-title')?.textContent || '?').slice(0, 1);
+    placeholder.setAttribute('aria-label', 'Release artwork unavailable');
+    image.replaceWith(placeholder);
+  }
+
   function init() {
+    document.addEventListener('error', (event) => fallbackArtwork(event.target), true);
+    document.querySelectorAll('#yearly img.yearly-art').forEach((image) => {
+      if (image.complete && !image.naturalWidth) fallbackArtwork(image);
+    });
     const previous = window.showTab;
     if (typeof previous === 'function') {
       window.showTab = function (id) {
