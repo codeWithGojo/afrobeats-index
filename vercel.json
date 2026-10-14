@@ -15,12 +15,8 @@
       "destination": "/api/view?path=current/:artist"
     },
     {
-      "source": "/quiz",
-      "destination": "/quiz.html"
-    },
-    {
       "source": "/quiz/:artist",
-      "destination": "/quiz.html"
+      "destination": "/quiz"
     },
     {
       "source": "/u/:username",
