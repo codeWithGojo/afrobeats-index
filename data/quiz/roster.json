@@ -1,0 +1,657 @@
+[
+  {
+    "name": "Burna Boy",
+    "slug": "burna-boy",
+    "lists": [
+      "current",
+      "alltime"
+    ],
+    "image": "artists/burna-boy.jpg"
+  },
+  {
+    "name": "Tems",
+    "slug": "tems",
+    "lists": [
+      "current",
+      "alltime"
+    ],
+    "image": "artists/tems.jpg"
+  },
+  {
+    "name": "Rema",
+    "slug": "rema",
+    "lists": [
+      "current",
+      "alltime"
+    ],
+    "image": "artists/rema.jpg"
+  },
+  {
+    "name": "Tyla",
+    "slug": "tyla",
+    "lists": [
+      "current"
+    ],
+    "image": "artists/tyla.jpg"
+  },
+  {
+    "name": "Wizkid",
+    "slug": "wizkid",
+    "lists": [
+      "current",
+      "alltime"
+    ],
+    "image": "artists/wizkid.jpg"
+  },
+  {
+    "name": "Ayra Starr",
+    "slug": "ayra-starr",
+    "lists": [
+      "current"
+    ],
+    "image": "artists/ayra-starr.jpg"
+  },
+  {
+    "name": "Davido",
+    "slug": "davido",
+    "lists": [
+      "current",
+      "alltime"
+    ],
+    "image": "artists/davido.jpg"
+  },
+  {
+    "name": "Asake",
+    "slug": "asake",
+    "lists": [
+      "current",
+      "alltime"
+    ],
+    "image": "artists/asake.jpg"
+  },
+  {
+    "name": "OMAH LAY",
+    "slug": "omah-lay",
+    "lists": [
+      "current"
+    ],
+    "image": "artists/omah-lay.jpg"
+  },
+  {
+    "name": "CKay",
+    "slug": "ckay",
+    "lists": [
+      "current",
+      "alltime"
+    ],
+    "image": "artists/ckay.jpg"
+  },
+  {
+    "name": "Fireboy DML",
+    "slug": "fireboy-dml",
+    "lists": [
+      "current",
+      "alltime"
+    ],
+    "image": "artists/fireboy-dml.jpg"
+  },
+  {
+    "name": "Victony",
+    "slug": "victony",
+    "lists": [
+      "current"
+    ],
+    "image": "artists/victony.jpg"
+  },
+  {
+    "name": "MOLIY",
+    "slug": "moliy",
+    "lists": [
+      "current"
+    ],
+    "image": "artists/moliy.jpg"
+  },
+  {
+    "name": "BNXN",
+    "slug": "bnxn",
+    "lists": [
+      "current"
+    ],
+    "image": "artists/bnxn.jpg"
+  },
+  {
+    "name": "Seyi Vibez",
+    "slug": "seyi-vibez",
+    "lists": [
+      "current"
+    ],
+    "image": "artists/seyi-vibez.jpg"
+  },
+  {
+    "name": "FOLA",
+    "slug": "fola",
+    "lists": [
+      "current"
+    ],
+    "image": "artists/fola.jpg"
+  },
+  {
+    "name": "Ruger",
+    "slug": "ruger",
+    "lists": [
+      "current",
+      "alltime"
+    ],
+    "image": "artists/ruger.jpg"
+  },
+  {
+    "name": "Mavo",
+    "slug": "mavo",
+    "lists": [
+      "current"
+    ],
+    "image": "artists/mavo.jpg"
+  },
+  {
+    "name": "Odeal",
+    "slug": "odeal",
+    "lists": [
+      "current"
+    ],
+    "image": "artists/odeal.jpg"
+  },
+  {
+    "name": "Kizz Daniel",
+    "slug": "kizz-daniel",
+    "lists": [
+      "current",
+      "alltime"
+    ],
+    "image": "artists/kizz-daniel.jpg"
+  },
+  {
+    "name": "Olamide",
+    "slug": "olamide",
+    "lists": [
+      "current",
+      "alltime"
+    ],
+    "image": "artists/olamide.jpg"
+  },
+  {
+    "name": "ODUMODUBLVCK",
+    "slug": "odumodublvck",
+    "lists": [
+      "current"
+    ],
+    "image": "artists/odumodublvck.jpg"
+  },
+  {
+    "name": "Sarz",
+    "slug": "sarz",
+    "lists": [
+      "current"
+    ],
+    "image": "artists/sarz.jpg"
+  },
+  {
+    "name": "Amaarae",
+    "slug": "amaarae",
+    "lists": [
+      "current"
+    ],
+    "image": "artists/amaarae.jpg"
+  },
+  {
+    "name": "Young Jonn",
+    "slug": "young-jonn",
+    "lists": [
+      "current"
+    ],
+    "image": "artists/young-jonn.jpg"
+  },
+  {
+    "name": "Adekunle Gold",
+    "slug": "adekunle-gold",
+    "lists": [
+      "current",
+      "alltime"
+    ],
+    "image": "artists/adekunle-gold.jpg"
+  },
+  {
+    "name": "Shallipopi",
+    "slug": "shallipopi",
+    "lists": [
+      "current"
+    ],
+    "image": "artists/shallipopi.jpg"
+  },
+  {
+    "name": "Oxlade",
+    "slug": "oxlade",
+    "lists": [
+      "current",
+      "alltime"
+    ],
+    "image": "artists/oxlade.jpg"
+  },
+  {
+    "name": "FAVE",
+    "slug": "fave",
+    "lists": [
+      "current"
+    ],
+    "image": "artists/fave.jpg"
+  },
+  {
+    "name": "Joeboy",
+    "slug": "joeboy",
+    "lists": [
+      "current",
+      "alltime"
+    ],
+    "image": "artists/joeboy.jpg"
+  },
+  {
+    "name": "Tiwa Savage",
+    "slug": "tiwa-savage",
+    "lists": [
+      "current",
+      "alltime"
+    ],
+    "image": "artists/tiwa-savage.jpg"
+  },
+  {
+    "name": "Lojay",
+    "slug": "lojay",
+    "lists": [
+      "current"
+    ],
+    "image": "artists/lojay.jpg"
+  },
+  {
+    "name": "JAZZWRLD",
+    "slug": "jazzwrld",
+    "lists": [
+      "current"
+    ],
+    "image": "artists/jazzwrld.jpg"
+  },
+  {
+    "name": "Darkoo",
+    "slug": "darkoo",
+    "lists": [
+      "current"
+    ],
+    "image": "artists/darkoo.jpg"
+  },
+  {
+    "name": "Black Sherif",
+    "slug": "black-sherif",
+    "lists": [
+      "current",
+      "alltime"
+    ],
+    "image": "artists/black-sherif.jpg"
+  },
+  {
+    "name": "CIZA",
+    "slug": "ciza",
+    "lists": [
+      "current"
+    ],
+    "image": "artists/ciza.jpg"
+  },
+  {
+    "name": "Shoday",
+    "slug": "shoday",
+    "lists": [
+      "current"
+    ],
+    "image": "artists/shoday.jpg"
+  },
+  {
+    "name": "King Promise",
+    "slug": "king-promise",
+    "lists": [
+      "current",
+      "alltime"
+    ],
+    "image": "artists/king-promise.jpg"
+  },
+  {
+    "name": "Zlatan",
+    "slug": "zlatan",
+    "lists": [
+      "current"
+    ],
+    "image": "artists/zlatan.jpg"
+  },
+  {
+    "name": "Bella Shmurda",
+    "slug": "bella-shmurda",
+    "lists": [
+      "current"
+    ],
+    "image": "artists/bella-shmurda.jpg"
+  },
+  {
+    "name": "Blaqbonez",
+    "slug": "blaqbonez",
+    "lists": [
+      "current"
+    ],
+    "image": "artists/blaqbonez.jpg"
+  },
+  {
+    "name": "Khaid",
+    "slug": "khaid",
+    "lists": [
+      "current"
+    ],
+    "image": "artists/khaid.jpg"
+  },
+  {
+    "name": "Chike",
+    "slug": "chike",
+    "lists": [
+      "current",
+      "alltime"
+    ],
+    "image": "artists/chike.jpg"
+  },
+  {
+    "name": "Diamond Platnumz",
+    "slug": "diamond-platnumz",
+    "lists": [
+      "current",
+      "alltime"
+    ],
+    "image": "artists/diamond-platnumz.jpg"
+  },
+  {
+    "name": "Tekno",
+    "slug": "tekno",
+    "lists": [
+      "current",
+      "alltime"
+    ],
+    "image": "artists/tekno.jpg"
+  },
+  {
+    "name": "Focalistic",
+    "slug": "focalistic",
+    "lists": [
+      "current"
+    ],
+    "image": "artists/focalistic.jpg"
+  },
+  {
+    "name": "Uncle Waffles",
+    "slug": "uncle-waffles",
+    "lists": [
+      "current"
+    ],
+    "image": "artists/uncle-waffles.jpg"
+  },
+  {
+    "name": "Phyno",
+    "slug": "phyno",
+    "lists": [
+      "current",
+      "alltime"
+    ],
+    "image": "artists/phyno.jpg"
+  },
+  {
+    "name": "Shatta Wale",
+    "slug": "shatta-wale",
+    "lists": [
+      "current",
+      "alltime"
+    ],
+    "image": "artists/shatta-wale.jpg"
+  },
+  {
+    "name": "Stonebwoy",
+    "slug": "stonebwoy",
+    "lists": [
+      "current",
+      "alltime"
+    ],
+    "image": "artists/stonebwoy.jpg"
+  },
+  {
+    "name": "Fela Kuti",
+    "slug": "fela-kuti",
+    "lists": [
+      "alltime"
+    ],
+    "image": ""
+  },
+  {
+    "name": "2Baba",
+    "slug": "2baba",
+    "lists": [
+      "alltime"
+    ],
+    "image": ""
+  },
+  {
+    "name": "P-Square",
+    "slug": "p-square",
+    "lists": [
+      "alltime"
+    ],
+    "image": ""
+  },
+  {
+    "name": "D\u2019banj",
+    "slug": "d-banj",
+    "lists": [
+      "alltime"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Wande Coal",
+    "slug": "wande-coal",
+    "lists": [
+      "alltime"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Yemi Alade",
+    "slug": "yemi-alade",
+    "lists": [
+      "alltime"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Flavour",
+    "slug": "flavour",
+    "lists": [
+      "alltime"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Mr Eazi",
+    "slug": "mr-eazi",
+    "lists": [
+      "alltime"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Sarkodie",
+    "slug": "sarkodie",
+    "lists": [
+      "alltime"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Ice Prince",
+    "slug": "ice-prince",
+    "lists": [
+      "alltime"
+    ],
+    "image": ""
+  },
+  {
+    "name": "9ice",
+    "slug": "9ice",
+    "lists": [
+      "alltime"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Styl-Plus",
+    "slug": "styl-plus",
+    "lists": [
+      "alltime"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Runtown",
+    "slug": "runtown",
+    "lists": [
+      "alltime"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Timaya",
+    "slug": "timaya",
+    "lists": [
+      "alltime"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Don Jazzy",
+    "slug": "don-jazzy",
+    "lists": [
+      "alltime"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Mayorkun",
+    "slug": "mayorkun",
+    "lists": [
+      "alltime"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Simi",
+    "slug": "simi",
+    "lists": [
+      "alltime"
+    ],
+    "image": ""
+  },
+  {
+    "name": "KiDi",
+    "slug": "kidi",
+    "lists": [
+      "alltime"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Fuse ODG",
+    "slug": "fuse-odg",
+    "lists": [
+      "alltime"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Afro B",
+    "slug": "afro-b",
+    "lists": [
+      "alltime"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Nonso Amadi",
+    "slug": "nonso-amadi",
+    "lists": [
+      "alltime"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Brymo",
+    "slug": "brymo",
+    "lists": [
+      "alltime"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Lagbaja",
+    "slug": "lagbaja",
+    "lists": [
+      "alltime"
+    ],
+    "image": ""
+  },
+  {
+    "name": "King Sunny Ade",
+    "slug": "king-sunny-ade",
+    "lists": [
+      "alltime"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Tony Allen",
+    "slug": "tony-allen",
+    "lists": [
+      "alltime"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Weird MC",
+    "slug": "weird-mc",
+    "lists": [
+      "alltime"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Bracket",
+    "slug": "bracket",
+    "lists": [
+      "alltime"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Olu Maintain",
+    "slug": "olu-maintain",
+    "lists": [
+      "alltime"
+    ],
+    "image": ""
+  },
+  {
+    "name": "Skales",
+    "slug": "skales",
+    "lists": [
+      "alltime"
+    ],
+    "image": ""
+  }
+]

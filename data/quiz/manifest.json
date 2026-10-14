@@ -1,0 +1,1529 @@
+{
+  "version": "0808f8e65c04",
+  "artists": [
+    {
+      "name": "Burna Boy",
+      "slug": "burna-boy",
+      "lists": [
+        "current",
+        "alltime"
+      ],
+      "image": "artists/burna-boy.jpg",
+      "questionCount": 100,
+      "categories": {
+        "song-album": 13,
+        "collaboration": 13,
+        "artwork": 13,
+        "tracklist": 13,
+        "release-year": 12,
+        "release-order": 12,
+        "release-size": 12,
+        "track-position": 12
+      }
+    },
+    {
+      "name": "Tems",
+      "slug": "tems",
+      "lists": [
+        "current",
+        "alltime"
+      ],
+      "image": "artists/tems.jpg",
+      "questionCount": 100,
+      "categories": {
+        "song-album": 13,
+        "collaboration": 13,
+        "artwork": 13,
+        "tracklist": 13,
+        "release-year": 12,
+        "release-order": 12,
+        "release-size": 12,
+        "track-position": 12
+      }
+    },
+    {
+      "name": "Rema",
+      "slug": "rema",
+      "lists": [
+        "current",
+        "alltime"
+      ],
+      "image": "artists/rema.jpg",
+      "questionCount": 100,
+      "categories": {
+        "song-album": 13,
+        "collaboration": 13,
+        "artwork": 13,
+        "tracklist": 13,
+        "release-year": 12,
+        "release-order": 12,
+        "release-size": 12,
+        "track-position": 12
+      }
+    },
+    {
+      "name": "Tyla",
+      "slug": "tyla",
+      "lists": [
+        "current"
+      ],
+      "image": "artists/tyla.jpg",
+      "questionCount": 100,
+      "categories": {
+        "song-album": 13,
+        "collaboration": 12,
+        "artwork": 13,
+        "tracklist": 13,
+        "release-year": 13,
+        "release-order": 12,
+        "release-size": 12,
+        "track-position": 12
+      }
+    },
+    {
+      "name": "Wizkid",
+      "slug": "wizkid",
+      "lists": [
+        "current",
+        "alltime"
+      ],
+      "image": "artists/wizkid.jpg",
+      "questionCount": 100,
+      "categories": {
+        "song-album": 13,
+        "collaboration": 13,
+        "artwork": 13,
+        "tracklist": 13,
+        "release-year": 12,
+        "release-order": 12,
+        "release-size": 12,
+        "track-position": 12
+      }
+    },
+    {
+      "name": "Ayra Starr",
+      "slug": "ayra-starr",
+      "lists": [
+        "current"
+      ],
+      "image": "artists/ayra-starr.jpg",
+      "questionCount": 100,
+      "categories": {
+        "song-album": 13,
+        "collaboration": 13,
+        "artwork": 13,
+        "tracklist": 13,
+        "release-year": 12,
+        "release-order": 12,
+        "release-size": 12,
+        "track-position": 12
+      }
+    },
+    {
+      "name": "Davido",
+      "slug": "davido",
+      "lists": [
+        "current",
+        "alltime"
+      ],
+      "image": "artists/davido.jpg",
+      "questionCount": 100,
+      "categories": {
+        "song-album": 13,
+        "collaboration": 13,
+        "artwork": 13,
+        "tracklist": 13,
+        "release-year": 12,
+        "release-order": 12,
+        "release-size": 12,
+        "track-position": 12
+      }
+    },
+    {
+      "name": "Asake",
+      "slug": "asake",
+      "lists": [
+        "current",
+        "alltime"
+      ],
+      "image": "artists/asake.jpg",
+      "questionCount": 100,
+      "categories": {
+        "song-album": 13,
+        "collaboration": 13,
+        "artwork": 13,
+        "tracklist": 13,
+        "release-year": 12,
+        "release-order": 12,
+        "release-size": 12,
+        "track-position": 12
+      }
+    },
+    {
+      "name": "OMAH LAY",
+      "slug": "omah-lay",
+      "lists": [
+        "current"
+      ],
+      "image": "artists/omah-lay.jpg",
+      "questionCount": 100,
+      "categories": {
+        "song-album": 13,
+        "collaboration": 13,
+        "artwork": 13,
+        "tracklist": 13,
+        "release-year": 12,
+        "release-order": 12,
+        "release-size": 12,
+        "track-position": 12
+      }
+    },
+    {
+      "name": "CKay",
+      "slug": "ckay",
+      "lists": [
+        "current",
+        "alltime"
+      ],
+      "image": "artists/ckay.jpg",
+      "questionCount": 100,
+      "categories": {
+        "song-album": 13,
+        "collaboration": 13,
+        "artwork": 13,
+        "tracklist": 13,
+        "release-year": 12,
+        "release-order": 12,
+        "release-size": 12,
+        "track-position": 12
+      }
+    },
+    {
+      "name": "Fireboy DML",
+      "slug": "fireboy-dml",
+      "lists": [
+        "current",
+        "alltime"
+      ],
+      "image": "artists/fireboy-dml.jpg",
+      "questionCount": 100,
+      "categories": {
+        "song-album": 13,
+        "collaboration": 13,
+        "artwork": 13,
+        "tracklist": 13,
+        "release-year": 12,
+        "release-order": 12,
+        "release-size": 12,
+        "track-position": 12
+      }
+    },
+    {
+      "name": "Victony",
+      "slug": "victony",
+      "lists": [
+        "current"
+      ],
+      "image": "artists/victony.jpg",
+      "questionCount": 100,
+      "categories": {
+        "song-album": 13,
+        "collaboration": 13,
+        "artwork": 13,
+        "tracklist": 13,
+        "release-year": 12,
+        "release-order": 12,
+        "release-size": 12,
+        "track-position": 12
+      }
+    },
+    {
+      "name": "MOLIY",
+      "slug": "moliy",
+      "lists": [
+        "current"
+      ],
+      "image": "artists/moliy.jpg",
+      "questionCount": 100,
+      "categories": {
+        "song-album": 13,
+        "collaboration": 13,
+        "artwork": 13,
+        "tracklist": 13,
+        "release-year": 12,
+        "release-order": 12,
+        "release-size": 12,
+        "track-position": 12
+      }
+    },
+    {
+      "name": "BNXN",
+      "slug": "bnxn",
+      "lists": [
+        "current"
+      ],
+      "image": "artists/bnxn.jpg",
+      "questionCount": 100,
+      "categories": {
+        "song-album": 13,
+        "collaboration": 13,
+        "artwork": 13,
+        "tracklist": 13,
+        "release-year": 12,
+        "release-order": 12,
+        "release-size": 12,
+        "track-position": 12
+      }
+    },
+    {
+      "name": "Seyi Vibez",
+      "slug": "seyi-vibez",
+      "lists": [
+        "current"
+      ],
+      "image": "artists/seyi-vibez.jpg",
+      "questionCount": 100,
+      "categories": {
+        "song-album": 13,
+        "collaboration": 13,
+        "artwork": 13,
+        "tracklist": 13,
+        "release-year": 12,
+        "release-order": 12,
+        "release-size": 12,
+        "track-position": 12
+      }
+    },
+    {
+      "name": "FOLA",
+      "slug": "fola",
+      "lists": [
+        "current"
+      ],
+      "image": "artists/fola.jpg",
+      "questionCount": 100,
+      "categories": {
+        "song-album": 13,
+        "collaboration": 13,
+        "artwork": 13,
+        "tracklist": 13,
+        "release-year": 12,
+        "release-order": 12,
+        "release-size": 12,
+        "track-position": 12
+      }
+    },
+    {
+      "name": "Ruger",
+      "slug": "ruger",
+      "lists": [
+        "current",
+        "alltime"
+      ],
+      "image": "artists/ruger.jpg",
+      "questionCount": 100,
+      "categories": {
+        "song-album": 14,
+        "collaboration": 4,
+        "artwork": 14,
+        "tracklist": 14,
+        "release-year": 14,
+        "release-order": 14,
+        "release-size": 12,
+        "track-position": 14
+      }
+    },
+    {
+      "name": "Mavo",
+      "slug": "mavo",
+      "lists": [
+        "current"
+      ],
+      "image": "artists/mavo.jpg",
+      "questionCount": 100,
+      "categories": {
+        "song-album": 14,
+        "collaboration": 8,
+        "artwork": 13,
+        "tracklist": 13,
+        "release-year": 13,
+        "release-order": 13,
+        "release-size": 13,
+        "track-position": 13
+      }
+    },
+    {
+      "name": "Odeal",
+      "slug": "odeal",
+      "lists": [
+        "current"
+      ],
+      "image": "artists/odeal.jpg",
+      "questionCount": 100,
+      "categories": {
+        "song-album": 13,
+        "collaboration": 13,
+        "artwork": 13,
+        "tracklist": 13,
+        "release-year": 12,
+        "release-order": 12,
+        "release-size": 12,
+        "track-position": 12
+      }
+    },
+    {
+      "name": "Kizz Daniel",
+      "slug": "kizz-daniel",
+      "lists": [
+        "current",
+        "alltime"
+      ],
+      "image": "artists/kizz-daniel.jpg",
+      "questionCount": 100,
+      "categories": {
+        "song-album": 13,
+        "collaboration": 13,
+        "artwork": 13,
+        "tracklist": 13,
+        "release-year": 12,
+        "release-order": 12,
+        "release-size": 12,
+        "track-position": 12
+      }
+    },
+    {
+      "name": "Olamide",
+      "slug": "olamide",
+      "lists": [
+        "current",
+        "alltime"
+      ],
+      "image": "artists/olamide.jpg",
+      "questionCount": 100,
+      "categories": {
+        "song-album": 13,
+        "collaboration": 13,
+        "artwork": 13,
+        "tracklist": 13,
+        "release-year": 12,
+        "release-order": 12,
+        "release-size": 12,
+        "track-position": 12
+      }
+    },
+    {
+      "name": "ODUMODUBLVCK",
+      "slug": "odumodublvck",
+      "lists": [
+        "current"
+      ],
+      "image": "artists/odumodublvck.jpg",
+      "questionCount": 100,
+      "categories": {
+        "song-album": 13,
+        "collaboration": 13,
+        "artwork": 13,
+        "tracklist": 13,
+        "release-year": 12,
+        "release-order": 12,
+        "release-size": 12,
+        "track-position": 12
+      }
+    },
+    {
+      "name": "Sarz",
+      "slug": "sarz",
+      "lists": [
+        "current"
+      ],
+      "image": "artists/sarz.jpg",
+      "questionCount": 100,
+      "categories": {
+        "song-album": 13,
+        "collaboration": 13,
+        "artwork": 13,
+        "tracklist": 13,
+        "release-year": 12,
+        "release-order": 12,
+        "release-size": 12,
+        "track-position": 12
+      }
+    },
+    {
+      "name": "Amaarae",
+      "slug": "amaarae",
+      "lists": [
+        "current"
+      ],
+      "image": "artists/amaarae.jpg",
+      "questionCount": 100,
+      "categories": {
+        "song-album": 13,
+        "collaboration": 13,
+        "artwork": 13,
+        "tracklist": 13,
+        "release-year": 12,
+        "release-order": 12,
+        "release-size": 12,
+        "track-position": 12
+      }
+    },
+    {
+      "name": "Young Jonn",
+      "slug": "young-jonn",
+      "lists": [
+        "current"
+      ],
+      "image": "artists/young-jonn.jpg",
+      "questionCount": 100,
+      "categories": {
+        "song-album": 13,
+        "collaboration": 13,
+        "artwork": 13,
+        "tracklist": 13,
+        "release-year": 12,
+        "release-order": 12,
+        "release-size": 12,
+        "track-position": 12
+      }
+    },
+    {
+      "name": "Adekunle Gold",
+      "slug": "adekunle-gold",
+      "lists": [
+        "current",
+        "alltime"
+      ],
+      "image": "artists/adekunle-gold.jpg",
+      "questionCount": 100,
+      "categories": {
+        "song-album": 13,
+        "collaboration": 13,
+        "artwork": 13,
+        "tracklist": 13,
+        "release-year": 12,
+        "release-order": 12,
+        "release-size": 12,
+        "track-position": 12
+      }
+    },
+    {
+      "name": "Shallipopi",
+      "slug": "shallipopi",
+      "lists": [
+        "current"
+      ],
+      "image": "artists/shallipopi.jpg",
+      "questionCount": 100,
+      "categories": {
+        "song-album": 13,
+        "collaboration": 11,
+        "artwork": 13,
+        "tracklist": 13,
+        "release-year": 13,
+        "release-order": 13,
+        "release-size": 12,
+        "track-position": 12
+      }
+    },
+    {
+      "name": "Oxlade",
+      "slug": "oxlade",
+      "lists": [
+        "current",
+        "alltime"
+      ],
+      "image": "artists/oxlade.jpg",
+      "questionCount": 100,
+      "categories": {
+        "song-album": 14,
+        "collaboration": 13,
+        "artwork": 13,
+        "tracklist": 8,
+        "release-year": 13,
+        "release-order": 13,
+        "release-size": 13,
+        "track-position": 13
+      }
+    },
+    {
+      "name": "FAVE",
+      "slug": "fave",
+      "lists": [
+        "current"
+      ],
+      "image": "artists/fave.jpg",
+      "questionCount": 100,
+      "categories": {
+        "song-album": 13,
+        "collaboration": 12,
+        "artwork": 13,
+        "tracklist": 13,
+        "release-year": 13,
+        "release-order": 12,
+        "release-size": 12,
+        "track-position": 12
+      }
+    },
+    {
+      "name": "Joeboy",
+      "slug": "joeboy",
+      "lists": [
+        "current",
+        "alltime"
+      ],
+      "image": "artists/joeboy.jpg",
+      "questionCount": 100,
+      "categories": {
+        "song-album": 13,
+        "collaboration": 13,
+        "artwork": 13,
+        "tracklist": 13,
+        "release-year": 12,
+        "release-order": 12,
+        "release-size": 12,
+        "track-position": 12
+      }
+    },
+    {
+      "name": "Tiwa Savage",
+      "slug": "tiwa-savage",
+      "lists": [
+        "current",
+        "alltime"
+      ],
+      "image": "artists/tiwa-savage.jpg",
+      "questionCount": 100,
+      "categories": {
+        "song-album": 13,
+        "collaboration": 13,
+        "artwork": 13,
+        "tracklist": 13,
+        "release-year": 12,
+        "release-order": 12,
+        "release-size": 12,
+        "track-position": 12
+      }
+    },
+    {
+      "name": "Lojay",
+      "slug": "lojay",
+      "lists": [
+        "current"
+      ],
+      "image": "artists/lojay.jpg",
+      "questionCount": 100,
+      "categories": {
+        "song-album": 13,
+        "collaboration": 12,
+        "artwork": 13,
+        "tracklist": 13,
+        "release-year": 13,
+        "release-order": 12,
+        "release-size": 12,
+        "track-position": 12
+      }
+    },
+    {
+      "name": "JAZZWRLD",
+      "slug": "jazzwrld",
+      "lists": [
+        "current"
+      ],
+      "image": "artists/jazzwrld.jpg",
+      "questionCount": 100,
+      "categories": {
+        "song-album": 13,
+        "collaboration": 13,
+        "artwork": 13,
+        "tracklist": 13,
+        "release-year": 13,
+        "release-order": 12,
+        "release-size": 11,
+        "track-position": 12
+      }
+    },
+    {
+      "name": "Darkoo",
+      "slug": "darkoo",
+      "lists": [
+        "current"
+      ],
+      "image": "artists/darkoo.jpg",
+      "questionCount": 100,
+      "categories": {
+        "song-album": 13,
+        "collaboration": 13,
+        "artwork": 13,
+        "tracklist": 10,
+        "release-year": 13,
+        "release-order": 13,
+        "release-size": 13,
+        "track-position": 12
+      }
+    },
+    {
+      "name": "Black Sherif",
+      "slug": "black-sherif",
+      "lists": [
+        "current",
+        "alltime"
+      ],
+      "image": "artists/black-sherif.jpg",
+      "questionCount": 100,
+      "categories": {
+        "song-album": 13,
+        "collaboration": 13,
+        "artwork": 13,
+        "tracklist": 13,
+        "release-year": 12,
+        "release-order": 12,
+        "release-size": 12,
+        "track-position": 12
+      }
+    },
+    {
+      "name": "CIZA",
+      "slug": "ciza",
+      "lists": [
+        "current"
+      ],
+      "image": "artists/ciza.jpg",
+      "questionCount": 100,
+      "categories": {
+        "song-album": 14,
+        "collaboration": 14,
+        "artwork": 14,
+        "tracklist": 12,
+        "release-year": 13,
+        "release-order": 13,
+        "release-size": 7,
+        "track-position": 13
+      }
+    },
+    {
+      "name": "Shoday",
+      "slug": "shoday",
+      "lists": [
+        "current"
+      ],
+      "image": "artists/shoday.jpg",
+      "questionCount": 100,
+      "categories": {
+        "song-album": 13,
+        "collaboration": 13,
+        "artwork": 13,
+        "tracklist": 13,
+        "release-year": 12,
+        "release-order": 12,
+        "release-size": 12,
+        "track-position": 12
+      }
+    },
+    {
+      "name": "King Promise",
+      "slug": "king-promise",
+      "lists": [
+        "current",
+        "alltime"
+      ],
+      "image": "artists/king-promise.jpg",
+      "questionCount": 100,
+      "categories": {
+        "song-album": 13,
+        "collaboration": 13,
+        "artwork": 13,
+        "tracklist": 13,
+        "release-year": 12,
+        "release-order": 12,
+        "release-size": 12,
+        "track-position": 12
+      }
+    },
+    {
+      "name": "Zlatan",
+      "slug": "zlatan",
+      "lists": [
+        "current"
+      ],
+      "image": "artists/zlatan.jpg",
+      "questionCount": 100,
+      "categories": {
+        "song-album": 13,
+        "collaboration": 13,
+        "artwork": 13,
+        "tracklist": 13,
+        "release-year": 12,
+        "release-order": 12,
+        "release-size": 12,
+        "track-position": 12
+      }
+    },
+    {
+      "name": "Bella Shmurda",
+      "slug": "bella-shmurda",
+      "lists": [
+        "current"
+      ],
+      "image": "artists/bella-shmurda.jpg",
+      "questionCount": 100,
+      "categories": {
+        "song-album": 13,
+        "collaboration": 13,
+        "artwork": 13,
+        "tracklist": 13,
+        "release-year": 12,
+        "release-order": 12,
+        "release-size": 12,
+        "track-position": 12
+      }
+    },
+    {
+      "name": "Blaqbonez",
+      "slug": "blaqbonez",
+      "lists": [
+        "current"
+      ],
+      "image": "artists/blaqbonez.jpg",
+      "questionCount": 100,
+      "categories": {
+        "song-album": 13,
+        "collaboration": 13,
+        "artwork": 13,
+        "tracklist": 13,
+        "release-year": 12,
+        "release-order": 12,
+        "release-size": 12,
+        "track-position": 12
+      }
+    },
+    {
+      "name": "Khaid",
+      "slug": "khaid",
+      "lists": [
+        "current"
+      ],
+      "image": "artists/khaid.jpg",
+      "questionCount": 100,
+      "categories": {
+        "song-album": 15,
+        "collaboration": 6,
+        "artwork": 15,
+        "tracklist": 15,
+        "release-year": 14,
+        "release-order": 14,
+        "release-size": 7,
+        "track-position": 14
+      }
+    },
+    {
+      "name": "Chike",
+      "slug": "chike",
+      "lists": [
+        "current",
+        "alltime"
+      ],
+      "image": "artists/chike.jpg",
+      "questionCount": 100,
+      "categories": {
+        "song-album": 13,
+        "collaboration": 13,
+        "artwork": 13,
+        "tracklist": 13,
+        "release-year": 12,
+        "release-order": 12,
+        "release-size": 12,
+        "track-position": 12
+      }
+    },
+    {
+      "name": "Diamond Platnumz",
+      "slug": "diamond-platnumz",
+      "lists": [
+        "current",
+        "alltime"
+      ],
+      "image": "artists/diamond-platnumz.jpg",
+      "questionCount": 100,
+      "categories": {
+        "song-album": 14,
+        "collaboration": 13,
+        "artwork": 13,
+        "tracklist": 8,
+        "release-year": 13,
+        "release-order": 13,
+        "release-size": 13,
+        "track-position": 13
+      }
+    },
+    {
+      "name": "Tekno",
+      "slug": "tekno",
+      "lists": [
+        "current",
+        "alltime"
+      ],
+      "image": "artists/tekno.jpg",
+      "questionCount": 100,
+      "categories": {
+        "song-album": 13,
+        "collaboration": 13,
+        "artwork": 13,
+        "tracklist": 13,
+        "release-year": 12,
+        "release-order": 12,
+        "release-size": 12,
+        "track-position": 12
+      }
+    },
+    {
+      "name": "Focalistic",
+      "slug": "focalistic",
+      "lists": [
+        "current"
+      ],
+      "image": "artists/focalistic.jpg",
+      "questionCount": 100,
+      "categories": {
+        "song-album": 13,
+        "collaboration": 13,
+        "artwork": 13,
+        "tracklist": 12,
+        "release-year": 13,
+        "release-order": 12,
+        "release-size": 12,
+        "track-position": 12
+      }
+    },
+    {
+      "name": "Uncle Waffles",
+      "slug": "uncle-waffles",
+      "lists": [
+        "current"
+      ],
+      "image": "artists/uncle-waffles.jpg",
+      "questionCount": 100,
+      "categories": {
+        "song-album": 13,
+        "collaboration": 15,
+        "artwork": 14,
+        "tracklist": 9,
+        "release-year": 15,
+        "release-order": 14,
+        "release-size": 7,
+        "track-position": 13
+      }
+    },
+    {
+      "name": "Phyno",
+      "slug": "phyno",
+      "lists": [
+        "current",
+        "alltime"
+      ],
+      "image": "artists/phyno.jpg",
+      "questionCount": 100,
+      "categories": {
+        "song-album": 13,
+        "collaboration": 13,
+        "artwork": 13,
+        "tracklist": 13,
+        "release-year": 12,
+        "release-order": 12,
+        "release-size": 12,
+        "track-position": 12
+      }
+    },
+    {
+      "name": "Shatta Wale",
+      "slug": "shatta-wale",
+      "lists": [
+        "current",
+        "alltime"
+      ],
+      "image": "artists/shatta-wale.jpg",
+      "questionCount": 100,
+      "categories": {
+        "song-album": 13,
+        "collaboration": 13,
+        "artwork": 13,
+        "tracklist": 13,
+        "release-year": 12,
+        "release-order": 12,
+        "release-size": 12,
+        "track-position": 12
+      }
+    },
+    {
+      "name": "Stonebwoy",
+      "slug": "stonebwoy",
+      "lists": [
+        "current",
+        "alltime"
+      ],
+      "image": "artists/stonebwoy.jpg",
+      "questionCount": 100,
+      "categories": {
+        "song-album": 13,
+        "collaboration": 13,
+        "artwork": 13,
+        "tracklist": 13,
+        "release-year": 12,
+        "release-order": 12,
+        "release-size": 12,
+        "track-position": 12
+      }
+    },
+    {
+      "name": "Fela Kuti",
+      "slug": "fela-kuti",
+      "lists": [
+        "alltime"
+      ],
+      "image": "",
+      "questionCount": 100,
+      "categories": {
+        "song-album": 13,
+        "collaboration": 13,
+        "artwork": 13,
+        "tracklist": 13,
+        "release-year": 12,
+        "release-order": 12,
+        "release-size": 12,
+        "track-position": 12
+      }
+    },
+    {
+      "name": "2Baba",
+      "slug": "2baba",
+      "lists": [
+        "alltime"
+      ],
+      "image": "",
+      "questionCount": 100,
+      "categories": {
+        "song-album": 13,
+        "collaboration": 13,
+        "artwork": 13,
+        "tracklist": 13,
+        "release-year": 12,
+        "release-order": 12,
+        "release-size": 12,
+        "track-position": 12
+      }
+    },
+    {
+      "name": "P-Square",
+      "slug": "p-square",
+      "lists": [
+        "alltime"
+      ],
+      "image": "",
+      "questionCount": 100,
+      "categories": {
+        "song-album": 13,
+        "collaboration": 13,
+        "artwork": 13,
+        "tracklist": 13,
+        "release-year": 12,
+        "release-order": 12,
+        "release-size": 12,
+        "track-position": 12
+      }
+    },
+    {
+      "name": "D’banj",
+      "slug": "d-banj",
+      "lists": [
+        "alltime"
+      ],
+      "image": "",
+      "questionCount": 100,
+      "categories": {
+        "song-album": 13,
+        "collaboration": 13,
+        "artwork": 13,
+        "tracklist": 13,
+        "release-year": 12,
+        "release-order": 12,
+        "release-size": 12,
+        "track-position": 12
+      }
+    },
+    {
+      "name": "Wande Coal",
+      "slug": "wande-coal",
+      "lists": [
+        "alltime"
+      ],
+      "image": "",
+      "questionCount": 100,
+      "categories": {
+        "song-album": 13,
+        "collaboration": 13,
+        "artwork": 13,
+        "tracklist": 13,
+        "release-year": 12,
+        "release-order": 12,
+        "release-size": 12,
+        "track-position": 12
+      }
+    },
+    {
+      "name": "Yemi Alade",
+      "slug": "yemi-alade",
+      "lists": [
+        "alltime"
+      ],
+      "image": "",
+      "questionCount": 100,
+      "categories": {
+        "song-album": 13,
+        "collaboration": 13,
+        "artwork": 13,
+        "tracklist": 13,
+        "release-year": 12,
+        "release-order": 12,
+        "release-size": 12,
+        "track-position": 12
+      }
+    },
+    {
+      "name": "Flavour",
+      "slug": "flavour",
+      "lists": [
+        "alltime"
+      ],
+      "image": "",
+      "questionCount": 100,
+      "categories": {
+        "song-album": 13,
+        "collaboration": 13,
+        "artwork": 13,
+        "tracklist": 13,
+        "release-year": 12,
+        "release-order": 12,
+        "release-size": 12,
+        "track-position": 12
+      }
+    },
+    {
+      "name": "Mr Eazi",
+      "slug": "mr-eazi",
+      "lists": [
+        "alltime"
+      ],
+      "image": "",
+      "questionCount": 100,
+      "categories": {
+        "song-album": 13,
+        "collaboration": 13,
+        "artwork": 13,
+        "tracklist": 13,
+        "release-year": 12,
+        "release-order": 12,
+        "release-size": 12,
+        "track-position": 12
+      }
+    },
+    {
+      "name": "Sarkodie",
+      "slug": "sarkodie",
+      "lists": [
+        "alltime"
+      ],
+      "image": "",
+      "questionCount": 100,
+      "categories": {
+        "song-album": 13,
+        "collaboration": 13,
+        "artwork": 13,
+        "tracklist": 13,
+        "release-year": 12,
+        "release-order": 12,
+        "release-size": 12,
+        "track-position": 12
+      }
+    },
+    {
+      "name": "Ice Prince",
+      "slug": "ice-prince",
+      "lists": [
+        "alltime"
+      ],
+      "image": "",
+      "questionCount": 100,
+      "categories": {
+        "song-album": 13,
+        "collaboration": 13,
+        "artwork": 13,
+        "tracklist": 13,
+        "release-year": 12,
+        "release-order": 12,
+        "release-size": 12,
+        "track-position": 12
+      }
+    },
+    {
+      "name": "9ice",
+      "slug": "9ice",
+      "lists": [
+        "alltime"
+      ],
+      "image": "",
+      "questionCount": 100,
+      "categories": {
+        "song-album": 13,
+        "collaboration": 13,
+        "artwork": 13,
+        "tracklist": 13,
+        "release-year": 12,
+        "release-order": 12,
+        "release-size": 12,
+        "track-position": 12
+      }
+    },
+    {
+      "name": "Styl-Plus",
+      "slug": "styl-plus",
+      "lists": [
+        "alltime"
+      ],
+      "image": "",
+      "questionCount": 100,
+      "categories": {
+        "song-album": 13,
+        "collaboration": 13,
+        "artwork": 13,
+        "tracklist": 13,
+        "release-year": 12,
+        "release-order": 12,
+        "release-size": 12,
+        "track-position": 12
+      }
+    },
+    {
+      "name": "Runtown",
+      "slug": "runtown",
+      "lists": [
+        "alltime"
+      ],
+      "image": "",
+      "questionCount": 100,
+      "categories": {
+        "song-album": 13,
+        "collaboration": 13,
+        "artwork": 13,
+        "tracklist": 13,
+        "release-year": 12,
+        "release-order": 12,
+        "release-size": 12,
+        "track-position": 12
+      }
+    },
+    {
+      "name": "Timaya",
+      "slug": "timaya",
+      "lists": [
+        "alltime"
+      ],
+      "image": "",
+      "questionCount": 100,
+      "categories": {
+        "song-album": 13,
+        "collaboration": 13,
+        "artwork": 13,
+        "tracklist": 13,
+        "release-year": 12,
+        "release-order": 12,
+        "release-size": 12,
+        "track-position": 12
+      }
+    },
+    {
+      "name": "Don Jazzy",
+      "slug": "don-jazzy",
+      "lists": [
+        "alltime"
+      ],
+      "image": "",
+      "questionCount": 100,
+      "categories": {
+        "song-album": 13,
+        "collaboration": 13,
+        "artwork": 13,
+        "tracklist": 13,
+        "release-year": 12,
+        "release-order": 12,
+        "release-size": 12,
+        "track-position": 12
+      }
+    },
+    {
+      "name": "Mayorkun",
+      "slug": "mayorkun",
+      "lists": [
+        "alltime"
+      ],
+      "image": "",
+      "questionCount": 100,
+      "categories": {
+        "song-album": 13,
+        "collaboration": 13,
+        "artwork": 13,
+        "tracklist": 13,
+        "release-year": 12,
+        "release-order": 12,
+        "release-size": 12,
+        "track-position": 12
+      }
+    },
+    {
+      "name": "Simi",
+      "slug": "simi",
+      "lists": [
+        "alltime"
+      ],
+      "image": "",
+      "questionCount": 100,
+      "categories": {
+        "song-album": 13,
+        "collaboration": 13,
+        "artwork": 13,
+        "tracklist": 13,
+        "release-year": 12,
+        "release-order": 12,
+        "release-size": 12,
+        "track-position": 12
+      }
+    },
+    {
+      "name": "KiDi",
+      "slug": "kidi",
+      "lists": [
+        "alltime"
+      ],
+      "image": "",
+      "questionCount": 100,
+      "categories": {
+        "song-album": 13,
+        "collaboration": 13,
+        "artwork": 13,
+        "tracklist": 13,
+        "release-year": 12,
+        "release-order": 12,
+        "release-size": 12,
+        "track-position": 12
+      }
+    },
+    {
+      "name": "Fuse ODG",
+      "slug": "fuse-odg",
+      "lists": [
+        "alltime"
+      ],
+      "image": "",
+      "questionCount": 100,
+      "categories": {
+        "song-album": 13,
+        "collaboration": 13,
+        "artwork": 13,
+        "tracklist": 13,
+        "release-year": 12,
+        "release-order": 12,
+        "release-size": 12,
+        "track-position": 12
+      }
+    },
+    {
+      "name": "Afro B",
+      "slug": "afro-b",
+      "lists": [
+        "alltime"
+      ],
+      "image": "",
+      "questionCount": 100,
+      "categories": {
+        "song-album": 13,
+        "collaboration": 13,
+        "artwork": 13,
+        "tracklist": 13,
+        "release-year": 12,
+        "release-order": 12,
+        "release-size": 12,
+        "track-position": 12
+      }
+    },
+    {
+      "name": "Nonso Amadi",
+      "slug": "nonso-amadi",
+      "lists": [
+        "alltime"
+      ],
+      "image": "",
+      "questionCount": 100,
+      "categories": {
+        "song-album": 13,
+        "collaboration": 13,
+        "artwork": 13,
+        "tracklist": 13,
+        "release-year": 12,
+        "release-order": 12,
+        "release-size": 12,
+        "track-position": 12
+      }
+    },
+    {
+      "name": "Brymo",
+      "slug": "brymo",
+      "lists": [
+        "alltime"
+      ],
+      "image": "",
+      "questionCount": 100,
+      "categories": {
+        "song-album": 13,
+        "collaboration": 13,
+        "artwork": 13,
+        "tracklist": 13,
+        "release-year": 12,
+        "release-order": 12,
+        "release-size": 12,
+        "track-position": 12
+      }
+    },
+    {
+      "name": "Lagbaja",
+      "slug": "lagbaja",
+      "lists": [
+        "alltime"
+      ],
+      "image": "",
+      "questionCount": 100,
+      "categories": {
+        "song-album": 15,
+        "collaboration": 2,
+        "artwork": 14,
+        "tracklist": 14,
+        "release-year": 14,
+        "release-order": 14,
+        "release-size": 13,
+        "track-position": 14
+      }
+    },
+    {
+      "name": "King Sunny Ade",
+      "slug": "king-sunny-ade",
+      "lists": [
+        "alltime"
+      ],
+      "image": "",
+      "questionCount": 100,
+      "categories": {
+        "song-album": 14,
+        "collaboration": 2,
+        "artwork": 14,
+        "tracklist": 14,
+        "release-year": 14,
+        "release-order": 14,
+        "release-size": 14,
+        "track-position": 14
+      }
+    },
+    {
+      "name": "Tony Allen",
+      "slug": "tony-allen",
+      "lists": [
+        "alltime"
+      ],
+      "image": "",
+      "questionCount": 100,
+      "categories": {
+        "song-album": 13,
+        "collaboration": 13,
+        "artwork": 13,
+        "tracklist": 13,
+        "release-year": 12,
+        "release-order": 12,
+        "release-size": 12,
+        "track-position": 12
+      }
+    },
+    {
+      "name": "Weird MC",
+      "slug": "weird-mc",
+      "lists": [
+        "alltime"
+      ],
+      "image": "",
+      "questionCount": 100,
+      "categories": {
+        "song-album": 18,
+        "collaboration": 6,
+        "artwork": 10,
+        "tracklist": 17,
+        "release-year": 10,
+        "release-order": 17,
+        "release-size": 5,
+        "track-position": 17
+      }
+    },
+    {
+      "name": "Bracket",
+      "slug": "bracket",
+      "lists": [
+        "alltime"
+      ],
+      "image": "",
+      "questionCount": 100,
+      "categories": {
+        "song-album": 13,
+        "collaboration": 13,
+        "artwork": 13,
+        "tracklist": 13,
+        "release-year": 12,
+        "release-order": 12,
+        "release-size": 12,
+        "track-position": 12
+      }
+    },
+    {
+      "name": "Olu Maintain",
+      "slug": "olu-maintain",
+      "lists": [
+        "alltime"
+      ],
+      "image": "",
+      "questionCount": 100,
+      "categories": {
+        "song-album": 14,
+        "collaboration": 9,
+        "artwork": 14,
+        "tracklist": 14,
+        "release-year": 13,
+        "release-order": 13,
+        "release-size": 10,
+        "track-position": 13
+      }
+    },
+    {
+      "name": "Skales",
+      "slug": "skales",
+      "lists": [
+        "alltime"
+      ],
+      "image": "",
+      "questionCount": 100,
+      "categories": {
+        "song-album": 13,
+        "collaboration": 13,
+        "artwork": 13,
+        "tracklist": 13,
+        "release-year": 12,
+        "release-order": 12,
+        "release-size": 12,
+        "track-position": 12
+      }
+    }
+  ]
+}

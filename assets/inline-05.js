@@ -190,7 +190,7 @@
           <div><small>Daily tracked streams</small><strong>${compactNumber(artist.dailySpotifyStreams)}</strong><span>${exactNumber(artist.dailySpotifyStreams)}</span></div>
           <div><small>Chart movement</small><strong>${move}</strong><span>Since the previous editorial snapshot</span></div>
         </div>
-        <div class="artist-dialog-footer"><span>${artist.country} · ${artist.genres.join(" / ")}</span><span><a href="${artist.spotifyUrl}" target="_blank" rel="noopener noreferrer">Spotify ↗</a><a href="${artist.sources.catalogue}" target="_blank" rel="noopener noreferrer">Stream ledger ↗</a></span></div>
+        <div class="artist-dialog-footer"><span>${artist.country} · ${artist.genres.join(" / ")}</span><span><a href="/quiz/${encodeURIComponent(artist.slug)}">Take fan quiz ↗</a><a href="${artist.spotifyUrl}" target="_blank" rel="noopener noreferrer">Spotify ↗</a><a href="${artist.sources.catalogue}" target="_blank" rel="noopener noreferrer">Stream ledger ↗</a></span></div>
       </article>`;
     addImageFallbacks(dialog);
     document.body.classList.add("dialog-open");
