@@ -124,10 +124,10 @@
   }
 
   function currentRows(items, type) {
-    return [...items].filter(item => Number(item.year) === 2026).sort((a,b) => b.streams_this_year - a.streams_this_year).slice(0, type === "song" ? 15 : 10).map((item,index) => {
-      const title = type === "song" ? item.song_title : item.album_title;
-      return row({ title, artist:item.artist, total:item.streams_this_year, url:item.spotify_url || spotifySearch(title,item.artist), artwork:item.artwork_url, kind:type }, index, 2026);
-    }).join("");
+    return [...items].filter(item => Number(item.year) === 2026 && Number.isFinite(item.total_streams)).sort((a,b) => b.total_streams-a.total_streams).slice(0,type==='song'?15:10).map((item,index)=>{
+      const title=type==='song'?item.song_title:item.album_title;
+      return `<article class="yearly-entry archive-entry"><span class="yearly-rank">${String(index+1).padStart(2,'0')}</span><img class="yearly-art" src="${safe(item.artwork_url)}" alt="${safe(title)} release artwork" loading="lazy"><span><a class="yearly-title" href="${safe(item.spotify_url)}" target="_blank" rel="noopener noreferrer">${safe(title)} ↗</a><span class="yearly-meta">${safe(item.artist)} · released ${safe(item.release_date)}<br><a href="${safe(item.source_url)}" target="_blank" rel="noopener noreferrer">Kworb · ${safe(item.source_date)} ↗</a> · <a href="${safe(item.release_source)}" target="_blank" rel="noopener noreferrer">Release details ↗</a></span></span><span class="yearly-count"><strong>${fmt.format(item.total_streams)}</strong><small>Global Spotify · tracked total</small></span></article>`;
+    }).join('');
   }
 
   async function hydrateArtwork(root) {
@@ -176,8 +176,8 @@
     select.innerHTML = Array.from({length:17},(_,i)=>2026-i).map(year => `<option value="${year}">${year}</option>`).join("");
     const albumKicker = document.querySelector('[aria-labelledby="yearly-albums-title"] > p');
     const songKicker = document.querySelector('[aria-labelledby="yearly-songs-title"] > p');
-    if (albumKicker) albumKicker.textContent = "Top 10 · release-year archive";
-    if (songKicker) songKicker.textContent = "Top 15 · release-year archive";
+    if (albumKicker) albumKicker.textContent = "Top 10 · tracked release cohort";
+    if (songKicker) songKicker.textContent = "Top 15 · tracked release cohort";
 
     const paint = (year) => {
       const current = year === 2026;
@@ -191,7 +191,7 @@
       });
       select.value = String(year);
       const updated = document.querySelector("[data-yearly-updated]");
-      if (updated) updated.textContent = current ? "31 Aug 2026" : `Archive checked · ${checkedAt}`;
+      if (updated) updated.textContent = current ? new Intl.DateTimeFormat("en-GB",{day:"numeric",month:"short",year:"numeric"}).format(new Date(window.AFRI_RELEASE_AUDIT?.checked_at||window.AFRI_YEARLY_STREAMS.updated_at)) : `Archive checked · ${checkedAt}`;
       if (current) {
         songsRoot.innerHTML = currentRows(window.AFRI_YEARLY_STREAMS?.songs || [], "song");
         albumsRoot.innerHTML = currentRows(window.AFRI_YEARLY_STREAMS?.albums || [], "album");
@@ -199,10 +199,14 @@
         songsRoot.innerHTML = data.songs.slice(0,15).map((item,index)=>row({...item,kind:"song"},index,year)).join("");
         albumsRoot.innerHTML = data.albums.slice(0,10).map((item,index)=>row({...item,kind:"album"},index,year)).join("");
       }
+      if(albumKicker)albumKicker.textContent=current?'Top 10 · tracked 2026 releases':'Top 10 · release-year archive';
+      if(songKicker)songKicker.textContent=current?'Top 15 · tracked 2026 releases':'Top 15 · release-year archive';
+      document.querySelector('[aria-labelledby="yearly-albums-title"] > p.text-sm').textContent=current?'Albums, EPs and live projects released in 2026, ordered by global tracked Spotify totals.':'Selected albums from this release year.';
+      document.querySelector('[aria-labelledby="yearly-songs-title"] > p.text-sm').textContent=current?'Recordings dated 2026 in the checked catalogue, ordered by global Spotify totals.':'Selected songs from this release year.';
       hydrateArtwork(section);
       const method = section.querySelector(".yearly-method");
       if (method) method.innerHTML = current
-        ? `<strong>Reading 2026.</strong> These are the live year-to-date Spotify figures in the current data snapshot.`
+        ? `<strong>Reading 2026.</strong> Global Spotify catalogue totals for matched 2026 releases in our Current 50 ledgers, ordered by the reported total. These are not calendar-year listening totals or an exhaustive Africa-wide chart. Albums/EPs need a matching primary-artist release record with at least four tracks; advance-single plays may be included. Each row links to its stream ledger, source date and release metadata. Checked ${new Intl.DateTimeFormat("en-GB",{day:"numeric",month:"short",year:"numeric"}).format(new Date(window.AFRI_RELEASE_AUDIT.checked_at))}.`
         : `<strong>Reading the archive.</strong> This is a release-year leaderboard: 15 songs and 10 albums issued in ${year}, ordered using cumulative Spotify catalogue evidence. Exact play counts appear only after a track-by-track source audit; unaudited rows show their archive rank instead of an invented number.`;
     };
 

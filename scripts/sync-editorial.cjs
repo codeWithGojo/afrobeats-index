@@ -1,0 +1,11 @@
+const fs=require('node:fs');
+const chart=JSON.parse(fs.readFileSync('data/nigeria-top100.json'));
+const news=JSON.parse(fs.readFileSync('data/editorial-news.json'));
+const fmt=v=>new Intl.DateTimeFormat('en-GB',{day:'numeric',month:'short',year:'numeric',timeZone:'UTC'}).format(new Date(v));
+const checked=fmt(chart.checkedAt),week=fmt(chart.weekStart)+' – '+fmt(chart.weekEnd);
+let text=fs.readFileSync('assets/inline-10.js','utf8');
+text=text.replace(/  const top100 = .*?;\n/,`  const top100 = ${JSON.stringify(chart.rows)};\n`);
+text=text.replace(/  const news = .*?;\n/,`  const news = ${JSON.stringify(news.items)};\n`);
+text=text.replace(/Chart week .*? · checked .*? · 100 entries/,`Chart week ${week} · checked ${checked} · 100 entries`);
+text=text.replace(/The latest TurnTable chart available when checked on .*? covers .*?<\/p>/,`The latest TurnTable chart available when checked on ${checked} covers ${week}.</p>`);
+fs.writeFileSync('assets/inline-10.js',text);

@@ -298,7 +298,7 @@
         <div class="freshness-actions"><button class="compare-text" type="button" data-compare-toggle aria-expanded="false">Compare eras ↗</button>
           <details class="update-details"><summary>Update notes <span aria-hidden="true">⌄</span></summary>
             <div class="weekly-log"><p class="eyebrow">Update ledger</p><ul>
-              <li><span>21 SEP 2026</span><span>Latest successful data snapshot.</span></li>
+              <li><span>15 OCT 2026</span><span>Editorial, Nigeria Top 100 and 2026 release lists checked. Current 50 ranking snapshot remains 5 October.</span></li>
               <li><span>07 SEP 2026</span><span>All 50 Spotify artist ledgers and the Nigeria Top 100 were refreshed from their live source pages.</span></li>
               <li><span>28 AUG 2026</span><span>Tems, Rema and Tyla moved into the top four; JAZZWRLD, CIZA and Shoday entered the Current list.</span></li>
             </ul></div>
@@ -489,7 +489,7 @@
     enhanceTabs();
     document.addEventListener("click", () => document.querySelectorAll(".tip-open").forEach((node) => node.classList.remove("tip-open")));
     const edition = document.querySelector("body > div:first-child span:last-child");
-    if (edition) edition.textContent = "Living index · Updated 5 Oct 2026";
+    if (edition) edition.textContent = "Editorial checked 15 Oct 2026";
   }
 
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);

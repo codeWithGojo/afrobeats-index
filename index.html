@@ -1042,7 +1042,7 @@ footer {
 </head>
 <body class="antialiased bg-white text-black" data-design="editorial">
   <div class="masthead-kicker bg-black text-white text-[10px] sm:text-xs tracking-widest uppercase py-2 px-4 flex justify-between">
-    <span>Independent Culture Index · Lagos / Global</span><span id="live-update-label">Living Index · Updated 5 Oct 2026</span>
+    <span>Independent Culture Index · Lagos / Global</span><span id="live-update-label">Editorial checked 15 Oct 2026</span>
   </div>
   <header class="border-b border-black sticky top-0 z-50 bg-white">
     <div class="max-w-6xl mx-auto px-4">
@@ -3016,18 +3016,18 @@ footer {
         <article aria-labelledby="yearly-albums-title">
           <p class="text-xs tracking-widest uppercase text-gray-500 mb-1">Top 10 · release-year archive</p>
           <h3 id="yearly-albums-title" class="serif text-3xl mb-2">Most Streamed Albums — <span data-yearly-label>2026</span></h3>
-          <p class="text-sm text-gray-500 mb-5">Any project with meaningful activity in the selected calendar year, ordered strictly by verified streams.</p>
+          <p class="text-sm text-gray-500 mb-5">Matched projects released in the selected year, ordered by their reported global Spotify totals.</p>
           <div id="yearly-albums-list" class="yearly-list"></div>
         </article>
         <article aria-labelledby="yearly-songs-title">
           <p class="text-xs tracking-widest uppercase text-gray-500 mb-1">Top 15 · release-year archive</p>
           <h3 id="yearly-songs-title" class="serif text-3xl mb-2">Most Streamed Songs — <span data-yearly-label>2026</span></h3>
-          <p class="text-sm text-gray-500 mb-5">Any song with meaningful activity in the selected calendar year, ordered strictly by chart-attributed streams.</p>
+          <p class="text-sm text-gray-500 mb-5">Matched recordings from the selected release year, ordered by their reported global Spotify totals.</p>
           <div id="yearly-songs-list" class="yearly-list"></div>
         </article>
       </div>
       <aside class="yearly-method text-sm">
-        <strong>Reading the numbers.</strong> Album figures are global Spotify release totals. Song figures are streams accumulated while charting in Spotify Nigeria’s Top 200. YouTube views are shown only when a clean official-video mapping is verified; they do not change rank. Boomplay is not included at release level until a comparable public ledger is available.
+        <strong>Reading the numbers.</strong> The current edition uses global tracked Spotify totals for matched 2026 releases. These are catalogue totals, not calendar-year listening totals. Each row links to its ledger and release metadata. Nigeria Top 100 uses a separate weekly chart.
       </aside>
     </section>
 
@@ -3454,10 +3454,10 @@ footer {
         </div>
       </div>
       <div class="yearly-method mt-10">
-        <h3 class="font-semibold text-lg mb-2">Calendar-year album &amp; song lists</h3>
-        <p class="text-sm text-gray-700"><strong>Eligibility:</strong> any album or song with meaningful streaming activity during the selected calendar year qualifies, regardless of release date. A 2025 release still climbing in 2026 is therefore eligible. Each entry stores an explicit year so prior editions can be archived instead of overwritten.</p>
-        <p class="text-sm text-gray-700 mt-3"><strong>Albums:</strong> global Spotify project totals reported by Kworb, ordered strictly by <code>streams_this_year</code>. <strong>Songs:</strong> Spotify Nigeria Top-200 chart streams, also ordered strictly by <code>streams_this_year</code>. YouTube is an auxiliary song signal when an official video can be mapped, not part of the ranking. Boomplay is excluded at release level until a consistent public ledger is available.</p>
-        <p class="text-sm text-gray-700 mt-3"><strong>Refresh:</strong> weekly. Each row carries its own verification timestamp, and the leaderboard header shows the newest successful update.</p>
+        <h3 class="font-semibold text-lg mb-2">Release-year album &amp; song lists</h3>
+        <p class="text-sm text-gray-700"><strong>Eligibility:</strong> the 2026 page covers matched recordings and primary-artist projects dated 2026 in the checked catalogue. Albums, EPs and live projects need at least four tracks. Unreleased projects and unmatched credits are excluded. Coverage is limited to the Current 50 artist ledgers; this is not an exhaustive Africa-wide chart.</p>
+        <p class="text-sm text-gray-700 mt-3"><strong>Albums:</strong> Kworb’s global tracked project totals, checked against Apple release identities and primary-artist credits. <strong>Songs:</strong> global recording totals in the artist ledgers. Both lists sort by <code>total_streams</code>; they do not measure calendar-year consumption. Album totals may include earlier advance-single plays. Nigeria Top 100 remains a separate weekly TurnTable chart. YouTube, Boomplay and Audiomack are not mixed into these Spotify totals.</p>
+        <p class="text-sm text-gray-700 mt-3"><strong>Refresh:</strong> source checks are recorded separately from publisher updates. Each row links to its stream ledger, publisher date and release record. The header shows when Afri Index checked the sources. Historical editions retain their own coverage notes.</p>
       </div>
       <div class="yearly-method mt-6">
         <h3 class="font-semibold text-lg mb-2">Awards &amp; certifications audit</h3>
@@ -3503,6 +3503,7 @@ footer {
 <script src="music-receipt.js"></script>
 <script src="receipt-store.js"></script>
 <script src="roadmap-nav.js"></script>
+<script src="release-audit-2026.js"></script>
 <script src="yearbook-2018.js"></script>
 <script src="ui-refresh.js"></script>
 <script src="quiz-entry.js" defer></script>

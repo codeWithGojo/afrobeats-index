@@ -3,7 +3,7 @@ const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
 const { getArtistQuiz, getQuizManifest } = require('../lib/quiz-bank.cjs');
-const { selectSession, artworkCrop, secondsRemaining } = require('../quiz-session.js');
+const { selectSession, artworkCrop, secondsRemaining, artworkResolution } = require('../quiz-session.js');
 const career = require('../data/quiz/career-facts.json');
 const quizApi = require('../api/quiz.js');
 const normalized = (value) => String(value).normalize('NFKD').toLowerCase().replace(/[^a-z0-9]/g, '');
@@ -119,4 +119,14 @@ test('cover clues crop inside any image, repeat across challenges and expire at 
   assert.equal(secondsRemaining(21000,20999),1);
   assert.equal(secondsRemaining(21000,21000),0);
   assert.equal(secondsRemaining(21000,50000),0);
+});
+
+test('cover detail increases monotonically over its 20-second deadline',()=>{
+  const deadline=21000;
+  assert.equal(artworkResolution(deadline,1000),14);
+  assert.equal(artworkResolution(deadline,21000),256);
+  let previous=0;
+  for(let time=1000;time<=22000;time+=200){const size=artworkResolution(deadline,time);assert.ok(size>=previous&&size<=256);previous=size;}
+  assert.ok(artworkResolution(deadline,11000)>14);
+  assert.ok(artworkResolution(deadline,11000)<256);
 });

@@ -7,7 +7,7 @@
   const html = (value) => String(value ?? '').replace(/[&<>"']/g, (char) => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[char]));
   const labels = { 'song-album':'Songs & releases', collaboration:'Collaborations', artwork:'Cover art', tracklist:'Tracklists', 'release-year':'Release history', 'release-order':'Earlier or later', 'release-size':'Albums & EPs', 'track-position':'Track positions', awards:'Awards', performance:'On stage', breakout:'Breakout moments' };
   const levels = { casual:'Casual', fan:'Fan', superfan:'Superfan' };
-  const state = { bank:null, session:[], answers:[], index:0, seed:'', level:'fan', locked:false, timer:null, deadline:0, imageRequest:0 };
+  const state = { bank:null, session:[], answers:[], index:0, seed:'', level:'fan', locked:false, timer:null, deadline:0, imageRequest:0, reveal:null };
   const freshSeed = () => Array.from(crypto.getRandomValues(new Uint32Array(2)), (value) => value.toString(36)).join('');
   const portrait = (artist) => artist.image ? `<img class="artist-photo" src="/${html(artist.image.replace(/^\//,''))}" alt="Portrait of ${html(artist.name)}">` : `<span class="artist-initial" aria-hidden="true">${html(artist.name.slice(0,1))}</span>`;
   const date = (value) => Number.isFinite(Date.parse(value)) ? new Intl.DateTimeFormat('en-GB',{dateStyle:'medium'}).format(new Date(value)) : 'date not recorded';
@@ -40,7 +40,7 @@
     const challenge = params.has('round');
     const target = Number(params.get('beat'));
     const challengeText = challenge ? `You’ve been challenged${Number.isFinite(target)&&target>=0&&target<=100 ? ` to beat ${target}%` : ''}. This link uses the same questions as your friend’s round.` : 'Songs, covers and career moments. How much do you remember?';
-    app.innerHTML=`<a class="back-link" href="/quiz">← All artist quizzes</a><p class="eyebrow">AFRI INDEX · FAN QUIZ</p><h1>How well do you know ${html(artist.name)}?</h1><div class="artist-line">${portrait(artist)}<div><strong>${html(artist.name)}</strong><div class="rank-tag">${artist.lists.map((list)=>list==='current'?'CURRENT 50':'ALL-TIME 50').join(' · ')}</div></div></div><section class="panel quiz-start"><p class="muted">${html(challengeText)}</p><div class="quiz-facts"><span><strong>10</strong> questions per round</span><span><strong>${bank.questionCount}</strong> in the bank</span></div><p class="source-note">${Object.keys(bank.categoryCounts).map((category)=>labels[category]).join(' · ')}</p>${challenge ? `<button class="primary" id="play-challenge">Play this ${html(levels[params.get('level')]||'Fan')} challenge →</button><a class="secondary" href="/quiz/${html(artist.slug)}">Start my own round</a>` : `<p class="muted">Choose your level:</p><div class="quiz-actions">${Object.entries(levels).map(([level,label])=>`<button class="${level==='fan'?'primary':'secondary'}" data-level="${level}">${label}</button>`).join('')}</div>`}</section><p class="source-note">Cover rounds show a cropped, pixelated clue with 20 seconds to answer. The clock starts when the clue is ready. Dates refer to the recording or edition named in each question. Reissues can carry a different date from the first release. Catalogue checked ${html(date(bank.checkedAt))}.${bank.careerCheckedAt?` Career sources checked ${html(date(bank.careerCheckedAt))}.`:``}</p>`;
+    app.innerHTML=`<a class="back-link" href="/quiz">← All artist quizzes</a><p class="eyebrow">AFRI INDEX · FAN QUIZ</p><h1>How well do you know ${html(artist.name)}?</h1><div class="artist-line">${portrait(artist)}<div><strong>${html(artist.name)}</strong><div class="rank-tag">${artist.lists.map((list)=>list==='current'?'CURRENT 50':'ALL-TIME 50').join(' · ')}</div></div></div><section class="panel quiz-start"><p class="muted">${html(challengeText)}</p><div class="quiz-facts"><span><strong>10</strong> questions per round</span><span><strong>${bank.questionCount}</strong> in the bank</span></div><p class="source-note">${Object.keys(bank.categoryCounts).map((category)=>labels[category]).join(' · ')}</p>${challenge ? `<button class="primary" id="play-challenge">Play this ${html(levels[params.get('level')]||'Fan')} challenge →</button><a class="secondary" href="/quiz/${html(artist.slug)}">Start my own round</a>` : `<p class="muted">Choose your level:</p><div class="quiz-actions">${Object.entries(levels).map(([level,label])=>`<button class="${level==='fan'?'primary':'secondary'}" data-level="${level}">${label}</button>`).join('')}</div>`}</section><p class="source-note">Cover rounds show a cropped cover clue that gradually clears over 20 seconds. The clock starts when the clue is ready. Dates refer to the recording or edition named in each question. Reissues can carry a different date from the first release. Catalogue checked ${html(date(bank.checkedAt))}.${bank.careerCheckedAt?` Career sources checked ${html(date(bank.careerCheckedAt))}.`:``}</p>`;
     if(challenge) document.getElementById('play-challenge').addEventListener('click',()=>start(levels[params.get('level')]?params.get('level'):'fan',params.get('round')));
     else app.querySelectorAll('[data-level]').forEach((button)=>button.addEventListener('click',()=>start(button.dataset.level)));
   }
@@ -53,7 +53,7 @@
     clearArtworkTimer();state.imageRequest+=1;
     const question=state.session[state.index];
     const correct=state.answers.filter((answer)=>answer.correct).length;
-    app.innerHTML=`<p class="eyebrow">${html(state.bank.artist.name)} · ${html(levels[state.level])}</p><div class="progress-row"><span>Question ${state.index+1} of ${state.session.length}</span><span>${correct} correct</span></div><progress class="quiz-progress" value="${state.index}" max="${state.session.length}" aria-label="Quiz progress"></progress><section class="panel question-panel"><p class="question-count">${html(labels[question.category])}</p><h1 class="question-heading">${html(question.prompt)}</h1>${question.image?`<div class="quiz-artwork-wrap"><canvas class="quiz-artwork" width="14" height="14" role="img" aria-label="Cropped, pixelated cover detail to identify" hidden></canvas><p class="artwork-loading" role="status">Loading your cover clue…</p><p class="artwork-note" hidden>Artwork could not load. You can skip this question.</p><div class="artwork-clock" hidden><span>Cover clue · cropped & pixelated</span><strong id="artwork-time" role="timer" aria-label="Seconds remaining">20s</strong></div><progress class="artwork-progress" value="20" max="20" aria-label="Cover time remaining" hidden></progress></div>`:''}<div class="choices" role="group" aria-label="Choose an answer">${question.options.map((option,index)=>`<button class="choice" data-option="${index}"><span class="option-letter" aria-hidden="true">${'ABCD'[index]}</span><span>${html(option)}</span></button>`).join('')}</div><div class="feedback" role="status" aria-live="polite"></div><div class="quiz-actions"><button class="primary" id="next-question" disabled>${state.index===state.session.length-1?'See my score':'Next question'} →</button>${question.image?'<button class="secondary" id="skip-artwork" hidden>Skip unavailable artwork</button>':''}<button class="secondary" id="quit-quiz">Leave round</button></div></section>`;
+    app.innerHTML=`<p class="eyebrow">${html(state.bank.artist.name)} · ${html(levels[state.level])}</p><div class="progress-row"><span>Question ${state.index+1} of ${state.session.length}</span><span>${correct} correct</span></div><progress class="quiz-progress" value="${state.index}" max="${state.session.length}" aria-label="Quiz progress"></progress><section class="panel question-panel"><p class="question-count">${html(labels[question.category])}</p><h1 class="question-heading">${html(question.prompt)}</h1>${question.image?`<div class="quiz-artwork-wrap"><canvas class="quiz-artwork" width="256" height="256" role="img" aria-label="Cropped cover detail that gradually becomes clearer" hidden></canvas><p class="artwork-loading" role="status">Loading your cover clue…</p><p class="artwork-note" hidden>Artwork could not load. You can skip this question.</p><div class="artwork-clock" hidden><span>Cover clue · clears as time passes</span><strong id="artwork-time" role="timer" aria-label="Seconds remaining">20s</strong></div><progress class="artwork-progress" value="20" max="20" aria-label="Cover time remaining" hidden></progress></div>`:''}<div class="choices" role="group" aria-label="Choose an answer">${question.options.map((option,index)=>`<button class="choice" data-option="${index}"><span class="option-letter" aria-hidden="true">${'ABCD'[index]}</span><span>${html(option)}</span></button>`).join('')}</div><div class="feedback" role="status" aria-live="polite"></div><div class="quiz-actions"><button class="primary" id="next-question" disabled>${state.index===state.session.length-1?'See my score':'Next question'} →</button>${question.image?'<button class="secondary" id="skip-artwork" hidden>Skip unavailable artwork</button>':''}<button class="secondary" id="quit-quiz">Leave round</button></div></section>`;
     app.querySelectorAll('[data-option]').forEach((button)=>button.addEventListener('click',()=>answer(Number(button.dataset.option))));
     document.getElementById('next-question').addEventListener('click',nextQuestion);
     document.getElementById('quit-quiz').addEventListener('click',renderStart);
@@ -64,12 +64,13 @@
     }
     focusHeading();
   }
-  function clearArtworkTimer(){clearInterval(state.timer);state.timer=null;state.deadline=0;}
+  function clearArtworkTimer(){clearInterval(state.timer);state.timer=null;state.deadline=0;state.reveal=null;}
   function tickArtwork(){
     if(!state.deadline||state.locked)return;
     const remaining=window.AfriQuizSession.secondsRemaining(state.deadline,Date.now());
     const label=document.getElementById('artwork-time'),bar=app.querySelector('.artwork-progress');
     if(label)label.textContent=remaining+'s';if(bar)bar.value=remaining;
+    if(state.reveal)state.reveal(window.AfriQuizSession.artworkResolution(state.deadline,Date.now()));
     if(remaining===0)answer(null);
   }
   document.addEventListener('visibilitychange',tickArtwork);
@@ -89,8 +90,13 @@
         const canvas=app.querySelector('.quiz-artwork'),ctx=canvas.getContext('2d');
         if(!ctx||!image.naturalWidth)throw Error('Artwork unavailable');
         const crop=window.AfriQuizSession.artworkCrop(image.naturalWidth,image.naturalHeight,question.id);
-        ctx.imageSmoothingEnabled=true;ctx.imageSmoothingQuality='high';
-        ctx.drawImage(image,crop.x,crop.y,crop.size,crop.size,0,0,14,14);
+        const sample=document.createElement('canvas');let lastSize=0;
+        state.reveal=(size)=>{
+          if(size===lastSize)return;lastSize=size;sample.width=size;sample.height=size;
+          const source=sample.getContext('2d');source.imageSmoothingEnabled=true;source.imageSmoothingQuality='high';
+          source.drawImage(image,crop.x,crop.y,crop.size,crop.size,0,0,size,size);
+          ctx.imageSmoothingEnabled=false;ctx.clearRect(0,0,256,256);ctx.drawImage(sample,0,0,256,256);
+        };
         settled=true;clearTimeout(timeout);canvas.hidden=false;app.querySelector('.artwork-loading').hidden=true;
         app.querySelector('.artwork-clock').hidden=false;app.querySelector('.artwork-progress').hidden=false;
         app.querySelectorAll('[data-option]').forEach((button)=>button.disabled=false);

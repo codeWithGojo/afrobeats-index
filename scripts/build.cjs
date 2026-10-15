@@ -1,3 +1,5 @@
+require('./sync-editorial.cjs');
+require('./sync-release-audit.cjs');
 const {execFileSync}=require('node:child_process');
 const path=require('node:path');
 execFileSync(process.execPath,[path.join(path.dirname(require.resolve('tailwindcss/package.json')),'lib/cli.js'),'-i','styles/tailwind.css','-o','assets/tailwind.css','--minify'],{stdio:'inherit'});

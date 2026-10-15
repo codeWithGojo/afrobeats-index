@@ -48,5 +48,9 @@
     return {x:(width-size)/2+(rng()-.5)*side*.18,y:(height-size)/2+(rng()-.5)*side*.18,size};
   }
   function secondsRemaining(deadline,now){return Math.max(0,Math.ceil((deadline-now)/1000));}
-  return { selectSession, artworkCrop, secondsRemaining };
+  function artworkResolution(deadline,now){
+    const progress=Math.max(0,Math.min(1,1-(deadline-now)/20000));
+    return Math.round(14+242*progress*progress);
+  }
+  return { selectSession, artworkCrop, secondsRemaining, artworkResolution };
 });
