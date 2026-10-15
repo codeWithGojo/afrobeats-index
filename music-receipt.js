@@ -228,6 +228,7 @@
     const width=720,rowHeight=92,height=760+tracks.length*rowHeight+Math.min(5,artists.length)*46+distribution.length*26;
     const canvas=ui.canvas,ctx=canvas.getContext("2d");canvas.width=width;canvas.height=height;
     ctx.fillStyle=palette.paper;ctx.fillRect(0,0,width,height);
+    insights.watermark(ctx,width,height,palette.ink);
     if(palette.border){ctx.strokeStyle=palette.border;ctx.lineWidth=2;ctx.strokeRect(20,20,width-40,height-40);}
     ctx.textBaseline="top";ctx.textAlign="center";ctx.fillStyle=palette.accent;
     ctx.font="900 34px Arial";ctx.fillText("AFR / INDEX",width/2,58);
@@ -252,7 +253,7 @@
   function drawWrapped(data){
     const annual=receiptState.annual;if(annual)data={tracks:annual.tracks,artists:annual.artists};
     const canvas=ui.canvas;canvas.width=1080;canvas.height=1920;const ctx=canvas.getContext("2d");
-    ctx.fillStyle="#3B2A0F";ctx.fillRect(0,0,1080,1920);ctx.strokeStyle="#C9962F";ctx.lineWidth=3;ctx.strokeRect(30,30,1020,1860);ctx.textBaseline="top";ctx.fillStyle="#EFCB7A";ctx.font="900 42px Arial";ctx.fillText("AFR / INDEX",80,90);ctx.font="bold 110px Georgia";ctx.fillText("Afri Wrapped",80,210);ctx.font="bold 170px Georgia";ctx.fillText(String(annual?.year||new Date().getFullYear()),80,350);
+    ctx.fillStyle="#3B2A0F";ctx.fillRect(0,0,1080,1920);insights.watermark(ctx,1080,1920,"#F0DCAE");ctx.strokeStyle="#C9962F";ctx.lineWidth=3;ctx.strokeRect(30,30,1020,1860);ctx.textBaseline="top";ctx.fillStyle="#EFCB7A";ctx.font="900 42px Arial";ctx.fillText("AFR / INDEX",80,90);ctx.font="bold 110px Georgia";ctx.fillText("Afri Wrapped",80,210);ctx.font="bold 170px Georgia";ctx.fillText(String(annual?.year||new Date().getFullYear()),80,350);
     const topGenre=annual?.topGenre||insights.distribution(data.tracks,data.artists,knownArtist)[0]?.genre||"Unclassified";
     const blocks=[["TOP ARTIST",data.artists[0]?.name||"No artist selection"],["TOP TRACK",data.tracks[0]?.title||"No track selection"],["TOP GENRE",topGenre]];
     blocks.forEach(([label,value],i)=>{ctx.fillStyle="#C9962F";ctx.font="26px monospace";ctx.fillText(label,80,610+i*215);ctx.fillStyle="#F0DCAE";ctx.font="bold 62px Georgia";drawEllipsis(ctx,value,80,660+i*215,910);});

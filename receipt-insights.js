@@ -24,5 +24,17 @@
     [...artists.map(a=>a.name),...tracks.flatMap(t=>t.artists?.length?t.artists:[t.artist])].forEach(name=>{const a=lookup(name);if(a){listened.add(a.slug);genres(a).forEach(g=>liked.add(g));}});
     return database.filter(a=>!listened.has(a.slug)).map(a=>({artist:a,shared:genres(a).filter(g=>liked.has(g)),rising:rising(a)})).filter(x=>x.rising||x.shared.length).sort((a,b)=>(b.shared.length*2+Number(b.rising))-(a.shared.length*2+Number(a.rising))).slice(0,5);
   }
-  window.AFRI_RECEIPT_INSIGHTS={themes,flag,rising,genres,distribution,suggestions};
+  // Embedded in the canvas so saved, printed and shared images retain the mark.
+  function watermark(ctx,width,height,ink){
+    ctx.save();
+    ctx.fillStyle=ink;ctx.globalAlpha=.075;
+    ctx.font=`900 ${Math.round(width*.085)}px Arial, sans-serif`;
+    ctx.textAlign='center';ctx.textBaseline='middle';
+    for(let y=height*.26;y<height-110;y+=width*.62){
+      ctx.save();ctx.translate(width/2,y);ctx.rotate(-Math.PI/9);
+      ctx.fillText('AFR / INDEX',0,0,width*.78);ctx.restore();
+    }
+    ctx.restore();
+  }
+  window.AFRI_RECEIPT_INSIGHTS={themes,flag,rising,genres,distribution,suggestions,watermark};
 })();
