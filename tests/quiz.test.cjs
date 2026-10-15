@@ -3,7 +3,8 @@ const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
 const { getArtistQuiz, getQuizManifest } = require('../lib/quiz-bank.cjs');
-const { selectSession } = require('../quiz-session.js');
+const { selectSession, artworkCrop, secondsRemaining } = require('../quiz-session.js');
+const career = require('../data/quiz/career-facts.json');
 const quizApi = require('../api/quiz.js');
 const normalized = (value) => String(value).normalize('NFKD').toLowerCase().replace(/[^a-z0-9]/g, '');
 
@@ -21,7 +22,7 @@ test('both ranked lists have 100 distinct questions per reviewed artist, across 
   }
 });
 
-test('each answer agrees with its downloaded primary-source record and carries provenance', () => {
+test('each answer agrees with its collected catalogue record or researched career supplement', () => {
   for (const artist of getQuizManifest().artists) {
     const bank = getArtistQuiz(artist.slug);
     assert.ok(bank, `Missing bank: ${artist.name}`);
@@ -31,6 +32,16 @@ test('each answer agrees with its downloaded primary-source record and carries p
     for (const question of bank.questions) {
       assert.equal(new Set(question.options.map(normalized)).size, 4, `${artist.name}: duplicate option`);
       assert.ok(question.sources.length > 0);
+      if (['awards','performance','breakout'].includes(question.category)) {
+        const researched=career.questions.find((fact)=>fact.artist===artist.slug&&fact.id===question.id);
+        assert.ok(researched,'Career fact must exist in the researched supplement');
+        assert.deepEqual(question.sources,researched.sources);
+        assert.equal(question.options[question.answerIndex],researched.sources[0].evidence.answer);
+        assert.equal(question.prompt,researched.prompt);
+        assert.equal(question.explanation,researched.explanation);
+        for(const source of question.sources){assert.match(source.url,/^https:\/\//);assert.ok(Number.isFinite(Date.parse(source.verifiedAt)));}
+        continue;
+      }
       for (const source of question.sources) {
         const record = tracks.get(source.recordId);
         assert.ok(record, 'Evidence record must exist in the harvested catalogue');
@@ -85,4 +96,27 @@ test('quiz API supports the directory, legacy artists and version-safe challenge
   assert.equal(invoke({ artist: '../invalid' }).statusCode, 400);
   assert.equal(invoke({ artist: 'unknown-artist' }).statusCode, 404);
   assert.equal(invoke({}, 'POST').statusCode, 405);
+});
+
+
+test('career questions cover researched awards, performances and unambiguous breakout milestones',()=>{
+  assert.equal(career.questions.length,57);
+  assert.equal(new Set(career.questions.map(q=>q.artist)).size,39);
+  for(const category of ['awards','performance','breakout'])assert.ok(career.questions.some(q=>q.category===category));
+  for(const fact of career.questions)assert.ok(getArtistQuiz(fact.artist).questions.some(q=>q.id===fact.id));
+  assert.ok(getArtistQuiz('omah-lay').questions.some(q=>q.category==='awards'));
+});
+
+test('cover clues crop inside any image, repeat across challenges and expire at 20 seconds',()=>{
+  for(const [width,height] of [[600,600],[1200,600],[600,1200]]){
+    const crop=artworkCrop(width,height,'cover-one');
+    assert.deepEqual(crop,artworkCrop(width,height,'cover-one'));
+    assert.ok(crop.x>=0&&crop.y>=0&&crop.x+crop.size<=width&&crop.y+crop.size<=height);
+    assert.ok(crop.size<Math.min(width,height)/2);
+  }
+  assert.notDeepEqual(artworkCrop(600,600,'cover-one'),artworkCrop(600,600,'cover-two'));
+  assert.equal(secondsRemaining(21000,1000),20);
+  assert.equal(secondsRemaining(21000,20999),1);
+  assert.equal(secondsRemaining(21000,21000),0);
+  assert.equal(secondsRemaining(21000,50000),0);
 });

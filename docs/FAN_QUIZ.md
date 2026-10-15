@@ -2,7 +2,7 @@
 
 The quiz directory merges the Current 50 and All-Time 50 by artist identity. The shared final All-Time slot is expanded into separate Bracket, Olu Maintain and Skales banks, giving 79 unique artist files.
 
-Each artist has 100 distinct questions. Ten are served per round. Categories cover songs and releases, named featured credits, cover artwork, track order and positions, release metadata, catalogue chronology, and release sizes.
+Each artist has 100 distinct questions. Ten are served per round. Categories cover songs and releases, named featured credits, cover artwork, track order and positions, release metadata, catalogue chronology, and release sizes. A researched supplement replaces some catalogue questions with 57 awards, live-performance and breakout-milestone questions across 39 artists; every bank stays at 100 questions.
 
 ## Evidence and validation
 
@@ -13,6 +13,14 @@ Each artist has 100 distinct questions. Ten are served per round. Categories cov
 - Release dates describe the specific recording/edition in the provider metadata. They are not asserted to be the first historical release date. Reissues are explicitly qualified in the UI.
 - Weird MC's smaller digital catalogue is supplemented with the 11-track physical CD edition of *After Da Storm* listed by Afro Crafters. That source is named separately, and no original release year is inferred for the physical edition.
 - The bank has catalogue fact checks and artist identity checks. It is not a claim that a human manually fact-checked 7,900 independent prose answers against multiple sources.
+
+## Career sources and cover rounds
+
+`data/quiz/career-facts.json` retains each researched question, its source URL, checked timestamp, answer and a concise paraphrase of the evidence. Sources include the Recording Academy, The Headies, BET, UEFA, NBA Communications, Mavin artist biographies, TurnTable's Asake profile, Omah Lay's Teen Vogue interview, and PUNCH's contemporaneous 14th Headies report. Nomination questions explicitly say nominated; an edition and ceremony year are named separately where necessary. Breakout questions name a release or signing milestone rather than asserting a universal first year of fame. These checks are editorial source review; tests validate consistency with the retained supplement, not the truth of an external web page.
+
+Career categories are mixed into the same deterministic category-balanced rounds. The remaining 40 artists keep their catalogue questions until suitable career facts are researched. Adding or changing questions updates the bank version, so existing challenge links ask for a fresh round.
+
+Every cover clue samples a seeded interior crop (42% of the shorter image edge) down to a 14×14 mosaic. The full source cover is never rendered in the question, making title lettering unreadable as text. Friends get the same crop. Text-only questions remain untimed. Cover questions allow 20 seconds from successful image loading; a wall-clock deadline prevents backgrounding from extending the round. Expiry locks the choices, reveals the sourced answer, and counts as incorrect. An unavailable image can be skipped without affecting the score. Choosing an answer, skipping, leaving or finishing stops the countdown.
 
 ## Rebuild source data
 

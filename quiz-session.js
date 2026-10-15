@@ -42,5 +42,11 @@
     }
     return shuffle(selected, rng);
   }
-  return { selectSession };
+  // The seed gives friends the same interior crop. A 14×14 mosaic removes readable lettering.
+  function artworkCrop(width,height,id){
+    const rng=seeded(id),side=Math.min(width,height),size=side*.42;
+    return {x:(width-size)/2+(rng()-.5)*side*.18,y:(height-size)/2+(rng()-.5)*side*.18,size};
+  }
+  function secondsRemaining(deadline,now){return Math.max(0,Math.ceil((deadline-now)/1000));}
+  return { selectSession, artworkCrop, secondsRemaining };
 });

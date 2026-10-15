@@ -114,6 +114,26 @@ def main():
   if p['identityStatus']!='reviewed':continue
   b=bank(p,all_albums,people);result[p['slug']]=b
   print(p['name'],b['questionCount'],b['categoryCounts'],flush=True)
+ # Career questions are manually researched from named event organisers, labels and interviews.
+ career=json.loads((D/'career-facts.json').read_text())
+ grouped=collections.defaultdict(list)
+ for question in career['questions']:
+  slug=question['artist']
+  if slug not in result:raise ValueError('Unknown career artist: '+slug)
+  q={k:v for k,v in question.items() if k!='artist'}
+  grouped[slug].append(q)
+ for slug,questions in grouped.items():
+  b=result[slug]
+  # Replace catalogue chronology first, preserving a 100-question bank and the other categories.
+  retained=list(b['questions'])
+  for _ in questions:
+   index=next((i for c in ['release-order','release-year','track-position','release-size'] for i in range(len(retained)-1,-1,-1) if retained[i]['category']==c),None)
+   if index is None:raise ValueError('Too many career questions: '+slug)
+   retained.pop(index)
+  b['questions']=questions+retained
+  b['categoryCounts']=dict(collections.Counter(q['category'] for q in b['questions']))
+  b['careerQuestionCount']=len(questions)
+  b['careerCheckedAt']=career['checkedAt']
  version=stable(json.dumps(result,sort_keys=True))[:12]
  (D/'questions.json').write_text(json.dumps({'version':version,'artists':result},ensure_ascii=False,separators=(',',':')))
  roster=json.loads((D/'roster.json').read_text())

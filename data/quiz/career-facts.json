@@ -1,0 +1,1544 @@
+{
+  "checkedAt": "2026-10-15T11:07:05.046537+00:00",
+  "questions": [
+    {
+      "id": "7c9f066c2812eccaf3b6",
+      "artist": "burna-boy",
+      "category": "awards",
+      "prompt": "Which Burna Boy album won Best Global Music Album at the 2021 GRAMMYs?",
+      "options": [
+        "Twice As Tall",
+        "African Giant",
+        "Love, Damini",
+        "I Told Them…"
+      ],
+      "answerIndex": 0,
+      "difficulty": "easy",
+      "explanation": "Twice As Tall won the 2021 Best Global Music Album award.",
+      "sources": [
+        {
+          "url": "https://www.grammy.com/news/2021-grammys-complete-winners-nominees-list/",
+          "label": "Recording Academy",
+          "verifiedAt": "2026-10-15T11:07:05.046537+00:00",
+          "recordId": "career:7c9f066c2812eccaf3b6",
+          "evidence": {
+            "claim": "Twice As Tall won the 2021 Best Global Music Album award.",
+            "answer": "Twice As Tall"
+          }
+        }
+      ]
+    },
+    {
+      "id": "f11dd511bc44b223eedd",
+      "artist": "wizkid",
+      "category": "awards",
+      "prompt": "Which video earned Wizkid a GRAMMY at the 2021 ceremony?",
+      "options": [
+        "Brown Skin Girl",
+        "Essence",
+        "Joro",
+        "Come Closer"
+      ],
+      "answerIndex": 0,
+      "difficulty": "easy",
+      "explanation": "Brown Skin Girl won Best Music Video in 2021, with Wizkid among the credited artists.",
+      "sources": [
+        {
+          "url": "https://www.grammy.com/news/2021-grammys-complete-winners-nominees-list/",
+          "label": "Recording Academy",
+          "verifiedAt": "2026-10-15T11:07:05.046537+00:00",
+          "recordId": "career:f11dd511bc44b223eedd",
+          "evidence": {
+            "claim": "Brown Skin Girl won Best Music Video in 2021, with Wizkid among the credited artists.",
+            "answer": "Brown Skin Girl"
+          }
+        }
+      ]
+    },
+    {
+      "id": "2c9449d7d25214926e7b",
+      "artist": "tyla",
+      "category": "awards",
+      "prompt": "Which Tyla song won the first Best African Music Performance GRAMMY in 2024?",
+      "options": [
+        "Water",
+        "Truth or Dare",
+        "Jump",
+        "Getting Late"
+      ],
+      "answerIndex": 0,
+      "difficulty": "easy",
+      "explanation": "Water won the inaugural Best African Music Performance award.",
+      "sources": [
+        {
+          "url": "https://www.grammy.com/awards/categories/best-african-music-performance/2024/",
+          "label": "Recording Academy",
+          "verifiedAt": "2026-10-15T11:07:05.046537+00:00",
+          "recordId": "career:2c9449d7d25214926e7b",
+          "evidence": {
+            "claim": "Water won the inaugural Best African Music Performance award.",
+            "answer": "Water"
+          }
+        }
+      ]
+    },
+    {
+      "id": "0067fd5161c3b96aad58",
+      "artist": "ayra-starr",
+      "category": "awards",
+      "prompt": "Which Ayra Starr song was nominated for Best African Music Performance at the 2024 GRAMMYs?",
+      "options": [
+        "Rush",
+        "Bloody Samaritan",
+        "Sability",
+        "Away"
+      ],
+      "answerIndex": 0,
+      "difficulty": "easy",
+      "explanation": "Rush was a nominee in the category at the 2024 ceremony.",
+      "sources": [
+        {
+          "url": "https://www.grammy.com/awards/categories/best-african-music-performance/2024/",
+          "label": "Recording Academy",
+          "verifiedAt": "2026-10-15T11:07:05.046537+00:00",
+          "recordId": "career:0067fd5161c3b96aad58",
+          "evidence": {
+            "claim": "Rush was a nominee in the category at the 2024 ceremony.",
+            "answer": "Rush"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ae4d1d9d74262fdda8b2",
+      "artist": "asake",
+      "category": "awards",
+      "prompt": "Which Asake and Olamide song received a 2024 Best African Music Performance nomination?",
+      "options": [
+        "Amapiano",
+        "Sungba",
+        "Omo Ope",
+        "MMS"
+      ],
+      "answerIndex": 0,
+      "difficulty": "easy",
+      "explanation": "Amapiano was nominated for the 2024 Best African Music Performance GRAMMY.",
+      "sources": [
+        {
+          "url": "https://www.grammy.com/awards/categories/best-african-music-performance/2024/",
+          "label": "Recording Academy",
+          "verifiedAt": "2026-10-15T11:07:05.046537+00:00",
+          "recordId": "career:ae4d1d9d74262fdda8b2",
+          "evidence": {
+            "claim": "Amapiano was nominated for the 2024 Best African Music Performance GRAMMY.",
+            "answer": "Amapiano"
+          }
+        }
+      ]
+    },
+    {
+      "id": "eeef89a3d8d71e698a34",
+      "artist": "olamide",
+      "category": "awards",
+      "prompt": "Olamide’s 2024 Best African Music Performance nomination came through which collaboration?",
+      "options": [
+        "Amapiano with Asake",
+        "Infinity with Omah Lay",
+        "Woske",
+        "Rock"
+      ],
+      "answerIndex": 0,
+      "difficulty": "easy",
+      "explanation": "The nominated recording was Amapiano, credited to Asake and Olamide.",
+      "sources": [
+        {
+          "url": "https://www.grammy.com/awards/categories/best-african-music-performance/2024/",
+          "label": "Recording Academy",
+          "verifiedAt": "2026-10-15T11:07:05.046537+00:00",
+          "recordId": "career:eeef89a3d8d71e698a34",
+          "evidence": {
+            "claim": "The nominated recording was Amapiano, credited to Asake and Olamide.",
+            "answer": "Amapiano with Asake"
+          }
+        }
+      ]
+    },
+    {
+      "id": "4ba41a61b1d1b9c33472",
+      "artist": "tems",
+      "category": "awards",
+      "prompt": "Which song won Tems Best African Music Performance at the 2025 GRAMMYs?",
+      "options": [
+        "Love Me JeJe",
+        "Me & U",
+        "Free Mind",
+        "Burning"
+      ],
+      "answerIndex": 0,
+      "difficulty": "easy",
+      "explanation": "Love Me JeJe won Best African Music Performance in 2025.",
+      "sources": [
+        {
+          "url": "https://live.grammy.com/news/2025-grammys-nominations-full-winners-nominees-list",
+          "label": "Recording Academy",
+          "verifiedAt": "2026-10-15T11:07:05.046537+00:00",
+          "recordId": "career:4ba41a61b1d1b9c33472",
+          "evidence": {
+            "claim": "Love Me JeJe won Best African Music Performance in 2025.",
+            "answer": "Love Me JeJe"
+          }
+        }
+      ]
+    },
+    {
+      "id": "aadd716eb116f333ae79",
+      "artist": "yemi-alade",
+      "category": "awards",
+      "prompt": "Which Yemi Alade song received a 2025 Best African Music Performance nomination?",
+      "options": [
+        "Tomorrow",
+        "Johnny",
+        "Ferrari",
+        "Na Gode"
+      ],
+      "answerIndex": 0,
+      "difficulty": "easy",
+      "explanation": "Tomorrow appears among the 2025 nominees for Best African Music Performance.",
+      "sources": [
+        {
+          "url": "https://live.grammy.com/news/2025-grammys-nominations-full-winners-nominees-list",
+          "label": "Recording Academy",
+          "verifiedAt": "2026-10-15T11:07:05.046537+00:00",
+          "recordId": "career:aadd716eb116f333ae79",
+          "evidence": {
+            "claim": "Tomorrow appears among the 2025 nominees for Best African Music Performance.",
+            "answer": "Tomorrow"
+          }
+        }
+      ]
+    },
+    {
+      "id": "008ca450366a10875d01",
+      "artist": "lojay",
+      "category": "awards",
+      "prompt": "Which collaboration featuring Lojay was nominated for Best African Music Performance in 2025?",
+      "options": [
+        "Sensational",
+        "Monalisa",
+        "Moto",
+        "Arizona"
+      ],
+      "answerIndex": 0,
+      "difficulty": "easy",
+      "explanation": "Sensational, by Chris Brown featuring Davido and Lojay, was nominated in 2025.",
+      "sources": [
+        {
+          "url": "https://live.grammy.com/news/2025-grammys-nominations-full-winners-nominees-list",
+          "label": "Recording Academy",
+          "verifiedAt": "2026-10-15T11:07:05.046537+00:00",
+          "recordId": "career:008ca450366a10875d01",
+          "evidence": {
+            "claim": "Sensational, by Chris Brown featuring Davido and Lojay, was nominated in 2025.",
+            "answer": "Sensational"
+          }
+        }
+      ]
+    },
+    {
+      "id": "2d2dc871315c59c8ef6c",
+      "artist": "rema",
+      "category": "awards",
+      "prompt": "Which Rema album was nominated for Best Global Music Album at the 2025 GRAMMYs?",
+      "options": [
+        "HEIS",
+        "Rave & Roses",
+        "Ravage",
+        "Bad Commando"
+      ],
+      "answerIndex": 0,
+      "difficulty": "easy",
+      "explanation": "HEIS was a 2025 Best Global Music Album nominee.",
+      "sources": [
+        {
+          "url": "https://live.grammy.com/news/2025-grammys-nominations-full-winners-nominees-list",
+          "label": "Recording Academy",
+          "verifiedAt": "2026-10-15T11:07:05.046537+00:00",
+          "recordId": "career:2d2dc871315c59c8ef6c",
+          "evidence": {
+            "claim": "HEIS was a 2025 Best Global Music Album nominee.",
+            "answer": "HEIS"
+          }
+        }
+      ]
+    },
+    {
+      "id": "f5143af90d48ad1c14be",
+      "artist": "blaqbonez",
+      "category": "awards",
+      "prompt": "Which Blaqbonez project won Best Rap Album at the 16th Headies?",
+      "options": [
+        "Young Preacher",
+        "Sex Over Love",
+        "Bad Boy Blaq",
+        "Mr. Boombastic"
+      ],
+      "answerIndex": 0,
+      "difficulty": "easy",
+      "explanation": "Young Preacher won Best Rap Album at the 16th Headies.",
+      "sources": [
+        {
+          "url": "https://theheadies.com/check-out-the-full-16th-headies-winners-list/",
+          "label": "The Headies official winners archive",
+          "verifiedAt": "2026-10-15T11:07:05.046537+00:00",
+          "recordId": "career:f5143af90d48ad1c14be",
+          "evidence": {
+            "claim": "Young Preacher won Best Rap Album at the 16th Headies.",
+            "answer": "Young Preacher"
+          }
+        }
+      ]
+    },
+    {
+      "id": "d1a4feb536dfc93f530e",
+      "artist": "chike",
+      "category": "awards",
+      "prompt": "Which Chike album won Best R&B Album at the 16th Headies?",
+      "options": [
+        "The Brother’s Keeper",
+        "Boo of the Booless",
+        "Son of Chike",
+        "Mr. Money With the Vibe"
+      ],
+      "answerIndex": 0,
+      "difficulty": "easy",
+      "explanation": "The Brother’s Keeper won Best R&B Album at that edition.",
+      "sources": [
+        {
+          "url": "https://theheadies.com/check-out-the-full-16th-headies-winners-list/",
+          "label": "The Headies official winners archive",
+          "verifiedAt": "2026-10-15T11:07:05.046537+00:00",
+          "recordId": "career:d1a4feb536dfc93f530e",
+          "evidence": {
+            "claim": "The Brother’s Keeper won Best R&B Album at that edition.",
+            "answer": "The Brother’s Keeper"
+          }
+        }
+      ]
+    },
+    {
+      "id": "3b351fe3145b8f09e712",
+      "artist": "victony",
+      "category": "awards",
+      "prompt": "Which Victony song won the Viewers’ Choice award at the 16th Headies?",
+      "options": [
+        "Soweto",
+        "Holy Father",
+        "Apollo",
+        "Jaga Jaga"
+      ],
+      "answerIndex": 0,
+      "difficulty": "easy",
+      "explanation": "Soweto won the Viewers’ Choice award at the 16th Headies.",
+      "sources": [
+        {
+          "url": "https://theheadies.com/check-out-the-full-16th-headies-winners-list/",
+          "label": "The Headies official winners archive",
+          "verifiedAt": "2026-10-15T11:07:05.046537+00:00",
+          "recordId": "career:3b351fe3145b8f09e712",
+          "evidence": {
+            "claim": "Soweto won the Viewers’ Choice award at the 16th Headies.",
+            "answer": "Soweto"
+          }
+        }
+      ]
+    },
+    {
+      "id": "214bc800f0a20b88980b",
+      "artist": "black-sherif",
+      "category": "awards",
+      "prompt": "Which regional prize did Black Sherif win at the 16th Headies?",
+      "options": [
+        "Best West African Artiste",
+        "Best East African Artiste",
+        "Best North African Artiste",
+        "Best Southern African Artiste"
+      ],
+      "answerIndex": 0,
+      "difficulty": "easy",
+      "explanation": "Black Sherif won the West African artiste category.",
+      "sources": [
+        {
+          "url": "https://theheadies.com/check-out-the-full-16th-headies-winners-list/",
+          "label": "The Headies official winners archive",
+          "verifiedAt": "2026-10-15T11:07:05.046537+00:00",
+          "recordId": "career:214bc800f0a20b88980b",
+          "evidence": {
+            "claim": "Black Sherif won the West African artiste category.",
+            "answer": "Best West African Artiste"
+          }
+        }
+      ]
+    },
+    {
+      "id": "c631dcdff769117151a0",
+      "artist": "bnxn",
+      "category": "awards",
+      "prompt": "Which emerging-artist prize did BNXN win at the 15th Headies?",
+      "options": [
+        "Next Rated",
+        "Rookie of the Year",
+        "Hall of Fame",
+        "Best New International Act"
+      ],
+      "answerIndex": 0,
+      "difficulty": "easy",
+      "explanation": "BNXN won Next Rated at the 15th Headies.",
+      "sources": [
+        {
+          "url": "https://theheadies.com/15th-headies-winners-list/",
+          "label": "The Headies official winners archive",
+          "verifiedAt": "2026-10-15T11:07:05.046537+00:00",
+          "recordId": "career:c631dcdff769117151a0",
+          "evidence": {
+            "claim": "BNXN won Next Rated at the 15th Headies.",
+            "answer": "Next Rated"
+          }
+        }
+      ]
+    },
+    {
+      "id": "826d3dafda07fb87a818",
+      "artist": "fave",
+      "category": "awards",
+      "prompt": "Which prize did Fave win at the 15th Headies?",
+      "options": [
+        "Rookie of the Year",
+        "Next Rated",
+        "Best Female Artiste",
+        "Hall of Fame"
+      ],
+      "answerIndex": 0,
+      "difficulty": "easy",
+      "explanation": "Fave won Rookie of the Year at the 15th Headies.",
+      "sources": [
+        {
+          "url": "https://theheadies.com/15th-headies-winners-list/",
+          "label": "The Headies official winners archive",
+          "verifiedAt": "2026-10-15T11:07:05.046537+00:00",
+          "recordId": "career:826d3dafda07fb87a818",
+          "evidence": {
+            "claim": "Fave won Rookie of the Year at the 15th Headies.",
+            "answer": "Rookie of the Year"
+          }
+        }
+      ]
+    },
+    {
+      "id": "4bc93522c0a427534547",
+      "artist": "sarz",
+      "category": "awards",
+      "prompt": "Which recording earned Sarz Producer of the Year at the 15th Headies?",
+      "options": [
+        "Monalisa",
+        "Good Morning Riddim",
+        "Trobul",
+        "Get Up"
+      ],
+      "answerIndex": 0,
+      "difficulty": "easy",
+      "explanation": "Sarz won Producer of the Year for Monalisa, credited to Lojay and Sarz.",
+      "sources": [
+        {
+          "url": "https://theheadies.com/15th-headies-winners-list/",
+          "label": "The Headies official winners archive",
+          "verifiedAt": "2026-10-15T11:07:05.046537+00:00",
+          "recordId": "career:4bc93522c0a427534547",
+          "evidence": {
+            "claim": "Sarz won Producer of the Year for Monalisa, credited to Lojay and Sarz.",
+            "answer": "Monalisa"
+          }
+        }
+      ]
+    },
+    {
+      "id": "b49c45116cfba670c37f",
+      "artist": "oxlade",
+      "category": "awards",
+      "prompt": "Which Oxlade song earned Best Vocal Performance (Male) at the 15th Headies?",
+      "options": [
+        "Ojuju",
+        "Away",
+        "Ku Lo Sa",
+        "O2"
+      ],
+      "answerIndex": 0,
+      "difficulty": "easy",
+      "explanation": "Ojuju earned Oxlade the male vocal performance prize.",
+      "sources": [
+        {
+          "url": "https://theheadies.com/15th-headies-winners-list/",
+          "label": "The Headies official winners archive",
+          "verifiedAt": "2026-10-15T11:07:05.046537+00:00",
+          "recordId": "career:b49c45116cfba670c37f",
+          "evidence": {
+            "claim": "Ojuju earned Oxlade the male vocal performance prize.",
+            "answer": "Ojuju"
+          }
+        }
+      ]
+    },
+    {
+      "id": "8181317b872780bd0596",
+      "artist": "mayorkun",
+      "category": "awards",
+      "prompt": "Which Mayorkun album won Best R&B/Pop Album at the 2019 Headies?",
+      "options": [
+        "The Mayor of Lagos",
+        "Back in Office",
+        "Love.. For Free",
+        "Certified Loner"
+      ],
+      "answerIndex": 0,
+      "difficulty": "easy",
+      "explanation": "The Mayor of Lagos won Best R&B/Pop Album in the 2019 winners archive.",
+      "sources": [
+        {
+          "url": "https://theheadies.com/2019-winners-2/",
+          "label": "The Headies official winners archive",
+          "verifiedAt": "2026-10-15T11:07:05.046537+00:00",
+          "recordId": "career:8181317b872780bd0596",
+          "evidence": {
+            "claim": "The Mayor of Lagos won Best R&B/Pop Album in the 2019 winners archive.",
+            "answer": "The Mayor of Lagos"
+          }
+        }
+      ]
+    },
+    {
+      "id": "af1823688651c830f9ea",
+      "artist": "zlatan",
+      "category": "awards",
+      "prompt": "Which Zlatan and Burna Boy collaboration won Best Collaboration at the 2019 Headies?",
+      "options": [
+        "Killin Dem",
+        "Gbeku",
+        "Bolanle",
+        "Lagos Anthem"
+      ],
+      "answerIndex": 0,
+      "difficulty": "easy",
+      "explanation": "Killin Dem is listed as the 2019 Best Collaboration winner.",
+      "sources": [
+        {
+          "url": "https://theheadies.com/2019-winners-2/",
+          "label": "The Headies official winners archive",
+          "verifiedAt": "2026-10-15T11:07:05.046537+00:00",
+          "recordId": "career:af1823688651c830f9ea",
+          "evidence": {
+            "claim": "Killin Dem is listed as the 2019 Best Collaboration winner.",
+            "answer": "Killin Dem"
+          }
+        }
+      ]
+    },
+    {
+      "id": "6891c2ed59bc4b2cc0fe",
+      "artist": "yemi-alade",
+      "category": "awards",
+      "prompt": "Which live-show-related award did Yemi Alade win at the 2019 Headies?",
+      "options": [
+        "Best Performer",
+        "Best Music Video",
+        "Best Collaboration",
+        "Producer of the Year"
+      ],
+      "answerIndex": 0,
+      "difficulty": "easy",
+      "explanation": "The 2019 winners archive names Yemi Alade as Best Performer.",
+      "sources": [
+        {
+          "url": "https://theheadies.com/2019-winners-2/",
+          "label": "The Headies official winners archive",
+          "verifiedAt": "2026-10-15T11:07:05.046537+00:00",
+          "recordId": "career:6891c2ed59bc4b2cc0fe",
+          "evidence": {
+            "claim": "The 2019 winners archive names Yemi Alade as Best Performer.",
+            "answer": "Best Performer"
+          }
+        }
+      ]
+    },
+    {
+      "id": "59a6f78d22f72ee66802",
+      "artist": "2baba",
+      "category": "awards",
+      "prompt": "Which honour did 2Baba, listed as 2Face, receive at the 2015 Headies?",
+      "options": [
+        "Hall of Fame",
+        "Next Rated",
+        "Rookie of the Year",
+        "Best Rap Album"
+      ],
+      "answerIndex": 0,
+      "difficulty": "easy",
+      "explanation": "The 2015 winners archive lists 2Face under Hall of Fame.",
+      "sources": [
+        {
+          "url": "https://theheadies.com/2015-winners/",
+          "label": "The Headies official winners archive",
+          "verifiedAt": "2026-10-15T11:07:05.046537+00:00",
+          "recordId": "career:59a6f78d22f72ee66802",
+          "evidence": {
+            "claim": "The 2015 winners archive lists 2Face under Hall of Fame.",
+            "answer": "Hall of Fame"
+          }
+        }
+      ]
+    },
+    {
+      "id": "244812e94da85da5b5a7",
+      "artist": "don-jazzy",
+      "category": "awards",
+      "prompt": "Which honour did Don Jazzy receive at the 2015 Headies?",
+      "options": [
+        "Special Recognition",
+        "Next Rated",
+        "Best Vocal Performance",
+        "Best Rap Single"
+      ],
+      "answerIndex": 0,
+      "difficulty": "easy",
+      "explanation": "Don Jazzy received Special Recognition in the 2015 archive.",
+      "sources": [
+        {
+          "url": "https://theheadies.com/2015-winners/",
+          "label": "The Headies official winners archive",
+          "verifiedAt": "2026-10-15T11:07:05.046537+00:00",
+          "recordId": "career:244812e94da85da5b5a7",
+          "evidence": {
+            "claim": "Don Jazzy received Special Recognition in the 2015 archive.",
+            "answer": "Special Recognition"
+          }
+        }
+      ]
+    },
+    {
+      "id": "56fea0f36a3e24344e99",
+      "artist": "adekunle-gold",
+      "category": "awards",
+      "prompt": "Which Adekunle Gold song won Best Alternative Song at the 2015 Headies?",
+      "options": [
+        "Sade",
+        "Orente",
+        "Pick Up",
+        "Sinner"
+      ],
+      "answerIndex": 0,
+      "difficulty": "easy",
+      "explanation": "Sade won Best Alternative Song in the 2015 winners archive.",
+      "sources": [
+        {
+          "url": "https://theheadies.com/2015-winners/",
+          "label": "The Headies official winners archive",
+          "verifiedAt": "2026-10-15T11:07:05.046537+00:00",
+          "recordId": "career:56fea0f36a3e24344e99",
+          "evidence": {
+            "claim": "Sade won Best Alternative Song in the 2015 winners archive.",
+            "answer": "Sade"
+          }
+        }
+      ]
+    },
+    {
+      "id": "8be95553d78f8dde4952",
+      "artist": "phyno",
+      "category": "awards",
+      "prompt": "Which collaboration featuring Phyno won Best Collaboration at the 2015 Headies?",
+      "options": [
+        "Local Rappers",
+        "Ghost Mode",
+        "Fada Fada",
+        "Connect"
+      ],
+      "answerIndex": 0,
+      "difficulty": "easy",
+      "explanation": "Local Rappers, by Reminisce featuring Olamide and Phyno, won Best Collaboration.",
+      "sources": [
+        {
+          "url": "https://theheadies.com/2015-winners/",
+          "label": "The Headies official winners archive",
+          "verifiedAt": "2026-10-15T11:07:05.046537+00:00",
+          "recordId": "career:8be95553d78f8dde4952",
+          "evidence": {
+            "claim": "Local Rappers, by Reminisce featuring Olamide and Phyno, won Best Collaboration.",
+            "answer": "Local Rappers"
+          }
+        }
+      ]
+    },
+    {
+      "id": "40060011669128f7a629",
+      "artist": "lagbaja",
+      "category": "awards",
+      "prompt": "Which Lagbaja and Ego song won Recording of the Year at the 2006 Headies?",
+      "options": [
+        "Never Far Away",
+        "Konko Below",
+        "Nothing for You",
+        "Gra Gra"
+      ],
+      "answerIndex": 0,
+      "difficulty": "easy",
+      "explanation": "Never Far Away is listed as the 2006 Recording of the Year.",
+      "sources": [
+        {
+          "url": "https://theheadies.com/2006-winners/",
+          "label": "The Headies official winners archive",
+          "verifiedAt": "2026-10-15T11:07:05.046537+00:00",
+          "recordId": "career:40060011669128f7a629",
+          "evidence": {
+            "claim": "Never Far Away is listed as the 2006 Recording of the Year.",
+            "answer": "Never Far Away"
+          }
+        }
+      ]
+    },
+    {
+      "id": "2fc794b5d47ec6517128",
+      "artist": "p-square",
+      "category": "awards",
+      "prompt": "Which P-Square song won Song of the Year at the 2006 Headies?",
+      "options": [
+        "Busy Body",
+        "Do Me",
+        "No One Like You",
+        "Personally"
+      ],
+      "answerIndex": 0,
+      "difficulty": "easy",
+      "explanation": "Busy Body won Song of the Year in the 2006 archive.",
+      "sources": [
+        {
+          "url": "https://theheadies.com/2006-winners/",
+          "label": "The Headies official winners archive",
+          "verifiedAt": "2026-10-15T11:07:05.046537+00:00",
+          "recordId": "career:2fc794b5d47ec6517128",
+          "evidence": {
+            "claim": "Busy Body won Song of the Year in the 2006 archive.",
+            "answer": "Busy Body"
+          }
+        }
+      ]
+    },
+    {
+      "id": "5666016ccffdd2d07cbc",
+      "artist": "d-banj",
+      "category": "awards",
+      "prompt": "Which career-building prize did D’banj win at the 2006 Headies?",
+      "options": [
+        "Revelation of the Year",
+        "Next Rated",
+        "Hall of Fame",
+        "Best Rap Album"
+      ],
+      "answerIndex": 0,
+      "difficulty": "easy",
+      "explanation": "The 2006 winners archive names D’banj as Revelation of the Year.",
+      "sources": [
+        {
+          "url": "https://theheadies.com/2006-winners/",
+          "label": "The Headies official winners archive",
+          "verifiedAt": "2026-10-15T11:07:05.046537+00:00",
+          "recordId": "career:5666016ccffdd2d07cbc",
+          "evidence": {
+            "claim": "The 2006 winners archive names D’banj as Revelation of the Year.",
+            "answer": "Revelation of the Year"
+          }
+        }
+      ]
+    },
+    {
+      "id": "d8239b5f0502f7fed447",
+      "artist": "davido",
+      "category": "awards",
+      "prompt": "Which emerging-artist prize did Davido win at the 2012 Headies?",
+      "options": [
+        "Next Rated",
+        "Rookie of the Year",
+        "Hall of Fame",
+        "Best New International Act"
+      ],
+      "answerIndex": 0,
+      "difficulty": "easy",
+      "explanation": "Davido is the 2012 Next Rated winner in the official archive.",
+      "sources": [
+        {
+          "url": "https://theheadies.com/2012-winners/",
+          "label": "The Headies official winners archive",
+          "verifiedAt": "2026-10-15T11:07:05.046537+00:00",
+          "recordId": "career:d8239b5f0502f7fed447",
+          "evidence": {
+            "claim": "Davido is the 2012 Next Rated winner in the official archive.",
+            "answer": "Next Rated"
+          }
+        }
+      ]
+    },
+    {
+      "id": "4f35d81295a7e5cf0b54",
+      "artist": "brymo",
+      "category": "awards",
+      "prompt": "Which Brymo song won Recording of the Year at the 2012 Headies?",
+      "options": [
+        "Ara",
+        "Good Morning",
+        "Down",
+        "Eko"
+      ],
+      "answerIndex": 0,
+      "difficulty": "easy",
+      "explanation": "Ara won Recording of the Year in the 2012 winners archive.",
+      "sources": [
+        {
+          "url": "https://theheadies.com/2012-winners/",
+          "label": "The Headies official winners archive",
+          "verifiedAt": "2026-10-15T11:07:05.046537+00:00",
+          "recordId": "career:4f35d81295a7e5cf0b54",
+          "evidence": {
+            "claim": "Ara won Recording of the Year in the 2012 winners archive.",
+            "answer": "Ara"
+          }
+        }
+      ]
+    },
+    {
+      "id": "a7edcc402f6c815b219b",
+      "artist": "ice-prince",
+      "category": "awards",
+      "prompt": "Which Ice Prince album won Best Rap Album at the 2012 Headies?",
+      "options": [
+        "E.L.I",
+        "Fire of Zamani",
+        "Jos to the World",
+        "Everybody Loves Ice Prince 2"
+      ],
+      "answerIndex": 0,
+      "difficulty": "easy",
+      "explanation": "E.L.I is listed as the 2012 Best Rap Album winner.",
+      "sources": [
+        {
+          "url": "https://theheadies.com/2012-winners/",
+          "label": "The Headies official winners archive",
+          "verifiedAt": "2026-10-15T11:07:05.046537+00:00",
+          "recordId": "career:a7edcc402f6c815b219b",
+          "evidence": {
+            "claim": "E.L.I is listed as the 2012 Best Rap Album winner.",
+            "answer": "E.L.I"
+          }
+        }
+      ]
+    },
+    {
+      "id": "b30bb8ec33712734e330",
+      "artist": "tiwa-savage",
+      "category": "awards",
+      "prompt": "Which Tiwa Savage recording won Best Vocal Performance (Female) at the 2012 Headies?",
+      "options": [
+        "Love Me, Love Me, Love Me",
+        "Kele Kele Love",
+        "Eminado",
+        "All Over"
+      ],
+      "answerIndex": 0,
+      "difficulty": "easy",
+      "explanation": "Love Me, Love Me, Love Me won the female vocal performance award.",
+      "sources": [
+        {
+          "url": "https://theheadies.com/2012-winners/",
+          "label": "The Headies official winners archive",
+          "verifiedAt": "2026-10-15T11:07:05.046537+00:00",
+          "recordId": "career:b30bb8ec33712734e330",
+          "evidence": {
+            "claim": "Love Me, Love Me, Love Me won the female vocal performance award.",
+            "answer": "Love Me, Love Me, Love Me"
+          }
+        }
+      ]
+    },
+    {
+      "id": "a51bf5af4801194101ec",
+      "artist": "bracket",
+      "category": "awards",
+      "prompt": "Which Bracket song won Song of the Year at the 2010 Headies?",
+      "options": [
+        "Yori Yori",
+        "Ada Owerri",
+        "No Time",
+        "Girl"
+      ],
+      "answerIndex": 0,
+      "difficulty": "easy",
+      "explanation": "Yori Yori is listed as Song of the Year in the 2010 archive.",
+      "sources": [
+        {
+          "url": "https://theheadies.com/2010-winners/",
+          "label": "The Headies official winners archive",
+          "verifiedAt": "2026-10-15T11:07:05.046537+00:00",
+          "recordId": "career:a51bf5af4801194101ec",
+          "evidence": {
+            "claim": "Yori Yori is listed as Song of the Year in the 2010 archive.",
+            "answer": "Yori Yori"
+          }
+        }
+      ]
+    },
+    {
+      "id": "98af98fc58ca6652dd0e",
+      "artist": "wande-coal",
+      "category": "awards",
+      "prompt": "Which Wande Coal album won Album of the Year at the 2010 Headies?",
+      "options": [
+        "Mushin 2 Mo’Hits",
+        "Wanted",
+        "Legend or No Legend",
+        "Realms"
+      ],
+      "answerIndex": 0,
+      "difficulty": "easy",
+      "explanation": "Mushin 2 Mo’Hits won Album of the Year in the 2010 archive.",
+      "sources": [
+        {
+          "url": "https://theheadies.com/2010-winners/",
+          "label": "The Headies official winners archive",
+          "verifiedAt": "2026-10-15T11:07:05.046537+00:00",
+          "recordId": "career:98af98fc58ca6652dd0e",
+          "evidence": {
+            "claim": "Mushin 2 Mo’Hits won Album of the Year in the 2010 archive.",
+            "answer": "Mushin 2 Mo’Hits"
+          }
+        }
+      ]
+    },
+    {
+      "id": "1b6f798e66c582a4e5ee",
+      "artist": "sarkodie",
+      "category": "awards",
+      "prompt": "Which BET Hip Hop Awards category did Sarkodie win in 2019?",
+      "options": [
+        "Best International Flow",
+        "Best New Hip Hop Artist",
+        "Lyricist of the Year",
+        "Best Hip Hop Video"
+      ],
+      "answerIndex": 0,
+      "difficulty": "easy",
+      "explanation": "BET names Sarkodie as the 2019 Best International Flow winner.",
+      "sources": [
+        {
+          "url": "https://www.bet.com/hip-hop-awards/articles/60xipz/hip-hop-awards-2022-throwback-best-international-flow-winners",
+          "label": "BET award report",
+          "verifiedAt": "2026-10-15T11:07:05.046537+00:00",
+          "recordId": "career:1b6f798e66c582a4e5ee",
+          "evidence": {
+            "claim": "BET names Sarkodie as the 2019 Best International Flow winner.",
+            "answer": "Best International Flow"
+          }
+        }
+      ]
+    },
+    {
+      "id": "5abe69f2521f17bfc13d",
+      "artist": "tems",
+      "category": "awards",
+      "prompt": "Which international honour did Tems win at the 2022 BET Awards?",
+      "options": [
+        "Best International Act",
+        "Best New International Act",
+        "Best International Flow",
+        "Global Icon"
+      ],
+      "answerIndex": 0,
+      "difficulty": "easy",
+      "explanation": "Tems won Best International Act at the 2022 BET Awards.",
+      "sources": [
+        {
+          "url": "https://www.bet.com/bet-awards/articles/femd2g/bet-awards-2022-best-international-artist-winner-tems",
+          "label": "BET award report",
+          "verifiedAt": "2026-10-15T11:07:05.046537+00:00",
+          "recordId": "career:5abe69f2521f17bfc13d",
+          "evidence": {
+            "claim": "Tems won Best International Act at the 2022 BET Awards.",
+            "answer": "Best International Act"
+          }
+        }
+      ]
+    },
+    {
+      "id": "41a2ef6f1de552a7f04c",
+      "artist": "burna-boy",
+      "category": "performance",
+      "prompt": "Which football final’s kick-off show did Burna Boy co-headline in 2023?",
+      "options": [
+        "UEFA Champions League final",
+        "FIFA World Cup final",
+        "AFCON final",
+        "UEFA Europa League final"
+      ],
+      "answerIndex": 0,
+      "difficulty": "easy",
+      "explanation": "Burna Boy co-headlined the 2023 Champions League Final Kick Off Show.",
+      "sources": [
+        {
+          "url": "https://www.uefa.com/uefachampionsleague/news/0282-183275b0cbe3-4afb88303286-1000--anitta-and-burna-boy-co-headline-the-2023-uefa-champions-/",
+          "label": "UEFA show report",
+          "verifiedAt": "2026-10-15T11:07:05.046537+00:00",
+          "recordId": "career:41a2ef6f1de552a7f04c",
+          "evidence": {
+            "claim": "Burna Boy co-headlined the 2023 Champions League Final Kick Off Show.",
+            "answer": "UEFA Champions League final"
+          }
+        }
+      ]
+    },
+    {
+      "id": "4cee953addbaaa2887f1",
+      "artist": "burna-boy",
+      "category": "performance",
+      "prompt": "Who co-headlined the 2023 Champions League final kick-off show with Burna Boy?",
+      "options": [
+        "Anitta",
+        "Shakira",
+        "Dua Lipa",
+        "Camila Cabello"
+      ],
+      "answerIndex": 0,
+      "difficulty": "easy",
+      "explanation": "UEFA names Anitta and Burna Boy as the show’s co-headliners.",
+      "sources": [
+        {
+          "url": "https://www.uefa.com/uefachampionsleague/news/0282-183275b0cbe3-4afb88303286-1000--anitta-and-burna-boy-co-headline-the-2023-uefa-champions-/",
+          "label": "UEFA show report",
+          "verifiedAt": "2026-10-15T11:07:05.046537+00:00",
+          "recordId": "career:4cee953addbaaa2887f1",
+          "evidence": {
+            "claim": "UEFA names Anitta and Burna Boy as the show’s co-headliners.",
+            "answer": "Anitta"
+          }
+        }
+      ]
+    },
+    {
+      "id": "47b4bdce6ff1edab7076",
+      "artist": "burna-boy",
+      "category": "performance",
+      "prompt": "Which city hosted Burna Boy’s 2023 Champions League final kick-off performance?",
+      "options": [
+        "Istanbul",
+        "Paris",
+        "London",
+        "Madrid"
+      ],
+      "answerIndex": 0,
+      "difficulty": "easy",
+      "explanation": "The 10 June 2023 show took place in Istanbul.",
+      "sources": [
+        {
+          "url": "https://www.uefa.com/uefachampionsleague/news/0282-183275b0cbe3-4afb88303286-1000--anitta-and-burna-boy-co-headline-the-2023-uefa-champions-/",
+          "label": "UEFA show report",
+          "verifiedAt": "2026-10-15T11:07:05.046537+00:00",
+          "recordId": "career:47b4bdce6ff1edab7076",
+          "evidence": {
+            "claim": "The 10 June 2023 show took place in Istanbul.",
+            "answer": "Istanbul"
+          }
+        }
+      ]
+    },
+    {
+      "id": "37df00c93d6a516c0347",
+      "artist": "rema",
+      "category": "performance",
+      "prompt": "Rema was part of the Afrobeats halftime lineup at which 2023 sporting event?",
+      "options": [
+        "NBA All-Star Game",
+        "Super Bowl",
+        "Wimbledon final",
+        "Rugby World Cup final"
+      ],
+      "answerIndex": 0,
+      "difficulty": "easy",
+      "explanation": "The NBA announced Rema for its 2023 All-Star halftime show.",
+      "sources": [
+        {
+          "url": "https://pr.nba.com/burna-boy-jewel-post-malone-rema-tems-and-vin-diesel-among-entertainers-headlining-2023-nba-all-star/",
+          "label": "NBA Communications",
+          "verifiedAt": "2026-10-15T11:07:05.046537+00:00",
+          "recordId": "career:37df00c93d6a516c0347",
+          "evidence": {
+            "claim": "The NBA announced Rema for its 2023 All-Star halftime show.",
+            "answer": "NBA All-Star Game"
+          }
+        }
+      ]
+    },
+    {
+      "id": "c8d86a3155c6a16dce63",
+      "artist": "tems",
+      "category": "performance",
+      "prompt": "Tems was part of the Afrobeats halftime lineup at which 2023 sporting event?",
+      "options": [
+        "NBA All-Star Game",
+        "Super Bowl",
+        "Wimbledon final",
+        "Rugby World Cup final"
+      ],
+      "answerIndex": 0,
+      "difficulty": "easy",
+      "explanation": "The NBA announced Tems for its 2023 All-Star halftime show.",
+      "sources": [
+        {
+          "url": "https://pr.nba.com/burna-boy-jewel-post-malone-rema-tems-and-vin-diesel-among-entertainers-headlining-2023-nba-all-star/",
+          "label": "NBA Communications",
+          "verifiedAt": "2026-10-15T11:07:05.046537+00:00",
+          "recordId": "career:c8d86a3155c6a16dce63",
+          "evidence": {
+            "claim": "The NBA announced Tems for its 2023 All-Star halftime show.",
+            "answer": "NBA All-Star Game"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ed57c8e4fc129ae66faa",
+      "artist": "burna-boy",
+      "category": "performance",
+      "prompt": "Burna Boy was part of the Afrobeats halftime lineup at which 2023 sporting event?",
+      "options": [
+        "NBA All-Star Game",
+        "Super Bowl",
+        "Wimbledon final",
+        "Rugby World Cup final"
+      ],
+      "answerIndex": 0,
+      "difficulty": "easy",
+      "explanation": "The NBA announced Burna Boy for its 2023 All-Star halftime show.",
+      "sources": [
+        {
+          "url": "https://pr.nba.com/burna-boy-jewel-post-malone-rema-tems-and-vin-diesel-among-entertainers-headlining-2023-nba-all-star/",
+          "label": "NBA Communications",
+          "verifiedAt": "2026-10-15T11:07:05.046537+00:00",
+          "recordId": "career:ed57c8e4fc129ae66faa",
+          "evidence": {
+            "claim": "The NBA announced Burna Boy for its 2023 All-Star halftime show.",
+            "answer": "NBA All-Star Game"
+          }
+        }
+      ]
+    },
+    {
+      "id": "aa1a06dc846b107f14d0",
+      "artist": "burna-boy",
+      "category": "performance",
+      "prompt": "Which pair joined Burna Boy onstage for “Sittin’ on Top of the World” at the 2024 GRAMMYs?",
+      "options": [
+        "Brandy and 21 Savage",
+        "SZA and Drake",
+        "Beyoncé and Jay-Z",
+        "Rihanna and Kendrick Lamar"
+      ],
+      "answerIndex": 0,
+      "difficulty": "hard",
+      "explanation": "Brandy and 21 Savage joined Burna Boy for the 2024 performance.",
+      "sources": [
+        {
+          "url": "https://www.grammy.com/news/burna-boy-tyla-africa-big-moment-2024-grammys/",
+          "label": "Recording Academy",
+          "verifiedAt": "2026-10-15T11:07:05.046537+00:00",
+          "recordId": "career:aa1a06dc846b107f14d0",
+          "evidence": {
+            "claim": "Brandy and 21 Savage joined Burna Boy for the 2024 performance.",
+            "answer": "Brandy and 21 Savage"
+          }
+        }
+      ]
+    },
+    {
+      "id": "5a67bcf864f12c05ddea",
+      "artist": "burna-boy",
+      "category": "performance",
+      "prompt": "Which song opened Burna Boy’s 2024 GRAMMY performance?",
+      "options": [
+        "On Form",
+        "Last Last",
+        "Ye",
+        "City Boys"
+      ],
+      "answerIndex": 0,
+      "difficulty": "hard",
+      "explanation": "The Recording Academy’s recap says the set began with On Form.",
+      "sources": [
+        {
+          "url": "https://www.grammy.com/news/burna-boy-tyla-africa-big-moment-2024-grammys/",
+          "label": "Recording Academy",
+          "verifiedAt": "2026-10-15T11:07:05.046537+00:00",
+          "recordId": "career:5a67bcf864f12c05ddea",
+          "evidence": {
+            "claim": "The Recording Academy’s recap says the set began with On Form.",
+            "answer": "On Form"
+          }
+        }
+      ]
+    },
+    {
+      "id": "0614709a66f999b38071",
+      "artist": "fela-kuti",
+      "category": "performance",
+      "prompt": "Which Fela Kuti song played as Tyla approached the stage for her 2024 GRAMMY win?",
+      "options": [
+        "Water No Get Enemy",
+        "Zombie",
+        "Lady",
+        "Shakara"
+      ],
+      "answerIndex": 0,
+      "difficulty": "hard",
+      "explanation": "The Recording Academy reports that Water No Get Enemy soundtracked Tyla’s walk to the stage.",
+      "sources": [
+        {
+          "url": "https://www.grammy.com/news/burna-boy-tyla-africa-big-moment-2024-grammys/",
+          "label": "Recording Academy",
+          "verifiedAt": "2026-10-15T11:07:05.046537+00:00",
+          "recordId": "career:0614709a66f999b38071",
+          "evidence": {
+            "claim": "The Recording Academy reports that Water No Get Enemy soundtracked Tyla’s walk to the stage.",
+            "answer": "Water No Get Enemy"
+          }
+        }
+      ]
+    },
+    {
+      "id": "7b05e51f10e932c391d5",
+      "artist": "omah-lay",
+      "category": "breakout",
+      "prompt": "Omah Lay’s breakout debut EP Get Layd arrived in which year?",
+      "options": [
+        "2020",
+        "2018",
+        "2019",
+        "2021"
+      ],
+      "answerIndex": 0,
+      "difficulty": "easy",
+      "explanation": "His January 2021 interview dates Get Layd to May 2020 and describes its impact on his rise.",
+      "sources": [
+        {
+          "url": "https://www.teenvogue.com/story/nigerian-afrobeat-star-omah-lay",
+          "label": "Omah Lay interview · Teen Vogue",
+          "verifiedAt": "2026-10-15T11:07:05.046537+00:00",
+          "recordId": "career:7b05e51f10e932c391d5",
+          "evidence": {
+            "claim": "His January 2021 interview dates Get Layd to May 2020 and describes its impact on his rise.",
+            "answer": "2020"
+          }
+        }
+      ]
+    },
+    {
+      "id": "013fe1ae546827620af7",
+      "artist": "omah-lay",
+      "category": "breakout",
+      "prompt": "Which EP marked Omah Lay’s 2020 breakthrough?",
+      "options": [
+        "Get Layd",
+        "Boy Alone",
+        "What Have We Done",
+        "Rave & Roses"
+      ],
+      "answerIndex": 0,
+      "difficulty": "easy",
+      "explanation": "In his Teen Vogue interview, Omah Lay credits Get Layd with transforming his career.",
+      "sources": [
+        {
+          "url": "https://www.teenvogue.com/story/nigerian-afrobeat-star-omah-lay",
+          "label": "Omah Lay interview · Teen Vogue",
+          "verifiedAt": "2026-10-15T11:07:05.046537+00:00",
+          "recordId": "career:013fe1ae546827620af7",
+          "evidence": {
+            "claim": "In his Teen Vogue interview, Omah Lay credits Get Layd with transforming his career.",
+            "answer": "Get Layd"
+          }
+        }
+      ]
+    },
+    {
+      "id": "28d953dbd2dc109887cf",
+      "artist": "rema",
+      "category": "breakout",
+      "prompt": "In which year did Rema sign to Mavin and emerge with “Dumebi”?",
+      "options": [
+        "2019",
+        "2017",
+        "2018",
+        "2021"
+      ],
+      "answerIndex": 0,
+      "difficulty": "easy",
+      "explanation": "Mavin’s artist biography dates his signing and Dumebi-led debut to 2019.",
+      "sources": [
+        {
+          "url": "https://www.mavinrecords.com/artists/rema/",
+          "label": "Mavin artist biography",
+          "verifiedAt": "2026-10-15T11:07:05.046537+00:00",
+          "recordId": "career:28d953dbd2dc109887cf",
+          "evidence": {
+            "claim": "Mavin’s artist biography dates his signing and Dumebi-led debut to 2019.",
+            "answer": "2019"
+          }
+        }
+      ]
+    },
+    {
+      "id": "e3e1037cd8727fa93a9d",
+      "artist": "rema",
+      "category": "breakout",
+      "prompt": "Which song does Mavin identify as Rema’s first global hit?",
+      "options": [
+        "Dumebi",
+        "Calm Down",
+        "Soundgasm",
+        "Bounce"
+      ],
+      "answerIndex": 0,
+      "difficulty": "easy",
+      "explanation": "Mavin describes Dumebi as the first global hit of his debut era.",
+      "sources": [
+        {
+          "url": "https://www.mavinrecords.com/artists/rema/",
+          "label": "Mavin artist biography",
+          "verifiedAt": "2026-10-15T11:07:05.046537+00:00",
+          "recordId": "career:e3e1037cd8727fa93a9d",
+          "evidence": {
+            "claim": "Mavin describes Dumebi as the first global hit of his debut era.",
+            "answer": "Dumebi"
+          }
+        }
+      ]
+    },
+    {
+      "id": "441a12214e2afee3de3c",
+      "artist": "ayra-starr",
+      "category": "breakout",
+      "prompt": "Which year did Don Jazzy sign Ayra Starr to Mavin?",
+      "options": [
+        "2021",
+        "2018",
+        "2019",
+        "2020"
+      ],
+      "answerIndex": 0,
+      "difficulty": "easy",
+      "explanation": "Mavin’s artist biography dates Ayra Starr’s signing to 2021.",
+      "sources": [
+        {
+          "url": "https://www.mavinrecords.com/artists/ayra-starr/",
+          "label": "Mavin artist biography",
+          "verifiedAt": "2026-10-15T11:07:05.046537+00:00",
+          "recordId": "career:441a12214e2afee3de3c",
+          "evidence": {
+            "claim": "Mavin’s artist biography dates Ayra Starr’s signing to 2021.",
+            "answer": "2021"
+          }
+        }
+      ]
+    },
+    {
+      "id": "a5e262b396e2aca88870",
+      "artist": "ayra-starr",
+      "category": "breakout",
+      "prompt": "Who discovered Ayra Starr on social media and signed her to Mavin?",
+      "options": [
+        "Don Jazzy",
+        "Olamide",
+        "D’banj",
+        "Sarz"
+      ],
+      "answerIndex": 0,
+      "difficulty": "easy",
+      "explanation": "Her Mavin biography credits Don Jazzy with discovering and signing her.",
+      "sources": [
+        {
+          "url": "https://www.mavinrecords.com/artists/ayra-starr/",
+          "label": "Mavin artist biography",
+          "verifiedAt": "2026-10-15T11:07:05.046537+00:00",
+          "recordId": "career:a5e262b396e2aca88870",
+          "evidence": {
+            "claim": "Her Mavin biography credits Don Jazzy with discovering and signing her.",
+            "answer": "Don Jazzy"
+          }
+        }
+      ]
+    },
+    {
+      "id": "34783051ce2ed7b3abd2",
+      "artist": "asake",
+      "category": "breakout",
+      "prompt": "Which year’s breakout run did TurnTable celebrate with its “Year of Asake” feature?",
+      "options": [
+        "2022",
+        "2020",
+        "2021",
+        "2023"
+      ],
+      "answerIndex": 0,
+      "difficulty": "easy",
+      "explanation": "TurnTable’s December 2022 feature profiles Asake’s breakout year.",
+      "sources": [
+        {
+          "url": "https://www.turntablecharts.com/magazine/3rd/58",
+          "label": "TurnTable artist profile",
+          "verifiedAt": "2026-10-15T11:07:05.046537+00:00",
+          "recordId": "career:34783051ce2ed7b3abd2",
+          "evidence": {
+            "claim": "TurnTable’s December 2022 feature profiles Asake’s breakout year.",
+            "answer": "2022"
+          }
+        }
+      ]
+    },
+    {
+      "id": "04eb76cbd66f5bf1c228",
+      "artist": "asake",
+      "category": "breakout",
+      "prompt": "Which January 2022 single does TurnTable identify as the start of Asake’s mainstream breakthrough?",
+      "options": [
+        "Omo Ope",
+        "Lady",
+        "Terminator",
+        "Yoga"
+      ],
+      "answerIndex": 0,
+      "difficulty": "easy",
+      "explanation": "TurnTable identifies Omo Ope as the January single that preceded his debut EP.",
+      "sources": [
+        {
+          "url": "https://www.turntablecharts.com/magazine/3rd/58",
+          "label": "TurnTable artist profile",
+          "verifiedAt": "2026-10-15T11:07:05.046537+00:00",
+          "recordId": "career:04eb76cbd66f5bf1c228",
+          "evidence": {
+            "claim": "TurnTable identifies Omo Ope as the January single that preceded his debut EP.",
+            "answer": "Omo Ope"
+          }
+        }
+      ]
+    },
+    {
+      "id": "5bcd035c86c70946ce1a",
+      "artist": "omah-lay",
+      "category": "awards",
+      "prompt": "Which prize did Omah Lay win at the 14th Headies, held in 2021?",
+      "options": [
+        "Next Rated",
+        "Rookie of the Year",
+        "Best Male Artiste",
+        "Best R&B Album"
+      ],
+      "answerIndex": 0,
+      "difficulty": "easy",
+      "explanation": "Omah Lay won Next Rated at the 14th Headies.",
+      "sources": [
+        {
+          "url": "https://punchng.com/the-headies-2021-fireboy-omah-lay-bad-boy-tims-win-first-ever-award-see-list-of-winners/",
+          "label": "PUNCH · 14th Headies winners report",
+          "verifiedAt": "2026-10-15T11:07:05.046537+00:00",
+          "recordId": "career:5bcd035c86c70946ce1a",
+          "evidence": {
+            "claim": "Omah Lay won Next Rated at the 14th Headies.",
+            "answer": "Next Rated"
+          }
+        }
+      ]
+    },
+    {
+      "id": "0ceb5c04675994741bdd",
+      "artist": "fireboy-dml",
+      "category": "awards",
+      "prompt": "Which Fireboy DML project won Best R&B Album at the 14th Headies?",
+      "options": [
+        "Laughter, Tears & Goosebumps",
+        "Apollo",
+        "Playboy",
+        "adedamola"
+      ],
+      "answerIndex": 0,
+      "difficulty": "easy",
+      "explanation": "The winners report names Laughter, Tears & Goosebumps as Best R&B Album.",
+      "sources": [
+        {
+          "url": "https://punchng.com/the-headies-2021-fireboy-omah-lay-bad-boy-tims-win-first-ever-award-see-list-of-winners/",
+          "label": "PUNCH · 14th Headies winners report",
+          "verifiedAt": "2026-10-15T11:07:05.046537+00:00",
+          "recordId": "career:0ceb5c04675994741bdd",
+          "evidence": {
+            "claim": "The winners report names Laughter, Tears & Goosebumps as Best R&B Album.",
+            "answer": "Laughter, Tears & Goosebumps"
+          }
+        }
+      ]
+    },
+    {
+      "id": "6bbf3001220ddbe57c0c",
+      "artist": "simi",
+      "category": "awards",
+      "prompt": "Which Simi song earned Songwriter of the Year at the 14th Headies?",
+      "options": [
+        "Duduke",
+        "Joromi",
+        "Smile for Me",
+        "Ayo"
+      ],
+      "answerIndex": 0,
+      "difficulty": "easy",
+      "explanation": "Simi won Songwriter of the Year for Duduke.",
+      "sources": [
+        {
+          "url": "https://punchng.com/the-headies-2021-fireboy-omah-lay-bad-boy-tims-win-first-ever-award-see-list-of-winners/",
+          "label": "PUNCH · 14th Headies winners report",
+          "verifiedAt": "2026-10-15T11:07:05.046537+00:00",
+          "recordId": "career:6bbf3001220ddbe57c0c",
+          "evidence": {
+            "claim": "Simi won Songwriter of the Year for Duduke.",
+            "answer": "Duduke"
+          }
+        }
+      ]
+    },
+    {
+      "id": "496adc63148c997968f1",
+      "artist": "joeboy",
+      "category": "awards",
+      "prompt": "Which DJ Neptune collaboration featuring Joeboy and Mr Eazi won Best Pop Single at the 14th Headies?",
+      "options": [
+        "Nobody",
+        "Beginning",
+        "Baby",
+        "Call"
+      ],
+      "answerIndex": 0,
+      "difficulty": "easy",
+      "explanation": "Nobody won Best Pop Single at that edition.",
+      "sources": [
+        {
+          "url": "https://punchng.com/the-headies-2021-fireboy-omah-lay-bad-boy-tims-win-first-ever-award-see-list-of-winners/",
+          "label": "PUNCH · 14th Headies winners report",
+          "verifiedAt": "2026-10-15T11:07:05.046537+00:00",
+          "recordId": "career:496adc63148c997968f1",
+          "evidence": {
+            "claim": "Nobody won Best Pop Single at that edition.",
+            "answer": "Nobody"
+          }
+        }
+      ]
+    }
+  ]
+}

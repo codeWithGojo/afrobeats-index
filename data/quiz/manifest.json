@@ -1,5 +1,5 @@
 {
-  "version": "0808f8e65c04",
+  "version": "7143b749c44d",
   "artists": [
     {
       "name": "Burna Boy",
@@ -11,12 +11,14 @@
       "image": "artists/burna-boy.jpg",
       "questionCount": 100,
       "categories": {
+        "awards": 1,
+        "performance": 6,
         "song-album": 13,
         "collaboration": 13,
         "artwork": 13,
         "tracklist": 13,
         "release-year": 12,
-        "release-order": 12,
+        "release-order": 5,
         "release-size": 12,
         "track-position": 12
       }
@@ -31,12 +33,14 @@
       "image": "artists/tems.jpg",
       "questionCount": 100,
       "categories": {
+        "awards": 2,
+        "performance": 1,
         "song-album": 13,
         "collaboration": 13,
         "artwork": 13,
         "tracklist": 13,
         "release-year": 12,
-        "release-order": 12,
+        "release-order": 9,
         "release-size": 12,
         "track-position": 12
       }
@@ -51,12 +55,15 @@
       "image": "artists/rema.jpg",
       "questionCount": 100,
       "categories": {
+        "awards": 1,
+        "performance": 1,
+        "breakout": 2,
         "song-album": 13,
         "collaboration": 13,
         "artwork": 13,
         "tracklist": 13,
         "release-year": 12,
-        "release-order": 12,
+        "release-order": 8,
         "release-size": 12,
         "track-position": 12
       }
@@ -70,12 +77,13 @@
       "image": "artists/tyla.jpg",
       "questionCount": 100,
       "categories": {
+        "awards": 1,
         "song-album": 13,
         "collaboration": 12,
         "artwork": 13,
         "tracklist": 13,
         "release-year": 13,
-        "release-order": 12,
+        "release-order": 11,
         "release-size": 12,
         "track-position": 12
       }
@@ -90,12 +98,13 @@
       "image": "artists/wizkid.jpg",
       "questionCount": 100,
       "categories": {
+        "awards": 1,
         "song-album": 13,
         "collaboration": 13,
         "artwork": 13,
         "tracklist": 13,
         "release-year": 12,
-        "release-order": 12,
+        "release-order": 11,
         "release-size": 12,
         "track-position": 12
       }
@@ -109,12 +118,14 @@
       "image": "artists/ayra-starr.jpg",
       "questionCount": 100,
       "categories": {
+        "awards": 1,
+        "breakout": 2,
         "song-album": 13,
         "collaboration": 13,
         "artwork": 13,
         "tracklist": 13,
         "release-year": 12,
-        "release-order": 12,
+        "release-order": 9,
         "release-size": 12,
         "track-position": 12
       }
@@ -129,12 +140,13 @@
       "image": "artists/davido.jpg",
       "questionCount": 100,
       "categories": {
+        "awards": 1,
         "song-album": 13,
         "collaboration": 13,
         "artwork": 13,
         "tracklist": 13,
         "release-year": 12,
-        "release-order": 12,
+        "release-order": 11,
         "release-size": 12,
         "track-position": 12
       }
@@ -149,12 +161,14 @@
       "image": "artists/asake.jpg",
       "questionCount": 100,
       "categories": {
+        "awards": 1,
+        "breakout": 2,
         "song-album": 13,
         "collaboration": 13,
         "artwork": 13,
         "tracklist": 13,
         "release-year": 12,
-        "release-order": 12,
+        "release-order": 9,
         "release-size": 12,
         "track-position": 12
       }
@@ -168,12 +182,14 @@
       "image": "artists/omah-lay.jpg",
       "questionCount": 100,
       "categories": {
+        "breakout": 2,
+        "awards": 1,
         "song-album": 13,
         "collaboration": 13,
         "artwork": 13,
         "tracklist": 13,
         "release-year": 12,
-        "release-order": 12,
+        "release-order": 9,
         "release-size": 12,
         "track-position": 12
       }
@@ -208,12 +224,13 @@
       "image": "artists/fireboy-dml.jpg",
       "questionCount": 100,
       "categories": {
+        "awards": 1,
         "song-album": 13,
         "collaboration": 13,
         "artwork": 13,
         "tracklist": 13,
         "release-year": 12,
-        "release-order": 12,
+        "release-order": 11,
         "release-size": 12,
         "track-position": 12
       }
@@ -227,12 +244,13 @@
       "image": "artists/victony.jpg",
       "questionCount": 100,
       "categories": {
+        "awards": 1,
         "song-album": 13,
         "collaboration": 13,
         "artwork": 13,
         "tracklist": 13,
         "release-year": 12,
-        "release-order": 12,
+        "release-order": 11,
         "release-size": 12,
         "track-position": 12
       }
@@ -265,12 +283,13 @@
       "image": "artists/bnxn.jpg",
       "questionCount": 100,
       "categories": {
+        "awards": 1,
         "song-album": 13,
         "collaboration": 13,
         "artwork": 13,
         "tracklist": 13,
         "release-year": 12,
-        "release-order": 12,
+        "release-order": 11,
         "release-size": 12,
         "track-position": 12
       }
@@ -401,12 +420,13 @@
       "image": "artists/olamide.jpg",
       "questionCount": 100,
       "categories": {
+        "awards": 1,
         "song-album": 13,
         "collaboration": 13,
         "artwork": 13,
         "tracklist": 13,
         "release-year": 12,
-        "release-order": 12,
+        "release-order": 11,
         "release-size": 12,
         "track-position": 12
       }
@@ -439,12 +459,13 @@
       "image": "artists/sarz.jpg",
       "questionCount": 100,
       "categories": {
+        "awards": 1,
         "song-album": 13,
         "collaboration": 13,
         "artwork": 13,
         "tracklist": 13,
         "release-year": 12,
-        "release-order": 12,
+        "release-order": 11,
         "release-size": 12,
         "track-position": 12
       }
@@ -497,12 +518,13 @@
       "image": "artists/adekunle-gold.jpg",
       "questionCount": 100,
       "categories": {
+        "awards": 1,
         "song-album": 13,
         "collaboration": 13,
         "artwork": 13,
         "tracklist": 13,
         "release-year": 12,
-        "release-order": 12,
+        "release-order": 11,
         "release-size": 12,
         "track-position": 12
       }
@@ -536,12 +558,13 @@
       "image": "artists/oxlade.jpg",
       "questionCount": 100,
       "categories": {
+        "awards": 1,
         "song-album": 14,
         "collaboration": 13,
         "artwork": 13,
         "tracklist": 8,
         "release-year": 13,
-        "release-order": 13,
+        "release-order": 12,
         "release-size": 13,
         "track-position": 13
       }
@@ -555,12 +578,13 @@
       "image": "artists/fave.jpg",
       "questionCount": 100,
       "categories": {
+        "awards": 1,
         "song-album": 13,
         "collaboration": 12,
         "artwork": 13,
         "tracklist": 13,
         "release-year": 13,
-        "release-order": 12,
+        "release-order": 11,
         "release-size": 12,
         "track-position": 12
       }
@@ -575,12 +599,13 @@
       "image": "artists/joeboy.jpg",
       "questionCount": 100,
       "categories": {
+        "awards": 1,
         "song-album": 13,
         "collaboration": 13,
         "artwork": 13,
         "tracklist": 13,
         "release-year": 12,
-        "release-order": 12,
+        "release-order": 11,
         "release-size": 12,
         "track-position": 12
       }
@@ -595,12 +620,13 @@
       "image": "artists/tiwa-savage.jpg",
       "questionCount": 100,
       "categories": {
+        "awards": 1,
         "song-album": 13,
         "collaboration": 13,
         "artwork": 13,
         "tracklist": 13,
         "release-year": 12,
-        "release-order": 12,
+        "release-order": 11,
         "release-size": 12,
         "track-position": 12
       }
@@ -614,12 +640,13 @@
       "image": "artists/lojay.jpg",
       "questionCount": 100,
       "categories": {
+        "awards": 1,
         "song-album": 13,
         "collaboration": 12,
         "artwork": 13,
         "tracklist": 13,
         "release-year": 13,
-        "release-order": 12,
+        "release-order": 11,
         "release-size": 12,
         "track-position": 12
       }
@@ -672,12 +699,13 @@
       "image": "artists/black-sherif.jpg",
       "questionCount": 100,
       "categories": {
+        "awards": 1,
         "song-album": 13,
         "collaboration": 13,
         "artwork": 13,
         "tracklist": 13,
         "release-year": 12,
-        "release-order": 12,
+        "release-order": 11,
         "release-size": 12,
         "track-position": 12
       }
@@ -749,12 +777,13 @@
       "image": "artists/zlatan.jpg",
       "questionCount": 100,
       "categories": {
+        "awards": 1,
         "song-album": 13,
         "collaboration": 13,
         "artwork": 13,
         "tracklist": 13,
         "release-year": 12,
-        "release-order": 12,
+        "release-order": 11,
         "release-size": 12,
         "track-position": 12
       }
@@ -787,12 +816,13 @@
       "image": "artists/blaqbonez.jpg",
       "questionCount": 100,
       "categories": {
+        "awards": 1,
         "song-album": 13,
         "collaboration": 13,
         "artwork": 13,
         "tracklist": 13,
         "release-year": 12,
-        "release-order": 12,
+        "release-order": 11,
         "release-size": 12,
         "track-position": 12
       }
@@ -826,12 +856,13 @@
       "image": "artists/chike.jpg",
       "questionCount": 100,
       "categories": {
+        "awards": 1,
         "song-album": 13,
         "collaboration": 13,
         "artwork": 13,
         "tracklist": 13,
         "release-year": 12,
-        "release-order": 12,
+        "release-order": 11,
         "release-size": 12,
         "track-position": 12
       }
@@ -924,12 +955,13 @@
       "image": "artists/phyno.jpg",
       "questionCount": 100,
       "categories": {
+        "awards": 1,
         "song-album": 13,
         "collaboration": 13,
         "artwork": 13,
         "tracklist": 13,
         "release-year": 12,
-        "release-order": 12,
+        "release-order": 11,
         "release-size": 12,
         "track-position": 12
       }
@@ -983,12 +1015,13 @@
       "image": "",
       "questionCount": 100,
       "categories": {
+        "performance": 1,
         "song-album": 13,
         "collaboration": 13,
         "artwork": 13,
         "tracklist": 13,
         "release-year": 12,
-        "release-order": 12,
+        "release-order": 11,
         "release-size": 12,
         "track-position": 12
       }
@@ -1002,12 +1035,13 @@
       "image": "",
       "questionCount": 100,
       "categories": {
+        "awards": 1,
         "song-album": 13,
         "collaboration": 13,
         "artwork": 13,
         "tracklist": 13,
         "release-year": 12,
-        "release-order": 12,
+        "release-order": 11,
         "release-size": 12,
         "track-position": 12
       }
@@ -1021,12 +1055,13 @@
       "image": "",
       "questionCount": 100,
       "categories": {
+        "awards": 1,
         "song-album": 13,
         "collaboration": 13,
         "artwork": 13,
         "tracklist": 13,
         "release-year": 12,
-        "release-order": 12,
+        "release-order": 11,
         "release-size": 12,
         "track-position": 12
       }
@@ -1040,12 +1075,13 @@
       "image": "",
       "questionCount": 100,
       "categories": {
+        "awards": 1,
         "song-album": 13,
         "collaboration": 13,
         "artwork": 13,
         "tracklist": 13,
         "release-year": 12,
-        "release-order": 12,
+        "release-order": 11,
         "release-size": 12,
         "track-position": 12
       }
@@ -1059,12 +1095,13 @@
       "image": "",
       "questionCount": 100,
       "categories": {
+        "awards": 1,
         "song-album": 13,
         "collaboration": 13,
         "artwork": 13,
         "tracklist": 13,
         "release-year": 12,
-        "release-order": 12,
+        "release-order": 11,
         "release-size": 12,
         "track-position": 12
       }
@@ -1078,12 +1115,13 @@
       "image": "",
       "questionCount": 100,
       "categories": {
+        "awards": 2,
         "song-album": 13,
         "collaboration": 13,
         "artwork": 13,
         "tracklist": 13,
         "release-year": 12,
-        "release-order": 12,
+        "release-order": 10,
         "release-size": 12,
         "track-position": 12
       }
@@ -1135,12 +1173,13 @@
       "image": "",
       "questionCount": 100,
       "categories": {
+        "awards": 1,
         "song-album": 13,
         "collaboration": 13,
         "artwork": 13,
         "tracklist": 13,
         "release-year": 12,
-        "release-order": 12,
+        "release-order": 11,
         "release-size": 12,
         "track-position": 12
       }
@@ -1154,12 +1193,13 @@
       "image": "",
       "questionCount": 100,
       "categories": {
+        "awards": 1,
         "song-album": 13,
         "collaboration": 13,
         "artwork": 13,
         "tracklist": 13,
         "release-year": 12,
-        "release-order": 12,
+        "release-order": 11,
         "release-size": 12,
         "track-position": 12
       }
@@ -1249,12 +1289,13 @@
       "image": "",
       "questionCount": 100,
       "categories": {
+        "awards": 1,
         "song-album": 13,
         "collaboration": 13,
         "artwork": 13,
         "tracklist": 13,
         "release-year": 12,
-        "release-order": 12,
+        "release-order": 11,
         "release-size": 12,
         "track-position": 12
       }
@@ -1268,12 +1309,13 @@
       "image": "",
       "questionCount": 100,
       "categories": {
+        "awards": 1,
         "song-album": 13,
         "collaboration": 13,
         "artwork": 13,
         "tracklist": 13,
         "release-year": 12,
-        "release-order": 12,
+        "release-order": 11,
         "release-size": 12,
         "track-position": 12
       }
@@ -1287,12 +1329,13 @@
       "image": "",
       "questionCount": 100,
       "categories": {
+        "awards": 1,
         "song-album": 13,
         "collaboration": 13,
         "artwork": 13,
         "tracklist": 13,
         "release-year": 12,
-        "release-order": 12,
+        "release-order": 11,
         "release-size": 12,
         "track-position": 12
       }
@@ -1382,12 +1425,13 @@
       "image": "",
       "questionCount": 100,
       "categories": {
+        "awards": 1,
         "song-album": 13,
         "collaboration": 13,
         "artwork": 13,
         "tracklist": 13,
         "release-year": 12,
-        "release-order": 12,
+        "release-order": 11,
         "release-size": 12,
         "track-position": 12
       }
@@ -1401,12 +1445,13 @@
       "image": "",
       "questionCount": 100,
       "categories": {
+        "awards": 1,
         "song-album": 15,
         "collaboration": 2,
         "artwork": 14,
         "tracklist": 14,
         "release-year": 14,
-        "release-order": 14,
+        "release-order": 13,
         "release-size": 13,
         "track-position": 14
       }
@@ -1477,12 +1522,13 @@
       "image": "",
       "questionCount": 100,
       "categories": {
+        "awards": 1,
         "song-album": 13,
         "collaboration": 13,
         "artwork": 13,
         "tracklist": 13,
         "release-year": 12,
-        "release-order": 12,
+        "release-order": 11,
         "release-size": 12,
         "track-position": 12
       }
