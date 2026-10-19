@@ -89,13 +89,16 @@ window.AFRI_YEARLY_STREAMS.songs.push(
 );
 
 (function renderYearlyStreams() {
+  function initYearlyStreams() {
   const data = window.AFRI_YEARLY_STREAMS;
   const fmt = new Intl.NumberFormat("en", { notation:"compact", maximumFractionDigits:1 });
   const dateFmt = new Intl.DateTimeFormat("en-GB", { day:"numeric", month:"short", year:"numeric" });
   const stateArtists = window.AFRI_EMBEDDED_STATE?.artists || [];
   const artistBySlug = new Map(stateArtists.map((artist) => [artist.slug, artist]));
   const safe = (value) => String(value ?? "").replace(/[&<>'"]/g, (c) => ({"&":"&amp;","<":"&lt;",">":"&gt;","'":"&#39;",'"':"&quot;"})[c]);
-  const date = (value) => dateFmt.format(new Date(value + "T00:00:00Z"));
+  const date = (value) => value && Number.isFinite(Date.parse(value)) ? dateFmt.format(new Date(value.slice(0,10) + "T00:00:00Z")) : "Date unavailable";
+  const total = item => Number.isFinite(item.total_streams) ? item.total_streams : Number.isFinite(item.streams_this_year) ? item.streams_this_year : null;
+  const link = (url,label) => /^https:\/\//.test(url || "") ? `<a href="${safe(url)}" target="_blank" rel="noopener noreferrer">${safe(label)} ↗</a>` : "";
   const art = (item) => {
     if (item.artwork_url) return `<img class="yearly-art" src="${safe(item.artwork_url)}" alt="${safe((typeLabel(item)))} official release artwork">`;
     const artist = artistBySlug.get(item.artist_slug);
@@ -103,12 +106,13 @@ window.AFRI_YEARLY_STREAMS.songs.push(
     return src ? `<img class="yearly-art" src="${safe(src)}" alt="${safe(item.artist)} artwork thumbnail">` : `<span class="yearly-art yearly-art-fallback" aria-hidden="true">${safe((item.artist || "?").slice(0,1))}</span>`;
   };
   const typeLabel = (item) => item.song_title || item.album_title || item.artist || "Release";
-  const render = (items, type, year) => [...items].filter((item) => item.year === year).sort((a,b) => b.streams_this_year - a.streams_this_year).map((item,index) => {
+  const render = (items, type, year) => [...items].filter((item) => item.year === year).sort((a,b) => (total(b) ?? -1) - (total(a) ?? -1)).map((item,index) => {
     const title = type === "album" ? item.album_title : item.song_title;
     const album = type === "song" && item.album_title ? ` · ${safe(item.album_title)}` : "";
     const youtube = item.youtube_views_this_year ? ` · <a href="${safe(item.youtube_url)}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">YouTube ${fmt.format(item.youtube_views_this_year)} ↗</a>` : "";
-    const metricLabel = year === data.active_year ? "Spotify streams" : "Spotify catalogue";
-    return `<div class="yearly-entry" role="link" tabindex="0" data-yearly-artist="${safe(item.artist_slug)}" aria-label="Open ${safe(item.artist)} artist profile"><span class="yearly-rank">${String(index+1).padStart(2,"0")}</span>${art(item)}<div><p class="yearly-title">${safe(title)}</p><p class="yearly-meta">${safe(item.artist)}${album}<br>Released ${safe(date(item.release_date))}${youtube}</p></div><div class="yearly-count"><strong>${fmt.format(item.streams_this_year)}</strong><small>${metricLabel}</small></div></div>`;
+    const metricLabel = year === data.active_year ? "Lifetime Spotify total" : "Spotify catalogue";
+    const evidence = [link(item.spotify_url,"Spotify"),link(item.source_url,item.source_date ? `Ledger · ${date(item.source_date)}` : "Stream ledger"),link(item.release_source,"Release record")].filter(Boolean).join(" · ");
+    return `<div class="yearly-entry" role="link" tabindex="0" data-yearly-artist="${safe(item.artist_slug)}" aria-label="Open ${safe(item.artist)} artist profile"><span class="yearly-rank">${String(index+1).padStart(2,"0")}</span>${art(item)}<div><p class="yearly-title">${safe(title)}</p><p class="yearly-meta">${safe(item.artist)}${album}<br>Released ${safe(date(item.release_date))}${youtube}${evidence ? `<br>${evidence}` : ""}</p></div><div class="yearly-count"><strong>${total(item) === null ? "Unavailable" : fmt.format(total(item))}</strong><small>${metricLabel}</small></div></div>`;
   }).join("");
   const years = Array.from(new Set([...(data.albums || []), ...(data.songs || [])].map((item) => item.year))).sort((a,b) => b-a);
   const currentYear = new Date().getUTCFullYear();
@@ -130,6 +134,9 @@ window.AFRI_YEARLY_STREAMS.songs.push(
   select?.addEventListener("change", () => renderYear(Number(select.value)));
   renderYear(data.active_year);
   const open = (row) => { if (row?.dataset.yearlyArtist && typeof window.openCurrentArtist === "function") window.openCurrentArtist(row.dataset.yearlyArtist); };
-  document.addEventListener("click", (event) => open(event.target.closest("[data-yearly-artist]")));
+  document.addEventListener("click", (event) => { if (!event.target.closest("a,button")) open(event.target.closest("[data-yearly-artist]")); });
   document.addEventListener("keydown", (event) => { if ((event.key === "Enter" || event.key === " ") && event.target.matches("[data-yearly-artist]")) { event.preventDefault(); open(event.target); } });
+  }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", initYearlyStreams, {once:true});
+  else initYearlyStreams();
 })();

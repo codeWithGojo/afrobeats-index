@@ -10,9 +10,11 @@ The Current 50 song and album ledgers are collected from Kworb, with Apple relea
 
 ## Ranking
 
-The published nine-factor editorial contribution stays fixed. The stream index is 100 × comparable lifetime audio total / the largest comparable total. Current score = fixed editorial contribution + 0.17 × stream index. Monthly listeners have no effect. A new platform enters this index only when every Current artist has a valid observation for that platform. Partial extra-platform observations may appear in tracked totals without distorting the common-coverage rank. YouTube views never enter the audio index. Ties use the previous published rank, then slug.
+The raw published editorial contributions remain locked. Editorial points = 83 × an artist’s locked contribution / the largest contribution in the complete locked baseline. The stream index is 100 × comparable lifetime audio total / the largest comparable total. Current score = editorial points + 0.17 × stream index. This bounds editorial points at 83, stream points at 17 and the total at 100 without clamping or inventing individual component marks. The normalization denominator comes from the entire locked baseline, even when displaying a subset. Monthly listeners have no effect. A new platform enters this index only when every Current artist has a valid observation for that platform. Partial extra-platform observations may appear in tracked totals without distorting the common-coverage rank. YouTube views never enter the audio index. Ties use the previous published rank, then slug.
 
-The previous edition is locked in `data/ranking-baseline-2026-10-05.json`; it must not be regenerated from an already recalculated edition. The historical source does not expose nine individual editorial marks, so the system preserves its published contribution instead of inventing marks.
+The previous edition is locked in `data/ranking-baseline-2026-10-05.json`; it must not be regenerated from an already recalculated edition. The historical source does not expose nine individual editorial marks, so the system retains the raw contribution for audit and normalizes the aggregate instead of inventing marks.
+
+Current production coverage is Spotify only: `data/platform-observations.json` contains no additional provider observations. Cross-platform ingestion is supported, but a complete cross-platform total is not yet available.
 
 ## Connect another provider
 

@@ -4,8 +4,25 @@ const data=require('../data/current.json');
 const base={'a':{rank:1,score:90,editorialContribution:75},'b':{rank:2,score:80,editorialContribution:74}};
 const make=()=>({meta:{},artists:[{slug:'a',totalSpotifyStreams:100,dailySpotifyStreams:10,monthlyListeners:1,statsLastUpdatedAt:'2026-10-19',sources:{catalogue:'https://kworb.net/a'}},{slug:'b',totalSpotifyStreams:200,dailySpotifyStreams:20,monthlyListeners:999999,statsLastUpdatedAt:'2026-10-19',sources:{catalogue:'https://kworb.net/b'}}]});
 const count=v=>measurement(v,'https://example.com/report','2026-10-19','2026-10-18');
-test('Current score is editorial plus 17% audio index and has no listener dependency',()=>{const s=apply(make(),base),before=s.artists.map(a=>[a.slug,a.score]);s.artists.forEach(a=>a.monthlyListeners=Number.MAX_SAFE_INTEGER);apply(s,base);assert.deepEqual(s.artists.map(a=>[a.slug,a.score]),before);assert.equal(s.artists[0].slug,'b');assert.equal(s.artists[0].score,91);assert.equal(s.artists[1].score,83.5);});
-test('Partial platform coverage and video views cannot distort the comparable audio score',()=>{const s=apply(make(),base,{artists:{a:{boomplay:count(10000),youtube:{...count(100000),metric:'video_views'}}}});const a=s.artists.find(a=>a.slug==='a');assert.equal(a.trackedAudioStreams,10100);assert.equal(a.streaming.videoViews,100000);assert.equal(a.streaming.observations.appleMusic,null);assert.equal(a.score,83.5);assert.deepEqual(a.scoreBreakdown.streamCoverage,['spotify']);});
-test('A platform with complete comparable coverage can enter the index once',()=>{const s=apply(make(),base,{artists:{a:{boomplay:count(300)},b:{boomplay:count(100)}}});assert.deepEqual(s.meta.rankingMethod.rankingPlatforms,['spotify','boomplay']);assert.equal(s.artists[0].slug,'a');assert.equal(s.artists[0].score,92);});
+test('Current score is editorial plus 17% audio index and has no listener dependency',()=>{const s=apply(make(),base),before=s.artists.map(a=>[a.slug,a.score]);s.artists.forEach(a=>a.monthlyListeners=Number.MAX_SAFE_INTEGER);apply(s,base);assert.deepEqual(s.artists.map(a=>[a.slug,a.score]),before);assert.equal(s.artists[0].slug,'b');assert.equal(s.artists[0].score,98.893333);assert.equal(s.artists[1].score,91.5);});
+test('Partial platform coverage and video views cannot distort the comparable audio score',()=>{const s=apply(make(),base,{artists:{a:{boomplay:count(10000),youtube:{...count(100000),metric:'video_views'}}}});const a=s.artists.find(a=>a.slug==='a');assert.equal(a.trackedAudioStreams,10100);assert.equal(a.streaming.videoViews,100000);assert.equal(a.streaming.observations.appleMusic,null);assert.equal(a.score,91.5);assert.deepEqual(a.scoreBreakdown.streamCoverage,['spotify']);});
+test('A platform with complete comparable coverage can enter the index once',()=>{const s=apply(make(),base,{artists:{a:{boomplay:count(300)},b:{boomplay:count(100)}}});assert.deepEqual(s.meta.rankingMethod.rankingPlatforms,['spotify','boomplay']);assert.equal(s.artists[0].slug,'a');assert.equal(s.artists[0].score,100);});
 test('Recording IDs prevent duplicate feature totals while different recordings stay separate',()=>{const song={title:'Song',streams:100,spotifyId:'same',lastVerifiedAt:'2026-10-19'};const artists=make().artists;artists[0].songs=[song,{...song,spotifyId:'remix'}];artists[1].songs=[song];const records=catalogue(artists);assert.equal(records.length,2);assert.deepEqual(records.find(r=>r.id==='spotify:same').artistSlugs,['a','b']);assert.equal(records.find(r=>r.id==='spotify:same').audioStreams,100);});
 test('Published browser and API snapshot retains 50 ranks, sourced dates and certifications',()=>{assert.deepEqual(data.artists.map(a=>a.rank),Array.from({length:50},(_,i)=>i+1));for(const a of data.artists){assert.equal(a.scoreBreakdown.listenerWeight,0);assert.equal(a.scoreBreakdown.streamWeight,17);assert.equal(a.streaming.observations.spotify.value,a.totalSpotifyStreams);assert(a.streaming.observations.spotify.sourceDate);assert(a.catalogueAlbums.length);}assert(Object.keys(data.certifications).length>20);const catalogue=require('../data/streaming-catalogue.json');assert.equal(new Set(catalogue.recordings.map(r=>r.id)).size,catalogue.recordings.length);});
+
+test('Editorial normalization uses the complete locked baseline and remains bounded on repeat application',()=>{
+ const baseline=require('../data/ranking-baseline-2026-10-05.json');
+ const snapshot=structuredClone(data);
+ apply(snapshot,baseline);
+ for(const a of snapshot.artists){
+  assert(a.scoreBreakdown.editorialContribution>=0&&a.scoreBreakdown.editorialContribution<=83);
+  assert(a.score>=0&&a.score<=100);
+  assert.equal(a.scoreBreakdown.rawEditorialContribution,baseline[a.slug].editorialContribution);
+ }
+ const before=snapshot.artists.map(a=>[a.slug,a.score]);
+ apply(snapshot,baseline);
+ assert.deepEqual(snapshot.artists.map(a=>[a.slug,a.score]),before);
+ const only=structuredClone(data);only.artists=only.artists.slice(0,1);apply(only,baseline);
+ const whole=snapshot.artists.find(a=>a.slug===only.artists[0].slug);
+ assert.equal(only.artists[0].scoreBreakdown.editorialContribution,whole.scoreBreakdown.editorialContribution);
+});

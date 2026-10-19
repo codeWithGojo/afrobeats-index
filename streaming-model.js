@@ -11,6 +11,8 @@
   return {audioStreams:audio.length?audio.reduce((n,p)=>n+observations[p].value,0):null,videoViews:video.length?video.reduce((n,p)=>n+observations[p].value,0):null,coverage:audio,videoCoverage:video,available:audio.length,possible:4,complete:audio.length===4,label:'Tracked audio streams',observations};
  }
  function apply(state,baseline,extras={artists:{},recordings:{},albums:{}}){
+  const editorialMaximum=Math.max(...Object.values(baseline).map(b=>b.editorialContribution));
+  if(!Number.isFinite(editorialMaximum)||editorialMaximum<=0)throw Error('Invalid editorial baseline');
   for(const a of state.artists){
    const observations=Object.fromEntries(platforms.map(p=>[p,null]));
    observations.spotify=measurement(a.totalSpotifyStreams,a.sources?.catalogue,a.statsLastUpdatedAt,a.spotifySourceUpdatedAt);
@@ -27,11 +29,13 @@
    const b=baseline[a.slug];if(!b)throw Error('Missing published baseline: '+a.slug);
    const index=maximum>0&&values[i]!==null?100*values[i]/maximum:null;
    if(index===null)throw Error('No comparable streaming coverage for Current ranking');
-   a.previousRank=b.rank;a.score=Number((b.editorialContribution+.17*index).toFixed(6));
-   a.scoreBreakdown={editorialContribution:b.editorialContribution,streamsIndex:index,streamsScore:index,streamWeight:17,listenerWeight:0,streamCoverage:rankingPlatforms,previousScore:b.score,baselineDate:'2026-10-05',method:'Fixed published editorial contribution + 17% × comparable tracked audio-stream index'};
+   if(!Number.isFinite(b.editorialContribution)||b.editorialContribution<0)throw Error('Invalid editorial contribution: '+a.slug);
+   const editorialContribution=83*b.editorialContribution/editorialMaximum;
+   a.previousRank=b.rank;a.score=Number((editorialContribution+.17*index).toFixed(6));
+   a.scoreBreakdown={editorialContribution,rawEditorialContribution:b.editorialContribution,editorialMaximum,editorialWeight:83,streamsIndex:index,streamsScore:index,streamWeight:17,listenerWeight:0,streamCoverage:rankingPlatforms,previousScore:b.score,baselineDate:'2026-10-05',method:'83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index'};
   }
   state.artists.sort((a,b)=>b.score-a.score||a.previousRank-b.previousRank||a.slug.localeCompare(b.slug)).forEach((a,i)=>a.rank=i+1);
-  state.meta.rankingMethod={editorial:'Published editorial contribution held fixed; individual editorial marks are not available',editorialWeight:83,streamWeight:17,listenerWeight:0,streams:'17% × (100 × comparable tracked audio streams / maximum)',rankingPlatforms,coveragePolicy:'Only audio platforms with sourced catalogue totals for every Current candidate enter the score. Partial platform totals and video views remain separate.',tieBreak:'Previous published rank, then artist slug',baselineDate:'2026-10-05'};
+  state.meta.rankingMethod={editorial:'Locked published editorial contribution normalized to 83 points using the maximum of the complete locked baseline; individual editorial marks are not available',editorialWeight:83,streamWeight:17,listenerWeight:0,streams:'17% × (100 × comparable tracked audio streams / maximum)',rankingPlatforms,coveragePolicy:'Only audio platforms with sourced catalogue totals for every Current candidate enter the score. Partial platform totals and video views remain separate.',tieBreak:'Previous published rank, then artist slug',baselineDate:'2026-10-05'};
   state.meta.rankingUpdatedAt=state.meta.lastRefreshAttemptAt||state.meta.streamsUpdatedAt;
   return state;
  }
