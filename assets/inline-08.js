@@ -41,11 +41,11 @@
       const badge=row.querySelector('.movement');
       if(badge){const delta=artist.previousRank-artist.rank;badge.textContent=delta>0?`↑ ${delta}`:delta<0?`↓ ${-delta}`:'—';badge.className='movement '+(delta>0?'movement-up':delta<0?'movement-down':'movement-flat');badge.title=delta?`${delta>0?'Up':'Down'} ${Math.abs(delta)} from #${artist.previousRank}`:'No movement this update';badge.setAttribute('aria-label',badge.title);}
       const metricBlocks = row.querySelectorAll(".current-streams span");
-      if (metricBlocks[0]) metricBlocks[0].querySelector("strong").textContent = compact(artist.monthlyListeners);
-      if (metricBlocks[1]) metricBlocks[1].querySelector("strong").textContent = compact(artist.totalSpotifyStreams);
+      if (metricBlocks[0]) metricBlocks[0].querySelector("strong").textContent = compact(artist.dailySpotifyStreams);
+      if (metricBlocks[1]) metricBlocks[1].querySelector("strong").textContent = compact(artist.trackedAudioStreams ?? artist.totalSpotifyStreams);
       metricBlocks.forEach((block, index) => {
         const small = block.querySelector("small");
-        const updatedAt = index === 0 ? artist.monthlyListenersLastUpdatedAt : artist.statsLastUpdatedAt;
+        const updatedAt = index === 0 ? artist.statsLastUpdatedAt : artist.statsLastUpdatedAt;
         if (small && !small.querySelector("em")) small.insertAdjacentHTML("beforeend", `<em>Updated ${escapeHtml(dateLabel(updatedAt))}</em>`);
       });
     });
@@ -72,7 +72,7 @@
     const list = root.querySelector(".regional-list");
     const paint = (region) => {
       const artists = state.artists.filter((artist) => regionFor(artist.country) === region).sort((a, b) => b.score - a.score);
-      list.innerHTML = artists.map((artist, index) => `<button class="regional-row" type="button" data-artist-slug="${escapeHtml(artist.slug)}"><span class="regional-rank">${String(index + 1).padStart(2, "0")}</span><span class="regional-person"><img src="${escapeHtml(artist.imageFallback || artist.image || "")}" data-fallback-src="${escapeHtml(artist.imageFallback || "")}" alt="Portrait of ${escapeHtml(artist.name)}" loading="lazy" decoding="async"><span><strong>${escapeHtml(artist.name)}</strong><small>${escapeHtml(artist.country)} · global #${artist.rank}</small></span></span><span class="regional-metrics"><strong>${compact(artist.monthlyListeners)}</strong><small>monthly listeners</small></span><span class="regional-score">${Number(artist.score).toFixed(1)}</span></button>`).join("") || `<p class="tour-empty">No Current 50 artists are assigned to this region yet.</p>`;
+      list.innerHTML = artists.map((artist, index) => `<button class="regional-row" type="button" data-artist-slug="${escapeHtml(artist.slug)}"><span class="regional-rank">${String(index + 1).padStart(2, "0")}</span><span class="regional-person"><img src="${escapeHtml(artist.imageFallback || artist.image || "")}" data-fallback-src="${escapeHtml(artist.imageFallback || "")}" alt="Portrait of ${escapeHtml(artist.name)}" loading="lazy" decoding="async"><span><strong>${escapeHtml(artist.name)}</strong><small>${escapeHtml(artist.country)} · global #${artist.rank}</small></span></span><span class="regional-metrics"><strong>${compact(artist.dailySpotifyStreams)}</strong><small>daily Spotify streams</small></span><span class="regional-score">${Number(artist.score).toFixed(1)}</span></button>`).join("") || `<p class="tour-empty">No Current 50 artists are assigned to this region yet.</p>`;
     };
     paint(available[0]);
     root.querySelectorAll(".region-tab").forEach((button) => button.addEventListener("click", () => {
@@ -322,6 +322,19 @@
       <div class="performance-item"><div><strong><a class="live-source-link" href="${escapeHtml(item.sourceUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(item.name)} ↗</a></strong><small>${escapeHtml(item.venueOrFestival)} · ${escapeHtml(item.year)}</small></div><div class="performance-metric">${escapeHtml(item.metric)}</div></div>`).join("")}</div>` : `<p class="tour-empty">No performance has been added without a defensible attendance, view-count or cultural-significance source. This record remains editable from the maintenance desk.</p>`}</section>`;
   }
 
+  function platformStreamSection(artist) {
+    const streaming = artist.streaming || {};
+    const observations = streaming.observations || {};
+    const sources = window.AfriStreaming;
+    const coverage = (artist.scoreBreakdown?.streamCoverage || []).map(p => sources?.labels[p] || p).join(' + ');
+    return `<section class="streaming-evidence"><div class="live-section-head"><div><p>One artist · connected platforms</p><h3>Across the platforms</h3></div><p>Audio streams · 17% of Current</p></div><div class="platform-stream-grid">${(sources?.platforms || ['spotify','appleMusic','audiomack','boomplay','youtube']).map(p => { const o = observations[p]; return `<article><small>${escapeHtml(sources?.labels[p] || p)} ${p === 'youtube' ? 'views' : 'streams'}</small><strong>${o ? compact(o.value) : 'Unavailable'}</strong><span>${o ? 'Tracked catalogue · lifetime' : 'No sourced count connected'}</span>${o ? `<em>Publisher ${escapeHtml(o.sourceDate || 'date unavailable')} · checked ${escapeHtml(dateLabel(o.observedAt))}</em><a href="${escapeHtml(o.sourceUrl)}" target="_blank" rel="noopener noreferrer">Source ↗</a>` : ''}</article>`; }).join('')}</div><p class="platform-note">${escapeHtml(coverage || 'No comparable coverage')} supplies the ranking input for every artist. Other sourced audio counts can join the tracked total; video views stay separate. Unavailable counts never become zero.</p><div class="score-breakdown"><span><small>Published editorial contribution</small><strong>${Number(artist.scoreBreakdown?.editorialContribution || 0).toFixed(2)}</strong></span><span><small>Audio-stream index × 17%</small><strong>${Number((artist.scoreBreakdown?.streamsIndex || 0) * .17).toFixed(2)}</strong></span><span><small>Current score</small><strong>${Number(artist.score).toFixed(2)}</strong></span></div></section>`;
+  }
+
+  function albumLedger(artist) {
+    const albums = artist.catalogueAlbums || [];
+    return `<section class="album-ledger"><div class="live-section-head"><div><p>${albums.length} sourced catalogue entries</p><h3>Album ledger</h3></div></div><p class="platform-note">Album editions can overlap and may include featured appearances. These rows are never added to the artist total.</p><details><summary>View ${albums.length} album entries</summary>${albums.map(a => `<div class="tour-event"><div><strong><a href="https://open.spotify.com/album/${encodeURIComponent(a.spotifyId)}" target="_blank" rel="noopener noreferrer">${escapeHtml(a.title)} ↗</a></strong><small>Publisher ${escapeHtml(a.sourceDate || artist.albumsSourceUpdatedAt || 'date unavailable')}</small></div><div><strong>${compact(a.streams)}</strong><small>${compact(a.dailyStreams)} daily</small></div></div>`).join('')}</details></section>`;
+  }
+
   function enhanceOpenDialog() {
     const state = window.AFRI_LIVE_STATE;
     const dialog = document.getElementById("current-artist-dialog");
@@ -330,7 +343,7 @@
     const artist = state.artists?.find((entry) => entry.slug === slug);
     const copy = dialog.querySelector(".artist-dialog-copy");
     if (!artist || !copy || copy.querySelector(".artist-live-panel")) return;
-    copy.querySelector(".artist-dialog-bio")?.insertAdjacentHTML("afterend", certificationSection(artist, state));
+    copy.querySelector(".artist-dialog-metrics")?.insertAdjacentHTML("afterend", platformStreamSection(artist) + albumLedger(artist) + certificationSection(artist, state));
     copy.querySelector(".artist-dialog-footer")?.insertAdjacentHTML("beforebegin", `<div class="artist-live-panel"><p class="live-data-status">Streaming stats last verified ${escapeHtml(dateLabel(artist.statsLastUpdatedAt, true))}. Each failed refresh keeps the previous good figures.</p><section><div class="live-section-head"><div><p>Kworb streaming ledger</p><h3>Top streamed songs</h3></div><p>Daily and lifetime Spotify totals</p></div>${songRows(artist)}</section><section class="fifa-soundtrack-section"><div class="live-section-head"><div><p>Football culture archive</p><h3>FIFA / EA SPORTS FC soundtrack</h3></div><p>Placement flag · not a streaming rank</p></div><p class="fifa-meaning">The football badge means the song was officially featured in a FIFA or EA SPORTS FC soundtrack. Verified soundtrack songs remain listed here even when they are outside the artist’s top-streamed tracks.</p>${fifaRows(artist, state)}</section>${collaborationSection(artist)}${awardsSection(artist, state)}${touringSection(artist, state)}${performanceSection(artist, state)}</div>`);
     copy.querySelectorAll("[data-tour-tab]").forEach((button) => button.addEventListener("click", () => {
       const panelName = button.dataset.tourTab;

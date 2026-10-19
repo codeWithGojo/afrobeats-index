@@ -1039,6 +1039,7 @@ footer {
   </style>
   <link rel="stylesheet" href="music-receipt.css">
   <link rel="stylesheet" href="ui-refresh.css">
+  <link rel="stylesheet" href="glass-theme.css">
 </head>
 <body class="antialiased bg-white text-black" data-design="editorial">
   <div class="masthead-kicker bg-black text-white text-[10px] sm:text-xs tracking-widest uppercase py-2 px-4 flex justify-between">
@@ -1057,6 +1058,7 @@ footer {
           <a class="nav-btn" href="/quiz">Fan Quiz</a>
           <details class="more-menu" id="more-menu"><summary aria-label="Explore more"><span class="nav-label-desktop">Explore more</span><span class="nav-label-mobile">More</span><span aria-hidden="true">⌄</span></summary>
             <div class="more-panel" id="more-nav">
+              <a href="/studio/streams">Across platforms</a>
               <button onclick="showTab('alltime')" class="nav-btn more-mobile-only" data-tab="alltime">All-Time 50</button>
               <button onclick="showTab('regions')" class="nav-btn" data-tab="regions">Regions</button>
               <button onclick="showTab('underground')" class="nav-btn" data-tab="underground">Underground</button>
@@ -1092,7 +1094,7 @@ footer {
           <div class="scope-rail" aria-label="Index scope">
             <div><span>All-Time</span><strong>50 artists</strong></div>
             <div><span>Current</span><strong>50 artists</strong></div>
-            <div><span>Method</span><strong>11 metrics</strong></div>
+            <div><span>Method</span><strong>10 metrics</strong></div>
           </div>
         </div>
         <aside class="issue-panel" aria-label="Explore the index">
@@ -2184,7 +2186,7 @@ footer {
       <div class="flex-1 min-w-0">
         <p class="text-[10px] tracking-wider uppercase text-[#0047ff] font-medium">THE PACKAGE</p>
         <h3 class="font-semibold text-lg sm:text-xl leading-tight">Ayra Starr</h3>
-        <p class="text-sm text-gray-500 mt-0.5 truncate">Fashion + music. Strong monthly listeners.</p>
+        <p class="text-sm text-gray-500 mt-0.5 truncate">Fashion + music. Cross-market reach.</p>
         <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">AFROBEATS</span><span class="text-[10px] border border-gray-300 rounded-full px-2 py-0.5 text-gray-600">POP</span></div>
       </div>
       <div class="hidden sm:flex flex-col items-end shrink-0 w-28">
@@ -3204,7 +3206,7 @@ footer {
             <p class="text-sm text-gray-500 mb-2">Oyinkansola Sarah Aderibigbe · b. 2002</p>
             <p class="text-sm text-gray-700 mb-3">Mavin’s sharpest new-generation export. Fashion-runway presence and radio-dominant hooks.</p>
             <div class="grid grid-cols-2 gap-2 text-sm mb-3">
-              <div><p class="metric-label">Biggest Achievements</p><p>Rush global breakthrough, strong monthly listeners</p></div>
+              <div><p class="metric-label">Biggest Achievements</p><p>Rush global breakthrough, cross-market reach</p></div>
               <div><p class="metric-label">Hobby</p><p>Fashion, dance, creative direction</p></div>
               <div><p class="metric-label">Show Fee</p><p>$50k – $150k+</p></div>
               <div><p class="metric-label">Est. Annual Earnings</p><p>$3–5M</p></div>
@@ -3350,7 +3352,7 @@ footer {
       <div class="vs-shell">
         <div class="vs-intro">
           <h2 class="serif text-3xl sm:text-4xl mb-1">Head to Head</h2>
-          <p>Pick any two artists from the Current 50 and see them side by side — streams, listeners, score, and the community's pick.</p>
+          <p>Pick any two artists from the Current 50 and see them side by side — streams, daily plays, score, and the community's pick.</p>
         </div>
         <div class="vs-picker">
           <div class="vs-picker-field">
@@ -3448,9 +3450,9 @@ footer {
             <div class="flex justify-between py-2 border-b"><span class="text-[#0047ff]">07</span><span>Longevity 7%</span></div>
             <div class="flex justify-between py-2 border-b"><span class="text-[#0047ff]">08</span><span>Live performance 6%</span></div>
             <div class="flex justify-between py-2 border-b"><span class="text-[#0047ff]">09</span><span>Feature impact 5%</span></div>
-            <div class="flex justify-between py-2 border-b"><span class="text-[#0047ff]">10</span><span class="font-medium">Streams 10%</span></div>
+            <div class="flex justify-between py-2 border-b"><span class="text-[#0047ff]">10</span><span class="font-medium">Tracked audio streams 17%</span></div>
           </div>
-          <p class="text-xs text-gray-500 mt-3">Same core formula as All-Time. Streams (Spotify, Boomplay, Audiomack, YouTube) added as the 10th metric.</p>
+          <p class="text-xs text-gray-500 mt-3">Nine editorial factors total 83%; tracked audio streams carry 17%. Only comparable audio platform coverage enters the ranking. Video views are separate.</p>
         </div>
       </div>
       <div class="yearly-method mt-10">
@@ -3494,6 +3496,8 @@ footer {
 <script src="refresh-2026-09-28.js"></script>
 <script src="refresh-2026-10-05.js"></script>
 <script src="ranking-refresh-2026-10-05.js"></script>
+<script src="streaming-model.js"></script>
+<script src="streaming-snapshot.js"></script>
 <script src="recognition-audit-2026-09-28.js"></script>
 <script src="turntable-certifications.js"></script>
 <script src="certification-refresh-2026-10-05.js"></script>

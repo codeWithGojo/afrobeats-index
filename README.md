@@ -7,8 +7,8 @@ An editorial Afrobeats ranking that shows its work across eras.
 - All-Time 50 and a researched Current 50
 - Weekly movement indicators and update log
 - Side-by-side Compare Eras view
-- Eleven weighted Current metrics
-- Monthly Spotify listeners and cumulative tracked Spotify streams
+- Ten weighted Current metrics: nine editorial factors plus 17% tracked audio streams
+- Unified tracked audio-stream totals, separate video views and per-platform source dates
 - Fifty locally cached artist portraits and original editorial profiles
 - Inline methodology explanations for every metric
 - Music Receipt generator with African-artist matching, PNG export, native sharing and print support
@@ -19,7 +19,13 @@ https://afrobeats-index.vercel.app/
 
 ## Data note
 
-Spotify figures are an editorial snapshot checked on 5 October 2026. Kworb's latest available artist-ledger dates range from 13 September–4 October. Monthly listeners use each publisher's latest returned value; unavailable providers retain the prior verified value rather than becoming zero. The final ranking combines those signals with nine qualitative and career metrics.
+Sources checked on 19 October 2026 for all 50 Current artists: song and album ledgers from Kworb plus Apple release identities. Publisher ledger dates range from 28 September–18 October; a check date does not mean that the publisher updated that day. The official TurnTable page still supplies 2–8 October 2026, rechecked on 19 October. Its positions are preserved.
+
+Current uses the fixed published editorial contribution plus 17% × (100 × comparable tracked audio streams / maximum). The former 7% listener weight moves to streams. No new editorial component marks are invented. Platform coverage must be identical across all 50 candidates to enter scoring; the currently comparable provider is Spotify. The All-Time formula is unchanged.
+
+`npm run refresh:data` collects source packets, compiles the release-year cohort, checks TurnTable and builds shared browser/API artifacts. Failed providers retain last-good data with original source dates. `npm test` verifies scoring, coverage, recording deduplication and release identities.
+
+See [streaming methodology](docs/streaming-methodology.md) for provider integration and the cross-platform observation format.
 
 ## Music Receipt platform setup
 

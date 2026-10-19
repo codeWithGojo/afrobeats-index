@@ -40,7 +40,11 @@ def ledger(raw,entity):
   n=re.sub(r'[^0-9]','',cells[1]['text']);daily=re.sub(r'[^0-9]','',cells[2]['text'])
   if n:out.append({'title':cells[0]['text'].strip().lstrip('*').strip(),'total':int(n),'daily':int(daily) if daily else None,'spotify_url':link})
  m=re.search(r'Last updated:\s*(\d{4}/\d{2}/\d{2})',raw)
- return {'source_date':m[1].replace('/','-') if m else None,'rows':out}
+ summary={}
+ for label,field in [('Streams','total'),('Daily','daily'),('Tracks','count')]:
+  match=re.search(r'<tr><td class="text">'+label+r'</td><td>([0-9,]+)',raw)
+  summary[field]=int(match[1].replace(',','')) if match else None
+ return {'source_date':m[1].replace('/','-') if m else None,'rows':out,**summary}
 
 def one(a):
  slug=a['slug'];out={'artist_slug':slug,'name':a['name'],'checked_at':NOW}
@@ -58,7 +62,15 @@ def one(a):
 
 def main():
  artists=json.loads((D/'current.json').read_text())['artists']
+ previous={a['artist_slug']:a for a in json.loads((D/'releases-2026-sources.json').read_text())['artists']}
  with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:packets=list(pool.map(one,artists))
+ for a in packets:
+  old=previous.get(a['artist_slug'],{})
+  for kind in ['albums','songs']:
+   if not a[kind]['rows'] and old.get(kind,{}).get('rows'):
+    error=a[kind].get('error','No valid rows returned');a[kind]={**old[kind],'status':'retained_last_good','last_attempt_error':error,'verified_at':old[kind].get('verified_at',old.get('checked_at'))}
+   elif a[kind]['rows']:a[kind]['verified_at']=NOW
+  if not a['apple_albums'] and old.get('apple_albums'):a['apple_albums']=old['apple_albums'];a['apple_status']='retained_last_good'
  (D/'releases-2026-sources.json').write_text(json.dumps({'checked_at':NOW,'scope':'Current 50 artists; publisher catalogue coverage','artists':packets},ensure_ascii=False,separators=(',',':'))+'\n')
  print('Saved',len(packets),'artist source packets')
 if __name__=='__main__':main()

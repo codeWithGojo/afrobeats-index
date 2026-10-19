@@ -1,8 +1,9 @@
 {
-  "checkedAt": "2026-10-15T15:15:49.258735+00:00",
+  "checkedAt": "2026-10-19T14:33:42.240504+00:00",
   "weekStart": "2026-10-02",
   "weekEnd": "2026-10-08",
   "sourceUrl": "https://www.turntablecharts.com/charts/1",
+  "publisherChartId": 5963,
   "rows": [
     [
       1,
@@ -42,7 +43,7 @@
     ],
     [
       5,
-      "Ikebe 3000",
+      "IKEBE 3000",
       "Blaqbonez ft. Asake",
       0,
       1,
@@ -881,10 +882,10 @@
       98,
       "Hello",
       "Tml Vibez & Victony",
-      0,
+      -1,
       7,
       35,
-      "RE"
+      ""
     ],
     [
       99,

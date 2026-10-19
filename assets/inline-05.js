@@ -1,5 +1,5 @@
 (function () {
-  const UPDATE_VERSION = "2026-10-05-current-refresh";
+  const UPDATE_VERSION = "2026-10-19-streams-17";
   const SNAPSHOT_KEY = "afri-index-current-snapshot-v1";
   const currentArtists = Array.isArray(window.AFRI_CURRENT_ARTISTS) ? window.AFRI_CURRENT_ARTISTS : [];
 
@@ -13,13 +13,12 @@
     "Longevity": "How long the artist stayed relevant at a meaningful level.",
     "Live performance": "Touring scale, ticket demand and reputation on stage.",
     "Feature impact": "How often features improve records, widen reach or create moments.",
-    "Total Spotify streams": "Cumulative Spotify streams across the artist's tracked catalogue; updated as an editorial snapshot.",
-    "Monthly listeners": "The artist's rolling 28-day Spotify audience — a volatile reach signal, not a fan count."
+    "Tracked audio streams": "Sourced audio plays across tracked platforms. The score uses the same available platforms for every artist; video views stay separate."
   };
 
   const weights = {
     alltime: [["Impact & legacy",18],["Global reach",15],["Discography",14],["Commercial power",14],["Awards",10],["Cultural influence",10],["Longevity",8],["Live performance",6],["Feature impact",5]],
-    current: [["Impact & legacy",15],["Global reach",13],["Discography",11],["Commercial power",11],["Awards",8],["Cultural influence",8],["Longevity",6],["Live performance",6],["Feature impact",5],["Total Spotify streams",10],["Monthly listeners",7]]
+    current: [["Impact & legacy",15],["Global reach",13],["Discography",11],["Commercial power",11],["Awards",8],["Cultural influence",8],["Longevity",6],["Live performance",6],["Feature impact",5],["Tracked audio streams",17]]
   };
 
   function parseRank(value) {
@@ -116,7 +115,7 @@
     if (!section || !currentArtists.length) return;
     const description = section.querySelector("h2 + p");
     if (description) {
-      description.innerHTML = `The same nine cross-era signals, plus <strong>Total Spotify streams</strong> and <strong>Monthly listeners</strong> as separate metrics. Open any row for the artist file, exact figures and source links.`;
+      description.innerHTML = `Nine cross-era signals, with <strong>tracked audio streams carrying 17%</strong> of the Current score. Open any row for the artist file, exact figures and source links.`;
     }
 
     const oldList = section.querySelector(":scope > .border-t");
@@ -136,8 +135,8 @@
           <span class="current-tags">${tags}</span>
         </span>
         <span class="current-streams">
-          <span><small>Monthly listeners</small><strong>${compactNumber(artist.monthlyListeners)}</strong></span>
-          <span><small>Total Spotify streams</small><strong>${compactNumber(artist.totalSpotifyStreams)}</strong></span>
+          <span><small>Daily Spotify streams</small><strong>${compactNumber(artist.dailySpotifyStreams)}</strong></span>
+          <span><small>Tracked audio streams</small><strong>${compactNumber(artist.trackedAudioStreams ?? artist.totalSpotifyStreams)}</strong></span>
         </span>
         <span class="current-score"><small>${artist.country}</small><strong>${artist.score.toFixed(1)}</strong><i style="--score:${artist.score}%"></i></span>
       </button>`;
@@ -146,7 +145,7 @@
 
     const note = document.createElement("aside");
     note.className = "stream-source-note";
-    note.innerHTML = `<span class="live-dot" aria-hidden="true"></span><p><strong>Data desk · 5 Oct 2026.</strong> Monthly listeners are rolling Spotify audiences; catalogue streams are cumulative tracked totals. Both move daily and are evidence inside the Current formula, not the whole verdict. Portraits use public Spotify artist imagery; image rights remain with the artists and rights-holders. <a href="https://www.musicmetricsvault.com/genres/afrobeats/109" target="_blank" rel="noopener noreferrer">Monthly source ↗</a> <a href="https://kworb.net/spotify/" target="_blank" rel="noopener noreferrer">Stream source ↗</a></p>`;
+    note.innerHTML = `<span class="live-dot" aria-hidden="true"></span><p><strong>Tracked streams · 17% of Current.</strong> Audio plays and video views have separate totals. The ranking uses identical platform coverage for all 50 artists. Each artist file shows sources and publisher dates. <a href="https://kworb.net/spotify/" target="_blank" rel="noopener noreferrer">Spotify ledger ↗</a></p>`;
     list.insertAdjacentElement("afterend", note);
 
     list.addEventListener("click", (event) => {
@@ -185,7 +184,7 @@
         <p class="artist-dialog-tagline">${artist.tagline}</p>
         <p class="artist-dialog-bio">${artist.bio}</p>
         <div class="artist-dialog-metrics">
-          <div><small>Monthly listeners</small><strong>${compactNumber(artist.monthlyListeners)}</strong><span>${exactNumber(artist.monthlyListeners)}</span></div>
+          <div><small>Tracked audio streams</small><strong>${compactNumber(artist.trackedAudioStreams ?? artist.totalSpotifyStreams)}</strong><span>${(artist.streaming?.coverage || ["spotify"]).map(p => window.AfriStreaming?.labels[p] || p).join(" + ")} · partial platform coverage</span></div>
           <div><small>Total Spotify streams</small><strong>${compactNumber(artist.totalSpotifyStreams)}</strong><span>${exactNumber(artist.totalSpotifyStreams)}</span></div>
           <div><small>Daily tracked streams</small><strong>${compactNumber(artist.dailySpotifyStreams)}</strong><span>${exactNumber(artist.dailySpotifyStreams)}</span></div>
           <div><small>Chart movement</small><strong>${move}</strong><span>Since the previous editorial snapshot</span></div>
@@ -210,7 +209,7 @@
         audit.setAttribute("aria-label", "Current index weighting table");
         const groups = [
           { title: "Nine cross-era signals", total: 83, items: list.slice(0, 9) },
-          { title: "Two streaming metrics", total: 17, items: list.slice(9) }
+          { title: "Tracked audio streams", total: 17, items: list.slice(9) }
         ];
         audit.innerHTML = groups.map((group) => `
           <div class="metric-group">
@@ -223,11 +222,11 @@
         });
         const rail = document.createElement("div");
         rail.className = "methodology-rail";
-        rail.innerHTML = `<p><strong>How the Current score works</strong>Cross-era evidence keeps the ranking grounded; Spotify catalogue streams and monthly listeners measure present scale without controlling the result.</p><div class="methodology-actions"><button class="methodology-link" type="button" data-method-link>Read full method</button><button class="compare-text" type="button" data-compare-toggle aria-expanded="false">Compare eras ↗</button></div>`;
+        rail.innerHTML = `<p><strong>How the Current score works</strong>Cross-era evidence keeps the ranking grounded; tracked audio streams carry 17% and measure catalogue scale without controlling the result.</p><div class="methodology-actions"><button class="methodology-link" type="button" data-method-link>Read full method</button><button class="compare-text" type="button" data-compare-toggle aria-expanded="false">Compare eras ↗</button></div>`;
         rail.querySelector("[data-method-link]").addEventListener("click", () => showTab("method"));
         const disclosure = document.createElement("details");
         disclosure.className = "method-disclosure";
-        disclosure.innerHTML = `<summary><span><strong>How this ranking is scored</strong><small>11 weighted signals · sourced artist files</small></span><span aria-hidden="true">+</span></summary>`;
+        disclosure.innerHTML = `<summary><span><strong>How this ranking is scored</strong><small>10 weighted signals · sourced artist files</small></span><span aria-hidden="true">+</span></summary>`;
         disclosure.append(audit, rail);
         const description = section.querySelector("h2 + p");
         description?.insertAdjacentElement("afterend", disclosure);
@@ -267,17 +266,17 @@
     const heading = currentColumn.querySelector("h3");
     const list = currentColumn.querySelector(":scope > .border-t");
     const note = currentColumn.querySelector(":scope > p:last-child");
-    if (heading) heading.textContent = "Current (11 weighted metrics)";
+    if (heading) heading.textContent = "Current (10 weighted metrics)";
     if (list) {
       list.innerHTML = weights.current.map(([label, weight], index) => `<div class="flex justify-between py-2 border-b"><span class="text-[#0047ff]">${String(index + 1).padStart(2, "0")}</span><span${index > 8 ? ' class="font-medium"' : ""}>${label} ${weight}%</span></div>`).join("");
     }
-    if (note) note.textContent = "Monthly listeners and total Spotify streams are separate Current signals: one captures recent reach; the other captures catalogue depth. Together they account for 17%, so platform scale informs the ranking without controlling it.";
+    if (note) note.textContent = "Tracked audio streams carry 17% of Current. Monthly-listener weighting has been removed. Only platforms with comparable audio totals for every artist enter the score; video views remain separate.";
   }
 
   function updateDiscussionCopy() {
     document.querySelectorAll("#discuss p").forEach((paragraph) => {
       if (!paragraph.textContent.includes("Current uses the exact same nine metrics")) return;
-      paragraph.textContent = "Current keeps the same nine cross-era metrics, then adds two Spotify signals: cumulative catalogue streams and rolling monthly listeners. They are deliberately separated because a deep catalogue and a hot 28-day audience describe different kinds of power.";
+      paragraph.textContent = "Current keeps nine cross-era metrics and gives tracked audio streams 17%. Sources, publisher dates and platform coverage remain visible on each artist file.";
     });
   }
 
@@ -294,11 +293,11 @@
     module.setAttribute("aria-labelledby", "freshness-title");
     module.innerHTML = `
       <div class="freshness-bar">
-        <span class="sync-state"><span class="live-dot" aria-hidden="true"></span><strong id="freshness-title">Current edition</strong><span>Data snapshot · <time datetime="2026-10-05">5 Oct 2026</time></span></span>
+        <span class="sync-state"><span class="live-dot" aria-hidden="true"></span><strong id="freshness-title">Current edition</strong><span>Data snapshot · <time datetime="2026-10-19">19 Oct 2026</time></span></span>
         <div class="freshness-actions"><button class="compare-text" type="button" data-compare-toggle aria-expanded="false">Compare eras ↗</button>
           <details class="update-details"><summary>Update notes <span aria-hidden="true">⌄</span></summary>
             <div class="weekly-log"><p class="eyebrow">Update ledger</p><ul>
-              <li><span>15 OCT 2026</span><span>Editorial, Nigeria Top 100 and 2026 release lists checked. Current 50 ranking snapshot remains 5 October.</span></li>
+              <li><span>19 OCT 2026</span><span>All 50 song and album ledgers checked. Streams now carry 17%; monthly-listener weighting removed. Current 50 recalculated. TurnTable chart week remains 2–8 October.</span></li>
               <li><span>07 SEP 2026</span><span>All 50 Spotify artist ledgers and the Nigeria Top 100 were refreshed from their live source pages.</span></li>
               <li><span>28 AUG 2026</span><span>Tems, Rema and Tyla moved into the top four; JAZZWRLD, CIZA and Shoday entered the Current list.</span></li>
             </ul></div>
@@ -489,7 +488,7 @@
     enhanceTabs();
     document.addEventListener("click", () => document.querySelectorAll(".tip-open").forEach((node) => node.classList.remove("tip-open")));
     const edition = document.querySelector("body > div:first-child span:last-child");
-    if (edition) edition.textContent = "Editorial checked 15 Oct 2026";
+    if (edition) edition.textContent = "Living index · Updated 19 Oct 2026";
   }
 
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);

@@ -128,7 +128,7 @@
         </div>
         <div class="vs-bio-row"><div>${a.bio}</div><div>${b.bio}</div></div>
         ${metricRow("Current Power Score", a.score, b.score, (v) => v.toFixed(1))}
-        ${metricRow("Monthly listeners", a.monthlyListeners, b.monthlyListeners, compactNumber)}
+        ${metricRow("Daily Spotify streams", a.dailySpotifyStreams, b.dailySpotifyStreams, compactNumber)}
         ${metricRow("Total Spotify streams", a.totalSpotifyStreams, b.totalSpotifyStreams, compactNumber)}
         ${metricRow("Daily tracked streams", a.dailySpotifyStreams, b.dailySpotifyStreams, compactNumber)}
         <div class="vs-verdict">
