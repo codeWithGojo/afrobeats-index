@@ -123,7 +123,9 @@
     if(id!==receiptState.source){receiptState.tracks=[];receiptState.artists=[];invalidateReceipt();}
     receiptState.source=id;document.querySelectorAll("[data-receipt-source]").forEach(button=>{const selected=button.dataset.receiptSource===id;button.classList.toggle("is-selected",selected);button.setAttribute("aria-pressed",String(selected));});
     document.querySelectorAll('[data-receipt-range]').forEach(button=>{button.disabled=id!=="spotify";});
-    renderConnectPanel();ui.manual.hidden=id!=="manual";setStatus(id==="manual"?"Pick 5–10 artists to make your receipt.":`Ready for ${SOURCE_LABELS[id]}.`);
+    const period=document.querySelector('.range-picker')?.closest('fieldset');if(period)period.hidden=id!=="spotify";
+    const themeLegend=document.querySelector('.receipt-theme-picker')?.closest('fieldset')?.querySelector('legend');if(themeLegend)themeLegend.textContent=(id==="spotify"?"3.":"2.")+" Choose your receipt theme";
+    renderConnectPanel();ui.manual.hidden=id!=="manual";setStatus(id==="manual"?"Pick 5–10 artists to make your receipt.":id==="apple"&&!CONFIG.appleDeveloperToken&&!CONFIG.appleDeveloperTokenEndpoint?"Apple Music is coming soon. Use your own picks or import listening history.":`Ready for ${SOURCE_LABELS[id]}.`);
   }
   function renderConnectPanel(){
     const source=receiptState.source;

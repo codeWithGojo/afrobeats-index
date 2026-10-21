@@ -30,3 +30,10 @@ Top 100 re-entries with a negative last-position sentinel display RE rather than
 Additional-provider observations are empty. Production ranking coverage is Spotify alone; no Apple Music, Audiomack, Boomplay or YouTube counts have been invented. The release compiler still matches catalogue metadata by title within artist packets. Cross-provider recording identifiers and original-release dates need editorial review for ambiguous editions.
 
 The existing quiz deadline, progressive crop and embedded Music Receipt/ Wrapped watermark are preserved. Remaining release gates: real mobile and desktop checks of quiz loading, timeout, background/resume, artwork failures and shared rounds; receipt export readability in all themes; real Spotify/Apple authorization. Career supplements currently cover 39 of 79 artists. These integration and editorial checks are not replaced by unit tests.
+
+
+## 21 October interface release
+
+The home cover, chart, receipt studio and quiz share an editorial visual system. Current's initial HTML, enhanced rows and ItemList metadata now use one renderer and the generated official snapshot. Local chart filters preserve published ranks and show an explicit empty state. Artist files show the Current score in place of a duplicated Spotify total.
+
+Receipt starts with manual picks, labels unavailable Apple Music authorization before a user tries it, and only offers listening periods for Spotify. Export watermarks and themes remain intact. Spotify and account email authorization still require an actual account walkthrough; no successful external authorization is claimed. Ranking coverage and the 2026 release-cohort definition remain unchanged.

@@ -126,7 +126,7 @@
     list.innerHTML = window.AfriCurrentView.rows(currentArtists);
     oldList.replaceWith(list);
 
-    const note = document.createElement("aside");
+    const note = section.querySelector(".stream-source-note") || document.createElement("aside");
     note.className = "stream-source-note";
     note.innerHTML = `<span class="live-dot" aria-hidden="true"></span><p><strong>Tracked streams · 17% of Current.</strong> Audio plays and video views have separate totals. The ranking uses identical platform coverage for all 50 artists. Each artist file shows sources and publisher dates. <a href="https://kworb.net/spotify/" target="_blank" rel="noopener noreferrer">Spotify ledger ↗</a></p>`;
     list.insertAdjacentElement("afterend", note);
@@ -168,7 +168,7 @@
         <p class="artist-dialog-bio">${artist.bio}</p>
         <div class="artist-dialog-metrics">
           <div><small>Tracked audio streams</small><strong>${compactNumber(artist.trackedAudioStreams ?? artist.totalSpotifyStreams)}</strong><span>${(artist.streaming?.coverage || ["spotify"]).map(p => window.AfriStreaming?.labels[p] || p).join(" + ")} · partial platform coverage</span></div>
-          <div><small>Total Spotify streams</small><strong>${compactNumber(artist.totalSpotifyStreams)}</strong><span>${exactNumber(artist.totalSpotifyStreams)}</span></div>
+          <div><small>Current index score</small><strong>${artist.score.toFixed(1)} <em>/ 100</em></strong><span>83% editorial · 17% comparable streams</span></div>
           <div><small>Daily tracked streams</small><strong>${compactNumber(artist.dailySpotifyStreams)}</strong><span>${exactNumber(artist.dailySpotifyStreams)}</span></div>
           <div><small>Chart movement</small><strong>${move}</strong><span>Since the previous editorial snapshot</span></div>
         </div>
