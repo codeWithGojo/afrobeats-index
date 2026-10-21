@@ -471,7 +471,8 @@
     enhanceTabs();
     document.addEventListener("click", () => document.querySelectorAll(".tip-open").forEach((node) => node.classList.remove("tip-open")));
     const edition = document.querySelector("body > div:first-child span:last-child");
-    if (edition) edition.textContent = "Living index · Updated 19 Oct 2026";
+    const checkedAt = window.AFRI_EMBEDDED_STATE?.meta?.lastRefreshAttemptAt;
+    if (edition && checkedAt) edition.textContent = "Edition checked · " + new Intl.DateTimeFormat("en-GB", {day:"numeric",month:"short",year:"numeric",timeZone:"UTC"}).format(new Date(checkedAt));
   }
 
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
