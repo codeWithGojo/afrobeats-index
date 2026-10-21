@@ -36,6 +36,30 @@
   }
 
   function init() {
+    const chart = document.querySelector('#current .current-ranking');
+    const search = document.getElementById('chart-search');
+    const country = document.getElementById('chart-country');
+    if (chart && search && country) {
+      const filter = () => {
+        const query = search.value.toLocaleLowerCase().trim();
+        const rows = [...chart.querySelectorAll('.current-row')];
+        let count = 0;
+        rows.forEach(row => {
+          const matches = (!country.value || row.dataset.country === country.value) && (!query || row.textContent.toLocaleLowerCase().includes(query));
+          row.hidden = !matches;
+          if (matches) count++;
+        });
+        document.getElementById('chart-count').textContent = count === rows.length ? `Showing all ${rows.length} artists` : `${count} of ${rows.length} artists · official ranks retained`;
+        document.querySelector('.chart-empty').hidden = count > 0;
+      };
+      search.addEventListener('input', filter);
+      country.addEventListener('change', filter);
+      document.getElementById('chart-reset')?.addEventListener('click', () => { search.value = ''; country.value = ''; filter(); search.focus(); });
+    }
+    document.querySelectorAll('.index-shortcuts a, .hero-edition a').forEach(link => link.addEventListener('click', event => {
+      const id = new URL(link.href).searchParams.get('tab');
+      if (id && typeof window.showTab === 'function') { event.preventDefault(); window.showTab(id); document.querySelector('.tab-content.active')?.scrollIntoView({block:'start'}); }
+    }));
     document.addEventListener('error', (event) => fallbackArtwork(event.target), true);
     document.querySelectorAll('#yearly img.yearly-art').forEach((image) => {
       if (image.complete && !image.naturalWidth) fallbackArtwork(image);

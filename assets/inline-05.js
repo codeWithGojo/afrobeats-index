@@ -123,24 +123,7 @@
     const list = document.createElement("div");
     list.className = "current-ranking";
     list.setAttribute("aria-label", "Current Afrobeats artist ranking");
-    list.innerHTML = currentArtists.map((artist) => {
-      const tags = artist.genres.map((genre) => `<span>${genre}</span>`).join("");
-      return `<button class="current-row" type="button" data-name="${artist.name}" data-rank="${artist.rank}" data-artist-slug="${artist.slug}" aria-label="Open ${artist.name} artist file">
-        <span class="current-rank">${String(artist.rank).padStart(2, "0")}</span>
-        <span class="current-avatar"><img src="${artist.image}" data-fallback-src="${artist.imageFallback || ""}" alt="${artist.name}" loading="lazy" decoding="async"></span>
-        <span class="current-identity">
-          <span class="current-kicker">${artist.tagline}</span>
-          <span class="current-name-line"><span class="current-name">${artist.name}</span></span>
-          <span class="current-blurb">${artist.bio}</span>
-          <span class="current-tags">${tags}</span>
-        </span>
-        <span class="current-streams">
-          <span><small>Daily Spotify streams</small><strong>${compactNumber(artist.dailySpotifyStreams)}</strong></span>
-          <span><small>Tracked audio streams</small><strong>${compactNumber(artist.trackedAudioStreams ?? artist.totalSpotifyStreams)}</strong></span>
-        </span>
-        <span class="current-score"><small>${artist.country}</small><strong>${artist.score.toFixed(1)}</strong><i style="--score:${artist.score}%"></i></span>
-      </button>`;
-    }).join("");
+    list.innerHTML = window.AfriCurrentView.rows(currentArtists);
     oldList.replaceWith(list);
 
     const note = document.createElement("aside");
@@ -150,7 +133,7 @@
 
     list.addEventListener("click", (event) => {
       const row = event.target.closest("[data-artist-slug]");
-      if (row) openCurrentArtist(row.dataset.artistSlug);
+      if (row) { event.preventDefault(); openCurrentArtist(row.dataset.artistSlug); }
     });
   }
 

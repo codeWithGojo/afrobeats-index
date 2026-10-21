@@ -87,7 +87,7 @@
   window.AFRI_MUSIC_SOURCES=adapters;
 
   const ui={};
-  const receiptState={source:"spotify",range:"short_term",selected:[],tracks:[],artists:[],filteredOut:0,blob:null,theme:"classic",issuedAt:null,snapshot:null,requestVersion:0};
+  const receiptState={source:"manual",range:"short_term",selected:[],tracks:[],artists:[],filteredOut:0,blob:null,theme:"classic",issuedAt:null,snapshot:null,requestVersion:0};
 
   function normalize(value){return String(value||"").normalize("NFKD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/&/g," and ").replace(/[^a-z0-9]+/g," ").trim();}
   function redirectUri(){return `${location.origin}${location.pathname}`;}
@@ -122,7 +122,8 @@
     receiptState.requestVersion++;
     if(id!==receiptState.source){receiptState.tracks=[];receiptState.artists=[];invalidateReceipt();}
     receiptState.source=id;document.querySelectorAll("[data-receipt-source]").forEach(button=>{const selected=button.dataset.receiptSource===id;button.classList.toggle("is-selected",selected);button.setAttribute("aria-pressed",String(selected));});
-    renderConnectPanel();ui.manual.hidden=id!=="manual";setStatus(id==="manual"?"Choose at least one artist, then generate your receipt.":`Ready for ${SOURCE_LABELS[id]}.`);
+    document.querySelectorAll('[data-receipt-range]').forEach(button=>{button.disabled=id!=="spotify";});
+    renderConnectPanel();ui.manual.hidden=id!=="manual";setStatus(id==="manual"?"Pick 5–10 artists to make your receipt.":`Ready for ${SOURCE_LABELS[id]}.`);
   }
   function renderConnectPanel(){
     const source=receiptState.source;
@@ -130,7 +131,9 @@
       const configured=Boolean(adapters.spotify.clientId);
       ui.connect.innerHTML=`<p>Spotify can provide your top 50 tracks and artists for all three periods. Afri Index filters that list against its African artist database.</p><button type="button" class="connect-action" id="receipt-connect"${configured?"":" disabled"}>${adapters.spotify.accessToken?"Reload Spotify data":configured?"Connect Spotify":"Spotify setup pending"}</button><p class="receipt-source-note">${configured?"One click opens Spotify’s secure sign-in. Afri Index never sees your password.":"Spotify sign-in will be available as soon as the Afri Index Spotify app is approved and configured."}</p>`;
     }else if(source==="apple"){
-      ui.connect.innerHTML=`<p>Apple Music uses MusicKit authorization. Apple exposes recent listening rather than Spotify-style lifetime top lists, so the selected period is labelled as the nearest available range.</p><button type="button" class="connect-action" id="receipt-connect">Connect Apple Music</button>`;
+      const configured=Boolean(CONFIG.appleDeveloperToken||CONFIG.appleDeveloperTokenEndpoint);
+      ui.connect.innerHTML=configured?`<p>Your recently played Apple Music tracks, filtered to African artists. Apple does not provide the time periods offered by Spotify.</p><button type="button" class="connect-action" id="receipt-connect">Connect Apple Music</button>`:`<p><strong>Apple Music connection is not available yet.</strong> You can still make a receipt with your own picks or import your listening history.</p><button type="button" class="connect-action" id="receipt-use-manual">Use my own picks →</button>`;
+      ui.connect.querySelector('#receipt-use-manual')?.addEventListener('click',()=>setSource('manual'));
     }else{
       ui.connect.innerHTML=`<p>Build a receipt directly from verified Afri Index artists. Use the manual picker or import CSV, JSON, or pasted history.</p>`;
     }
@@ -204,7 +207,7 @@
     receiptState.snapshot={tracks,artists};
     renderDiscoveries(tracks,artists);
     drawReceipt(tracks,artists);ui.canvas.toBlob(blob=>{receiptState.blob=blob;[ui.download,ui.share,ui.tweet,ui.print].forEach(button=>button.disabled=false);window.dispatchEvent(new CustomEvent("afri:receipt-generated",{detail:{tracks,artists,...receiptMetadata()}}));},"image/png");
-    setStatus(`Receipt ready with ${tracks.length} track${tracks.length===1?"":"s"} and ${artists.length} artist${artists.length===1?"":"s"}.`,"success");ui.outputNote.textContent=receiptState.annual?`Imported ${receiptState.annual.year} · African listening events`:`${SOURCE_LABELS[receiptState.source]} · ${RANGE_LABELS[receiptState.range]} · African matches only`;
+    setStatus(`Receipt ready with ${tracks.length} track${tracks.length===1?"":"s"} and ${artists.length} artist${artists.length===1?"":"s"}.`,"success");ui.outputNote.textContent=receiptState.annual?`Imported ${receiptState.annual.year} · African listening events`:`${SOURCE_LABELS[receiptState.source]} · ${receiptState.source==="manual"?"Your selection":receiptState.source==="apple"?"Recent listening":RANGE_LABELS[receiptState.range]} · African matches only`;
   }
   function receiptMetadata(){const a=receiptState.annual;return {source:a?'import':receiptState.source,range:a?String(a.year):receiptState.range,theme:receiptState.theme,issuedAt:receiptState.issuedAt,...(a?{annual:{year:a.year,events:a.events,minutes:a.minutes,first:a.first,last:a.last}}:{})};}
   function artistLabel(name){
@@ -233,7 +236,7 @@
     ctx.textBaseline="top";ctx.textAlign="center";ctx.fillStyle=palette.accent;
     ctx.font="900 34px Arial";ctx.fillText("AFR / INDEX",width/2,58);
     ctx.font="700 18px monospace";ctx.fillText("MUSIC RECEIPT",width/2,108);ctx.fillStyle=palette.ink;
-    ctx.font="15px monospace";ctx.fillText(receiptState.annual?`IMPORTED HISTORY · ${receiptState.annual.year}`:`${SOURCE_LABELS[receiptState.source].toUpperCase()} · ${receiptState.source==="apple"?"RECENT LISTENING":RANGE_LABELS[receiptState.range].toUpperCase()}`,width/2,148);
+    ctx.font="15px monospace";ctx.fillText(receiptState.annual?`IMPORTED HISTORY · ${receiptState.annual.year}`:`${SOURCE_LABELS[receiptState.source].toUpperCase()} · ${receiptState.source==="apple"?"RECENT LISTENING":receiptState.source==="manual"?"YOUR SELECTION":RANGE_LABELS[receiptState.range].toUpperCase()}`,width/2,148);
     dash(ctx,48,192,width-48,192);ctx.textAlign="left";ctx.font="700 16px monospace";ctx.fillText("NO.  TRACK / ARTIST",50,217);ctx.textAlign="right";ctx.fillText(receiptState.annual?"EVENTS":"PLAYS / AFR",width-50,217);dash(ctx,48,252,width-48,252);let y=278;
     tracks.forEach((track,index)=>{
       const names=track.artists?.length?track.artists:[track.artist];const artist=names.map(knownArtist).find(Boolean);
@@ -275,7 +278,7 @@
   async function handleSpotifyCallback(){
     const params=new URLSearchParams(location.search),code=params.get("code"),oauthState=params.get("state"),error=params.get("error");if(!code&&!error)return;
     history.replaceState({},document.title,redirectUri()+location.hash);
-    if(error){setSource("spotify");setStatus("Spotify permission was not granted. You can reconnect or use manual mode.","error");return;}
+    if(error){window.showTab?.("receipt");setSource("spotify");setStatus("Spotify permission was not granted. You can reconnect or use manual mode.","error");return;}
     try{await adapters.spotify.finishConnection(code,oauthState);setSource("spotify");window.showTab?.("receipt");await loadFromAdapter(adapters.spotify);}catch(err){setSource("spotify");window.showTab?.("receipt");setStatus(err.message,"error");}
   }
   function bind(){
@@ -298,7 +301,9 @@
     const artistSlug=new URLSearchParams(location.search).get("artist");
     if(artistSlug&&artistDatabase().some(a=>a.slug===artistSlug))window.openCurrentArtist?.(artistSlug);
     document.getElementById("receipt-history-year")?.addEventListener("change",()=>{if(ui.importText.value.trim())importData(ui.importText.value);else invalidateReceipt();});
-    renderConnectPanel();drawReceipt([],[]);handleSpotifyCallback();
+    const appleButton=document.querySelector('[data-receipt-source="apple"] span');
+    if(appleButton&&!CONFIG.appleDeveloperToken&&!CONFIG.appleDeveloperTokenEndpoint)appleButton.textContent='Connection coming soon';
+    setSource('manual');drawReceipt([],[]);handleSpotifyCallback();
   }
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",bind);else bind();
 })();
