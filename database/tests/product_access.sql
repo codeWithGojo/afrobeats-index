@@ -1,0 +1,47 @@
+begin;
+insert into auth.users(id,email,email_confirmed_at) values('10000000-0000-4000-8000-000000000001','afri-test-one@example.invalid',now()),('10000000-0000-4000-8000-000000000002','afri-test-two@example.invalid',now());
+set local role authenticated;
+select set_config('request.jwt.claims','{"sub":"10000000-0000-4000-8000-000000000001","role":"authenticated"}',true);
+insert into public.chart_predictions(user_id,week,picks) values('10000000-0000-4000-8000-000000000001',to_char(date_trunc('week',now() at time zone 'UTC')+interval '1 week','IYYY-"W"IW'),array['wizkid','burna-boy','rema','davido','asake']);
+update public.chart_predictions set picks=array['rema','burna-boy','wizkid','davido','asake'] where user_id='10000000-0000-4000-8000-000000000001';
+do $$begin if (select count(*) from public.chart_predictions where user_id='10000000-0000-4000-8000-000000000001')<>1 then raise exception 'owner read failed';end if;
+begin insert into public.chart_predictions(user_id,week,picks) values('10000000-0000-4000-8000-000000000001','2020-W01',array['wizkid','burna-boy','rema','davido','asake']);raise exception 'past round accepted';exception when insufficient_privilege then null;end;
+begin update public.chart_predictions set picks=array['wizkid','wizkid','rema','davido','asake'] where user_id='10000000-0000-4000-8000-000000000001';raise exception 'duplicate picks accepted';exception when raise_exception then if SQLERRM<>'Choose five different artists' then raise;end if;end;
+begin insert into public.api_keys(user_id,label,key_hash,prefix) values('10000000-0000-4000-8000-000000000001','no entitlement',repeat('a',64),'afri_test');raise exception 'unpaid key accepted';exception when insufficient_privilege then null;end;
+end $$;
+select set_config('request.jwt.claims','{"sub":"10000000-0000-4000-8000-000000000002","role":"authenticated"}',true);
+do $$begin if exists(select 1 from public.chart_predictions where user_id='10000000-0000-4000-8000-000000000001') then raise exception 'prediction leaked';end if;end $$;
+reset role;
+set local role service_role;
+select set_config('request.jwt.claims','{"role":"service_role"}',true);
+select public.create_pro_order('afri-test-payment','10000000-0000-4000-8000-000000000001',10000,'NGN');
+do $$declare expiry timestamptz;begin
+ if public.fulfill_pro_payment('afri-test-payment',999,'NGN') then raise exception 'wrong amount accepted';end if;
+ if not public.fulfill_pro_payment('afri-test-payment',10000,'NGN') then raise exception 'valid payment denied';end if;
+ select expires_at into expiry from public.pro_subscriptions where user_id='10000000-0000-4000-8000-000000000001';
+ perform public.fulfill_pro_payment('afri-test-payment',10000,'NGN');
+ if (select expires_at from public.pro_subscriptions where user_id='10000000-0000-4000-8000-000000000001')<>expiry then raise exception 'replay extended pass';end if;
+end $$;
+reset role;
+set local role authenticated;
+select set_config('request.jwt.claims','{"sub":"10000000-0000-4000-8000-000000000001","role":"authenticated"}',true);
+insert into public.api_keys(user_id,label,key_hash,prefix) values('10000000-0000-4000-8000-000000000001','test key',repeat('a',64),'afri_test');
+reset role;
+set local role service_role;
+select set_config('request.jwt.claims','{"role":"service_role"}',true);
+insert into private.api_usage(user_id,day,hits) values('10000000-0000-4000-8000-000000000001',(now() at time zone 'UTC')::date,9999);
+do $$declare r jsonb;begin
+ r=public.consume_api_quota(repeat('a',64));if r->>'allowed'<>'true' or (r->>'remaining')::integer<>0 then raise exception 'last request quota incorrect';end if;
+ r=public.consume_api_quota(repeat('a',64));if r->>'allowed'<>'false' or r->>'reason'<>'quota' then raise exception 'quota overrun accepted';end if;
+ if not public.claim_newsletter_delivery('test-week','10000000-0000-4000-8000-000000000001') then raise exception 'claim failed';end if;
+ if public.claim_newsletter_delivery('test-week','10000000-0000-4000-8000-000000000001') then raise exception 'duplicate email claim accepted';end if;
+end $$;
+reset role;
+set local role anon;
+do $$begin
+ begin perform public.consume_api_quota(repeat('a',64));raise exception 'anonymous quota RPC accepted';exception when insufficient_privilege then null;end;
+ begin perform public.fulfill_pro_payment('afri-test-payment',10000,'NGN');raise exception 'anonymous entitlement RPC accepted';exception when insufficient_privilege then null;end;
+end $$;
+reset role;
+rollback;
+select 'Owner isolation, closed rounds, duplicate picks, paid keys, payment replay, shared quotas, email claims and anonymous RPC denial passed; fixtures rolled back.' as verification;
