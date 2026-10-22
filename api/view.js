@@ -1,9 +1,10 @@
+const regionalBoards=require('../regional-boards.js');
 const {data,origin,escape:e,db}=require('../lib/shared.cjs');
 module.exports=async(req,res)=>{
  const route=String(req.query.path||'studio').replace(/^\//,'');const [type,id]=route.split('/');
  let title='Afri Index · Explore',description='Your board, music receipts and the stories behind the chart.',image=origin+'/api/card?artist='+data.artists[0].slug;
  try{
-  if(type==='boards'){const titles={'womens-current-25':'Women’s Current 25',veterans:'Veterans', 'featured-on':'Featured-on index',producers:'Producer credits index','local-vs-international':'Local vs international'};if(id&&!titles[id])return res.status(404).send('Board not found');title=(titles[id]||'Public boards')+' · Afri Index';description='Published Current scores, specialist views and source-linked evidence.';}
+  if(type==='boards'){const titles={'womens-current-25':'Women’s Current 25',veterans:'Veterans', 'featured-on':'Featured-on index',producers:'Producer credits index','local-vs-international':'Local vs international',...Object.fromEntries(regionalBoards.definitions.map(board=>[board.id,board.name]))};if(id&&!Object.hasOwn(titles,id))return res.status(404).send('Board not found');title=(titles[id]||'Public boards')+' · Afri Index';description='Published Current scores, specialist views and source-linked evidence.';}
   if(type==='calendar'){if(id&&!['awards','live','certifications'].includes(id))return res.status(404).send('Calendar not found');title=(id==='live'?'Live dates':id==='certifications'?'Certifications':'Awards calendar')+' · Afri Index';}
   if(type==='account')title='My board · Afri Index';
   if(type==='receipt'){

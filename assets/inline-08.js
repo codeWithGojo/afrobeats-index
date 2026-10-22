@@ -70,7 +70,7 @@
     if (!root) return;
     const regions = ["West Africa", "East Africa", "Southern Africa", "Central Africa", "North Africa"];
     const available = regions.filter((region) => state.artists.some((artist) => regionFor(artist.country) === region));
-    root.innerHTML = `<div class="region-tabs" role="tablist">${available.map((region, index) => `<button type="button" class="region-tab${index === 0 ? " is-active" : ""}" data-region="${escapeHtml(region)}">${escapeHtml(region)}</button>`).join("")}</div><div class="regional-list"></div>`;
+    root.innerHTML = `<p><a href="/boards">Naija, Ghana, South Africa & East Africa boards ↗</a></p><div class="region-tabs" role="tablist">${available.map((region, index) => `<button type="button" class="region-tab${index === 0 ? " is-active" : ""}" data-region="${escapeHtml(region)}">${escapeHtml(region)}</button>`).join("")}</div><div class="regional-list"></div>`;
     const list = root.querySelector(".regional-list");
     const paint = (region) => {
       const artists = state.artists.filter((artist) => regionFor(artist.country) === region).sort((a, b) => b.score - a.score);

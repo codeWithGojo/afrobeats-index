@@ -204,15 +204,10 @@ export function Ranking({ artists: initialArtists }: { artists: Artist[] }) {
   );
 }
 function Compact({ value }: { value: number }) {
-  const billion = value >= 1e9,
-    million = value >= 1e6,
-    divisor = billion ? 1e9 : million ? 1e6 : 1;
+  const parts = window.AfriCurrentView.compactParts(value);
+  if (!parts) return <>—</>;
   return (
-    <CountUp
-      value={value / divisor}
-      digits={billion ? 2 : 1}
-      suffix={billion ? "B" : million ? "M" : ""}
-    />
+    <CountUp value={parts.value} digits={parts.digits} suffix={parts.suffix} />
   );
 }
 export type HtmlRow = {
