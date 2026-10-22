@@ -3,6 +3,18 @@
   "trailingSlash": false,
   "rewrites": [
     {
+      "source": "/api/pro",
+      "destination": "/api/product?service=pro"
+    },
+    {
+      "source": "/api/newsletter",
+      "destination": "/api/product?service=newsletter"
+    },
+    {
+      "source": "/api/paystack-webhook",
+      "destination": "/api/product?service=paystack-webhook"
+    },
+    {
       "source": "/quiz",
       "destination": "/api/quiz-page"
     },

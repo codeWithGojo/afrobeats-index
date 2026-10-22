@@ -7,7 +7,18 @@ const {
   signalPreview,
 } = require("../lib/product.cjs");
 const productConfig = require("../data/product-config.json");
+const services = {
+  pro: require("../lib/product-pro.cjs"),
+  newsletter: require("../lib/product-newsletter.cjs"),
+  "paystack-webhook": require("../lib/product-paystack-webhook.cjs"),
+};
 module.exports = async (req, res) => {
+  const service = String(req.query.service || "");
+  if (service)
+    return Object.hasOwn(services, service)
+      ? services[service](req, res)
+      : res.status(404).json({ error: "Unknown service" });
+
   if (req.method && req.method !== "GET") {
     res.setHeader("Allow", "GET");
     return res.status(405).end();

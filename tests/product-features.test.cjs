@@ -160,3 +160,22 @@ test("unsubscribe tokens are bound to one user and issue HTML escapes sponsor co
   assert.ok(html.includes("Manage unsubscribe"));
   assert.match(digest("secret"), /^[a-f0-9]{64}$/);
 });
+
+test("product service URLs share one Vercel function within the deployment limit", () => {
+  const fs = require("node:fs"),
+    path = require("node:path"),
+    config = require("../vercel.json");
+  assert.ok(
+    fs
+      .readdirSync(path.join(__dirname, "../api"))
+      .filter((f) => f.endsWith(".js")).length <= 12,
+  );
+  for (const name of ["pro", "newsletter", "paystack-webhook"])
+    assert.ok(
+      config.rewrites.some(
+        (r) =>
+          r.source === "/api/" + name &&
+          r.destination === "/api/product?service=" + name,
+      ),
+    );
+});

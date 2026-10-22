@@ -22,7 +22,7 @@ Afri Index:
 
 - `features.js`, `playlist-spotify.js`: product views and Spotify PKCE flow.
 - `lib/product.cjs`, `lib/signal-validation.cjs`, `lib/commerce.cjs`, `lib/product-server.cjs`, `lib/newsletter.cjs`: deterministic logic, source validation, entitlements and delivery helpers.
-- `api/product.js`, `api/pro.js`, `api/paystack-webhook.js`, `api/newsletter.js`: public products, protected API, payment fulfilment and email preferences/delivery.
+- `api/product.js`, `lib/product-pro.cjs`, `lib/product-paystack-webhook.cjs`, `lib/product-newsletter.cjs`, `vercel.json`: public products, protected API, payment fulfilment and email preferences/delivery.
 - `database/product_features.sql`, `database/tests/product_access.sql`: canonical schema and rollback-only access verification. Applied remote migrations: `music_product_features`, `music_product_service_rpcs`, `newsletter_service_delivery_guard`, `newsletter_batched_recipients`, `product_least_privilege_grants`.
 - `scripts/import-signals.cjs`, `scripts/publish-feature-data.cjs`: reviewed source imports, immutable chart archive and in-window seasonal observations.
 - `data/product-config.json`: real sponsor / partner placements.
@@ -32,4 +32,6 @@ Afri Index:
 
 ## Verification
 
-43 Node tests pass. Build passes. Browser checks cover all seven product views, artist timelines, actual archive response, board switching, CSV downloads and 320/390/768/1440px layouts with no runtime errors. Live database tests use rollback-only fixtures: owner isolation, closed weeks, duplicate picks, unpaid key denial, verified payment replay, last allowed quota request / overrun, duplicate email claims, and anonymous service-RPC denial. Explicit checks also deny TRUNCATE, editing submitted timestamps and editing key hashes. Prediction duplicate validation, save/edit and newsletter opt-in/out were also exercised in the browser with mocked transport; the real row permissions were tested independently in the live database. No real payment, email campaign, licensed signal import or Spotify account mutation was performed.
+44 Node tests pass. Build passes. Browser checks cover all seven product views, artist timelines, actual archive response, board switching, CSV downloads and 320/390/768/1440px layouts with no runtime errors. Live database tests use rollback-only fixtures: owner isolation, closed weeks, duplicate picks, unpaid key denial, verified payment replay, last allowed quota request / overrun, duplicate email claims, and anonymous service-RPC denial. Explicit checks also deny TRUNCATE, editing submitted timestamps and editing key hashes. Prediction duplicate validation, save/edit and newsletter opt-in/out were also exercised in the browser with mocked transport; the real row permissions were tested independently in the live database. No real payment, email campaign, licensed signal import or Spotify account mutation was performed.
+
+The API URLs `/api/pro`, `/api/newsletter` and `/api/paystack-webhook` route through the single `api/product.js` function. This preserves public contracts while keeping the deployment at ten serverless functions, within the current Hobby limit.
