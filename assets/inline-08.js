@@ -32,6 +32,7 @@
       if (fresh) Object.assign(artist, fresh);
     });
     document.querySelectorAll(".current-row[data-artist-slug]").forEach((row) => {
+      if (row.closest("[data-motion-ranking]")) return;
       const artist = incoming.get(row.dataset.artistSlug);
       if (!artist) return;
       row.dataset.rank=artist.rank;
@@ -50,8 +51,9 @@
       });
     });
     const list=document.querySelector('.current-ranking');
-    if(list) [...state.artists].sort((a,b)=>a.rank-b.rank).forEach(a=>{const row=list.querySelector(`[data-artist-slug="${a.slug}"]`);if(row)list.append(row);});
+    if(list && !list.hasAttribute("data-motion-ranking")) [...state.artists].sort((a,b)=>a.rank-b.rank).forEach(a=>{const row=list.querySelector(`[data-artist-slug="${a.slug}"]`);if(row)list.append(row);});
     current.sort((a,b)=>a.rank-b.rank);
+    window.dispatchEvent(new CustomEvent("afri:artists-updated", { detail: current }));
   }
 
   const regionFor = (country) => {

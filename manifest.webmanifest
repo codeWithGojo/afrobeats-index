@@ -1,7 +1,9 @@
 {
+  "id": "/",
   "name": "AFR/INDEX",
   "short_name": "AFR/INDEX",
   "start_url": "/",
+  "scope": "/",
   "display": "standalone",
   "background_color": "#0a0a0b",
   "theme_color": "#d4ff00",

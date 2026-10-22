@@ -93,11 +93,11 @@
     const a = bySlug(slugA);
     const b = bySlug(slugB);
     if (!a || !b) {
-      output.innerHTML = `<div class="vs-empty">Pick two artists to compare.</div>`;
+      const html=`<div class="vs-empty">Pick two artists to compare.</div>`;if(window.AfriMotion)window.AfriMotion.swap(output,html,"empty");else output.innerHTML=html;
       return;
     }
     if (a.slug === b.slug) {
-      output.innerHTML = `<div class="vs-empty">Pick two <em>different</em> artists to compare.</div>`;
+      const html=`<div class="vs-empty">Pick two <em>different</em> artists to compare.</div>`;if(window.AfriMotion)window.AfriMotion.swap(output,html,"same");else output.innerHTML=html;
       return;
     }
     const aWins = a.score > b.score;
@@ -107,7 +107,7 @@
       const fallback = (artist.imageFallback || "").replace(/'/g, "\\'");
       return `<img src="${artist.image}" alt="${artist.name}" onerror="if(!this.dataset.tried){this.dataset.tried='1';this.src='${fallback}';}else{this.style.opacity=.25;}">`;
     };
-    output.innerHTML = `
+    const markup = `
       <div class="vs-result">
         <div class="vs-heads">
           <div class="vs-head${aWins ? " vs-winner" : ""}">
@@ -139,13 +139,15 @@
         </div>
         ${renderVoteBar(a, b)}
       </div>`;
-    output.querySelectorAll("[data-vote-slug]").forEach((button) => {
-      button.addEventListener("click", () => {
-        if (hasVoted(a.slug, b.slug)) return;
-        castVote(a.slug, b.slug, button.dataset.voteSlug);
-        renderComparison(a.slug, b.slug);
-      });
-    });
+    if(window.AfriMotion)window.AfriMotion.swap(output,markup,`${a.slug}-${b.slug}`);
+    else output.innerHTML=markup;
+    output.onclick = event => {
+      const button=event.target.closest('[data-vote-slug]');
+      if(!button||hasVoted(a.slug,b.slug))return;
+      castVote(a.slug,b.slug,button.dataset.voteSlug);
+      window.dispatchEvent(new Event('motion:celebrate'));
+      renderComparison(a.slug,b.slug);
+    };
   }
   function currentPair() {
     const selA = document.getElementById("vs-select-a");
