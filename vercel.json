@@ -3,6 +3,10 @@
   "trailingSlash": false,
   "rewrites": [
     {
+      "source": "/quiz",
+      "destination": "/api/quiz-page"
+    },
+    {
       "source": "/studio/:path*",
       "destination": "/api/view?path=studio/:path*"
     },
@@ -16,7 +20,7 @@
     },
     {
       "source": "/quiz/:artist",
-      "destination": "/quiz"
+      "destination": "/api/quiz-page?artist=:artist"
     },
     {
       "source": "/u/:username",
@@ -54,6 +58,9 @@
   "functions": {
     "api/card.js": {
       "includeFiles": "assets/DejaVuSans.ttf"
+    },
+    "api/quiz-page.js": {
+      "includeFiles": "quiz.html"
     }
   },
   "outputDirectory": ".",

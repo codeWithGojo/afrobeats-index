@@ -1,98 +1,98 @@
 {
-  "checkedAt": "2026-10-19T14:33:42.240504+00:00",
-  "weekStart": "2026-10-02",
-  "weekEnd": "2026-10-08",
+  "checkedAt": "2026-10-21T23:03:07.790Z",
+  "weekStart": "2026-10-09",
+  "weekEnd": "2026-10-15",
   "sourceUrl": "https://www.turntablecharts.com/charts/1",
-  "publisherChartId": 5963,
+  "publisherChartId": 5967,
   "rows": [
     [
       1,
+      "miss u ii (nriri)",
+      "FOLA",
+      48,
+      2,
+      1,
+      ""
+    ],
+    [
+      2,
       "Ilome",
       "Seyi Vibez",
       1,
-      3,
-      1,
-      ""
-    ],
-    [
-      2,
-      "B4 B4",
-      "Davido, Mayorkun & FOLA",
       4,
-      10,
       1,
       ""
     ],
     [
       3,
-      "Owo Oluwa",
-      "Kizz Daniel ft. Young Jonn, Krizbeatz & Wave Choir",
-      7,
-      4,
-      3,
-      ""
-    ],
-    [
-      4,
       "Oh No",
       "Rema",
-      3,
       4,
+      5,
       2,
       ""
     ],
     [
+      4,
+      "BACK 2 U",
+      "Seyi Vibez",
+      8,
+      7,
+      4,
+      ""
+    ],
+    [
       5,
-      "IKEBE 3000",
-      "Blaqbonez ft. Asake",
-      0,
-      1,
+      "Owo Oluwa",
+      "Kizz Daniel ft. Young Jonn, Krizbeatz & Wave Choir",
+      3,
       5,
-      "NEW"
+      3,
+      ""
     ],
     [
       6,
       "it's over",
       "FOLA, Bella Shmurda & Zlatan",
       6,
-      4,
+      5,
       1,
       ""
     ],
     [
       7,
-      "GTA",
-      "Seyi Vibez",
-      2,
-      10,
-      2,
-      ""
+      "2am in toronto",
+      "FOLA & Davido",
+      0,
+      1,
+      7,
+      "NEW"
     ],
     [
       8,
-      "BACK 2 U",
-      "Seyi Vibez",
-      8,
-      6,
-      4,
-      ""
-    ],
-    [
-      9,
-      "Volume",
-      "Seyi Vibez",
-      5,
-      3,
+      "B4 B4",
+      "Davido, Mayorkun & FOLA",
+      2,
+      11,
       1,
       ""
     ],
     [
+      9,
+      "GTA",
+      "Seyi Vibez",
+      7,
+      11,
+      2,
+      ""
+    ],
+    [
       10,
-      "Online",
-      "BNXN",
-      13,
-      3,
-      10,
+      "IKEBE 3000",
+      "Blaqbonez ft. Asake",
+      5,
+      2,
+      5,
       ""
     ],
     [
@@ -100,32 +100,32 @@
       "Gratitude",
       "Asake",
       11,
-      23,
+      24,
       1,
       ""
     ],
     [
       12,
-      "BIG PERFORMER",
-      "Blaqbonez",
-      12,
-      6,
-      3,
+      "Heaven Baby",
+      "Ayra Starr ft. ZAYN",
+      15,
+      9,
+      2,
       ""
     ],
     [
       13,
-      "Go Hard or Go Home",
-      "Chief Priest & Evado",
-      0,
-      1,
-      13,
-      "NEW"
+      "attention!",
+      "FOLA",
+      22,
+      9,
+      4,
+      ""
     ],
     [
       14,
-      "If You Like",
-      "BNXN",
+      "waf",
+      "FOLA",
       0,
       1,
       14,
@@ -133,776 +133,776 @@
     ],
     [
       15,
-      "Heaven Baby",
-      "Ayra Starr ft. ZAYN",
-      16,
-      8,
-      2,
-      ""
-    ],
-    [
-      16,
-      "TEA",
-      "Rema",
-      17,
-      9,
-      3,
-      ""
-    ],
-    [
-      17,
-      "Comfort",
-      "Mr Eazi & MOLIY",
-      0,
+      "treat u right",
+      "FOLA & Ayra Starr",
+      42,
+      15,
       1,
-      17,
-      "NEW"
+      ""
     ],
     [
-      18,
+      16,
       "Forgiveness",
       "Asake",
       18,
-      23,
+      24,
       1,
+      ""
+    ],
+    [
+      17,
+      "Volume",
+      "Seyi Vibez",
+      9,
+      4,
+      1,
+      ""
+    ],
+    [
+      18,
+      "Go Hard or Go Home",
+      "Chief Priest & Evado",
+      13,
+      2,
+      13,
       ""
     ],
     [
       19,
-      "Pansa",
-      "Seyi Vibez",
+      "Comfort",
+      "Mr Eazi & MOLIY",
+      17,
+      2,
+      17,
+      ""
+    ],
+    [
+      20,
+      "TEA",
+      "Rema",
+      16,
       10,
       3,
+      ""
+    ],
+    [
+      21,
+      "Online",
+      "BNXN",
+      10,
+      4,
+      10,
+      ""
+    ],
+    [
+      22,
+      "BIG PERFORMER",
+      "Blaqbonez",
+      12,
+      7,
+      3,
+      ""
+    ],
+    [
+      23,
+      "Pansa",
+      "Seyi Vibez",
+      19,
+      4,
       7,
       ""
     ],
     [
-      20,
-      "16",
+      24,
+      "If You Like",
       "BNXN",
+      14,
+      2,
+      14,
+      ""
+    ],
+    [
+      25,
+      "Let It Go",
+      "Young Jonn",
       0,
       1,
-      20,
+      25,
       "NEW"
     ],
     [
-      21,
-      "Shamaya",
-      "BNXN & FOLA",
-      0,
-      1,
-      21,
-      "NEW"
-    ],
-    [
-      22,
-      "attention!",
+      26,
+      "awade",
       "FOLA",
-      19,
-      8,
+      0,
+      1,
+      26,
+      "NEW"
+    ],
+    [
+      27,
+      "Eja Meja",
+      "BNXN ft. Asake",
+      23,
+      12,
       4,
       ""
     ],
     [
-      23,
-      "Eja Meja",
-      "BNXN ft. Asake",
+      28,
+      "my type",
+      "FOLA & BNXN",
+      0,
+      1,
+      28,
+      "NEW"
+    ],
+    [
+      29,
+      "Diamonds",
+      "Seyi Vibez",
+      26,
+      4,
+      5,
+      ""
+    ],
+    [
+      30,
+      "Malaria",
+      "Ayo Maff & Zinoleesky",
+      27,
+      4,
+      15,
+      ""
+    ],
+    [
+      31,
+      "how many?",
+      "FOLA",
+      0,
+      1,
+      31,
+      "NEW"
+    ],
+    [
       32,
+      "crime",
+      "FOLA",
+      0,
+      1,
+      32,
+      "NEW"
+    ],
+    [
+      33,
+      "GOD",
+      "Seyi Vibez",
+      25,
+      4,
+      9,
+      ""
+    ],
+    [
+      34,
+      "SLICK",
+      "Victony",
+      32,
+      15,
+      1,
+      ""
+    ],
+    [
+      35,
+      "Back Outside",
+      "BNXN & Sarz",
+      34,
+      26,
+      1,
+      ""
+    ],
+    [
+      36,
+      "Shamaya",
+      "BNXN & FOLA",
+      21,
+      2,
+      21,
+      ""
+    ],
+    [
+      37,
+      "MCBH",
+      "Asake",
+      35,
+      24,
+      4,
+      ""
+    ],
+    [
+      38,
+      "Elumelu",
+      "Young Jonn",
+      29,
+      20,
+      2,
+      ""
+    ],
+    [
+      39,
+      "Coachella",
+      "NO11 & Gabzy",
+      0,
+      1,
+      39,
+      "NEW"
+    ],
+    [
+      40,
+      "fine ting (fine $hit)",
+      "FOLA",
+      81,
+      25,
+      8,
+      ""
+    ],
+    [
+      41,
+      "16",
+      "BNXN",
+      20,
+      2,
+      20,
+      ""
+    ],
+    [
+      42,
+      "Shege",
+      "Young Jonn",
+      36,
+      3,
+      36,
+      ""
+    ],
+    [
+      43,
+      "Baba",
+      "Hotkid ft. Zlatan",
+      37,
+      15,
+      13,
+      ""
+    ],
+    [
+      44,
+      "Chanel",
+      "Blaqbonez ft. Asake",
+      31,
+      21,
+      1,
+      ""
+    ],
+    [
+      45,
+      "in order",
+      "FOLA",
+      0,
+      1,
+      45,
+      "NEW"
+    ],
+    [
+      46,
+      "Already Falling",
+      "Davido",
+      30,
       11,
       4,
       ""
     ],
     [
-      24,
+      47,
       "IMALI",
       "Fireboy DML, JAZZWRLD & Thukuthela",
-      20,
-      4,
-      20,
-      ""
-    ],
-    [
-      25,
-      "GOD",
-      "Seyi Vibez",
-      14,
-      3,
-      9,
-      ""
-    ],
-    [
-      26,
-      "Diamonds",
-      "Seyi Vibez",
-      9,
-      3,
+      24,
       5,
+      20,
       ""
     ],
     [
-      27,
-      "Malaria",
-      "Ayo Maff & Zinoleesky",
-      15,
-      3,
-      15,
-      ""
-    ],
-    [
-      28,
+      48,
       "CHE",
       "Shoday ft. Magixx",
-      36,
-      2,
+      28,
+      3,
       28,
       ""
-    ],
-    [
-      29,
-      "Elumelu",
-      "Young Jonn",
-      25,
-      19,
-      2,
-      ""
-    ],
-    [
-      30,
-      "Already Falling",
-      "Davido",
-      26,
-      10,
-      4,
-      ""
-    ],
-    [
-      31,
-      "Chanel",
-      "Blaqbonez ft. Asake",
-      35,
-      20,
-      1,
-      ""
-    ],
-    [
-      32,
-      "SLICK",
-      "Victony",
-      33,
-      14,
-      1,
-      ""
-    ],
-    [
-      33,
-      "Eko",
-      "Tml Vibez ft. Blaqbonez",
-      0,
-      1,
-      33,
-      "NEW"
-    ],
-    [
-      34,
-      "Back Outside",
-      "BNXN & Sarz",
-      29,
-      25,
-      1,
-      ""
-    ],
-    [
-      35,
-      "MCBH",
-      "Asake",
-      34,
-      23,
-      4,
-      ""
-    ],
-    [
-      36,
-      "Shege",
-      "Young Jonn",
-      37,
-      2,
-      36,
-      ""
-    ],
-    [
-      37,
-      "Baba",
-      "Hotkid ft. Zlatan",
-      27,
-      14,
-      13,
-      ""
-    ],
-    [
-      38,
-      "El Jaja",
-      "Seyi Vibez",
-      21,
-      3,
-      15,
-      ""
-    ],
-    [
-      39,
-      "Diamond or Gold",
-      "Tml Vibez",
-      44,
-      6,
-      14,
-      ""
-    ],
-    [
-      40,
-      "TWIN",
-      "Victony & FOLA",
-      30,
-      7,
-      18,
-      ""
-    ],
-    [
-      41,
-      "Akpan Akpari",
-      "Seyi Vibez",
-      24,
-      3,
-      17,
-      ""
-    ],
-    [
-      42,
-      "treat u right",
-      "FOLA & Ayra Starr",
-      38,
-      14,
-      1,
-      ""
-    ],
-    [
-      43,
-      "Deliberate Work",
-      "BNXN",
-      0,
-      1,
-      43,
-      "NEW"
-    ],
-    [
-      44,
-      "Melanin",
-      "Seyi Vibez",
-      23,
-      3,
-      14,
-      ""
-    ],
-    [
-      45,
-      "Alubarika",
-      "Seyi Vibez",
-      22,
-      3,
-      16,
-      ""
-    ],
-    [
-      46,
-      "Big Bum Bum",
-      "Kidd Carder & Mavo",
-      41,
-      32,
-      2,
-      ""
-    ],
-    [
-      47,
-      "WORSHIP",
-      "Asake & DJ Snake",
-      40,
-      29,
-      1,
-      ""
-    ],
-    [
-      48,
-      "miss u ii (nriri)",
-      "FOLA",
-      0,
-      1,
-      48,
-      "NEW"
     ],
     [
       49,
-      "I Know Who I Be",
-      "Davido, JAZZWRLD & GL_Ceejay",
-      42,
-      15,
+      "stubborn",
+      "FOLA",
+      0,
       1,
-      ""
+      49,
+      "NEW"
     ],
     [
       50,
-      "Alafia",
-      "Seyi Vibez",
-      28,
-      3,
-      18,
+      "Big Bum Bum",
+      "Kidd Carder & Mavo",
+      46,
+      33,
+      2,
       ""
     ],
     [
       51,
-      "swaguu",
-      "Seyi Vibez ft. Quavo",
-      31,
-      3,
-      13,
+      "Akpan Akpari",
+      "Seyi Vibez",
+      41,
+      4,
+      17,
       ""
     ],
     [
       52,
-      "Kaluba",
-      "Mayorkun",
-      47,
-      6,
-      16,
+      "El Jaja",
+      "Seyi Vibez",
+      38,
+      4,
+      15,
       ""
     ],
     [
       53,
-      "Glass in the Air",
-      "Young Jonn",
-      61,
-      2,
-      53,
+      "TWIN",
+      "Victony & FOLA",
+      40,
+      8,
+      18,
       ""
     ],
     [
       54,
-      "MOVE",
-      "Shoday",
-      43,
-      4,
-      15,
+      "Diamond or Gold",
+      "Tml Vibez",
+      39,
+      7,
+      14,
       ""
     ],
     [
       55,
-      "Pressure",
-      "Kunmie & Zlatan",
-      64,
-      4,
-      45,
+      "Waka Waka",
+      "TUFF KING",
+      72,
+      2,
+      55,
       ""
     ],
     [
       56,
-      "ITALAWA",
-      "Zlatan",
-      46,
-      3,
-      46,
+      "Deliberate Work",
+      "BNXN",
+      43,
+      2,
+      43,
       ""
     ],
     [
       57,
-      "August Visitor",
-      "Afri Kyan",
-      57,
-      18,
-      34,
+      "I Know Who I Be",
+      "Davido, JAZZWRLD & GL_Ceejay",
+      49,
+      16,
+      1,
       ""
     ],
     [
       58,
-      "Cairo",
-      "Kaestyle",
-      48,
+      "Melanin",
+      "Seyi Vibez",
+      44,
       4,
-      48,
+      14,
       ""
     ],
     [
       59,
-      "I Can't Look Away",
-      "Mr P",
-      76,
-      8,
-      37,
+      "Alubarika",
+      "Seyi Vibez",
+      45,
+      4,
+      16,
       ""
     ],
     [
       60,
-      "Oble (Original)",
-      "Seyi Vibez",
-      39,
-      3,
-      23,
-      ""
+      "hold u down",
+      "FOLA & Darkoo",
+      0,
+      1,
+      60,
+      "NEW"
     ],
     [
       61,
-      "Shuperu",
-      "Tml Vibez ft. Ayo Maff & Shoday",
-      0,
-      1,
-      61,
-      "NEW"
+      "Glass in the Air",
+      "Young Jonn",
+      53,
+      3,
+      53,
+      ""
     ],
     [
       62,
-      "Treasure",
-      "Ayra Starr",
-      73,
-      8,
-      38,
+      "MOVE",
+      "Shoday",
+      54,
+      5,
+      15,
       ""
     ],
     [
       63,
-      "Money Lingo",
-      "Lojay",
-      0,
-      1,
+      "OVER THE NIGHT",
+      "Lovn & Ayanfe",
+      68,
+      3,
       63,
-      "NEW"
+      ""
     ],
     [
       64,
-      "Company",
-      "Clean Bandit, Chloe & OMAH LAY",
-      62,
-      3,
-      62,
-      ""
-    ],
-    [
-      65,
-      "THAT GIRL!",
-      "Darkoo & Asake",
+      "ITALAWA",
+      "Zlatan",
       56,
-      9,
-      20,
-      ""
-    ],
-    [
-      66,
-      "Believer",
-      "Kolaboy & Evado",
-      0,
-      1,
-      66,
-      "NEW"
-    ],
-    [
-      67,
-      "Tap Am",
-      "Famous PLuto",
-      51,
-      8,
-      21,
-      ""
-    ],
-    [
-      68,
-      "OVER THE NIGHT",
-      "Lovn & Ayanfe",
-      83,
-      2,
-      68,
-      ""
-    ],
-    [
-      69,
-      "Salama",
-      "FirstKlaz",
-      72,
-      6,
-      29,
-      ""
-    ],
-    [
-      70,
-      "Ice Cream",
-      "Mavo",
-      52,
-      11,
-      17,
-      ""
-    ],
-    [
-      71,
-      "Anybody",
-      "Kidd Carder",
-      54,
-      5,
-      54,
-      ""
-    ],
-    [
-      72,
-      "Waka Waka",
-      "TUFF KING",
-      0,
-      1,
-      72,
-      "NEW"
-    ],
-    [
-      73,
-      "As We Get High",
-      "bees & honey, OMAH LAY, BEAM & Gyptian",
-      53,
-      5,
-      25,
-      ""
-    ],
-    [
-      74,
-      "Saki Ofori",
-      "Kaestyle ft. Duncan Mighty",
-      99,
-      4,
-      38,
-      ""
-    ],
-    [
-      75,
-      "22",
-      "Kunmie",
-      85,
       4,
       46,
       ""
     ],
     [
-      76,
+      65,
+      "Cairo",
+      "Kaestyle",
+      58,
+      5,
+      48,
+      ""
+    ],
+    [
+      66,
+      "Alafia",
+      "Seyi Vibez",
+      50,
+      4,
+      18,
+      ""
+    ],
+    [
+      67,
+      "Swaguu",
+      "Seyi Vibez ft. Quavo",
+      51,
+      4,
+      13,
+      ""
+    ],
+    [
+      68,
+      "As We Get High",
+      "bees & honey, OMAH LAY, BEAM & Gyptian",
+      73,
+      6,
+      25,
+      ""
+    ],
+    [
+      69,
+      "THAT GIRL!",
+      "Darkoo & Asake",
+      65,
+      10,
+      20,
+      ""
+    ],
+    [
+      70,
+      "Saki Ofori",
+      "Kaestyle ft. Duncan Mighty",
+      74,
+      5,
+      38,
+      ""
+    ],
+    [
+      71,
+      "Tornado",
+      "Ayra Starr",
+      85,
+      18,
+      7,
+      ""
+    ],
+    [
+      72,
+      "Tap Am",
+      "Famous PLuto",
+      67,
+      9,
+      21,
+      ""
+    ],
+    [
+      73,
+      "Salama",
+      "FirstKlaz",
+      69,
+      7,
+      29,
+      ""
+    ],
+    [
+      74,
       "Miss You",
       "FAVE & Chike",
-      68,
-      6,
+      76,
+      7,
       45,
+      ""
+    ],
+    [
+      75,
+      "Oba",
+      "Asake",
+      -1,
+      19,
+      6,
+      ""
+    ],
+    [
+      76,
+      "Oble (Original)",
+      "Seyi Vibez",
+      60,
+      4,
+      23,
       ""
     ],
     [
       77,
       "I Knoww II",
       "EF Moon & Blaqbonez",
-      93,
-      3,
+      77,
+      4,
       77,
       ""
     ],
     [
       78,
-      "LET ME BE",
-      "Jason Derulo, The Second Voice & Qing Madi",
-      95,
-      15,
-      28,
-      ""
-    ],
-    [
-      79,
-      "FRE$H",
-      "Victony",
-      65,
-      19,
-      8,
-      ""
-    ],
-    [
-      80,
-      "Wa",
+      "wa",
       "Asake",
-      60,
-      23,
+      80,
+      24,
       6,
       ""
     ],
     [
+      79,
+      "Ice Cream",
+      "Mavo",
+      70,
+      12,
+      17,
+      ""
+    ],
+    [
+      80,
+      "Treasure",
+      "Ayra Starr",
+      62,
+      9,
+      38,
+      ""
+    ],
+    [
       81,
-      "fine ting (fine $hit)",
-      "FOLA",
-      75,
-      24,
-      8,
+      "Money Lingo",
+      "Lojay",
+      63,
+      2,
+      63,
       ""
     ],
     [
       82,
-      "Brother",
-      "MOEC & Evado",
-      63,
-      10,
+      "Pressure",
+      "Kunmie & Zlatan",
       55,
+      5,
+      45,
       ""
     ],
     [
       83,
-      "WE YOUNG ( BETTER DAYS )",
-      "Chuka",
-      0,
-      1,
-      83,
-      "NEW"
+      "I Can't Look Away",
+      "Mr P",
+      59,
+      9,
+      37,
+      ""
     ],
     [
       84,
-      "My Boo",
-      "Eli Jae",
-      0,
-      1,
-      84,
-      "NEW"
+      "WE YOUNG (BETTER DAYS)",
+      "Chuka",
+      83,
+      2,
+      83,
+      ""
     ],
     [
       85,
-      "Tornado",
-      "Ayra Starr",
-      71,
-      17,
-      7,
+      "My Boo",
+      "Eli Jae",
+      84,
+      2,
+      84,
       ""
     ],
     [
       86,
-      "Lifestyle (Ya Man)",
-      "Ayo Maff",
-      67,
-      11,
-      9,
+      "FRE$H",
+      "Victony",
+      79,
+      20,
+      8,
       ""
     ],
     [
       87,
-      "Find My Babe",
-      "Mavo",
-      50,
-      5,
-      26,
+      "Brother",
+      "MOEC & Evado",
+      82,
+      11,
+      55,
       ""
     ],
     [
       88,
-      "Better",
-      "Khid Ceejay",
-      0,
-      1,
-      88,
-      "NEW"
-    ],
-    [
-      89,
-      "Sunita",
-      "Rybeena & Tml Vibez",
-      58,
-      7,
-      24,
-      ""
-    ],
-    [
-      90,
-      "Aanu Ni",
+      "aanu ni",
       "BisiManuel",
-      59,
-      20,
+      90,
+      21,
       17,
       ""
     ],
     [
+      89,
+      "So Good",
+      "Jhene Aiko ft. Kendrick Lamar",
+      -1,
+      4,
+      76,
+      ""
+    ],
+    [
+      90,
+      "Patient Zero",
+      "Taylor Swift",
+      0,
+      1,
+      90,
+      "NEW"
+    ],
+    [
       91,
-      "What Have You Done",
-      "DeeYasso & Syemca",
-      92,
-      4,
-      68,
-      ""
-    ],
-    [
-      92,
-      "Hold Somebody",
-      "Young Jonn",
-      55,
-      4,
-      35,
-      ""
-    ],
-    [
-      93,
-      "Wuru Manya",
-      "Teni & Chike",
-      88,
-      9,
-      27,
-      ""
-    ],
-    [
-      94,
-      "Do Nothing",
-      "Ruger, Musa Keys & Young Stunna",
-      74,
-      9,
-      22,
-      ""
-    ],
-    [
-      95,
-      "Jolie",
-      "Black Sherif",
-      100,
-      4,
-      73,
-      ""
-    ],
-    [
-      96,
       "Love Again",
       "Black Sherif ft. Full Blown",
       96,
-      3,
+      4,
       78,
       ""
     ],
     [
-      97,
-      "Best",
-      "Tiakola & Rema",
-      80,
+      92,
+      "Ako (Live in London)",
+      "Asake",
+      -1,
+      10,
+      28,
+      ""
+    ],
+    [
+      93,
+      "Happy",
+      "Jesse Flames & Smur Lee",
+      0,
+      1,
+      93,
+      "NEW"
+    ],
+    [
+      94,
+      "22",
+      "Kunmie",
+      75,
+      5,
+      46,
+      ""
+    ],
+    [
+      95,
+      "Shuperu",
+      "Tml Vibez ft. Ayo Maff & Shoday",
+      61,
       2,
-      80,
+      61,
+      ""
+    ],
+    [
+      96,
+      "Believer",
+      "Kolaboy & Evado",
+      66,
+      2,
+      66,
+      ""
+    ],
+    [
+      97,
+      "Anybody",
+      "Kidd Carder",
+      71,
+      6,
+      54,
       ""
     ],
     [
       98,
-      "Hello",
-      "Tml Vibez & Victony",
-      -1,
-      7,
-      35,
+      "Company",
+      "Clean Bandit, Chloe & OMAH LAY",
+      64,
+      4,
+      62,
       ""
     ],
     [
       99,
-      "Gentleman",
-      "Tml Vibez",
-      0,
-      1,
-      99,
-      "NEW"
+      "LOW LOW",
+      "BIG BABY C",
+      -1,
+      2,
+      87,
+      ""
     ],
     [
       100,
-      "UNETHICAL",
-      "Faouzia",
-      89,
-      5,
-      89,
+      "LET ME BE",
+      "Jason Derulo, The Second Voice & Qing Madi",
+      78,
+      16,
+      28,
       ""
     ]
   ]

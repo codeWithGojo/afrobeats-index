@@ -28,5 +28,6 @@ test('published 2026 cohort uses matching ledger values, dates and explicit glob
 test('official Top 100 preserves complete ranks and a dated weekly snapshot',()=>{
  assert.equal(chart.rows.length,100);assert.deepEqual(chart.rows.map(r=>r[0]),Array.from({length:100},(_,i)=>i+1));
  assert.ok(chart.weekStart<chart.weekEnd&&chart.weekEnd<=chart.checkedAt.slice(0,10));
- assert.equal(chart.rows[0][1],'Ilome');assert.equal(chart.rows[4][1].toLowerCase(),'ikebe 3000');
+ assert.equal(chart.weekStart,'2026-10-09');assert.equal(chart.weekEnd,'2026-10-15');
+ assert.equal(chart.rows[0][1],'miss u ii (nriri)');assert.equal(chart.rows[0][2],'FOLA');
 });

@@ -1,0 +1,30 @@
+/* Editorial motion. Data and quiz clocks stay independent of decoration. */
+.afri-reading-progress{position:fixed;inset:0 0 auto;height:3px;z-index:1000;pointer-events:none}
+.afri-reading-progress span{display:block;height:100%;background:#a8cc32;transform:scaleX(0);transform-origin:left}
+.afri-motion-toggle{position:fixed;right:12px;bottom:12px;z-index:100;min-height:44px;padding:9px 13px;border:1px solid #666;border-radius:999px;background:#171719;color:#f1f0e9;font:12px/1.4 system-ui;cursor:pointer}
+.afri-motion-toggle:focus-visible{outline:2px solid #d4ff00;outline-offset:4px}
+.afri-motion-toggle:disabled{cursor:default}
+@keyframes afri-ink{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes afri-panel{from{opacity:.3;transform:translateY(10px)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:no-preference){
+ html:not([data-motion="off"]) .index-hero-copy h1>span{position:relative;display:inline-block}
+ html:not([data-motion="off"]) .index-hero-copy h1>span::after{content:"";position:absolute;inset:auto 0 -.08em;height:2px;background:currentColor;transform-origin:left;animation:afri-ink .8s .2s both cubic-bezier(.16,1,.3,1)}
+ html:not([data-motion="off"]) .tab-content.active{animation:afri-panel .35s cubic-bezier(.16,1,.3,1)}
+ .hero-artist img,.big-three-card img{transition:transform .85s cubic-bezier(.16,1,.3,1)}
+ .hero-photo-copy b,.index-shortcuts strong span,.hero-action span{display:inline-block;transition:transform .3s cubic-bezier(.16,1,.3,1)}
+ .current-row,.quiz-artist-card,.choice,.index-shortcuts>a{transition:background-color .2s,border-color .2s,box-shadow .3s}
+ .quiz-progress{transition:all .3s ease}
+ .choice:active:not(:disabled){transform:scale(.985)}
+ .choice.is-correct{animation:afri-panel .3s ease-out}
+ dialog[open],.modal:not(.hidden) .modal-content{animation:afri-panel .3s cubic-bezier(.16,1,.3,1)}
+ @media(hover:hover) and (pointer:fine){
+ .hero-artist:hover img,.big-three-card:hover img{transform:scale(1.045)}
+ .hero-artist:hover .hero-photo-copy b,.hero-action:hover span{transform:translate(3px,-3px)}
+ .index-shortcuts>a:hover strong span{transform:translate(3px,-3px)}
+ .current-row:hover{box-shadow:inset 3px 0 #a8cc32}
+ .quiz-artist-card:hover{box-shadow:inset 3px 0 #a8cc32}
+ }
+}
+html[data-motion="off"] *,html[data-motion="off"] *::before,html[data-motion="off"] *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+html[data-motion="off"] .afri-reading-progress{display:none}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.afri-reading-progress{display:none}}

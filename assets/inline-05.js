@@ -280,7 +280,8 @@
         <div class="freshness-actions"><button class="compare-text" type="button" data-compare-toggle aria-expanded="false">Compare eras ↗</button>
           <details class="update-details"><summary>Update notes <span aria-hidden="true">⌄</span></summary>
             <div class="weekly-log"><p class="eyebrow">Update ledger</p><ul>
-              <li><span>19 OCT 2026</span><span>All 50 song and album ledgers checked. Streams now carry 17%; monthly-listener weighting removed. Current 50 recalculated. TurnTable chart week remains 2–8 October.</span></li>
+              <li><span>21 OCT 2026</span><span>Official TurnTable Top 100 refreshed for 9–15 October. All 100 publisher positions retained.</span></li>
+              <li><span>19 OCT 2026</span><span>All 50 song and album ledgers checked. Streams now carry 17%; monthly-listener weighting removed. Current 50 recalculated.</span></li>
               <li><span>07 SEP 2026</span><span>All 50 Spotify artist ledgers and the Nigeria Top 100 were refreshed from their live source pages.</span></li>
               <li><span>28 AUG 2026</span><span>Tems, Rema and Tyla moved into the top four; JAZZWRLD, CIZA and Shoday entered the Current list.</span></li>
             </ul></div>
@@ -362,7 +363,7 @@
         const state = allRank && currentRank ? "Both charts" : currentRank ? "Current only" : "All-Time only";
         return `<div class="compare-row" data-compare-name="${name.toLowerCase()}">
           <span class="compare-name">${name}</span>
-          <span class="compare-rank">${allRank ? `#${allRank}` : "—"}</span>
+          <span class="compare-rank">${allRank ? (allRank === 1 ? "Joint #1" : `#${allRank}`) : "—"}</span>
           <span class="compare-rank compare-current">${currentRank ? `#${currentRank}` : "—"}</span>
           <span class="compare-state">${state}</span>
         </div>`;
