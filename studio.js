@@ -3,6 +3,7 @@
 const $=s=>document.querySelector(s),e=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const status=s=>{const node=$('#studio-status');node.textContent=s;node.hidden=!s;if(s)window.AfriMotion?.notify(s);};
 let config,index;try{[config,index]=await Promise.all([fetch('/community-config.json').then(r=>r.json()),fetch('/api/rankings').then(r=>{if(!r.ok)throw Error('Chart unavailable');return r.json();})]);}catch{document.querySelector('#studio').textContent='The index could not load. Please refresh to retry.';return;}
+window.AfriReaderIndex=index;
 const artists=index.artists,bySlug=s=>artists.find(a=>a.slug===s),root=$('#studio'),url=new URL(location.href),parts=url.pathname.split('/').filter(Boolean),view=parts[0]==='collaborations'?'graph':parts[1]||'home';
 let account,session=null;try{await import('/assets/account.js');account=window.AfriAccount;session=await account.session();}catch(error){const message='Account service could not connect. Check your connection and retry.';account={config,describe:()=>message,callbackError:message,session:async()=>null,user:async()=>{throw Error(message)},signIn:async()=>{throw Error(message)},verify:async()=>{throw Error(message)},signOut:async()=>{throw Error(message)}};}
 async function api(path,options={}){

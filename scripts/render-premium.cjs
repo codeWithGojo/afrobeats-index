@@ -23,7 +23,7 @@ for(const file of ['index.html','underground.html','newsletter.html','quiz.html'
     if(!/\bwidth=/.test(tag))tag=tag.replace('<img','<img width="400" height="400"');
     return tag;
   });
-  html=html.replace(/<script src="\/theme-init.js"><\/script>/g,'').replace(/<link rel="stylesheet" href="\/(premium|refinements)\.css">/g,'').replace(/<script src="\/(premium-ui|refinements)\.js" defer><\/script>/g,'');
+  html=html.replace(/<script src="\/theme-init.js"><\/script>/g,'').replace(/<link rel="stylesheet" href="\/(premium|refinements|reader-tools)\.css">/g,'').replace(/<script src="\/(premium-ui|refinements|reader-model|reader-languages|reader-tools)\.js" defer><\/script>/g,'');
   html=html.replace('</head>',headLinks()+'\n</head>');
   html=html.replace(/\n{4,}/g,'\n\n\n');
   fs.writeFileSync(file,html);
