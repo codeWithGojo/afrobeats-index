@@ -25,6 +25,7 @@ for(const file of ['index.html','underground.html','newsletter.html','quiz.html'
   });
   html=html.replace(/<script src="\/theme-init.js"><\/script>/g,'').replace(/<link rel="stylesheet" href="\/(premium|refinements)\.css">/g,'').replace(/<script src="\/(premium-ui|refinements)\.js" defer><\/script>/g,'');
   html=html.replace('</head>',headLinks()+'\n</head>');
+  html=html.replace(/\n{4,}/g,'\n\n\n');
   fs.writeFileSync(file,html);
 }
 console.log('Rendered the shared premium navigation and visual layer');

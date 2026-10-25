@@ -15,3 +15,6 @@ buildSync({entryPoints:['scripts/scenario-client.js'],bundle:true,format:'iife',
 
 // Shared typed Motion components are bundled for the existing vanilla pages.
 buildSync({entryPoints:["src/motion/index.tsx"],bundle:true,format:"iife",target:"es2022",outfile:"assets/motion.js",minify:true,jsx:"automatic"});
+
+// Focused Motion layer for liquid-glass feedback and ranking layout transitions.
+buildSync({entryPoints:["src/motion/Glass.tsx"],bundle:true,format:"iife",target:"es2022",outfile:"assets/glass-motion.js",minify:true,jsx:"automatic"});
