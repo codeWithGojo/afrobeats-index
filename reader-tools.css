@@ -12,3 +12,4 @@ body[data-design=premium] [data-reader-scalable]{font-size:calc(var(--reader-bas
 @media(prefers-reduced-motion:no-preference){.reader-dialog[open]{animation:reader-dialog-enter .3s ease-out}@keyframes reader-dialog-enter{from{opacity:.2;transform:translateY(20px) scale(.98)}to{opacity:1;transform:translateY(0) scale(1)}}}
 @media print{.reading-toolbar,#reader-progress,#reader-to-top,.reader-dialog,#reader-toast,.reader-table-tools,.reader-copy-code,.reader-visibility,.reader-draft-note{display:none!important}}
 :root:not([data-reader-size=normal]) body[data-design=premium] .current-name{white-space:normal!important;overflow-wrap:anywhere}
+body[data-design=premium] .reader-dialog>header{position:static!important;background:transparent!important;border:0!important;padding:0!important;box-shadow:none!important;max-width:none!important}
