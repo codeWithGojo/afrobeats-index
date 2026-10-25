@@ -3,6 +3,10 @@
   "trailingSlash": false,
   "rewrites": [
     {
+      "source": "/api/newsletter-draft",
+      "destination": "/api/product?service=newsletter&action=draft"
+    },
+    {
       "source": "/api/pro",
       "destination": "/api/product?service=pro"
     },
@@ -91,6 +95,12 @@
       "source": "/studio/board",
       "destination": "/account",
       "permanent": true
+    }
+  ],
+  "crons": [
+    {
+      "path": "/api/newsletter-draft",
+      "schedule": "0 8 * * 0"
     }
   ]
 }

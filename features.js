@@ -264,8 +264,8 @@ export async function renderFeature({
   }
   if (view === "newsletter") {
     const config = await request("overview");
-    root.innerHTML += `<p class="lede">One weekly chart brief: the Current 50, movers, sourced milestones and a listening queue.</p><section class="panel"><h2>This week’s edition</h2><p>Checked ${e(index.asOf.slice(0, 10))} · <a href="/">Read the chart</a> · <a href="/studio/playlists">Hear the board</a></p><ol>${index.artists
-      .slice(0, 5)
+    root.innerHTML += `<p class="lede">Every Sunday: Top 10, Movers of the Week, one head-to-head and one underground artist. <a href="/newsletter">Read the full issue and join with your email →</a></p><section class="panel"><h2>The published Top 10</h2><p>Checked ${e(index.asOf.slice(0, 10))} · <a href="/">Read the chart</a> · <a href="/studio/playlists">Hear the board</a></p><ol>${index.artists
+      .slice(0, 10)
       .map(
         (a) =>
           `<li><a href="/current/${a.slug}">${e(a.name)}</a> · ${a.score.toFixed(1)}</li>`,

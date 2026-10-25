@@ -1,0 +1,34 @@
+{
+  "edition": "2026-10-25",
+  "title": "Underground 10",
+  "scope": "Nigeria · editorial discovery ranking",
+  "method": "Afri Index's listening order for this edition: distinctive sound, a clear entry-point song and documented activity in the underground scene. Positions are editorial choices, not a popularity chart or measured streaming score. Paid placements never affect this order. Artists on the Current 50 are excluded. Broader African coverage will be added as sources are verified.",
+  "source": {
+    "label": "The FADER · artist interviews, 5 Oct 2026",
+    "url": "https://www.thefader.com/2026/10/05/nigeria-ug-scene-list-danpapa-gta-scottyolorin",
+    "checkedAt": "2026-10-25"
+  },
+  "spotlightSlug": "scottyolorin",
+  "artists": [
+    {"slug":"scottyolorin","name":"scottyolorin","order":1,"sound":"Melodic rap","track":"GLACIER GIRL","listenUrl":"https://www.youtube.com/watch?v=AWDX61GuM2w","profileUrl":"https://www.instagram.com/scottyolorin00/","note":"Start with the hook on this collaboration with DaveTheOracle and Kobilou."},
+    {"slug":"monochrome","name":"Monochrome","order":2,"sound":"Trap / R&B","track":"4:44 FREESTYLE","listenUrl":"https://www.youtube.com/watch?v=oGNyezcljXE","profileUrl":"https://www.instagram.com/444monochrome/","note":"Abuja's collaborative scene makes a compelling starting point for this artist."},
+    {"slug":"egertton","name":"Egertton","order":3,"sound":"Punk / hip-hop","track":"OBOKHIAN","listenUrl":"https://www.youtube.com/watch?v=cSlAcbexDlI","profileUrl":"https://www.instagram.com/egertton/","note":"A forceful entry point into his self-described incantation music."},
+    {"slug":"kobilou","name":"Kobilou","order":4,"sound":"Melodic pop","track":"Lagos Love","listenUrl":"https://www.youtube.com/watch?v=MxkVo9xkzno","profileUrl":"https://www.instagram.com/kobilou._/","note":"Begin with this song, then explore his Pretty Girls Love Lou project."},
+    {"slug":"luwa-mp4","name":"Luwa.Mp4","order":5,"sound":"Cyber-Phunk","track":"CYK BADDIE","listenUrl":"https://www.youtube.com/watch?v=ty2XvJtw4B8","profileUrl":"https://www.instagram.com/luwa.mp4/","note":"The JELEEL! collaboration opens a door into his punk-influenced sound."},
+    {"slug":"indi","name":"Indi","order":6,"sound":"Hyperpop","track":"D.T.M.M.B","listenUrl":"https://www.youtube.com/watch?v=7lLElsQ5PR0","profileUrl":"https://www.instagram.com/indiiiluv/","note":"A vocal-led discovery for listeners exploring the scene's hyperpop side."},
+    {"slug":"onoola-sama","name":"onoola-sama","order":7,"sound":"Genre-fluid","track":"fêteRock*","listenUrl":"https://www.youtube.com/watch?v=HV62T2bs_wM","profileUrl":"https://www.instagram.com/onoolasama/","note":"Try this DEELA collaboration from the fujiBouyon* EP."},
+    {"slug":"blnde","name":"BLNDE","order":8,"sound":"Pop","track":"Omo To Sexy","listenUrl":"https://www.youtube.com/watch?v=Ve7eZZxtTkg","profileUrl":"https://www.instagram.com/justblnde/","note":"An accessible first listen before the BLNDE 4 PRESIDENT project."},
+    {"slug":"danpapa-gta","name":"Danpapa GTA","order":9,"sound":"Street-pop","track":"IKEJA","listenUrl":"https://www.youtube.com/watch?v=BekbPEpkm3I","profileUrl":"https://www.instagram.com/dan.papa.gta/","note":"A lively entry point from a producer who also records."},
+    {"slug":"sssoundgawd","name":"SSSoundGawd","order":10,"sound":"Dance / rap","track":"Aura Salad","listenUrl":"https://www.youtube.com/watch?v=m8dV-KHBpEs","profileUrl":"https://www.instagram.com/sssoundgawd/","note":"His Mavo collaboration is a useful introduction to the rapper-producer."}
+  ],
+  "watchlist": [
+    {"name":"Artsalghul","track":"Amapiano Baddie"},
+    {"name":"Deena"},
+    {"name":"NO11","track":"Gimme Dat Ting"},
+    {"name":"Suono Sai"},
+    {"name":"Ugazee"},
+    {"name":"Wave$tar","track":"Prada Baby"},
+    {"name":"Zaylevelten"},
+    {"name":"Zen Universe"}
+  ]
+}
