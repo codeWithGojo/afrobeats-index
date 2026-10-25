@@ -28,7 +28,7 @@ Run `npm run build` and `npm test`. The build regenerates the Current 50, discov
 - Country plus genre filtering retained Black Sherif at published rank 35; empty state and reset restored all 50 artists. The `/` shortcut opened search. A five-artist manual Receipt generated and its export controls enabled.
 - Core text/surface token pairs exceed WCAG AA's 4.5:1 text contrast threshold. Focus styles and reduced-motion rules are explicit; these checks do not constitute a complete assistive-technology certification.
 - Responsive frames emulate CSS viewport widths; they are not physical iPhone/Android testing. Signed-in account writes, private receipts and external music-provider authorization were not exercised by this visual change.
-- A Lighthouse mobile score of 90+ is a target, not a verified result unless accompanied by a completed production audit. Browser layout checks and successful builds alone do not establish a Lighthouse score.
+- A production mobile PageSpeed audit was attempted after release. Google returned HTTP 429 because its daily audit quota was exceeded. Lighthouse 90+ therefore remains unverified; browser layout checks and successful builds do not establish that score.
 
 ## Full files
 

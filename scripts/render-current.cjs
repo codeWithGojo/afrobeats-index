@@ -8,6 +8,6 @@ replaceSection('<section id="current"',view.chart(data.artists));
 const schema={"@context":"https://schema.org","@type":"ItemList",name:'Afri Index Current 50',dateModified:data.asOf,itemListElement:view.ordered(data.artists).map(a=>({'@type':'ListItem',position:a.rank,name:a.name,url:`https://afrobeats-index.vercel.app/current/${a.slug}`}))};
 html=html.replace(/\s*<script id="current-chart-schema"[\s\S]*?<\/script>/,'');
 const checkedDate=new Intl.DateTimeFormat('en-GB',{day:'numeric',month:'short',year:'numeric',timeZone:'UTC'}).format(new Date(data.meta.lastRefreshAttemptAt||data.asOf));
-html=html.replace(/(<[^>]+id="live-update-label"[^>]*>)[^<]*/,`$1Edition checked · ${checkedDate}`);
+html=html.replace(/(<[^>]+id="(?:live-update-label|premium-edition-label)"[^>]*>)[^<]*/,`$1Edition checked · ${checkedDate}`);
 html=html.replace('</head>',`<script id="current-chart-schema" type="application/ld+json">${JSON.stringify(schema).replace(/</g,'\\u003c')}</script>\n</head>`);
 fs.writeFileSync('index.html',html);
