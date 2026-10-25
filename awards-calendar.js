@@ -19,7 +19,7 @@ export async function renderAwards({root,index,e,eventMarkup}) {
       target.innerHTML=events.map(eventMarkup).join('')||'<p class="empty">No past results match your search.</p>';root.querySelector('#award-count').textContent=events.length+' sourced past results';return;
     }
     const selected=seasons.filter(s=>(s.endDate||s.date)>=today&&JSON.stringify(s).toLowerCase().includes(q)).sort((a,b)=>a.date.localeCompare(b.date));
-    root.querySelector('#award-count').textContent=selected.length+' upcoming award seasons';
+    root.querySelector('#award-count').textContent=selected.length+' upcoming award '+(selected.length===1?'season':'seasons');
     target.innerHTML=selected.map(seasonMarkup).join('')||'<p class="empty">No upcoming awards match. Try an artist or award name.</p>';
     target.querySelectorAll('[data-save-date]').forEach(button=>button.onclick=()=>{
       const s=seasons.find(s=>s.id===button.dataset.saveDate),end=new Date((s.endDate||s.date)+'T12:00:00Z');end.setUTCDate(end.getUTCDate()+1);
