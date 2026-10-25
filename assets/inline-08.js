@@ -104,7 +104,8 @@
     const module = document.createElement("section");
     module.className = "trending-module";
     module.innerHTML = `<div class="trending-head"><div><p>${previous ? "7-day stream change" : "Momentum baseline"}</p><h3>Trending this week</h3></div><small>${previous ? `${dateLabel(previous.capturedAt)} → ${dateLabel(latest.capturedAt)}` : "History is collecting; estimated from current daily pace"}</small></div><div class="trending-grid">${rows.map(({ artist, delta }, index) => `<button type="button" data-artist-slug="${escapeHtml(artist.slug)}"><span>${String(index + 1).padStart(2, "0")}</span><strong>${escapeHtml(artist.name)}</strong><em>+${compact(delta)} streams</em></button>`).join("")}</div>`;
-    section.querySelector("h2 + p")?.insertAdjacentElement("afterend", module);
+    if (section.querySelector(".chart-secondary-modules")) section.querySelector(".chart-secondary-modules").appendChild(module);
+    else section.querySelector("h2 + p")?.insertAdjacentElement("afterend", module);
   }
 
   function renderAlbums(state) {
@@ -148,7 +149,8 @@
     const module = document.createElement("aside");
     module.className = "sponsored-spotlight";
     module.innerHTML = `<img src="${escapeHtml(artist.image)}" alt="${escapeHtml(artist.name)}"><div><p>Sponsored${item.sponsorName ? ` · ${escapeHtml(item.sponsorName)}` : ""}</p><h3>${escapeHtml(item.headline || artist.name)}</h3><span>${escapeHtml(item.copy)}</span>${item.ctaUrl ? `<a href="${escapeHtml(item.ctaUrl)}" target="_blank" rel="sponsored noopener">${escapeHtml(item.ctaLabel || "Learn more")} ↗</a>` : ""}<small>Paid placement · no effect on editorial rankings</small></div>`;
-    section.querySelector("h2 + p")?.insertAdjacentElement("afterend", module);
+    if (section.querySelector(".chart-secondary-modules")) section.querySelector(".chart-secondary-modules").appendChild(module);
+    else section.querySelector("h2 + p")?.insertAdjacentElement("afterend", module);
   }
 
   function updatePageFreshness(state) {

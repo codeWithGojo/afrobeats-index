@@ -39,13 +39,14 @@
     const chart = document.querySelector('#current .current-ranking');
     const search = document.getElementById('chart-search');
     const country = document.getElementById('chart-country');
+    const genre = document.getElementById('chart-genre');
     if (chart && search && country) {
       const filter = () => {
         const query = search.value.toLocaleLowerCase().trim();
         const rows = [...chart.querySelectorAll('.current-row')];
         let count = 0;
         rows.forEach(row => {
-          const matches = (!country.value || row.dataset.country === country.value) && (!query || row.textContent.toLocaleLowerCase().includes(query));
+          const matches = (!country.value || row.dataset.country === country.value) && (!query || row.textContent.toLocaleLowerCase().includes(query)) && (!genre?.value || (row.dataset.genres || '').split('|').includes(genre.value));
           row.hidden = !matches;
           if (matches) count++;
         });
@@ -54,7 +55,8 @@
       };
       search.addEventListener('input', filter);
       country.addEventListener('change', filter);
-      document.getElementById('chart-reset')?.addEventListener('click', () => { search.value = ''; country.value = ''; filter(); search.focus(); });
+      genre?.addEventListener('change', filter);
+      document.getElementById('chart-reset')?.addEventListener('click', () => { search.value = ''; country.value = ''; if(genre) genre.value = ''; filter(); search.focus(); });
     }
     document.querySelectorAll('.index-shortcuts a, .hero-edition a').forEach(link => link.addEventListener('click', event => {
       const id = new URL(link.href).searchParams.get('tab');

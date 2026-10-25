@@ -440,7 +440,7 @@
   }
 
   function enhanceTabs() {
-    document.querySelectorAll("nav").forEach((nav) => nav.setAttribute("role", "tablist"));
+    document.querySelectorAll(".app-primary,.primary-nav").forEach((nav) => nav.setAttribute("role", "tablist"));
     const originalShowTab = window.showTab;
     if (typeof originalShowTab !== "function") return;
     window.showTab = function (id) {

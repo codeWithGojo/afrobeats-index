@@ -236,7 +236,7 @@
     insights.watermark(ctx,width,height,palette.ink);
     if(palette.border){ctx.strokeStyle=palette.border;ctx.lineWidth=2;ctx.strokeRect(20,20,width-40,height-40);}
     ctx.textBaseline="top";ctx.textAlign="center";ctx.fillStyle=palette.accent;
-    ctx.font="900 34px Arial";ctx.fillText("AFR / INDEX",width/2,58);
+    ctx.font="900 32px Arial";const logoText="AFR / INDEX",logoWidth=ctx.measureText(logoText).width,logoStart=(width-logoWidth-52)/2;ctx.fillStyle=palette.accent;ctx.beginPath();if(ctx.roundRect)ctx.roundRect(logoStart,48,40,40,8);else ctx.rect(logoStart,48,40,40);ctx.fill();ctx.textAlign="center";ctx.fillStyle=palette.paper;ctx.font="900 27px Arial";ctx.fillText("A/",logoStart+20,53);ctx.textAlign="left";ctx.fillStyle=palette.ink;ctx.font="900 32px Arial";ctx.fillText(logoText,logoStart+52,52);ctx.textAlign="center";ctx.fillStyle=palette.accent;
     ctx.font="700 18px monospace";ctx.fillText("MUSIC RECEIPT",width/2,108);ctx.fillStyle=palette.ink;
     ctx.font="15px monospace";ctx.fillText(receiptState.annual?`IMPORTED HISTORY · ${receiptState.annual.year}`:`${SOURCE_LABELS[receiptState.source].toUpperCase()} · ${receiptState.source==="apple"?"RECENT LISTENING":receiptState.source==="manual"?"YOUR SELECTION":RANGE_LABELS[receiptState.range].toUpperCase()}`,width/2,148);
     dash(ctx,48,192,width-48,192);ctx.textAlign="left";ctx.font="700 16px monospace";ctx.fillText("NO.  TRACK / ARTIST",50,217);ctx.textAlign="right";ctx.fillText(receiptState.annual?"EVENTS":"PLAYS / AFR",width-50,217);dash(ctx,48,252,width-48,252);let y=278;
