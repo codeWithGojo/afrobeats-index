@@ -1,0 +1,197 @@
+{
+  "checkedAt": "2026-10-25",
+  "portraits": [
+    {
+      "artist": "Fela Kuti",
+      "local": "/artists/fela-kuti.jpg",
+      "source": {
+        "page": "https://en.wikipedia.org/wiki/Fela_Kuti",
+        "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Fela_Kuti_circa_1986.jpg/330px-Fela_Kuti_circa_1986.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      }
+    },
+    {
+      "artist": "P-Square",
+      "local": "/artists/p-square.jpg",
+      "source": {
+        "page": "https://en.wikipedia.org/wiki/P-Square",
+        "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/P_Square_US_Canada_Tour_2010.jpg/330px-P_Square_US_Canada_Tour_2010.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      }
+    },
+    {
+      "artist": "D’banj",
+      "local": "/artists/d-banj.jpg",
+      "source": {
+        "page": "https://en.wikipedia.org/wiki/D'banj",
+        "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/D%27banjawards.jpg/330px-D%27banjawards.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      }
+    },
+    {
+      "artist": "Flavour",
+      "local": "/artists/flavour.jpg",
+      "source": {
+        "page": "https://en.wikipedia.org/wiki/Flavour_(musician)",
+        "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Flavour_N%27abania.jpg/330px-Flavour_N%27abania.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      }
+    },
+    {
+      "artist": "Mr Eazi",
+      "local": "/artists/mr-eazi.jpg",
+      "source": {
+        "page": "https://en.wikipedia.org/wiki/Mr_Eazi",
+        "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Mr_Eazi.jpg/330px-Mr_Eazi.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      }
+    },
+    {
+      "artist": "Sarkodie",
+      "local": "/artists/sarkodie.jpg",
+      "source": {
+        "page": "https://en.wikipedia.org/wiki/Sarkodie_(rapper)",
+        "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Sarkodie-1.jpg/330px-Sarkodie-1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      }
+    },
+    {
+      "artist": "Ice Prince",
+      "local": "/artists/ice-prince.jpg",
+      "source": {
+        "page": "https://en.wikipedia.org/wiki/Ice_Prince",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Ice_Prince_%28cropped_2%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+      }
+    },
+    {
+      "artist": "9ice",
+      "local": "/artists/9ice.jpg",
+      "source": {
+        "page": "https://en.wikipedia.org/wiki/9ice",
+        "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/9ice_9ice.jpg/330px-9ice_9ice.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      }
+    },
+    {
+      "artist": "Styl-Plus",
+      "local": "/artists/styl-plus.jpg",
+      "source": {
+        "page": "https://audiomack.com/stylplus",
+        "image": "https://i.audiomack.com/stylplus/1d1d8a965d.webp?height=1000&width=1000"
+      }
+    },
+    {
+      "artist": "Runtown",
+      "local": "/artists/runtown.jpg",
+      "source": {
+        "page": "https://en.wikipedia.org/wiki/Runtown",
+        "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/SGfV007.jpg/330px-SGfV007.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      }
+    },
+    {
+      "artist": "Timaya",
+      "local": "/artists/timaya.jpg",
+      "source": {
+        "page": "https://en.wikipedia.org/wiki/Timaya",
+        "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Timaya_on_NdaniTV.png/330px-Timaya_on_NdaniTV.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      }
+    },
+    {
+      "artist": "Don Jazzy",
+      "local": "/artists/don-jazzy.jpg",
+      "source": {
+        "page": "https://en.wikipedia.org/wiki/Don_Jazzy",
+        "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Donjazzy.jpg/330px-Donjazzy.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      }
+    },
+    {
+      "artist": "Mayorkun",
+      "local": "/artists/mayorkun.jpg",
+      "source": {
+        "page": "https://en.wikipedia.org/wiki/Mayorkun",
+        "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Mayorkun.png/330px-Mayorkun.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      }
+    },
+    {
+      "artist": "Simi",
+      "local": "/artists/simi.jpg",
+      "source": {
+        "page": "https://en.wikipedia.org/wiki/Simi_(singer)",
+        "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Simi_%28singer%29.png/330px-Simi_%28singer%29.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      }
+    },
+    {
+      "artist": "KiDi",
+      "local": "/artists/kidi.jpg",
+      "source": {
+        "page": "https://en.wikipedia.org/wiki/KiDi",
+        "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Kidi_at_3_Music_Awards_22_45.jpg/330px-Kidi_at_3_Music_Awards_22_45.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      }
+    },
+    {
+      "artist": "Fuse ODG",
+      "local": "/artists/fuse-odg.jpg",
+      "source": {
+        "page": "https://en.wikipedia.org/wiki/Fuse_ODG",
+        "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Fuse_ODG.jpg/330px-Fuse_ODG.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      }
+    },
+    {
+      "artist": "Afro B",
+      "local": "/artists/afro-b.jpg",
+      "source": {
+        "page": "https://open.spotify.com/artist/7oMRcCu0OYSCtCyS3P37iC",
+        "image": "https://i.scdn.co/image/2be41241adb823961096dab39abe0a66ef37e37b"
+      }
+    },
+    {
+      "artist": "Nonso Amadi",
+      "local": "/artists/nonso-amadi.jpg",
+      "source": {
+        "page": "https://en.wikipedia.org/wiki/Nonso_Amadi",
+        "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Nonso_Amadi_%28cropped%29.jpg/330px-Nonso_Amadi_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      }
+    },
+    {
+      "artist": "Brymo",
+      "local": "/artists/brymo.jpg",
+      "source": {
+        "page": "https://en.wikipedia.org/wiki/Brymo",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Brymo_NdaniSessions_image_1.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+      }
+    },
+    {
+      "artist": "Lagbaja",
+      "local": "/artists/lagbaja.jpg",
+      "source": {
+        "page": "https://en.wikipedia.org/wiki/Lagbaja",
+        "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Lagbaja.jpg/330px-Lagbaja.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      }
+    },
+    {
+      "artist": "King Sunny Ade",
+      "local": "/artists/king-sunny-ade.jpg",
+      "source": {
+        "page": "https://en.wikipedia.org/wiki/King_Sunny_Ad%C3%A9",
+        "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/King_Sunny_Ade.jpg/330px-King_Sunny_Ade.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      }
+    },
+    {
+      "artist": "Tony Allen",
+      "local": "/artists/tony-allen.jpg",
+      "source": {
+        "page": "https://en.wikipedia.org/wiki/Tony_Allen_(musician)",
+        "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Tony_Allen_med_band_cropped_%28231308%29.jpg/330px-Tony_Allen_med_band_cropped_%28231308%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      }
+    },
+    {
+      "artist": "Weird MC",
+      "local": "/artists/weird-mc.jpg",
+      "source": {
+        "page": "https://en.wikipedia.org/wiki/Weird_MC",
+        "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Weird_MC.jpg/330px-Weird_MC.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      }
+    },
+    {
+      "artist": "Bracket · Olu Maintain · Skales",
+      "local": "/artists/bracket.jpg",
+      "source": {
+        "page": "https://audiomack.com/bracket/song/yori-yori-remix",
+        "image": "https://i.audiomack.com/bracket/5dec3870df.webp?width=1200"
+      }
+    }
+  ]
+}

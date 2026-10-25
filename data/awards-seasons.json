@@ -1,0 +1,159 @@
+{
+  "checkedAt": "2026-10-25",
+  "seasons": [
+    {
+      "id": "grammys-2027",
+      "title": "69th Grammy Awards",
+      "body": "Recording Academy",
+      "date": "2027-02-07",
+      "venue": "Crypto.com Arena",
+      "city": "Los Angeles, USA",
+      "status": "Nominations on 16 Nov",
+      "source": "https://www.grammy.com/news/2027-grammys-show-air-date-nominations-announced/",
+      "milestones": [
+        [
+          "2026-08-21",
+          "Entries closed"
+        ],
+        [
+          "2026-11-16",
+          "Nominees announced"
+        ],
+        [
+          "2026-12-10",
+          "Final voting opens"
+        ],
+        [
+          "2027-01-07",
+          "Final voting closes"
+        ],
+        [
+          "2027-02-07",
+          "Awards ceremony"
+        ]
+      ],
+      "submissionNote": "Selected media-reported entries. These are submissions for consideration, not confirmed nominations. This is not a complete official entry list.",
+      "submissions": [
+        {
+          "artist": "Davido",
+          "slug": "davido",
+          "works": [
+            "Oriadé — Album of the Year / Global Music Album",
+            "B4 B4 — Record / Song of the Year / African Music Performance",
+            "Nakupenda — Song of the Year / African Music Performance"
+          ],
+          "status": "Media reported",
+          "source": "https://www.premiumtimesng.com/entertainment/music/917365-2027-grammys-davido-tems-asake-ayra-starr-submit-works-for-consideration.html"
+        },
+        {
+          "artist": "Asake",
+          "slug": "asake",
+          "works": [
+            "M$NEY — Album of the Year / Global Music Album",
+            "Gratitude — Record / Song of the Year / African Music Performance",
+            "Jogodo — African Music Performance"
+          ],
+          "status": "Media reported",
+          "source": "https://www.premiumtimesng.com/entertainment/music/917365-2027-grammys-davido-tems-asake-ayra-starr-submit-works-for-consideration.html"
+        },
+        {
+          "artist": "Tems",
+          "slug": "tems",
+          "works": [
+            "Love Is a Kingdom — Album of the Year / Global Music Album",
+            "What You Need — R&B Solo Performance / R&B Song",
+            "Big Daddy — African Music Performance"
+          ],
+          "status": "Media reported",
+          "source": "https://www.premiumtimesng.com/entertainment/music/917365-2027-grammys-davido-tems-asake-ayra-starr-submit-works-for-consideration.html"
+        },
+        {
+          "artist": "Ayra Starr",
+          "slug": "ayra-starr",
+          "works": [
+            "Starrgirl — Album of the Year / Global Music Album",
+            "Heaven Baby — Pop Duo/Group Performance",
+            "Who’s Dat Girl — Global Music Performance"
+          ],
+          "status": "Media reported",
+          "source": "https://www.premiumtimesng.com/entertainment/music/917365-2027-grammys-davido-tems-asake-ayra-starr-submit-works-for-consideration.html"
+        },
+        {
+          "artist": "Seun Kuti",
+          "slug": null,
+          "works": [
+            "Na Dem — African Music Performance",
+            "Problems — African Music Performance"
+          ],
+          "status": "Media reported",
+          "source": "https://www.premiumtimesng.com/entertainment/music/917365-2027-grammys-davido-tems-asake-ayra-starr-submit-works-for-consideration.html"
+        }
+      ]
+    },
+    {
+      "id": "headies-18",
+      "title": "18th Headies · Toronto finale",
+      "body": "The Headies",
+      "date": "2027-04-10",
+      "endDate": "2027-04-11",
+      "venue": null,
+      "city": "Toronto, Canada",
+      "status": "Rescheduled",
+      "source": "https://theheadies.com/",
+      "note": "The organiser’s latest notice moves the finale to 10–11 April 2027. Older October dates remain elsewhere on its website. Exact venue and ceremony schedule await confirmation.",
+      "milestones": [
+        [
+          "2027-04-10",
+          "Toronto finale begins"
+        ],
+        [
+          "2027-04-11",
+          "Finale concludes"
+        ]
+      ],
+      "submissionNote": "A verified list of artist submissions for this edition is not available in this calendar. See the organiser for nominee and programme updates.",
+      "submissions": []
+    },
+    {
+      "id": "afrima-10",
+      "title": "10th All Africa Music Awards",
+      "body": "AFRIMA",
+      "date": "2027-05-23",
+      "venue": null,
+      "city": "Lagos, Nigeria",
+      "status": "Entries open",
+      "entryOpen": "2026-10-11",
+      "entryClose": "2027-01-10",
+      "source": "https://afrima.org/2026/09/25/10th-afrima-holds-may-18-23-2027-in-lagos-as-au-afrima-unveil-global-calendar-in-los-angelesentries-open-worldwide-october-11/",
+      "note": "Main events run 18–23 May; the grand awards ceremony is on 23 May. Exact ceremony venue has not been announced in the cited calendar.",
+      "milestones": [
+        [
+          "2026-10-11",
+          "Submissions open"
+        ],
+        [
+          "2027-01-10",
+          "Submission deadline"
+        ],
+        [
+          "2027-01-29",
+          "Nominees announced"
+        ],
+        [
+          "2027-02-21",
+          "Public voting opens"
+        ],
+        [
+          "2027-05-21",
+          "Public voting closes"
+        ],
+        [
+          "2027-05-23",
+          "Grand awards ceremony"
+        ]
+      ],
+      "submissionNote": "Entries are open. No verified public artist-by-artist submission list is available in this snapshot.",
+      "submissions": []
+    }
+  ]
+}

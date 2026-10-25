@@ -11,7 +11,22 @@ const errors = {
 const describe = error => errors[error?.code] || error?.message || 'Sign-in failed. Check your connection and retry.';
 let callbackError = null;
 const fragment = new URLSearchParams(location.hash.slice(1));
+const callback = new URLSearchParams(location.search);
 if (fragment.has('error')) { callbackError = fragment.get('error_description') || fragment.get('error'); history.replaceState({}, '', location.pathname + location.search); }
+// Support both the default ConfirmationURL and custom token-hash templates.
+if (callback.has('token_hash')) {
+  const type = callback.get('type') || 'email';
+  if (['email', 'signup', 'magiclink'].includes(type)) {
+    const {error} = await client.auth.verifyOtp({token_hash: callback.get('token_hash'), type});
+    if (error) callbackError = describe(error);
+  } else callbackError = 'This link is not an email sign-in link.';
+  history.replaceState({}, '', '/account');
+} else if (callback.has('code')) {
+  const {error} = await client.auth.exchangeCodeForSession(callback.get('code'));
+  if (error) callbackError = describe(error);
+  history.replaceState({}, '', '/account');
+}
+if (callback.has('error_description')) {callbackError = callback.get('error_description');history.replaceState({}, '', '/account');}
 client.auth.onAuthStateChange((event, session) => window.dispatchEvent(new CustomEvent('afri:account', {detail: {event, signedIn: !!session}})));
 window.AfriAccount = {
   client, config, describe,
@@ -19,7 +34,7 @@ window.AfriAccount = {
   async session() { const {data, error} = await client.auth.getSession(); if (error) throw error; return data.session; },
   async user() { const {data, error} = await client.auth.getUser(); if (error || !data.user) throw Error('Sign in to My board to use this feature.'); return data.user; },
   async signIn(email) {
-    const {error} = await client.auth.signInWithOtp({email, options: {emailRedirectTo: location.origin + '/account'}});
+    const {error} = await client.auth.signInWithOtp({email, options: {emailRedirectTo: (location.hostname === 'localhost' || location.hostname === '127.0.0.1' ? location.origin : 'https://afrobeats-index.vercel.app') + '/account'}});
     if (error) throw Error(describe(error));
   },
   async verify(email, token) { const {error} = await client.auth.verifyOtp({email, token, type: 'email'}); if (error) throw Error(describe(error)); },

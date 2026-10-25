@@ -23,7 +23,8 @@ for(const file of ['index.html','underground.html','newsletter.html','quiz.html'
     if(!/\bwidth=/.test(tag))tag=tag.replace('<img','<img width="400" height="400"');
     return tag;
   });
-  if(!html.includes('href="/premium.css"'))html=html.replace('</head>',headLinks()+'\n</head>');
+  html=html.replace(/<script src="\/theme-init.js"><\/script>/g,'').replace(/<link rel="stylesheet" href="\/(premium|refinements)\.css">/g,'').replace(/<script src="\/(premium-ui|refinements)\.js" defer><\/script>/g,'');
+  html=html.replace('</head>',headLinks()+'\n</head>');
   fs.writeFileSync(file,html);
 }
 console.log('Rendered the shared premium navigation and visual layer');
