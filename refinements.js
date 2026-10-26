@@ -15,6 +15,11 @@
       sync();
     });
     sync();
+    const path=location.pathname.replace(/\/$/,'')||'/';
+    document.querySelectorAll('.app-primary a,.app-bottom-nav a').forEach(link=>{
+      const target=new URL(link.href).pathname;
+      if(path===target||path.startsWith(target+'/'))link.setAttribute('aria-current','page');
+    });
     const script=document.createElement('script');script.src='/assets/glass-motion.js';script.defer=true;document.head.append(script);
   };
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});else init();
