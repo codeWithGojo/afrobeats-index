@@ -6,7 +6,7 @@
   }
   async function initSignup(section) {
     if (section.dataset.bound) return;
-    section.dataset.bound = 'true';
+    section.dataset.bound = 'true'; section.dataset.signupState='idle';
     const form = section.querySelector('form'), status = section.querySelector('.signup-status');
     const email = form.elements.email, consent = form.elements.consent, button = form.querySelector('button');
     const show = (message, error = false) => { status.textContent = message; status.dataset.error = String(error); };
@@ -18,11 +18,11 @@
       }
       email.disabled = consent.disabled = button.disabled = false;
       show('One email on Sunday. Confirm your address to join.');
-    } catch { show('Signup could not load. Refresh to try again, or read the latest brief.', true); return; }
+    } catch { section.dataset.signupState='error'; show('Signup could not load. Refresh to try again, or read the latest brief.', true); return; }
     form.addEventListener('submit', async event => {
       event.preventDefault();
       if (!form.reportValidity()) return;
-      button.disabled = true; email.removeAttribute('aria-invalid');
+      section.dataset.signupState='submitting'; form.setAttribute('aria-busy','true'); button.disabled = true; email.removeAttribute('aria-invalid');
       show('Sending your confirmation request…');
       try {
         const r = await fetch('/api/newsletter?action=subscribe', {
@@ -35,9 +35,9 @@
           if (r.status === 400) email.setAttribute('aria-invalid','true');
           throw Error(result.error || 'Could not subscribe. Please retry.');
         }
-        show(result.message); form.reset();
-      } catch (error) { show(error.name === 'TimeoutError' ? 'The request timed out. Check your inbox before trying again.' : error.message, true); }
-      finally { button.disabled = false; }
+        section.dataset.signupState='success'; show(result.message); form.reset();
+      } catch (error) { section.dataset.signupState='error'; show(error.name === 'TimeoutError' ? 'The request timed out. Check your inbox before trying again.' : error.message, true); }
+      finally { button.disabled = false; form.setAttribute('aria-busy','false'); }
     });
   }
   document.querySelectorAll('[data-newsletter-signup]').forEach(initSignup);

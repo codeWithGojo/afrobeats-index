@@ -20,7 +20,7 @@ const observer=new IntersectionObserver(entries=>{
   visible.forEach(({target})=>{seen.add(target);observer.unobserve(target);});
   if(reduced.matches)return;
   visible.forEach(({target},i)=>{
-    if(target.hasAttribute('data-motion-owned'))return;
+    if(target.hasAttribute('data-motion-owned')||target.hasAttribute('data-certification')||target.closest('[data-sort-managed]'))return;
     const card=target.matches('.hero-artist,.panel');
     animate(target,{opacity:[.15,1],x:card?[0,0]:[-16,0],y:card?[24,0]:[0,0],scale:card?[.975,1]:[1,1]},{duration:.4,delay:Math.min(i*.04,.24),ease:'easeOut'});
     target.querySelectorAll<HTMLElement>('.current-score>strong,.artist-stat-grid strong,.compare-score').forEach(el=>{

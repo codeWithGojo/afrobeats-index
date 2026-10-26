@@ -1,4 +1,6 @@
 function showTab(id) {
+      if(document.body.dataset.routeTab && id!==document.body.dataset.routeTab){const routes={current:'/current',alltime:'/all-time',albums:'/albums',networth:'/net-worth',method:'/method',underground:'/watch',vs:'/compare',receipt:'/music-receipt',regions:'/regions',yearly:'/releases',artists:'/artists',discuss:'/discussion',news:'/news',top100:'/top100'};if(routes[id]){location.href=routes[id];return;}}
+
       const hero = document.querySelector('.index-hero');
       if (hero) hero.hidden = id === 'receipt';
       document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));

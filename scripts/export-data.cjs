@@ -10,6 +10,7 @@ const date=state.artists.map(a=>a.statsLastUpdatedAt).filter(Boolean).sort().at(
 // Derived artifact only: source remains the existing artist database.
 const data={asOf:date,meta:state.meta,artists:state.artists,weights:[15,13,11,11,8,8,6,6,5,17],factorNames:['Impact & legacy','Global reach','Discography','Commercial power','Awards','Cultural influence','Longevity','Live performance','Feature impact','Tracked audio streams']};
 data.recognition=c.window.AFRI_RECOGNITION||{};
+state.financials=require("../trust-model.js").financials(state.financials);
 data.site={...state};delete data.site.artists;
 fs.writeFileSync('data/streaming-catalogue.json',JSON.stringify({asOf:date,recordings:state.recordings,albums:state.albumRecords}));
 data.site.catalogue={recordings:state.recordings.length,albums:state.albumRecords.length,url:'/data/streaming-catalogue.json'};
@@ -29,4 +30,5 @@ data.events=fs.existsSync('data/editorial-events.json')?JSON.parse(fs.readFileSy
 const eventKeys=new Set(data.events.map(x=>[x.artist_slug,x.title,x.details?.year,x.details?.work,x.details?.result].join('|').toLowerCase()));
 for(const [slug,records] of Object.entries(data.awards))for(const r of records){const x={artist_slug:slug,kind:r.result==='nominee'?'nomination':'award',title:r.name+' · '+r.category,event_date:null,details:{body:r.name,year:r.year,work:r.work,result:r.result,metric:'Awards'},source_url:r.sourceUrl,verified_at:r.lastVerifiedAt};const key=[slug,x.title,r.year,r.work,r.result].join('|').toLowerCase();if(!eventKeys.has(key)){data.events.push(x);eventKeys.add(key);}}
 data.productionCredits=fs.existsSync('data/production-credits.json')?JSON.parse(fs.readFileSync('data/production-credits.json','utf8')):[];
+data.artists=data.artists.map(require('../artist-taxonomy.js').normalize);
 fs.mkdirSync('data',{recursive:true});fs.writeFileSync('data/current.json',JSON.stringify(data));

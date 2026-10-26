@@ -1,0 +1,249 @@
+{
+  "generatedAt": "2026-10-26T15:12:05.122Z",
+  "snapshot": "2026-10-19T14:29:37.596669+00:00",
+  "policy": "Review flags only; no stream values or scores corrected. Comparing snapshots may expose changed coverage rather than errors.",
+  "artists": [
+    {
+      "slug": "wizkid",
+      "name": "Wizkid",
+      "daily": 5917541,
+      "total": 11661656521,
+      "sourceUrl": "https://kworb.net/spotify/artist/3tVQdUvClmAT7URs9V3rsp_songs.html",
+      "checkedAt": "2026-10-19T14:29:37.596669+00:00",
+      "reasons": [
+        "Latest daily pace differs by over 4× from average growth between snapshots (check coverage and release spikes)"
+      ]
+    },
+    {
+      "slug": "asake",
+      "name": "Asake",
+      "daily": 5582635,
+      "total": 4529688881,
+      "sourceUrl": "https://kworb.net/spotify/artist/3a1tBryiczPAZpgoZN9Rzg_songs.html",
+      "checkedAt": "2026-10-19T14:29:37.596669+00:00",
+      "reasons": [
+        "Lifetime total decreased since the previous snapshot (possible source coverage correction)"
+      ]
+    },
+    {
+      "slug": "omah-lay",
+      "name": "OMAH LAY",
+      "daily": 2517441,
+      "total": 3753764091,
+      "sourceUrl": "https://kworb.net/spotify/artist/5yOvAmpIR7hVxiS6Ls5DPO_songs.html",
+      "checkedAt": "2026-10-19T14:29:37.596669+00:00",
+      "reasons": [
+        "Latest daily pace differs by over 4× from average growth between snapshots (check coverage and release spikes)"
+      ]
+    },
+    {
+      "slug": "fireboy-dml",
+      "name": "Fireboy DML",
+      "daily": 1391482,
+      "total": 2674953125,
+      "sourceUrl": "https://kworb.net/spotify/artist/75VKfyoBlkmrJFDqo1o2VY_songs.html",
+      "checkedAt": "2026-10-19T14:29:37.596669+00:00",
+      "reasons": [
+        "Lifetime total decreased since the previous snapshot (possible source coverage correction)"
+      ]
+    },
+    {
+      "slug": "moliy",
+      "name": "MOLIY",
+      "daily": 1078729,
+      "total": 2007131503,
+      "sourceUrl": "https://kworb.net/spotify/artist/2hVWBpjLW4Q7fboYz2pVYK_songs.html",
+      "checkedAt": "2026-10-19T14:29:37.596669+00:00",
+      "reasons": [
+        "Latest daily pace differs by over 4× from average growth between snapshots (check coverage and release spikes)"
+      ]
+    },
+    {
+      "slug": "seyi-vibez",
+      "name": "Seyi Vibez",
+      "daily": 3612539,
+      "total": 2036861931,
+      "sourceUrl": "https://kworb.net/spotify/artist/4zmZ8lVLzGc84S4v2B1rLx_songs.html",
+      "checkedAt": "2026-10-19T14:29:37.596669+00:00",
+      "reasons": [
+        "Requested manual check: no automatic ratio inconsistency found"
+      ]
+    },
+    {
+      "slug": "fola",
+      "name": "FOLA",
+      "daily": 3788350,
+      "total": 1061984121,
+      "sourceUrl": "https://kworb.net/spotify/artist/0FK1hXdXst70HD11n5J26z_songs.html",
+      "checkedAt": "2026-10-19T14:29:37.596669+00:00",
+      "reasons": [
+        "Lifetime total is less than 365 days at the current daily pace (review heuristic, not proof of error)"
+      ]
+    },
+    {
+      "slug": "olamide",
+      "name": "Olamide",
+      "daily": 920467,
+      "total": 1542126666,
+      "sourceUrl": "https://kworb.net/spotify/artist/4ovtyvs7j1jSmwhkBGHqSr_songs.html",
+      "checkedAt": "2026-10-19T14:29:37.596669+00:00",
+      "reasons": [
+        "Lifetime total decreased since the previous snapshot (possible source coverage correction)"
+      ]
+    },
+    {
+      "slug": "odumodublvck",
+      "name": "ODUMODUBLVCK",
+      "daily": 1061715,
+      "total": 1385400376,
+      "sourceUrl": "https://kworb.net/spotify/artist/3LOm0AZjpwVQebvkyanjDy_songs.html",
+      "checkedAt": "2026-10-19T14:29:37.596669+00:00",
+      "reasons": [
+        "Lifetime total decreased since the previous snapshot (possible source coverage correction)"
+      ]
+    },
+    {
+      "slug": "amaarae",
+      "name": "Amaarae",
+      "daily": 512449,
+      "total": 1398052471,
+      "sourceUrl": "https://kworb.net/spotify/artist/21UPYSRWFKwtqvSAnFnSvS_songs.html",
+      "checkedAt": "2026-10-19T14:29:37.596669+00:00",
+      "reasons": [
+        "Lifetime total decreased since the previous snapshot (possible source coverage correction)"
+      ]
+    },
+    {
+      "slug": "adekunle-gold",
+      "name": "Adekunle Gold",
+      "daily": 593418,
+      "total": 925891377,
+      "sourceUrl": "https://kworb.net/spotify/artist/2IK173RXLiCSQ8fhDlAb3s_songs.html",
+      "checkedAt": "2026-10-19T14:29:37.596669+00:00",
+      "reasons": [
+        "Latest daily pace differs by over 4× from average growth between snapshots (check coverage and release spikes)"
+      ]
+    },
+    {
+      "slug": "oxlade",
+      "name": "Oxlade",
+      "daily": 422351,
+      "total": 999941958,
+      "sourceUrl": "https://kworb.net/spotify/artist/3WTrdbZU99dgTtt3ZkyamT_songs.html",
+      "checkedAt": "2026-10-19T14:29:37.596669+00:00",
+      "reasons": [
+        "Lifetime total decreased since the previous snapshot (possible source coverage correction)"
+      ]
+    },
+    {
+      "slug": "tiwa-savage",
+      "name": "Tiwa Savage",
+      "daily": 372932,
+      "total": 770235873,
+      "sourceUrl": "https://kworb.net/spotify/artist/1hNaHKp2Za5YdOAG0WnRbc_songs.html",
+      "checkedAt": "2026-10-19T14:29:37.596669+00:00",
+      "reasons": [
+        "Lifetime total decreased since the previous snapshot (possible source coverage correction)"
+      ]
+    },
+    {
+      "slug": "darkoo",
+      "name": "Darkoo",
+      "daily": 423889,
+      "total": 930779781,
+      "sourceUrl": "https://kworb.net/spotify/artist/4QSTyDpxsKmv3UfavVUImR_songs.html",
+      "checkedAt": "2026-10-19T14:29:37.596669+00:00",
+      "reasons": [
+        "Lifetime total decreased since the previous snapshot (possible source coverage correction)"
+      ]
+    },
+    {
+      "slug": "black-sherif",
+      "name": "Black Sherif",
+      "daily": 660239,
+      "total": 822566832,
+      "sourceUrl": "https://kworb.net/spotify/artist/2LiqbH7OhqP0yuaG8VL1wJ_songs.html",
+      "checkedAt": "2026-10-19T14:29:37.596669+00:00",
+      "reasons": [
+        "Lifetime total decreased since the previous snapshot (possible source coverage correction)"
+      ]
+    },
+    {
+      "slug": "king-promise",
+      "name": "King Promise",
+      "daily": 197884,
+      "total": 501252464,
+      "sourceUrl": "https://kworb.net/spotify/artist/4tIKaxUmpXzshok2yCnwdf_songs.html",
+      "checkedAt": "2026-10-19T14:29:37.596669+00:00",
+      "reasons": [
+        "Lifetime total decreased since the previous snapshot (possible source coverage correction)"
+      ]
+    },
+    {
+      "slug": "bella-shmurda",
+      "name": "Bella Shmurda",
+      "daily": 872302,
+      "total": 724265462,
+      "sourceUrl": "https://kworb.net/spotify/artist/7kK5badbqOjd8WlT2XWMeM_songs.html",
+      "checkedAt": "2026-10-19T14:29:37.596669+00:00",
+      "reasons": [
+        "Latest daily pace differs by over 4× from average growth between snapshots (check coverage and release spikes)"
+      ]
+    },
+    {
+      "slug": "diamond-platnumz",
+      "name": "Diamond Platnumz",
+      "daily": 189236,
+      "total": 339017829,
+      "sourceUrl": "https://kworb.net/spotify/artist/3cAisWS37sGCCtRgWfvrod_songs.html",
+      "checkedAt": "2026-10-19T14:29:37.596669+00:00",
+      "reasons": [
+        "Lifetime total decreased since the previous snapshot (possible source coverage correction)"
+      ]
+    },
+    {
+      "slug": "tekno",
+      "name": "Tekno",
+      "daily": 209302,
+      "total": 576699277,
+      "sourceUrl": "https://kworb.net/spotify/artist/6IhG3Yxm3UW98jhyBvrIut_songs.html",
+      "checkedAt": "2026-10-19T14:29:37.596669+00:00",
+      "reasons": [
+        "Lifetime total decreased since the previous snapshot (possible source coverage correction)"
+      ]
+    },
+    {
+      "slug": "focalistic",
+      "name": "Focalistic",
+      "daily": 353586,
+      "total": 289226398,
+      "sourceUrl": "https://kworb.net/spotify/artist/2GJMSZ7M3D0KyyKRhYgWju_songs.html",
+      "checkedAt": "2026-10-19T14:29:37.596669+00:00",
+      "reasons": [
+        "Lifetime total decreased since the previous snapshot (possible source coverage correction)"
+      ]
+    },
+    {
+      "slug": "uncle-waffles",
+      "name": "Uncle Waffles",
+      "daily": 182037,
+      "total": 222949991,
+      "sourceUrl": "https://kworb.net/spotify/artist/68McnNC9twEtiynOAJRRgZ_songs.html",
+      "checkedAt": "2026-10-19T14:29:37.596669+00:00",
+      "reasons": [
+        "Latest daily pace differs by over 4× from average growth between snapshots (check coverage and release spikes)"
+      ]
+    },
+    {
+      "slug": "phyno",
+      "name": "Phyno",
+      "daily": 412073,
+      "total": 349179272,
+      "sourceUrl": "https://kworb.net/spotify/artist/6acbdy69rtlv8m9EW31MYl_songs.html",
+      "checkedAt": "2026-10-19T14:29:37.596669+00:00",
+      "reasons": [
+        "Lifetime total decreased since the previous snapshot (possible source coverage correction)"
+      ]
+    }
+  ]
+}

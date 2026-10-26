@@ -1,0 +1,452 @@
+{
+  "scoreNote": "Big 3 scores and individual scores for the grouped final entry are not published in the source. The group score must not be assigned to its members.",
+  "artists": [
+    {
+      "name": "Burna Boy",
+      "slug": "burna-boy",
+      "rank": 1,
+      "score": null,
+      "image": "burna.jpg",
+      "blurb": "The African Giant"
+    },
+    {
+      "name": "Davido",
+      "slug": "davido",
+      "rank": 1,
+      "score": null,
+      "image": "davido.jpg",
+      "blurb": "The Hitmaker"
+    },
+    {
+      "name": "Wizkid",
+      "slug": "wizkid",
+      "rank": 1,
+      "score": null,
+      "image": "wizkid.jpg",
+      "blurb": "Starboy"
+    },
+    {
+      "name": "Fela Kuti",
+      "slug": "fela-kuti",
+      "anchor": "legend-fela-kuti",
+      "rank": 4,
+      "score": 94.2,
+      "image": "/artists/fela-kuti.jpg",
+      "blurb": "Invented Afrobeat. Without him there is no Afrobeats."
+    },
+    {
+      "name": "2Baba",
+      "slug": "2baba",
+      "anchor": "legend-2baba",
+      "rank": 5,
+      "score": 91.5,
+      "image": "2baba.jpg",
+      "blurb": "African Queen. Bridged the 2000s into the global era."
+    },
+    {
+      "name": "P-Square",
+      "slug": "p-square",
+      "anchor": "legend-p-square",
+      "rank": 6,
+      "score": 89.0,
+      "image": "/artists/p-square.jpg",
+      "blurb": "Continental hit factory. Chop My Money defined a generation."
+    },
+    {
+      "name": "D’banj",
+      "slug": "d-banj",
+      "anchor": "legend-d-banj",
+      "rank": 7,
+      "score": 87.5,
+      "image": "/artists/d-banj.jpg",
+      "blurb": "Oliver Twist. Mo’ Hits era. First true global push."
+    },
+    {
+      "name": "Olamide",
+      "slug": "olamide",
+      "anchor": "legend-olamide",
+      "rank": 8,
+      "score": 86.8,
+      "image": "olamide.jpg",
+      "blurb": "YBNL empire. Pipeline for Asake, Fireboy and more."
+    },
+    {
+      "name": "Tiwa Savage",
+      "slug": "tiwa-savage",
+      "anchor": "legend-tiwa-savage",
+      "rank": 9,
+      "score": 85.5,
+      "image": "tiwa.jpg",
+      "blurb": "Longest-running female force. Set the standard."
+    },
+    {
+      "name": "Tems",
+      "slug": "tems",
+      "anchor": "legend-tems",
+      "rank": 10,
+      "score": 84.8,
+      "image": "tems.jpg",
+      "blurb": "Critical and commercial gravity that redefined the lane."
+    },
+    {
+      "name": "Rema",
+      "slug": "rema",
+      "anchor": "legend-rema",
+      "rank": 11,
+      "score": 84.0,
+      "image": "rema.jpg",
+      "blurb": "Calm Down global monster. Cracked Gen Z worldwide."
+    },
+    {
+      "name": "Asake",
+      "slug": "asake",
+      "anchor": "legend-asake",
+      "rank": 12,
+      "score": 83.2,
+      "image": "asake.jpg",
+      "blurb": "Street-to-stadium. Fuji + Amapiano became Lagos sound."
+    },
+    {
+      "name": "Wande Coal",
+      "slug": "wande-coal",
+      "anchor": "legend-wande-coal",
+      "rank": 13,
+      "score": 81.0,
+      "image": "wandecoal.jpg",
+      "blurb": "Mushin 2 Mo’ Hits. Vocal blueprint of an era."
+    },
+    {
+      "name": "Yemi Alade",
+      "slug": "yemi-alade",
+      "anchor": "legend-yemi-alade",
+      "rank": 14,
+      "score": 80.0,
+      "image": "yemialade.jpg",
+      "blurb": "Johnny. Africa’s biggest female touring act for years."
+    },
+    {
+      "name": "Flavour",
+      "slug": "flavour",
+      "anchor": "legend-flavour",
+      "rank": 15,
+      "score": 78.5,
+      "image": "/artists/flavour.jpg",
+      "blurb": "Nwa Baby. Highlife-Afrobeats bridge."
+    },
+    {
+      "name": "Kizz Daniel",
+      "slug": "kizz-daniel",
+      "anchor": "legend-kizz-daniel",
+      "rank": 16,
+      "score": 78.0,
+      "image": "kizzdaniel.jpg",
+      "blurb": "Earworm hooks across a decade. Flyboy Inc."
+    },
+    {
+      "name": "Tekno",
+      "slug": "tekno",
+      "anchor": "legend-tekno",
+      "rank": 17,
+      "score": 76.5,
+      "image": "/artists/tekno.jpg",
+      "blurb": "Pana. Influenced a generation of producers."
+    },
+    {
+      "name": "Adekunle Gold",
+      "slug": "adekunle-gold",
+      "anchor": "legend-adekunle-gold",
+      "rank": 18,
+      "score": 75.8,
+      "image": "/artists/adekunle-gold.jpg",
+      "blurb": "Highlife revivalist turned global soft-boy."
+    },
+    {
+      "name": "Fireboy DML",
+      "slug": "fireboy-dml",
+      "anchor": "legend-fireboy-dml",
+      "rank": 19,
+      "score": 75.0,
+      "image": "fireboy.jpg",
+      "blurb": "Peru. Emotional Afrobeats. YBNL flagship voice."
+    },
+    {
+      "name": "CKay",
+      "slug": "ckay",
+      "anchor": "legend-ckay",
+      "rank": 20,
+      "score": 74.5,
+      "image": "ckay.jpg",
+      "blurb": "TikTok-to-global. Slow-burn proof of concept."
+    },
+    {
+      "name": "Mr Eazi",
+      "slug": "mr-eazi",
+      "anchor": "legend-mr-eazi",
+      "rank": 21,
+      "score": 73.0,
+      "image": "/artists/mr-eazi.jpg",
+      "blurb": "Cross-border dealmaker. Africa to LatAm to Europe."
+    },
+    {
+      "name": "Sarkodie",
+      "slug": "sarkodie",
+      "anchor": "legend-sarkodie",
+      "rank": 22,
+      "score": 72.0,
+      "image": "/artists/sarkodie.jpg",
+      "blurb": "Technical excellence and longevity."
+    },
+    {
+      "name": "Phyno",
+      "slug": "phyno",
+      "anchor": "legend-phyno",
+      "rank": 23,
+      "score": 70.5,
+      "image": "/artists/phyno.jpg",
+      "blurb": "Fada Fada. Eastern street credibility."
+    },
+    {
+      "name": "Ice Prince",
+      "slug": "ice-prince",
+      "anchor": "legend-ice-prince",
+      "rank": 24,
+      "score": 69.0,
+      "image": "/artists/ice-prince.jpg",
+      "blurb": "Early 2010s rap-Afrobeats crossover."
+    },
+    {
+      "name": "9ice",
+      "slug": "9ice",
+      "anchor": "legend-9ice",
+      "rank": 25,
+      "score": 68.0,
+      "image": "/artists/9ice.jpg",
+      "blurb": "Street highlife that defined late 2000s Lagos."
+    },
+    {
+      "name": "Styl-Plus",
+      "slug": "styl-plus",
+      "anchor": "legend-styl-plus",
+      "rank": 26,
+      "score": 66.5,
+      "image": "/artists/styl-plus.jpg",
+      "blurb": "Olufunmi. Early romantic Afrobeats standard."
+    },
+    {
+      "name": "Runtown",
+      "slug": "runtown",
+      "anchor": "legend-runtown",
+      "rank": 27,
+      "score": 65.5,
+      "image": "/artists/runtown.jpg",
+      "blurb": "Smooth continental hitmaker."
+    },
+    {
+      "name": "Timaya",
+      "slug": "timaya",
+      "anchor": "legend-timaya",
+      "rank": 28,
+      "score": 64.5,
+      "image": "/artists/timaya.jpg",
+      "blurb": "Dancehall-Afrobeats from the South-South."
+    },
+    {
+      "name": "Don Jazzy",
+      "slug": "don-jazzy",
+      "anchor": "legend-don-jazzy",
+      "rank": 29,
+      "score": 64.0,
+      "image": "/artists/don-jazzy.jpg",
+      "blurb": "Producer-executive who built the modern system."
+    },
+    {
+      "name": "Mayorkun",
+      "slug": "mayorkun",
+      "anchor": "legend-mayorkun",
+      "rank": 30,
+      "score": 62.0,
+      "image": "/artists/mayorkun.jpg",
+      "blurb": "Consistent hits and youth appeal."
+    },
+    {
+      "name": "Simi",
+      "slug": "simi",
+      "anchor": "legend-simi",
+      "rank": 31,
+      "score": 61.0,
+      "image": "/artists/simi.jpg",
+      "blurb": "Songwriting depth and vocal identity."
+    },
+    {
+      "name": "Joeboy",
+      "slug": "joeboy",
+      "anchor": "legend-joeboy",
+      "rank": 32,
+      "score": 60.0,
+      "image": "/artists/joeboy.jpg",
+      "blurb": "Early Mavin breakthrough. Clean romantic Afrobeats."
+    },
+    {
+      "name": "Oxlade",
+      "slug": "oxlade",
+      "anchor": "legend-oxlade",
+      "rank": 33,
+      "score": 59.0,
+      "image": "/artists/oxlade.jpg",
+      "blurb": "Distinctive tone. Alté-adjacent lane."
+    },
+    {
+      "name": "Ruger",
+      "slug": "ruger",
+      "anchor": "legend-ruger",
+      "rank": 34,
+      "score": 58.5,
+      "image": "/artists/ruger.jpg",
+      "blurb": "Smooth street romance. Jonzing World."
+    },
+    {
+      "name": "Black Sherif",
+      "slug": "black-sherif",
+      "anchor": "legend-black-sherif",
+      "rank": 35,
+      "score": 57.5,
+      "image": "/artists/black-sherif.jpg",
+      "blurb": "Ghana’s new voice. Cross-border heat."
+    },
+    {
+      "name": "Stonebwoy",
+      "slug": "stonebwoy",
+      "anchor": "legend-stonebwoy",
+      "rank": 36,
+      "score": 56.5,
+      "image": "/artists/stonebwoy.jpg",
+      "blurb": "Ghana dancehall-Afrobeats bridge."
+    },
+    {
+      "name": "Shatta Wale",
+      "slug": "shatta-wale",
+      "anchor": "legend-shatta-wale",
+      "rank": 37,
+      "score": 55.5,
+      "image": "/artists/shatta-wale.jpg",
+      "blurb": "Ghana dancehall king. Massive local weight."
+    },
+    {
+      "name": "Diamond Platnumz",
+      "slug": "diamond-platnumz",
+      "anchor": "legend-diamond-platnumz",
+      "rank": 38,
+      "score": 55.0,
+      "image": "/artists/diamond-platnumz.jpg",
+      "blurb": "East African empire. Continental streaming power."
+    },
+    {
+      "name": "King Promise",
+      "slug": "king-promise",
+      "anchor": "legend-king-promise",
+      "rank": 39,
+      "score": 53.5,
+      "image": "/artists/king-promise.jpg",
+      "blurb": "Ghana’s consistent Afropop force."
+    },
+    {
+      "name": "KiDi",
+      "slug": "kidi",
+      "anchor": "legend-kidi",
+      "rank": 40,
+      "score": 52.5,
+      "image": "/artists/kidi.jpg",
+      "blurb": "Ghana-Nigeria crossover appeal."
+    },
+    {
+      "name": "Fuse ODG",
+      "slug": "fuse-odg",
+      "anchor": "legend-fuse-odg",
+      "rank": 41,
+      "score": 51.5,
+      "image": "/artists/fuse-odg.jpg",
+      "blurb": "UK-Ghana bridge that helped globalise the sound."
+    },
+    {
+      "name": "Afro B",
+      "slug": "afro-b",
+      "anchor": "legend-afro-b",
+      "rank": 42,
+      "score": 50.0,
+      "image": "/artists/afro-b.jpg",
+      "blurb": "Viral UK-Afrobeats moment."
+    },
+    {
+      "name": "Nonso Amadi",
+      "slug": "nonso-amadi",
+      "anchor": "legend-nonso-amadi",
+      "rank": 43,
+      "score": 49.0,
+      "image": "/artists/nonso-amadi.jpg",
+      "blurb": "Alté-adjacent R&B-Afrobeats hybrid."
+    },
+    {
+      "name": "Chike",
+      "slug": "chike",
+      "anchor": "legend-chike",
+      "rank": 44,
+      "score": 48.0,
+      "image": "/artists/chike.jpg",
+      "blurb": "Storytelling. Boo of the Booless and beyond."
+    },
+    {
+      "name": "Brymo",
+      "slug": "brymo",
+      "anchor": "legend-brymo",
+      "rank": 45,
+      "score": 47.0,
+      "image": "/artists/brymo.jpg",
+      "blurb": "Critical favourite. Independent path."
+    },
+    {
+      "name": "Lagbaja",
+      "slug": "lagbaja",
+      "anchor": "legend-lagbaja",
+      "rank": 46,
+      "score": 46.0,
+      "image": "/artists/lagbaja.jpg",
+      "blurb": "Social commentary through music."
+    },
+    {
+      "name": "King Sunny Ade",
+      "slug": "king-sunny-ade",
+      "anchor": "legend-king-sunny-ade",
+      "rank": 47,
+      "score": 45.0,
+      "image": "/artists/king-sunny-ade.jpg",
+      "blurb": "Global African music pioneer before Afrobeats."
+    },
+    {
+      "name": "Tony Allen",
+      "slug": "tony-allen",
+      "anchor": "legend-tony-allen",
+      "rank": 48,
+      "score": 44.0,
+      "image": "/artists/tony-allen.jpg",
+      "blurb": "Fela’s drummer. Rhythmic foundation of Afrobeat."
+    },
+    {
+      "name": "Weird MC",
+      "slug": "weird-mc",
+      "anchor": "legend-weird-mc",
+      "rank": 49,
+      "score": 42.0,
+      "image": "/artists/weird-mc.jpg",
+      "blurb": "Early female rap-Afrobeats presence."
+    },
+    {
+      "name": "Bracket · Olu Maintain · Skales",
+      "slug": "bracket-olu-maintain-skales",
+      "anchor": "legend-bracket-olu-maintain-skales",
+      "rank": 50,
+      "score": 40.0,
+      "image": "/artists/bracket.jpg",
+      "blurb": "Mid-tier hits that filled the culture."
+    }
+  ]
+}

@@ -265,7 +265,7 @@
 
   function updateFooter() {
     const footer = document.querySelector("footer p");
-    if (footer) footer.textContent = "AFR/INDEX · African music, in context. · Editorial rankings & transparent sources";
+    if (footer && !footer.querySelector("[data-section-updated]")) footer.textContent = "AFR/INDEX · African music, in context. · Editorial rankings & transparent sources";
   }
 
   function addFreshnessModule() {
@@ -440,7 +440,7 @@
   }
 
   function enhanceTabs() {
-    document.querySelectorAll(".app-primary,.primary-nav").forEach((nav) => nav.setAttribute("role", "tablist"));
+    document.querySelectorAll(".app-primary,.primary-nav").forEach((nav) => nav.setAttribute("role", "navigation"));
     const originalShowTab = window.showTab;
     if (typeof originalShowTab !== "function") return;
     window.showTab = function (id) {
@@ -451,7 +451,7 @@
         button.setAttribute("role", "tab");
       });
     };
-    window.showTab("current");
+    window.showTab(document.body.dataset.routeTab || "current");
   }
 
   function init() {

@@ -121,6 +121,7 @@ window.AFRI_YEARLY_STREAMS.songs.push(
   const select = document.getElementById("yearly-year-select");
   if (select) { select.innerHTML = years.map((year) => `<option value="${year}">${year}</option>`).join(""); select.value = data.active_year; }
   const renderYear = (year) => {
+    document.querySelector(".ssr-release-list")?.remove();
     document.querySelectorAll("[data-yearly-label]").forEach((node) => { node.textContent = year; });
     document.querySelectorAll(".nav-btn").forEach((node) => { if (node.textContent.includes("STREAMS")) node.textContent = `${year} STREAMS`; });
     const updated = document.querySelector("[data-yearly-updated]");

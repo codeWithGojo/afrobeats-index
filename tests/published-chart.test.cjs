@@ -1,7 +1,7 @@
 const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs');
 const data=require('../data/current.json'),view=require('../current-view.js');
 test('published chart, enhanced chart and search metadata agree on every official position',()=>{
- const page=fs.readFileSync('index.html','utf8');
+ const page=fs.readFileSync('current.html','utf8');
  const section=page.slice(page.indexOf('<section id="current"'),page.indexOf('</section>',page.indexOf('<section id="current"')));
  const expected=[...data.artists].sort((a,b)=>a.rank-b.rank);
  const slugs=html=>[...html.matchAll(/data-artist-slug="([^"]+)"/g)].map(match=>match[1]);

@@ -17,7 +17,7 @@ test('certification plaques retain every record, escape text, and keep the autho
  const p=require('../artist-presentation.js');
  const records=[{title:'<script>alert(1)</script>',format:'song',tier:'Multi-Platinum',multiplier:3,market:'Nigeria',authority:'TurnTable Charts',sourceUrl:'https://example.com/register',lastVerifiedAt:'2026-10-05'}];
  const html=p.certifications({name:'Artist'},records);
- assert.ok(html.includes('3× Platinum'));assert.ok(html.includes('href="https://example.com/register"'));assert.ok(!html.includes('<script>'));assert.ok(html.includes('Songs'));
+ assert.ok(html.includes('3x PLATINUM'));assert.ok(html.includes('href="https://example.com/register"'));assert.ok(!html.includes('<script>'));assert.ok(html.includes('Songs'));
 });
 test('legacy email callbacks arriving at the homepage reach account without losing their fragment',()=>{
  let destination;
@@ -26,7 +26,7 @@ test('legacy email callbacks arriving at the homepage reach account without losi
  assert.equal(destination,'/account#access_token=test&refresh_token=test');
 });
 test('all-time rows use local portraits including the shared final rank',()=>{
- const page=fs.readFileSync('index.html','utf8').split('<!-- ALL-TIME -->')[1].split('<!--')[0];
+ const page=fs.readFileSync('all-time.html','utf8').split('<!-- ALL-TIME -->')[1].split('<!--')[0];
  const rows=page.split('\n    <div class="flex items-center').slice(1);
  assert.equal(rows.length,47);
  for(const row of rows){const name=row.match(/<h3[^>]*>(.*?)<\/h3>/)?.[1];assert.ok(row.includes('<img'),name+' has no portrait');for(const [,path] of row.matchAll(/<img[^>]*src="([^"]+)"/g))assert.ok(fs.existsSync(path.replace(/^\//,'')),path);}

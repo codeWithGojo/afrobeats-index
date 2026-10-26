@@ -40,7 +40,7 @@
     const search = document.getElementById('chart-search');
     const country = document.getElementById('chart-country');
     const genre = document.getElementById('chart-genre');
-    if (chart && search && country) {
+    if (chart && search && country && !window.AfriRankings?.managed) {
       const filter = () => {
         const query = search.value.toLocaleLowerCase().trim();
         const rows = [...chart.querySelectorAll('.current-row')];

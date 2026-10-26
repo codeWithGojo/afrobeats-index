@@ -1,0 +1,507 @@
+{
+  "snapshot": "2026-10-19T14:29:37.596669+00:00",
+  "photoPolicy": "No licensed share-use artist portraits are recorded; monogram fallback is used.",
+  "statsPolicy": "Published 0–100 components are linearly normalized to 0–99; missing components stay null.",
+  "artists": [
+    {
+      "slug": "wizkid",
+      "missing": [
+        "IMP",
+        "REA",
+        "AWD",
+        "LIV",
+        "CUL"
+      ]
+    },
+    {
+      "slug": "burna-boy",
+      "missing": [
+        "IMP",
+        "REA",
+        "AWD",
+        "LIV",
+        "CUL"
+      ]
+    },
+    {
+      "slug": "rema",
+      "missing": [
+        "IMP",
+        "REA",
+        "AWD",
+        "LIV",
+        "CUL"
+      ]
+    },
+    {
+      "slug": "tems",
+      "missing": [
+        "IMP",
+        "REA",
+        "AWD",
+        "LIV",
+        "CUL"
+      ]
+    },
+    {
+      "slug": "tyla",
+      "missing": [
+        "IMP",
+        "REA",
+        "AWD",
+        "LIV",
+        "CUL"
+      ]
+    },
+    {
+      "slug": "ayra-starr",
+      "missing": [
+        "IMP",
+        "REA",
+        "AWD",
+        "LIV",
+        "CUL"
+      ]
+    },
+    {
+      "slug": "asake",
+      "missing": [
+        "IMP",
+        "REA",
+        "AWD",
+        "LIV",
+        "CUL"
+      ]
+    },
+    {
+      "slug": "davido",
+      "missing": [
+        "IMP",
+        "REA",
+        "AWD",
+        "LIV",
+        "CUL"
+      ]
+    },
+    {
+      "slug": "omah-lay",
+      "missing": [
+        "IMP",
+        "REA",
+        "AWD",
+        "LIV",
+        "CUL"
+      ]
+    },
+    {
+      "slug": "ckay",
+      "missing": [
+        "IMP",
+        "REA",
+        "AWD",
+        "LIV",
+        "CUL"
+      ]
+    },
+    {
+      "slug": "fireboy-dml",
+      "missing": [
+        "IMP",
+        "REA",
+        "AWD",
+        "LIV",
+        "CUL"
+      ]
+    },
+    {
+      "slug": "victony",
+      "missing": [
+        "IMP",
+        "REA",
+        "AWD",
+        "LIV",
+        "CUL"
+      ]
+    },
+    {
+      "slug": "moliy",
+      "missing": [
+        "IMP",
+        "REA",
+        "AWD",
+        "LIV",
+        "CUL"
+      ]
+    },
+    {
+      "slug": "bnxn",
+      "missing": [
+        "IMP",
+        "REA",
+        "AWD",
+        "LIV",
+        "CUL"
+      ]
+    },
+    {
+      "slug": "seyi-vibez",
+      "missing": [
+        "IMP",
+        "REA",
+        "AWD",
+        "LIV",
+        "CUL"
+      ]
+    },
+    {
+      "slug": "fola",
+      "missing": [
+        "IMP",
+        "REA",
+        "AWD",
+        "LIV",
+        "CUL"
+      ]
+    },
+    {
+      "slug": "ruger",
+      "missing": [
+        "IMP",
+        "REA",
+        "AWD",
+        "LIV",
+        "CUL"
+      ]
+    },
+    {
+      "slug": "mavo",
+      "missing": [
+        "IMP",
+        "REA",
+        "AWD",
+        "LIV",
+        "CUL"
+      ]
+    },
+    {
+      "slug": "kizz-daniel",
+      "missing": [
+        "IMP",
+        "REA",
+        "AWD",
+        "LIV",
+        "CUL"
+      ]
+    },
+    {
+      "slug": "odeal",
+      "missing": [
+        "IMP",
+        "REA",
+        "AWD",
+        "LIV",
+        "CUL"
+      ]
+    },
+    {
+      "slug": "olamide",
+      "missing": [
+        "IMP",
+        "REA",
+        "AWD",
+        "LIV",
+        "CUL"
+      ]
+    },
+    {
+      "slug": "odumodublvck",
+      "missing": [
+        "IMP",
+        "REA",
+        "AWD",
+        "LIV",
+        "CUL"
+      ]
+    },
+    {
+      "slug": "sarz",
+      "missing": [
+        "IMP",
+        "REA",
+        "AWD",
+        "LIV",
+        "CUL"
+      ]
+    },
+    {
+      "slug": "amaarae",
+      "missing": [
+        "IMP",
+        "REA",
+        "AWD",
+        "LIV",
+        "CUL"
+      ]
+    },
+    {
+      "slug": "young-jonn",
+      "missing": [
+        "IMP",
+        "REA",
+        "AWD",
+        "LIV",
+        "CUL"
+      ]
+    },
+    {
+      "slug": "adekunle-gold",
+      "missing": [
+        "IMP",
+        "REA",
+        "AWD",
+        "LIV",
+        "CUL"
+      ]
+    },
+    {
+      "slug": "shallipopi",
+      "missing": [
+        "IMP",
+        "REA",
+        "AWD",
+        "LIV",
+        "CUL"
+      ]
+    },
+    {
+      "slug": "oxlade",
+      "missing": [
+        "IMP",
+        "REA",
+        "AWD",
+        "LIV",
+        "CUL"
+      ]
+    },
+    {
+      "slug": "fave",
+      "missing": [
+        "IMP",
+        "REA",
+        "AWD",
+        "LIV",
+        "CUL"
+      ]
+    },
+    {
+      "slug": "joeboy",
+      "missing": [
+        "IMP",
+        "REA",
+        "AWD",
+        "LIV",
+        "CUL"
+      ]
+    },
+    {
+      "slug": "tiwa-savage",
+      "missing": [
+        "IMP",
+        "REA",
+        "AWD",
+        "LIV",
+        "CUL"
+      ]
+    },
+    {
+      "slug": "lojay",
+      "missing": [
+        "IMP",
+        "REA",
+        "AWD",
+        "LIV",
+        "CUL"
+      ]
+    },
+    {
+      "slug": "jazzwrld",
+      "missing": [
+        "IMP",
+        "REA",
+        "AWD",
+        "LIV",
+        "CUL"
+      ]
+    },
+    {
+      "slug": "darkoo",
+      "missing": [
+        "IMP",
+        "REA",
+        "AWD",
+        "LIV",
+        "CUL"
+      ]
+    },
+    {
+      "slug": "black-sherif",
+      "missing": [
+        "IMP",
+        "REA",
+        "AWD",
+        "LIV",
+        "CUL"
+      ]
+    },
+    {
+      "slug": "ciza",
+      "missing": [
+        "IMP",
+        "REA",
+        "AWD",
+        "LIV",
+        "CUL"
+      ]
+    },
+    {
+      "slug": "shoday",
+      "missing": [
+        "IMP",
+        "REA",
+        "AWD",
+        "LIV",
+        "CUL"
+      ]
+    },
+    {
+      "slug": "king-promise",
+      "missing": [
+        "IMP",
+        "REA",
+        "AWD",
+        "LIV",
+        "CUL"
+      ]
+    },
+    {
+      "slug": "zlatan",
+      "missing": [
+        "IMP",
+        "REA",
+        "AWD",
+        "LIV",
+        "CUL"
+      ]
+    },
+    {
+      "slug": "bella-shmurda",
+      "missing": [
+        "IMP",
+        "REA",
+        "AWD",
+        "LIV",
+        "CUL"
+      ]
+    },
+    {
+      "slug": "blaqbonez",
+      "missing": [
+        "IMP",
+        "REA",
+        "AWD",
+        "LIV",
+        "CUL"
+      ]
+    },
+    {
+      "slug": "khaid",
+      "missing": [
+        "IMP",
+        "REA",
+        "AWD",
+        "LIV",
+        "CUL"
+      ]
+    },
+    {
+      "slug": "chike",
+      "missing": [
+        "IMP",
+        "REA",
+        "AWD",
+        "LIV",
+        "CUL"
+      ]
+    },
+    {
+      "slug": "diamond-platnumz",
+      "missing": [
+        "IMP",
+        "REA",
+        "AWD",
+        "LIV",
+        "CUL"
+      ]
+    },
+    {
+      "slug": "tekno",
+      "missing": [
+        "IMP",
+        "REA",
+        "AWD",
+        "LIV",
+        "CUL"
+      ]
+    },
+    {
+      "slug": "focalistic",
+      "missing": [
+        "IMP",
+        "REA",
+        "AWD",
+        "LIV",
+        "CUL"
+      ]
+    },
+    {
+      "slug": "uncle-waffles",
+      "missing": [
+        "IMP",
+        "REA",
+        "AWD",
+        "LIV",
+        "CUL"
+      ]
+    },
+    {
+      "slug": "phyno",
+      "missing": [
+        "IMP",
+        "REA",
+        "AWD",
+        "LIV",
+        "CUL"
+      ]
+    },
+    {
+      "slug": "shatta-wale",
+      "missing": [
+        "IMP",
+        "REA",
+        "AWD",
+        "LIV",
+        "CUL"
+      ]
+    },
+    {
+      "slug": "stonebwoy",
+      "missing": [
+        "IMP",
+        "REA",
+        "AWD",
+        "LIV",
+        "CUL"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "artists": [
+    {
+      "name": "Artsalghul",
+      "missing": [
+        "genre",
+        "city"
+      ],
+      "needsSourceReview": true
+    },
+    {
+      "name": "BLNDE",
+      "missing": [
+        "city"
+      ],
+      "needsSourceReview": false
+    },
+    {
+      "name": "Danpapa GTA",
+      "missing": [
+        "city"
+      ],
+      "needsSourceReview": false
+    },
+    {
+      "name": "Deena",
+      "missing": [
+        "genre",
+        "city",
+        "track",
+        "listenUrl"
+      ],
+      "needsSourceReview": true
+    },
+    {
+      "name": "Egertton",
+      "missing": [
+        "city"
+      ],
+      "needsSourceReview": false
+    },
+    {
+      "name": "Indi",
+      "missing": [
+        "city"
+      ],
+      "needsSourceReview": false
+    },
+    {
+      "name": "Kobilou",
+      "missing": [
+        "city"
+      ],
+      "needsSourceReview": false
+    },
+    {
+      "name": "Luwa.Mp4",
+      "missing": [
+        "city"
+      ],
+      "needsSourceReview": false
+    },
+    {
+      "name": "NO11",
+      "missing": [
+        "genre",
+        "city"
+      ],
+      "needsSourceReview": true
+    },
+    {
+      "name": "onoola-sama",
+      "missing": [
+        "city"
+      ],
+      "needsSourceReview": false
+    },
+    {
+      "name": "scottyolorin",
+      "missing": [
+        "city"
+      ],
+      "needsSourceReview": false
+    },
+    {
+      "name": "SSSoundGawd",
+      "missing": [
+        "city"
+      ],
+      "needsSourceReview": false
+    },
+    {
+      "name": "Suono Sai",
+      "missing": [
+        "genre",
+        "city",
+        "track",
+        "listenUrl"
+      ],
+      "needsSourceReview": true
+    },
+    {
+      "name": "Ugazee",
+      "missing": [
+        "genre",
+        "city",
+        "track",
+        "listenUrl"
+      ],
+      "needsSourceReview": true
+    },
+    {
+      "name": "Wave$tar",
+      "missing": [
+        "genre",
+        "city"
+      ],
+      "needsSourceReview": true
+    },
+    {
+      "name": "Zaylevelten",
+      "missing": [
+        "genre",
+        "city",
+        "track",
+        "listenUrl"
+      ],
+      "needsSourceReview": true
+    },
+    {
+      "name": "Zen Universe",
+      "missing": [
+        "genre",
+        "city",
+        "track",
+        "listenUrl"
+      ],
+      "needsSourceReview": true
+    }
+  ]
+}

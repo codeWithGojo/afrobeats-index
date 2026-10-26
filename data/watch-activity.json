@@ -1,0 +1,4 @@
+{
+  "events": [],
+  "note": "Editorially sourced release events: id, artist_slug, kind=release, title, event_date (YYYY-MM-DD), source_url. Never infer drops from listening counts."
+}

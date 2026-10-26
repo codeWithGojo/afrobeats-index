@@ -1,0 +1,205 @@
+{
+  "updatedAt": "2026-10-26",
+  "artists": [
+    {
+      "slug": "artsalghul",
+      "name": "Artsalghul",
+      "genre": null,
+      "city": null,
+      "track": "Amapiano Baddie",
+      "listenUrl": "https://open.spotify.com/search/Artsalghul%20Amapiano%20Baddie",
+      "note": "From our original watchlist; editorial details are awaiting a source review.",
+      "checkedAt": null,
+      "sourceUrl": null
+    },
+    {
+      "slug": "blnde",
+      "name": "BLNDE",
+      "genre": "Pop",
+      "city": null,
+      "track": "Omo To Sexy",
+      "listenUrl": "https://www.youtube.com/watch?v=Ve7eZZxtTkg",
+      "note": "An accessible first listen before the BLNDE 4 PRESIDENT project.",
+      "checkedAt": "2026-10-25",
+      "sourceUrl": "https://www.thefader.com/2026/10/05/nigeria-ug-scene-list-danpapa-gta-scottyolorin"
+    },
+    {
+      "slug": "danpapa-gta",
+      "name": "Danpapa GTA",
+      "genre": "Street-pop",
+      "city": null,
+      "track": "IKEJA",
+      "listenUrl": "https://www.youtube.com/watch?v=BekbPEpkm3I",
+      "note": "A lively entry point from a producer who also records.",
+      "checkedAt": "2026-10-25",
+      "sourceUrl": "https://www.thefader.com/2026/10/05/nigeria-ug-scene-list-danpapa-gta-scottyolorin"
+    },
+    {
+      "slug": "deena",
+      "name": "Deena",
+      "genre": null,
+      "city": null,
+      "track": null,
+      "listenUrl": null,
+      "note": "From our original watchlist; editorial details are awaiting a source review.",
+      "checkedAt": null,
+      "sourceUrl": null
+    },
+    {
+      "slug": "egertton",
+      "name": "Egertton",
+      "genre": "Punk / hip-hop",
+      "city": null,
+      "track": "OBOKHIAN",
+      "listenUrl": "https://www.youtube.com/watch?v=cSlAcbexDlI",
+      "note": "A forceful entry point into his self-described incantation music.",
+      "checkedAt": "2026-10-25",
+      "sourceUrl": "https://www.thefader.com/2026/10/05/nigeria-ug-scene-list-danpapa-gta-scottyolorin"
+    },
+    {
+      "slug": "indi",
+      "name": "Indi",
+      "genre": "Hyperpop",
+      "city": null,
+      "track": "D.T.M.M.B",
+      "listenUrl": "https://www.youtube.com/watch?v=7lLElsQ5PR0",
+      "note": "A vocal-led discovery for listeners exploring the scene's hyperpop side.",
+      "checkedAt": "2026-10-25",
+      "sourceUrl": "https://www.thefader.com/2026/10/05/nigeria-ug-scene-list-danpapa-gta-scottyolorin"
+    },
+    {
+      "slug": "kobilou",
+      "name": "Kobilou",
+      "genre": "Melodic pop",
+      "city": null,
+      "track": "Lagos Love",
+      "listenUrl": "https://www.youtube.com/watch?v=MxkVo9xkzno",
+      "note": "Begin with this song, then explore his Pretty Girls Love Lou project.",
+      "checkedAt": "2026-10-25",
+      "sourceUrl": "https://www.thefader.com/2026/10/05/nigeria-ug-scene-list-danpapa-gta-scottyolorin"
+    },
+    {
+      "slug": "luwa-mp4",
+      "name": "Luwa.Mp4",
+      "genre": "Cyber-Phunk",
+      "city": null,
+      "track": "CYK BADDIE",
+      "listenUrl": "https://www.youtube.com/watch?v=ty2XvJtw4B8",
+      "note": "The JELEEL! collaboration opens a door into his punk-influenced sound.",
+      "checkedAt": "2026-10-25",
+      "sourceUrl": "https://www.thefader.com/2026/10/05/nigeria-ug-scene-list-danpapa-gta-scottyolorin"
+    },
+    {
+      "slug": "monochrome",
+      "name": "Monochrome",
+      "genre": "Trap / R&B",
+      "city": "Abuja",
+      "track": "4:44 FREESTYLE",
+      "listenUrl": "https://www.youtube.com/watch?v=oGNyezcljXE",
+      "note": "Abuja's collaborative scene makes a compelling starting point for this artist.",
+      "checkedAt": "2026-10-25",
+      "sourceUrl": "https://www.thefader.com/2026/10/05/nigeria-ug-scene-list-danpapa-gta-scottyolorin"
+    },
+    {
+      "slug": "no11",
+      "name": "NO11",
+      "genre": null,
+      "city": null,
+      "track": "Gimme Dat Ting",
+      "listenUrl": "https://open.spotify.com/search/NO11%20Gimme%20Dat%20Ting",
+      "note": "From our original watchlist; editorial details are awaiting a source review.",
+      "checkedAt": null,
+      "sourceUrl": null
+    },
+    {
+      "slug": "onoola-sama",
+      "name": "onoola-sama",
+      "genre": "Genre-fluid",
+      "city": null,
+      "track": "fêteRock*",
+      "listenUrl": "https://www.youtube.com/watch?v=HV62T2bs_wM",
+      "note": "Try this DEELA collaboration from the fujiBouyon* EP.",
+      "checkedAt": "2026-10-25",
+      "sourceUrl": "https://www.thefader.com/2026/10/05/nigeria-ug-scene-list-danpapa-gta-scottyolorin"
+    },
+    {
+      "slug": "scottyolorin",
+      "name": "scottyolorin",
+      "genre": "Melodic rap",
+      "city": null,
+      "track": "GLACIER GIRL",
+      "listenUrl": "https://www.youtube.com/watch?v=AWDX61GuM2w",
+      "note": "Start with the hook on this collaboration with DaveTheOracle and Kobilou.",
+      "checkedAt": "2026-10-25",
+      "sourceUrl": "https://www.thefader.com/2026/10/05/nigeria-ug-scene-list-danpapa-gta-scottyolorin"
+    },
+    {
+      "slug": "sssoundgawd",
+      "name": "SSSoundGawd",
+      "genre": "Dance / rap",
+      "city": null,
+      "track": "Aura Salad",
+      "listenUrl": "https://www.youtube.com/watch?v=m8dV-KHBpEs",
+      "note": "His Mavo collaboration is a useful introduction to the rapper-producer.",
+      "checkedAt": "2026-10-25",
+      "sourceUrl": "https://www.thefader.com/2026/10/05/nigeria-ug-scene-list-danpapa-gta-scottyolorin"
+    },
+    {
+      "slug": "suono-sai",
+      "name": "Suono Sai",
+      "genre": null,
+      "city": null,
+      "track": null,
+      "listenUrl": null,
+      "note": "From our original watchlist; editorial details are awaiting a source review.",
+      "checkedAt": null,
+      "sourceUrl": null
+    },
+    {
+      "slug": "ugazee",
+      "name": "Ugazee",
+      "genre": null,
+      "city": null,
+      "track": null,
+      "listenUrl": null,
+      "note": "From our original watchlist; editorial details are awaiting a source review.",
+      "checkedAt": null,
+      "sourceUrl": null
+    },
+    {
+      "slug": "wave-tar",
+      "name": "Wave$tar",
+      "genre": null,
+      "city": null,
+      "track": "Prada Baby",
+      "listenUrl": "https://open.spotify.com/search/Wave%24tar%20Prada%20Baby",
+      "note": "From our original watchlist; editorial details are awaiting a source review.",
+      "checkedAt": null,
+      "sourceUrl": null
+    },
+    {
+      "slug": "zaylevelten",
+      "name": "Zaylevelten",
+      "genre": null,
+      "city": null,
+      "track": null,
+      "listenUrl": null,
+      "note": "From our original watchlist; editorial details are awaiting a source review.",
+      "checkedAt": null,
+      "sourceUrl": null
+    },
+    {
+      "slug": "zen-universe",
+      "name": "Zen Universe",
+      "genre": null,
+      "city": null,
+      "track": null,
+      "listenUrl": null,
+      "note": "From our original watchlist; editorial details are awaiting a source review.",
+      "checkedAt": null,
+      "sourceUrl": null
+    }
+  ],
+  "risingThreshold": 3,
+  "note": "Alphabetical discovery directory. Missing city, genre or song details remain explicit; no ranks or scores."
+}

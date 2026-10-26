@@ -3,6 +3,14 @@
   "trailingSlash": false,
   "rewrites": [
     {
+      "source": "/api/watch-digest",
+      "destination": "/api/product?service=watch&action=digest"
+    },
+    {
+      "source": "/api/watch",
+      "destination": "/api/product?service=watch"
+    },
+    {
       "source": "/api/newsletter-draft",
       "destination": "/api/product?service=newsletter&action=draft"
     },
@@ -95,12 +103,194 @@
       "source": "/studio/board",
       "destination": "/account",
       "permanent": true
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "query",
+          "key": "tab",
+          "value": "current"
+        }
+      ],
+      "destination": "/current",
+      "permanent": true
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "query",
+          "key": "tab",
+          "value": "alltime"
+        }
+      ],
+      "destination": "/all-time",
+      "permanent": true
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "query",
+          "key": "tab",
+          "value": "albums"
+        }
+      ],
+      "destination": "/albums",
+      "permanent": true
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "query",
+          "key": "tab",
+          "value": "networth"
+        }
+      ],
+      "destination": "/net-worth",
+      "permanent": true
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "query",
+          "key": "tab",
+          "value": "method"
+        }
+      ],
+      "destination": "/method",
+      "permanent": true
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "query",
+          "key": "tab",
+          "value": "underground"
+        }
+      ],
+      "destination": "/watch",
+      "permanent": true
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "query",
+          "key": "tab",
+          "value": "vs"
+        }
+      ],
+      "destination": "/compare",
+      "permanent": true
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "query",
+          "key": "tab",
+          "value": "receipt"
+        }
+      ],
+      "destination": "/music-receipt",
+      "permanent": true
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "query",
+          "key": "tab",
+          "value": "regions"
+        }
+      ],
+      "destination": "/regions",
+      "permanent": true
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "query",
+          "key": "tab",
+          "value": "yearly"
+        }
+      ],
+      "destination": "/releases",
+      "permanent": true
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "query",
+          "key": "tab",
+          "value": "artists"
+        }
+      ],
+      "destination": "/artists",
+      "permanent": true
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "query",
+          "key": "tab",
+          "value": "discuss"
+        }
+      ],
+      "destination": "/discussion",
+      "permanent": true
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "query",
+          "key": "tab",
+          "value": "news"
+        }
+      ],
+      "destination": "/news",
+      "permanent": true
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "query",
+          "key": "tab",
+          "value": "top100"
+        }
+      ],
+      "destination": "/top100",
+      "permanent": true
+    },
+    {
+      "source": "/underground",
+      "destination": "/watch",
+      "permanent": true
+    },
+    {
+      "source": "/underground.html",
+      "destination": "/watch",
+      "permanent": true
     }
   ],
   "crons": [
     {
       "path": "/api/newsletter-draft",
       "schedule": "0 8 * * 0"
+    },
+    {
+      "path": "/api/watch-digest",
+      "schedule": "0 9 * * 0"
     }
   ]
 }

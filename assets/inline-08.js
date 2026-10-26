@@ -29,7 +29,7 @@
     const incoming = new Map((state.artists || []).map((artist) => [artist.slug, artist]));
     current.forEach((artist) => {
       const fresh = incoming.get(artist.slug);
-      if (fresh) Object.assign(artist, fresh);
+      if (fresh) Object.assign(artist, window.AfriTaxonomy.normalize(fresh));
     });
     document.querySelectorAll(".current-row[data-artist-slug]").forEach((row) => {
       if (row.closest("[data-motion-ranking]")) return;
@@ -47,7 +47,7 @@
       metricBlocks.forEach((block, index) => {
         const small = block.querySelector("small");
         const updatedAt = index === 0 ? artist.statsLastUpdatedAt : artist.statsLastUpdatedAt;
-        if (small && !small.querySelector("em")) small.insertAdjacentHTML("beforeend", `<em>Updated ${escapeHtml(dateLabel(updatedAt))}</em>`);
+        // One section timestamp is rendered from the trust manifest.
       });
     });
     const list=document.querySelector('.current-ranking');
@@ -121,7 +121,7 @@
   }
 
   function renderFinancials(state) {
-    const records = state.financials || [];
+    const records = window.AfriTrust.financials(state.financials || []);
     const tbody = document.querySelector("#networth tbody");
     if (tbody && records.length) tbody.innerHTML = records.sort((a, b) => a.rank - b.rank).map((record) => `<tr><td class="py-3 pr-4 serif text-lg text-[#0047ff]">${record.rank}</td><td class="py-3 pr-4 font-medium">${escapeHtml(record.artistName)}</td><td class="py-3 pr-4">${escapeHtml(record.netWorthRange)}</td><td class="py-3 text-gray-500 hidden sm:table-cell">${escapeHtml(record.primaryDrivers)}</td></tr>`).join("");
     const byName = new Map(records.map((record) => [record.artistName.toLowerCase(), record]));
@@ -135,7 +135,7 @@
       });
     });
     const intro = document.querySelector("#networth h2 + p");
-    if (intro) intro.textContent = `Editorial estimate ranges from one shared financial ledger · last reviewed ${dateLabel(records[0]?.lastVerifiedAt)}. These are not audited financial filings.`;
+    if (intro) intro.textContent = `Estimates from public reports, not verified`;
   }
 
   function renderSpotlight(state) {

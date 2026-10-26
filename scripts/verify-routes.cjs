@@ -1,0 +1,5 @@
+// Exercise first-response HTML over a short-lived local test HTTP server, without a browser or hydration.
+const http=require('node:http'),fs=require('node:fs'),assert=require('node:assert/strict'),{spawn}=require('node:child_process');
+const targets=[['regions','Wizkid'],['compare','925,891,377'],['releases','A*POP']];
+const server=http.createServer((req,res)=>{const name=req.url.slice(1);if(!targets.some(([p])=>p===name)){res.writeHead(404).end();return;}res.setHeader('Content-Type','text/html');res.end(fs.readFileSync(name+'.html'));});
+server.listen(0,'127.0.0.1',async()=>{try{for(const [page,needle]of targets){const output=await new Promise((resolve,reject)=>{const child=spawn('curl',['--fail','--silent','--show-error','--max-time','5',`http://127.0.0.1:${server.address().port}/${page}`]);let text='';child.stdout.on('data',c=>text+=c);child.on('error',reject);child.on('close',code=>code?reject(Error('curl failed '+code)):resolve(text));});assert.ok(output.includes(needle));console.log(`curl /${page}: first HTML contains ${needle}`);}}catch(e){console.error(e);process.exitCode=1;}finally{server.close();}});

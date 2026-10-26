@@ -4,8 +4,10 @@
   const tabs=new Set(['current','alltime','vs','receipt','regions','artists','albums','yearly','networth','method','underground','top100','news','discuss']);
   function publicPath(value,origin='https://afrobeats-index.vercel.app'){
     try{const u=new URL(value,origin);if(u.username||u.password||u.origin!==origin||!/^https?:$/.test(u.protocol)||/\/(?:account|api|receipt|u)(?:\/|$)/.test(u.pathname))return null;
-      if(!/^\/(?:$|help(?:\.html)?$|offline(?:\.html)?$|newsletter(?:\.html)?$|underground(?:\.html)?$|current\/[a-z0-9-]+$|calendar\/(awards|live|certifications)$|boards(?:\/[a-z0-9-]+)?$|studio(?:\/[a-z0-9-]+)?$|vs\/[a-z0-9/-]+$|collaborations$|quiz(?:\/[a-z0-9-]+)?$|week\/[0-9W-]+$)/.test(u.pathname))return null;
-      if([...u.searchParams.keys()].some(k=>k!=='tab'))return null;
+      if(!/^\/(?:$|(?:current|all-time|albums|net-worth|method|watch|compare|music-receipt|regions|releases|artists|discussion|news|top100)$|help(?:\.html)?$|offline(?:\.html)?$|newsletter(?:\.html)?$|underground(?:\.html)?$|current\/[a-z0-9-]+$|calendar\/(awards|live|certifications)$|boards(?:\/[a-z0-9-]+)?$|studio(?:\/[a-z0-9-]+)?$|vs\/[a-z0-9/-]+$|collaborations$|quiz(?:\/[a-z0-9-]+)?$|week\/[0-9W-]+$)/.test(u.pathname))return null;
+      if([...u.searchParams.keys()].some(k=>!['tab','sort'].includes(k)))return null;
+      if(u.searchParams.has('sort')&&!['index','daily','total','movers'].includes(u.searchParams.get('sort')))return null;
+      if(u.pathname==='/current'&&u.searchParams.has('sort'))return '/current?sort='+u.searchParams.get('sort');
       return u.pathname+(u.pathname==='/'&&tabs.has(u.searchParams.get('tab'))?'?tab='+u.searchParams.get('tab'):'');
     }catch{return null;}
   }

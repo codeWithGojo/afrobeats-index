@@ -1,3 +1,5 @@
+const fs=require('node:fs');
+fs.copyFileSync('templates/app.html','index.html');
 require('./sync-editorial.cjs');
 require('./sync-release-audit.cjs');
 const {execFileSync}=require('node:child_process');
@@ -10,6 +12,8 @@ require('./render-current.cjs');
 require('./render-discovery.cjs');
 require('./render-premium.cjs');
 require('./render-reader.cjs');
+require('./render-trust.cjs');
+require('./render-routes.cjs');
 buildSync({entryPoints:['account-client.js'],bundle:true,format:'esm',target:'es2022',outfile:'assets/account.js',minify:true});
 
 buildSync({entryPoints:['scripts/scenario-client.js'],bundle:true,format:'iife',outfile:'assets/board-engine.js',minify:true});

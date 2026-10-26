@@ -8,6 +8,7 @@ const {
 } = require("../lib/product.cjs");
 const productConfig = require("../data/product-config.json");
 const services = {
+  watch: require("../lib/product-watch.cjs"),
   pro: require("../lib/product-pro.cjs"),
   newsletter: require("../lib/product-newsletter.cjs"),
   "paystack-webhook": require("../lib/product-paystack-webhook.cjs"),

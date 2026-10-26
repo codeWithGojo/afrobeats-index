@@ -10,15 +10,11 @@ function response() {
 function request(action, body, overrides = {}) {
   return {method:body ? 'POST':'GET',query:{action},headers:{host:'afrobeats-index.vercel.app',origin:'https://afrobeats-index.vercel.app','x-vercel-forwarded-for':'192.0.2.12'},body,...overrides};
 }
-test('underground is a separate editorial order with sourced listening links and no fabricated movement',()=>{
-  const before = JSON.stringify(data), board = discoveryBoard(data);
-  assert.equal(board.artists.length,10);
-  assert.equal(new Set(board.artists.map(a=>a.slug)).size,10);
-  board.artists.forEach((a,i)=>{assert.equal(a.rank,i+1);assert.equal(a.previousRank,null);assert.ok(a.listenUrl.startsWith('https://www.youtube.com/'));assert.ok(!data.artists.some(c=>c.slug===a.slug));});
-  assert.ok(board.watchlist.some(a=>a.name==='Zaylevelten'));
-  const promoted = discoveryBoard({artists:[{slug:board.artists[0].slug}]});
-  assert.equal(promoted.artists.length,9);assert.equal(promoted.artists[0].rank,1);
-  assert.equal(JSON.stringify(data),before);
+test('watch discovery has every legacy name with no ranks or grading',()=>{
+ const before=JSON.stringify(data),board=discoveryBoard(data);
+ assert.equal(board.artists.length,18);assert.equal(new Set(board.artists.map(a=>a.slug)).size,18);
+ for(const a of board.artists){assert.ok(!('rank' in a));assert.ok(!('score' in a));}
+ assert.ok(board.artists.some(a=>a.name==='Zaylevelten'));assert.equal(JSON.stringify(data),before);
 });
 test('Sunday issue uses Lagos boundaries and preserves chart source date, Top 10 and missing movement',()=>{
   assert.equal(sundayDate(new Date('2026-10-24T23:15:00Z')),'2026-10-25');
@@ -32,7 +28,7 @@ test('Sunday issue uses Lagos boundaries and preserves chart source date, Top 10
   const missing=buildBrief({asOf:'2026-10-01',artists:[{slug:'a',name:'A',rank:1,score:90}]});
   assert.deepEqual(missing.movers,[]);assert.equal(missing.headToHead,null);
   const html=emailDocument(brief,[{name:'<script>',copy:'A&B',url:'javascript:alert(1)',label:'bad'}]);
-  for(const label of ['The Top 10','Movers of the Week','One head-to-head','The rising artist'])assert.ok(html.includes(label));
+  for(const label of ['The Top 10','Movers of the Week','One head-to-head','An artist to watch'])assert.ok(html.includes(label));
   assert.ok(!html.includes('javascript:'));assert.ok(html.includes(data.asOf.slice(0,10)));
 });
 test('public signup validates, uses double opt-in, protects origins and never exposes provider details',async()=>{
