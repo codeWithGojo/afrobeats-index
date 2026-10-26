@@ -25,6 +25,16 @@ for(const file of ['index.html','underground.html','newsletter.html','quiz.html'
   });
   html=html.replace(/<script src="\/theme-init.js"><\/script>/g,'').replace(/<link rel="stylesheet" href="\/(premium|refinements|reader-tools)\.css">/g,'').replace(/<script src="\/(premium-ui|refinements|reader-model|reader-languages|reader-tools)\.js" defer><\/script>/g,'');
   html=html.replace('</head>',headLinks()+'\n</head>');
+  // Rebuilds must not accumulate duplicate style sheets or execute controllers twice.
+  html=html.replace(/<head>([\s\S]*?)<\/head>/,(_,head)=>{
+    const seen=new Set();
+    return '<head>'+head.replace(/<script\b[^>]*src="[^"]+"[^>]*><\/script>|<link\b[^>]*rel="stylesheet"[^>]*>/g,tag=>{
+      const key=tag.match(/(?:src|href)="([^"]+)"/)?.[1];
+      if(!key)return tag;
+      if(seen.has(key))return '';
+      seen.add(key);return tag;
+    })+'</head>';
+  });
   html=html.replace(/\n{4,}/g,'\n\n\n');
   fs.writeFileSync(file,html);
 }
