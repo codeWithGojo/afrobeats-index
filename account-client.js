@@ -2,7 +2,7 @@ import { createClient } from '@supabase/supabase-js';
 const config = await fetch('/community-config.json').then(r => { if (!r.ok) throw Error('Account configuration could not load.'); return r.json(); });
 // Only the account route owns Supabase callbacks; Spotify returns its own code elsewhere.
 const isAccountCallback = /^\/account\/?$/.test(location.pathname);
-const client = createClient(config.url, config.key, { auth: { persistSession: true, autoRefreshToken: true, detectSessionInUrl: isAccountCallback, flowType: 'implicit', storageKey: 'afri-auth' } });
+const client = createClient(config.url, config.key, { auth: { persistSession: true, autoRefreshToken: true, detectSessionInUrl: false, flowType: 'implicit', storageKey: 'afri-auth' } });
 const errors = {
   email_address_not_authorized: 'Email delivery is restricted by the sign-in provider. The site administrator must enable a production email sender.',
   over_email_send_rate_limit: 'Too many emails requested. Wait a few minutes before trying again.',
@@ -15,6 +15,15 @@ let callbackError = null;
 const fragment = new URLSearchParams(isAccountCallback ? location.hash.slice(1) : '');
 const callback = new URLSearchParams(isAccountCallback ? location.search : '');
 if (fragment.has('error')) { callbackError = fragment.get('error_description') || fragment.get('error'); history.replaceState({}, '', location.pathname + location.search); }
+// One explicit callback handler avoids automatic and manual exchanges racing.
+if (fragment.has('access_token') && fragment.has('refresh_token')) {
+  const {error} = await client.auth.setSession({
+    access_token: fragment.get('access_token'),
+    refresh_token: fragment.get('refresh_token'),
+  });
+  if (error) callbackError = describe(error);
+  history.replaceState({}, '', '/account');
+}
 // Support both the default ConfirmationURL and custom token-hash templates.
 if (callback.has('token_hash')) {
   const type = callback.get('type') || 'email';
