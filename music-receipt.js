@@ -28,14 +28,19 @@
       const verifier=sessionStorage.getItem("afri_spotify_verifier"),expected=sessionStorage.getItem("afri_spotify_state");
       if(!verifier||!expected||state!==expected)throw new Error("Spotify sign-in could not be verified. Please try again.");
       const response=await fetch("https://accounts.spotify.com/api/token",{method:"POST",headers:{"Content-Type":"application/x-www-form-urlencoded"},body:new URLSearchParams({client_id:this.clientId,grant_type:"authorization_code",code,redirect_uri:redirectUri(),code_verifier:verifier})});
-      if(!response.ok)throw new Error("Spotify did not complete the connection.");
-      const token=await response.json();this.accessToken=token.access_token;sessionStorage.removeItem("afri_spotify_verifier");sessionStorage.removeItem("afri_spotify_state");
+      if(!response.ok)throw new Error("Spotify could not finish signing in. Start a fresh connection from this receipt page.");
+      const token=await response.json();if(!token.access_token)throw new Error("Spotify did not return a connection. Please reconnect.");this.accessToken=token.access_token;sessionStorage.removeItem("afri_spotify_verifier");sessionStorage.removeItem("afri_spotify_state");
       return true;
     }
     async request(path){
       if(!this.accessToken)throw new Error("Connect Spotify before loading your receipt.");
       const response=await fetch(`https://api.spotify.com/v1${path}`,{headers:{Authorization:`Bearer ${this.accessToken}`}});
-      if(!response.ok)throw new Error(response.status===401?"Your Spotify session expired. Reconnect and try again.":"Spotify could not return your listening data.");
+      if(!response.ok){
+        if(response.status===401){this.accessToken=null;throw new Error("Your Spotify session expired. Reconnect and try again.");}
+        if(response.status===403)throw new Error("Spotify connected, but access to your listening data was denied (403). This Spotify account may need to be added to Afri Index’s approved testers.");
+        if(response.status===429)throw new Error("Spotify’s request limit has been reached. Please try again later.");
+        throw new Error("Spotify could not return your listening data. Please try again.");
+      }
       return response.json();
     }
     async getTopTracks(timeRange){
@@ -90,7 +95,7 @@
   const receiptState={source:"manual",range:"short_term",selected:[],tracks:[],artists:[],filteredOut:0,blob:null,theme:"classic",issuedAt:null,snapshot:null,requestVersion:0};
 
   function normalize(value){return String(value||"").normalize("NFKD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/&/g," and ").replace(/[^a-z0-9]+/g," ").trim();}
-  function redirectUri(){return `${location.origin}${location.pathname}`;}
+  function redirectUri(){return `${location.origin}/music-receipt`;}
   function randomString(length){const bytes=crypto.getRandomValues(new Uint8Array(length));return Array.from(bytes,b=>"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-._~"[b%66]).join("");}
   async function sha256base64(value){const hash=await crypto.subtle.digest("SHA-256",new TextEncoder().encode(value));return btoa(String.fromCharCode(...new Uint8Array(hash))).replace(/\+/g,"-").replace(/\//g,"_").replace(/=+$/g,"");}
   function loadScript(src){return new Promise((resolve,reject)=>{const old=document.querySelector(`script[src="${src}"]`);if(old){old.addEventListener("load",resolve,{once:true});if(window.MusicKit)resolve();return;}const script=document.createElement("script");script.src=src;script.onload=resolve;script.onerror=()=>reject(new Error("The platform library could not load."));document.head.append(script);});}
@@ -131,7 +136,7 @@
     const source=receiptState.source;
     if(source==="spotify"){
       const configured=Boolean(adapters.spotify.clientId);
-      ui.connect.innerHTML=`<p>Spotify can provide your top 50 tracks and artists for all three periods. Afri Index filters that list against its African artist database.</p><button type="button" class="connect-action" id="receipt-connect"${configured?"":" disabled"}>${adapters.spotify.accessToken?"Reload Spotify data":configured?"Connect Spotify":"Spotify setup pending"}</button><p class="receipt-source-note">${configured?"One click opens Spotify’s secure sign-in. Afri Index never sees your password.":"Spotify sign-in will be available as soon as the Afri Index Spotify app is approved and configured."}</p>`;
+      ui.connect.innerHTML=`<p>Spotify can provide your top 50 tracks and artists for all three periods. Afri Index filters that list against its African artist database.</p><button type="button" class="connect-action" id="receipt-connect"${configured?"":" disabled"}>${adapters.spotify.accessToken?"Reload Spotify data":configured?"Connect Spotify":"Spotify setup pending"}</button><p class="receipt-source-note">${configured?"Connect Spotify separately from your Afri Index account. Afri Index never sees your Spotify password.":"Spotify sign-in will be available as soon as the Afri Index Spotify app is approved and configured."}</p>`;
     }else if(source==="apple"){
       const configured=Boolean(CONFIG.appleDeveloperToken||CONFIG.appleDeveloperTokenEndpoint);
       ui.connect.innerHTML=configured?`<p>Your recently played Apple Music tracks, filtered to African artists. Apple does not provide the time periods offered by Spotify.</p><button type="button" class="connect-action" id="receipt-connect">Connect Apple Music</button>`:`<p><strong>Apple Music connection is not available yet.</strong> You can still make a receipt with your own picks or import your listening history.</p><button type="button" class="connect-action" id="receipt-use-manual">Use my own picks →</button>`;
@@ -148,7 +153,7 @@
       if(receiptState.source==="spotify"&&!adapter.accessToken){await adapter.connect();return;}
       if(receiptState.source==="apple"&&!adapter.music)await adapter.connect();
       await loadFromAdapter(adapter);
-    }catch(error){setStatus(error.message,"error");ui.manual.hidden=false;}
+    }catch(error){renderConnectPanel();setStatus(error.message,"error");ui.manual.hidden=false;}
   }
   async function loadFromAdapter(adapter){
     setStatus(`Loading your ${adapter.label} listening data…`);
@@ -297,6 +302,7 @@
     history.replaceState({},document.title,redirectUri()+location.hash);
     if(error){window.showTab?.("receipt");setSource("spotify");setStatus("Spotify permission was not granted. You can reconnect or use manual mode.","error");return;}
     try{await adapters.spotify.finishConnection(code,oauthState);setSource("spotify");window.showTab?.("receipt");await loadFromAdapter(adapters.spotify);}catch(err){setSource("spotify");window.showTab?.("receipt");setStatus(err.message,"error");}
+    ui.status.scrollIntoView?.({block:"center"});
   }
   function bind(){
     ui.connect=document.getElementById("receipt-connect-panel");ui.manual=document.getElementById("receipt-manual-panel");ui.status=document.getElementById("receipt-status");ui.artistSearch=document.getElementById("receipt-artist-search");ui.results=document.getElementById("receipt-artist-results");ui.selected=document.getElementById("receipt-selected-artists");ui.manualCount=document.getElementById("manual-count");ui.trackList=document.getElementById("receipt-track-list");ui.importText=document.getElementById("receipt-import-text");ui.file=document.getElementById("receipt-file-input");ui.canvas=document.getElementById("music-receipt-canvas");ui.download=document.getElementById("receipt-download");ui.share=document.getElementById("receipt-share");ui.tweet=document.getElementById("receipt-tweet");ui.print=document.getElementById("receipt-print");ui.outputNote=document.getElementById("receipt-output-note");
@@ -320,7 +326,8 @@
     document.getElementById("receipt-history-year")?.addEventListener("change",()=>{if(ui.importText.value.trim())importData(ui.importText.value);else invalidateReceipt();});
     const appleButton=document.querySelector('[data-receipt-source="apple"] span');
     if(appleButton&&!CONFIG.appleDeveloperToken&&!CONFIG.appleDeveloperTokenEndpoint)appleButton.textContent='Connection coming soon';
-    setSource('manual');drawReceipt([],[]);handleSpotifyCallback();
+    const requestedSource=new URLSearchParams(location.search).get('source');
+    setSource(requestedSource==='spotify'?'spotify':'manual');drawReceipt([],[]);handleSpotifyCallback();
   }
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",bind);else bind();
 })();

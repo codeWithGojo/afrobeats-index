@@ -1,4 +1,4 @@
-/* Presentation only: palette, feedback and efficient entrance motion. */
+/* Shared controls: palette, account navigation and efficient entrance motion. */
 (() => {
   const init = () => {
     const toggle = document.getElementById('theme-toggle');
@@ -20,6 +20,7 @@
       const target=new URL(link.href).pathname;
       if(path===target||path.startsWith(target+'/'))link.setAttribute('aria-current','page');
     });
+    import('/account-nav.js').catch(()=>{});
     const script=document.createElement('script');script.src='/assets/glass-motion.js';script.defer=true;document.head.append(script);
   };
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});else init();
