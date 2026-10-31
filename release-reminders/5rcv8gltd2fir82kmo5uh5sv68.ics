@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Afri Index//Upcoming Releases//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5rcv8gltd2fir82kmo5uh5sv68@afrobeats-index.vercel.app
+DTSTAMP:20261031T211104Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+SUMMARY:Skepta — The Fork and Knife
+DESCRIPTION:Scheduled album release listed in Release-Cal. Dates may change
+ .\nSkepta will be dropping his 6th studio album "The Fork And Knife" on No
+ vember 6.
+URL:https://afrobeats-index.vercel.app/upcoming
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Skepta — The Fork and Knife is scheduled for tomorrow.
+END:VALARM
+END:VEVENT
+END:VCALENDAR

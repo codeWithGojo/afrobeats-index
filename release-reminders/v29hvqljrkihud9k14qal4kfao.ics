@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Afri Index//Upcoming Releases//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:v29hvqljrkihud9k14qal4kfao@afrobeats-index.vercel.app
+DTSTAMP:20261031T211104Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+SUMMARY:Cruel Santino — K.O.T.B - the Bomberman Chronicles
+DESCRIPTION:Scheduled album release listed in Release-Cal. Dates may change
+ .\nCruel Santino will be dropping his long awaited third studio album "K.O
+ .T.B - The Bomberman Chronicles" on November 6.
+URL:https://afrobeats-index.vercel.app/upcoming
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Cruel Santino — K.O.T.B - the Bomberman Chronicles is schedul
+ ed for tomorrow.
+END:VALARM
+END:VEVENT
+END:VCALENDAR

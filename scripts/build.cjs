@@ -14,6 +14,7 @@ require('./render-premium.cjs');
 require('./render-reader.cjs');
 require('./render-trust.cjs');
 require('./render-routes.cjs');
+require('./render-upcoming.cjs');
 buildSync({entryPoints:['account-client.js'],bundle:true,format:'esm',target:'es2022',outfile:'assets/account.js',minify:true});
 
 buildSync({entryPoints:['scripts/scenario-client.js'],bundle:true,format:'iife',outfile:'assets/board-engine.js',minify:true});

@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Afri Index//Upcoming Releases//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9hu0ubrv7dtp0ju3vmletb6abk@afrobeats-index.vercel.app
+DTSTAMP:20261031T211104Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:DJ Tunez — In Tunez We Trust\, Vol. 1
+DESCRIPTION:Scheduled ep release listed in Release-Cal. Dates may change.\n
+ DJ Tunez will be dropping a new EP titled "In Tunez We Trust" on November 
+ 13. The EP is set to include features from Wizkid\, Seyi Vibez\, Kemuel\, 
+ Odumodublvck\, Tay Iwar & Mannywellz.
+URL:https://afrobeats-index.vercel.app/upcoming
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:DJ Tunez — In Tunez We Trust\, Vol. 1 is scheduled for tomorr
+ ow.
+END:VALARM
+END:VEVENT
+END:VCALENDAR

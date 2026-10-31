@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Afri Index//Upcoming Releases//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:86qvj8hneprv0q5j66k600bqo0@afrobeats-index.vercel.app
+DTSTAMP:20261031T211104Z
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261117
+SUMMARY:Olamide — Time and Space
+DESCRIPTION:Scheduled album release listed in Release-Cal. Dates may change
+ .\nOlamide will be dropping his 12th studio album "Time And Space" on Nove
+ mber 16.
+URL:https://afrobeats-index.vercel.app/upcoming
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Olamide — Time and Space is scheduled for tomorrow.
+END:VALARM
+END:VEVENT
+END:VCALENDAR

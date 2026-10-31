@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "source": "Release-Cal",
+  "timezone": "Africa/Lagos",
+  "checkedAt": "2026-10-31T21:11:04.753Z",
+  "releases": [
+    {
+      "id": "v29hvqljrkihud9k14qal4kfao",
+      "artist": "Cruel Santino",
+      "title": "K.O.T.B - the Bomberman Chronicles",
+      "type": "Album",
+      "date": "2026-11-06",
+      "note": "Cruel Santino will be dropping his long awaited third studio album \"K.O.T.B - The Bomberman Chronicles\" on November 6."
+    },
+    {
+      "id": "5rcv8gltd2fir82kmo5uh5sv68",
+      "artist": "Skepta",
+      "title": "The Fork and Knife",
+      "type": "Album",
+      "date": "2026-11-06",
+      "note": "Skepta will be dropping his 6th studio album \"The Fork And Knife\" on November 6."
+    },
+    {
+      "id": "9hu0ubrv7dtp0ju3vmletb6abk",
+      "artist": "DJ Tunez",
+      "title": "In Tunez We Trust, Vol. 1",
+      "type": "EP",
+      "date": "2026-11-13",
+      "note": "DJ Tunez will be dropping a new EP titled \"In Tunez We Trust\" on November 13. The EP is set to include features from Wizkid, Seyi Vibez, Kemuel, Odumodublvck, Tay Iwar & Mannywellz."
+    },
+    {
+      "id": "86qvj8hneprv0q5j66k600bqo0",
+      "artist": "Olamide",
+      "title": "Time and Space",
+      "type": "Album",
+      "date": "2026-11-16",
+      "note": "Olamide will be dropping his 12th studio album \"Time And Space\" on November 16."
+    }
+  ]
+}
