@@ -8,6 +8,7 @@ execFileSync(process.execPath,[path.join(path.dirname(require.resolve('tailwindc
 const {buildSync}=require('esbuild');
 require('./sync-streaming.cjs');
 require('./export-data.cjs');
+require('./sync-player-cards.cjs');
 require('./render-current.cjs');
 require('./render-discovery.cjs');
 require('./render-premium.cjs');

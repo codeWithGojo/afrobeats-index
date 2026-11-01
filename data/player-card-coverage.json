@@ -1,507 +1,308 @@
 {
-  "snapshot": "2026-10-19T14:29:37.596669+00:00",
-  "photoPolicy": "No licensed share-use artist portraits are recorded; monogram fallback is used.",
-  "statsPolicy": "Published 0–100 components are linearly normalized to 0–99; missing components stay null.",
+  "version": 2,
+  "snapshot": "2026-11-01T06:54:09.772084+00:00",
+  "photoPolicy": "Existing site portraits embedded in artist share PNGs; Davido uses the existing face portrait rather than the catalogue logo.",
+  "statsPolicy": "Total and daily Spotify streams, tracked songs and projects, stream index /99 and editorial contribution /83. Unpublished individual editorial factors are not inferred.",
   "artists": [
     {
       "slug": "wizkid",
-      "missing": [
-        "IMP",
-        "REA",
-        "AWD",
-        "LIV",
-        "CUL"
-      ]
+      "photo": "artists/wizkid.jpg",
+      "photoAvailable": true,
+      "missing": []
     },
     {
       "slug": "burna-boy",
-      "missing": [
-        "IMP",
-        "REA",
-        "AWD",
-        "LIV",
-        "CUL"
-      ]
+      "photo": "artists/burna-boy.jpg",
+      "photoAvailable": true,
+      "missing": []
     },
     {
       "slug": "rema",
-      "missing": [
-        "IMP",
-        "REA",
-        "AWD",
-        "LIV",
-        "CUL"
-      ]
+      "photo": "artists/rema.jpg",
+      "photoAvailable": true,
+      "missing": []
     },
     {
       "slug": "tems",
-      "missing": [
-        "IMP",
-        "REA",
-        "AWD",
-        "LIV",
-        "CUL"
-      ]
+      "photo": "artists/tems.jpg",
+      "photoAvailable": true,
+      "missing": []
     },
     {
       "slug": "tyla",
-      "missing": [
-        "IMP",
-        "REA",
-        "AWD",
-        "LIV",
-        "CUL"
-      ]
+      "photo": "artists/tyla.jpg",
+      "photoAvailable": true,
+      "missing": []
     },
     {
       "slug": "ayra-starr",
-      "missing": [
-        "IMP",
-        "REA",
-        "AWD",
-        "LIV",
-        "CUL"
-      ]
+      "photo": "artists/ayra-starr.jpg",
+      "photoAvailable": true,
+      "missing": []
     },
     {
       "slug": "asake",
-      "missing": [
-        "IMP",
-        "REA",
-        "AWD",
-        "LIV",
-        "CUL"
-      ]
+      "photo": "artists/asake.jpg",
+      "photoAvailable": true,
+      "missing": []
     },
     {
       "slug": "davido",
-      "missing": [
-        "IMP",
-        "REA",
-        "AWD",
-        "LIV",
-        "CUL"
-      ]
+      "photo": "davido.jpg",
+      "photoAvailable": true,
+      "missing": []
     },
     {
       "slug": "omah-lay",
-      "missing": [
-        "IMP",
-        "REA",
-        "AWD",
-        "LIV",
-        "CUL"
-      ]
+      "photo": "artists/omah-lay.jpg",
+      "photoAvailable": true,
+      "missing": []
     },
     {
       "slug": "ckay",
-      "missing": [
-        "IMP",
-        "REA",
-        "AWD",
-        "LIV",
-        "CUL"
-      ]
+      "photo": "artists/ckay.jpg",
+      "photoAvailable": true,
+      "missing": []
     },
     {
       "slug": "fireboy-dml",
-      "missing": [
-        "IMP",
-        "REA",
-        "AWD",
-        "LIV",
-        "CUL"
-      ]
+      "photo": "artists/fireboy-dml.jpg",
+      "photoAvailable": true,
+      "missing": []
     },
     {
       "slug": "victony",
-      "missing": [
-        "IMP",
-        "REA",
-        "AWD",
-        "LIV",
-        "CUL"
-      ]
+      "photo": "artists/victony.jpg",
+      "photoAvailable": true,
+      "missing": []
     },
     {
       "slug": "moliy",
-      "missing": [
-        "IMP",
-        "REA",
-        "AWD",
-        "LIV",
-        "CUL"
-      ]
+      "photo": "artists/moliy.jpg",
+      "photoAvailable": true,
+      "missing": []
     },
     {
       "slug": "bnxn",
-      "missing": [
-        "IMP",
-        "REA",
-        "AWD",
-        "LIV",
-        "CUL"
-      ]
+      "photo": "artists/bnxn.jpg",
+      "photoAvailable": true,
+      "missing": []
     },
     {
       "slug": "seyi-vibez",
-      "missing": [
-        "IMP",
-        "REA",
-        "AWD",
-        "LIV",
-        "CUL"
-      ]
+      "photo": "artists/seyi-vibez.jpg",
+      "photoAvailable": true,
+      "missing": []
     },
     {
       "slug": "fola",
-      "missing": [
-        "IMP",
-        "REA",
-        "AWD",
-        "LIV",
-        "CUL"
-      ]
+      "photo": "artists/fola.jpg",
+      "photoAvailable": true,
+      "missing": []
     },
     {
       "slug": "ruger",
-      "missing": [
-        "IMP",
-        "REA",
-        "AWD",
-        "LIV",
-        "CUL"
-      ]
+      "photo": "artists/ruger.jpg",
+      "photoAvailable": true,
+      "missing": []
     },
     {
       "slug": "mavo",
-      "missing": [
-        "IMP",
-        "REA",
-        "AWD",
-        "LIV",
-        "CUL"
-      ]
+      "photo": "artists/mavo.jpg",
+      "photoAvailable": true,
+      "missing": []
     },
     {
       "slug": "kizz-daniel",
-      "missing": [
-        "IMP",
-        "REA",
-        "AWD",
-        "LIV",
-        "CUL"
-      ]
+      "photo": "artists/kizz-daniel.jpg",
+      "photoAvailable": true,
+      "missing": []
     },
     {
       "slug": "odeal",
-      "missing": [
-        "IMP",
-        "REA",
-        "AWD",
-        "LIV",
-        "CUL"
-      ]
+      "photo": "artists/odeal.jpg",
+      "photoAvailable": true,
+      "missing": []
     },
     {
       "slug": "olamide",
-      "missing": [
-        "IMP",
-        "REA",
-        "AWD",
-        "LIV",
-        "CUL"
-      ]
+      "photo": "artists/olamide.jpg",
+      "photoAvailable": true,
+      "missing": []
     },
     {
       "slug": "odumodublvck",
-      "missing": [
-        "IMP",
-        "REA",
-        "AWD",
-        "LIV",
-        "CUL"
-      ]
+      "photo": "artists/odumodublvck.jpg",
+      "photoAvailable": true,
+      "missing": []
     },
     {
       "slug": "sarz",
-      "missing": [
-        "IMP",
-        "REA",
-        "AWD",
-        "LIV",
-        "CUL"
-      ]
+      "photo": "artists/sarz.jpg",
+      "photoAvailable": true,
+      "missing": []
     },
     {
       "slug": "amaarae",
-      "missing": [
-        "IMP",
-        "REA",
-        "AWD",
-        "LIV",
-        "CUL"
-      ]
+      "photo": "artists/amaarae.jpg",
+      "photoAvailable": true,
+      "missing": []
     },
     {
       "slug": "young-jonn",
-      "missing": [
-        "IMP",
-        "REA",
-        "AWD",
-        "LIV",
-        "CUL"
-      ]
+      "photo": "artists/young-jonn.jpg",
+      "photoAvailable": true,
+      "missing": []
     },
     {
       "slug": "adekunle-gold",
-      "missing": [
-        "IMP",
-        "REA",
-        "AWD",
-        "LIV",
-        "CUL"
-      ]
+      "photo": "artists/adekunle-gold.jpg",
+      "photoAvailable": true,
+      "missing": []
     },
     {
       "slug": "shallipopi",
-      "missing": [
-        "IMP",
-        "REA",
-        "AWD",
-        "LIV",
-        "CUL"
-      ]
+      "photo": "artists/shallipopi.jpg",
+      "photoAvailable": true,
+      "missing": []
     },
     {
       "slug": "oxlade",
-      "missing": [
-        "IMP",
-        "REA",
-        "AWD",
-        "LIV",
-        "CUL"
-      ]
+      "photo": "artists/oxlade.jpg",
+      "photoAvailable": true,
+      "missing": []
     },
     {
       "slug": "fave",
-      "missing": [
-        "IMP",
-        "REA",
-        "AWD",
-        "LIV",
-        "CUL"
-      ]
+      "photo": "artists/fave.jpg",
+      "photoAvailable": true,
+      "missing": []
     },
     {
       "slug": "joeboy",
-      "missing": [
-        "IMP",
-        "REA",
-        "AWD",
-        "LIV",
-        "CUL"
-      ]
+      "photo": "artists/joeboy.jpg",
+      "photoAvailable": true,
+      "missing": []
     },
     {
       "slug": "tiwa-savage",
-      "missing": [
-        "IMP",
-        "REA",
-        "AWD",
-        "LIV",
-        "CUL"
-      ]
+      "photo": "artists/tiwa-savage.jpg",
+      "photoAvailable": true,
+      "missing": []
     },
     {
       "slug": "lojay",
-      "missing": [
-        "IMP",
-        "REA",
-        "AWD",
-        "LIV",
-        "CUL"
-      ]
+      "photo": "artists/lojay.jpg",
+      "photoAvailable": true,
+      "missing": []
     },
     {
       "slug": "jazzwrld",
-      "missing": [
-        "IMP",
-        "REA",
-        "AWD",
-        "LIV",
-        "CUL"
-      ]
+      "photo": "artists/jazzwrld.jpg",
+      "photoAvailable": true,
+      "missing": []
     },
     {
       "slug": "darkoo",
-      "missing": [
-        "IMP",
-        "REA",
-        "AWD",
-        "LIV",
-        "CUL"
-      ]
+      "photo": "artists/darkoo.jpg",
+      "photoAvailable": true,
+      "missing": []
     },
     {
       "slug": "black-sherif",
-      "missing": [
-        "IMP",
-        "REA",
-        "AWD",
-        "LIV",
-        "CUL"
-      ]
+      "photo": "artists/black-sherif.jpg",
+      "photoAvailable": true,
+      "missing": []
     },
     {
       "slug": "ciza",
-      "missing": [
-        "IMP",
-        "REA",
-        "AWD",
-        "LIV",
-        "CUL"
-      ]
+      "photo": "artists/ciza.jpg",
+      "photoAvailable": true,
+      "missing": []
     },
     {
       "slug": "shoday",
-      "missing": [
-        "IMP",
-        "REA",
-        "AWD",
-        "LIV",
-        "CUL"
-      ]
+      "photo": "artists/shoday.jpg",
+      "photoAvailable": true,
+      "missing": []
     },
     {
       "slug": "king-promise",
-      "missing": [
-        "IMP",
-        "REA",
-        "AWD",
-        "LIV",
-        "CUL"
-      ]
+      "photo": "artists/king-promise.jpg",
+      "photoAvailable": true,
+      "missing": []
     },
     {
       "slug": "zlatan",
-      "missing": [
-        "IMP",
-        "REA",
-        "AWD",
-        "LIV",
-        "CUL"
-      ]
+      "photo": "artists/zlatan.jpg",
+      "photoAvailable": true,
+      "missing": []
     },
     {
       "slug": "bella-shmurda",
-      "missing": [
-        "IMP",
-        "REA",
-        "AWD",
-        "LIV",
-        "CUL"
-      ]
+      "photo": "artists/bella-shmurda.jpg",
+      "photoAvailable": true,
+      "missing": []
     },
     {
       "slug": "blaqbonez",
-      "missing": [
-        "IMP",
-        "REA",
-        "AWD",
-        "LIV",
-        "CUL"
-      ]
+      "photo": "artists/blaqbonez.jpg",
+      "photoAvailable": true,
+      "missing": []
     },
     {
       "slug": "khaid",
-      "missing": [
-        "IMP",
-        "REA",
-        "AWD",
-        "LIV",
-        "CUL"
-      ]
+      "photo": "artists/khaid.jpg",
+      "photoAvailable": true,
+      "missing": []
     },
     {
       "slug": "chike",
-      "missing": [
-        "IMP",
-        "REA",
-        "AWD",
-        "LIV",
-        "CUL"
-      ]
+      "photo": "artists/chike.jpg",
+      "photoAvailable": true,
+      "missing": []
     },
     {
       "slug": "diamond-platnumz",
-      "missing": [
-        "IMP",
-        "REA",
-        "AWD",
-        "LIV",
-        "CUL"
-      ]
+      "photo": "artists/diamond-platnumz.jpg",
+      "photoAvailable": true,
+      "missing": []
     },
     {
       "slug": "tekno",
-      "missing": [
-        "IMP",
-        "REA",
-        "AWD",
-        "LIV",
-        "CUL"
-      ]
+      "photo": "artists/tekno.jpg",
+      "photoAvailable": true,
+      "missing": []
     },
     {
       "slug": "focalistic",
-      "missing": [
-        "IMP",
-        "REA",
-        "AWD",
-        "LIV",
-        "CUL"
-      ]
+      "photo": "artists/focalistic.jpg",
+      "photoAvailable": true,
+      "missing": []
     },
     {
       "slug": "uncle-waffles",
-      "missing": [
-        "IMP",
-        "REA",
-        "AWD",
-        "LIV",
-        "CUL"
-      ]
+      "photo": "artists/uncle-waffles.jpg",
+      "photoAvailable": true,
+      "missing": []
     },
     {
       "slug": "phyno",
-      "missing": [
-        "IMP",
-        "REA",
-        "AWD",
-        "LIV",
-        "CUL"
-      ]
+      "photo": "artists/phyno.jpg",
+      "photoAvailable": true,
+      "missing": []
     },
     {
       "slug": "shatta-wale",
-      "missing": [
-        "IMP",
-        "REA",
-        "AWD",
-        "LIV",
-        "CUL"
-      ]
+      "photo": "artists/shatta-wale.jpg",
+      "photoAvailable": true,
+      "missing": []
     },
     {
       "slug": "stonebwoy",
-      "missing": [
-        "IMP",
-        "REA",
-        "AWD",
-        "LIV",
-        "CUL"
-      ]
+      "photo": "artists/stonebwoy.jpg",
+      "photoAvailable": true,
+      "missing": []
     }
   ]
 }
