@@ -21,7 +21,10 @@ test('the compact shell retains every homepage screen and the receipt comparison
   for(const id of [...page.matchAll(/<section[^>]*id="([^"]+)"[^>]*class="[^"]*tab-content/g)].map(m=>m[1]))
     assert.ok(shell.includes(`data-tab="${id}"`),`Missing screen ${id}`);
   for(const route of ['/studio/compare','/studio/group','/account','/calendar/live','/studio/streams'])assert.ok(shell.includes(`href="${route}"`));
-  for(const label of ['Rankings','Compare','Receipt','Watch','Method','Pro'])assert.ok(bottomNav().includes(label));
+  for(const label of ['Rankings','Compare','Receipt','Watch','Pro'])assert.ok(bottomNav().includes(label));
+  assert.ok(!bottomNav().includes('href="/method"'));
+  assert.ok(sitemap().includes('href="/method"'));
+  assert.equal((bottomNav().match(/<a /g)||[]).length,5);
 });
 test('movement display distinguishes new entries without assigning a fabricated previous rank',()=>{
   assert.ok(view.movement({rank:1,previousRank:null}).includes('New entry'));

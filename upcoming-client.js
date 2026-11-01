@@ -21,6 +21,7 @@
     if (next) next.textContent = all[0] ? model.prettyDate(all[0].date,{day:'numeric',month:'short'}) : 'To be announced';
     document.querySelector('[data-release-controls]')?.removeAttribute('hidden');
     buttons.forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.releaseType===type)));
+    document.dispatchEvent(new CustomEvent('afri:visual-content',{detail:{root:list}}));
   }
   search?.addEventListener('input',render);
   buttons.forEach(b=>b.addEventListener('click',()=>{type=b.dataset.releaseType;render();}));
