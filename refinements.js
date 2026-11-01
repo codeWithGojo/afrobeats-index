@@ -15,6 +15,17 @@
       sync();
     });
     sync();
+    // Runtime-rendered links follow the same convention as the static pages.
+    const normalizeArrows = root => {
+      const links = root.nodeType===1 ? [...(root.matches('a[href]')?[root]:[]),...root.querySelectorAll('a[href]')] : [];
+      for(const link of links){
+        if(new URL(link.href,location.href).origin!==location.origin)continue;
+        const walker=document.createTreeWalker(link,NodeFilter.SHOW_TEXT);
+        let node;while((node=walker.nextNode()))if(node.nodeValue.includes('↗'))node.nodeValue=node.nodeValue.replaceAll('↗','→');
+      }
+    };
+    normalizeArrows(document.body);
+    new MutationObserver(records=>{for(const record of records)for(const node of record.addedNodes)normalizeArrows(node);}).observe(document.body,{childList:true,subtree:true});
     const path=location.pathname.replace(/\/$/,'')||'/';
     document.querySelectorAll('.app-primary a,.app-bottom-nav a').forEach(link=>{
       const target=new URL(link.href).pathname;

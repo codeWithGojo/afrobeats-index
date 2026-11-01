@@ -156,7 +156,7 @@
   function updatePageFreshness(state) {
     const checkedAt = state.meta?.lastRefreshAttemptAt || state.meta?.streamsUpdatedAt;
     const edition = document.querySelector("#live-update-label");
-    if (edition && checkedAt) edition.textContent = `Edition checked · ${dateLabel(checkedAt)}`;
+    if (edition && checkedAt) edition.textContent = `Updated · ${dateLabel(checkedAt)}`;
     const stamp = document.querySelector(".update-date time");
     if (stamp && state.meta?.streamsUpdatedAt) {
       const date = new Date(state.meta.streamsUpdatedAt);

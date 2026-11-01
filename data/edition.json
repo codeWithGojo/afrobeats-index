@@ -1,0 +1,44 @@
+{
+  "updatedAt": "2026-11-01T07:01:24.799Z",
+  "timezone": "Africa/Lagos",
+  "scope": "Edition update. Source observation dates and official chart periods remain separate.",
+  "datasets": {
+    "streaming": {
+      "checkedAt": "2026-11-01T06:54:09.772084+00:00",
+      "status": "refreshed",
+      "artists": 50,
+      "ledgersRefreshed": 100,
+      "ledgersRetained": 0,
+      "sourceStart": "2026-09-28",
+      "sourceEnd": "2026-10-31"
+    },
+    "turntableSongs": {
+      "checkedAt": "2026-11-01T06:54:14.627309+00:00",
+      "status": "checked",
+      "weekStart": "2026-10-16",
+      "weekEnd": "2026-10-22",
+      "sourceUrl": "https://www.turntablecharts.com/charts/1"
+    },
+    "turntableAlbums": {
+      "checkedAt": "2026-11-01T06:54:19.941761+00:00",
+      "status": "checked",
+      "weekStart": "2026-10-16",
+      "weekEnd": "2026-10-22",
+      "sourceUrl": "https://www.turntablecharts.com/charts/2"
+    },
+    "upcoming": {
+      "checkedAt": "2026-11-01T06:59:24.044Z",
+      "status": "checked",
+      "count": 4
+    },
+    "news": {
+      "checkedAt": "2026-11-01T07:01:24.652468+00:00",
+      "status": "checked",
+      "latestArticle": "2026-10-23"
+    },
+    "editorial": {
+      "status": "retained",
+      "note": "All-Time placements, editorial contributions, awards, certifications and financial estimates retain their documented evidence dates. A new edition does not reverify those claims."
+    }
+  }
+}

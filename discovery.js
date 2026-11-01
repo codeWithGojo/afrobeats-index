@@ -1,7 +1,7 @@
 (() => {
   let configuration;
   function config() {
-    return configuration ||= fetch('/api/newsletter?action=status', { cache: 'no-store' })
+    return configuration ||= fetch('/api/newsletter?action=status', { cache: 'no-store', signal: AbortSignal.timeout(5000) })
       .then(r => { if (!r.ok) throw Error(); return r.json(); });
   }
   async function initSignup(section) {
@@ -10,24 +10,17 @@
     const form = section.querySelector('form'), status = section.querySelector('.signup-status');
     const email = form.elements.email, consent = form.elements.consent, button = form.querySelector('button');
     const show = (message, error = false) => { status.textContent = message; status.dataset.error = String(error); };
-    try {
-      const settings = await config();
-      if (!settings.signupConfigured) {
-        show('Email signup opens soon. You can read the latest brief now.');
-        return;
-      }
-      email.disabled = consent.disabled = button.disabled = false;
-      show('One email on Sunday. Confirm your address to join.');
-    } catch { section.dataset.signupState='error'; show('Signup could not load. Refresh to try again, or read the latest brief.', true); return; }
+    // Attach submission before checking availability, so an unavailable status
+    // endpoint cannot leave an otherwise working subscribe endpoint unusable.
     form.addEventListener('submit', async event => {
       event.preventDefault();
-      if (!form.reportValidity()) return;
+      if (section.dataset.signupState==='submitting' || !form.reportValidity()) return;
       section.dataset.signupState='submitting'; form.setAttribute('aria-busy','true'); button.disabled = true; email.removeAttribute('aria-invalid');
       show('Sending your confirmation request…');
       try {
         const r = await fetch('/api/newsletter?action=subscribe', {
           method: 'POST', headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({email: email.value, consent: consent.checked, website: form.elements.website.value, source: section.dataset.source}),
+          body: JSON.stringify({email: email.value, consent: consent.checked, sponsorConsent: form.elements.sponsorConsent?.checked===true, website: form.elements.website.value, source: section.dataset.source}),
           signal: AbortSignal.timeout(15000)
         });
         const result = await r.json();
@@ -39,6 +32,16 @@
       } catch (error) { section.dataset.signupState='error'; show(error.name === 'TimeoutError' ? 'The request timed out. Check your inbox before trying again.' : error.message, true); }
       finally { button.disabled = false; form.setAttribute('aria-busy','false'); }
     });
+    try {
+      const settings = await config();
+      if (!settings.signupConfigured) {
+        show('Email signup opens soon. You can read the latest brief now.');
+        return;
+      }
+      if(section.dataset.signupState==='idle')show('One email on Sunday. Confirm your address to join.');
+    } catch {
+      if(section.dataset.signupState==='idle')show('You can still submit your email. We’ll check availability when you join.');
+    }
   }
   document.querySelectorAll('[data-newsletter-signup]').forEach(initSignup);
   document.addEventListener('click', async event => {

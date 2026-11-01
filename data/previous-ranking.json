@@ -1,0 +1,1105 @@
+{
+  "asOf": "2026-10-19T14:29:37.596669+00:00",
+  "artists": [
+    {
+      "slug": "wizkid",
+      "name": "Wizkid",
+      "rank": 1,
+      "score": 94.704836,
+      "scoreBreakdown": {
+        "editorialContribution": 77.70483648032385,
+        "rawEditorialContribution": 81.51368589089539,
+        "editorialMaximum": 87.06840185755347,
+        "editorialWeight": 83,
+        "streamsIndex": 100,
+        "streamsScore": 100,
+        "streamWeight": 17,
+        "listenerWeight": 0,
+        "streamCoverage": [
+          "spotify"
+        ],
+        "previousScore": 93.498761,
+        "baselineDate": "2026-10-05",
+        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
+      }
+    },
+    {
+      "slug": "burna-boy",
+      "name": "Burna Boy",
+      "rank": 2,
+      "score": 92.788784,
+      "scoreBreakdown": {
+        "editorialContribution": 76.5995516824381,
+        "rawEditorialContribution": 80.35422346981875,
+        "editorialMaximum": 87.06840185755347,
+        "editorialWeight": 83,
+        "streamsIndex": 95.23077737713794,
+        "streamsScore": 95.23077737713794,
+        "streamWeight": 17,
+        "listenerWeight": 0,
+        "streamCoverage": [
+          "spotify"
+        ],
+        "previousScore": 96.817442,
+        "baselineDate": "2026-10-05",
+        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
+      }
+    },
+    {
+      "slug": "rema",
+      "name": "Rema",
+      "rank": 3,
+      "score": 91.694658,
+      "scoreBreakdown": {
+        "editorialContribution": 81.78768228139269,
+        "rawEditorialContribution": 85.79666009486992,
+        "editorialMaximum": 87.06840185755347,
+        "editorialWeight": 83,
+        "streamsIndex": 58.27632888828419,
+        "streamsScore": 58.27632888828419,
+        "streamWeight": 17,
+        "listenerWeight": 0,
+        "streamCoverage": [
+          "spotify"
+        ],
+        "previousScore": 95.204134,
+        "baselineDate": "2026-10-05",
+        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
+      }
+    },
+    {
+      "slug": "tems",
+      "name": "Tems",
+      "rank": 4,
+      "score": 91.222189,
+      "scoreBreakdown": {
+        "editorialContribution": 82.02309483415452,
+        "rawEditorialContribution": 86.0436118387998,
+        "editorialMaximum": 87.06840185755347,
+        "editorialWeight": 83,
+        "streamsIndex": 54.112317427943566,
+        "streamsScore": 54.112317427943566,
+        "streamWeight": 17,
+        "listenerWeight": 0,
+        "streamCoverage": [
+          "spotify"
+        ],
+        "previousScore": 95.981246,
+        "baselineDate": "2026-10-05",
+        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
+      }
+    },
+    {
+      "slug": "tyla",
+      "name": "Tyla",
+      "rank": 5,
+      "score": 89.921233,
+      "scoreBreakdown": {
+        "editorialContribution": 82.75516804883088,
+        "rawEditorialContribution": 86.81156900560212,
+        "editorialMaximum": 87.06840185755347,
+        "editorialWeight": 83,
+        "streamsIndex": 42.153325397192084,
+        "streamsScore": 42.153325397192084,
+        "streamWeight": 17,
+        "listenerWeight": 0,
+        "streamCoverage": [
+          "spotify"
+        ],
+        "previousScore": 94.277156,
+        "baselineDate": "2026-10-05",
+        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
+      }
+    },
+    {
+      "slug": "ayra-starr",
+      "name": "Ayra Starr",
+      "rank": 6,
+      "score": 88.75194,
+      "scoreBreakdown": {
+        "editorialContribution": 82.8051082356997,
+        "rawEditorialContribution": 86.86395710510979,
+        "editorialMaximum": 87.06840185755347,
+        "editorialWeight": 83,
+        "streamsIndex": 34.98136308211371,
+        "streamsScore": 34.98136308211371,
+        "streamWeight": 17,
+        "listenerWeight": 0,
+        "streamCoverage": [
+          "spotify"
+        ],
+        "previousScore": 92.705131,
+        "baselineDate": "2026-10-05",
+        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
+      }
+    },
+    {
+      "slug": "asake",
+      "name": "Asake",
+      "rank": 7,
+      "score": 88.703422,
+      "scoreBreakdown": {
+        "editorialContribution": 82.10018290774526,
+        "rawEditorialContribution": 86.1244785300025,
+        "editorialMaximum": 87.06840185755347,
+        "editorialWeight": 83,
+        "streamsIndex": 38.84258529517704,
+        "streamsScore": 38.84258529517704,
+        "streamWeight": 17,
+        "listenerWeight": 0,
+        "streamCoverage": [
+          "spotify"
+        ],
+        "previousScore": 91.195248,
+        "baselineDate": "2026-10-05",
+        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
+      }
+    },
+    {
+      "slug": "davido",
+      "name": "Davido",
+      "rank": 8,
+      "score": 88.624235,
+      "scoreBreakdown": {
+        "editorialContribution": 83,
+        "rawEditorialContribution": 87.06840185755347,
+        "editorialMaximum": 87.06840185755347,
+        "editorialWeight": 83,
+        "streamsIndex": 33.0837334906273,
+        "streamsScore": 33.0837334906273,
+        "streamWeight": 17,
+        "listenerWeight": 0,
+        "streamCoverage": [
+          "spotify"
+        ],
+        "previousScore": 91.72864,
+        "baselineDate": "2026-10-05",
+        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
+      }
+    },
+    {
+      "slug": "omah-lay",
+      "name": "OMAH LAY",
+      "rank": 9,
+      "score": 86.992048,
+      "scoreBreakdown": {
+        "editorialContribution": 81.51992796734268,
+        "rawEditorialContribution": 85.51578129710127,
+        "editorialMaximum": 87.06840185755347,
+        "editorialWeight": 83,
+        "streamsIndex": 32.18894403415434,
+        "streamsScore": 32.18894403415434,
+        "streamWeight": 17,
+        "listenerWeight": 0,
+        "streamCoverage": [
+          "spotify"
+        ],
+        "previousScore": 90.197242,
+        "baselineDate": "2026-10-05",
+        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
+      }
+    },
+    {
+      "slug": "ckay",
+      "name": "CKay",
+      "rank": 10,
+      "score": 85.810904,
+      "scoreBreakdown": {
+        "editorialContribution": 81.31044487272695,
+        "rawEditorialContribution": 85.2960299927113,
+        "editorialMaximum": 87.06840185755347,
+        "editorialWeight": 83,
+        "streamsIndex": 26.47329027776293,
+        "streamsScore": 26.47329027776293,
+        "streamWeight": 17,
+        "listenerWeight": 0,
+        "streamCoverage": [
+          "spotify"
+        ],
+        "previousScore": 89.396155,
+        "baselineDate": "2026-10-05",
+        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
+      }
+    },
+    {
+      "slug": "fireboy-dml",
+      "name": "Fireboy DML",
+      "rank": 11,
+      "score": 85.037023,
+      "scoreBreakdown": {
+        "editorialContribution": 81.13755933700966,
+        "rawEditorialContribution": 85.11467014573309,
+        "editorialMaximum": 87.06840185755347,
+        "editorialWeight": 83,
+        "streamsIndex": 22.93802017048792,
+        "streamsScore": 22.93802017048792,
+        "streamWeight": 17,
+        "listenerWeight": 0,
+        "streamCoverage": [
+          "spotify"
+        ],
+        "previousScore": 88.598663,
+        "baselineDate": "2026-10-05",
+        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
+      }
+    },
+    {
+      "slug": "victony",
+      "name": "Victony",
+      "rank": 12,
+      "score": 83.751893,
+      "scoreBreakdown": {
+        "editorialContribution": 81.49001949238621,
+        "rawEditorialContribution": 85.48440680172226,
+        "editorialMaximum": 87.06840185755347,
+        "editorialWeight": 83,
+        "streamsIndex": 13.305135648661247,
+        "streamsScore": 13.305135648661247,
+        "streamWeight": 17,
+        "listenerWeight": 0,
+        "streamCoverage": [
+          "spotify"
+        ],
+        "previousScore": 87.781496,
+        "baselineDate": "2026-10-05",
+        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
+      }
+    },
+    {
+      "slug": "moliy",
+      "name": "MOLIY",
+      "rank": 13,
+      "score": 83.449225,
+      "scoreBreakdown": {
+        "editorialContribution": 80.52329072769687,
+        "rawEditorialContribution": 84.47029199965928,
+        "editorialMaximum": 87.06840185755347,
+        "editorialWeight": 83,
+        "streamsIndex": 17.21137558275371,
+        "streamsScore": 17.21137558275371,
+        "streamWeight": 17,
+        "listenerWeight": 0,
+        "streamCoverage": [
+          "spotify"
+        ],
+        "previousScore": 86.989749,
+        "baselineDate": "2026-10-05",
+        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
+      }
+    },
+    {
+      "slug": "bnxn",
+      "name": "BNXN",
+      "rank": 14,
+      "score": 82.790804,
+      "scoreBreakdown": {
+        "editorialContribution": 79.52975147090528,
+        "rawEditorialContribution": 83.42805253855585,
+        "editorialMaximum": 87.06840185755347,
+        "editorialWeight": 83,
+        "streamsIndex": 19.18266158818553,
+        "streamsScore": 19.18266158818553,
+        "streamWeight": 17,
+        "listenerWeight": 0,
+        "streamCoverage": [
+          "spotify"
+        ],
+        "previousScore": 86.109345,
+        "baselineDate": "2026-10-05",
+        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
+      }
+    },
+    {
+      "slug": "seyi-vibez",
+      "name": "Seyi Vibez",
+      "rank": 15,
+      "score": 82.168127,
+      "scoreBreakdown": {
+        "editorialContribution": 79.1988534486324,
+        "rawEditorialContribution": 83.08093492437362,
+        "editorialMaximum": 87.06840185755347,
+        "editorialWeight": 83,
+        "streamsIndex": 17.466317305196508,
+        "streamsScore": 17.466317305196508,
+        "streamWeight": 17,
+        "listenerWeight": 0,
+        "streamCoverage": [
+          "spotify"
+        ],
+        "previousScore": 85.326962,
+        "baselineDate": "2026-10-05",
+        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
+      }
+    },
+    {
+      "slug": "fola",
+      "name": "FOLA",
+      "rank": 16,
+      "score": 80.732833,
+      "scoreBreakdown": {
+        "editorialContribution": 79.184705432758,
+        "rawEditorialContribution": 83.0660934167635,
+        "editorialMaximum": 87.06840185755347,
+        "editorialWeight": 83,
+        "streamsIndex": 9.106631798729515,
+        "streamsScore": 9.106631798729515,
+        "streamWeight": 17,
+        "listenerWeight": 0,
+        "streamCoverage": [
+          "spotify"
+        ],
+        "previousScore": 84.512856,
+        "baselineDate": "2026-10-05",
+        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
+      }
+    },
+    {
+      "slug": "ruger",
+      "name": "Ruger",
+      "rank": 17,
+      "score": 79.978834,
+      "scoreBreakdown": {
+        "editorialContribution": 78.17087614065152,
+        "rawEditorialContribution": 82.00256936591909,
+        "editorialMaximum": 87.06840185755347,
+        "editorialWeight": 83,
+        "streamsIndex": 10.635046717133541,
+        "streamsScore": 10.635046717133541,
+        "streamWeight": 17,
+        "listenerWeight": 0,
+        "streamCoverage": [
+          "spotify"
+        ],
+        "previousScore": 83.701095,
+        "baselineDate": "2026-10-05",
+        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
+      }
+    },
+    {
+      "slug": "mavo",
+      "name": "Mavo",
+      "rank": 18,
+      "score": 79.06715,
+      "scoreBreakdown": {
+        "editorialContribution": 77.9092983300959,
+        "rawEditorialContribution": 81.72816982463625,
+        "editorialMaximum": 87.06840185755347,
+        "editorialWeight": 83,
+        "streamsIndex": 6.810889684237511,
+        "streamsScore": 6.810889684237511,
+        "streamWeight": 17,
+        "listenerWeight": 0,
+        "streamCoverage": [
+          "spotify"
+        ],
+        "previousScore": 82.895299,
+        "baselineDate": "2026-10-05",
+        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
+      }
+    },
+    {
+      "slug": "kizz-daniel",
+      "name": "Kizz Daniel",
+      "rank": 19,
+      "score": 77.967285,
+      "scoreBreakdown": {
+        "editorialContribution": 75.46250709339382,
+        "rawEditorialContribution": 79.1614444913987,
+        "editorialMaximum": 87.06840185755347,
+        "editorialWeight": 83,
+        "streamsIndex": 14.733989831597786,
+        "streamsScore": 14.733989831597786,
+        "streamWeight": 17,
+        "listenerWeight": 0,
+        "streamCoverage": [
+          "spotify"
+        ],
+        "previousScore": 81.196209,
+        "baselineDate": "2026-10-05",
+        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
+      }
+    },
+    {
+      "slug": "odeal",
+      "name": "Odeal",
+      "rank": 20,
+      "score": 77.875633,
+      "scoreBreakdown": {
+        "editorialContribution": 76.80996776154217,
+        "rawEditorialContribution": 80.57495349069495,
+        "editorialMaximum": 87.06840185755347,
+        "editorialWeight": 83,
+        "streamsIndex": 6.268619888466016,
+        "streamsScore": 6.268619888466016,
+        "streamWeight": 17,
+        "listenerWeight": 0,
+        "streamCoverage": [
+          "spotify"
+        ],
+        "previousScore": 82.002784,
+        "baselineDate": "2026-10-05",
+        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
+      }
+    },
+    {
+      "slug": "olamide",
+      "name": "Olamide",
+      "rank": 21,
+      "score": 77.05743,
+      "scoreBreakdown": {
+        "editorialContribution": 74.8093660157421,
+        "rawEditorialContribution": 78.4762884694872,
+        "editorialMaximum": 87.06840185755347,
+        "editorialWeight": 83,
+        "streamsIndex": 13.22390745451111,
+        "streamsScore": 13.22390745451111,
+        "streamWeight": 17,
+        "listenerWeight": 0,
+        "streamCoverage": [
+          "spotify"
+        ],
+        "previousScore": 80.397657,
+        "baselineDate": "2026-10-05",
+        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
+      }
+    },
+    {
+      "slug": "odumodublvck",
+      "name": "ODUMODUBLVCK",
+      "rank": 22,
+      "score": 76.246807,
+      "scoreBreakdown": {
+        "editorialContribution": 74.22721308407168,
+        "rawEditorialContribution": 77.86560021168921,
+        "editorialMaximum": 87.06840185755347,
+        "editorialWeight": 83,
+        "streamsIndex": 11.879962109201278,
+        "streamsScore": 11.879962109201278,
+        "streamWeight": 17,
+        "listenerWeight": 0,
+        "streamCoverage": [
+          "spotify"
+        ],
+        "previousScore": 79.55452,
+        "baselineDate": "2026-10-05",
+        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
+      }
+    },
+    {
+      "slug": "sarz",
+      "name": "Sarz",
+      "rank": 23,
+      "score": 74.935299,
+      "scoreBreakdown": {
+        "editorialContribution": 73.73633801112537,
+        "rawEditorialContribution": 77.35066396936215,
+        "editorialMaximum": 87.06840185755347,
+        "editorialWeight": 83,
+        "streamsIndex": 7.052712472871503,
+        "streamsScore": 7.052712472871503,
+        "streamWeight": 17,
+        "listenerWeight": 0,
+        "streamCoverage": [
+          "spotify"
+        ],
+        "previousScore": 78.807977,
+        "baselineDate": "2026-10-05",
+        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
+      }
+    },
+    {
+      "slug": "amaarae",
+      "name": "Amaarae",
+      "rank": 24,
+      "score": 74.538183,
+      "scoreBreakdown": {
+        "editorialContribution": 72.50014609739941,
+        "rawEditorialContribution": 76.05387777276756,
+        "editorialMaximum": 87.06840185755347,
+        "editorialWeight": 83,
+        "streamsIndex": 11.98845522917284,
+        "streamsScore": 11.98845522917284,
+        "streamWeight": 17,
+        "listenerWeight": 0,
+        "streamCoverage": [
+          "spotify"
+        ],
+        "previousScore": 77.894023,
+        "baselineDate": "2026-10-05",
+        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
+      }
+    },
+    {
+      "slug": "young-jonn",
+      "name": "Young Jonn",
+      "rank": 25,
+      "score": 73.68359,
+      "scoreBreakdown": {
+        "editorialContribution": 71.95206208436153,
+        "rawEditorialContribution": 75.47892838603404,
+        "editorialMaximum": 87.06840185755347,
+        "editorialWeight": 83,
+        "streamsIndex": 10.185460812201535,
+        "streamsScore": 10.185460812201535,
+        "streamWeight": 17,
+        "listenerWeight": 0,
+        "streamCoverage": [
+          "spotify"
+        ],
+        "previousScore": 77.107809,
+        "baselineDate": "2026-10-05",
+        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
+      }
+    },
+    {
+      "slug": "adekunle-gold",
+      "name": "Adekunle Gold",
+      "rank": 26,
+      "score": 72.844018,
+      "scoreBreakdown": {
+        "editorialContribution": 71.49428264745377,
+        "rawEditorialContribution": 74.99871002489178,
+        "editorialMaximum": 87.06840185755347,
+        "editorialWeight": 83,
+        "streamsIndex": 7.939621402265446,
+        "streamsScore": 7.939621402265446,
+        "streamWeight": 17,
+        "listenerWeight": 0,
+        "streamCoverage": [
+          "spotify"
+        ],
+        "previousScore": 76.30335,
+        "baselineDate": "2026-10-05",
+        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
+      }
+    },
+    {
+      "slug": "shallipopi",
+      "name": "Shallipopi",
+      "rank": 27,
+      "score": 72.107055,
+      "scoreBreakdown": {
+        "editorialContribution": 70.66361582055343,
+        "rawEditorialContribution": 74.12732649363517,
+        "editorialMaximum": 87.06840185755347,
+        "editorialWeight": 83,
+        "streamsIndex": 8.490816516649488,
+        "streamsScore": 8.490816516649488,
+        "streamWeight": 17,
+        "listenerWeight": 0,
+        "streamCoverage": [
+          "spotify"
+        ],
+        "previousScore": 75.496541,
+        "baselineDate": "2026-10-05",
+        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
+      }
+    },
+    {
+      "slug": "oxlade",
+      "name": "Oxlade",
+      "rank": 28,
+      "score": 71.232128,
+      "scoreBreakdown": {
+        "editorialContribution": 69.77444359671132,
+        "rawEditorialContribution": 73.19456981283928,
+        "editorialMaximum": 87.06840185755347,
+        "editorialWeight": 83,
+        "streamsIndex": 8.574613359597166,
+        "streamsScore": 8.574613359597166,
+        "streamWeight": 17,
+        "listenerWeight": 0,
+        "streamCoverage": [
+          "spotify"
+        ],
+        "previousScore": 74.700342,
+        "baselineDate": "2026-10-05",
+        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
+      }
+    },
+    {
+      "slug": "fave",
+      "name": "FAVE",
+      "rank": 29,
+      "score": 70.17272,
+      "scoreBreakdown": {
+        "editorialContribution": 69.32597558008979,
+        "rawEditorialContribution": 72.72411928884574,
+        "editorialMaximum": 87.06840185755347,
+        "editorialWeight": 83,
+        "streamsIndex": 4.980852445396766,
+        "streamsScore": 4.980852445396766,
+        "streamWeight": 17,
+        "listenerWeight": 0,
+        "streamCoverage": [
+          "spotify"
+        ],
+        "previousScore": 73.79779,
+        "baselineDate": "2026-10-05",
+        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
+      }
+    },
+    {
+      "slug": "joeboy",
+      "name": "Joeboy",
+      "rank": 30,
+      "score": 69.633886,
+      "scoreBreakdown": {
+        "editorialContribution": 68.38730444924875,
+        "rawEditorialContribution": 71.73943741857885,
+        "editorialMaximum": 87.06840185755347,
+        "editorialWeight": 83,
+        "streamsIndex": 7.332832916662441,
+        "streamsScore": 7.332832916662441,
+        "streamWeight": 17,
+        "listenerWeight": 0,
+        "streamCoverage": [
+          "spotify"
+        ],
+        "previousScore": 73.004842,
+        "baselineDate": "2026-10-05",
+        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
+      }
+    },
+    {
+      "slug": "tiwa-savage",
+      "name": "Tiwa Savage",
+      "rank": 31,
+      "score": 68.931059,
+      "scoreBreakdown": {
+        "editorialContribution": 67.808233588078,
+        "rawEditorialContribution": 71.13198230479072,
+        "editorialMaximum": 87.06840185755347,
+        "editorialWeight": 83,
+        "streamsIndex": 6.604858165844448,
+        "streamsScore": 6.604858165844448,
+        "streamWeight": 17,
+        "listenerWeight": 0,
+        "streamCoverage": [
+          "spotify"
+        ],
+        "previousScore": 72.193268,
+        "baselineDate": "2026-10-05",
+        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
+      }
+    },
+    {
+      "slug": "lojay",
+      "name": "Lojay",
+      "rank": 32,
+      "score": 68.017068,
+      "scoreBreakdown": {
+        "editorialContribution": 66.88001863885377,
+        "rawEditorialContribution": 70.1582691456432,
+        "editorialMaximum": 87.06840185755347,
+        "editorialWeight": 83,
+        "streamsIndex": 6.688523749566882,
+        "streamsScore": 6.688523749566882,
+        "streamWeight": 17,
+        "listenerWeight": 0,
+        "streamCoverage": [
+          "spotify"
+        ],
+        "previousScore": 71.396087,
+        "baselineDate": "2026-10-05",
+        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
+      }
+    },
+    {
+      "slug": "jazzwrld",
+      "name": "JAZZWRLD",
+      "rank": 33,
+      "score": 67.125565,
+      "scoreBreakdown": {
+        "editorialContribution": 66.42506994727304,
+        "rawEditorialContribution": 69.68102028415986,
+        "editorialMaximum": 87.06840185755347,
+        "editorialWeight": 83,
+        "streamsIndex": 4.120559168714004,
+        "streamsScore": 4.120559168714004,
+        "streamWeight": 17,
+        "listenerWeight": 0,
+        "streamCoverage": [
+          "spotify"
+        ],
+        "previousScore": 70.598185,
+        "baselineDate": "2026-10-05",
+        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
+      }
+    },
+    {
+      "slug": "darkoo",
+      "name": "Darkoo",
+      "rank": 34,
+      "score": 66.446958,
+      "scoreBreakdown": {
+        "editorialContribution": 65.09009644368922,
+        "rawEditorialContribution": 68.28061053139814,
+        "editorialMaximum": 87.06840185755347,
+        "editorialWeight": 83,
+        "streamsIndex": 7.981540009550758,
+        "streamsScore": 7.981540009550758,
+        "streamWeight": 17,
+        "listenerWeight": 0,
+        "streamCoverage": [
+          "spotify"
+        ],
+        "previousScore": 69.69643,
+        "baselineDate": "2026-10-05",
+        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
+      }
+    },
+    {
+      "slug": "black-sherif",
+      "name": "Black Sherif",
+      "rank": 35,
+      "score": 65.868688,
+      "scoreBreakdown": {
+        "editorialContribution": 64.66957596559743,
+        "rawEditorialContribution": 67.83947744735202,
+        "editorialMaximum": 87.06840185755347,
+        "editorialWeight": 83,
+        "streamsIndex": 7.0536019519932145,
+        "streamsScore": 7.0536019519932145,
+        "streamWeight": 17,
+        "listenerWeight": 0,
+        "streamCoverage": [
+          "spotify"
+        ],
+        "previousScore": 68.892246,
+        "baselineDate": "2026-10-05",
+        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
+      }
+    },
+    {
+      "slug": "ciza",
+      "name": "CIZA",
+      "rank": 36,
+      "score": 64.73277,
+      "scoreBreakdown": {
+        "editorialContribution": 64.53406363160511,
+        "rawEditorialContribution": 67.69732272021109,
+        "editorialMaximum": 87.06840185755347,
+        "editorialWeight": 83,
+        "streamsIndex": 1.168860751082312,
+        "streamsScore": 1.168860751082312,
+        "streamWeight": 17,
+        "listenerWeight": 0,
+        "streamCoverage": [
+          "spotify"
+        ],
+        "previousScore": 68.099393,
+        "baselineDate": "2026-10-05",
+        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
+      }
+    },
+    {
+      "slug": "shoday",
+      "name": "Shoday",
+      "rank": 37,
+      "score": 63.979818,
+      "scoreBreakdown": {
+        "editorialContribution": 63.570489467827706,
+        "rawEditorialContribution": 66.68651714778545,
+        "editorialMaximum": 87.06840185755347,
+        "editorialWeight": 83,
+        "streamsIndex": 2.4078154805396537,
+        "streamsScore": 2.4078154805396537,
+        "streamWeight": 17,
+        "listenerWeight": 0,
+        "streamCoverage": [
+          "spotify"
+        ],
+        "previousScore": 67.298893,
+        "baselineDate": "2026-10-05",
+        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
+      }
+    },
+    {
+      "slug": "king-promise",
+      "name": "King Promise",
+      "rank": 38,
+      "score": 63.447068,
+      "scoreBreakdown": {
+        "editorialContribution": 62.71635734050215,
+        "rawEditorialContribution": 65.7905181200574,
+        "editorialMaximum": 87.06840185755347,
+        "editorialWeight": 83,
+        "streamsIndex": 4.298295556016059,
+        "streamsScore": 4.298295556016059,
+        "streamWeight": 17,
+        "listenerWeight": 0,
+        "streamCoverage": [
+          "spotify"
+        ],
+        "previousScore": 66.498188,
+        "baselineDate": "2026-10-05",
+        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
+      }
+    },
+    {
+      "slug": "zlatan",
+      "name": "Zlatan",
+      "rank": 39,
+      "score": 62.674882,
+      "scoreBreakdown": {
+        "editorialContribution": 61.65577051525198,
+        "rawEditorialContribution": 64.67794462721754,
+        "editorialMaximum": 87.06840185755347,
+        "editorialWeight": 83,
+        "streamsIndex": 5.994773673372197,
+        "streamsScore": 5.994773673372197,
+        "streamWeight": 17,
+        "listenerWeight": 0,
+        "streamCoverage": [
+          "spotify"
+        ],
+        "previousScore": 65.609174,
+        "baselineDate": "2026-10-05",
+        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
+      }
+    },
+    {
+      "slug": "bella-shmurda",
+      "name": "Bella Shmurda",
+      "rank": 40,
+      "score": 61.925563,
+      "scoreBreakdown": {
+        "editorialContribution": 60.869751730577214,
+        "rawEditorialContribution": 63.85339764635431,
+        "editorialMaximum": 87.06840185755347,
+        "editorialWeight": 83,
+        "streamsIndex": 6.210656785301145,
+        "streamsScore": 6.210656785301145,
+        "streamWeight": 17,
+        "listenerWeight": 0,
+        "streamCoverage": [
+          "spotify"
+        ],
+        "previousScore": 64.79977,
+        "baselineDate": "2026-10-05",
+        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
+      }
+    },
+    {
+      "slug": "blaqbonez",
+      "name": "Blaqbonez",
+      "rank": 41,
+      "score": 60.908885,
+      "scoreBreakdown": {
+        "editorialContribution": 60.25898167870848,
+        "rawEditorialContribution": 63.212689546129425,
+        "editorialMaximum": 87.06840185755347,
+        "editorialWeight": 83,
+        "streamsIndex": 3.822957992264468,
+        "streamsScore": 3.822957992264468,
+        "streamWeight": 17,
+        "listenerWeight": 0,
+        "streamCoverage": [
+          "spotify"
+        ],
+        "previousScore": 63.996293,
+        "baselineDate": "2026-10-05",
+        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
+      }
+    },
+    {
+      "slug": "khaid",
+      "name": "Khaid",
+      "rank": 42,
+      "score": 60.087886,
+      "scoreBreakdown": {
+        "editorialContribution": 59.638411361460264,
+        "rawEditorialContribution": 62.56170080199644,
+        "editorialMaximum": 87.06840185755347,
+        "editorialWeight": 83,
+        "streamsIndex": 2.643969606245617,
+        "streamsScore": 2.643969606245617,
+        "streamWeight": 17,
+        "listenerWeight": 0,
+        "streamCoverage": [
+          "spotify"
+        ],
+        "previousScore": 63.198801,
+        "baselineDate": "2026-10-05",
+        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
+      }
+    },
+    {
+      "slug": "chike",
+      "name": "Chike",
+      "rank": 43,
+      "score": 59.505325,
+      "scoreBreakdown": {
+        "editorialContribution": 58.89234487445463,
+        "rawEditorialContribution": 61.77906445617645,
+        "editorialMaximum": 87.06840185755347,
+        "editorialWeight": 83,
+        "streamsIndex": 3.605762991242194,
+        "streamsScore": 3.605762991242194,
+        "streamWeight": 17,
+        "listenerWeight": 0,
+        "streamCoverage": [
+          "spotify"
+        ],
+        "previousScore": 62.398503,
+        "baselineDate": "2026-10-05",
+        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
+      }
+    },
+    {
+      "slug": "diamond-platnumz",
+      "name": "Diamond Platnumz",
+      "rank": 44,
+      "score": 58.635741,
+      "scoreBreakdown": {
+        "editorialContribution": 58.14153146417803,
+        "rawEditorialContribution": 60.991448507670384,
+        "editorialMaximum": 87.06840185755347,
+        "editorialWeight": 83,
+        "streamsIndex": 2.9071155404852282,
+        "streamsScore": 2.9071155404852282,
+        "streamWeight": 17,
+        "listenerWeight": 0,
+        "streamCoverage": [
+          "spotify"
+        ],
+        "previousScore": 61.500986,
+        "baselineDate": "2026-10-05",
+        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
+      }
+    },
+    {
+      "slug": "tekno",
+      "name": "Tekno",
+      "rank": 45,
+      "score": 57.962353,
+      "scoreBreakdown": {
+        "editorialContribution": 57.12165874913003,
+        "rawEditorialContribution": 59.921584804087814,
+        "editorialMaximum": 87.06840185755347,
+        "editorialWeight": 83,
+        "streamsIndex": 4.945260357835916,
+        "streamsScore": 4.945260357835916,
+        "streamWeight": 17,
+        "listenerWeight": 0,
+        "streamCoverage": [
+          "spotify"
+        ],
+        "previousScore": 60.698483,
+        "baselineDate": "2026-10-05",
+        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
+      }
+    },
+    {
+      "slug": "focalistic",
+      "name": "Focalistic",
+      "rank": 46,
+      "score": 56.931597,
+      "scoreBreakdown": {
+        "editorialContribution": 56.5099720926244,
+        "rawEditorialContribution": 59.27991517011751,
+        "editorialMaximum": 87.06840185755347,
+        "editorialWeight": 83,
+        "streamsIndex": 2.4801484890175662,
+        "streamsScore": 2.4801484890175662,
+        "streamWeight": 17,
+        "listenerWeight": 0,
+        "streamCoverage": [
+          "spotify"
+        ],
+        "previousScore": 59.898788,
+        "baselineDate": "2026-10-05",
+        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
+      }
+    },
+    {
+      "slug": "uncle-waffles",
+      "name": "Uncle Waffles",
+      "rank": 47,
+      "score": 56.293566,
+      "scoreBreakdown": {
+        "editorialContribution": 55.96855605510512,
+        "rawEditorialContribution": 58.7119606023241,
+        "editorialMaximum": 87.06840185755347,
+        "editorialWeight": 83,
+        "streamsIndex": 1.9118209372615083,
+        "streamsScore": 1.9118209372615083,
+        "streamWeight": 17,
+        "listenerWeight": 0,
+        "streamCoverage": [
+          "spotify"
+        ],
+        "previousScore": 59.099165,
+        "baselineDate": "2026-10-05",
+        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
+      }
+    },
+    {
+      "slug": "phyno",
+      "name": "Phyno",
+      "rank": 48,
+      "score": 55.581288,
+      "scoreBreakdown": {
+        "editorialContribution": 55.07226570413922,
+        "rawEditorialContribution": 57.77173688595124,
+        "editorialMaximum": 87.06840185755347,
+        "editorialWeight": 83,
+        "streamsIndex": 2.9942510429046445,
+        "streamsScore": 2.9942510429046445,
+        "streamWeight": 17,
+        "listenerWeight": 0,
+        "streamCoverage": [
+          "spotify"
+        ],
+        "previousScore": 58.296039,
+        "baselineDate": "2026-10-05",
+        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
+      }
+    },
+    {
+      "slug": "shatta-wale",
+      "name": "Shatta Wale",
+      "rank": 49,
+      "score": 54.756741,
+      "scoreBreakdown": {
+        "editorialContribution": 54.30692646314063,
+        "rawEditorialContribution": 56.96888309567871,
+        "editorialMaximum": 87.06840185755347,
+        "editorialWeight": 83,
+        "streamsIndex": 2.6459686790152546,
+        "streamsScore": 2.6459686790152546,
+        "streamWeight": 17,
+        "listenerWeight": 0,
+        "streamCoverage": [
+          "spotify"
+        ],
+        "previousScore": 57.398925,
+        "baselineDate": "2026-10-05",
+        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
+      }
+    },
+    {
+      "slug": "stonebwoy",
+      "name": "Stonebwoy",
+      "rank": 50,
+      "score": 53.950156,
+      "scoreBreakdown": {
+        "editorialContribution": 53.71171679195357,
+        "rawEditorialContribution": 56.344498097601395,
+        "editorialMaximum": 87.06840185755347,
+        "editorialWeight": 83,
+        "streamsIndex": 1.4025848961119476,
+        "streamsScore": 1.4025848961119476,
+        "streamWeight": 17,
+        "listenerWeight": 0,
+        "streamCoverage": [
+          "spotify"
+        ],
+        "previousScore": 56.568122,
+        "baselineDate": "2026-10-05",
+        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
+      }
+    }
+  ]
+}

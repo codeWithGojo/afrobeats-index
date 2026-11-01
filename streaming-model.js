@@ -10,7 +10,8 @@
   const video=platforms.filter(p=>valid(observations[p])&&observations[p].metric==='video_views');
   return {audioStreams:audio.length?audio.reduce((n,p)=>n+observations[p].value,0):null,videoViews:video.length?video.reduce((n,p)=>n+observations[p].value,0):null,coverage:audio,videoCoverage:video,available:audio.length,possible:4,complete:audio.length===4,label:'Tracked audio streams',observations};
  }
- function apply(state,baseline,extras={artists:{},recordings:{},albums:{}}){
+ function apply(state,baseline,extras={artists:{},recordings:{},albums:{}},previous=null){
+  const previousArtists=new Map((previous?.artists||[]).map(a=>[a.slug,a]));
   const editorialMaximum=Math.max(...Object.values(baseline).map(b=>b.editorialContribution));
   if(!Number.isFinite(editorialMaximum)||editorialMaximum<=0)throw Error('Invalid editorial baseline');
   for(const a of state.artists){
@@ -31,8 +32,11 @@
    if(index===null)throw Error('No comparable streaming coverage for Current ranking');
    if(!Number.isFinite(b.editorialContribution)||b.editorialContribution<0)throw Error('Invalid editorial contribution: '+a.slug);
    const editorialContribution=83*b.editorialContribution/editorialMaximum;
-   a.previousRank=b.rank;a.score=Number((editorialContribution+.17*index).toFixed(6));
+   const prior=previousArtists.get(a.slug);
+   a.previousRank=previous?(prior?.rank??null):b.rank;a.score=Number((editorialContribution+.17*index).toFixed(6));
    a.scoreBreakdown={editorialContribution,rawEditorialContribution:b.editorialContribution,editorialMaximum,editorialWeight:83,streamsIndex:index,streamsScore:index,streamWeight:17,listenerWeight:0,streamCoverage:rankingPlatforms,previousScore:b.score,baselineDate:'2026-10-05',method:'83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index'};
+   a.scoreBreakdown.previousScore=prior?.score??b.score;
+   a.movementBasis={date:previous?.asOf||'2026-10-05',previousScore:prior?.score??b.score,previousStreamPoints:prior?.scoreBreakdown?.streamsIndex==null?null:prior.scoreBreakdown.streamsIndex*.17,previousEditorialPoints:prior?.scoreBreakdown?.editorialContribution??null};
   }
   state.artists.sort((a,b)=>b.score-a.score||a.previousRank-b.previousRank||a.slug.localeCompare(b.slug)).forEach((a,i)=>a.rank=i+1);
   state.meta.rankingMethod={editorial:'Locked published editorial contribution normalized to 83 points using the maximum of the complete locked baseline; individual editorial marks are not available',editorialWeight:83,streamWeight:17,listenerWeight:0,streams:'17% × (100 × comparable tracked audio streams / maximum)',rankingPlatforms,coveragePolicy:'Only audio platforms with sourced catalogue totals for every Current candidate enter the score. Partial platform totals and video views remain separate.',tieBreak:'Previous published rank, then artist slug',baselineDate:'2026-10-05'};
@@ -44,7 +48,7 @@
   for(const a of artists)for(const t of a[kind]||[]){
    if(!t.spotifyId)continue;const id=(kind==='songs'?'spotify:':'spotify-album:')+t.spotifyId;const prior=records.get(id);
    if(prior){if(!prior.artistSlugs.includes(a.slug))prior.artistSlugs.push(a.slug);if(Date.parse(t.lastVerifiedAt)<=Date.parse(prior.observedAt))continue;}
-   const observations={...Object.fromEntries(platforms.map(p=>[p,null])),spotify:measurement(t.streams,a.sources.catalogue,t.lastVerifiedAt||a.statsLastUpdatedAt,a.spotifySourceUpdatedAt)};
+   const observations={...Object.fromEntries(platforms.map(p=>[p,null])),spotify:measurement(t.streams,t.sourceUrl||a.sources.catalogue,t.lastVerifiedAt||a.statsLastUpdatedAt,t.sourceDate||a.spotifySourceUpdatedAt)};
    for(const p of platforms.filter(p=>p!=='spotify')){const o=extras[id]?.[p];if(valid(o))observations[p]=o;}
    if(observations.spotify)observations.spotify.scope=kind==='songs'?'recording':'album';
    records.set(id,{id,title:t.title,artistSlugs:prior?.artistSlugs||[a.slug],identifiers:{spotify:t.spotifyId,isrc:t.isrc||null},observedAt:t.lastVerifiedAt||a.statsLastUpdatedAt,...summary(observations)});
