@@ -13,3 +13,7 @@ When the skill is unavailable, follow this method:
 - Run relevant build and existing checks. Inspect mobile and desktop rendering when a supported browser is available, and exercise changed controls. State verification limits honestly.
 
 Apply only the relevant checks to targeted work. Preserve each project's identity; follow existing publishing instructions and the user's requested scope.
+
+## Intentional palette direction
+
+Choose a subject-specific base, readable text colour, and selective action accent before styling. Coordinate typography, imagery, surfaces, and controls with that mood. Reuse semantic tokens across routes and light/dark states; preserve clear success, warning, error and focus meaning. Verify actual contrast. Video references are inspiration, not a fixed palette shared by every project.

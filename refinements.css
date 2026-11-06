@@ -1,5 +1,5 @@
 /* Targeted polish; the chart layout and published records stay intact. */
-:root[data-theme=light]{color-scheme:light;--af-bg:#f6f7f0;--af-surface:#fff;--af-raised:#eef0e7;--af-hover:#e8ecdb;--af-control-bg:#fff;--af-menu-bg:#fff;--af-control-raised:#f0f2e8;--af-track:#d8ddcb;--af-active-border:#7d8a29;--af-nav-bg:#fff;--af-border:#d9decd;--af-text:#171b10;--af-muted:#5f6656;--af-subtle:#68705c;--af-accent:#596700;--af-accent-soft:rgba(130,151,20,.10)}
+:root[data-theme=light]{color-scheme:light;--af-bg:#f4f6f5;--af-surface:#fff;--af-raised:#eaf0ee;--af-hover:#e2eae7;--af-control-bg:#fff;--af-menu-bg:#fff;--af-control-raised:#edf2f0;--af-track:#d4dfda;--af-active-border:#70831f;--af-nav-bg:#fff;--af-border:#ccd8d2;--af-text:#15252d;--af-muted:#50636b;--af-subtle:#5c706f;--af-accent:#536600;--af-accent-soft:rgba(105,132,14,.10)}
 body[data-design=premium] .app-brand>.brand-symbol{background:#d9f24a!important;color:#0b0b0c!important}
 body[data-design=premium] .theme-toggle{padding:0!important;width:42px;min-width:42px;height:44px;display:grid;place-items:center;flex:none;background:transparent!important}
 body[data-design=premium] .account-link{white-space:nowrap;font-size:12px;text-decoration:none;border:1px solid var(--af-border);border-radius:10px;padding:10px 13px}
