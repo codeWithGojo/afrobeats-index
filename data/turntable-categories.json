@@ -1,0 +1,7927 @@
+[
+  {
+    "categoryId": 3,
+    "slug": "artists",
+    "title": "Official Artiste Top 100",
+    "publisherTitle": "Official Artiste Top 100",
+    "group": "Weekly",
+    "description": "Artistes ranked across Nigerian streaming and airplay.",
+    "entryLabel": "Artist / publisher points",
+    "checkedAt": "2026-11-06T14:17:04.510457+00:00",
+    "weekStart": "2026-10-16",
+    "weekEnd": "2026-10-22",
+    "sourceUrl": "https://www.turntablecharts.com/charts/3",
+    "publisherChartId": 6024,
+    "rows": [
+      [
+        1,
+        "FOLA",
+        "648.70 pts",
+        1,
+        111,
+        1,
+        ""
+      ],
+      [
+        2,
+        "Asake",
+        "602.09 pts",
+        2,
+        225,
+        1,
+        ""
+      ],
+      [
+        3,
+        "Seyi Vibez",
+        "503.21 pts",
+        3,
+        225,
+        1,
+        ""
+      ],
+      [
+        4,
+        "BNXN",
+        "283.12 pts",
+        4,
+        225,
+        1,
+        ""
+      ],
+      [
+        5,
+        "Davido",
+        "218.27 pts",
+        5,
+        225,
+        1,
+        ""
+      ],
+      [
+        6,
+        "Young Jonn",
+        "217.44 pts",
+        6,
+        224,
+        2,
+        ""
+      ],
+      [
+        7,
+        "Blaqbonez",
+        "193.58 pts",
+        11,
+        189,
+        7,
+        ""
+      ],
+      [
+        8,
+        "Fireboy DML",
+        "179.45 pts",
+        21,
+        225,
+        2,
+        ""
+      ],
+      [
+        9,
+        "Wizkid",
+        "148.03 pts",
+        10,
+        225,
+        1,
+        ""
+      ],
+      [
+        10,
+        "Ayra Starr",
+        "134.41 pts",
+        7,
+        225,
+        1,
+        ""
+      ],
+      [
+        11,
+        "Rema",
+        "133.14 pts",
+        9,
+        225,
+        1,
+        ""
+      ],
+      [
+        12,
+        "Zlatan",
+        "132.76 pts",
+        8,
+        222,
+        5,
+        ""
+      ],
+      [
+        13,
+        "Mavo",
+        "121.06 pts",
+        13,
+        63,
+        2,
+        ""
+      ],
+      [
+        14,
+        "Omah Lay",
+        "107.41 pts",
+        12,
+        225,
+        1,
+        ""
+      ],
+      [
+        15,
+        "Victony",
+        "102.13 pts",
+        16,
+        225,
+        5,
+        ""
+      ],
+      [
+        16,
+        "Kizz Daniel",
+        "96.46 pts",
+        17,
+        225,
+        1,
+        ""
+      ],
+      [
+        17,
+        "Bella Shmurda",
+        "91.24 pts",
+        15,
+        225,
+        2,
+        ""
+      ],
+      [
+        18,
+        "Tml Vibez",
+        "83.82 pts",
+        14,
+        131,
+        3,
+        ""
+      ],
+      [
+        19,
+        "Evado",
+        "78.64 pts",
+        19,
+        39,
+        19,
+        ""
+      ],
+      [
+        20,
+        "Burna Boy",
+        "76.13 pts",
+        20,
+        225,
+        1,
+        ""
+      ],
+      [
+        21,
+        "Shoday",
+        "73.40 pts",
+        18,
+        115,
+        9,
+        ""
+      ],
+      [
+        22,
+        "JAZZWRLD",
+        "63.71 pts",
+        27,
+        69,
+        11,
+        ""
+      ],
+      [
+        23,
+        "Krizbeatz",
+        "61.03 pts",
+        23,
+        5,
+        21,
+        ""
+      ],
+      [
+        24,
+        "Wave Choir",
+        "61.03 pts",
+        24,
+        5,
+        22,
+        ""
+      ],
+      [
+        25,
+        "Mayorkun",
+        "57.92 pts",
+        22,
+        133,
+        5,
+        ""
+      ],
+      [
+        26,
+        "Olamide",
+        "55.05 pts",
+        25,
+        225,
+        1,
+        ""
+      ],
+      [
+        27,
+        "Sarz",
+        "47.85 pts",
+        29,
+        68,
+        7,
+        ""
+      ],
+      [
+        28,
+        "Mr Eazi",
+        "47.15 pts",
+        30,
+        100,
+        28,
+        ""
+      ],
+      [
+        29,
+        "ODUMODUBLVCK",
+        "46.51 pts",
+        28,
+        198,
+        1,
+        ""
+      ],
+      [
+        30,
+        "Thukuthela",
+        "46.39 pts",
+        38,
+        60,
+        26,
+        ""
+      ],
+      [
+        31,
+        "Zinoleesky",
+        "44.07 pts",
+        33,
+        224,
+        2,
+        ""
+      ],
+      [
+        32,
+        "MOLIY",
+        "43.80 pts",
+        35,
+        20,
+        32,
+        ""
+      ],
+      [
+        33,
+        "Magixx",
+        "40.09 pts",
+        37,
+        164,
+        7,
+        ""
+      ],
+      [
+        34,
+        "Ayo Maff",
+        "38.18 pts",
+        26,
+        130,
+        5,
+        ""
+      ],
+      [
+        35,
+        "NO11",
+        "36.66 pts",
+        39,
+        27,
+        19,
+        ""
+      ],
+      [
+        36,
+        "Chief Priest",
+        "34.75 pts",
+        32,
+        7,
+        32,
+        ""
+      ],
+      [
+        37,
+        "ZAYN",
+        "33.74 pts",
+        31,
+        10,
+        15,
+        ""
+      ],
+      [
+        38,
+        "TUFF KING",
+        "32.90 pts",
+        45,
+        19,
+        22,
+        ""
+      ],
+      [
+        39,
+        "Tems",
+        "31.56 pts",
+        47,
+        223,
+        9,
+        ""
+      ],
+      [
+        40,
+        "Darkoo",
+        "30.94 pts",
+        34,
+        137,
+        16,
+        ""
+      ],
+      [
+        41,
+        "Gabzy",
+        "30.46 pts",
+        46,
+        6,
+        41,
+        ""
+      ],
+      [
+        42,
+        "Kidd Carder",
+        "30.18 pts",
+        36,
+        45,
+        17,
+        ""
+      ],
+      [
+        43,
+        "Abefe",
+        "29.47 pts",
+        40,
+        26,
+        23,
+        ""
+      ],
+      [
+        44,
+        "T.I BLAZE",
+        "28.46 pts",
+        91,
+        152,
+        4,
+        ""
+      ],
+      [
+        45,
+        "Lojay",
+        "27.08 pts",
+        58,
+        175,
+        18,
+        ""
+      ],
+      [
+        46,
+        "DJ Tunez",
+        "26.61 pts",
+        53,
+        97,
+        11,
+        ""
+      ],
+      [
+        47,
+        "Hotkid",
+        "26.15 pts",
+        51,
+        66,
+        28,
+        ""
+      ],
+      [
+        48,
+        "Drake",
+        "24.55 pts",
+        74,
+        169,
+        6,
+        ""
+      ],
+      [
+        49,
+        "DJ Snake",
+        "24.43 pts",
+        56,
+        31,
+        11,
+        ""
+      ],
+      [
+        50,
+        "FAVE",
+        "23.65 pts",
+        54,
+        196,
+        17,
+        ""
+      ],
+      [
+        51,
+        "Kaestyle",
+        "23.29 pts",
+        44,
+        58,
+        20,
+        ""
+      ],
+      [
+        52,
+        "Gunna",
+        "23.28 pts",
+        50,
+        163,
+        3,
+        ""
+      ],
+      [
+        53,
+        "Chike",
+        "23.19 pts",
+        62,
+        204,
+        6,
+        ""
+      ],
+      [
+        54,
+        "DJ Maphorisa",
+        "21.67 pts",
+        60,
+        88,
+        18,
+        ""
+      ],
+      [
+        55,
+        "Wande Coal",
+        "21.45 pts",
+        66,
+        158,
+        9,
+        ""
+      ],
+      [
+        56,
+        "Quavo",
+        "21.28 pts",
+        43,
+        6,
+        23,
+        ""
+      ],
+      [
+        57,
+        "Famous PLuto",
+        "21.24 pts",
+        42,
+        96,
+        9,
+        ""
+      ],
+      [
+        58,
+        "Ruger",
+        "20.42 pts",
+        49,
+        224,
+        4,
+        ""
+      ],
+      [
+        59,
+        "SSSoundgawd",
+        "20.23 pts",
+        64,
+        33,
+        26,
+        ""
+      ],
+      [
+        60,
+        "Gyakie",
+        "18.98 pts",
+        -1,
+        48,
+        44,
+        "RE-ENTRY"
+      ],
+      [
+        61,
+        "Kunmie",
+        "18.93 pts",
+        41,
+        59,
+        10,
+        ""
+      ],
+      [
+        62,
+        "bees & honey",
+        "18.82 pts",
+        78,
+        14,
+        39,
+        ""
+      ],
+      [
+        63,
+        "Balloranking",
+        "18.75 pts",
+        -1,
+        99,
+        12,
+        "RE-ENTRY"
+      ],
+      [
+        64,
+        "Rybeena",
+        "18.15 pts",
+        57,
+        100,
+        20,
+        ""
+      ],
+      [
+        65,
+        "Kolaboy",
+        "18.03 pts",
+        85,
+        3,
+        63,
+        ""
+      ],
+      [
+        66,
+        "BEAM",
+        "17.46 pts",
+        77,
+        9,
+        47,
+        ""
+      ],
+      [
+        67,
+        "Gyptian",
+        "17.46 pts",
+        79,
+        7,
+        48,
+        ""
+      ],
+      [
+        68,
+        "Gl_Ceejay",
+        "17.32 pts",
+        63,
+        40,
+        17,
+        ""
+      ],
+      [
+        69,
+        "Johnny Drille",
+        "16.78 pts",
+        65,
+        188,
+        9,
+        ""
+      ],
+      [
+        70,
+        "Ema Onigah",
+        "16.55 pts",
+        76,
+        12,
+        38,
+        ""
+      ],
+      [
+        71,
+        "Tiakola",
+        "16.46 pts",
+        -1,
+        56,
+        17,
+        "RE-ENTRY"
+      ],
+      [
+        72,
+        "Adekunle Gold",
+        "16.32 pts",
+        48,
+        225,
+        6,
+        ""
+      ],
+      [
+        73,
+        "Kabza De Small",
+        "16.17 pts",
+        73,
+        28,
+        21,
+        ""
+      ],
+      [
+        74,
+        "Tiwa Savage",
+        "15.43 pts",
+        61,
+        213,
+        4,
+        ""
+      ],
+      [
+        75,
+        "Ayanfe",
+        "15.40 pts",
+        68,
+        5,
+        64,
+        ""
+      ],
+      [
+        76,
+        "Lovn",
+        "15.40 pts",
+        69,
+        20,
+        65,
+        ""
+      ],
+      [
+        77,
+        "Solana",
+        "15.07 pts",
+        0,
+        1,
+        77,
+        "NEW"
+      ],
+      [
+        78,
+        "Scotts Maphuma",
+        "14.92 pts",
+        81,
+        66,
+        16,
+        ""
+      ],
+      [
+        79,
+        "Odeal",
+        "14.80 pts",
+        83,
+        49,
+        35,
+        ""
+      ],
+      [
+        80,
+        "Teni",
+        "14.62 pts",
+        67,
+        128,
+        19,
+        ""
+      ],
+      [
+        81,
+        "Phyno",
+        "14.17 pts",
+        59,
+        186,
+        3,
+        ""
+      ],
+      [
+        82,
+        "Sienna Spiro",
+        "14.14 pts",
+        97,
+        3,
+        76,
+        ""
+      ],
+      [
+        83,
+        "Zerrydl",
+        "13.85 pts",
+        -1,
+        134,
+        17,
+        "RE-ENTRY"
+      ],
+      [
+        84,
+        "Don Toliver",
+        "13.79 pts",
+        -1,
+        73,
+        19,
+        "RE-ENTRY"
+      ],
+      [
+        85,
+        "Greatman Takit",
+        "13.68 pts",
+        0,
+        1,
+        85,
+        "NEW"
+      ],
+      [
+        86,
+        "Al Xapo",
+        "13.52 pts",
+        80,
+        47,
+        18,
+        ""
+      ],
+      [
+        87,
+        "TxC",
+        "13.52 pts",
+        82,
+        54,
+        26,
+        ""
+      ],
+      [
+        88,
+        "Cruel Santino",
+        "13.33 pts",
+        -1,
+        55,
+        30,
+        "RE-ENTRY"
+      ],
+      [
+        89,
+        "Nathaniel Bassey",
+        "13.14 pts",
+        -1,
+        17,
+        70,
+        "RE-ENTRY"
+      ],
+      [
+        90,
+        "Jhene Aiko",
+        "12.59 pts",
+        99,
+        3,
+        90,
+        ""
+      ],
+      [
+        91,
+        "Kendrick Lamar",
+        "12.59 pts",
+        100,
+        43,
+        18,
+        ""
+      ],
+      [
+        92,
+        "BisiManuel",
+        "12.55 pts",
+        87,
+        20,
+        39,
+        ""
+      ],
+      [
+        93,
+        "Khid Ceejay",
+        "12.48 pts",
+        0,
+        1,
+        93,
+        "NEW"
+      ],
+      [
+        94,
+        "Duncan Mighty",
+        "12.31 pts",
+        70,
+        15,
+        52,
+        ""
+      ],
+      [
+        95,
+        "Yan Yan",
+        "12.22 pts",
+        -1,
+        3,
+        62,
+        "RE-ENTRY"
+      ],
+      [
+        96,
+        "Zaylevelten",
+        "12.18 pts",
+        -1,
+        18,
+        38,
+        "RE-ENTRY"
+      ],
+      [
+        97,
+        "MOEC",
+        "12.08 pts",
+        95,
+        7,
+        85,
+        ""
+      ],
+      [
+        98,
+        "Thatohatsi",
+        "11.91 pts",
+        93,
+        2,
+        93,
+        ""
+      ],
+      [
+        99,
+        "Taylor Swift",
+        "11.87 pts",
+        71,
+        63,
+        40,
+        ""
+      ],
+      [
+        100,
+        "Dave",
+        "11.61 pts",
+        88,
+        112,
+        11,
+        ""
+      ]
+    ]
+  },
+  {
+    "categoryId": 4,
+    "slug": "streaming",
+    "title": "Official Streaming Songs",
+    "publisherTitle": "Official Streaming Songs",
+    "group": "Weekly",
+    "description": "Songs ranked across streaming services in Nigeria.",
+    "entryLabel": "Song / artist",
+    "checkedAt": "2026-11-06T14:17:04.488137+00:00",
+    "weekStart": "2026-10-23",
+    "weekEnd": "2026-10-29",
+    "sourceUrl": "https://www.turntablecharts.com/charts/4",
+    "publisherChartId": 6023,
+    "rows": [
+      [
+        1,
+        "BACK 2 U",
+        "Seyi Vibez",
+        1,
+        9,
+        1,
+        ""
+      ],
+      [
+        2,
+        "miss u ii (nriri)",
+        "FOLA",
+        4,
+        4,
+        2,
+        ""
+      ],
+      [
+        3,
+        "GTA",
+        "Seyi Vibez",
+        3,
+        13,
+        1,
+        ""
+      ],
+      [
+        4,
+        "IKEBE 3000",
+        "Blaqbonez & Asake",
+        2,
+        4,
+        1,
+        ""
+      ],
+      [
+        5,
+        "waf",
+        "FOLA",
+        5,
+        3,
+        5,
+        ""
+      ],
+      [
+        6,
+        "Gratitude",
+        "Asake",
+        8,
+        26,
+        1,
+        ""
+      ],
+      [
+        7,
+        "Ilome",
+        "Seyi Vibez",
+        6,
+        6,
+        1,
+        ""
+      ],
+      [
+        8,
+        "Volume",
+        "Seyi Vibez",
+        7,
+        6,
+        1,
+        ""
+      ],
+      [
+        9,
+        "Oh No",
+        "Rema",
+        9,
+        7,
+        2,
+        ""
+      ],
+      [
+        10,
+        "Forgiveness",
+        "Asake",
+        11,
+        26,
+        1,
+        ""
+      ],
+      [
+        11,
+        "B4 B4",
+        "Davido, Mayorkun & FOLA",
+        13,
+        13,
+        1,
+        ""
+      ],
+      [
+        12,
+        "attention!",
+        "FOLA",
+        10,
+        11,
+        8,
+        ""
+      ],
+      [
+        13,
+        "treat u right",
+        "FOLA & Ayra Starr",
+        12,
+        17,
+        2,
+        ""
+      ],
+      [
+        14,
+        "it's over",
+        "FOLA, Bella Shmurda, Zlatan",
+        15,
+        7,
+        1,
+        ""
+      ],
+      [
+        15,
+        "Pansa",
+        "Seyi Vibez",
+        14,
+        6,
+        5,
+        ""
+      ],
+      [
+        16,
+        "If You Like",
+        "BNXN",
+        17,
+        4,
+        6,
+        ""
+      ],
+      [
+        17,
+        "Baba",
+        "Hotkid ft. Zlatan",
+        23,
+        18,
+        5,
+        ""
+      ],
+      [
+        18,
+        "Eja Meja",
+        "BNXN ft. Asake",
+        20,
+        14,
+        3,
+        ""
+      ],
+      [
+        19,
+        "GOD",
+        "Seyi Vibez",
+        16,
+        6,
+        6,
+        ""
+      ],
+      [
+        20,
+        "Go Hard or Go Home",
+        "Chief Priest & Evado",
+        26,
+        4,
+        18,
+        ""
+      ],
+      [
+        21,
+        "Diamonds",
+        "Seyi Vibez",
+        19,
+        6,
+        7,
+        ""
+      ],
+      [
+        22,
+        "Ore Agbako",
+        "Double Gee2x",
+        93,
+        2,
+        22,
+        ""
+      ],
+      [
+        23,
+        "Waka Waka",
+        "TUFF KING",
+        22,
+        4,
+        22,
+        ""
+      ],
+      [
+        24,
+        "SLICK",
+        "Victony",
+        21,
+        17,
+        2,
+        ""
+      ],
+      [
+        25,
+        "my type",
+        "FOLA & BNXN",
+        25,
+        3,
+        15,
+        ""
+      ],
+      [
+        26,
+        "Chanel",
+        "Blaqbonez ft. Asake",
+        24,
+        23,
+        1,
+        ""
+      ],
+      [
+        27,
+        "MCBH",
+        "Asake",
+        32,
+        26,
+        3,
+        ""
+      ],
+      [
+        28,
+        "Goyard",
+        "Mavo",
+        0,
+        1,
+        28,
+        "NEW"
+      ],
+      [
+        29,
+        "Big Bum Bum",
+        "Kidd Carder & Mavo",
+        37,
+        35,
+        1,
+        ""
+      ],
+      [
+        30,
+        "Elumelu",
+        "Young Jonn",
+        39,
+        22,
+        4,
+        ""
+      ],
+      [
+        31,
+        "2am in toronto",
+        "FOLA & Davido",
+        18,
+        3,
+        7,
+        ""
+      ],
+      [
+        32,
+        "Online",
+        "Bnxn",
+        35,
+        6,
+        8,
+        ""
+      ],
+      [
+        33,
+        "Back Outside",
+        "BNXN & Sarz",
+        38,
+        28,
+        1,
+        ""
+      ],
+      [
+        34,
+        "Akpan Akpari",
+        "Seyi Vibez",
+        29,
+        6,
+        12,
+        ""
+      ],
+      [
+        35,
+        "BIG PERFORMER",
+        "Blaqbonez",
+        31,
+        9,
+        5,
+        ""
+      ],
+      [
+        36,
+        "16",
+        "BNXN",
+        30,
+        5,
+        12,
+        ""
+      ],
+      [
+        37,
+        "crime",
+        "FOLA",
+        27,
+        3,
+        20,
+        ""
+      ],
+      [
+        38,
+        "how many?",
+        "FOLA",
+        28,
+        3,
+        18,
+        ""
+      ],
+      [
+        39,
+        "fine ting (fine $hit)",
+        "FOLA",
+        33,
+        27,
+        6,
+        ""
+      ],
+      [
+        40,
+        "Diamond or Gold",
+        "Tml Vibez",
+        43,
+        9,
+        5,
+        ""
+      ],
+      [
+        41,
+        "Shamaya",
+        "BNXN & FOLA",
+        34,
+        5,
+        14,
+        ""
+      ],
+      [
+        42,
+        "Salt",
+        "6uff & ODUMODUBLVCK",
+        0,
+        1,
+        42,
+        "NEW"
+      ],
+      [
+        43,
+        "TEA",
+        "Rema",
+        49,
+        12,
+        3,
+        ""
+      ],
+      [
+        44,
+        "El Jaja",
+        "Seyi Vibez",
+        41,
+        6,
+        10,
+        ""
+      ],
+      [
+        45,
+        "WORSHIP",
+        "Asake & DJ Snake",
+        46,
+        32,
+        1,
+        ""
+      ],
+      [
+        46,
+        "Believer",
+        "Kolaboy & Evado",
+        47,
+        4,
+        43,
+        ""
+      ],
+      [
+        47,
+        "INFERNO",
+        "Peruzzi, Zlatan & Shoday",
+        0,
+        1,
+        47,
+        "NEW"
+      ],
+      [
+        48,
+        "in order",
+        "FOLA",
+        42,
+        3,
+        24,
+        ""
+      ],
+      [
+        49,
+        "Tap Am",
+        "Famous Pluto",
+        53,
+        11,
+        9,
+        ""
+      ],
+      [
+        50,
+        "Burukutu",
+        "Olamide",
+        0,
+        1,
+        50,
+        "NEW"
+      ],
+      [
+        51,
+        "Melanin",
+        "Seyi Vibez",
+        44,
+        6,
+        9,
+        ""
+      ],
+      [
+        52,
+        "Alhamdulillah",
+        "Tega boi dc ft. Zerrydl & Rord Kelly",
+        0,
+        1,
+        52,
+        "NEW"
+      ],
+      [
+        53,
+        "Owo Oluwa",
+        "Kizz Daniel ft. Young Jonn, Krizbeatz & Wave Choir",
+        48,
+        7,
+        22,
+        ""
+      ],
+      [
+        54,
+        "you",
+        "FOLA",
+        69,
+        64,
+        1,
+        ""
+      ],
+      [
+        55,
+        "Alubarika",
+        "Seyi Vibez",
+        45,
+        6,
+        11,
+        ""
+      ],
+      [
+        56,
+        "Jogodo",
+        "Wizkid & Asake",
+        55,
+        41,
+        1,
+        ""
+      ],
+      [
+        57,
+        "awade",
+        "FOLA",
+        36,
+        3,
+        12,
+        ""
+      ],
+      [
+        58,
+        "Heaven Baby",
+        "Ayra Starr ft. ZAYN",
+        52,
+        11,
+        3,
+        ""
+      ],
+      [
+        59,
+        "Brother",
+        "MOEC & Evado",
+        59,
+        14,
+        31,
+        ""
+      ],
+      [
+        60,
+        "Nakupenda",
+        "TxC, Davido, Scotts Maphuma & Shoday ft. Al Xapo & Zlatan",
+        76,
+        46,
+        3,
+        ""
+      ],
+      [
+        61,
+        "Coachella",
+        "NO11 & Gabzy",
+        68,
+        3,
+        61,
+        ""
+      ],
+      [
+        62,
+        "Wa",
+        "Asake",
+        62,
+        26,
+        6,
+        ""
+      ],
+      [
+        63,
+        "Ice Cream",
+        "Mavo",
+        63,
+        14,
+        12,
+        ""
+      ],
+      [
+        64,
+        "stubborn",
+        "FOLA",
+        51,
+        3,
+        29,
+        ""
+      ],
+      [
+        65,
+        "Deliberate Work",
+        "BNXN",
+        50,
+        4,
+        23,
+        ""
+      ],
+      [
+        66,
+        "Aanu Ni",
+        "BisiManuel",
+        67,
+        23,
+        8,
+        ""
+      ],
+      [
+        67,
+        "YOU ARE GOOD",
+        "Greatman Takit & Nathaniel Bassey",
+        61,
+        2,
+        61,
+        ""
+      ],
+      [
+        68,
+        "Alafia",
+        "Seyi Vibez",
+        54,
+        6,
+        13,
+        ""
+      ],
+      [
+        69,
+        "UNETHICAL",
+        "Faouzia",
+        73,
+        8,
+        57,
+        ""
+      ],
+      [
+        70,
+        "I AM",
+        "Omah Lay",
+        74,
+        30,
+        4,
+        ""
+      ],
+      [
+        71,
+        "I Know Who I Be",
+        "Davido, JAZZWRLD & GL_Ceejay",
+        71,
+        18,
+        3,
+        ""
+      ],
+      [
+        72,
+        "Very Soon",
+        "BNXN & FOLA",
+        75,
+        74,
+        1,
+        ""
+      ],
+      [
+        73,
+        "Swaguu",
+        "Seyi Vibez ft. Quavo",
+        58,
+        6,
+        8,
+        ""
+      ],
+      [
+        74,
+        "Shenk Me",
+        "DJ 808 & Mavo",
+        0,
+        1,
+        74,
+        "NEW"
+      ],
+      [
+        75,
+        "Already Falling",
+        "Davido",
+        -1,
+        12,
+        5,
+        "RE-ENTRY"
+      ],
+      [
+        76,
+        "Remember",
+        "Asake",
+        82,
+        158,
+        13,
+        ""
+      ],
+      [
+        77,
+        "Nzaza",
+        "Asake",
+        77,
+        138,
+        7,
+        ""
+      ],
+      [
+        78,
+        "Oba",
+        "Asake",
+        78,
+        23,
+        5,
+        ""
+      ],
+      [
+        79,
+        "caricature",
+        "FOLA",
+        83,
+        60,
+        5,
+        ""
+      ],
+      [
+        80,
+        "Pidgin & English",
+        "BNXN",
+        80,
+        60,
+        9,
+        ""
+      ],
+      [
+        81,
+        "Find My Babe",
+        "Mavo",
+        94,
+        8,
+        11,
+        ""
+      ],
+      [
+        82,
+        "WHY LOVE",
+        "Asake",
+        81,
+        90,
+        3,
+        ""
+      ],
+      [
+        83,
+        "who does that?",
+        "FOLA ft. Bella Shmurda",
+        84,
+        99,
+        2,
+        ""
+      ],
+      [
+        84,
+        "Lekki Epe (Olombe) II",
+        "SHON & Abefe",
+        88,
+        3,
+        84,
+        ""
+      ],
+      [
+        85,
+        "Oble (Original)",
+        "Seyi Vibez",
+        70,
+        6,
+        14,
+        ""
+      ],
+      [
+        86,
+        "THAT GIRL!",
+        "Darkoo & Asake",
+        100,
+        12,
+        16,
+        ""
+      ],
+      [
+        87,
+        "Tumo Weto",
+        "Mavo",
+        89,
+        54,
+        4,
+        ""
+      ],
+      [
+        88,
+        "MMS",
+        "Asake & Wizkid",
+        91,
+        116,
+        1,
+        ""
+      ],
+      [
+        89,
+        "hold u down",
+        "FOLA & Darkoo",
+        72,
+        3,
+        45,
+        ""
+      ],
+      [
+        90,
+        "lost",
+        "FOLA & Kizz Daniel",
+        97,
+        74,
+        3,
+        ""
+      ],
+      [
+        91,
+        "MONEY CONSTANT",
+        "DJ Maphorisa, DJ Tunez, Wizkid & Mavo",
+        65,
+        53,
+        1,
+        ""
+      ],
+      [
+        92,
+        "OGO",
+        "Shallipopi",
+        0,
+        1,
+        92,
+        "NEW"
+      ],
+      [
+        93,
+        "Ototo",
+        "Asake",
+        96,
+        86,
+        10,
+        ""
+      ],
+      [
+        94,
+        "CA$H OUT",
+        "Blaqbonez",
+        66,
+        2,
+        66,
+        ""
+      ],
+      [
+        95,
+        "ONE MAN REGIMENT",
+        "Fireboy DML",
+        56,
+        2,
+        56,
+        ""
+      ],
+      [
+        96,
+        "Karma",
+        "Seyi Vibez",
+        -1,
+        110,
+        13,
+        "RE-ENTRY"
+      ],
+      [
+        97,
+        "Waist",
+        "Omah Lay",
+        -1,
+        48,
+        4,
+        "RE-ENTRY"
+      ],
+      [
+        98,
+        "Sunita",
+        "Rybeena & Tml Vibez",
+        99,
+        10,
+        14,
+        ""
+      ],
+      [
+        99,
+        "Wishes",
+        "Paddy K",
+        0,
+        1,
+        99,
+        "NEW"
+      ],
+      [
+        100,
+        "Glass In The Air",
+        "Young Jonn",
+        79,
+        5,
+        51,
+        ""
+      ]
+    ]
+  },
+  {
+    "categoryId": 5,
+    "slug": "radio",
+    "title": "Official Radio Songs",
+    "publisherTitle": "Official Radio Songs",
+    "group": "Weekly",
+    "description": "Songs ranked by Nigerian radio airplay.",
+    "entryLabel": "Song / artist",
+    "checkedAt": "2026-11-06T14:17:04.396735+00:00",
+    "weekStart": "2026-10-23",
+    "weekEnd": "2026-10-29",
+    "sourceUrl": "https://www.turntablecharts.com/charts/5",
+    "publisherChartId": 6022,
+    "rows": [
+      [
+        1,
+        "miss u ii (nriri)",
+        "FOLA",
+        5,
+        4,
+        1,
+        ""
+      ],
+      [
+        2,
+        "Owo Oluwa",
+        "Kizz Daniel ft. Young Jonn, Krizbeatz & Wave Choir",
+        1,
+        6,
+        1,
+        ""
+      ],
+      [
+        3,
+        "Comfort",
+        "Mr Eazi & MOLIY",
+        3,
+        5,
+        2,
+        ""
+      ],
+      [
+        4,
+        "Burukutu",
+        "Olamide",
+        0,
+        1,
+        4,
+        "NEW"
+      ],
+      [
+        5,
+        "Oh No",
+        "Rema",
+        4,
+        7,
+        3,
+        ""
+      ],
+      [
+        6,
+        "Let It Go",
+        "Young Jonn",
+        2,
+        3,
+        2,
+        ""
+      ],
+      [
+        7,
+        "Ilome",
+        "Seyi Vibez",
+        7,
+        5,
+        6,
+        ""
+      ],
+      [
+        8,
+        "Gratitude",
+        "Asake",
+        10,
+        26,
+        6,
+        ""
+      ],
+      [
+        9,
+        "Melody",
+        "King Promise",
+        0,
+        1,
+        9,
+        "NEW"
+      ],
+      [
+        10,
+        "2am in toronto",
+        "FOLA & Davido",
+        13,
+        3,
+        10,
+        ""
+      ],
+      [
+        11,
+        "Your Body (Crazy)",
+        "Gyakie",
+        15,
+        2,
+        11,
+        ""
+      ],
+      [
+        12,
+        "IMALI",
+        "Fireboy DML, JAZZWRLD & Thukuthela",
+        6,
+        7,
+        3,
+        ""
+      ],
+      [
+        13,
+        "B4 B4",
+        "Davido, Mayorkun & FOLA",
+        8,
+        13,
+        1,
+        ""
+      ],
+      [
+        14,
+        "Already Falling",
+        "Davido",
+        14,
+        13,
+        4,
+        ""
+      ],
+      [
+        15,
+        "Coachella",
+        "NO11 & Gabzy",
+        16,
+        4,
+        15,
+        ""
+      ],
+      [
+        16,
+        "Shege",
+        "Young Jonn",
+        9,
+        5,
+        8,
+        ""
+      ],
+      [
+        17,
+        "it's over",
+        "FOLA, Bella Shmurda, Zlatan",
+        11,
+        7,
+        1,
+        ""
+      ],
+      [
+        18,
+        "Patient Zero",
+        "Taylor Swift",
+        41,
+        4,
+        18,
+        ""
+      ],
+      [
+        19,
+        "CHE",
+        "Shoday ft. Magixx",
+        21,
+        5,
+        12,
+        ""
+      ],
+      [
+        20,
+        "Heaven Baby",
+        "Ayra Starr ft. ZAYN",
+        12,
+        11,
+        2,
+        ""
+      ],
+      [
+        21,
+        "OVER THE NIGHT",
+        "Lovn & Ayanfe",
+        18,
+        5,
+        16,
+        ""
+      ],
+      [
+        22,
+        "Go Hard or Go Home",
+        "Chief Priest & Evado",
+        26,
+        4,
+        14,
+        ""
+      ],
+      [
+        23,
+        "Dangerous",
+        "Ayra Starr",
+        51,
+        6,
+        23,
+        ""
+      ],
+      [
+        24,
+        "ITALAWA",
+        "Zlatan",
+        23,
+        6,
+        15,
+        ""
+      ],
+      [
+        25,
+        "O ri mi",
+        "Solana",
+        31,
+        2,
+        25,
+        ""
+      ],
+      [
+        26,
+        "Malaria",
+        "Ayo Maff & Zinoleesky",
+        20,
+        5,
+        19,
+        ""
+      ],
+      [
+        27,
+        "So Good",
+        "Jhene Aiko ft. Kendrick Lamar",
+        28,
+        7,
+        27,
+        ""
+      ],
+      [
+        28,
+        "MOVE",
+        "Shoday",
+        33,
+        7,
+        12,
+        ""
+      ],
+      [
+        29,
+        "CHIDINMA'S SONG",
+        "Chuka",
+        0,
+        1,
+        29,
+        "NEW"
+      ],
+      [
+        30,
+        "August Visitor",
+        "Afri Kyan",
+        38,
+        24,
+        13,
+        ""
+      ],
+      [
+        31,
+        "Forgiveness",
+        "Asake",
+        27,
+        26,
+        4,
+        ""
+      ],
+      [
+        32,
+        "Treasure",
+        "Ayra Starr",
+        44,
+        11,
+        23,
+        ""
+      ],
+      [
+        33,
+        "My Boo",
+        "Eli Jae",
+        36,
+        4,
+        33,
+        ""
+      ],
+      [
+        34,
+        "WE YOUNG (BETTER DAYS)",
+        "Chuka",
+        34,
+        4,
+        34,
+        ""
+      ],
+      [
+        35,
+        "Elle Mummy",
+        "T.I BLAZE",
+        49,
+        2,
+        35,
+        ""
+      ],
+      [
+        36,
+        "As We Get High",
+        "bees & honey, OMAH LAY, Gyptian & BEAM",
+        25,
+        8,
+        14,
+        ""
+      ],
+      [
+        37,
+        "Company",
+        "Clean Bandit, Chloe & OMAH LAY",
+        42,
+        6,
+        22,
+        ""
+      ],
+      [
+        38,
+        "Spend Dat (International Remix)",
+        "Yung Miami, Shenseea & Vybz Kartel ft. Davido",
+        0,
+        1,
+        38,
+        "NEW"
+      ],
+      [
+        39,
+        "Stop The Wedding!",
+        "Ashe",
+        52,
+        2,
+        39,
+        ""
+      ],
+      [
+        40,
+        "TEA",
+        "Rema",
+        19,
+        12,
+        2,
+        ""
+      ],
+      [
+        41,
+        "Great Expectation",
+        "SIENNA SPIRO",
+        22,
+        7,
+        22,
+        ""
+      ],
+      [
+        42,
+        "ENERGY",
+        "Tiwa Savage, Wande Coal & Mavo",
+        48,
+        22,
+        1,
+        ""
+      ],
+      [
+        43,
+        "Better",
+        "Khid Ceejay & Ema Onigah",
+        29,
+        4,
+        29,
+        ""
+      ],
+      [
+        44,
+        "Online",
+        "BNXN",
+        35,
+        6,
+        24,
+        ""
+      ],
+      [
+        45,
+        "GTA",
+        "Seyi Vibez",
+        32,
+        13,
+        9,
+        ""
+      ],
+      [
+        46,
+        "Elumelu",
+        "Young Jonn",
+        39,
+        22,
+        1,
+        ""
+      ],
+      [
+        47,
+        "Nicole Kidman",
+        "ADELA",
+        47,
+        3,
+        47,
+        ""
+      ],
+      [
+        48,
+        "expectations",
+        "Olivia Rodrigo & Chappell Roan",
+        74,
+        2,
+        48,
+        ""
+      ],
+      [
+        49,
+        "Back Outside",
+        "BNXN & Sarz",
+        45,
+        27,
+        1,
+        ""
+      ],
+      [
+        50,
+        "I Know Who I Be",
+        "Davido, JAZZWRLD & GL_Ceejay",
+        64,
+        19,
+        2,
+        ""
+      ],
+      [
+        51,
+        "Lagos",
+        "SAMAD & Bella Shmurda",
+        0,
+        1,
+        51,
+        "NEW"
+      ],
+      [
+        52,
+        "IKEBE 3000",
+        "Blaqbonez & Asake",
+        67,
+        3,
+        52,
+        ""
+      ],
+      [
+        53,
+        "Solar Eclipse",
+        "Drake & Don Toliver",
+        62,
+        2,
+        53,
+        ""
+      ],
+      [
+        54,
+        "pop It",
+        "Gunna",
+        0,
+        1,
+        54,
+        "NEW"
+      ],
+      [
+        55,
+        "Housewife",
+        "Tate McRae",
+        0,
+        1,
+        55,
+        "NEW"
+      ],
+      [
+        56,
+        "treat u right",
+        "FOLA & Ayra Starr",
+        82,
+        17,
+        3,
+        ""
+      ],
+      [
+        57,
+        "RMB (Ring My Bell)",
+        "Aitch",
+        72,
+        5,
+        52,
+        ""
+      ],
+      [
+        58,
+        "BACK 2 U",
+        "Seyi Vibez",
+        59,
+        9,
+        51,
+        ""
+      ],
+      [
+        59,
+        "SLICK",
+        "Victony",
+        46,
+        16,
+        2,
+        ""
+      ],
+      [
+        60,
+        "I Can't Look Away",
+        "Mr P",
+        56,
+        9,
+        24,
+        ""
+      ],
+      [
+        61,
+        "Happy",
+        "Jesse Flames & Smur Lee",
+        68,
+        5,
+        41,
+        ""
+      ],
+      [
+        62,
+        "BA",
+        "Quavo & Future",
+        60,
+        3,
+        59,
+        ""
+      ],
+      [
+        63,
+        "attention!",
+        "FOLA",
+        50,
+        11,
+        3,
+        ""
+      ],
+      [
+        64,
+        "BIG PERFORMER",
+        "Blaqbonez",
+        17,
+        9,
+        4,
+        ""
+      ],
+      [
+        65,
+        "MCBH",
+        "Asake",
+        61,
+        25,
+        11,
+        ""
+      ],
+      [
+        66,
+        "Tornado",
+        "Ayra Starr",
+        77,
+        18,
+        4,
+        ""
+      ],
+      [
+        67,
+        "Eja Meja",
+        "BNXN & Asake",
+        -1,
+        12,
+        15,
+        "RE-ENTRY"
+      ],
+      [
+        68,
+        "Let's Get Married",
+        "Miley Cyrus",
+        94,
+        2,
+        68,
+        ""
+      ],
+      [
+        69,
+        "Best",
+        "Tiakola & Rema",
+        86,
+        3,
+        69,
+        ""
+      ],
+      [
+        70,
+        "hate that i made you love me",
+        "Ariana Grande",
+        -1,
+        21,
+        16,
+        "RE-ENTRY"
+      ],
+      [
+        71,
+        "Gimme Dat Ting",
+        "Davido & NO11",
+        73,
+        15,
+        2,
+        ""
+      ],
+      [
+        72,
+        "Jam",
+        "Fally Ipupa & Wizkid",
+        -1,
+        22,
+        43,
+        "RE-ENTRY"
+      ],
+      [
+        73,
+        "Chanel",
+        "Blaqbonez ft. Asake",
+        54,
+        23,
+        1,
+        ""
+      ],
+      [
+        74,
+        "Thank You Thank You",
+        "Dr. Alban & Swithbarry",
+        65,
+        3,
+        65,
+        ""
+      ],
+      [
+        75,
+        "Money Lingo",
+        "Lojay",
+        91,
+        4,
+        60,
+        ""
+      ],
+      [
+        76,
+        "Do Nothing",
+        "Ruger, Musa Keys & Young Stunna",
+        76,
+        12,
+        7,
+        ""
+      ],
+      [
+        77,
+        "WORSHIP",
+        "Asake & DJ Snake",
+        75,
+        32,
+        1,
+        ""
+      ],
+      [
+        78,
+        "Jogodo",
+        "Wizkid & Asake",
+        55,
+        39,
+        1,
+        ""
+      ],
+      [
+        79,
+        "BbY WOW",
+        "KAROL G, Judeline & rusowsky",
+        71,
+        6,
+        58,
+        ""
+      ],
+      [
+        80,
+        "Jupa",
+        "Bryann",
+        -1,
+        9,
+        14,
+        "RE-ENTRY"
+      ],
+      [
+        81,
+        "Janice STFU",
+        "Drake",
+        -1,
+        14,
+        23,
+        "RE-ENTRY"
+      ],
+      [
+        82,
+        "Movin' To The Sun",
+        "HUGEL, Imael Angel & Ultra Nate",
+        87,
+        6,
+        74,
+        ""
+      ],
+      [
+        83,
+        "Pile (Gospel)",
+        "Mauvais Djo & Kano Choir",
+        89,
+        5,
+        67,
+        ""
+      ],
+      [
+        84,
+        "SaWaDiKa",
+        "LISA",
+        79,
+        6,
+        73,
+        ""
+      ],
+      [
+        85,
+        "Hot Body",
+        "Ayra Starr",
+        81,
+        45,
+        1,
+        ""
+      ],
+      [
+        86,
+        "Glass In The Air",
+        "Young Jonn",
+        66,
+        4,
+        61,
+        ""
+      ],
+      [
+        87,
+        "If You Like",
+        "BNXN",
+        97,
+        3,
+        86,
+        ""
+      ],
+      [
+        88,
+        "I AM",
+        "Omah Lay",
+        -1,
+        24,
+        2,
+        "RE-ENTRY"
+      ],
+      [
+        89,
+        "Wo Lo",
+        "Mihlali The Guy, Dankie Boi, Mr Thela, Cairo CPT ft. Sino Msolo & Konke",
+        0,
+        1,
+        89,
+        "NEW"
+      ],
+      [
+        90,
+        "Alive",
+        "Jorja Smith ft. Wizkid",
+        -1,
+        14,
+        13,
+        "RE-ENTRY"
+      ],
+      [
+        91,
+        "With You",
+        "Davido ft. Omah Lay",
+        90,
+        73,
+        1,
+        ""
+      ],
+      [
+        92,
+        "Haiku",
+        "Fridayy",
+        -1,
+        4,
+        50,
+        "RE-ENTRY"
+      ],
+      [
+        93,
+        "Diamonds",
+        "Seyi Vibez",
+        70,
+        6,
+        20,
+        ""
+      ],
+      [
+        94,
+        "Colorado",
+        "Johnny Drille, Young Jonn & Ayra Starr",
+        -1,
+        22,
+        3,
+        "RE-ENTRY"
+      ],
+      [
+        95,
+        "Alaye",
+        "Wizkid & Asake",
+        -1,
+        32,
+        16,
+        "RE-ENTRY"
+      ],
+      [
+        96,
+        "Cairo",
+        "Kaestyle",
+        24,
+        7,
+        13,
+        ""
+      ],
+      [
+        97,
+        "Nakupenda",
+        "TxC, Davido, Scotts Maphuma & Shoday ft. Al Xapo & Zlatan",
+        -1,
+        34,
+        7,
+        "RE-ENTRY"
+      ],
+      [
+        98,
+        "LET ME BE",
+        "Jason Derulo, The Second Voice, Qing Madi",
+        92,
+        16,
+        32,
+        ""
+      ],
+      [
+        99,
+        "Remember",
+        "Tman Xpress & Mellow & Sleazy",
+        95,
+        3,
+        95,
+        ""
+      ],
+      [
+        100,
+        "Dangbana Riddim",
+        "Bella Shmurda & FOLA",
+        -1,
+        32,
+        12,
+        "RE-ENTRY"
+      ]
+    ]
+  },
+  {
+    "categoryId": 18,
+    "slug": "producers",
+    "title": "Official Producer Top 100",
+    "publisherTitle": "Official Producer Top 100",
+    "group": "Weekly",
+    "description": "Producers ranked across Nigerian streaming and airplay.",
+    "entryLabel": "Producer / publisher points",
+    "checkedAt": "2026-11-06T14:17:04.376944+00:00",
+    "weekStart": "2026-10-16",
+    "weekEnd": "2026-10-22",
+    "sourceUrl": "https://www.turntablecharts.com/charts/18",
+    "publisherChartId": 6025,
+    "rows": [
+      [
+        1,
+        "Magicsticks",
+        "419.11 pts",
+        1,
+        223,
+        1,
+        ""
+      ],
+      [
+        2,
+        "SB",
+        "285.71 pts",
+        2,
+        118,
+        1,
+        ""
+      ],
+      [
+        3,
+        "Shallythechampion",
+        "277.06 pts",
+        3,
+        55,
+        2,
+        ""
+      ],
+      [
+        4,
+        "Blaise Beatz",
+        "209.95 pts",
+        4,
+        223,
+        1,
+        ""
+      ],
+      [
+        5,
+        "Larrylanes",
+        "188.19 pts",
+        5,
+        220,
+        1,
+        ""
+      ],
+      [
+        6,
+        "Mally Mall",
+        "140.02 pts",
+        6,
+        58,
+        2,
+        ""
+      ],
+      [
+        7,
+        "P.Priime",
+        "131.26 pts",
+        9,
+        223,
+        1,
+        ""
+      ],
+      [
+        8,
+        "Dibs",
+        "129.11 pts",
+        7,
+        202,
+        1,
+        ""
+      ],
+      [
+        9,
+        "Ragee",
+        "124.61 pts",
+        11,
+        186,
+        2,
+        ""
+      ],
+      [
+        10,
+        "Spykida",
+        "122.13 pts",
+        10,
+        73,
+        4,
+        ""
+      ],
+      [
+        11,
+        "London",
+        "113.12 pts",
+        8,
+        203,
+        3,
+        ""
+      ],
+      [
+        12,
+        "JayPoppin",
+        "97.14 pts",
+        15,
+        22,
+        5,
+        ""
+      ],
+      [
+        13,
+        "Johnson IP",
+        "95.22 pts",
+        14,
+        22,
+        6,
+        ""
+      ],
+      [
+        14,
+        "Sarz",
+        "91.35 pts",
+        13,
+        223,
+        2,
+        ""
+      ],
+      [
+        15,
+        "Semzi",
+        "87.16 pts",
+        12,
+        215,
+        1,
+        ""
+      ],
+      [
+        16,
+        "Yung Willis",
+        "83.57 pts",
+        17,
+        183,
+        6,
+        ""
+      ],
+      [
+        17,
+        "Krizbeatz",
+        "69.81 pts",
+        18,
+        70,
+        13,
+        ""
+      ],
+      [
+        18,
+        "Puffybeatz",
+        "66.87 pts",
+        16,
+        23,
+        16,
+        ""
+      ],
+      [
+        19,
+        "TBM",
+        "66.38 pts",
+        26,
+        223,
+        2,
+        ""
+      ],
+      [
+        20,
+        "JAZZWRLD",
+        "63.71 pts",
+        27,
+        62,
+        4,
+        ""
+      ],
+      [
+        21,
+        "Rvssian",
+        "63.31 pts",
+        19,
+        11,
+        11,
+        ""
+      ],
+      [
+        22,
+        "Dera",
+        "62.43 pts",
+        20,
+        45,
+        3,
+        ""
+      ],
+      [
+        23,
+        "Krisvin Joseph",
+        "61.92 pts",
+        22,
+        8,
+        13,
+        ""
+      ],
+      [
+        24,
+        "Onlyforhonesty",
+        "61.92 pts",
+        23,
+        8,
+        14,
+        ""
+      ],
+      [
+        25,
+        "Swamiq",
+        "61.92 pts",
+        24,
+        8,
+        15,
+        ""
+      ],
+      [
+        26,
+        "Ozedikus",
+        "59.38 pts",
+        28,
+        142,
+        3,
+        ""
+      ],
+      [
+        27,
+        "Fresh VDM",
+        "54.00 pts",
+        25,
+        17,
+        4,
+        ""
+      ],
+      [
+        28,
+        "Ramoni",
+        "53.80 pts",
+        30,
+        126,
+        6,
+        ""
+      ],
+      [
+        29,
+        "Chech",
+        "50.91 pts",
+        29,
+        155,
+        4,
+        ""
+      ],
+      [
+        30,
+        "Dave Nunes",
+        "48.23 pts",
+        21,
+        81,
+        14,
+        ""
+      ],
+      [
+        31,
+        "Nana Ntorinkansah",
+        "45.07 pts",
+        36,
+        26,
+        3,
+        ""
+      ],
+      [
+        32,
+        "Young Jonn",
+        "44.04 pts",
+        37,
+        76,
+        16,
+        ""
+      ],
+      [
+        33,
+        "Alhaji Tunga",
+        "43.79 pts",
+        31,
+        25,
+        10,
+        ""
+      ],
+      [
+        34,
+        "AoD",
+        "41.35 pts",
+        44,
+        152,
+        3,
+        ""
+      ],
+      [
+        35,
+        "Ramii",
+        "39.04 pts",
+        -1,
+        38,
+        7,
+        "RE-ENTRY"
+      ],
+      [
+        36,
+        "The Monsters & Strangerz",
+        "38.24 pts",
+        32,
+        22,
+        14,
+        ""
+      ],
+      [
+        37,
+        "Germany",
+        "37.65 pts",
+        39,
+        10,
+        16,
+        ""
+      ],
+      [
+        38,
+        "Telz",
+        "37.17 pts",
+        33,
+        191,
+        6,
+        ""
+      ],
+      [
+        39,
+        "Jayboy",
+        "34.75 pts",
+        40,
+        3,
+        36,
+        ""
+      ],
+      [
+        40,
+        "Lekaa Beats",
+        "33.78 pts",
+        45,
+        134,
+        3,
+        ""
+      ],
+      [
+        41,
+        "Isaiah Tejada",
+        "33.74 pts",
+        38,
+        10,
+        13,
+        ""
+      ],
+      [
+        42,
+        "Tempoe",
+        "33.63 pts",
+        35,
+        204,
+        2,
+        ""
+      ],
+      [
+        43,
+        "Reward Beatz",
+        "32.78 pts",
+        63,
+        188,
+        2,
+        ""
+      ],
+      [
+        44,
+        "Jhay2unez",
+        "31.58 pts",
+        42,
+        112,
+        11,
+        ""
+      ],
+      [
+        45,
+        "Krazytunez",
+        "31.10 pts",
+        52,
+        14,
+        31,
+        ""
+      ],
+      [
+        46,
+        "Mustard",
+        "31.01 pts",
+        41,
+        28,
+        12,
+        ""
+      ],
+      [
+        47,
+        "Echo the Guru",
+        "30.36 pts",
+        46,
+        70,
+        18,
+        ""
+      ],
+      [
+        48,
+        "Deobeatsmusic",
+        "29.89 pts",
+        76,
+        31,
+        27,
+        ""
+      ],
+      [
+        49,
+        "P2J",
+        "29.59 pts",
+        55,
+        223,
+        1,
+        ""
+      ],
+      [
+        50,
+        "Irock Classic",
+        "28.56 pts",
+        57,
+        18,
+        10,
+        ""
+      ],
+      [
+        51,
+        "Sensei",
+        "28.56 pts",
+        58,
+        12,
+        11,
+        ""
+      ],
+      [
+        52,
+        "Kel P",
+        "28.04 pts",
+        49,
+        189,
+        3,
+        ""
+      ],
+      [
+        53,
+        "JayPizzle",
+        "27.72 pts",
+        56,
+        21,
+        8,
+        ""
+      ],
+      [
+        54,
+        "Michael Awele Kelechuwu",
+        "27.33 pts",
+        54,
+        25,
+        11,
+        ""
+      ],
+      [
+        55,
+        "Freshy",
+        "27.25 pts",
+        47,
+        20,
+        13,
+        ""
+      ],
+      [
+        56,
+        "DJ Maphorisa",
+        "26.27 pts",
+        60,
+        100,
+        8,
+        ""
+      ],
+      [
+        57,
+        "DeeYasso",
+        "25.75 pts",
+        50,
+        181,
+        4,
+        ""
+      ],
+      [
+        58,
+        "Godomarr",
+        "25.55 pts",
+        34,
+        35,
+        17,
+        ""
+      ],
+      [
+        59,
+        "Pheelz",
+        "25.41 pts",
+        68,
+        183,
+        3,
+        ""
+      ],
+      [
+        60,
+        "Omer Fedi",
+        "25.39 pts",
+        51,
+        51,
+        33,
+        ""
+      ],
+      [
+        61,
+        "Black Culture",
+        "24.80 pts",
+        -1,
+        63,
+        4,
+        "RE-ENTRY"
+      ],
+      [
+        62,
+        "WalahiSteph",
+        "24.45 pts",
+        59,
+        8,
+        40,
+        ""
+      ],
+      [
+        63,
+        "DJ Snake",
+        "24.43 pts",
+        65,
+        31,
+        6,
+        ""
+      ],
+      [
+        64,
+        "Japhkenti",
+        "24.36 pts",
+        43,
+        37,
+        16,
+        ""
+      ],
+      [
+        65,
+        "The Elements",
+        "23.61 pts",
+        53,
+        172,
+        5,
+        ""
+      ],
+      [
+        66,
+        "Johnny Drille",
+        "23.42 pts",
+        73,
+        78,
+        14,
+        ""
+      ],
+      [
+        67,
+        "Damie",
+        "22.65 pts",
+        64,
+        144,
+        10,
+        ""
+      ],
+      [
+        68,
+        "Tripbeatz",
+        "22.48 pts",
+        77,
+        3,
+        64,
+        ""
+      ],
+      [
+        69,
+        "Eskeez",
+        "22.06 pts",
+        83,
+        151,
+        3,
+        ""
+      ],
+      [
+        70,
+        "Cole Yourstruly",
+        "20.99 pts",
+        62,
+        25,
+        41,
+        ""
+      ],
+      [
+        71,
+        "Nahz Rashid",
+        "20.66 pts",
+        69,
+        11,
+        42,
+        ""
+      ],
+      [
+        72,
+        "Afrolektra",
+        "20.18 pts",
+        -1,
+        14,
+        35,
+        "RE-ENTRY"
+      ],
+      [
+        73,
+        "Xduppy",
+        "20.03 pts",
+        72,
+        46,
+        18,
+        ""
+      ],
+      [
+        74,
+        "Killertunes",
+        "19.46 pts",
+        -1,
+        87,
+        3,
+        "RE-ENTRY"
+      ],
+      [
+        75,
+        "DJ Tunez",
+        "19.22 pts",
+        87,
+        102,
+        10,
+        ""
+      ],
+      [
+        76,
+        "Shizzi",
+        "18.49 pts",
+        80,
+        53,
+        18,
+        ""
+      ],
+      [
+        77,
+        "Teemode",
+        "18.47 pts",
+        48,
+        77,
+        11,
+        ""
+      ],
+      [
+        78,
+        "Arieenati",
+        "18.02 pts",
+        -1,
+        27,
+        34,
+        "RE-ENTRY"
+      ],
+      [
+        79,
+        "Pharrell Williams",
+        "17.61 pts",
+        66,
+        12,
+        66,
+        ""
+      ],
+      [
+        80,
+        "Oldmanjingles",
+        "17.61 pts",
+        67,
+        8,
+        43,
+        ""
+      ],
+      [
+        81,
+        "bees & honey",
+        "17.46 pts",
+        96,
+        11,
+        37,
+        ""
+      ],
+      [
+        82,
+        "Kyjani",
+        "17.46 pts",
+        97,
+        6,
+        56,
+        ""
+      ],
+      [
+        83,
+        "Lucas Firmino",
+        "17.46 pts",
+        98,
+        6,
+        57,
+        ""
+      ],
+      [
+        84,
+        "Mabanza Antonio",
+        "17.46 pts",
+        99,
+        6,
+        58,
+        ""
+      ],
+      [
+        85,
+        "The Compozers",
+        "17.43 pts",
+        70,
+        25,
+        19,
+        ""
+      ],
+      [
+        86,
+        "Pontus Persson",
+        "17.34 pts",
+        86,
+        65,
+        14,
+        ""
+      ],
+      [
+        87,
+        "Max Martin",
+        "17.08 pts",
+        71,
+        77,
+        27,
+        ""
+      ],
+      [
+        88,
+        "UCEE",
+        "16.48 pts",
+        88,
+        150,
+        4,
+        ""
+      ],
+      [
+        89,
+        "Kabza De Small",
+        "16.17 pts",
+        85,
+        24,
+        17,
+        ""
+      ],
+      [
+        90,
+        "DJ 808",
+        "16.11 pts",
+        -1,
+        23,
+        27,
+        "RE-ENTRY"
+      ],
+      [
+        91,
+        "Niphkeys",
+        "15.90 pts",
+        78,
+        216,
+        1,
+        ""
+      ],
+      [
+        92,
+        "Itumeleng Mashamaite Mmotla",
+        "15.16 pts",
+        -1,
+        47,
+        18,
+        "RE-ENTRY"
+      ],
+      [
+        93,
+        "Smeez",
+        "14.96 pts",
+        -1,
+        55,
+        15,
+        "RE-ENTRY"
+      ],
+      [
+        94,
+        "Tems",
+        "14.19 pts",
+        94,
+        58,
+        28,
+        ""
+      ],
+      [
+        95,
+        "LIOHN",
+        "14.12 pts",
+        -1,
+        60,
+        13,
+        "RE-ENTRY"
+      ],
+      [
+        96,
+        "Jo Caleb",
+        "14.10 pts",
+        89,
+        81,
+        5,
+        ""
+      ],
+      [
+        97,
+        "Wana Sn",
+        "13.82 pts",
+        -1,
+        8,
+        35,
+        "RE-ENTRY"
+      ],
+      [
+        98,
+        "Puppatiya",
+        "13.61 pts",
+        82,
+        9,
+        55,
+        ""
+      ],
+      [
+        99,
+        "Al Xapo",
+        "13.52 pts",
+        -1,
+        44,
+        7,
+        "RE-ENTRY"
+      ],
+      [
+        100,
+        "D3an",
+        "13.52 pts",
+        -1,
+        34,
+        14,
+        "RE-ENTRY"
+      ]
+    ]
+  },
+  {
+    "categoryId": 13,
+    "slug": "international",
+    "title": "Top International Songs",
+    "publisherTitle": "Top International Songs",
+    "group": "Specialist",
+    "description": "International songs on the publisher’s Nigerian chart.",
+    "entryLabel": "Song / artist",
+    "checkedAt": "2026-11-06T14:17:04.373562+00:00",
+    "weekStart": "2026-09-11",
+    "weekEnd": "2026-09-17",
+    "sourceUrl": "https://www.turntablecharts.com/charts/13",
+    "publisherChartId": 5994,
+    "rows": [
+      [
+        1,
+        "As We Get High",
+        "bees & honey, OMAH LAY, Gyptian & BEAM",
+        1,
+        2,
+        1,
+        ""
+      ],
+      [
+        2,
+        "THAT GIRL!",
+        "Darkoo & Asake",
+        2,
+        6,
+        1,
+        ""
+      ],
+      [
+        3,
+        "MONEY CONSTANT",
+        "DJ Maphorisa, DJ Tunez, Wizkid & Mavo",
+        3,
+        47,
+        1,
+        ""
+      ],
+      [
+        4,
+        "Gut Genug",
+        "KITSCHKRIEG, Omah Lay, Blumengarten & 255",
+        4,
+        6,
+        2,
+        ""
+      ],
+      [
+        5,
+        "Nakupenda",
+        "TxC, Davido, Scotts Maphuma & Shoday ft. Al Xapo & Zlatan",
+        5,
+        40,
+        1,
+        ""
+      ],
+      [
+        6,
+        "ANIMAL",
+        "KATSEYE",
+        7,
+        5,
+        6,
+        ""
+      ],
+      [
+        7,
+        "LET ME BE",
+        "The Second Voice",
+        -1,
+        17,
+        3,
+        "RE-ENTRY"
+      ],
+      [
+        8,
+        "Jolie",
+        "Black Sherif",
+        0,
+        1,
+        8,
+        "NEW"
+      ],
+      [
+        9,
+        "Love Again",
+        "Black Sherif ft. Full Blown",
+        0,
+        1,
+        9,
+        "NEW"
+      ],
+      [
+        10,
+        "Pink Blush",
+        "dolly babe",
+        13,
+        4,
+        10,
+        ""
+      ],
+      [
+        11,
+        "Raindance",
+        "Dave & Tems",
+        8,
+        47,
+        2,
+        ""
+      ],
+      [
+        12,
+        "So Good",
+        "Jhene Aiko ft. Kendrick Lamar",
+        0,
+        1,
+        12,
+        "NEW"
+      ],
+      [
+        13,
+        "UNETHICAL",
+        "Faouzia",
+        15,
+        2,
+        13,
+        ""
+      ],
+      [
+        14,
+        "COCA BODY",
+        "Frenna ft. Odeal & Wizkid",
+        10,
+        11,
+        3,
+        ""
+      ],
+      [
+        15,
+        "Pretty Eyes",
+        "sunkis ft. FLO",
+        11,
+        11,
+        6,
+        ""
+      ],
+      [
+        16,
+        "BbY WOW",
+        "KAROL G, Judeline & rusowsky",
+        0,
+        1,
+        16,
+        "NEW"
+      ],
+      [
+        17,
+        "Dai Dai",
+        "Shakira & Burna Boy",
+        16,
+        18,
+        1,
+        ""
+      ],
+      [
+        18,
+        "petal",
+        "Ariana Grande",
+        18,
+        5,
+        11,
+        ""
+      ],
+      [
+        19,
+        "Coming Home",
+        "Odeal & Jorja Smith",
+        21,
+        4,
+        15,
+        ""
+      ],
+      [
+        20,
+        "I Knew It, I Knew You",
+        "Taylor Swift",
+        12,
+        12,
+        12,
+        ""
+      ],
+      [
+        21,
+        "bloodstream",
+        "Alyssa Grace",
+        19,
+        12,
+        11,
+        ""
+      ],
+      [
+        22,
+        "Mi Chico",
+        "DJ Goja, Jason Derulo & Melody",
+        6,
+        7,
+        2,
+        ""
+      ],
+      [
+        23,
+        "Great Expectation",
+        "SIENNA SPIRO",
+        0,
+        1,
+        23,
+        "NEW"
+      ],
+      [
+        24,
+        "SaWaDiKa",
+        "LISA",
+        0,
+        1,
+        24,
+        "NEW"
+      ],
+      [
+        25,
+        "Isaka II (6am)",
+        "Ciza, Tems & Omah Lay",
+        -1,
+        60,
+        1,
+        "RE-ENTRY"
+      ]
+    ]
+  },
+  {
+    "categoryId": 14,
+    "slug": "emerging",
+    "title": "NXT Emerging Top Artistes",
+    "publisherTitle": "NXT Emerging Top Artistes",
+    "group": "Specialist",
+    "description": "The publisher’s chart for emerging artistes.",
+    "entryLabel": "Artist / publisher points",
+    "checkedAt": "2026-11-06T14:17:10.171676+00:00",
+    "weekStart": "2026-10-16",
+    "weekEnd": "2026-10-22",
+    "sourceUrl": "https://www.turntablecharts.com/charts/14",
+    "publisherChartId": 6017,
+    "rows": [
+      [
+        1,
+        "SSSoundgawd",
+        "20.23 pts",
+        1,
+        35,
+        1,
+        ""
+      ],
+      [
+        2,
+        "TxC",
+        "13.52 pts",
+        2,
+        65,
+        1,
+        ""
+      ],
+      [
+        3,
+        "Khid Ceejay",
+        "12.48 pts",
+        8,
+        8,
+        3,
+        ""
+      ],
+      [
+        4,
+        "Yan Yan",
+        "12.22 pts",
+        11,
+        16,
+        2,
+        ""
+      ],
+      [
+        5,
+        "DaveTheOracle",
+        "11.07 pts",
+        23,
+        14,
+        5,
+        ""
+      ],
+      [
+        6,
+        "Afri Kyan",
+        "10.38 pts",
+        7,
+        23,
+        2,
+        ""
+      ],
+      [
+        7,
+        "Daecolm",
+        "8.91 pts",
+        6,
+        72,
+        1,
+        ""
+      ],
+      [
+        8,
+        "SHON",
+        "8.81 pts",
+        9,
+        4,
+        8,
+        ""
+      ],
+      [
+        9,
+        "Double Gee2X",
+        "8.57 pts",
+        -1,
+        6,
+        9,
+        "RE-ENTRY"
+      ],
+      [
+        10,
+        "Monochrome",
+        "8.53 pts",
+        -1,
+        28,
+        3,
+        "RE-ENTRY"
+      ],
+      [
+        11,
+        "Rord Kelly",
+        "7.80 pts",
+        0,
+        1,
+        11,
+        "NEW"
+      ],
+      [
+        12,
+        "Big Baby C",
+        "7.61 pts",
+        4,
+        11,
+        4,
+        ""
+      ],
+      [
+        13,
+        "Igwe Aka",
+        "6.84 pts",
+        0,
+        1,
+        13,
+        "NEW"
+      ],
+      [
+        14,
+        "Paddy K",
+        "6.65 pts",
+        12,
+        10,
+        12,
+        ""
+      ],
+      [
+        15,
+        "Swithbarry",
+        "6.53 pts",
+        19,
+        2,
+        15,
+        ""
+      ],
+      [
+        16,
+        "The Second Voice",
+        "6.27 pts",
+        5,
+        23,
+        4,
+        ""
+      ],
+      [
+        17,
+        "Jesse Flames",
+        "6.05 pts",
+        3,
+        5,
+        3,
+        ""
+      ],
+      [
+        18,
+        "Ciza",
+        "5.80 pts",
+        21,
+        66,
+        1,
+        ""
+      ],
+      [
+        19,
+        "John Tony",
+        "5.39 pts",
+        10,
+        4,
+        6,
+        ""
+      ],
+      [
+        20,
+        "Naziru Sarkin Waka",
+        "4.96 pts",
+        16,
+        2,
+        16,
+        ""
+      ],
+      [
+        21,
+        "Zeeboy",
+        "4.36 pts",
+        20,
+        2,
+        20,
+        ""
+      ],
+      [
+        22,
+        "OctobersRich",
+        "4.23 pts",
+        0,
+        1,
+        22,
+        "NEW"
+      ],
+      [
+        23,
+        "Kobilou",
+        "3.94 pts",
+        24,
+        14,
+        14,
+        ""
+      ],
+      [
+        24,
+        "AYNG",
+        "3.60 pts",
+        0,
+        1,
+        24,
+        "NEW"
+      ],
+      [
+        25,
+        "Adeyinka Alaseyori",
+        "3.60 pts",
+        0,
+        1,
+        25,
+        "NEW"
+      ]
+    ]
+  },
+  {
+    "categoryId": 31,
+    "slug": "recurrents",
+    "title": "Top 100 Recurrents Chart",
+    "publisherTitle": "Top 100 Recurrents Chart",
+    "group": "Specialist",
+    "description": "Long-running songs tracked outside the main Top 100.",
+    "entryLabel": "Song / artist",
+    "checkedAt": "2026-11-06T14:17:10.167150+00:00",
+    "weekStart": "2026-10-23",
+    "weekEnd": "2026-10-29",
+    "sourceUrl": "https://www.turntablecharts.com/charts/31",
+    "publisherChartId": 6019,
+    "rows": [
+      [
+        1,
+        "Jogodo",
+        "Wizkid & Asake",
+        -1,
+        6,
+        1,
+        "RE-ENTRY"
+      ],
+      [
+        2,
+        "Nakupenda",
+        "TxC, Davido, Scotts Maphuma & Shoday ft. Al Xapo & Zlatan",
+        3,
+        20,
+        1,
+        ""
+      ],
+      [
+        3,
+        "you",
+        "FOLA",
+        5,
+        13,
+        1,
+        ""
+      ],
+      [
+        4,
+        "I AM",
+        "Omah Lay",
+        2,
+        6,
+        2,
+        ""
+      ],
+      [
+        5,
+        "Wa",
+        "Asake",
+        4,
+        2,
+        4,
+        ""
+      ],
+      [
+        6,
+        "caricature",
+        "FOLA",
+        7,
+        9,
+        1,
+        ""
+      ],
+      [
+        7,
+        "WHY LOVE",
+        "Asake",
+        6,
+        44,
+        1,
+        ""
+      ],
+      [
+        8,
+        "MONEY CONSTANT",
+        "DJ Maphorisa, DJ Tunez, Wizkid & Mavo",
+        1,
+        8,
+        1,
+        ""
+      ],
+      [
+        9,
+        "Remember",
+        "Asake",
+        -1,
+        91,
+        1,
+        "RE-ENTRY"
+      ],
+      [
+        10,
+        "Waist",
+        "Omah Lay",
+        10,
+        19,
+        1,
+        ""
+      ],
+      [
+        11,
+        "who does that?",
+        "FOLA ft. Bella Shmurda",
+        11,
+        48,
+        1,
+        ""
+      ]
+    ]
+  },
+  {
+    "categoryId": 20,
+    "slug": "year-songs",
+    "title": "Year-End Top 100 Songs",
+    "publisherTitle": "End of the Year Charts — TurnTable Top 100",
+    "group": "Archive",
+    "description": "The publisher’s available year-end songs chart.",
+    "entryLabel": "Song / artist",
+    "checkedAt": "2026-11-06T14:17:10.211504+00:00",
+    "weekStart": "2024-12-13",
+    "weekEnd": "2024-12-19",
+    "sourceUrl": "https://www.turntablecharts.com/charts/20",
+    "publisherChartId": 3921,
+    "rows": [
+      [
+        1,
+        "Twe Twe",
+        "Kizz Daniel & Davido",
+        0,
+        29,
+        1,
+        "NEW"
+      ],
+      [
+        2,
+        "Egwu",
+        "Chike & MohBad",
+        0,
+        34,
+        2,
+        "NEW"
+      ],
+      [
+        3,
+        "Different Pattern",
+        "Seyi Vibez",
+        0,
+        32,
+        3,
+        "NEW"
+      ],
+      [
+        4,
+        "Tshwala Bam (Remix)",
+        "Titom, Yuppe & Burna Boy ft. S.N.E",
+        0,
+        30,
+        4,
+        "NEW"
+      ],
+      [
+        5,
+        "Cast",
+        "Shallipopi ft. ODUMODUBLVCK",
+        0,
+        28,
+        5,
+        "NEW"
+      ],
+      [
+        6,
+        "Ogechi (Remix)",
+        "Brown Joel, BoyPee & Hyce ft. Davido",
+        0,
+        25,
+        6,
+        "NEW"
+      ],
+      [
+        7,
+        "Lonely At The Top",
+        "Asake",
+        0,
+        37,
+        7,
+        "NEW"
+      ],
+      [
+        8,
+        "Higher",
+        "Burna Boy",
+        0,
+        20,
+        8,
+        "NEW"
+      ],
+      [
+        9,
+        "Holy Ghost",
+        "Omah Lay",
+        0,
+        24,
+        9,
+        "NEW"
+      ],
+      [
+        10,
+        "Dealer",
+        "Ayo Maff & Fireboy DML",
+        0,
+        30,
+        10,
+        "NEW"
+      ],
+      [
+        11,
+        "Commas",
+        "Ayra Starr",
+        0,
+        24,
+        11,
+        "NEW"
+      ],
+      [
+        12,
+        "My Dealer",
+        "Kaestyle & Omah Lay",
+        0,
+        24,
+        12,
+        "NEW"
+      ],
+      [
+        13,
+        "Cana",
+        "Seyi Vibez",
+        0,
+        31,
+        13,
+        "NEW"
+      ],
+      [
+        14,
+        "MMS",
+        "Asake & Wizkid",
+        0,
+        14,
+        14,
+        "NEW"
+      ],
+      [
+        15,
+        "Bahamas",
+        "Young Jonn",
+        0,
+        29,
+        15,
+        "NEW"
+      ],
+      [
+        16,
+        "Showa",
+        "Kizz Daniel",
+        0,
+        24,
+        16,
+        "NEW"
+      ],
+      [
+        17,
+        "Instagram",
+        "Vibez Inc, Muyeez & Seyi Vibez",
+        0,
+        24,
+        17,
+        "NEW"
+      ],
+      [
+        18,
+        "POE",
+        "Ruger & Bnxn",
+        0,
+        25,
+        18,
+        "NEW"
+      ],
+      [
+        19,
+        "Happiness",
+        "Sarz, Asake & Gunna",
+        0,
+        27,
+        19,
+        "NEW"
+      ],
+      [
+        20,
+        "Big Big Things",
+        "Young Jonn ft. Kizz Daniel & Seyi Vibez",
+        0,
+        24,
+        20,
+        "NEW"
+      ],
+      [
+        21,
+        "Active",
+        "Asake & Travis Scott",
+        0,
+        15,
+        21,
+        "NEW"
+      ],
+      [
+        22,
+        "JUJU",
+        "Smur Lee & ODUMODUBLVCK ft. Shallipopi",
+        0,
+        12,
+        22,
+        "NEW"
+      ],
+      [
+        23,
+        "Favourite Girl",
+        "Darkoo & Rema",
+        0,
+        24,
+        23,
+        "NEW"
+      ],
+      [
+        24,
+        "IDK",
+        "Wizkid ft. Zlatan",
+        0,
+        25,
+        24,
+        "NEW"
+      ],
+      [
+        25,
+        "Stubborn",
+        "Victony & Asake",
+        0,
+        24,
+        25,
+        "NEW"
+      ],
+      [
+        26,
+        "Only Me",
+        "Asake",
+        0,
+        24,
+        26,
+        "NEW"
+      ],
+      [
+        27,
+        "BENIN BOYS",
+        "Rema & Shallipopi",
+        0,
+        21,
+        27,
+        "NEW"
+      ],
+      [
+        28,
+        "OZEBA",
+        "Rema",
+        0,
+        18,
+        28,
+        "NEW"
+      ],
+      [
+        29,
+        "Metaverse",
+        "Olamide",
+        0,
+        21,
+        29,
+        "NEW"
+      ],
+      [
+        30,
+        "Too Busy To Be Bae",
+        "Kizz Daniel",
+        0,
+        24,
+        30,
+        "NEW"
+      ],
+      [
+        31,
+        "BLOOD ON THE DANCE FLOOR",
+        "ODUMODUBLVCK, Bloody Civilian & Wale",
+        0,
+        23,
+        31,
+        "NEW"
+      ],
+      [
+        32,
+        "Stronger",
+        "Young Jonn",
+        0,
+        19,
+        32,
+        "NEW"
+      ],
+      [
+        33,
+        "Bad Vibes",
+        "Ayra Starr & Seyi Vibez",
+        0,
+        24,
+        33,
+        "NEW"
+      ],
+      [
+        34,
+        "DND",
+        "Rema",
+        0,
+        22,
+        34,
+        "NEW"
+      ],
+      [
+        35,
+        "Wave",
+        "Asake & Central Cee",
+        0,
+        21,
+        35,
+        "NEW"
+      ],
+      [
+        36,
+        "HEHEHE",
+        "Rema",
+        0,
+        19,
+        36,
+        "NEW"
+      ],
+      [
+        37,
+        "Double",
+        "Kizz Daniel",
+        0,
+        23,
+        37,
+        "NEW"
+      ],
+      [
+        38,
+        "Do I (Remix)",
+        "Phyno & Burna Boy",
+        0,
+        18,
+        38,
+        "NEW"
+      ],
+      [
+        39,
+        "Doha",
+        "Seyi Vibez",
+        0,
+        18,
+        39,
+        "NEW"
+      ],
+      [
+        40,
+        "City Boys",
+        "Burna Boy",
+        0,
+        18,
+        40,
+        "NEW"
+      ],
+      [
+        41,
+        "Big Baller",
+        "Flavour",
+        0,
+        22,
+        41,
+        "NEW"
+      ],
+      [
+        42,
+        "Romeo Must Die (RMD)",
+        "Ruger & Bnxn",
+        0,
+        22,
+        42,
+        "NEW"
+      ],
+      [
+        43,
+        "Adenuga",
+        "Joeboy ft. Qing Madi",
+        0,
+        20,
+        43,
+        "NEW"
+      ],
+      [
+        44,
+        "American Love",
+        "Qing Madi",
+        0,
+        24,
+        44,
+        "NEW"
+      ],
+      [
+        45,
+        "WOTOWOTO SEASONING",
+        "ODUMODUBLVCK & Black Sherif",
+        0,
+        21,
+        45,
+        "NEW"
+      ],
+      [
+        46,
+        "FEEL",
+        "Davido",
+        0,
+        15,
+        46,
+        "NEW"
+      ],
+      [
+        47,
+        "Ngozi",
+        "Crayon & Ayra Starr",
+        0,
+        20,
+        47,
+        "NEW"
+      ],
+      [
+        48,
+        "Moving",
+        "Omah Lay",
+        0,
+        12,
+        48,
+        "NEW"
+      ],
+      [
+        49,
+        "Umbrella",
+        "Nasboi ft. Wande Coal",
+        0,
+        17,
+        49,
+        "NEW"
+      ],
+      [
+        50,
+        "Everyday",
+        "Fireboy DML",
+        0,
+        24,
+        50,
+        "NEW"
+      ],
+      [
+        51,
+        "UNAVAILABLE",
+        "Davido ft. Musa Keys",
+        0,
+        16,
+        51,
+        "NEW"
+      ],
+      [
+        52,
+        "Ololufe",
+        "Wizkid ft. Wande Coal",
+        0,
+        20,
+        52,
+        "NEW"
+      ],
+      [
+        53,
+        "Marhaba",
+        "Kizz Daniel",
+        0,
+        7,
+        53,
+        "NEW"
+      ],
+      [
+        54,
+        "ASAP",
+        "Shallipopi",
+        0,
+        17,
+        54,
+        "NEW"
+      ],
+      [
+        55,
+        "Go Hard",
+        "Young Jonn",
+        0,
+        18,
+        55,
+        "NEW"
+      ],
+      [
+        56,
+        "Awolowo",
+        "Fido",
+        0,
+        12,
+        56,
+        "NEW"
+      ],
+      [
+        57,
+        "Remember",
+        "Asake",
+        0,
+        16,
+        57,
+        "NEW"
+      ],
+      [
+        58,
+        "Bust Down",
+        "Zlatan ft. Asake",
+        0,
+        23,
+        58,
+        "NEW"
+      ],
+      [
+        59,
+        "OHEMA",
+        "Victony ft. Bella Shmurda & Crayon",
+        0,
+        21,
+        59,
+        "NEW"
+      ],
+      [
+        60,
+        "Hmmm",
+        "Chris Brown ft. Davido",
+        0,
+        24,
+        60,
+        "NEW"
+      ],
+      [
+        61,
+        "Everything",
+        "Victony",
+        0,
+        21,
+        61,
+        "NEW"
+      ],
+      [
+        62,
+        "reason",
+        "Omah Lay",
+        0,
+        11,
+        62,
+        "NEW"
+      ],
+      [
+        63,
+        "Where I'm From",
+        "Tml Vibez ft. Seyi Vibez",
+        0,
+        20,
+        63,
+        "NEW"
+      ],
+      [
+        64,
+        "Pidgin & English",
+        "BNXN",
+        0,
+        17,
+        64,
+        "NEW"
+      ],
+      [
+        65,
+        "Ilashe",
+        "Ruger & Bnxn",
+        0,
+        18,
+        65,
+        "NEW"
+      ],
+      [
+        66,
+        "Giza",
+        "Burna Boy ft. Seyi Vibez",
+        0,
+        17,
+        66,
+        "NEW"
+      ],
+      [
+        67,
+        "Tony Montana",
+        "Skepta & Portable",
+        0,
+        16,
+        67,
+        "NEW"
+      ],
+      [
+        68,
+        "Alone (Remix)",
+        "FOLA & Bnxn",
+        0,
+        13,
+        68,
+        "NEW"
+      ],
+      [
+        69,
+        "Loner",
+        "Bella Shmurda",
+        0,
+        17,
+        69,
+        "NEW"
+      ],
+      [
+        70,
+        "Big 7",
+        "Burna Boy",
+        0,
+        17,
+        70,
+        "NEW"
+      ],
+      [
+        71,
+        "Aquafina",
+        "Young Jonn",
+        0,
+        1,
+        71,
+        "NEW"
+      ],
+      [
+        72,
+        "Rodo",
+        "Adekunle Gold",
+        0,
+        19,
+        72,
+        "NEW"
+      ],
+      [
+        73,
+        "YAYO",
+        "Rema",
+        0,
+        19,
+        73,
+        "NEW"
+      ],
+      [
+        74,
+        "Love Me JeJe",
+        "Tems",
+        0,
+        23,
+        74,
+        "NEW"
+      ],
+      [
+        75,
+        "KANTE",
+        "Davido ft. Fave",
+        0,
+        3,
+        75,
+        "NEW"
+      ],
+      [
+        76,
+        "Risk",
+        "Victony",
+        0,
+        18,
+        76,
+        "NEW"
+      ],
+      [
+        77,
+        "Diamonds",
+        "Wizkid",
+        0,
+        22,
+        77,
+        "NEW"
+      ],
+      [
+        78,
+        "Only Fine Girl (Remix)",
+        "Spyro & Simi",
+        0,
+        18,
+        78,
+        "NEW"
+      ],
+      [
+        79,
+        "GWAGWALADA",
+        "BNXN, Kizz Daniel & Seyi Vibez",
+        0,
+        9,
+        79,
+        "NEW"
+      ],
+      [
+        80,
+        "Dog Eat Dog II",
+        "ODUMODUBLVCK ft. Cruel Santino & Bella Shmurda",
+        0,
+        9,
+        80,
+        "NEW"
+      ],
+      [
+        81,
+        "Basquiat",
+        "Asake",
+        0,
+        5,
+        81,
+        "NEW"
+      ],
+      [
+        82,
+        "Hightension",
+        "Shallipopi",
+        0,
+        17,
+        82,
+        "NEW"
+      ],
+      [
+        83,
+        "Uptown Disco",
+        "Olamide, Fireboy DML & Asake",
+        0,
+        21,
+        83,
+        "NEW"
+      ],
+      [
+        84,
+        "I Don't Care",
+        "Boy Spyce & Khaid",
+        0,
+        17,
+        84,
+        "NEW"
+      ],
+      [
+        85,
+        "iseoluwa",
+        "Fireboy DML",
+        0,
+        11,
+        85,
+        "NEW"
+      ],
+      [
+        86,
+        "Are you there?",
+        "Ayo Maff",
+        0,
+        13,
+        86,
+        "NEW"
+      ],
+      [
+        87,
+        "soso",
+        "Omah Lay",
+        0,
+        0,
+        87,
+        "NEW"
+      ],
+      [
+        88,
+        "Hello Habibi",
+        "Olamide",
+        0,
+        15,
+        88,
+        "NEW"
+      ],
+      [
+        89,
+        "My G",
+        "Kizz Daniel",
+        0,
+        10,
+        89,
+        "NEW"
+      ],
+      [
+        90,
+        "10 Bottles",
+        "Zlatan",
+        0,
+        20,
+        90,
+        "NEW"
+      ],
+      [
+        91,
+        "Fuji Vibe",
+        "Asake",
+        0,
+        14,
+        91,
+        "NEW"
+      ],
+      [
+        92,
+        "Lovin On Me",
+        "Jack Harlow",
+        0,
+        21,
+        92,
+        "NEW"
+      ],
+      [
+        93,
+        "Obaa Sima",
+        "Fireboy DML",
+        0,
+        22,
+        93,
+        "NEW"
+      ],
+      [
+        94,
+        "Fi Kan We Kan",
+        "Bnxn & Rema",
+        0,
+        5,
+        94,
+        "NEW"
+      ],
+      [
+        95,
+        "Abanikanda",
+        "Zinoleesky ft. Naira Marley",
+        0,
+        11,
+        95,
+        "NEW"
+      ],
+      [
+        96,
+        "Pepe",
+        "Boy Spyce",
+        0,
+        20,
+        96,
+        "NEW"
+      ],
+      [
+        97,
+        "Man of the Year",
+        "Seyi Vibez",
+        0,
+        0,
+        97,
+        "NEW"
+      ],
+      [
+        98,
+        "Rush",
+        "Ayra Starr",
+        0,
+        10,
+        98,
+        "NEW"
+      ],
+      [
+        99,
+        "Goodbye (Warm Up)",
+        "Ayra Starr & Asake",
+        0,
+        11,
+        99,
+        "NEW"
+      ],
+      [
+        100,
+        "Jinja",
+        "Olamide",
+        0,
+        8,
+        100,
+        "NEW"
+      ]
+    ]
+  },
+  {
+    "categoryId": 21,
+    "slug": "year-producers",
+    "title": "Year-End Top Producer 100",
+    "publisherTitle": "End of the Year— Top Producer 100",
+    "group": "Archive",
+    "description": "The publisher’s available year-end producer chart.",
+    "entryLabel": "Producer / publisher points",
+    "checkedAt": "2026-11-06T14:17:10.264425+00:00",
+    "weekStart": "2022-12-28",
+    "weekEnd": "2023-01-03",
+    "sourceUrl": "https://www.turntablecharts.com/charts/21",
+    "publisherChartId": 1596,
+    "rows": [
+      [
+        1,
+        "Magicsticks",
+        "251.07 pts",
+        0,
+        1,
+        1,
+        "NEW"
+      ],
+      [
+        2,
+        "Niphkeys",
+        "168.17 pts",
+        0,
+        1,
+        2,
+        "NEW"
+      ],
+      [
+        3,
+        "Blaise Beatz",
+        "168.09 pts",
+        0,
+        1,
+        3,
+        "NEW"
+      ],
+      [
+        4,
+        "P.Priime",
+        "151.3 pts",
+        0,
+        1,
+        4,
+        "NEW"
+      ],
+      [
+        5,
+        "P2J",
+        "96.55 pts",
+        0,
+        1,
+        5,
+        "NEW"
+      ],
+      [
+        6,
+        "Reward Beatz",
+        "88.26 pts",
+        0,
+        1,
+        6,
+        "NEW"
+      ],
+      [
+        7,
+        "Yung Willis",
+        "78.55 pts",
+        0,
+        1,
+        7,
+        "NEW"
+      ],
+      [
+        8,
+        "Tempoe",
+        "78.04 pts",
+        0,
+        1,
+        8,
+        "NEW"
+      ],
+      [
+        9,
+        "Pheelz",
+        "69.74 pts",
+        0,
+        1,
+        9,
+        "NEW"
+      ],
+      [
+        10,
+        "Andre Vibez",
+        "64.94 pts",
+        0,
+        1,
+        10,
+        "NEW"
+      ],
+      [
+        11,
+        "London",
+        "53.36 pts",
+        0,
+        1,
+        11,
+        "NEW"
+      ],
+      [
+        12,
+        "Kukbeats",
+        "53.1 pts",
+        0,
+        1,
+        12,
+        "NEW"
+      ],
+      [
+        13,
+        "Young Jonn",
+        "50.48 pts",
+        0,
+        1,
+        13,
+        "NEW"
+      ],
+      [
+        14,
+        "Rexxie",
+        "49.35 pts",
+        0,
+        1,
+        14,
+        "NEW"
+      ],
+      [
+        15,
+        "Don Jazzy",
+        "43.56 pts",
+        0,
+        1,
+        15,
+        "NEW"
+      ],
+      [
+        16,
+        "JAE5",
+        "42.31 pts",
+        0,
+        1,
+        16,
+        "NEW"
+      ],
+      [
+        17,
+        "Sarz",
+        "39.62 pts",
+        0,
+        1,
+        17,
+        "NEW"
+      ],
+      [
+        18,
+        "Semzi",
+        "39.26 pts",
+        0,
+        1,
+        18,
+        "NEW"
+      ],
+      [
+        19,
+        "Mickey",
+        "36.55 pts",
+        0,
+        1,
+        19,
+        "NEW"
+      ],
+      [
+        20,
+        "Chopstix",
+        "35.78 pts",
+        0,
+        1,
+        20,
+        "NEW"
+      ],
+      [
+        21,
+        "Runcheck",
+        "32.02 pts",
+        0,
+        1,
+        21,
+        "NEW"
+      ],
+      [
+        22,
+        "Telz",
+        "31.64 pts",
+        0,
+        1,
+        22,
+        "NEW"
+      ],
+      [
+        23,
+        "Ozedikus",
+        "31.12 pts",
+        0,
+        1,
+        23,
+        "NEW"
+      ],
+      [
+        24,
+        "Shizzi",
+        "28.97 pts",
+        0,
+        1,
+        24,
+        "NEW"
+      ],
+      [
+        25,
+        "Philkeyz",
+        "28.89 pts",
+        0,
+        1,
+        25,
+        "NEW"
+      ],
+      [
+        26,
+        "Ruuben",
+        "28.38 pts",
+        0,
+        1,
+        26,
+        "NEW"
+      ],
+      [
+        27,
+        "Mds",
+        "28.38 pts",
+        0,
+        1,
+        27,
+        "NEW"
+      ],
+      [
+        28,
+        "Off & Out",
+        "28.03 pts",
+        0,
+        1,
+        28,
+        "NEW"
+      ],
+      [
+        29,
+        "Joker nharnah",
+        "26.96 pts",
+        0,
+        1,
+        29,
+        "NEW"
+      ],
+      [
+        30,
+        "Eskeez",
+        "26.96 pts",
+        0,
+        1,
+        30,
+        "NEW"
+      ],
+      [
+        31,
+        "Kolten Sippiboy Perine",
+        "25.63 pts",
+        0,
+        1,
+        31,
+        "NEW"
+      ],
+      [
+        32,
+        "CKay",
+        "24.75 pts",
+        0,
+        1,
+        32,
+        "NEW"
+      ],
+      [
+        33,
+        "Phantom",
+        "24.59 pts",
+        0,
+        1,
+        33,
+        "NEW"
+      ],
+      [
+        34,
+        "TMXO",
+        "24.52 pts",
+        0,
+        1,
+        34,
+        "NEW"
+      ],
+      [
+        35,
+        "Clemzy",
+        "24.25 pts",
+        0,
+        1,
+        35,
+        "NEW"
+      ],
+      [
+        36,
+        "ElementZ",
+        "22.62 pts",
+        0,
+        1,
+        36,
+        "NEW"
+      ],
+      [
+        37,
+        "SAK PASE",
+        "22.13 pts",
+        0,
+        1,
+        37,
+        "NEW"
+      ],
+      [
+        38,
+        "Bizzouch",
+        "21.05 pts",
+        0,
+        1,
+        38,
+        "NEW"
+      ],
+      [
+        39,
+        "Miichkel",
+        "20.87 pts",
+        0,
+        1,
+        39,
+        "NEW"
+      ],
+      [
+        40,
+        "Masterkraft",
+        "20.23 pts",
+        0,
+        1,
+        40,
+        "NEW"
+      ],
+      [
+        41,
+        "Krizbeatz",
+        "19.64 pts",
+        0,
+        1,
+        41,
+        "NEW"
+      ],
+      [
+        42,
+        "Kel P",
+        "19.27 pts",
+        0,
+        1,
+        42,
+        "NEW"
+      ],
+      [
+        43,
+        "Hoops",
+        "18.56 pts",
+        0,
+        1,
+        43,
+        "NEW"
+      ],
+      [
+        44,
+        "BMH",
+        "17.42 pts",
+        0,
+        1,
+        44,
+        "NEW"
+      ],
+      [
+        45,
+        "Blake Slatkin",
+        "16.73 pts",
+        0,
+        1,
+        45,
+        "NEW"
+      ],
+      [
+        46,
+        "Producer X",
+        "16.03 pts",
+        0,
+        1,
+        46,
+        "NEW"
+      ],
+      [
+        47,
+        "Kheil Stone Harrison",
+        "16.02 pts",
+        0,
+        1,
+        47,
+        "NEW"
+      ],
+      [
+        48,
+        "Type A",
+        "15.35 pts",
+        0,
+        1,
+        48,
+        "NEW"
+      ],
+      [
+        49,
+        "ATL Jacob",
+        "15.35 pts",
+        0,
+        1,
+        49,
+        "NEW"
+      ],
+      [
+        50,
+        "Damie",
+        "14.89 pts",
+        0,
+        1,
+        50,
+        "NEW"
+      ],
+      [
+        51,
+        "Harv",
+        "14.71 pts",
+        0,
+        1,
+        51,
+        "NEW"
+      ],
+      [
+        52,
+        "Caltonic SA",
+        "13.94 pts",
+        0,
+        1,
+        52,
+        "NEW"
+      ],
+      [
+        53,
+        "Blaq Diamond",
+        "13.77 pts",
+        0,
+        1,
+        53,
+        "NEW"
+      ],
+      [
+        54,
+        "Omer Fedi",
+        "13.64 pts",
+        0,
+        1,
+        54,
+        "NEW"
+      ],
+      [
+        55,
+        "Sammy Soso",
+        "13.19 pts",
+        0,
+        1,
+        55,
+        "NEW"
+      ],
+      [
+        56,
+        "Tee Jay",
+        "13.18 pts",
+        0,
+        1,
+        56,
+        "NEW"
+      ],
+      [
+        57,
+        "Ghanaian Stallion",
+        "12.71 pts",
+        0,
+        1,
+        57,
+        "NEW"
+      ],
+      [
+        58,
+        "Callie Majik",
+        "12.48 pts",
+        0,
+        1,
+        58,
+        "NEW"
+      ],
+      [
+        59,
+        "FRED",
+        "12.18 pts",
+        0,
+        1,
+        59,
+        "NEW"
+      ],
+      [
+        60,
+        "Screwface",
+        "11.66 pts",
+        0,
+        1,
+        60,
+        "NEW"
+      ],
+      [
+        61,
+        "Murderer Beat",
+        "11.60 pts",
+        0,
+        1,
+        61,
+        "NEW"
+      ],
+      [
+        62,
+        "LiTek",
+        "11.52 pts",
+        0,
+        1,
+        62,
+        "NEW"
+      ],
+      [
+        63,
+        "Larry Lanes",
+        "11.5 pts",
+        0,
+        1,
+        63,
+        "NEW"
+      ],
+      [
+        64,
+        "Mr. Soul",
+        "11.46 pts",
+        0,
+        1,
+        64,
+        "NEW"
+      ],
+      [
+        65,
+        "Nektunez",
+        "11.45 pts",
+        0,
+        1,
+        65,
+        "NEW"
+      ],
+      [
+        66,
+        "Jasper Harris",
+        "11.25 pts",
+        0,
+        1,
+        66,
+        "NEW"
+      ],
+      [
+        67,
+        "DJ Tunez",
+        "11.24 pts",
+        0,
+        1,
+        67,
+        "NEW"
+      ],
+      [
+        68,
+        "Ed Sheeran",
+        "10.97 pts",
+        0,
+        1,
+        68,
+        "NEW"
+      ],
+      [
+        69,
+        "Roget Chahayed",
+        "10.97 pts",
+        0,
+        1,
+        69,
+        "NEW"
+      ],
+      [
+        70,
+        "Bruno",
+        "10.86 pts",
+        0,
+        1,
+        70,
+        "NEW"
+      ],
+      [
+        71,
+        "DeeYasso",
+        "10.37 pts",
+        0,
+        1,
+        71,
+        "NEW"
+      ],
+      [
+        72,
+        "AOD",
+        "10.35 pts",
+        0,
+        1,
+        72,
+        "NEW"
+      ],
+      [
+        73,
+        "WhyJay",
+        "10.31 pts",
+        0,
+        1,
+        73,
+        "NEW"
+      ],
+      [
+        74,
+        "The Monsters & Strangerz",
+        "10.07 pts",
+        0,
+        1,
+        74,
+        "NEW"
+      ],
+      [
+        75,
+        "Juls",
+        "10.05 pts",
+        0,
+        1,
+        75,
+        "NEW"
+      ],
+      [
+        76,
+        "Louis Bell",
+        "9.95 pts",
+        0,
+        1,
+        76,
+        "NEW"
+      ],
+      [
+        77,
+        "RoccStar",
+        "9.91 pts",
+        0,
+        1,
+        77,
+        "NEW"
+      ],
+      [
+        78,
+        "Fancybeatz",
+        "9.73 pts",
+        0,
+        1,
+        78,
+        "NEW"
+      ],
+      [
+        79,
+        "Legendury Beatz",
+        "9.69 pts",
+        0,
+        1,
+        79,
+        "NEW"
+      ],
+      [
+        80,
+        "Jacob Manson",
+        "9.57 pts",
+        0,
+        1,
+        80,
+        "NEW"
+      ],
+      [
+        81,
+        "Ricky Reed",
+        "9.36 pts",
+        0,
+        1,
+        81,
+        "NEW"
+      ],
+      [
+        82,
+        "Jon Bellion",
+        "9.23 pts",
+        0,
+        1,
+        82,
+        "NEW"
+      ],
+      [
+        83,
+        "Mojam",
+        "9.18 pts",
+        0,
+        1,
+        83,
+        "NEW"
+      ],
+      [
+        84,
+        "Abidoza",
+        "9.02 pts",
+        0,
+        1,
+        84,
+        "NEW"
+      ],
+      [
+        85,
+        "Tyler Johnson",
+        "8.93 pts",
+        0,
+        1,
+        85,
+        "NEW"
+      ],
+      [
+        86,
+        "Kid Harpoon",
+        "8.93 pts",
+        0,
+        1,
+        86,
+        "NEW"
+      ],
+      [
+        87,
+        "Prodby106",
+        "8.88 pts",
+        0,
+        1,
+        87,
+        "NEW"
+      ],
+      [
+        88,
+        "Z3NA",
+        "8.59 pts",
+        0,
+        1,
+        88,
+        "NEW"
+      ],
+      [
+        89,
+        "Mystro",
+        "8.16 pts",
+        0,
+        1,
+        89,
+        "NEW"
+      ],
+      [
+        90,
+        "Shuga Vybz",
+        "8.13 pts",
+        0,
+        1,
+        90,
+        "NEW"
+      ],
+      [
+        91,
+        "Eternal Africa",
+        "8 pts",
+        0,
+        1,
+        91,
+        "NEW"
+      ],
+      [
+        92,
+        "Louddaaa",
+        "7.81 pts",
+        0,
+        1,
+        92,
+        "NEW"
+      ],
+      [
+        93,
+        "Neave Applebaum",
+        "7.73 pts",
+        0,
+        1,
+        93,
+        "NEW"
+      ],
+      [
+        94,
+        "Medua",
+        "7.72 pts",
+        0,
+        1,
+        94,
+        "NEW"
+      ],
+      [
+        95,
+        "1 Mind",
+        "7.71 pts",
+        0,
+        1,
+        95,
+        "NEW"
+      ],
+      [
+        96,
+        "BabeTruth",
+        "7.61 pts",
+        0,
+        1,
+        96,
+        "NEW"
+      ],
+      [
+        97,
+        "Spax",
+        "7.51 pts",
+        0,
+        1,
+        97,
+        "NEW"
+      ],
+      [
+        98,
+        "Charlie Handsome",
+        "7.45 pts",
+        0,
+        1,
+        98,
+        "NEW"
+      ],
+      [
+        99,
+        "Nonso Amadi",
+        "7.23 pts",
+        0,
+        1,
+        99,
+        "NEW"
+      ],
+      [
+        100,
+        "Jack Harlow",
+        "7.22 pts",
+        0,
+        1,
+        100,
+        "NEW"
+      ]
+    ]
+  },
+  {
+    "categoryId": 22,
+    "slug": "year-artists",
+    "title": "Year-End Top Artiste 100",
+    "publisherTitle": "End of the Year — Top Artiste 100",
+    "group": "Archive",
+    "description": "The publisher’s available year-end artiste chart.",
+    "entryLabel": "Artist / publisher points",
+    "checkedAt": "2026-11-06T14:17:10.231467+00:00",
+    "weekStart": "2022-12-27",
+    "weekEnd": "2023-01-02",
+    "sourceUrl": "https://www.turntablecharts.com/charts/22",
+    "publisherChartId": 1595,
+    "rows": [
+      [
+        1,
+        "Asake",
+        "267.67 pts",
+        0,
+        1,
+        1,
+        "NEW"
+      ],
+      [
+        2,
+        "Burna Boy",
+        "210.89 pts",
+        0,
+        1,
+        2,
+        "NEW"
+      ],
+      [
+        3,
+        "Bnxn",
+        "147 pts",
+        0,
+        1,
+        3,
+        "NEW"
+      ],
+      [
+        4,
+        "Davido",
+        "146.66 pts",
+        0,
+        1,
+        4,
+        "NEW"
+      ],
+      [
+        5,
+        "Kizz Daniel",
+        "141.22 pts",
+        0,
+        1,
+        5,
+        "NEW"
+      ],
+      [
+        6,
+        "Fireboy Dml",
+        "121.09 pts",
+        0,
+        1,
+        6,
+        "NEW"
+      ],
+      [
+        7,
+        "Zinoleesky",
+        "114.12 pts",
+        0,
+        1,
+        7,
+        "NEW"
+      ],
+      [
+        8,
+        "Omah Lay",
+        "101.47 pts",
+        0,
+        1,
+        8,
+        "NEW"
+      ],
+      [
+        9,
+        "Wizkid",
+        "97.22 pts",
+        0,
+        1,
+        9,
+        "NEW"
+      ],
+      [
+        10,
+        "Ayra Starr",
+        "91.04 pts",
+        0,
+        1,
+        10,
+        "NEW"
+      ],
+      [
+        11,
+        "Olamide",
+        "84.48 pts",
+        0,
+        1,
+        11,
+        "NEW"
+      ],
+      [
+        12,
+        "Black Sherif",
+        "65.83 pts",
+        0,
+        1,
+        12,
+        "NEW"
+      ],
+      [
+        13,
+        "Victony",
+        "65.34 pts",
+        0,
+        1,
+        13,
+        "NEW"
+      ],
+      [
+        14,
+        "Ed Sheeran",
+        "64.81 pts",
+        0,
+        1,
+        14,
+        "NEW"
+      ],
+      [
+        15,
+        "Bella Shmurda",
+        "62.25 pts",
+        0,
+        1,
+        15,
+        "NEW"
+      ],
+      [
+        16,
+        "Rema",
+        "58.82 pts",
+        0,
+        1,
+        16,
+        "NEW"
+      ],
+      [
+        17,
+        "Mayorkun",
+        "58.8 pts",
+        0,
+        1,
+        17,
+        "NEW"
+      ],
+      [
+        18,
+        "Magixx",
+        "54.46 pts",
+        0,
+        1,
+        18,
+        "NEW"
+      ],
+      [
+        19,
+        "Ruger",
+        "54.08 pts",
+        0,
+        1,
+        19,
+        "NEW"
+      ],
+      [
+        20,
+        "Joeboy",
+        "53.07 pts",
+        0,
+        1,
+        20,
+        "NEW"
+      ],
+      [
+        21,
+        "Crayon",
+        "52.47 pts",
+        0,
+        1,
+        21,
+        "NEW"
+      ],
+      [
+        22,
+        "Ladipoe",
+        "49.29 pts",
+        0,
+        1,
+        22,
+        "NEW"
+      ],
+      [
+        23,
+        "T.I Blaze",
+        "47.74 pts",
+        0,
+        1,
+        23,
+        "NEW"
+      ],
+      [
+        24,
+        "Tekno",
+        "47.02 pts",
+        0,
+        1,
+        24,
+        "NEW"
+      ],
+      [
+        25,
+        "Adekunle Gold",
+        "45.5 pts",
+        0,
+        1,
+        25,
+        "NEW"
+      ],
+      [
+        26,
+        "Young Jonn",
+        "42.76 pts",
+        0,
+        1,
+        26,
+        "NEW"
+      ],
+      [
+        27,
+        "Ckay",
+        "42.51 pts",
+        0,
+        1,
+        27,
+        "NEW"
+      ],
+      [
+        28,
+        "Tiwa Savage",
+        "42.27 pts",
+        0,
+        1,
+        28,
+        "NEW"
+      ],
+      [
+        29,
+        "Boy Spyce",
+        "41.56 pts",
+        0,
+        1,
+        29,
+        "NEW"
+      ],
+      [
+        30,
+        "Skiibii",
+        "41.34 pts",
+        0,
+        1,
+        30,
+        "NEW"
+      ],
+      [
+        31,
+        "Pheelz",
+        "41.23 pts",
+        0,
+        1,
+        31,
+        "NEW"
+      ],
+      [
+        32,
+        "Wande Coal",
+        "40.04 pts",
+        0,
+        1,
+        32,
+        "NEW"
+      ],
+      [
+        33,
+        "Chris Brown",
+        "37.63 pts",
+        0,
+        1,
+        33,
+        "NEW"
+      ],
+      [
+        34,
+        "Mavins",
+        "34.2 pts",
+        0,
+        1,
+        34,
+        "NEW"
+      ],
+      [
+        35,
+        "Seyi Vibez",
+        "33.66 pts",
+        0,
+        1,
+        35,
+        "NEW"
+      ],
+      [
+        36,
+        "Oxlade",
+        "31.72 pts",
+        0,
+        1,
+        36,
+        "NEW"
+      ],
+      [
+        37,
+        "Justin Bieber",
+        "28.92 pts",
+        0,
+        1,
+        37,
+        "NEW"
+      ],
+      [
+        38,
+        "Tems",
+        "28.66 pts",
+        0,
+        1,
+        38,
+        "NEW"
+      ],
+      [
+        39,
+        "Darkoo",
+        "28.36 pts",
+        0,
+        1,
+        39,
+        "NEW"
+      ],
+      [
+        40,
+        "Zlatan",
+        "28.16 pts",
+        0,
+        1,
+        40,
+        "NEW"
+      ],
+      [
+        41,
+        "Mohbad",
+        "27.62 pts",
+        0,
+        1,
+        41,
+        "NEW"
+      ],
+      [
+        42,
+        "Fave",
+        "27.31 pts",
+        0,
+        1,
+        42,
+        "NEW"
+      ],
+      [
+        43,
+        "Spinall",
+        "26.73 pts",
+        0,
+        1,
+        43,
+        "NEW"
+      ],
+      [
+        44,
+        "Lojay",
+        "24.87 pts",
+        0,
+        1,
+        44,
+        "NEW"
+      ],
+      [
+        45,
+        "Timaya",
+        "24.84 pts",
+        0,
+        1,
+        45,
+        "NEW"
+      ],
+      [
+        46,
+        "King Promise",
+        "24.51 pts",
+        0,
+        1,
+        46,
+        "NEW"
+      ],
+      [
+        47,
+        "Drake",
+        "23.81 pts",
+        0,
+        1,
+        47,
+        "NEW"
+      ],
+      [
+        48,
+        "Lil Kesh",
+        "23.75 pts",
+        0,
+        1,
+        48,
+        "NEW"
+      ],
+      [
+        49,
+        "Focalistic",
+        "23.11 pts",
+        0,
+        1,
+        49,
+        "NEW"
+      ],
+      [
+        50,
+        "Simi",
+        "21.62 pts",
+        0,
+        1,
+        50,
+        "NEW"
+      ],
+      [
+        51,
+        "Camidoh",
+        "20.01 pts",
+        0,
+        1,
+        51,
+        "NEW"
+      ],
+      [
+        52,
+        "Empire",
+        "19.94 pts",
+        0,
+        1,
+        52,
+        "NEW"
+      ],
+      [
+        53,
+        "Blaqbonez",
+        "19.54 pts",
+        0,
+        1,
+        53,
+        "NEW"
+      ],
+      [
+        54,
+        "Reekado Banks",
+        "19.28 pts",
+        0,
+        1,
+        54,
+        "NEW"
+      ],
+      [
+        55,
+        "Ajebo Hustlers",
+        "18.04 pts",
+        0,
+        1,
+        55,
+        "NEW"
+      ],
+      [
+        56,
+        "Future",
+        "17.8 pts",
+        0,
+        1,
+        56,
+        "NEW"
+      ],
+      [
+        57,
+        "Chike",
+        "17.48 pts",
+        0,
+        1,
+        57,
+        "NEW"
+      ],
+      [
+        58,
+        "Naira Marley",
+        "16.97 pts",
+        0,
+        1,
+        58,
+        "NEW"
+      ],
+      [
+        59,
+        "Flavour",
+        "16.9 pts",
+        0,
+        1,
+        59,
+        "NEW"
+      ],
+      [
+        60,
+        "1Da Banton",
+        "16.29 pts",
+        0,
+        1,
+        60,
+        "NEW"
+      ],
+      [
+        61,
+        "Patoranking",
+        "16.28 pts",
+        0,
+        1,
+        61,
+        "NEW"
+      ],
+      [
+        62,
+        "Portable",
+        "16.07 pts",
+        0,
+        1,
+        62,
+        "NEW"
+      ],
+      [
+        63,
+        "Bad Boy Timz",
+        "15.87 pts",
+        0,
+        1,
+        63,
+        "NEW"
+      ],
+      [
+        64,
+        "Jae5",
+        "15.67 pts",
+        0,
+        1,
+        64,
+        "NEW"
+      ],
+      [
+        65,
+        "Sarz",
+        "15.48 pts",
+        0,
+        1,
+        65,
+        "NEW"
+      ],
+      [
+        66,
+        "Asa",
+        "15.05 pts",
+        0,
+        1,
+        66,
+        "NEW"
+      ],
+      [
+        67,
+        "Arrdee",
+        "14.94 pts",
+        0,
+        1,
+        67,
+        "NEW"
+      ],
+      [
+        68,
+        "Falz",
+        "14.86 pts",
+        0,
+        1,
+        68,
+        "NEW"
+      ],
+      [
+        69,
+        "Phyno",
+        "14.69 pts",
+        0,
+        1,
+        69,
+        "NEW"
+      ],
+      [
+        70,
+        "Sunday Service Choir",
+        "14.28 pts",
+        0,
+        1,
+        70,
+        "NEW"
+      ],
+      [
+        71,
+        "The Cavemen.",
+        "14.16 pts",
+        0,
+        1,
+        71,
+        "NEW"
+      ],
+      [
+        72,
+        "Blaq Diamond",
+        "13.77 pts",
+        0,
+        1,
+        72,
+        "NEW"
+      ],
+      [
+        73,
+        "Lil Baby",
+        "13.46 pts",
+        0,
+        1,
+        73,
+        "NEW"
+      ],
+      [
+        74,
+        "Poco Lee",
+        "13.07 pts",
+        0,
+        1,
+        74,
+        "NEW"
+      ],
+      [
+        75,
+        "Jack Harlow",
+        "12.1 pts",
+        0,
+        1,
+        75,
+        "NEW"
+      ],
+      [
+        76,
+        "Tempoe",
+        "11.61 pts",
+        0,
+        1,
+        76,
+        "NEW"
+      ],
+      [
+        77,
+        "Doja Cat",
+        "11.59 pts",
+        0,
+        1,
+        77,
+        "NEW"
+      ],
+      [
+        78,
+        "Berri-Tiga",
+        "11.31 pts",
+        0,
+        1,
+        78,
+        "NEW"
+      ],
+      [
+        79,
+        "T Dollar",
+        "10.95 pts",
+        0,
+        1,
+        79,
+        "NEW"
+      ],
+      [
+        80,
+        "Nektunez",
+        "10.85 pts",
+        0,
+        1,
+        80,
+        "NEW"
+      ],
+      [
+        81,
+        "Dj Khaled",
+        "10.84 pts",
+        0,
+        1,
+        81,
+        "NEW"
+      ],
+      [
+        82,
+        "Johnny Drille",
+        "10.7 pts",
+        0,
+        1,
+        82,
+        "NEW"
+      ],
+      [
+        83,
+        "Carterefe",
+        "10.6 pts",
+        0,
+        1,
+        83,
+        "NEW"
+      ],
+      [
+        84,
+        "Teni",
+        "10.51 pts",
+        0,
+        1,
+        84,
+        "NEW"
+      ],
+      [
+        85,
+        "Khaid",
+        "10.46 pts",
+        0,
+        1,
+        85,
+        "NEW"
+      ],
+      [
+        86,
+        "Iyanya",
+        "10.4 pts",
+        0,
+        1,
+        86,
+        "NEW"
+      ],
+      [
+        87,
+        "Niphkeys",
+        "9.99 pts",
+        0,
+        1,
+        87,
+        "NEW"
+      ],
+      [
+        88,
+        "Goya Menor",
+        "9.6 pts",
+        0,
+        1,
+        88,
+        "NEW"
+      ],
+      [
+        89,
+        "Eltee Skhillz",
+        "9.51 pts",
+        0,
+        1,
+        89,
+        "NEW"
+      ],
+      [
+        90,
+        "Dj Neptune",
+        "9.35 pts",
+        0,
+        1,
+        90,
+        "NEW"
+      ],
+      [
+        91,
+        "Dave",
+        "9.32 pts",
+        0,
+        1,
+        91,
+        "NEW"
+      ],
+      [
+        92,
+        "Av",
+        "9.17 pts",
+        0,
+        1,
+        92,
+        "NEW"
+      ],
+      [
+        93,
+        "Dua Lipa",
+        "9.12 pts",
+        0,
+        1,
+        93,
+        "NEW"
+      ],
+      [
+        94,
+        "Abidoza",
+        "9.02 pts",
+        0,
+        1,
+        94,
+        "NEW"
+      ],
+      [
+        95,
+        "Harry Styles",
+        "8.93 pts",
+        0,
+        1,
+        95,
+        "NEW"
+      ],
+      [
+        96,
+        "Peruzzi",
+        "8.66 pts",
+        0,
+        1,
+        96,
+        "NEW"
+      ],
+      [
+        97,
+        "Mr Eazi",
+        "8.62 pts",
+        0,
+        1,
+        97,
+        "NEW"
+      ],
+      [
+        98,
+        "M.I Abaga",
+        "8.45 pts",
+        0,
+        1,
+        98,
+        "NEW"
+      ],
+      [
+        99,
+        "D Smoke",
+        "8.23 pts",
+        0,
+        1,
+        99,
+        "NEW"
+      ],
+      [
+        100,
+        "Kuami Eugene",
+        "8.15 pts",
+        0,
+        1,
+        100,
+        "NEW"
+      ]
+    ]
+  },
+  {
+    "categoryId": 16,
+    "slug": "tv",
+    "title": "Official TV Songs",
+    "publisherTitle": "Top TV Songs",
+    "group": "Archive",
+    "description": "Discontinued in December 2022; retained as a historical chart.",
+    "entryLabel": "Song / artist",
+    "checkedAt": "2026-11-06T14:17:15.392099+00:00",
+    "weekStart": "2022-12-02",
+    "weekEnd": "2022-12-08",
+    "sourceUrl": "https://www.turntablecharts.com/charts/16",
+    "publisherChartId": 1574,
+    "rows": [
+      [
+        1,
+        "Rush",
+        "Ayra Starr",
+        4,
+        11,
+        1,
+        ""
+      ],
+      [
+        2,
+        "Xtra Cool",
+        "Young Jonn",
+        1,
+        7,
+        1,
+        ""
+      ],
+      [
+        3,
+        "Loaded",
+        "Tiwa Savage & Asake",
+        2,
+        4,
+        1,
+        ""
+      ],
+      [
+        4,
+        "Bad To Me",
+        "Wizkid ",
+        3,
+        7,
+        1,
+        ""
+      ],
+      [
+        5,
+        "It's Plenty",
+        "Burna Boy",
+        11,
+        10,
+        5,
+        ""
+      ],
+      [
+        6,
+        "2 Sugar",
+        "Wizkid ft. Ayra Starr",
+        18,
+        4,
+        6,
+        ""
+      ],
+      [
+        7,
+        "Rich Spirit",
+        "Kendrick Lamar",
+        6,
+        3,
+        6,
+        ""
+      ],
+      [
+        8,
+        "Philo",
+        "Bella Shmurda & Omah Lay",
+        5,
+        11,
+        1,
+        ""
+      ],
+      [
+        9,
+        "Soweto",
+        "Victony & Tempoe",
+        8,
+        7,
+        8,
+        ""
+      ],
+      [
+        10,
+        "Breakfast",
+        "Eltee Skhillz",
+        62,
+        2,
+        10,
+        ""
+      ],
+      [
+        11,
+        "Back In Uni",
+        "Blackbonez & JAE5",
+        14,
+        7,
+        11,
+        ""
+      ],
+      [
+        12,
+        "mmadu",
+        "CKay",
+        7,
+        4,
+        7,
+        ""
+      ],
+      [
+        13,
+        "Joha",
+        "Asake",
+        13,
+        9,
+        3,
+        ""
+      ],
+      [
+        14,
+        "soso",
+        "Omah Lay ",
+        91,
+        2,
+        14,
+        ""
+      ],
+      [
+        15,
+        "KU LO SA - A COLORS SHOW",
+        "Oxlade",
+        12,
+        7,
+        3,
+        ""
+      ],
+      [
+        16,
+        "SWEET US",
+        "Timaya",
+        64,
+        2,
+        16,
+        ""
+      ],
+      [
+        17,
+        "Umbrella",
+        "EMPIRE & Wande Coal",
+        41,
+        6,
+        17,
+        ""
+      ],
+      [
+        18,
+        "Jejely",
+        "Sean Dampte",
+        15,
+        4,
+        15,
+        ""
+      ],
+      [
+        19,
+        "Top Mama",
+        "SPINALL, Reekado Banks & Phyno ft. Ntosh Gazi",
+        16,
+        7,
+        10,
+        ""
+      ],
+      [
+        20,
+        "Mad Over Hills",
+        "2Baba, Larry Gaaga & The Kabal ft. Falz",
+        10,
+        4,
+        10,
+        ""
+      ],
+      [
+        21,
+        "Electricity",
+        "Pheelz & Davido",
+        22,
+        16,
+        4,
+        ""
+      ],
+      [
+        22,
+        "Contour",
+        "Joeboy",
+        9,
+        13,
+        7,
+        ""
+      ],
+      [
+        23,
+        "Mama Maradona",
+        "Vector & Wande Coal",
+        24,
+        8,
+        14,
+        ""
+      ],
+      [
+        24,
+        "Red Flags",
+        "Ruger ",
+        54,
+        3,
+        24,
+        ""
+      ],
+      [
+        25,
+        "Loyal",
+        "Simi & Fave",
+        17,
+        7,
+        17,
+        ""
+      ],
+      [
+        26,
+        "Organise",
+        "Asake",
+        0,
+        1,
+        26,
+        "NEW"
+      ],
+      [
+        27,
+        "Under The Influence",
+        "Chris Brown",
+        23,
+        7,
+        23,
+        ""
+      ],
+      [
+        28,
+        "5 Star",
+        "Adekunle Gold",
+        33,
+        14,
+        4,
+        ""
+      ],
+      [
+        29,
+        "Super Woman",
+        "Lele Latrice & Don Crucifixto",
+        0,
+        1,
+        29,
+        "NEW"
+      ],
+      [
+        30,
+        "Call Me Every Day",
+        "Chris Brown ft. Wizkid ",
+        36,
+        15,
+        1,
+        ""
+      ],
+      [
+        31,
+        "Dangerous",
+        "Cheque ft. Ayra Starr",
+        20,
+        3,
+        20,
+        ""
+      ],
+      [
+        32,
+        "Lift Me Up",
+        "Rihanna",
+        38,
+        6,
+        8,
+        ""
+      ],
+      [
+        33,
+        "Slow",
+        "Camidoh ft. Magixx",
+        31,
+        4,
+        31,
+        ""
+      ],
+      [
+        34,
+        "Anti-Hero",
+        "Taylor Swift",
+        70,
+        4,
+        34,
+        ""
+      ],
+      [
+        35,
+        "My Sweetie",
+        "Flavour",
+        19,
+        11,
+        3,
+        ""
+      ],
+      [
+        36,
+        "Made You Look",
+        "Meghan Trainor",
+        67,
+        4,
+        36,
+        ""
+      ],
+      [
+        37,
+        "In My Mind",
+        "BNXN fka Buju",
+        55,
+        8,
+        35,
+        ""
+      ],
+      [
+        38,
+        "san siro",
+        "YKB",
+        30,
+        8,
+        7,
+        ""
+      ],
+      [
+        39,
+        "Heyy",
+        "Lil Baby",
+        43,
+        8,
+        2,
+        ""
+      ],
+      [
+        40,
+        "Kolo Kolo",
+        "Patoraking ft. Diamond Platnumz ",
+        35,
+        13,
+        1,
+        ""
+      ],
+      [
+        41,
+        "This Is What I Mean",
+        "Stormzy",
+        0,
+        1,
+        41,
+        "NEW"
+      ],
+      [
+        42,
+        "Hide & Seek",
+        "Stormzy",
+        74,
+        6,
+        25,
+        ""
+      ],
+      [
+        43,
+        "Billing",
+        "Spyro",
+        47,
+        4,
+        43,
+        ""
+      ],
+      [
+        44,
+        "Power (Remember Who You Are)",
+        "SPINALL, Summer Walker, DJ Snake & �yanna",
+        99,
+        7,
+        44,
+        ""
+      ],
+      [
+        45,
+        "Stand Strong",
+        "Davido ft. Sunday Service Choir ",
+        28,
+        16,
+        2,
+        ""
+      ],
+      [
+        46,
+        "Where We Started",
+        "Thomas Rhett & Katy Perry",
+        0,
+        1,
+        47,
+        "NEW"
+      ],
+      [
+        47,
+        "I Swear",
+        "Guchi & Yemi Alade",
+        27,
+        3,
+        27,
+        ""
+      ],
+      [
+        48,
+        "Letter From Overseas",
+        "Larry Gaaga ft. Black Sherif",
+        42,
+        4,
+        36,
+        ""
+      ],
+      [
+        49,
+        "Soft Life",
+        "Dami Oniru",
+        69,
+        3,
+        49,
+        ""
+      ],
+      [
+        50,
+        "Things I Need",
+        "Peruzzi",
+        72,
+        9,
+        16,
+        ""
+      ],
+      [
+        51,
+        "Last Last",
+        "Burna Boy ",
+        49,
+        29,
+        1,
+        ""
+      ],
+      [
+        52,
+        "Full Current (That's My Baby)",
+        "Phyno & Tekno",
+        26,
+        7,
+        21,
+        ""
+      ],
+      [
+        53,
+        "Dagger",
+        "Senth",
+        46,
+        3,
+        45,
+        ""
+      ],
+      [
+        54,
+        "Sungba (Remix)",
+        "Asake ft. Burna Boy",
+        75,
+        27,
+        3,
+        ""
+      ],
+      [
+        55,
+        "Bullion Van",
+        "Seyi Vibez",
+        39,
+        7,
+        30,
+        ""
+      ],
+      [
+        56,
+        "Jimmy Cooks",
+        "Drake & 21 Savage",
+        50,
+        3,
+        50,
+        ""
+      ],
+      [
+        57,
+        "WAIT FOR U",
+        "Future ft. Drake & Tems",
+        88,
+        30,
+        3,
+        ""
+      ],
+      [
+        58,
+        "SOMETHING",
+        "Gyakie",
+        61,
+        22,
+        23,
+        ""
+      ],
+      [
+        59,
+        "Tomorrow 2",
+        "GloRilla & Cardi B",
+        52,
+        10,
+        52,
+        ""
+      ],
+      [
+        60,
+        "Bandana",
+        "Fireboy DML & Asake",
+        40,
+        16,
+        1,
+        ""
+      ],
+      [
+        61,
+        "Likkle Riddim",
+        "Joeboy",
+        53,
+        7,
+        34,
+        ""
+      ],
+      [
+        62,
+        "Woman",
+        "Omah Lay ",
+        51,
+        28,
+        1,
+        ""
+      ],
+      [
+        63,
+        "LEADER!",
+        "Lojay ",
+        32,
+        12,
+        3,
+        ""
+      ],
+      [
+        64,
+        "Speedometer",
+        "Guchi",
+        21,
+        12,
+        12,
+        ""
+      ],
+      [
+        65,
+        "For My Hand",
+        "Burna Boy ft. Ed Sheeran ",
+        45,
+        20,
+        3,
+        ""
+      ],
+      [
+        66,
+        "All of Us (Ashawo)",
+        "Fireboy DML",
+        37,
+        6,
+        18,
+        ""
+      ],
+      [
+        67,
+        "Hypertension",
+        "Peruzzi",
+        56,
+        13,
+        11,
+        ""
+      ],
+      [
+        68,
+        "Propeller",
+        "JAE5 ft. Dave & BNXN",
+        66,
+        18,
+        19,
+        ""
+      ],
+      [
+        69,
+        "Toro",
+        "Sho Madjozi ft. DDG",
+        0,
+        1,
+        69,
+        "NEW"
+      ],
+      [
+        70,
+        "The Guy",
+        "M.I Abaga",
+        34,
+        14,
+        15,
+        ""
+      ],
+      [
+        71,
+        "Picanto",
+        "OdumoduBlvck ft. Zlatan & ECko Miles",
+        0,
+        1,
+        71,
+        "NEW"
+      ],
+      [
+        72,
+        "Hold Me",
+        "Dice Ailes ft. Tiwa Savage",
+        25,
+        2,
+        25,
+        ""
+      ],
+      [
+        73,
+        "Dirty",
+        "Rema",
+        48,
+        6,
+        27,
+        ""
+      ],
+      [
+        74,
+        "45",
+        "Black Sherif",
+        68,
+        7,
+        57,
+        ""
+      ],
+      [
+        75,
+        "GIDIGBA (Firm & Strong)",
+        "Stonebwoy",
+        73,
+        6,
+        37,
+        ""
+      ],
+      [
+        76,
+        "Calm Down",
+        "Rema & Selena Gomez",
+        57,
+        40,
+        1,
+        ""
+      ],
+      [
+        77,
+        "For The Night",
+        "Chloe & Latto",
+        80,
+        6,
+        49,
+        ""
+      ],
+      [
+        78,
+        "All Over",
+        "Magixx",
+        44,
+        7,
+        15,
+        ""
+      ],
+      [
+        79,
+        "Knee Down",
+        "Falz ft. Chike",
+        29,
+        20,
+        6,
+        ""
+      ],
+      [
+        80,
+        "Kenkele",
+        "BNXN & Wande Coal",
+        77,
+        20,
+        1,
+        ""
+      ],
+      [
+        81,
+        "Come & Go",
+        "Arrdee",
+        -1,
+        20,
+        26,
+        "RE-ENTRY"
+      ],
+      [
+        82,
+        "The One",
+        "Stefflon Don",
+        0,
+        1,
+        82,
+        "NEW"
+      ],
+      [
+        83,
+        "Buga (Lo Lo Lo)",
+        "Kizz Daniel & Tekno ",
+        -1,
+        17,
+        1,
+        "RE-ENTRY"
+      ],
+      [
+        84,
+        "BBO (Bad Bxtches Only)",
+        "Phyno",
+        60,
+        4,
+        60,
+        ""
+      ],
+      [
+        85,
+        "Patek",
+        "Mr Eazi, DJ Tarico & Joey B",
+        85,
+        3,
+        85,
+        ""
+      ],
+      [
+        86,
+        "Dali Nguwe",
+        "Wanitwa Mos & Master KG ft. Nkosazana Daughter, Basetsana & Obeey Amor",
+        -1,
+        17,
+        26,
+        "RE-ENTRY"
+      ],
+      [
+        87,
+        "Friday Night",
+        "Lasmid",
+        0,
+        1,
+        87,
+        "NEW"
+      ],
+      [
+        88,
+        "Certified Loner (No Competition)",
+        "Mayorkun ",
+        63,
+        16,
+        21,
+        ""
+      ],
+      [
+        89,
+        "I Like You (A Happier Song)",
+        "Post Malone ft. Doja Cat",
+        -1,
+        8,
+        45,
+        "RE-ENTRY"
+      ],
+      [
+        90,
+        "Falling For You",
+        "Ashanti",
+        -1,
+        2,
+        66,
+        "RE-ENTRY"
+      ],
+      [
+        91,
+        "Stand On It",
+        "Lil Baby",
+        -1,
+        4,
+        36,
+        "RE-ENTRY"
+      ],
+      [
+        92,
+        "WATAWI",
+        "Ckay ft. Davido, Focalistic & Abidoza ",
+        89,
+        21,
+        24,
+        ""
+      ],
+      [
+        93,
+        "No Mas",
+        "Murda Beatz ft. Quavo, J Balvin, Anitta & Pharrell",
+        -1,
+        3,
+        88,
+        "RE-ENTRY"
+      ],
+      [
+        94,
+        "Apollo",
+        "Victony",
+        -1,
+        4,
+        32,
+        "RE-ENTRY"
+      ],
+      [
+        95,
+        "PALAZZO",
+        "SPINALL & Asake ",
+        78,
+        26,
+        4,
+        ""
+      ],
+      [
+        96,
+        "Logba Logba",
+        "Simi",
+        83,
+        8,
+        61,
+        ""
+      ],
+      [
+        97,
+        "Bubble It",
+        "Yemi Alade ft. Spice",
+        58,
+        10,
+        26,
+        ""
+      ],
+      [
+        98,
+        "Bird",
+        "Tomi Owo ",
+        87,
+        4,
+        50,
+        ""
+      ],
+      [
+        99,
+        "Champion Sound",
+        "Davido & Focalistic ",
+        -1,
+        18,
+        2,
+        "RE-ENTRY"
+      ],
+      [
+        100,
+        "cardigan",
+        "Taylor Swift",
+        0,
+        1,
+        100,
+        "NEW"
+      ]
+    ]
+  }
+]

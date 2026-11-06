@@ -6,7 +6,7 @@
   const e=model.escape;
   function navigation(){
     const path=location.pathname.replace(/\.html$/,'').replace(/\/$/,'')||'/';
-    const ranking=/^\/(?:rankings|current|all-time|albums|releases|regions|net-worth|top100|top100-albums|streams)(?:\/|$)/.test(path);
+    const ranking=/^\/(?:rankings|current|all-time|albums|releases|regions|net-worth|top100|top100-albums|streams|turntable(?:-[a-z-]+)?)(?:\/|$)/.test(path);
     document.querySelectorAll('.app-primary a,.app-bottom-nav a').forEach(link=>{
       const href=new URL(link.href).pathname;
       if((href==='/rankings'&&ranking)||(href==='/pro'&&(path==='/pro'||path==='/studio/api')))link.setAttribute('aria-current','page');

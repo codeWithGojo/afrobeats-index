@@ -61,3 +61,19 @@ body[data-design=premium] .movers-label .movers-lead-note{font-size:11px;line-he
 .signup-sponsor-consent{margin-top:10px}
 .release-row[id]{scroll-margin-top:100px}.release-row:target{outline:2px solid var(--af-accent);outline-offset:5px}
 @media(max-width:767px){body[data-design=premium] .movers-items{display:grid!important;grid-template-columns:1fr!important;gap:18px}.movers-label .movers-lead-note{max-width:none!important}.footer-primary{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px 16px}.edition-updated{font-size:11px}.data-update-history{margin-top:16px}}
+
+/* Colour carries the perspective; decorative numbers never cover the copy. */
+body[data-design=premium] .index-route-grid{display:grid;gap:14px;background:transparent;border:0;overflow:visible}
+body[data-design=premium] .index-route-grid>a{display:flex;flex-direction:column;align-items:stretch;min-height:290px;padding:26px!important;border:0!important;border-radius:12px;color:var(--route-ink);background:var(--route-fill)}
+.index-route-grid>a:nth-child(4n+1){--route-fill:#d9f24a;--route-ink:#14200c}
+.index-route-grid>a:nth-child(4n+2){--route-fill:#b5cdfa;--route-ink:#152d49}
+.index-route-grid>a:nth-child(4n+3){--route-fill:#efb8b0;--route-ink:#412426}
+.index-route-grid>a:nth-child(4n+4){--route-fill:#f2ce88;--route-ink:#3d2b13}
+body[data-design=premium] .index-route-grid .route-watermark{display:none!important}
+body[data-design=premium] .index-route-grid :is(h3,p,small,span,b){color:var(--route-ink)!important;opacity:1}
+body[data-design=premium] .index-route-grid h3{font-size:clamp(25px,2.2vw,32px)!important;line-height:1.15!important;margin:26px 0 16px!important;overflow-wrap:anywhere}
+body[data-design=premium] .index-route-grid small{font-size:11px!important;letter-spacing:.02em}
+body[data-design=premium] .index-route-grid p{font-size:14px!important;line-height:1.65;margin:0 0 24px}
+body[data-design=premium] .index-route-grid>a>span:last-child{display:flex;align-items:center;justify-content:space-between;margin-top:auto;min-height:44px;font-size:13px!important;font-weight:600}
+@media(max-width:767px){body[data-design=premium] .index-route-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+@media(max-width:480px){body[data-design=premium] .index-route-grid{grid-template-columns:1fr!important}body[data-design=premium] .index-route-grid>a{min-height:250px!important;padding:24px!important}}
