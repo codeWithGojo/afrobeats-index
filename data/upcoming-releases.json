@@ -2,24 +2,8 @@
   "version": 1,
   "source": "Release-Cal",
   "timezone": "Africa/Lagos",
-  "checkedAt": "2026-11-01T08:15:26Z",
+  "checkedAt": "2026-11-08T08:52:44Z",
   "releases": [
-    {
-      "id": "v29hvqljrkihud9k14qal4kfao",
-      "artist": "Cruel Santino",
-      "title": "K.O.T.B - the Bomberman Chronicles",
-      "type": "Album",
-      "date": "2026-11-06",
-      "note": "Cruel Santino will be dropping his long awaited third studio album \"K.O.T.B - The Bomberman Chronicles\" on November 6."
-    },
-    {
-      "id": "5rcv8gltd2fir82kmo5uh5sv68",
-      "artist": "Skepta",
-      "title": "The Fork and Knife",
-      "type": "Album",
-      "date": "2026-11-06",
-      "note": "Skepta will be dropping his 6th studio album \"The Fork And Knife\" on November 6."
-    },
     {
       "id": "9hu0ubrv7dtp0ju3vmletb6abk",
       "artist": "DJ Tunez",
@@ -35,6 +19,22 @@
       "type": "Album",
       "date": "2026-11-16",
       "note": "Olamide will be dropping his 12th studio album \"Time And Space\" on November 16."
+    },
+    {
+      "id": "abs5k64dm49p1smbeoca9k0nh4",
+      "artist": "Joeboy",
+      "title": "Lavida Boy",
+      "type": "EP",
+      "date": "2026-11-20",
+      "note": "Joeboy will be dropping a new EP \"Lavida Boy\" on November 20. It will include the lead single \"Pretty Girls\"."
+    },
+    {
+      "id": "cj6ltmi0h29ec95otva6022aj0",
+      "artist": "2baba",
+      "title": "Oldest Young Man",
+      "type": "Album",
+      "date": "2026-11-27",
+      "note": "2Baba will be dropping his first album in 6 years \"Oldest Young Man\" on November 27."
     }
   ]
 }
