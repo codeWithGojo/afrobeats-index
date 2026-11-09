@@ -24,7 +24,10 @@ function provenance(){
     ['Upcoming releases',formatDate(d.upcoming.checkedAt),`${d.upcoming.count} scheduled music releases checked against Release-Cal. Announcement dates may change.`,'/upcoming'],
     ['News',formatDate(d.news.checkedAt),`Latest indexed article: ${formatDate(d.news.latestArticle)}. Article dates stay attached to the original reporting.`,'/news'],
     ['Editorial ranking factors & All-Time','Retained evidence','The locked editorial baseline is dated 5 Oct 2026. All-Time placements were reviewed for presentation; no new editorial marks or awards were invented.','/all-time'],
-    ['Certifications',formatDate(current.meta.certificationsCheckedAt),'Last verification retained. Badge evidence and certificate dates remain attached to their original authorities.','/method'],
+    ['Certifications',formatDate(d.certifications?.checkedAt||current.meta.certificationsCheckedAt),d.certifications?.note||'Badge evidence and certificate dates remain attached to their original authorities.','/method'],
+    ['Awards calendar',formatDate(d.awardsCalendar?.checkedAt||require('../data/awards-seasons.json').checkedAt),'Organiser dates rechecked for the Grammys, Headies and AFRIMA. Submissions remain separate from nominations.','/calendar/awards'],
+    ['Artist biographies',d.biographies?formatDate(d.biographies.checkedAt):'Retained evidence',d.biographies?`${d.biographies.rechecked} of 50 career-source pages rechecked. Missing evidence retains its original date.`:'Career sources retain their individual verification dates.','/artists'],
+    ['Release identities',d.releaseIdentities?formatDate(d.releaseIdentities.checkedAt):formatDate(d.streaming.checkedAt),'Apple release metadata is checked independently from Spotify stream observations. Future releases are excluded from released-record tables.','/releases'],
     ['Net Worth',formatDate(current.site.financials.map(x=>x.lastVerifiedAt).filter(Boolean).sort()[0]),'Estimates from public reports. This edition does not represent a new financial verification.','/net-worth'],
     ['Artists to Watch',formatDate(require('../data/watch-artists.json').updatedAt),'Directory revision; individual artist verification notes remain visible.','/watch']
   ];

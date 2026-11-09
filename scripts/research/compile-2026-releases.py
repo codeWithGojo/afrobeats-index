@@ -7,6 +7,7 @@ def key(s):
  return re.sub(r'[^a-z0-9]','',unicodedata.normalize('NFKD',s).casefold())
 def compile_snapshot():
  sources=json.loads((D/'releases-2026-sources.json').read_text());today=sources['checked_at'][:10]
+ identities=json.loads((D/'release-identities.json').read_text()).get('artists',{}) if (D/'release-identities.json').exists() else {}
  albums={};songs={};excluded=[];coverage=[]
  for a in sources['artists']:
   slug=a['artist_slug'];packet=json.loads((D/'quiz/catalogues'/f'{slug}.json').read_text());appleid=packet['appleArtistId']
@@ -21,7 +22,7 @@ def compile_snapshot():
    row={'album_title':r['title'],'artist':t['artistName'],'artist_slug':slug,'release_date':date,'total_streams':r['total'],'daily_streams':r['daily'],'year':2026,'spotify_url':r['spotify_url'],'spotify_id':ident,'artwork_url':t.get('artworkUrl100','').replace('100x100bb','300x300bb'),'source_url':a['albums']['url'],'source_date':a['albums']['source_date'],'last_updated':sources['checked_at'][:10],'release_source':t['collectionViewUrl'],'apple_collection_id':t['collectionId'],'track_count':t['trackCount'],'metric':'global_spotify_tracked_album_total'}
    if ident not in albums or row['total_streams']>albums[ident]['total_streams']:albums[ident]=row
   for r in a['songs']['rows']:
-   matches=[t for t in packet['tracks'] if key(t.get('trackName'))==key(r['title']) and t.get('releaseDate')]
+   matches=[t for t in packet['tracks']+identities.get(slug,{}).get('tracks',[]) if key(t.get('trackName'))==key(r['title']) and t.get('releaseDate')]
    if not matches:continue
    t=min(matches,key=lambda t:t['releaseDate']);date=t['releaseDate'][:10]
    if not date.startswith('2026') or date>today or not a['songs'].get('source_date'):continue

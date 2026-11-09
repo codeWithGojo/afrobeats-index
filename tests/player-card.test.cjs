@@ -19,7 +19,8 @@ test('all 50 cards use six complete sourced metrics and preserve their distinct 
   assert.ok(stats.every(s=>s.value!==null&&Number.isFinite(s.value)&&s.display!=='—'),artist.slug);
   assert.ok(stats.find(s=>s.key==='STR').value<=99);assert.ok(stats.find(s=>s.key==='EDT').value<=83);
  }
- const fola=card.model('fola',data).stats;assert.equal(fola[0].display,'1.1B');assert.equal(fola[1].display,'3.25M');
+ const fixture={artists:[{...data.artists.find(a=>a.slug==='fola'),totalSpotifyStreams:1100000000,dailySpotifyStreams:3250000,trackedSongCount:56,trackedAlbumCount:8}]};
+ const fola=card.model('fola',fixture).stats;assert.equal(fola[0].display,'1.1B');assert.equal(fola[1].display,'3.25M');
  assert.equal(fola[2].display,'56');assert.equal(fola[3].display,'8');
 });
 test('missing or invalid observations stay unknown rather than becoming invented zeroes',()=>{

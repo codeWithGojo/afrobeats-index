@@ -19,7 +19,7 @@ test('2026 renderer waits for audited payload and shows sourced finite totals on
   assert(output.innerHTML.includes('Release record'));
   assert(output.innerHTML.indexOf(items[0][title])>=0);
  }
- assert(albums.innerHTML.includes('Shoday'));
+ for(const album of audit.albums)assert(albums.innerHTML.includes(album.artist.replace(/&/g,'&amp;')),album.album_title);
  assert(!albums.innerHTML.includes('FOLA, Shoday &amp; guests'));
  select.change({target:{value:'2025'}});assert(!songs.innerHTML.includes('NaN'));
  select.change({target:{value:'2026'}});assert(!albums.innerHTML.includes('NaN'));

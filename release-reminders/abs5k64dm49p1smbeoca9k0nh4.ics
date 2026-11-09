@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Afri Index//Upcoming Releases//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:abs5k64dm49p1smbeoca9k0nh4@afrobeats-index.vercel.app
+DTSTAMP:20261109T163845Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:Joeboy — Lavida Boy
+DESCRIPTION:Scheduled ep release listed in Release-Cal. Dates may change.\n
+ Joeboy will be dropping a new EP "Lavida Boy" on November 20. It will incl
+ ude the lead single "Pretty Girls".
+URL:https://afrobeats-index.vercel.app/upcoming
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Joeboy — Lavida Boy is scheduled for tomorrow.
+END:VALARM
+END:VEVENT
+END:VCALENDAR

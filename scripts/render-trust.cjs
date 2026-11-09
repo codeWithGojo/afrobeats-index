@@ -22,7 +22,7 @@ section('alltime',body=>{
 html=html.replace(/Real photos\s*·\s*Omah Lay included/g,'Transparent sources');
 const manifestPath='data/section-updates.json';const previous=fs.existsSync(manifestPath)?JSON.parse(fs.readFileSync(manifestPath)):{};
 const read=f=>JSON.parse(fs.readFileSync('data/'+f+'.json'));
-const sourceDates={current:data.asOf,regions:data.asOf,albums:data.asOf,yearly:read('releases-2026').checked_at,certifications:data.meta.certificationsCheckedAt,vs:data.asOf,networth:data.site.financials.map(r=>r.lastVerifiedAt).sort()[0],artists:data.asOf,underground:read('watch-artists').updatedAt,'home-signup':read('underground').edition,receipt:data.asOf,'receipt-signup':read('underground').edition,top100:read('nigeria-top100').checkedAt,news:read('editorial-news').checkedAt};
+const sourceDates={current:data.asOf,regions:data.asOf,albums:data.asOf,yearly:read('releases-2026').checked_at,certifications:data.meta.certificationsLastAttemptAt||data.meta.certificationsCheckedAt,vs:data.asOf,networth:data.site.financials.map(r=>r.lastVerifiedAt).sort()[0],artists:data.asOf,underground:read('watch-artists').updatedAt,'home-signup':read('underground').edition,receipt:data.asOf,'receipt-signup':read('underground').edition,top100:read('nigeria-top100').checkedAt,news:read('editorial-news').checkedAt};
 const sections={};
 // Only primary tab sections and home modules; nested input panels are not independent datasets.
 for(const id of ['current','alltime','regions','albums','yearly','artists','vs','networth','discuss','method','receipt','underground','home-signup','receipt-signup','top100','news','certifications']){

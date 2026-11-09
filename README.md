@@ -19,7 +19,7 @@ https://afrobeats-index.vercel.app/
 
 ## Data note
 
-Sources checked on 19 October 2026 for all 50 Current artists: song and album ledgers from Kworb plus Apple release identities. Publisher ledger dates range from 28 September–18 October; a check date does not mean that the publisher updated that day. The official TurnTable page still supplies 2–8 October 2026, rechecked on 19 October. Its positions are preserved.
+Sources checked on 9 November 2026 for all 50 Current artists: 100 Kworb song/album ledgers and 50 Apple release-identity lookups. Publisher observation dates range from 28 September–8 November; a check date does not mean that the publisher updated that day. The official TurnTable songs/albums pages supply 23–29 October 2026, rechecked on 9 November. Eleven additional chart categories retain their individual publisher periods. The 2026 release cohort currently includes 33 matched albums/EPs and 310 recordings.
 
 Current uses the fixed published editorial contribution plus 17% × (100 × comparable tracked audio streams / maximum). The former 7% listener weight moves to streams. No new editorial component marks are invented. Platform coverage must be identical across all 50 candidates to enter scoring; the currently comparable provider is Spotify. The All-Time formula is unchanged.
 

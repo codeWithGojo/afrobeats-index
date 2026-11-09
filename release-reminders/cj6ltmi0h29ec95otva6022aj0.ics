@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Afri Index//Upcoming Releases//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cj6ltmi0h29ec95otva6022aj0@afrobeats-index.vercel.app
+DTSTAMP:20261109T163845Z
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261128
+SUMMARY:2baba — Oldest Young Man
+DESCRIPTION:Scheduled album release listed in Release-Cal. Dates may change
+ .\n2Baba will be dropping his first album in 6 years "Oldest Young Man" on
+  November 27.
+URL:https://afrobeats-index.vercel.app/upcoming
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:2baba — Oldest Young Man is scheduled for tomorrow.
+END:VALARM
+END:VEVENT
+END:VCALENDAR

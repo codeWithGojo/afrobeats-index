@@ -1,8 +1,8 @@
 {
   "current": {
     "label": "current",
-    "updatedAt": "2026-10-19T14:29:37.596669+00:00",
-    "hash": "2fe1a48ba04ba07d0f5c5baf639a4cabece62aabe9a89f99262e5e53d3bcec1d",
+    "updatedAt": "2026-11-09T16:34:52.389029+00:00",
+    "hash": "566d7246616f19a1fed4ae41b22dee49b1641f31b1ffbeed4ff718a8b92b3f4e",
     "basis": "source snapshot"
   },
   "alltime": {
@@ -13,31 +13,31 @@
   },
   "regions": {
     "label": "Regional Power Index",
-    "updatedAt": "2026-10-19T14:29:37.596669+00:00",
+    "updatedAt": "2026-11-09T16:34:52.389029+00:00",
     "hash": "822a49fa0a0adeeb2f55bff37482f934665b4054bbb94e6cd04d56e3d37e281b",
     "basis": "source snapshot"
   },
   "albums": {
     "label": "albums",
-    "updatedAt": "2026-10-19T14:29:37.596669+00:00",
+    "updatedAt": "2026-11-09T16:34:52.389029+00:00",
     "hash": "249db282a76f3da236f1e4a4e880690db4062fea6f552c31b65bdd2bb3ad53ab",
     "basis": "source snapshot"
   },
   "yearly": {
     "label": "Release lists",
-    "updatedAt": "2026-10-19T14:29:37.596669+00:00",
+    "updatedAt": "2026-11-09T16:34:52.389029+00:00",
     "hash": "d40edb78365e0087936714cb49c4cceed861b1f5b1feebbeb2f6fd0cfa43e61b",
     "basis": "source snapshot"
   },
   "artists": {
     "label": "Artist Archive",
-    "updatedAt": "2026-10-19T14:29:37.596669+00:00",
-    "hash": "0eac147a1347a0d9995215dbc2af104045c5721a251f27b13ab2bba9dc7023f1",
+    "updatedAt": "2026-11-09T16:34:52.389029+00:00",
+    "hash": "897ac2a674c186cf37eadcdd8dc6fe45839fd9540e080a5e422ed5bca3b8c654",
     "basis": "source snapshot"
   },
   "vs": {
     "label": "Head to Head",
-    "updatedAt": "2026-10-19T14:29:37.596669+00:00",
+    "updatedAt": "2026-11-09T16:34:52.389029+00:00",
     "hash": "b2fef26d654f1e71d4afe8e4fad28d6d2bbbf0552d82b6e234fc3de7962e2c60",
     "basis": "source snapshot"
   },
@@ -61,20 +61,20 @@
   },
   "receipt": {
     "label": "receipt",
-    "updatedAt": "2026-10-19T14:29:37.596669+00:00",
+    "updatedAt": "2026-11-09T16:34:52.389029+00:00",
     "hash": "a3d4688bc08170d608ef8ebe2318f73eefebc24244a03214ecdc8c0f3c23f912",
     "basis": "source snapshot"
   },
   "underground": {
     "label": "Artists to Watch",
-    "updatedAt": "2026-10-26",
+    "updatedAt": "2026-11-09",
     "hash": "9bc01fa3425f11e2da214f99189d4545f260d221f51b5b2ee2a1957c8e57e834",
     "basis": "directory revision"
   },
   "home-signup": {
     "label": "Newsletter",
     "updatedAt": "2026-10-25",
-    "hash": "fa53ad0a6d8e8b85db7a6871dd6d040f3cd41248e5e9fde9a3a6f6977d3f2330",
+    "hash": "dc8c20f45222c0992efc002cb281d6e8a99aa29d88145780c11eea9be60100ac",
     "basis": "source snapshot"
   },
   "receipt-signup": {
@@ -85,19 +85,19 @@
   },
   "top100": {
     "label": "top100",
-    "updatedAt": "2026-10-21T23:03:07.790Z",
+    "updatedAt": "2026-11-09T16:34:57.583023+00:00",
     "hash": "3422eb9e9f9e19587b5a1ef618b4da75d953e5b21d922b0a1f55f44902da8421",
     "basis": "source snapshot"
   },
   "news": {
     "label": "news",
-    "updatedAt": "2026-10-15T15:15:49.258735+00:00",
+    "updatedAt": "2026-11-09T16:41:23.548142+00:00",
     "hash": "19fba0e995b9794fc2c26217bf3b725c2f0d9eeda16719fe75e3ba23ca73bfc4",
     "basis": "source snapshot"
   },
   "certifications": {
     "label": "Certifications",
-    "updatedAt": "2026-10-05T07:18:05.000Z",
+    "updatedAt": "2026-11-09T16:40:00.000Z",
     "hash": "e831beb04c008e58eea5cdccffa998e50b33f96a4c90f70731ff3618904d9fa0",
     "basis": "source snapshot"
   }

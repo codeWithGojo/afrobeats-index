@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Afri Index//Upcoming Releases//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ddlq3v8301qu12nr35i7ma6748@afrobeats-index.vercel.app
+DTSTAMP:20261109T163845Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261201
+SUMMARY:Mayorkun — Long Live\, The Mayor
+DESCRIPTION:Scheduled ep release listed in Release-Cal. Dates may change.\n
+ Mayorkun will be dropping his new EP "Long Live\, The Mayor" on November 3
+ 0. The EP will include the lead singles "Kaluba" and "Home Training".
+URL:https://afrobeats-index.vercel.app/upcoming
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Mayorkun — Long Live\, The Mayor is scheduled for tomorrow.
+END:VALARM
+END:VEVENT
+END:VCALENDAR

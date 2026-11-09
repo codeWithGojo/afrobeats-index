@@ -17,7 +17,7 @@ test('every requested TurnTable category retains a dated publisher snapshot and 
 test('archives stay distinct from weekly charts and publisher points stay labelled',()=>{
  for(const slug of ['tv','year-songs','year-producers','year-artists'])assert.equal(charts.find(c=>c.slug===slug).group,'Archive');
  const artist=charts.find(c=>c.slug==='artists');
- const html=chartTable(artist,'entries');assert.match(html,/Artist \/ publisher points/);assert.match(html,/648.70 pts/);
+ const html=chartTable(artist,'entries');assert.match(html,/Artist \/ publisher points/);assert.match(html,/616.82 pts/);
  assert.match(rankingNav('/turntable-tv'),/Official TV Songs · archive/);
  assert.match(rankingNav('/turntable-tv'),/value="\/turntable-tv" selected/);
 });

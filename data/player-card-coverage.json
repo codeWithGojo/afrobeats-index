@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "snapshot": "2026-11-01T06:54:09.772084+00:00",
+  "snapshot": "2026-11-09T16:34:52.389029+00:00",
   "photoPolicy": "Existing site portraits embedded in artist share PNGs; Davido uses the existing face portrait rather than the catalogue logo.",
   "statsPolicy": "Total and daily Spotify streams, tracked songs and projects, stream index /99 and editorial contribution /83. Unpublished individual editorial factors are not inferred.",
   "artists": [
@@ -35,14 +35,14 @@
       "missing": []
     },
     {
-      "slug": "ayra-starr",
-      "photo": "artists/ayra-starr.jpg",
+      "slug": "asake",
+      "photo": "artists/asake.jpg",
       "photoAvailable": true,
       "missing": []
     },
     {
-      "slug": "asake",
-      "photo": "artists/asake.jpg",
+      "slug": "ayra-starr",
+      "photo": "artists/ayra-starr.jpg",
       "photoAvailable": true,
       "missing": []
     },

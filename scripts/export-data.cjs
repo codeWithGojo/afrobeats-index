@@ -5,6 +5,7 @@ const c={window:{AFRI_EMBEDDED_STATE:state},URL,document:{querySelectorAll:()=>[
 vm.runInContext(fs.readFileSync('assets/inline-03.js','utf8'),c);
 for(const file of ['assets/inline-04.js','assets/inline-11.js','assets/inline-12.js','refresh-2026-09-14.js','refresh-2026-09-21.js','refresh-2026-09-28.js','refresh-2026-10-05.js','ranking-refresh-2026-10-05.js','recognition-audit-2026-09-28.js','turntable-certifications.js','certification-refresh-2026-10-05.js'])vm.runInContext(fs.readFileSync(file,'utf8'),c);
 c.window.AfriStreaming=require('../streaming-model.js');
+vm.runInContext(fs.readFileSync('certification-refresh-2026-11-09.js','utf8'),c);
 vm.runInContext(fs.readFileSync('streaming-snapshot.js','utf8'),c);
 const date=state.artists.map(a=>a.statsLastUpdatedAt).filter(Boolean).sort().at(-1);
 // Derived artifact only: source remains the existing artist database.
