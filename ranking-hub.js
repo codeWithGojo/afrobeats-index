@@ -22,7 +22,7 @@
   function turntable(){
     const root=document.querySelector('[data-turntable-chart]');if(!root)return;
     const rows=[...root.querySelectorAll('tbody tr')],search=$('table-search'),movement=$('table-movement');
-    const render=()=>{const query=search.value.trim().toLocaleLowerCase();let count=0;for(const row of rows){row.hidden=!!((query&&!row.dataset.chartSearch.includes(query))||(movement.value&&row.dataset.chartMovement!==movement.value));if(!row.hidden)count++;}$('table-count').textContent=`${count} ${count===1?'entry':'entries'} · official chart positions`;$('table-empty').hidden=count>0;};
+    const render=()=>{const query=search.value.trim().toLocaleLowerCase();let count=0;for(const row of rows){row.hidden=!!((query&&!row.dataset.chartSearch.includes(query))||(movement.value&&row.dataset.chartMovement!==movement.value));if(!row.hidden)count++;}$('table-count').textContent=`${count} ${count===1?'entry':'entries'} · official chart positions`;$('table-empty').hidden=count>0;document.dispatchEvent(new Event('afri:chart-filtered'));};
     search.addEventListener('input',render);movement.addEventListener('change',render);
     root.querySelector('[data-table-reset]').addEventListener('click',()=>{search.value='';movement.value='';render();search.focus();});
   }

@@ -1,8 +1,8 @@
 /* The release calendar model is shared by the build, importer and browser. */
 (function (root, factory) {
-  if (typeof module === 'object' && module.exports) module.exports = factory();
-  else root.AfriUpcoming = factory();
-})(typeof globalThis !== 'undefined' ? globalThis : this, function () {
+  if (typeof module === 'object' && module.exports) module.exports = factory(require('./music-embed.js'));
+  else root.AfriUpcoming = factory(root.AfriMusicEmbed);
+})(typeof globalThis !== 'undefined' ? globalThis : this, function (music) {
   const zone = 'Africa/Lagos';
   const escape = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const dateKey = (now = new Date()) => {
@@ -51,18 +51,22 @@
     // RFC 5545 folds at 75 UTF-8 octets, without splitting a code point.
     return lines.map(line=>{let result='',part='',bytes=0;for(const char of line){const size=new TextEncoder().encode(char).length;if(bytes+size>75){result+=part+'\r\n';part=' ';bytes=1;}part+=char;bytes+=size;}return result+part;}).join('\r\n')+'\r\n';
   }
-  function rowMarkup(r, now, compact = false) {
+  function rowMarkup(r, now, compact = false, media) {
     const initials=String(r.artist).split(/\s+/).slice(0,2).map(x=>x[0]).join('').toUpperCase();
     const tone=[...String(r.artist)].reduce((sum,char)=>sum+char.charCodeAt(0),0)%4;
     const art=`<div class="release-art release-art-${tone}"><div class="release-record" aria-hidden="true"><i></i></div><div class="release-sleeve" aria-hidden="true"><small>AFR / RELEASE RADAR</small><strong>${escape(initials)}</strong><span>${escape(r.type.toUpperCase())}<i class="release-wave">${[1,2,3,4,5].map(x=>`<b style="--wave:${x}"></b>`).join('')}</i></span></div><time class="release-date" datetime="${r.date}"><strong>${prettyDate(r.date,{day:'2-digit'})}</strong><span>${prettyDate(r.date,{month:'short'})}</span></time></div>`;
-    return `<article${compact?'':` id="release-${escape(r.id)}" tabindex="-1"`} class="release-row${compact?' release-row-compact':''}" data-visual-reveal>${art}<div class="release-info"><div class="release-meta"><span>${escape(r.type)}</span><span class="release-countdown">${escape(countdown(r.date,now))}</span></div><h${compact?'3':'2'}>${escape(r.title)}</h${compact?'3':'2'}><p class="release-artist">${escape(r.artist)}</p>${!compact&&r.note?`<details class="release-announcement"><summary>Release notes <span aria-hidden="true">↗</span></summary><p class="release-note">${escape(r.note)}</p></details>`:''}</div>${compact?`<a class="release-preview-link" href="/upcoming#release-${escape(r.id)}">View release <span aria-hidden="true">→</span></a>`:`<details class="release-reminder"><summary>Add reminder</summary><div class="release-reminder-options"><a href="${escape(googleUrl(r))}" target="_blank" rel="noopener noreferrer" aria-label="Add ${escape(r.artist+' — '+r.title)} to Google Calendar">Google Calendar <span aria-hidden="true">↗</span></a><a href="/release-reminders/${r.id}.ics" download>Apple / Outlook (.ics)</a><small>The .ics includes a reminder one day before. Google uses your calendar’s notification settings.</small></div></details>`}</article>`;
+    const playLabel=media?.teaser?'Play teaser':media?.title&&media.title!==r.title?'Play '+media.title:'Play';
+    const playback=!compact&&media?.release===r.title
+      ?music?.trigger(media,media.title+' by '+r.artist,playLabel,media.teaser?r.title:media.title)
+      :'';
+    return `<article${compact?'':` id="release-${escape(r.id)}" tabindex="-1"`} class="release-row${compact?' release-row-compact':''}" data-visual-reveal>${art}<div class="release-info"><div class="release-meta"><span>${escape(r.type)}</span><span class="release-countdown">${escape(countdown(r.date,now))}</span></div><h${compact?'3':'2'}>${escape(r.title)}</h${compact?'3':'2'}><p class="release-artist">${escape(r.artist)}</p>${playback||''}${!compact&&r.note?`<details class="release-announcement"><summary>Release notes <span aria-hidden="true">↗</span></summary><p class="release-note">${escape(r.note)}</p></details>`:''}</div>${compact?`<a class="release-preview-link" href="/upcoming#release-${escape(r.id)}">View release <span aria-hidden="true">→</span></a>`:`<details class="release-reminder"><summary>Add reminder</summary><div class="release-reminder-options"><a href="${escape(googleUrl(r))}" target="_blank" rel="noopener noreferrer" aria-label="Add ${escape(r.artist+' — '+r.title)} to Google Calendar">Google Calendar <span aria-hidden="true">↗</span></a><a href="/release-reminders/${r.id}.ics" download>Apple / Outlook (.ics)</a><small>The .ics includes a reminder one day before. Google uses your calendar’s notification settings.</small></div></details>`}</article>`;
   }
-  function listMarkup(rows, now = new Date(), compact = false) {
+  function listMarkup(rows, now = new Date(), compact = false, playback = {}) {
     if (!rows.length) return '<div class="releases-empty"><h2>No upcoming releases listed.</h2><p>Check back after the next Release-Cal update.</p><a href="/releases">Explore the 2026 releases</a></div>';
     if (compact) return rows.map(r=>rowMarkup(r,now,true)).join('');
     const months = new Map();
     for (const r of rows) { const month=r.date.slice(0,7);if(!months.has(month))months.set(month,[]);months.get(month).push(r); }
-    return [...months].map(([month,items])=>`<section class="release-month" aria-label="${prettyDate(month+'-01',{month:'long',year:'numeric'})}"><h2 class="release-month-title">${prettyDate(month+'-01',{month:'long',year:'numeric'})}</h2>${items.map(r=>rowMarkup(r,now)).join('')}</section>`).join('');
+    return [...months].map(([month,items])=>`<section class="release-month" aria-label="${prettyDate(month+'-01',{month:'long',year:'numeric'})}"><h2 class="release-month-title">${prettyDate(month+'-01',{month:'long',year:'numeric'})}</h2>${items.map(r=>rowMarkup(r,now,false,playback[r.id])).join('')}</section>`).join('');
   }
   return {zone,escape,dateKey,prettyDate,validDate,parseEvent,normalize,upcoming,countdown,googleUrl,ics,listMarkup};
 });

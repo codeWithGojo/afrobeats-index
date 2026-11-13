@@ -1,0 +1,28 @@
+{
+  "songs": [
+    ["miss u ii (nriri)", "FOLA", "youtube", "RwTGnpGBWy0"],
+    ["Ilome", "Seyi Vibez", "youtube", "QS-IxMD0ss8"],
+    ["Gratitude", "Asake", "youtube", "RTT1C6EIFXE"],
+    ["BACK 2 U", "Seyi Vibez", "youtube", "9dHpikz48KY"],
+    ["Owo Oluwa", "Kizz Daniel ft. Young Jonn, Krizbeatz & Wave Choir", "youtube", "oObngv_N7b8"],
+    ["B4 B4", "Davido, Mayorkun & FOLA", "youtube", "oZsYE5a_x-c"],
+    ["GTA", "Seyi Vibez", "youtube", "8Xy9p4w-AKc"],
+    ["Burukutu", "Olamide", "youtube", "oL_g56WroqE"],
+    ["IKEBE 3000", "Blaqbonez ft. Asake", "spotify", "6AtTuFf3UXFFaCVglNwCGw"],
+    ["it's over", "FOLA, Bella Shmurda & Zlatan", "spotify", "0PwE9xMpIh9QL67kSK65ED"]
+  ],
+  "releases": {
+    "abs5k64dm49p1smbeoca9k0nh4": {
+      "release": "Lavida Boy",
+      "title": "Pretty Girls",
+      "provider": "spotify",
+      "id": "59DqgKpSKsyCc2VE8h1SvD"
+    },
+    "ddlq3v8301qu12nr35i7ma6748": {
+      "release": "Long Live, The Mayor",
+      "title": "Home Training",
+      "provider": "youtube",
+      "id": "hNTpCjg0uV0"
+    }
+  }
+}

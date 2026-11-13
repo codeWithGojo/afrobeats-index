@@ -9,12 +9,12 @@
   const buttons = [...document.querySelectorAll('[data-release-type]')];
   const status = document.getElementById('release-count');
   const feedback = document.querySelector('[data-release-feedback]');
-  let snapshot, type = 'All';
+  let snapshot, type = 'All', playback;
   function render() {
     const q = (search?.value || '').trim().toLocaleLowerCase();
     const all = model.upcoming(snapshot);
     const rows = all.filter(r=>(type==='All'||r.type===type)&&(!q||(r.artist+' '+r.title).toLocaleLowerCase().includes(q)));
-    if (rows.length || !all.length) list.innerHTML = model.listMarkup(compact?rows.slice(0,3):rows,new Date(),compact);
+    if (rows.length || !all.length) list.innerHTML = model.listMarkup(compact?rows.slice(0,3):rows,new Date(),compact,playback);
     else list.innerHTML = '<div class="releases-empty"><h2>No releases match.</h2><p>Try another artist or select All releases.</p><button type="button" data-release-reset>Clear filters</button></div>';
     if (status) status.textContent = `${rows.length} ${rows.length===1?'release':'releases'} scheduled`;
     const next = document.querySelector('[data-release-next]');
@@ -32,6 +32,14 @@
       if (!response.ok) throw Error('Unavailable');
       const data = await response.json();
       if (!Array.isArray(data.releases) || Number.isNaN(Date.parse(data.checkedAt))) throw Error('Invalid calendar');
+      const previousPlayback = playback;
+      if (!compact && !playback) {
+        playback = await fetch('/data/music-playback.json', {cache:'no-cache'})
+          .then(result => result.ok ? result.json() : null)
+          .then(catalogue => catalogue?.releases)
+          .catch(() => undefined);
+      }
+      if (snapshot?.checkedAt === data.checkedAt && previousPlayback === playback) return;
       snapshot = data;
       render();
       const updated = document.querySelector('[data-release-checked]');
