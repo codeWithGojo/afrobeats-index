@@ -24,9 +24,9 @@
         url: 'https://open.spotify.com/track/' + id
       };
     }
-    if (provider === 'apple' && /^\d{8,12}\/\d{8,12}$/.test(id)) {
-      const [album, track] = id.split('/');
-      const path = '/ng/album/' + album + '?i=' + track;
+    if (provider === 'apple' && /^(?:(?:ng|us)\/)?\d{8,12}\/\d{8,12}$/.test(id)) {
+      const [country, album, track] = (id.split('/').length === 2 ? 'ng/' + id : id).split('/');
+      const path = '/' + country + '/album/' + album + '?i=' + track;
       return {
         label: 'Apple Music',
         embed: 'https://embed.music.apple.com' + path,
@@ -48,7 +48,8 @@
   function trigger(media, title, label = 'Play', context = title) {
     const source = sources(media);
     if (!source) return '';
-    return `<a class="music-play" href="${source.url}" target="_blank" rel="noopener noreferrer" data-music-provider="${media.provider}" data-music-id="${media.id}" data-music-title="${escape(title)}" aria-label="${escape(label === 'Play teaser' ? 'Play teaser for ' + context : 'Play ' + title)}"><span aria-hidden="true">▶</span> ${escape(label)}</a>`;
+    if (label === 'Play' && media.provider === 'apple') label = 'Play preview';
+    return `<a class="music-play" href="${source.url}" target="_blank" rel="noopener noreferrer" data-music-provider="${media.provider}" data-music-id="${media.id}" data-music-title="${escape(title)}" aria-label="${escape(label === 'Play teaser' ? 'Play teaser for ' + context : label === 'Play preview' ? 'Play preview of ' + title : 'Play ' + title)}"><span aria-hidden="true">▶</span> ${escape(label)}</a>`;
   }
 
   function streamTrigger(row) {
