@@ -8,7 +8,7 @@ const data=read('current'),catalogue=read('streaming-catalogue'),releases=read('
 const date=value=>new Intl.DateTimeFormat('en-GB',{day:'numeric',month:'short',year:'numeric',timeZone:'UTC'}).format(new Date(value));
 const assets='<link rel="stylesheet" href="/ranking-hub.css"><script src="/chart-model.js" defer></script><script src="/ranking-hub.js" defer></script>';
 function page(path,title,description,body){
-  const playerAssets=path==='/top100'?require('../lib/music-playback.cjs').assets:'';
+  const playerAssets=['/top100','/streams'].includes(path)?require('../lib/music-playback.cjs').assets:'';
   fs.writeFileSync(path.slice(1)+'.html',`<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${e(title)} · AFR/INDEX</title><meta name="description" content="${e(description)}"><link rel="canonical" href="https://afrobeats-index.vercel.app${path}"><meta name="theme-color" content="#0b0b0c"><meta property="og:title" content="${e(title)} · AFR/INDEX"><meta property="og:description" content="${e(description)}"><meta property="og:image" content="https://afrobeats-index.vercel.app/og.jpg"><link rel="icon" href="/afr-index-favicon.svg"><script src="/theme-init.js"></script><link rel="stylesheet" href="/premium.css"><link rel="stylesheet" href="/refinements.css"><link rel="stylesheet" href="/publication.css">${assets}${playerAssets}<script src="/refinements.js" defer></script></head><body data-design="premium" data-rankings-page="${e(path)}"><a class="afri-skip" href="#main-content">Skip to content</a>${shellHeader()}<main id="main-content" tabindex="-1">${body}</main><footer class="trust-footer">${sitemap()}</footer>${bottomNav()}</body></html>`);
 }
 

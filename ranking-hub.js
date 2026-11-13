@@ -40,7 +40,7 @@
       $('counter-daily').textContent=row.daily===null?'Daily count unavailable':row.daily<0?`${row.daily.toLocaleString('en')} source adjustment`:`+${compact(row.daily)} daily streams`;
       $('counter-source').href=row.source;$('counter-source').textContent=`Source · ${row.sourceDate||'date unavailable'} ↗`;
     }
-    function tableRow(row,index){const daily=row.daily===null?'—':row.daily<0?e(row.daily.toLocaleString('en')):model.icon('up')+' +'+e(row.daily.toLocaleString('en'));return `<tr><td class="table-rank">${page*size+index+1}</td><th scope="row" class="table-entry"><button type="button" class="stream-pick" data-stream-id="${e(row.id)}">${e(row.title)}</button><small>${e(row.artist)}</small></th><td class="stream-total">${row.total.toLocaleString('en')}</td><td><span class="stream-daily">${daily}</span></td><td><a href="${e(row.source)}" target="_blank" rel="noopener noreferrer">${e(row.sourceDate||'Source')} ↗</a></td></tr>`;}
+    function tableRow(row,index){const daily=row.daily===null?'—':row.daily<0?e(row.daily.toLocaleString('en')):model.icon('up')+' +'+e(row.daily.toLocaleString('en'));return `<tr><td class="table-rank">${page*size+index+1}</td><th scope="row" class="table-entry"><button type="button" class="stream-pick" data-stream-id="${e(row.id)}">${e(row.title)}</button><small>${e(row.artist)}</small>${window.AfriMusicEmbed?.streamTrigger(row) || ''}</th><td class="stream-total">${row.total.toLocaleString('en')}</td><td><span class="stream-daily">${daily}</span></td><td><a href="${e(row.source)}" target="_blank" rel="noopener noreferrer">${e(row.sourceDate||'Source')} ↗</a></td></tr>`;}
     function render(reset=true){
       if(!ready)return;
       if(reset)page=0;
@@ -48,6 +48,7 @@
       filtered=model.filter(rows,{search:search.value,type:type.value,year:year.value,sort:sort.value});
       const visible=filtered.slice(page*size,(page+1)*size),pages=Math.max(1,Math.ceil(filtered.length/size));
       $('stream-rows').innerHTML=visible.map(tableRow).join('');
+      document.dispatchEvent(new Event('afri:chart-filtered'));
       const noun=filtered.length===1?type.value.slice(0,-1):type.value;
       $('stream-count').textContent=`${filtered.length.toLocaleString('en')} ${noun}${filtered.length?` · showing ${page*size+1}–${Math.min((page+1)*size,filtered.length)}`:''}`;
       $('stream-entry-heading').textContent=type.value==='artists'?'Artist / country':`${type.value==='albums'?'Album':'Song'} / tracked artist`;

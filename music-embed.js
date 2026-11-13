@@ -24,6 +24,24 @@
         url: 'https://open.spotify.com/track/' + id
       };
     }
+    if (provider === 'apple' && /^\d{8,12}\/\d{8,12}$/.test(id)) {
+      const [album, track] = id.split('/');
+      const path = '/ng/album/' + album + '?i=' + track;
+      return {
+        label: 'Apple Music',
+        embed: 'https://embed.music.apple.com' + path,
+        url: 'https://music.apple.com' + path
+      };
+    }
+    if (provider === 'audiomack' && /^[a-z0-9-]+\/[a-z0-9-]+$/.test(id)) {
+      const [artist, song] = id.split('/');
+      const path = '/' + artist + '/song/' + song;
+      return {
+        label: 'Audiomack',
+        embed: 'https://audiomack.com/embed' + path,
+        url: 'https://audiomack.com' + path
+      };
+    }
     return null;
   }
 
@@ -33,5 +51,11 @@
     return `<a class="music-play" href="${source.url}" target="_blank" rel="noopener noreferrer" data-music-provider="${media.provider}" data-music-id="${media.id}" data-music-title="${escape(title)}" aria-label="${escape(label === 'Play teaser' ? 'Play teaser for ' + context : 'Play ' + title)}"><span aria-hidden="true">▶</span> ${escape(label)}</a>`;
   }
 
-  return { sources, trigger };
+  function streamTrigger(row) {
+    return row.type === 'songs'
+      ? trigger({ provider: 'spotify', id: row.spotifyId }, row.title + ' by ' + row.artist)
+      : '';
+  }
+
+  return { sources, trigger, streamTrigger };
 });

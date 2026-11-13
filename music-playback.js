@@ -12,16 +12,21 @@
     if (restoreFocus) trigger.focus();
   }
 
-  document.querySelectorAll('[data-music-provider]').forEach(trigger => {
-    trigger.setAttribute('aria-expanded', 'false');
-  });
+  function syncControls() {
+    if (active && (!active.trigger.isConnected || active.trigger.closest('tr')?.hidden)) close();
+    document.querySelectorAll('[data-music-provider]:not([aria-expanded])').forEach(trigger => {
+      trigger.setAttribute('aria-expanded', 'false');
+    });
+  }
+
+  syncControls();
 
   document.addEventListener('click', event => {
     const trigger = event.target.closest('[data-music-provider]');
     if (!trigger || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
     const { musicProvider: provider, musicId: id, musicTitle: title } = trigger.dataset;
     const source = sources({ provider, id });
-    const row = trigger.closest('tr[data-chart-search]');
+    const row = trigger.closest('tr');
     const release = trigger.closest('.release-row');
     if (!source || (!row && !release)) return;
     event.preventDefault();
@@ -86,14 +91,6 @@
     }
   });
 
-  document.addEventListener('afri:chart-filtered', () => {
-    if (active?.trigger.closest('tr')?.hidden) close();
-  });
-
-  document.addEventListener('afri:visual-content', () => {
-    if (active && !active.trigger.isConnected) close();
-    document.querySelectorAll('[data-music-provider]:not([aria-expanded])').forEach(trigger => {
-      trigger.setAttribute('aria-expanded', 'false');
-    });
-  });
+  document.addEventListener('afri:chart-filtered', syncControls);
+  document.addEventListener('afri:visual-content', syncControls);
 })();
