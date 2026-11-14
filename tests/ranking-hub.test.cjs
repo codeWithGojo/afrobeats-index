@@ -40,3 +40,11 @@ test('every ranking view exposes the switcher and new charts retain semantic tab
   for(const page of ['top100','top100-albums']){const html=fs.readFileSync(page+'.html','utf8');assert.equal((html.match(/<tr data-chart-search=/g)||[]).length,100);assert.match(html,/role="region"/);assert.match(html,/scope="col"/);}
   assert.match(fs.readFileSync('streams.html','utf8'),/2026 releases, ranked by lifetime Spotify totals/);
 });
+
+test('Spotify artist links and URIs match the artist catalogue',()=>{
+  const artist=rows.find(r=>r.type==='artists'&&r.spotifyId);
+  for(const search of [artist.spotifyId,`https://open.spotify.com/artist/${artist.spotifyId}?si=test`,`https://open.spotify.com/intl-fr/artist/${artist.spotifyId}`,`spotify:artist:${artist.spotifyId}`]){
+    const hits=model.filter(rows,{type:'artists',search});
+    assert.equal(hits.length,1);assert.equal(hits[0].id,artist.id);
+  }
+});

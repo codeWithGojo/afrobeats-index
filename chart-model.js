@@ -11,7 +11,7 @@
     return {type,text:delta?String(Math.abs(delta)):'',label:delta?`${delta>0?'Up':'Down'} ${Math.abs(delta)} ${Math.abs(delta)===1?'place':'places'} from #${last}`:'No change'};
   }
   function badge(rank,last,status){const m=movement(rank,last,status);return `<span class="rank-movement rank-movement-${m.type}" aria-label="${escape(m.label)}" title="${escape(m.label)}">${icon(m.type)}<span>${escape(m.text)}</span></span>`;}
-  function query(value){const text=String(value||'').trim();const id=text.match(/(?:open\.spotify\.com\/(?:intl-[a-z]+\/)?(?:track|album)\/|spotify:(?:track|album):)([A-Za-z0-9]{22})/i)?.[1];return (id||text).toLocaleLowerCase();}
+  function query(value){const text=String(value||'').trim();const id=text.match(/(?:open\.spotify\.com\/(?:intl-[a-z]+\/)?(?:track|album|artist)\/|spotify:(?:track|album|artist):)([A-Za-z0-9]{22})/i)?.[1];return (id||text).toLocaleLowerCase();}
   function filter(rows,{search='',type='songs',year='',sort='total'}={}){
     const needle=query(search);
     return rows.filter(r=>r.type===type&&(!year||String(r.year)===String(year))&&(!needle||[r.title,r.artist,r.spotifyId].join(' ').toLocaleLowerCase().includes(needle)))
