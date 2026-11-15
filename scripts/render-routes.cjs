@@ -10,7 +10,7 @@ if(!base.includes('src="/route-client.js"'))base=base.replace('</head>','<script
 const regional=`<h3>Regional Power Index</h3>${['Nigeria','Ghana','South Africa','Tanzania'].map(country=>`<article><h4>${country}</h4><ol>${data.artists.filter(a=>a.countries.includes(country)).slice(0,5).map(a=>`<li><a href="/current/${e(a.slug)}">${e(a.name)}</a> · Index #${a.rank} · ${a.score.toFixed(1)}</li>`).join('')}</ol></article>`).join('')}`;
 base=replace(base,'regional-index',regional);
 const pair=[...data.artists].sort((a,b)=>a.name.localeCompare(b.name)).slice(0,2);const compare=`<div class="ssr-comparison">${pair.map(a=>`<article><h3>${e(a.name)}</h3><p>Index #${a.rank} · Score ${a.score.toFixed(1)}</p><p>Daily Spotify: ${a.dailySpotifyStreams.toLocaleString('en')}</p><p>Total Spotify: ${a.totalSpotifyStreams.toLocaleString('en')}</p><a href="/vs/${pair[0].slug}/${pair[1].slug}">Open comparison</a></article>`).join('')}</div>`;
-base=replace(base,'vs-output',compare);
+base=replace(base,'vs-output',compare+'<p><a href="/touring/vs-streaming">Compare Touring vs Streaming</a></p>');
 const releaseRows=[...(releases.albums||[]),...(releases.songs||[])];const releaseFallback=`<div class="ssr-release-list"><h3>Published 2026 album releases</h3><ul>${releaseRows.map(r=>`<li>${e(r.artist_name||r.artist||r.artist_slug)} · ${e(r.album_title||r.song_title||r.title)} · ${e(r.release_date||r.releaseDate||'2026')} · ${e(r.streams??r.total_streams??'')} streams</li>`).join('')}</ul></div>`;
 const year=element(base,'yearly');if(year)base=replace(base,'yearly',year.body+releaseFallback);
 // Images use a local artist path; existing source credits stay intact.
