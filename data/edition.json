@@ -1,29 +1,29 @@
 {
-  "updatedAt": "2026-11-09T16:45:32.706Z",
+  "updatedAt": "2026-11-15T22:49:19.055Z",
   "timezone": "Africa/Lagos",
   "scope": "Edition update. Source observation dates and official chart periods remain separate.",
   "datasets": {
     "streaming": {
-      "checkedAt": "2026-11-09T16:34:52.389029+00:00",
+      "checkedAt": "2026-11-15T22:42:05.314332+00:00",
       "status": "refreshed",
       "artists": 50,
       "ledgersRefreshed": 100,
       "ledgersRetained": 0,
       "sourceStart": "2026-09-28",
-      "sourceEnd": "2026-11-08"
+      "sourceEnd": "2026-11-14"
     },
     "turntableSongs": {
-      "checkedAt": "2026-11-09T16:34:57.583023+00:00",
+      "checkedAt": "2026-11-15T22:48:14.678726+00:00",
       "status": "checked",
-      "weekStart": "2026-10-23",
-      "weekEnd": "2026-10-29",
+      "weekStart": "2026-10-30",
+      "weekEnd": "2026-11-05",
       "sourceUrl": "https://www.turntablecharts.com/charts/1"
     },
     "turntableAlbums": {
-      "checkedAt": "2026-11-09T16:35:05.538886+00:00",
+      "checkedAt": "2026-11-15T22:48:16.237475+00:00",
       "status": "checked",
-      "weekStart": "2026-10-23",
-      "weekEnd": "2026-10-29",
+      "weekStart": "2026-10-30",
+      "weekEnd": "2026-11-05",
       "sourceUrl": "https://www.turntablecharts.com/charts/2"
     },
     "upcoming": {
@@ -37,13 +37,13 @@
       "latestArticle": "2026-11-07"
     },
     "turntableCategories": {
-      "checkedAt": "2026-11-09T16:35:17.610459+00:00",
+      "checkedAt": "2026-11-15T22:48:21.077156+00:00",
       "status": "checked",
       "categories": 11,
       "note": "Each category preserves its own publisher period; year-end and TV charts remain archives."
     },
     "releaseIdentities": {
-      "checkedAt": "2026-11-09T16:40:32.002140+00:00",
+      "checkedAt": "2026-11-15T22:45:01.503822+00:00",
       "status": "refreshed",
       "artists": 50
     },
@@ -53,9 +53,9 @@
       "seasons": 3
     },
     "biographies": {
-      "checkedAt": "2026-11-09",
+      "checkedAt": "2026-11-15",
       "status": "partial",
-      "rechecked": 48,
+      "rechecked": 42,
       "note": "Unavailable or ambiguous biographies retain their previous evidence dates."
     },
     "certifications": {

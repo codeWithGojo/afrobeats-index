@@ -6,7 +6,7 @@
     "evidence": {
       "biography": {
         "url": "https://en.wikipedia.org/wiki/Wizkid",
-        "checked_at": "2026-11-09",
+        "checked_at": "2026-11-15",
         "career_excerpt": "2001\u2013present [ A ]",
         "precision": "year"
       }
@@ -19,7 +19,7 @@
     "evidence": {
       "biography": {
         "url": "https://en.wikipedia.org/wiki/Burna_Boy",
-        "checked_at": "2026-11-09",
+        "checked_at": "2026-11-15",
         "career_excerpt": "2010\u2013present",
         "precision": "year"
       }
@@ -36,7 +36,9 @@
         "career_excerpt": "",
         "precision": "year"
       }
-    }
+    },
+    "lastAttemptAt": "2026-11-15",
+    "reviewStatus": "retained_last_good_no_year_found"
   },
   {
     "artist_slug": "tems",
@@ -45,7 +47,7 @@
     "evidence": {
       "biography": {
         "url": "https://en.wikipedia.org/wiki/Tems",
-        "checked_at": "2026-11-09",
+        "checked_at": "2026-11-15",
         "career_excerpt": "2018\u2013present",
         "precision": "year"
       }
@@ -58,21 +60,8 @@
     "evidence": {
       "biography": {
         "url": "https://en.wikipedia.org/wiki/Tyla",
-        "checked_at": "2026-11-09",
+        "checked_at": "2026-11-15",
         "career_excerpt": "2019\u2013present",
-        "precision": "year"
-      }
-    }
-  },
-  {
-    "artist_slug": "ayra-starr",
-    "career_started": 2021,
-    "gender": "woman",
-    "evidence": {
-      "biography": {
-        "url": "https://en.wikipedia.org/wiki/Ayra_Starr",
-        "checked_at": "2026-11-09",
-        "career_excerpt": "2021\u2013present",
         "precision": "year"
       }
     }
@@ -84,8 +73,21 @@
     "evidence": {
       "biography": {
         "url": "https://en.wikipedia.org/wiki/Asake",
-        "checked_at": "2026-11-09",
+        "checked_at": "2026-11-15",
         "career_excerpt": "2018\u2013present",
+        "precision": "year"
+      }
+    }
+  },
+  {
+    "artist_slug": "ayra-starr",
+    "career_started": 2021,
+    "gender": "woman",
+    "evidence": {
+      "biography": {
+        "url": "https://en.wikipedia.org/wiki/Ayra_Starr",
+        "checked_at": "2026-11-15",
+        "career_excerpt": "2021\u2013present",
         "precision": "year"
       }
     }
@@ -97,7 +99,7 @@
     "evidence": {
       "biography": {
         "url": "https://en.wikipedia.org/wiki/Davido",
-        "checked_at": "2026-11-09",
+        "checked_at": "2026-11-15",
         "career_excerpt": "2010\u2013present",
         "precision": "year"
       }
@@ -110,7 +112,7 @@
     "evidence": {
       "biography": {
         "url": "https://en.wikipedia.org/wiki/Omah_Lay",
-        "checked_at": "2026-11-09",
+        "checked_at": "2026-11-15",
         "career_excerpt": "2019\u2013present",
         "precision": "year"
       }
@@ -123,7 +125,7 @@
     "evidence": {
       "biography": {
         "url": "https://en.wikipedia.org/wiki/CKay",
-        "checked_at": "2026-11-09",
+        "checked_at": "2026-11-15",
         "career_excerpt": "2016\u2013present",
         "precision": "year"
       }
@@ -136,7 +138,7 @@
     "evidence": {
       "biography": {
         "url": "https://en.wikipedia.org/wiki/Fireboy_Dml",
-        "checked_at": "2026-11-09",
+        "checked_at": "2026-11-15",
         "career_excerpt": "2014\u2013present",
         "precision": "year"
       }
@@ -149,7 +151,7 @@
     "evidence": {
       "biography": {
         "url": "https://en.wikipedia.org/wiki/Victony",
-        "checked_at": "2026-11-09",
+        "checked_at": "2026-11-15",
         "career_excerpt": "2017\u2013present",
         "precision": "year"
       }
@@ -162,7 +164,7 @@
     "evidence": {
       "biography": {
         "url": "https://en.wikipedia.org/wiki/Moliy",
-        "checked_at": "2026-11-09",
+        "checked_at": "2026-11-15",
         "career_excerpt": "2020\u2013present",
         "precision": "year"
       }
@@ -175,7 +177,7 @@
     "evidence": {
       "biography": {
         "url": "https://en.wikipedia.org/wiki/Bnxn",
-        "checked_at": "2026-11-09",
+        "checked_at": "2026-11-15",
         "career_excerpt": "2018\u2013present",
         "precision": "year"
       }
@@ -188,7 +190,7 @@
     "evidence": {
       "biography": {
         "url": "https://en.wikipedia.org/wiki/Seyi_Vibez",
-        "checked_at": "2026-11-09",
+        "checked_at": "2026-11-15",
         "career_excerpt": "2014\u2013present",
         "precision": "year"
       }
@@ -201,7 +203,7 @@
     "evidence": {
       "biography": {
         "url": "https://en.wikipedia.org/wiki/Fola_(singer)",
-        "checked_at": "2026-11-09",
+        "checked_at": "2026-11-15",
         "career_excerpt": "2014\u2013present",
         "precision": "year"
       }
@@ -218,7 +220,9 @@
         "career_excerpt": "",
         "precision": "year"
       }
-    }
+    },
+    "lastAttemptAt": "2026-11-15",
+    "reviewStatus": "retained_last_good_no_year_found"
   },
   {
     "artist_slug": "mavo",
@@ -227,7 +231,7 @@
     "evidence": {
       "biography": {
         "url": "https://en.wikipedia.org/wiki/Mavo_(musician)",
-        "checked_at": "2026-11-09",
+        "checked_at": "2026-11-15",
         "career_excerpt": "2023\u2013present",
         "precision": "year"
       }
@@ -240,7 +244,7 @@
     "evidence": {
       "biography": {
         "url": "https://en.wikipedia.org/wiki/Kizz_Daniel",
-        "checked_at": "2026-11-09",
+        "checked_at": "2026-11-15",
         "career_excerpt": "2013\u2013present",
         "precision": "year"
       }
@@ -253,7 +257,7 @@
     "evidence": {
       "biography": {
         "url": "https://en.wikipedia.org/wiki/Odeal",
-        "checked_at": "2026-11-09",
+        "checked_at": "2026-11-15",
         "career_excerpt": "2014\u2013present",
         "precision": "year"
       }
@@ -266,7 +270,7 @@
     "evidence": {
       "biography": {
         "url": "https://en.wikipedia.org/wiki/Olamide",
-        "checked_at": "2026-11-09",
+        "checked_at": "2026-11-15",
         "career_excerpt": "2010\u2013present",
         "precision": "year"
       }
@@ -279,7 +283,7 @@
     "evidence": {
       "biography": {
         "url": "https://en.wikipedia.org/wiki/Odumodublvck",
-        "checked_at": "2026-11-09",
+        "checked_at": "2026-11-15",
         "career_excerpt": "2017\u2013present",
         "precision": "year"
       }
@@ -292,7 +296,7 @@
     "evidence": {
       "biography": {
         "url": "https://en.wikipedia.org/wiki/Sarz",
-        "checked_at": "2026-11-09",
+        "checked_at": "2026-11-15",
         "career_excerpt": "2007\u2013present",
         "precision": "year"
       }
@@ -305,7 +309,7 @@
     "evidence": {
       "biography": {
         "url": "https://en.wikipedia.org/wiki/Amaarae",
-        "checked_at": "2026-11-09",
+        "checked_at": "2026-11-15",
         "career_excerpt": "2010\u2013present",
         "precision": "year"
       }
@@ -318,7 +322,7 @@
     "evidence": {
       "biography": {
         "url": "https://en.wikipedia.org/wiki/Young_Jonn",
-        "checked_at": "2026-11-09",
+        "checked_at": "2026-11-15",
         "career_excerpt": "2010 \u2013 present",
         "precision": "year"
       }
@@ -331,7 +335,7 @@
     "evidence": {
       "biography": {
         "url": "https://en.wikipedia.org/wiki/Adekunle_Gold",
-        "checked_at": "2026-11-09",
+        "checked_at": "2026-11-15",
         "career_excerpt": "2010\u2013present",
         "precision": "year"
       }
@@ -344,7 +348,7 @@
     "evidence": {
       "biography": {
         "url": "https://en.wikipedia.org/wiki/Shallipopi",
-        "checked_at": "2026-11-09",
+        "checked_at": "2026-11-15",
         "career_excerpt": "2010\u2013present",
         "precision": "year"
       }
@@ -361,7 +365,9 @@
         "career_excerpt": "",
         "precision": "year"
       }
-    }
+    },
+    "lastAttemptAt": "2026-11-15",
+    "reviewStatus": "retained_last_good_no_year_found"
   },
   {
     "artist_slug": "fave",
@@ -370,7 +376,7 @@
     "evidence": {
       "biography": {
         "url": "https://en.wikipedia.org/wiki/Fave_(singer)",
-        "checked_at": "2026-11-09",
+        "checked_at": "2026-11-15",
         "career_excerpt": "2019\u2013Present",
         "precision": "year"
       }
@@ -383,7 +389,7 @@
     "evidence": {
       "biography": {
         "url": "https://en.wikipedia.org/wiki/Joeboy",
-        "checked_at": "2026-11-09",
+        "checked_at": "2026-11-15",
         "career_excerpt": "2017\u2013present",
         "precision": "year"
       }
@@ -396,7 +402,7 @@
     "evidence": {
       "biography": {
         "url": "https://en.wikipedia.org/wiki/Tiwa_Savage",
-        "checked_at": "2026-11-09",
+        "checked_at": "2026-11-15",
         "career_excerpt": "1996\u2013present",
         "precision": "year"
       }
@@ -409,7 +415,7 @@
     "evidence": {
       "biography": {
         "url": "https://en.wikipedia.org/wiki/Lojay",
-        "checked_at": "2026-11-09",
+        "checked_at": "2026-11-15",
         "career_excerpt": "2016\u2013present",
         "precision": "year"
       }
@@ -417,7 +423,7 @@
   },
   {
     "artist_slug": "jazzwrld",
-    "lastAttemptAt": "2026-11-09",
+    "lastAttemptAt": "2026-11-15",
     "reviewStatus": "retained_last_good",
     "lastAttemptError": "HTTP Error 404: Not Found"
   },
@@ -428,7 +434,7 @@
     "evidence": {
       "biography": {
         "url": "https://en.wikipedia.org/wiki/Darkoo",
-        "checked_at": "2026-11-09",
+        "checked_at": "2026-11-15",
         "career_excerpt": "2017\u2013present",
         "precision": "year"
       }
@@ -441,7 +447,7 @@
     "evidence": {
       "biography": {
         "url": "https://en.wikipedia.org/wiki/Black_Sherif",
-        "checked_at": "2026-11-09",
+        "checked_at": "2026-11-15",
         "career_excerpt": "2019\u2013present",
         "precision": "year"
       }
@@ -454,7 +460,7 @@
     "evidence": {
       "biography": {
         "url": "https://en.wikipedia.org/wiki/Ciza",
-        "checked_at": "2026-11-09",
+        "checked_at": "2026-11-15",
         "career_excerpt": "2019\u2013present",
         "precision": "year"
       }
@@ -467,7 +473,7 @@
     "evidence": {
       "biography": {
         "url": "https://en.wikipedia.org/wiki/Shoday",
-        "checked_at": "2026-11-09",
+        "checked_at": "2026-11-15",
         "career_excerpt": "2012\u2013present",
         "precision": "year"
       }
@@ -475,7 +481,7 @@
   },
   {
     "artist_slug": "king-promise",
-    "lastAttemptAt": "2026-11-09",
+    "lastAttemptAt": "2026-11-15",
     "reviewStatus": "retained_last_good",
     "lastAttemptError": "HTTP Error 404: Not Found"
   },
@@ -490,7 +496,9 @@
         "career_excerpt": "",
         "precision": "year"
       }
-    }
+    },
+    "lastAttemptAt": "2026-11-15",
+    "reviewStatus": "retained_last_good_no_year_found"
   },
   {
     "artist_slug": "bella-shmurda",
@@ -499,7 +507,7 @@
     "evidence": {
       "biography": {
         "url": "https://en.wikipedia.org/wiki/Bella_Shmurda",
-        "checked_at": "2026-11-09",
+        "checked_at": "2026-11-15",
         "career_excerpt": "2017\u2013present",
         "precision": "year"
       }
@@ -512,7 +520,7 @@
     "evidence": {
       "biography": {
         "url": "https://en.wikipedia.org/wiki/Blaqbonez",
-        "checked_at": "2026-11-09",
+        "checked_at": "2026-11-15",
         "career_excerpt": "2012 \u2013 present",
         "precision": "year"
       }
@@ -525,7 +533,7 @@
     "evidence": {
       "biography": {
         "url": "https://en.wikipedia.org/wiki/Khaid",
-        "checked_at": "2026-11-09",
+        "checked_at": "2026-11-15",
         "career_excerpt": "2022\u2013present",
         "precision": "year"
       }
@@ -542,7 +550,9 @@
         "career_excerpt": "",
         "precision": "year"
       }
-    }
+    },
+    "lastAttemptAt": "2026-11-15",
+    "reviewStatus": "retained_last_good_no_year_found"
   },
   {
     "artist_slug": "diamond-platnumz",
@@ -551,7 +561,7 @@
     "evidence": {
       "biography": {
         "url": "https://en.wikipedia.org/wiki/Diamond_Platnumz",
-        "checked_at": "2026-11-09",
+        "checked_at": "2026-11-15",
         "career_excerpt": "2010\u2013present",
         "precision": "year"
       }
@@ -568,7 +578,9 @@
         "career_excerpt": "",
         "precision": "year"
       }
-    }
+    },
+    "lastAttemptAt": "2026-11-15",
+    "reviewStatus": "retained_last_good_no_year_found"
   },
   {
     "artist_slug": "focalistic",
@@ -577,7 +589,7 @@
     "evidence": {
       "biography": {
         "url": "https://en.wikipedia.org/wiki/Focalistic",
-        "checked_at": "2026-11-09",
+        "checked_at": "2026-11-15",
         "career_excerpt": "2016\u2013present",
         "precision": "year"
       }
@@ -590,7 +602,7 @@
     "evidence": {
       "biography": {
         "url": "https://en.wikipedia.org/wiki/Uncle_Waffles",
-        "checked_at": "2026-11-09",
+        "checked_at": "2026-11-15",
         "career_excerpt": "2020\u2013present",
         "precision": "year"
       }
@@ -603,7 +615,7 @@
     "evidence": {
       "biography": {
         "url": "https://en.wikipedia.org/wiki/Phyno",
-        "checked_at": "2026-11-09",
+        "checked_at": "2026-11-15",
         "career_excerpt": "2003\u2013present",
         "precision": "year"
       }
@@ -616,7 +628,7 @@
     "evidence": {
       "biography": {
         "url": "https://en.wikipedia.org/wiki/Shatta_Wale",
-        "checked_at": "2026-11-09",
+        "checked_at": "2026-11-15",
         "career_excerpt": "2004\u2013present",
         "precision": "year"
       }
@@ -629,7 +641,7 @@
     "evidence": {
       "biography": {
         "url": "https://en.wikipedia.org/wiki/Stonebwoy",
-        "checked_at": "2026-11-09",
+        "checked_at": "2026-11-15",
         "career_excerpt": "2009\u2013present",
         "precision": "year"
       }
