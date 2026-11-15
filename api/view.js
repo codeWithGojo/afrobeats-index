@@ -3,6 +3,14 @@ const regionalBoards=require('../regional-boards.js');
 const {data,origin,escape:e,db}=require('../lib/shared.cjs');
 module.exports=async(req,res)=>{
  const route=String(req.query.path||'studio').replace(/^\//,'');const [type,id]=route.split('/');
+ if(type==='touring'||route==='studio/touring'){
+  const section=route==='studio/touring'?'admin':route.slice(8),[kind,slug,...extra]=section.split('/');let recordTitle='';
+  if(slug){
+   if(extra.length||!['artists','concerts','tours'].includes(kind)||!/^[-a-z0-9]{1,120}$/.test(slug))return res.status(404).send('Touring record not found');
+   try{const pub=await require('../lib/product-touring.cjs').loadPublic();const record=kind==='artists'?pub.artists.find(a=>a.slug===slug):kind==='tours'?pub.dataset.tours.find(t=>t.slug===slug):pub.dataset.concerts.find(c=>c.id===slug);if(!record)return res.status(404).send('Touring record not found');recordTitle=record.name||record.title||'Concert details';}catch{return res.status(503).send('Touring could not load. Please retry.');}
+  }
+  const html=require('../lib/touring-view.cjs').render(section,recordTitle);if(!html)return res.status(404).send('Touring page not found');res.setHeader('Content-Type','text/html; charset=utf-8');res.setHeader('Cache-Control',section==='admin'?'no-store':'public,max-age=0,s-maxage=60');return res.send(html);
+ }
  let title='Afri Index · Explore',description='Your board, music receipts and the stories behind the chart.',image=origin+'/api/card?artist='+data.artists[0].slug;
  try{
   if(type==='boards'){const titles={'womens-current-25':'Women’s Current 25',veterans:'Veterans', 'featured-on':'Featured-on index',producers:'Producer credits index','local-vs-international':'Local vs international',...Object.fromEntries(regionalBoards.definitions.map(board=>[board.id,board.name]))};if(id&&!Object.hasOwn(titles,id))return res.status(404).send('Board not found');title=(titles[id]||'Public boards')+' · Afri Index';description='Published Current scores, specialist views and source-linked evidence.';}

@@ -3,6 +3,10 @@
   "trailingSlash": false,
   "rewrites": [
     {
+      "source": "/touring/:path*",
+      "destination": "/api/view?path=touring/:path*"
+    },
+    {
       "source": "/api/watch-digest",
       "destination": "/api/product?service=watch&action=digest"
     },
