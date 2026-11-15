@@ -7,3 +7,10 @@ data/quiz/research-cache/
 __pycache__/
 
 data/streaming-cache/
+
+# Generated touring pages and browser review evidence
+touring.html
+touring/
+data/touring-public.json
+data/touring-import-template.csv
+.impeccable/review/

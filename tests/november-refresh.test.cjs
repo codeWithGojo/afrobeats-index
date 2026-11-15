@@ -45,7 +45,9 @@ test('all ranking pages use the edition date and Method retains the actual publi
  const method=fs.readFileSync('method.html','utf8');assert.match(method,/23 Oct 2026/);assert.match(method,/29 Oct 2026/);assert.match(method,/Retained evidence/);
  const home=fs.readFileSync('index.html','utf8');assert.ok(!home.includes('Checking signup availability'));assert.ok(!home.includes('section-updated'));assert.match(home,/footer-more/);
  const calendar=require('../data/upcoming-releases.json');
- for(const release of calendar.releases){assert.ok(fs.readFileSync('upcoming.html','utf8').includes(`id="release-${release.id}"`));}
+ const upcoming=require('../upcoming-releases.js').upcoming(calendar,new Date());
+ const html=fs.readFileSync('upcoming.html','utf8');
+ assert.deepEqual([...html.matchAll(/<article id="release-([^"]+)"/g)].map(match=>match[1]),upcoming.map(release=>release.id));
 });
 test('sponsor offers default off and are recorded separately without changing subscription suppression',async()=>{
  const handler=require('../lib/newsletter-public.cjs').handlePublicNewsletter,old=global.fetch,key=process.env.BUTTONDOWN_API_KEY,calls=[];

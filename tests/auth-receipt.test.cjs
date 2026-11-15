@@ -5,7 +5,7 @@ const vm = require('node:vm');
 const {webcrypto} = require('node:crypto');
 
 const read = path => fs.readFileSync(path, 'utf8');
-const accountSource = read('account-client.js').replace(/^import .*?;\n/, '');
+const accountSource = read('account-client.js').replace(/^import .*?;\r?\n/, '');
 
 function fixture(path, session = null) {
   const url = new URL(path, 'https://afrobeats-index.vercel.app');

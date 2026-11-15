@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "cutoff": "2026-11-14",
+  "updatedAt": "2026-11-14T00:00:00Z",
+  "coverage": "Curated concert history in Nigeria, Ghana, the UK and US; not an exhaustive tour catalogue. No financial reports approved. Festival totals are never assigned to performers.",
+  "sources": [
+    {
+      "id": "london-stadium-2023",
+      "publisher": "London Stadium",
+      "url": "https://www.london-stadium.com/news/2023/august/timelapse-video-showcases-london-stadiums-incredible-summer-transformation.html",
+      "publishedAt": "2023-08-18",
+      "reuse": "public-facts",
+      "permissionEvidence": "Independently recorded event date, venue and performer from the venue recap. No prose, images, proprietary dataset or financial totals copied."
+    },
+    {
+      "id": "global-citizen-accra-2022",
+      "publisher": "Global Citizen",
+      "url": "https://www.globalcitizen.org/en/content/best-live-music-moments-global-citizen-accra-nyc/",
+      "publishedAt": "2022-09-27",
+      "reuse": "public-facts",
+      "permissionEvidence": "Independently recorded event occurrence, date, location and participating existing artists from organizer recap. No text, images or financial totals republished."
+    },
+    {
+      "id": "global-citizen-live-2021",
+      "publisher": "Global Citizen",
+      "url": "https://www.globalcitizen.org/en/content/global-citizen-live-best-photos-recap/",
+      "publishedAt": null,
+      "reuse": "public-facts",
+      "permissionEvidence": "Independent event facts from organizer captions. Lagos performance date is September 18, not the September 25 broadcast. No photographs or article text copied.",
+      "accessedAt": "2026-11-14",
+      "dateNote": "Publication date was not exposed in the retrieved article; performance dates are explicit organizer captions."
+    }
+  ],
+  "tours": [],
+  "venues": [
+    {
+      "id": "london-stadium",
+      "name": "London Stadium",
+      "city": "London",
+      "country": "United Kingdom",
+      "region": "Europe"
+    },
+    {
+      "id": "black-star-square",
+      "name": "Black Star Square",
+      "city": "Accra",
+      "country": "Ghana",
+      "region": "Africa",
+      "subregion": "West Africa"
+    },
+    {
+      "id": "new-afrika-shrine",
+      "name": "New Afrika Shrine",
+      "city": "Lagos",
+      "country": "Nigeria",
+      "region": "Africa",
+      "subregion": "West Africa"
+    },
+    {
+      "id": "central-park-great-lawn",
+      "name": "Great Lawn, Central Park",
+      "city": "New York",
+      "country": "United States",
+      "region": "North America"
+    }
+  ],
+  "concerts": [
+    {
+      "id": "burna-boy-london-2023",
+      "title": "Burna Boy \u00b7 Love, Damini",
+      "venueId": "london-stadium",
+      "date": "2023-06-03",
+      "artistIds": [
+        "burna-boy"
+      ],
+      "billing": "headline",
+      "sourceId": "london-stadium-2023",
+      "tourId": null,
+      "performance": "evening",
+      "eventStatus": "completed",
+      "status": "unreported",
+      "verifiedAt": "2026-11-14",
+      "capacity": null,
+      "attendance": null,
+      "sellout": null
+    },
+    {
+      "id": "global-citizen-accra-2022",
+      "title": "Global Citizen Festival: Accra",
+      "venueId": "black-star-square",
+      "date": "2022-09-24",
+      "artistIds": [
+        "tems",
+        "stonebwoy",
+        "uncle-waffles"
+      ],
+      "billing": "festival",
+      "sourceId": "global-citizen-accra-2022",
+      "tourId": null,
+      "performance": "evening",
+      "eventStatus": "completed",
+      "status": "unreported",
+      "verifiedAt": "2026-11-14",
+      "capacity": null,
+      "attendance": null,
+      "sellout": null
+    },
+    {
+      "id": "global-citizen-lagos-2021",
+      "title": "Global Citizen Live: Lagos",
+      "venueId": "new-afrika-shrine",
+      "date": "2021-09-18",
+      "artistIds": [
+        "davido",
+        "tiwa-savage"
+      ],
+      "billing": "festival",
+      "sourceId": "global-citizen-live-2021",
+      "tourId": null,
+      "performance": "evening",
+      "eventStatus": "completed",
+      "status": "unreported",
+      "verifiedAt": "2026-11-14",
+      "capacity": null,
+      "attendance": null,
+      "sellout": null
+    },
+    {
+      "id": "global-citizen-new-york-2021",
+      "title": "Global Citizen Live: New York",
+      "venueId": "central-park-great-lawn",
+      "date": "2021-09-25",
+      "artistIds": [
+        "burna-boy"
+      ],
+      "billing": "festival",
+      "sourceId": "global-citizen-live-2021",
+      "tourId": null,
+      "performance": "evening",
+      "eventStatus": "completed",
+      "status": "unreported",
+      "verifiedAt": "2026-11-14",
+      "capacity": null,
+      "attendance": null,
+      "sellout": null
+    }
+  ],
+  "reports": [],
+  "streamingSnapshots": [],
+  "rankingSnapshots": [],
+  "records": [],
+  "articles": []
+}
