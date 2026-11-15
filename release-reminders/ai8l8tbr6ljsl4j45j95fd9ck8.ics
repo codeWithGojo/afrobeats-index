@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Afri Index//Upcoming Releases//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ai8l8tbr6ljsl4j45j95fd9ck8@afrobeats-index.vercel.app
+DTSTAMP:20261115T080701Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:Rema — E-Mortal Boy
+DESCRIPTION:Scheduled ep release listed in Release-Cal. Dates may change.\n
+ Rema will be dropping his fifth EP "E-Mortal Boy" on November 20. The EP i
+ s set to include the lead singles "TEA" & "Oh No" with reported features f
+ rom Wizkid\, BNYX\, Kah-Lo\, London.
+URL:https://afrobeats-index.vercel.app/upcoming
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Rema — E-Mortal Boy is scheduled for tomorrow.
+END:VALARM
+END:VEVENT
+END:VCALENDAR

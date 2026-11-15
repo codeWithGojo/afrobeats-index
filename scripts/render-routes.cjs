@@ -34,7 +34,7 @@ home=home.replace('</head>','<link rel="stylesheet" href="/artist-desk.css"></he
 home=home.replace('href="#current"','href="#main-content"').replace('Skip to the chart','Skip to content').replace('<main id="main-content">','<main id="main-content" tabindex="-1">');
 home=home.replace('href="?tab=method"','href="/method"');
 // Keep only scripts needed by the homepage; no hidden chart database.
-home=home.replace(/<script\b[^>]*src="[^"]*"[^>]*><\/script>/g,'').replace('</body>','<script src="/theme-init.js"></script><script src="/refinements.js" defer></script><script src="/discovery.js" defer></script><script src="/route-client.js" defer></script><script src="/artist-desk.js" defer></script></body>');fs.writeFileSync('index.html',home.replace(/[ \t]+$/gm,''));
+home=home.replace(/<script\b[^>]*src="[^"]*"[^>]*><\/script>/g,'').replace('</body>','<script src="/theme-init.js"></script><script src="/refinements.js" defer></script><script src="/discovery.js" defer></script><script src="/route-client.js" defer></script><script src="/artist-desk.js" defer></script><script defer src="/_vercel/insights/script.js"></script></body>');fs.writeFileSync('index.html',home.replace(/[ \t]+$/gm,''));
 // Retire the old file as well as redirecting its URL on Vercel.
 fs.writeFileSync('underground.html','<!doctype html><meta charset="utf-8"><meta http-equiv="refresh" content="0;url=/watch"><link rel="canonical" href="https://afrobeats-index.vercel.app/watch"><title>Artists to Watch</title><a href="/watch">Continue to Artists to Watch</a>');
 console.log('Rendered dedicated routes, SSR evidence and lean homepage.');
