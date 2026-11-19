@@ -1,6 +1,15 @@
 /* Shared controls: palette, account navigation and efficient entrance motion. */
 (() => {
   const init = () => {
+    function failedPortrait(img){
+      if(!img.matches('img')||img.dataset.monogram||!img.closest('.orbit-card,.hero-artist,.current-avatar,.artist-desk-results a,.publication-chart-list a'))return;
+      const name=img.alt||img.closest('.orbit-card')?.querySelector('b')?.textContent||img.closest('a')?.dataset.artist||'A/';
+      const initials=name.trim().split(/\s+/).slice(0,2).map(word=>word[0]).join('').toUpperCase().replace(/[<>&"']/g,'');
+      img.dataset.monogram='true';
+      img.src='data:image/svg+xml,'+encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80"><rect width="80" height="80" fill="#343630"/><text x="40" y="51" text-anchor="middle" font-family="sans-serif" font-size="32" fill="#fff">'+initials+'</text></svg>');
+    }
+    document.addEventListener('error',event=>{if(event.target instanceof HTMLImageElement)failedPortrait(event.target)},true);
+    document.querySelectorAll('img').forEach(img=>{if(img.complete&&!img.naturalWidth)failedPortrait(img)});
     const toggle = document.getElementById('theme-toggle');
     const sync = () => {
       const light = document.documentElement.dataset.theme === 'light';
@@ -32,6 +41,8 @@
       if(path===target||path.startsWith(target+'/'))link.setAttribute('aria-current','page');
     });
     import('/account-nav.js').catch(()=>{});
+    // The homepage has its own chart motion and no sortable React list.
+    if(document.querySelector('.orbit'))return;
     const script=document.createElement('script');script.src='/assets/glass-motion.js';script.defer=true;document.head.append(script);
   };
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});else init();

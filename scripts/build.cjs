@@ -24,6 +24,8 @@ buildSync({entryPoints:['account-client.js'],bundle:true,format:'esm',target:'es
 
 buildSync({entryPoints:['scripts/scenario-client.js'],bundle:true,format:'iife',outfile:'assets/board-engine.js',minify:true});
 
+buildSync({entryPoints:["scripts/chart-orbit.js"],bundle:true,format:"iife",target:"es2020",outfile:"assets/chart-orbit.js",minify:true});
+
 // Shared typed Motion components are bundled for the existing vanilla pages.
 buildSync({entryPoints:["src/motion/index.tsx"],bundle:true,format:"iife",target:"es2022",outfile:"assets/motion.js",minify:true,jsx:"automatic"});
 

@@ -13,7 +13,7 @@ const preview = `<section class="upcoming-preview" aria-labelledby="upcoming-pre
 let home = fs.readFileSync('index.html','utf8');
 home = home.replace('<section class="artist-desk"',preview+'<section class="artist-desk"').replace('</head>',assets+'</head>');
 fs.writeFileSync('index.html',home);
-fs.rmSync('release-reminders',{recursive:true,force:true});
+// Keep published reminder URLs available after their scheduled date passes.
 fs.mkdirSync('release-reminders',{recursive:true});
 for (const release of snapshot.releases) fs.writeFileSync(`release-reminders/${release.id}.ics`,model.ics(release,snapshot.checkedAt));
 let sitemapXml = fs.readFileSync('sitemap.xml','utf8');

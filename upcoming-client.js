@@ -50,9 +50,16 @@
       if (feedback) feedback.textContent = 'Showing the saved calendar. Reconnect and reload for the latest update.';
     }
   }
+  function refreshLabels() {
+    for (const label of list.querySelectorAll('.release-countdown')) {
+      const date = label.closest('article')?.querySelector('time')?.dateTime;
+      if (date) label.textContent = date < model.dateKey() ? 'Scheduled date passed' : model.countdown(date);
+    }
+  }
+  refreshLabels();
   load();
   // Refresh after a background tab is reopened and across the WAT date boundary.
-  document.addEventListener('visibilitychange',()=>{if(!document.hidden)load();});
+  document.addEventListener('visibilitychange',()=>{if(!document.hidden){refreshLabels();if(snapshot)render();load();}});
   let day = model.dateKey();
-  setInterval(()=>{const current=model.dateKey();if(snapshot&&!document.hidden&&day!==current){day=current;render();}},60000);
+  setInterval(()=>{const current=model.dateKey();if(!document.hidden&&day!==current){day=current;if(snapshot)render();else refreshLabels();}},60000);
 })();

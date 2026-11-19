@@ -14,6 +14,9 @@ function discussion(){return `<p class="index-eyebrow">BEHIND THE POSITIONS</p><
 for(const file of fs.readdirSync('.').filter(x=>x.endsWith('.html'))){
  let html=fs.readFileSync(file,'utf8');
  if(!html.includes('class="app-topbar"'))continue;
+ if(!html.includes('src="/reader-tools.js"')&&!html.includes('src="reader-tools.js"')){
+   html=html.replace('</head>','<link rel="stylesheet" href="/reader-tools.css"><script defer src="/reader-model.js"></script><script defer src="/reader-tools.js"></script></head>');
+ }
  if(!html.includes('href="/publication-visuals.css"'))html=html.replace('</head>','<link rel="stylesheet" href="/publication-visuals.css"></head>');
  if(!html.includes('src="/publication-motion.js"'))html=html.replace('</head>','<script src="/publication-motion.js" defer></script></head>');
  if(file==='discussion.html')html=replace(html,'discuss',discussion());
