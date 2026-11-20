@@ -33,7 +33,7 @@
         url: 'https://music.apple.com' + path
       };
     }
-    if (provider === 'audiomack' && /^[a-z0-9-]+\/[a-z0-9-]+$/.test(id)) {
+    if (provider === 'audiomack' && /^[a-z0-9_-]+\/[a-z0-9-]+$/.test(id)) {
       const [artist, song] = id.split('/');
       const path = '/' + artist + '/song/' + song;
       return {
@@ -47,9 +47,10 @@
 
   function trigger(media, title, label = 'Play', context = title) {
     const source = sources(media);
-    if (!source) return '';
-    if (label === 'Play' && media.provider === 'apple') label = 'Play preview';
-    return `<a class="music-play" href="${source.url}" target="_blank" rel="noopener noreferrer" data-music-provider="${media.provider}" data-music-id="${media.id}" data-music-title="${escape(title)}" aria-label="${escape(label === 'Play teaser' ? 'Play teaser for ' + context : label === 'Play preview' ? 'Play preview of ' + title : 'Play ' + title)}"><span aria-hidden="true">▶</span> ${escape(label)}</a>`;
+    if (!source) return '<small class="listen-unavailable">Listening link awaiting verification</small>';
+    const outbound=label==='Play'?` <a class="listen-direct" href="${source.url}" target="_blank" rel="noopener noreferrer">Open in ${source.label}</a>`:'';
+    if (label === 'Play' && media.provider === 'apple') label = 'Preview';
+    return `<a class="music-play" href="${source.url}" target="_blank" rel="noopener noreferrer" data-music-provider="${media.provider}" data-music-id="${media.id}" data-music-title="${escape(title)}" aria-label="${escape(label === 'Play teaser' ? 'Play teaser for ' + context : label === 'Preview' ? 'Play preview of ' + title : 'Play ' + title)}"><span aria-hidden="true">▶</span> ${escape(label)}</a>${outbound}`;
   }
 
   function streamTrigger(row) {

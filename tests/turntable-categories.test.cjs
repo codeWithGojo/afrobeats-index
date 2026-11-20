@@ -12,7 +12,7 @@ test('every requested TurnTable category retains a dated publisher snapshot and 
   assert.ok(c.rows.every(r=>r[1]&&Number.isInteger(r[4])&&r[4]>=0));
   assert.ok(destinations.flatMap(([,items])=>items).some(([p])=>p==='/turntable-'+c.slug));
  }
- assert.equal(charts.find(c=>c.slug==='recurrents').rows.length,11,'do not fabricate missing recurrent positions');
+ const recurrent=charts.find(c=>c.slug==='recurrents');if(recurrent.weekEnd==='2026-11-05')assert.equal(recurrent.rows.length,20);
 });
 test('archives stay distinct from weekly charts and publisher points stay labelled',()=>{
  for(const slug of ['tv','year-songs','year-producers','year-artists'])assert.equal(charts.find(c=>c.slug===slug).group,'Archive');

@@ -129,7 +129,7 @@
     receiptState.source=id;document.querySelectorAll("[data-receipt-source]").forEach(button=>{const selected=button.dataset.receiptSource===id;button.classList.toggle("is-selected",selected);button.setAttribute("aria-pressed",String(selected));});
     document.querySelectorAll('[data-receipt-range]').forEach(button=>{button.disabled=id!=="spotify";});
     const period=document.querySelector('.range-picker')?.closest('fieldset');if(period)period.hidden=id!=="spotify";
-    const themeLegend=document.querySelector('.receipt-theme-picker')?.closest('fieldset')?.querySelector('legend');if(themeLegend)themeLegend.textContent=(id==="spotify"?"3.":"2.")+" Choose your receipt theme";
+    const themeLegend=document.querySelector('.receipt-theme-picker')?.closest('fieldset')?.querySelector('legend');if(themeLegend)themeLegend.textContent=(id==="apple"?"2.":"3.")+" Choose your receipt theme";
     renderConnectPanel();ui.manual.hidden=id!=="manual";setStatus(id==="manual"?"Pick 5–10 artists to make your receipt.":id==="apple"&&!CONFIG.appleDeveloperToken&&!CONFIG.appleDeveloperTokenEndpoint?"Apple Music is coming soon. Use your own picks or import listening history.":`Ready for ${SOURCE_LABELS[id]}.`);
   }
   function renderConnectPanel(){
@@ -165,15 +165,15 @@
   }
 
   function renderArtistSearch(query=""){
-    const q=normalize(query);if(!q){ui.results.replaceChildren();return;}
+    const q=normalize(query);
     const selected=new Set(receiptState.selected.map(a=>a.slug));
     const hits=artistDatabase().filter(a=>!selected.has(a.slug)&&normalize(a.name).includes(q)).slice(0,8);
-    ui.results.replaceChildren(...hits.map(a=>{const button=document.createElement("button");button.type="button";button.role="option";button.textContent=a.name;button.addEventListener("click",()=>addArtist(a));return button;}));
+    ui.results.replaceChildren(...hits.map(a=>{const button=document.createElement("button");button.type="button";button.textContent=a.name;button.addEventListener("click",()=>addArtist(a));return button;}));
   }
   function addArtist(artist){if(receiptState.source!=="manual")setSource("manual");if(receiptState.selected.length>=10){setStatus("A receipt can include up to 10 manually selected artists.","error");return;}if(!receiptState.selected.some(a=>a.slug===artist.slug))receiptState.selected.push(artist);ui.artistSearch.value="";renderArtistSearch();renderSelected();}
   function renderSelected(){
     invalidateReceipt();
-    ui.selected.replaceChildren(...receiptState.selected.map(a=>{const token=document.createElement("span");token.className="artist-token";token.append(document.createTextNode(a.name));const remove=document.createElement("button");remove.type="button";remove.setAttribute("aria-label",`Remove ${a.name}`);remove.textContent="×";remove.addEventListener("click",()=>{receiptState.selected=receiptState.selected.filter(x=>x.slug!==a.slug);renderSelected();});token.append(remove);return token;}));ui.manualCount.textContent=`${receiptState.selected.length} / 10`;
+    ui.selected.replaceChildren(...receiptState.selected.map(a=>{const token=document.createElement("span");token.className="artist-token";token.append(document.createTextNode(a.name));const remove=document.createElement("button");remove.type="button";remove.setAttribute("aria-label",`Remove ${a.name}`);remove.textContent="×";remove.addEventListener("click",()=>{receiptState.selected=receiptState.selected.filter(x=>x.slug!==a.slug);renderSelected();});token.append(remove);return token;}));renderArtistSearch(ui.artistSearch.value);ui.manualCount.textContent=receiptState.selected.length<5?`${5-receiptState.selected.length} more to generate`:`${receiptState.selected.length} of 10 picks`;
   }
 
   function parseDelimitedLine(line){
@@ -213,7 +213,7 @@
     receiptState.issuedAt=new Date().toISOString();
     receiptState.snapshot={tracks,artists};
     renderDiscoveries(tracks,artists);
-    drawReceipt(tracks,artists);ui.canvas.toBlob(blob=>{receiptState.blob=blob;[ui.download,ui.share,ui.tweet,ui.print].forEach(button=>button.disabled=false);window.dispatchEvent(new CustomEvent("afri:receipt-generated",{detail:{tracks,artists,...receiptMetadata()}}));},"image/png");
+    drawReceipt(tracks,artists);ui.canvas.toBlob(blob=>{receiptState.blob=blob;[ui.download,ui.share,ui.tweet,ui.print].forEach(button=>button.disabled=false);document.getElementById("receipt-brief-link")?.removeAttribute("hidden");ui.download.focus({preventScroll:true});ui.download.scrollIntoView({block:"center"});window.dispatchEvent(new CustomEvent("afri:receipt-generated",{detail:{tracks,artists,...receiptMetadata()}}));},"image/png");
     setStatus(`Receipt ready with ${tracks.length} track${tracks.length===1?"":"s"} and ${artists.length} artist${artists.length===1?"":"s"}.`,"success");ui.outputNote.textContent=receiptState.annual?`Imported ${receiptState.annual.year} · African listening events`:`${SOURCE_LABELS[receiptState.source]} · ${receiptState.source==="manual"?"Your selection":receiptState.source==="apple"?"Recent listening":RANGE_LABELS[receiptState.range]} · African matches only`;
   }
   function receiptMetadata(){const a=receiptState.annual;return {source:a?'import':receiptState.source,range:a?String(a.year):receiptState.range,theme:receiptState.theme,issuedAt:receiptState.issuedAt,...(a?{annual:{year:a.year,events:a.events,minutes:a.minutes,first:a.first,last:a.last}}:{})};}
@@ -244,13 +244,13 @@
     ctx.font="900 32px Arial";const logoText="AFR / INDEX",logoWidth=ctx.measureText(logoText).width,logoStart=(width-logoWidth-52)/2;ctx.fillStyle=palette.accent;ctx.beginPath();if(ctx.roundRect)ctx.roundRect(logoStart,48,40,40,8);else ctx.rect(logoStart,48,40,40);ctx.fill();ctx.textAlign="center";ctx.fillStyle=palette.paper;ctx.font="900 27px Arial";ctx.fillText("A/",logoStart+20,53);ctx.textAlign="left";ctx.fillStyle=palette.ink;ctx.font="900 32px Arial";ctx.fillText(logoText,logoStart+52,52);ctx.textAlign="center";ctx.fillStyle=palette.accent;
     ctx.font="700 18px monospace";ctx.fillText("MUSIC RECEIPT",width/2,108);ctx.fillStyle=palette.ink;
     ctx.font="15px monospace";ctx.fillText(receiptState.annual?`IMPORTED HISTORY · ${receiptState.annual.year}`:`${SOURCE_LABELS[receiptState.source].toUpperCase()} · ${receiptState.source==="apple"?"RECENT LISTENING":receiptState.source==="manual"?"YOUR SELECTION":RANGE_LABELS[receiptState.range].toUpperCase()}`,width/2,148);
-    dash(ctx,48,192,width-48,192);ctx.textAlign="left";ctx.font="700 16px monospace";ctx.fillText("NO.  TRACK / ARTIST",50,217);ctx.textAlign="right";ctx.fillText(receiptState.annual?"EVENTS":"PLAYS / AFR",width-50,217);dash(ctx,48,252,width-48,252);let y=278;
+    dash(ctx,48,192,width-48,192);ctx.textAlign="left";ctx.font="700 16px monospace";ctx.fillText("NO.  TRACK / ARTIST",50,217);ctx.textAlign="right";ctx.fillText(receiptState.annual?"EVENTS":tracks.some(t=>t.plays!=null)?"PLAYS / PICKS":"PICKS",width-50,217);dash(ctx,48,252,width-48,252);let y=278;
     tracks.forEach((track,index)=>{
       const names=track.artists?.length?track.artists:[track.artist];const artist=names.map(knownArtist).find(Boolean);
       ctx.textAlign="left";ctx.fillStyle=palette.ink;ctx.font="700 18px monospace";ctx.fillText(String(index+1).padStart(2,"0"),50,y);drawEllipsis(ctx,String(track.title).toUpperCase(),95,y,420);
       ctx.font="16px monospace";ctx.fillStyle=palette.muted;drawEllipsis(ctx,names.map(artistLabel).join(", "),95,y+27,420);
       ctx.font="14px monospace";drawEllipsis(ctx,insights.genres(artist).join(" · ")||"Genre unclassified",95,y+53,420);
-      ctx.fillStyle=palette.ink;ctx.textAlign="right";ctx.font="700 16px monospace";ctx.fillText(track.plays?compactNumber(track.plays):`AFR ${(index+1).toFixed(2)}`,width-50,y+8);y+=rowHeight;
+      ctx.fillStyle=palette.ink;ctx.textAlign="right";ctx.font="700 16px monospace";ctx.fillText(track.plays!=null?compactNumber(track.plays):`Pick ${index+1}`,width-50,y+8);y+=rowHeight;
     });
     dash(ctx,48,y,width-48,y);y+=26;ctx.textAlign="left";ctx.fillStyle=palette.accent;ctx.font="700 17px monospace";ctx.fillText("TOP AFRICAN ARTISTS",50,y);y+=38;
     artists.slice(0,5).forEach((artist,index)=>{ctx.fillStyle=palette.ink;ctx.font="17px monospace";drawEllipsis(ctx,`${index+1}. ${artistLabel(artist.name)}`,50,y,620);y+=46;});
@@ -327,7 +327,7 @@
     const appleButton=document.querySelector('[data-receipt-source="apple"] span');
     if(appleButton&&!CONFIG.appleDeveloperToken&&!CONFIG.appleDeveloperTokenEndpoint)appleButton.textContent='Connection coming soon';
     const requestedSource=new URLSearchParams(location.search).get('source');
-    setSource(requestedSource==='spotify'?'spotify':'manual');drawReceipt([],[]);handleSpotifyCallback();
+    renderArtistSearch();setSource(requestedSource==='spotify'?'spotify':'manual');drawReceipt([],[]);handleSpotifyCallback();
   }
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",bind);else bind();
 })();

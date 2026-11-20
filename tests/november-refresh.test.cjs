@@ -42,7 +42,7 @@ test('all ranking pages use the edition date and Method retains the actual publi
   const meta=[...html.matchAll(/<meta (?:name="(?:description|twitter:description)"|property="og:description") content="([^"]*)">/g)].map(x=>x[1]);
   assert.equal(meta.length,3,page);assert.equal(new Set(meta).size,1,page);
  }
- const method=fs.readFileSync('method.html','utf8');assert.match(method,/23 Oct 2026/);assert.match(method,/29 Oct 2026/);assert.match(method,/Retained evidence/);
+ const method=fs.readFileSync('method.html','utf8');const songs=require('../data/nigeria-top100.json');for(const period of [songs.weekStart,songs.weekEnd])assert.ok(method.includes(require('../trust-model.js').formatDate(period)));assert.match(method,/Retained evidence/);
  const home=fs.readFileSync('index.html','utf8');assert.ok(!home.includes('Checking signup availability'));assert.ok(!home.includes('section-updated'));assert.match(home,/footer-more/);
  const calendar=require('../data/upcoming-releases.json');
  const upcoming=require('../upcoming-releases.js').upcoming(calendar,new Date());

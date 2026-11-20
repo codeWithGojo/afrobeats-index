@@ -83,7 +83,7 @@ function applyTextSize(){document.documentElement.dataset.readerSize=size;docume
 }
 let lastPage='';
 function remember(){const current=page();if(!current||lastPage===current.path+'|'+current.title)return;lastPage=current.path+'|'+current.title;store.set('recent',M.upsert(list('recent'),current,20));}
-function refreshToolbar(){if(document.querySelector('.orbit'))return;const main=$('#main-content')||$('#studio')||$('main');if(!main)return;let bar=$('.reading-toolbar');if(!bar){bar=document.createElement('div');bar.className='reading-toolbar';bar.setAttribute('aria-label','Page reading tools');bar.innerHTML=`<span id="reader-time"></span><div><button type="button" data-reader-save>${icon('save')}<span>Save page</span></button><button type="button" data-reader-share>${icon('share')}<span>Share page</span></button><button type="button" data-reader-copy>${icon('copy')}<span>Copy link</span></button><button type="button" data-reader-open>${icon('book')}<span>Reading tools</span></button></div>`;main.prepend(bar);}bar.querySelector('[data-reader-save]').onclick=savePage;bar.querySelector('[data-reader-share]').onclick=sharePage;bar.querySelector('[data-reader-copy]').onclick=()=>copy(canonicalPage());bar.querySelector('[data-reader-open]').onclick=()=>openTools();
+function refreshToolbar(){if(document.querySelector('.orbit'))return;const main=$('#main-content')||$('#studio')||$('main');if(!main)return;let bar=$('.reading-toolbar');if(!bar){bar=document.createElement('div');bar.className='reading-toolbar';bar.setAttribute('aria-label','Page reading tools');bar.innerHTML=`<details class="reading-menu"><summary>Page tools</summary><span id="reader-time"></span><div><button type="button" data-reader-save>${icon('save')}<span>Save page</span></button><button type="button" data-reader-share>${icon('share')}<span>Share page</span></button><button type="button" data-reader-copy>${icon('copy')}<span>Copy link</span></button><button type="button" data-reader-open>${icon('book')}<span>Reading tools</span></button></div></details>`;main.prepend(bar);}bar.querySelector('[data-reader-save]').onclick=savePage;bar.querySelector('[data-reader-share]').onclick=sharePage;bar.querySelector('[data-reader-copy]').onclick=()=>copy(canonicalPage());bar.querySelector('[data-reader-open]').onclick=()=>openTools();
  const text=activeRoot()?.innerText||'',label=M.readingMinutes(text)+' '+translate('min read');if($('#reader-time').textContent!==label)$('#reader-time').textContent=label;
  syncSaved();remember();
 }
@@ -99,30 +99,13 @@ function enhanceDrafts(root){root.querySelectorAll('textarea,input[type=text],in
 function enhanceSecrets(root){root.querySelectorAll('input[type=password],input[autocomplete=one-time-code]').forEach(input=>{if(secretBound.has(input))return;secretBound.add(input);input.nextElementSibling?.classList.contains('reader-visibility')&&input.nextElementSibling.remove();input.dataset.readerSecretBound='';const code=input.autocomplete==='one-time-code';if(code)input.type='password';const button=document.createElement('button');button.type='button';button.className='reader-visibility';button.textContent=translate(code?'Show code':'Show password');button.setAttribute('aria-pressed','false');button.onclick=()=>{const visible=input.type==='password';input.type=visible?'text':'password';button.textContent=translate(code?(visible?'Hide code':'Show code'):(visible?'Hide password':'Show password'));button.setAttribute('aria-pressed',String(visible));};input.insertAdjacentElement('afterend',button);});}
 function enhanceCopy(root){root.querySelectorAll('pre').forEach(pre=>{if(copyBound.has(pre))return;copyBound.add(pre);pre.previousElementSibling?.classList.contains('reader-copy-code')&&pre.previousElementSibling.remove();pre.dataset.readerCopyBound='';const button=document.createElement('button');button.type='button';button.className='reader-copy-code';button.textContent=translate('Copy');button.onclick=()=>copy(pre.textContent);pre.insertAdjacentElement('beforebegin',button);});}
 function enhanceTables(root){root.querySelectorAll('table').forEach((table,n)=>{
+ if(table.closest('[data-turntable-chart],.artist-history'))return;
  if(tableState.has(table)){tableState.get(table)();return;}if(!table.tHead||!table.tBodies.length)return;table.previousElementSibling?.classList.contains('reader-table-tools')&&table.previousElementSibling.remove();table.dataset.readerTableBound='';
  let body=table.tBodies[0],original=[...body.rows];if(!original.length)return;
  const titles=[...table.tHead.rows[0].cells].map(th=>th.textContent.trim().replace(/ ↕$/,'')),controls=document.createElement('div');controls.className='reader-table-tools';controls.innerHTML=`<label>${translate('Search this table')}<input type="search" placeholder="Filter rows…" aria-label="Search this table"></label><label>Sort column<select><option value="">Original order</option>${titles.map((title,i)=>`<option value="${i}">${e(title)}</option>`).join('')}</select></label><button type="button" aria-label="Reverse table sort direction">Ascending ↑</button><button type="button" data-reset-table>Reset</button><span role="status"></span>`;table.insertAdjacentElement('beforebegin',controls);
  const search=controls.querySelector('input'),select=controls.querySelector('select'),direction=controls.querySelector('button'),count=controls.querySelector('[role=status]');let descending=false;
- const rankColumn=titles.findIndex(title=>/^(rank|position|pos\.?|#)$/i.test(title));
- const publishedRanks=new WeakMap();
- function rankCell(row){
-   const cell=row.cells[rankColumn];
-   return cell&&!cell.children.length&&/^#?\d+$/.test(cell.textContent.trim())?cell:null;
- }
  function render(){
-   for(const row of original){
-     const cell=rankCell(row);if(!cell)continue;
-     if(!publishedRanks.has(cell))publishedRanks.set(cell,cell.textContent);
-     cell.textContent=publishedRanks.get(cell);
-   }
-   const q=M.normalize(search.value),column=select.value===''?null:Number(select.value);const ordered=column===null?original:[...original].sort((a,b)=>(descending?-1:1)*M.compare(a.cells[column]?.textContent,b.cells[column]?.textContent)||original.indexOf(a)-original.indexOf(b));let position=0;
-   ordered.forEach(row=>{
-     row.hidden=!!q&&!M.normalize(row.textContent).includes(q);
-     const cell=rankCell(row);
-     if(!row.hidden){position++;if(cell&&column!==null){cell.textContent=String(position);cell.title='Published rank '+publishedRanks.get(cell);}}
-     if(cell&&column===null)cell.removeAttribute('title');
-     body.append(row);
-   });count.textContent=ordered.filter(row=>!row.hidden).length+' of '+original.length+' rows';[...table.tHead.rows[0].cells].forEach((th,i)=>th.setAttribute('aria-sort',column===i?(descending?'descending':'ascending'):'none'));direction.textContent=descending?'Descending ↓':'Ascending ↑';}
+   const q=M.normalize(search.value),column=select.value===''?null:Number(select.value);const ordered=column===null?original:[...original].sort((a,b)=>(descending?-1:1)*M.compare(a.cells[column]?.textContent,b.cells[column]?.textContent)||original.indexOf(a)-original.indexOf(b));ordered.forEach(row=>{row.hidden=!!q&&!M.normalize(row.textContent).includes(q);body.append(row);});count.textContent=ordered.filter(row=>!row.hidden).length+' of '+original.length+' rows';[...table.tHead.rows[0].cells].forEach((th,i)=>th.setAttribute('aria-sort',column===i?(descending?'descending':'ascending'):'none'));direction.textContent=descending?'Descending ↓':'Ascending ↑';}
  search.oninput=render;select.onchange=render;direction.onclick=()=>{descending=!descending;render();};controls.querySelector('[data-reset-table]').onclick=()=>{search.value='';select.value='';descending=false;render();};
  [...table.tHead.rows[0].cells].forEach((th,i)=>{const button=document.createElement('button');button.type='button';button.className='reader-column-sort';button.textContent=titles[i]+' ↕';button.onclick=()=>{descending=select.value===String(i)?!descending:false;select.value=String(i);render();};th.replaceChildren(button);});tableState.set(table,()=>{const next=table.tBodies[0],rows=[...next.rows];if(next!==body||rows.length!==original.length||rows.some(row=>!original.includes(row))){body=next;original=rows;render();}});render();
  });}

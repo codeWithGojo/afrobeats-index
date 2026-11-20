@@ -1094,6 +1094,20 @@ footer {
             </div>
           </fieldset>
 
+
+
+          <div id="receipt-connect-panel" class="connect-panel" aria-live="polite"></div>
+
+          <section id="receipt-manual-panel" class="manual-panel" hidden aria-labelledby="manual-title">
+            <div class="manual-heading"><div><span>Your selection</span><h3 id="manual-title">Pick 5–10 artists</h3></div><strong id="manual-count" role="status">0 / 10</strong></div>
+            <label for="receipt-artist-search">Search the Afri Index artist database</label>
+            <input id="receipt-artist-search" type="search" autocomplete="off" placeholder="Try Burna Boy, Tyla or Tems">
+            <div id="receipt-artist-results" class="receipt-search-results" aria-label="Artist suggestions"></div>
+            <div id="receipt-selected-artists" class="selected-artists" aria-live="polite"></div>
+            <label for="receipt-track-list">Favourite tracks <span>(optional, one “Track — Artist” per line)</span></label>
+            <textarea id="receipt-track-list" rows="4" placeholder="I AM — Omah Lay&#10;Rush — Ayra Starr"></textarea>
+          </section>
+
           <fieldset class="receipt-fieldset">
             <legend>3. Choose your receipt theme</legend>
             <div class="receipt-theme-picker" aria-label="Receipt theme">
@@ -1103,19 +1117,6 @@ footer {
               <button type="button" data-receipt-theme="mono" aria-pressed="false">Monochrome<span>Paper &amp; black</span></button>
             </div>
           </fieldset>
-
-          <div id="receipt-connect-panel" class="connect-panel" aria-live="polite"></div>
-
-          <section id="receipt-manual-panel" class="manual-panel" hidden aria-labelledby="manual-title">
-            <div class="manual-heading"><div><span>Your selection</span><h3 id="manual-title">Pick 5–10 artists</h3></div><strong id="manual-count">0 / 10</strong></div>
-            <label for="receipt-artist-search">Search the Afri Index artist database</label>
-            <input id="receipt-artist-search" type="search" autocomplete="off" placeholder="Try Burna Boy, Tyla or Tems">
-            <div id="receipt-artist-results" class="receipt-search-results" role="listbox"></div>
-            <div id="receipt-selected-artists" class="selected-artists" aria-live="polite"></div>
-            <label for="receipt-track-list">Favourite tracks <span>(optional, one “Track — Artist” per line)</span></label>
-            <textarea id="receipt-track-list" rows="4" placeholder="I AM — Omah Lay&#10;Rush — Ayra Starr"></textarea>
-          </section>
-
           <details class="receipt-import">
             <summary>Import listening data</summary>
             <p>Paste CSV, JSON, or simple lines. Use columns such as <code>track, artist, plays</code>.</p>
@@ -1136,7 +1137,7 @@ footer {
           <div class="receipt-preview-shell">
             <canvas id="music-receipt-canvas" width="720" height="1280" aria-label="Generated Afri Index music receipt">Your generated music receipt image appears here.</canvas>
           </div>
-          <div class="receipt-actions">
+          <a hidden id="receipt-brief-link" href="#receipt-signup">Get the Sunday Brief</a><div class="receipt-actions">
             <button type="button" id="receipt-download" disabled>Download PNG</button>
             <button type="button" id="receipt-share" disabled>Share receipt</button>
             <button type="button" id="receipt-tweet" disabled>Share on X</button>

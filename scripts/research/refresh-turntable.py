@@ -1,5 +1,5 @@
 """Refresh both official Top 100 charts, preserving publisher weeks and positions."""
-import datetime,json,pathlib,re,urllib.request
+import tempfile,datetime,json,pathlib,re,urllib.request
 root=pathlib.Path(__file__).resolve().parents[2]
 def snapshot(chart,url):
     items=sorted(chart['chartItems'],key=lambda x:x['rank'])
@@ -26,8 +26,17 @@ if __name__=='__main__':
         if not match:raise ValueError('Official chart payload not found; previous snapshots retained')
         chart=json.loads(match[1])['props']['pageProps']['chartData']
         if chart['chartCategoryId']!=number:raise ValueError('Wrong chart category; previous snapshots retained')
+        previous=json.loads((root/'data'/filename).read_text(encoding='utf-8'))
+        official=chart['dateCreated'][:10]
+        if official<previous['weekEnd']:raise ValueError(f"Publisher response is older than saved {filename}")
+        if official>previous['weekEnd']:
+            print(f"::warning::{filename} import behind: saved {previous['weekEnd']}, official {official}",flush=True)
         pending.append((filename,snapshot(chart,url)))
     # Validate both responses before replacing either last-good snapshot.
     for filename,result in pending:
-        (root/'data'/filename).write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n')
+        target=root/'data'/filename
+        with tempfile.NamedTemporaryFile(mode='w',dir=target.parent,encoding='utf-8',delete=False) as stage:
+            json.dump(result,stage,ensure_ascii=False,indent=2)
+            stage.write('\n')
+        pathlib.Path(stage.name).replace(target)
         print(filename,result['weekStart'],'–',result['weekEnd'],'100 positions checked')

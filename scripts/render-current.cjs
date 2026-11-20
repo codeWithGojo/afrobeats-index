@@ -4,7 +4,7 @@ const data=JSON.parse(fs.readFileSync('data/current.json','utf8'));
 let html=fs.readFileSync('index.html','utf8');
 function replaceSection(start,body){const from=html.indexOf(start);if(from<0)throw Error('Missing section '+start);const end=html.indexOf('</section>',from);if(end<0)throw Error('Unclosed section '+start);const openEnd=html.indexOf('>',from)+1;html=html.slice(0,openEnd)+'\n'+body+'\n    '+html.slice(end);}
 replaceSection('<section class="index-hero"',view.hero(data.artists));
-replaceSection('<section id="current"',view.chart(data.artists));
+replaceSection('<section id="current"',view.chart(data.artists).replace("CURRENT EDITION","CURRENT 50 · "+data.asOf.slice(0,10)));
 const schema={"@context":"https://schema.org","@type":"ItemList",name:'Afri Index Current 50',dateModified:data.asOf,itemListElement:view.ordered(data.artists).map(a=>({'@type':'ListItem',position:a.rank,name:a.name,url:`https://afrobeats-index.vercel.app/current/${a.slug}`}))};
 html=html.replace(/\s*<script id="current-chart-schema"[\s\S]*?<\/script>/,'');
 const checkedDate=require('../trust-model.js').formatDate(data.meta.lastRefreshAttemptAt||data.asOf);

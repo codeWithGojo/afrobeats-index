@@ -2,7 +2,7 @@
   "current": {
     "label": "current",
     "updatedAt": "2026-11-15T22:42:05.314332+00:00",
-    "hash": "2d64eeaed8ce67cc7c9b4f77f5b5a0ae8280ad31b777d50e68f4468daa094061",
+    "hash": "ef4dfea93996e0b9accf82cea4e32a852423204ef90a5225d5fc76b8cbe19279",
     "basis": "source snapshot"
   },
   "alltime": {
@@ -62,7 +62,7 @@
   "receipt": {
     "label": "receipt",
     "updatedAt": "2026-11-15T22:42:05.314332+00:00",
-    "hash": "4f0ed1e22991141e4bc77260adb774ab897a0e18bb15bc4171c1f37fa9392f0b",
+    "hash": "5911e171a4eeab7358ec523594ae19c0137057f0a2581dd46bd5b6c6f0550700",
     "basis": "source snapshot"
   },
   "underground": {
@@ -85,7 +85,7 @@
   },
   "top100": {
     "label": "top100",
-    "updatedAt": "2026-11-15T22:48:14.678726+00:00",
+    "updatedAt": "2026-11-19T20:48:40.875135+00:00",
     "hash": "3422eb9e9f9e19587b5a1ef618b4da75d953e5b21d922b0a1f55f44902da8421",
     "basis": "source snapshot"
   },

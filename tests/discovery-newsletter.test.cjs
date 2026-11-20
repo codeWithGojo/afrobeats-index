@@ -56,10 +56,11 @@ test('Sunday job requires its secret, reconciles existing issues and only create
     process.env.BUTTONDOWN_API_KEY='test-provider-key';process.env.CRON_SECRET='test-job-secret';
     let res=response();await handler(request('draft'),res);assert.equal(res.code,401);
     const headers={authorization:'Bearer test-job-secret'};let calls=[];
-    global.fetch=async(url,options)=>{calls.push({url,options});return {ok:true,json:async()=>url.includes('?')?{results:[]}:{id:'draft-id'}};};
+    const chartPage={ok:true,text:async()=>'<script id="__NEXT_DATA__">{"props":{"pageProps":{"chartData":{"chartCategoryId":1,"dateCreated":"2026-11-12"}}}}</script>'};
+    global.fetch=async(url,options)=>{if(url==='https://www.turntablecharts.com/charts/1')return chartPage;calls.push({url,options});return {ok:true,json:async()=>url.includes('?')?{results:[]}:{id:'draft-id'}};};
     res=response();await handler(request('draft',null,{headers}),res);assert.equal(res.body.status,'draft');assert.equal(calls.length,2);
     const draft=JSON.parse(calls[1].options.body);assert.equal(draft.status,'draft');assert.ok(!draft.publish_date);assert.ok(draft.metadata.afri_issue);
-    calls=[];global.fetch=async(url,options)=>{calls.push({url,options});return {ok:true,json:async()=>({results:[{subject:`Afri Index · Sunday brief · ${sundayDate()}`,status:'sent'}]})};};
+    calls=[];global.fetch=async(url,options)=>{if(url==='https://www.turntablecharts.com/charts/1')return chartPage;calls.push({url,options});return {ok:true,json:async()=>({results:[{subject:`Afri Index · Sunday brief · ${sundayDate()}`,status:'sent'}]})};};
     res=response();await handler(request('draft',null,{headers}),res);assert.equal(res.body.created,false);assert.equal(calls.length,1);
   } finally {global.fetch=oldFetch;for(const [k,v]of Object.entries({BUTTONDOWN_API_KEY:oldKey,CRON_SECRET:oldSecret})){if(v===undefined)delete process.env[k];else process.env[k]=v;}}
 });
