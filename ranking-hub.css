@@ -55,3 +55,9 @@ body[data-design=premium] .turntable-category :is(h3,p,span,small,strong,b){colo
 @media(max-width:900px){.turntable-category-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.turntable-gateway{align-items:start;flex-direction:column}.turntable-group>header{display:block}.turntable-group>header p{margin-top:12px}}
 @media(max-width:520px){.turntable-category-grid{grid-template-columns:1fr}.turntable-category{padding:24px}.turntable-category h3{font-size:25px!important}.turntable-gateway{margin:20px 16px;padding:24px;max-width:none}.turntable-gateway>a{width:100%;justify-content:space-between;box-sizing:border-box}.turntable-group{padding-block:20px}.ranking-picker{min-width:0}}
 @media(prefers-reduced-motion:reduce){.turntable-category{transition:none}.turntable-category:hover{transform:none}}
+
+@media (max-width:359px) {
+  .ranking-nav .ranking-nav-top { display:grid; gap:2px }
+  .ranking-nav .ranking-families { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:0 }
+  .ranking-nav .ranking-families>a { min-width:0; padding-inline:2px; justify-content:center; text-align:center }
+}
