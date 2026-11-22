@@ -354,3 +354,81 @@ body[data-design=premium] #reader-to-top[hidden]{display:none!important}
 @media(max-width:767px){body[data-design=premium] .chart-filters{top:auto!important;inset-block-start:auto!important;margin-top:0!important}.chart-layout{row-gap:12px}}
 body[data-design=premium] .player-card-preview img{display:block;width:min(100%,360px);height:auto;aspect-ratio:9/16;margin:20px auto;background:#1d1d1c;border-radius:16px}
 body[data-design=premium] .player-card-preview .source-note{max-width:60ch;margin:auto;line-height:1.7}
+
+@view-transition { navigation: auto }
+@media (prefers-reduced-motion: no-preference) {
+  html[data-artist-travel]::view-transition-group(artist-portrait) {
+    animation-duration: 320ms;
+    animation-timing-function: cubic-bezier(.22,.72,.18,1);
+    overflow: clip;
+    border-radius: 12px;
+  }
+  html[data-artist-travel="in"]::view-transition-new(root),
+  html[data-artist-travel="out"]::view-transition-old(root) {
+    animation: artist-file-enter 260ms cubic-bezier(.22,.72,.18,1) both;
+  }
+  html[data-artist-travel="out"]::view-transition-old(root) { animation-direction: reverse }
+  @keyframes artist-file-enter { from { opacity: 0; transform: translateX(24px) } }
+  #current-artist-dialog {
+    transition: opacity 180ms, transform 220ms cubic-bezier(.22,.72,.18,1), overlay 220ms allow-discrete, display 220ms allow-discrete;
+    opacity: 0; transform: translateY(24px);
+  }
+  #current-artist-dialog[open] { opacity: 1; transform: none }
+  @starting-style { #current-artist-dialog[open] { opacity: 0; transform: translateY(24px) } }
+}
+.artist-file-back { display:inline-flex; align-items:center; gap:.5rem; min-height:44px; color:var(--af-muted); font-weight:650 }
+@media (max-width:640px) {
+  body[data-design=premium] #studio .artist-hero {
+    display:grid!important; grid-template-columns:76px minmax(0,1fr)!important;
+    column-gap:14px!important; row-gap:10px!important; padding:16px!important;
+  }
+  #studio .artist-hero-art { grid-area:1/1/3/2; width:76px; height:76px; margin:0 }
+  #studio .artist-hero>div:nth-child(2) { display:contents }
+  #studio .artist-hero .kicker { display:none }
+  #studio .artist-hero h1 { grid-area:1/2; align-self:end; margin:0; font-size:clamp(26px,8vw,38px)!important; overflow-wrap:anywhere }
+  #studio .artist-meta { grid-area:2/2; align-self:start }
+  #studio .artist-hero :is(.artist-bio,.actions) { grid-column:1/-1; margin:0 }
+  #current-artist-dialog .artist-dialog-close { min-width:44px; min-height:44px }
+}
+
+/* Shared mobile reading and touch controls across static and server-rendered pages. */
+@media (max-width: 700px) {
+  html { scroll-padding-bottom:calc(80px + env(safe-area-inset-bottom,0px)) }
+  body[data-design=premium] nav.app-bottom-nav[aria-label] {
+    grid-template-columns:none!important;
+    grid-auto-flow:column!important;
+    grid-auto-columns:minmax(0,1fr);
+    bottom:max(6px,env(safe-area-inset-bottom,0px))!important;
+  }
+  body[data-design=premium] nav.app-bottom-nav a span { font-size:11px; line-height:1.2 }
+  body[data-design=premium] .app-topbar :is(.edition-search,.theme-toggle,.account-link) {
+    min-width:44px; min-height:44px; align-items:center; justify-content:center;
+  }
+  body[data-design=premium] main :is(input[type=search],input[type=email],input[type=text],select,textarea) {
+    min-width:0; max-width:100%; box-sizing:border-box; font-size:16px!important; min-height:44px;
+  }
+  body[data-design=premium] main :is(summary,.reader-column-sort) { min-height:44px; align-content:center; box-sizing:border-box }
+  body[data-design=premium] main .ranking-table-scroll {
+    overscroll-behavior-x:contain; scrollbar-width:thin; scrollbar-color:var(--af-muted) var(--af-surface);
+  }
+  body[data-design=premium] .ranking-table-scroll .ranking-table :is(th,td):first-child {
+    position:sticky; left:0; z-index:1; background:var(--af-surface)!important;
+  }
+  body[data-design=premium] main :is(button,a,summary,input,select):focus-visible {
+    outline:2px solid var(--af-accent); outline-offset:2px;
+  }
+  body[data-design=premium] :is(.ranking-table-tools,.chart-toolbar,.year-rail) { min-width:0; max-width:100%; box-sizing:border-box }
+}
+@media (max-width:380px) {
+  body[data-design=premium] .ranking-table-tools { grid-template-columns:minmax(0,1fr); gap:10px }
+}
+
+@media (max-width:700px) {
+  #yearly .yearly-streams-grid .yearly-entry {
+    display:grid; grid-template-columns:24px 44px minmax(0,1fr)!important;
+    align-items:start; gap:6px 10px;
+  }
+  #yearly .yearly-entry .yearly-art { width:44px; height:44px; object-fit:cover }
+  #yearly .yearly-entry .yearly-count { grid-column:3; justify-self:start; text-align:left; white-space:normal }
+  #yearly .yearly-entry :is(.yearly-title,.yearly-meta) { white-space:normal; overflow-wrap:anywhere }
+}

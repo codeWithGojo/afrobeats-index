@@ -1,15 +1,26 @@
 {
-  "generatedAt": "2026-11-15T22:57:30.295Z",
-  "snapshot": "2026-11-15T22:42:05.314332+00:00",
+  "generatedAt": "2026-11-22T23:28:17.015Z",
+  "snapshot": "2026-11-22T23:20:22.903080+00:00",
   "policy": "Review flags only; no stream values or scores corrected. Comparing snapshots may expose changed coverage rather than errors.",
   "artists": [
+    {
+      "slug": "wizkid",
+      "name": "Wizkid",
+      "daily": 5742582,
+      "total": 11638454730,
+      "sourceUrl": "https://kworb.net/spotify/artist/3tVQdUvClmAT7URs9V3rsp_songs.html",
+      "checkedAt": "2026-11-22T23:20:22.903080+00:00",
+      "reasons": [
+        "Lifetime total decreased since the previous snapshot (possible source coverage correction)"
+      ]
+    },
     {
       "slug": "moliy",
       "name": "MOLIY",
       "daily": 1126472,
       "total": 2039813021,
       "sourceUrl": "https://kworb.net/spotify/artist/2hVWBpjLW4Q7fboYz2pVYK_songs.html",
-      "checkedAt": "2026-11-15T22:42:05.314332+00:00",
+      "checkedAt": "2026-11-22T23:20:22.903080+00:00",
       "reasons": [
         "Latest daily pace differs by over 4× from average growth between snapshots (check coverage and release spikes)"
       ]
@@ -17,56 +28,45 @@
     {
       "slug": "seyi-vibez",
       "name": "Seyi Vibez",
-      "daily": 3034563,
-      "total": 2116189613,
+      "daily": 2977480,
+      "total": 2158426319,
       "sourceUrl": "https://kworb.net/spotify/artist/4zmZ8lVLzGc84S4v2B1rLx_songs.html",
-      "checkedAt": "2026-11-15T22:42:05.314332+00:00",
+      "checkedAt": "2026-11-22T23:20:22.903080+00:00",
       "reasons": [
         "Requested manual check: no automatic ratio inconsistency found"
       ]
     },
     {
-      "slug": "olamide",
-      "name": "Olamide",
-      "daily": 947761,
-      "total": 1559540899,
-      "sourceUrl": "https://kworb.net/spotify/artist/4ovtyvs7j1jSmwhkBGHqSr_songs.html",
-      "checkedAt": "2026-11-15T22:42:05.314332+00:00",
-      "reasons": [
-        "Latest daily pace differs by over 4× from average growth between snapshots (check coverage and release spikes)"
-      ]
-    },
-    {
       "slug": "amaarae",
       "name": "Amaarae",
-      "daily": 480453,
-      "total": 1410206746,
+      "daily": 764607,
+      "total": 2042048478,
       "sourceUrl": "https://kworb.net/spotify/artist/21UPYSRWFKwtqvSAnFnSvS_songs.html",
-      "checkedAt": "2026-11-15T22:42:05.314332+00:00",
+      "checkedAt": "2026-11-22T23:20:22.903080+00:00",
       "reasons": [
-        "Lifetime total decreased since the previous snapshot (possible source coverage correction)"
+        "Latest daily pace differs by over 4× from average growth between snapshots (check coverage and release spikes)"
       ]
     },
     {
       "slug": "adekunle-gold",
       "name": "Adekunle Gold",
-      "daily": 536325,
-      "total": 925982536,
+      "daily": 539217,
+      "total": 916870655,
       "sourceUrl": "https://kworb.net/spotify/artist/2IK173RXLiCSQ8fhDlAb3s_songs.html",
-      "checkedAt": "2026-11-15T22:42:05.314332+00:00",
+      "checkedAt": "2026-11-22T23:20:22.903080+00:00",
       "reasons": [
-        "Latest daily pace differs by over 4× from average growth between snapshots (check coverage and release spikes)"
+        "Lifetime total decreased since the previous snapshot (possible source coverage correction)"
       ]
     },
     {
       "slug": "oxlade",
       "name": "Oxlade",
-      "daily": 391642,
-      "total": 1004146555,
+      "daily": 429135,
+      "total": 1008414052,
       "sourceUrl": "https://kworb.net/spotify/artist/3WTrdbZU99dgTtt3ZkyamT_songs.html",
-      "checkedAt": "2026-11-15T22:42:05.314332+00:00",
+      "checkedAt": "2026-11-22T23:20:22.903080+00:00",
       "reasons": [
-        "Lifetime total decreased since the previous snapshot (possible source coverage correction)"
+        "Latest daily pace differs by over 4× from average growth between snapshots (check coverage and release spikes)"
       ]
     },
     {
@@ -75,7 +75,7 @@
       "daily": 354629,
       "total": 774026741,
       "sourceUrl": "https://kworb.net/spotify/artist/1hNaHKp2Za5YdOAG0WnRbc_songs.html",
-      "checkedAt": "2026-11-15T22:42:05.314332+00:00",
+      "checkedAt": "2026-11-22T23:20:22.903080+00:00",
       "reasons": [
         "Lifetime total decreased since the previous snapshot (possible source coverage correction)"
       ]
@@ -86,7 +86,7 @@
       "daily": 444958,
       "total": 937955042,
       "sourceUrl": "https://kworb.net/spotify/artist/4QSTyDpxsKmv3UfavVUImR_songs.html",
-      "checkedAt": "2026-11-15T22:42:05.314332+00:00",
+      "checkedAt": "2026-11-22T23:20:22.903080+00:00",
       "reasons": [
         "Latest daily pace differs by over 4× from average growth between snapshots (check coverage and release spikes)"
       ]
@@ -97,7 +97,7 @@
       "daily": 197884,
       "total": 501252464,
       "sourceUrl": "https://kworb.net/spotify/artist/4tIKaxUmpXzshok2yCnwdf_songs.html",
-      "checkedAt": "2026-11-15T22:42:05.314332+00:00",
+      "checkedAt": "2026-11-22T23:20:22.903080+00:00",
       "reasons": [
         "Lifetime total decreased since the previous snapshot (possible source coverage correction)"
       ]
@@ -108,7 +108,7 @@
       "daily": 246092,
       "total": 419138678,
       "sourceUrl": "https://kworb.net/spotify/artist/6zK1M4TcabpLQMNmmG2P0Q_songs.html",
-      "checkedAt": "2026-11-15T22:42:05.314332+00:00",
+      "checkedAt": "2026-11-22T23:20:22.903080+00:00",
       "reasons": [
         "Latest daily pace differs by over 4× from average growth between snapshots (check coverage and release spikes)"
       ]
@@ -119,7 +119,7 @@
       "daily": 201067,
       "total": 342439961,
       "sourceUrl": "https://kworb.net/spotify/artist/3cAisWS37sGCCtRgWfvrod_songs.html",
-      "checkedAt": "2026-11-15T22:42:05.314332+00:00",
+      "checkedAt": "2026-11-22T23:20:22.903080+00:00",
       "reasons": [
         "Lifetime total decreased since the previous snapshot (possible source coverage correction)"
       ]
@@ -130,7 +130,7 @@
       "daily": 201099,
       "total": 571867481,
       "sourceUrl": "https://kworb.net/spotify/artist/6IhG3Yxm3UW98jhyBvrIut_songs.html",
-      "checkedAt": "2026-11-15T22:42:05.314332+00:00",
+      "checkedAt": "2026-11-22T23:20:22.903080+00:00",
       "reasons": [
         "Lifetime total decreased since the previous snapshot (possible source coverage correction)"
       ]
@@ -141,7 +141,7 @@
       "daily": 358993,
       "total": 306051126,
       "sourceUrl": "https://kworb.net/spotify/artist/2GJMSZ7M3D0KyyKRhYgWju_songs.html",
-      "checkedAt": "2026-11-15T22:42:05.314332+00:00",
+      "checkedAt": "2026-11-22T23:20:22.903080+00:00",
       "reasons": [
         "Lifetime total decreased since the previous snapshot (possible source coverage correction)"
       ]

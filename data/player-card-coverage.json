@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "snapshot": "2026-11-15T22:42:05.314332+00:00",
+  "snapshot": "2026-11-22T23:20:22.903080+00:00",
   "photoPolicy": "Existing site portraits embedded in artist share PNGs; Davido uses the existing face portrait rather than the catalogue logo.",
   "statsPolicy": "Total and daily Spotify streams, tracked songs and projects, stream index /99 and editorial contribution /83. Unpublished individual editorial factors are not inferred.",
   "artists": [
@@ -137,14 +137,14 @@
       "missing": []
     },
     {
-      "slug": "sarz",
-      "photo": "artists/sarz.jpg",
+      "slug": "amaarae",
+      "photo": "artists/amaarae.jpg",
       "photoAvailable": true,
       "missing": []
     },
     {
-      "slug": "amaarae",
-      "photo": "artists/amaarae.jpg",
+      "slug": "sarz",
+      "photo": "artists/sarz.jpg",
       "photoAvailable": true,
       "missing": []
     },

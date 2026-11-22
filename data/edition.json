@@ -1,35 +1,35 @@
 {
-  "updatedAt": "2026-11-15T22:49:19.055Z",
+  "updatedAt": "2026-11-22T23:27:15.111Z",
   "timezone": "Africa/Lagos",
   "scope": "Edition update. Source observation dates and official chart periods remain separate.",
   "datasets": {
     "streaming": {
-      "checkedAt": "2026-11-15T22:42:05.314332+00:00",
+      "checkedAt": "2026-11-22T23:20:22.903080+00:00",
       "status": "refreshed",
       "artists": 50,
       "ledgersRefreshed": 100,
       "ledgersRetained": 0,
       "sourceStart": "2026-09-28",
-      "sourceEnd": "2026-11-14"
+      "sourceEnd": "2026-11-21"
     },
     "turntableSongs": {
-      "checkedAt": "2026-11-22T23:08:23.950714+00:00",
+      "checkedAt": "2026-11-22T23:20:20.597585+00:00",
       "status": "checked",
       "weekStart": "2026-11-06",
       "weekEnd": "2026-11-12",
       "sourceUrl": "https://www.turntablecharts.com/charts/1"
     },
     "turntableAlbums": {
-      "checkedAt": "2026-11-22T23:08:28.410090+00:00",
+      "checkedAt": "2026-11-22T23:20:22.370536+00:00",
       "status": "checked",
       "weekStart": "2026-11-06",
       "weekEnd": "2026-11-12",
       "sourceUrl": "https://www.turntablecharts.com/charts/2"
     },
     "upcoming": {
-      "checkedAt": "2026-11-09T16:38:45.646186+00:00",
+      "checkedAt": "2026-11-19T18:29:35.085Z",
       "status": "checked",
-      "count": 5
+      "count": 3
     },
     "news": {
       "checkedAt": "2026-11-09T16:41:23.548142+00:00",
@@ -43,7 +43,7 @@
       "note": "Each category preserves its own publisher period; year-end and TV charts remain archives."
     },
     "releaseIdentities": {
-      "checkedAt": "2026-11-15T22:45:01.503822+00:00",
+      "checkedAt": "2026-11-22T23:23:20.838038+00:00",
       "status": "refreshed",
       "artists": 50
     },

@@ -15,12 +15,12 @@ These are heuristics, not findings of false data. Source corrections, changing c
 
 | Artist | Daily Spotify | Total Spotify | Reason |
 |---|---:|---:|---|
+| Wizkid | 5,742,582 | 11,638,454,730 | Lifetime total decreased since the previous snapshot (possible source coverage correction) |
 | MOLIY | 1,126,472 | 2,039,813,021 | Latest daily pace differs by over 4× from average growth between snapshots (check coverage and release spikes) |
-| Seyi Vibez | 3,034,563 | 2,116,189,613 | Requested manual check: no automatic ratio inconsistency found |
-| Olamide | 947,761 | 1,559,540,899 | Latest daily pace differs by over 4× from average growth between snapshots (check coverage and release spikes) |
-| Amaarae | 480,453 | 1,410,206,746 | Lifetime total decreased since the previous snapshot (possible source coverage correction) |
-| Adekunle Gold | 536,325 | 925,982,536 | Latest daily pace differs by over 4× from average growth between snapshots (check coverage and release spikes) |
-| Oxlade | 391,642 | 1,004,146,555 | Lifetime total decreased since the previous snapshot (possible source coverage correction) |
+| Seyi Vibez | 2,977,480 | 2,158,426,319 | Requested manual check: no automatic ratio inconsistency found |
+| Amaarae | 764,607 | 2,042,048,478 | Latest daily pace differs by over 4× from average growth between snapshots (check coverage and release spikes) |
+| Adekunle Gold | 539,217 | 916,870,655 | Lifetime total decreased since the previous snapshot (possible source coverage correction) |
+| Oxlade | 429,135 | 1,008,414,052 | Latest daily pace differs by over 4× from average growth between snapshots (check coverage and release spikes) |
 | Tiwa Savage | 354,629 | 774,026,741 | Lifetime total decreased since the previous snapshot (possible source coverage correction) |
 | Darkoo | 444,958 | 937,955,042 | Latest daily pace differs by over 4× from average growth between snapshots (check coverage and release spikes) |
 | King Promise | 197,884 | 501,252,464 | Lifetime total decreased since the previous snapshot (possible source coverage correction) |

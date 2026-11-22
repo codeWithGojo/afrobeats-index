@@ -146,7 +146,15 @@
     dialog.innerHTML = `<div class="artist-dialog-shell"><button class="artist-dialog-close" type="button" aria-label="Close artist file">×</button><div class="artist-dialog-content"></div></div>`;
     dialog.querySelector(".artist-dialog-close").addEventListener("click", () => dialog.close());
     dialog.addEventListener("click", (event) => { if (event.target === dialog) dialog.close(); });
-    dialog.addEventListener("close", () => document.body.classList.remove("dialog-open"));
+    dialog.addEventListener("close", () => {
+      document.body.classList.remove("dialog-open");
+      if (history.state?.afriQuickArtist && !dialog.open) history.back();
+    });
+    window.addEventListener("popstate", () => {
+      const slug = history.state?.afriQuickArtist;
+      if (slug) openCurrentArtist(slug);
+      else if (dialog.open) dialog.close();
+    });
     document.body.append(dialog);
     return dialog;
   }
@@ -176,6 +184,11 @@
       </article>`;
     addImageFallbacks(dialog);
     document.body.classList.add("dialog-open");
+    if (history.state?.afriQuickArtist !== slug) {
+      const state = {...history.state, afriQuickArtist: slug};
+      if (dialog.open) history.replaceState(state, "");
+      else history.pushState(state, "");
+    }
     if (typeof dialog.showModal === "function") dialog.showModal();
     else dialog.setAttribute("open", "");
   }

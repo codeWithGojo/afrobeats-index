@@ -12,3 +12,44 @@
     location.replace('/account' + location.search + location.hash);
   }
 })();
+
+// Match the selected chart portrait to its artist file across native navigations.
+(() => {
+  if (typeof window === 'undefined' || !window.navigation || !('onpageswap' in window)) return;
+  const artistPath = /^\/current\/([a-z0-9-]+)\/?$/;
+  let selectedLink;
+  document.addEventListener('click', event => {
+    if (event.target instanceof Element) selectedLink = event.target.closest('a[href]');
+  }, true);
+
+  function prepare(event, from, to) {
+    if (!event.viewTransition) return;
+    const entering = artistPath.exec(to);
+    const leaving = artistPath.exec(from);
+    if ((!entering && !leaving) || matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      event.viewTransition.skipTransition();
+      return;
+    }
+    const slug = (entering || leaving)[1];
+    const onFile = artistPath.test(location.pathname);
+    const links = [...document.querySelectorAll('a[href="/current/' + slug + '"]')];
+    const link = links.includes(selectedLink) ? selectedLink : links.find(el => {
+      const box = el.getBoundingClientRect();
+      return box.height && box.bottom > 0 && box.top < innerHeight && el.querySelector('img');
+    });
+    const portrait = onFile ? document.querySelector('.artist-hero-art') : link?.querySelector('img');
+    document.documentElement.dataset.artistTravel = entering ? 'in' : 'out';
+    if (portrait) portrait.style.viewTransitionName = 'artist-portrait';
+    event.viewTransition.finished.finally(() => {
+      if (portrait) portrait.style.removeProperty('view-transition-name');
+      delete document.documentElement.dataset.artistTravel;
+    });
+  }
+  addEventListener('pageswap', event => {
+    if (event.activation) prepare(event, location.pathname, new URL(event.activation.entry.url).pathname);
+  });
+  addEventListener('pagereveal', event => {
+    const previous = window.navigation?.activation?.from?.url;
+    if (previous) prepare(event, new URL(previous).pathname, location.pathname);
+  });
+})();
