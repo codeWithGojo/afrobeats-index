@@ -23,8 +23,27 @@
     const root=document.querySelector('[data-turntable-chart]');if(!root)return;
     const rows=[...root.querySelectorAll('tbody tr')],search=$('table-search'),movement=$('table-movement');
     const render=()=>{const query=search.value.trim().toLocaleLowerCase();let count=0;for(const row of rows){row.hidden=!!((query&&!row.dataset.chartSearch.includes(query))||(movement.value&&row.dataset.chartMovement!==movement.value));if(!row.hidden)count++;}$('table-count').textContent=`${count} ${count===1?'entry':'entries'} · official chart positions`;$('table-empty').hidden=count>0;document.dispatchEvent(new Event('afri:chart-filtered'));};
-    search.addEventListener('input',render);movement.addEventListener('change',render);
-    root.querySelector('[data-table-reset]').addEventListener('click',()=>{search.value='';movement.value='';render();search.focus();});
+    function restoreFilters(){
+      const params=new URLSearchParams(location.search);
+      search.value=params.get('q') || '';
+      const selected=params.get('movement');
+      movement.value=[...movement.options].some(option=>option.value===selected) ? selected : '';
+      render();
+    }
+    function updateFilters(){
+      const url=new URL(location.href);
+      for(const [key,value] of [['q',search.value.trim()],['movement',movement.value]]){
+        if(value) url.searchParams.set(key,value);
+        else url.searchParams.delete(key);
+      }
+      history.replaceState(history.state,'',url);
+      render();
+    }
+    search.addEventListener('input',updateFilters);
+    movement.addEventListener('change',updateFilters);
+    window.addEventListener('popstate',restoreFilters);
+    root.querySelector('[data-table-reset]').addEventListener('click',()=>{search.value='';movement.value='';updateFilters();search.focus();});
+    restoreFilters();
   }
   async function streams(){
     const root=document.querySelector('[data-stream-counter]');if(!root)return;
