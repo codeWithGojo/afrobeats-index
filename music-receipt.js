@@ -3,7 +3,7 @@
 
   const CONFIG=window.AFRI_MUSIC_CONFIG||{};
   const insights=window.AFRI_RECEIPT_INSIGHTS;
-  const RANGE_LABELS={short_term:"Last 4 weeks",medium_term:"Last 6 months",long_term:"All-time"};
+  const RANGE_LABELS={week:"Last 7 days",short_term:"Last 4 weeks",medium_term:"Last 6 months",long_term:"All-time"};
   const SOURCE_LABELS={spotify:"Spotify",apple:"Apple Music",manual:"Manual picks"};
 
   class MusicSourceAdapter{
@@ -21,7 +21,7 @@
       const verifier=randomString(64),challenge=await sha256base64(verifier),oauthState=randomString(24);
       sessionStorage.setItem("afri_spotify_verifier",verifier);sessionStorage.setItem("afri_spotify_state",oauthState);
       const url=new URL("https://accounts.spotify.com/authorize");
-      url.search=new URLSearchParams({client_id:this.clientId,response_type:"code",redirect_uri:redirectUri(),scope:"user-top-read",code_challenge_method:"S256",code_challenge:challenge,state:oauthState}).toString();
+      url.search=new URLSearchParams({client_id:this.clientId,response_type:"code",redirect_uri:redirectUri(),scope:"user-top-read user-read-recently-played",code_challenge_method:"S256",code_challenge:challenge,state:oauthState}).toString();
       location.assign(url.toString());
     }
     async finishConnection(code,state){
@@ -42,6 +42,36 @@
         throw new Error("Spotify could not return your listening data. Please try again.");
       }
       return response.json();
+    }
+    async weeklyListening(now=Date.now()){
+      const cutoff=now-7*24*60*60*1000;
+      const tracks=new Map(),artists=new Map(),seen=new Set();
+      let before=now+1;
+      while(before>cutoff){
+        const page=await this.request(`/me/player/recently-played?limit=50&before=${before}`);
+        let oldest=before;
+        for(const event of page.items||[]){
+          const time=Date.parse(event.played_at),track=event.track;
+          if(!Number.isFinite(time))continue;
+          oldest=Math.min(oldest,time);
+          if(time<cutoff||time>now||!track?.name)continue;
+          const names=(track.artists||[]).map(artist=>artist.name).filter(Boolean);
+          const key=track.id||JSON.stringify([track.name,names]);
+          const eventKey=JSON.stringify([time,key]);
+          if(seen.has(eventKey))continue;
+          seen.add(eventKey);
+          if(!tracks.has(key))tracks.set(key,{title:track.name,artist:names.join(", "),artists:names,plays:0,source:"spotify"});
+          tracks.get(key).plays++;
+          for(const name of new Set(names)){
+            if(!artists.has(name))artists.set(name,{name,plays:0,source:"spotify"});
+            artists.get(name).plays++;
+          }
+        }
+        if(!page.next||oldest>=before)break;
+        before=oldest;
+      }
+      const ranked=map=>[...map.values()].sort((a,b)=>b.plays-a.plays).map((item,index)=>({...item,rank:index+1}));
+      return [ranked(tracks),ranked(artists)];
     }
     async getTopTracks(timeRange){
       const data=await this.request(`/me/top/tracks?limit=50&time_range=${timeRange}`);
@@ -136,7 +166,7 @@
     const source=receiptState.source;
     if(source==="spotify"){
       const configured=Boolean(adapters.spotify.clientId);
-      ui.connect.innerHTML=`<p>Spotify can provide your top 50 tracks and artists for all three periods. Afri Index filters that list against its African artist database.</p><button type="button" class="connect-action" id="receipt-connect"${configured?"":" disabled"}>${adapters.spotify.accessToken?"Reload Spotify data":configured?"Connect Spotify":"Spotify setup pending"}</button><p class="receipt-source-note">${configured?"Connect Spotify separately from your Afri Index account. Afri Index never sees your Spotify password.":"Spotify sign-in will be available as soon as the Afri Index Spotify app is approved and configured."}</p>`;
+      ui.connect.innerHTML=`<p>The one-week receipt counts plays in the recent history Spotify makes available. Longer periods use your Spotify top tracks and artists.</p><button type="button" class="connect-action" id="receipt-connect"${configured?"":" disabled"}>${adapters.spotify.accessToken?"Reload Spotify data":configured?"Connect Spotify":"Spotify setup pending"}</button><p class="receipt-source-note">${configured?"Connect Spotify separately from your Afri Index account. Afri Index never sees your Spotify password.":"Spotify sign-in will be available as soon as the Afri Index Spotify app is approved and configured."}</p>`;
     }else if(source==="apple"){
       const configured=Boolean(CONFIG.appleDeveloperToken||CONFIG.appleDeveloperTokenEndpoint);
       ui.connect.innerHTML=configured?`<p>Your recently played Apple Music tracks, filtered to African artists. Apple does not provide the time periods offered by Spotify.</p><button type="button" class="connect-action" id="receipt-connect">Connect Apple Music</button>`:`<p><strong>Apple Music connection is not available yet.</strong> You can still make a receipt with your own picks or import your listening history.</p><button type="button" class="connect-action" id="receipt-use-manual">Use my own picks →</button>`;
@@ -150,7 +180,7 @@
     const adapter=adapters[receiptState.source];
     setStatus(`Connecting to ${adapter.label}…`);
     try{
-      if(receiptState.source==="spotify"&&!adapter.accessToken){await adapter.connect();return;}
+      if(receiptState.source==="spotify"&&!adapter.accessToken){sessionStorage.setItem("afri_receipt_login_range",receiptState.range);await adapter.connect();return;}
       if(receiptState.source==="apple"&&!adapter.music)await adapter.connect();
       await loadFromAdapter(adapter);
     }catch(error){renderConnectPanel();setStatus(error.message,"error");ui.manual.hidden=false;}
@@ -158,7 +188,7 @@
   async function loadFromAdapter(adapter){
     setStatus(`Loading your ${adapter.label} listening data…`);
     const version=++receiptState.requestVersion,range=receiptState.range;
-    const [tracks,artists]=await Promise.all([adapter.getTopTracks(range),adapter.getTopArtists(range)]),filtered=filterAfrican(tracks,artists);
+    const [tracks,artists]=adapter.id==="spotify"&&range==="week"?await adapter.weeklyListening():await Promise.all([adapter.getTopTracks(range),adapter.getTopArtists(range)]),filtered=filterAfrican(tracks,artists);
     if(version!==receiptState.requestVersion)return;
     invalidateReceipt();
     Object.assign(receiptState,filtered);setStatus(`${filtered.tracks.length} African tracks and ${filtered.artists.length} African artists matched. ${filtered.filteredOut} unmatched entries were left out.`,filtered.tracks.length||filtered.artists.length?"success":"error");if(!filtered.tracks.length&&!filtered.artists.length)ui.manual.hidden=false;renderConnectPanel();
@@ -301,7 +331,11 @@
     const params=new URLSearchParams(location.search),code=params.get("code"),oauthState=params.get("state"),error=params.get("error");if(!code&&!error)return;
     history.replaceState({},document.title,redirectUri()+location.hash);
     if(error){window.showTab?.("receipt");setSource("spotify");setStatus("Spotify permission was not granted. You can reconnect or use manual mode.","error");return;}
-    try{await adapters.spotify.finishConnection(code,oauthState);setSource("spotify");window.showTab?.("receipt");await loadFromAdapter(adapters.spotify);}catch(err){setSource("spotify");window.showTab?.("receipt");setStatus(err.message,"error");}
+    try{await adapters.spotify.finishConnection(code,oauthState);setSource("spotify");
+      const savedRange=sessionStorage.getItem("afri_receipt_login_range");
+      sessionStorage.removeItem("afri_receipt_login_range");
+      if(Object.hasOwn(RANGE_LABELS,savedRange))document.querySelector(`[data-receipt-range="${savedRange}"]`)?.click();
+      window.showTab?.("receipt");await loadFromAdapter(adapters.spotify);}catch(err){setSource("spotify");window.showTab?.("receipt");setStatus(err.message,"error");}
     ui.status.scrollIntoView?.({block:"center"});
   }
   function bind(){

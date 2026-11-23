@@ -181,3 +181,26 @@ test('signed-in My board hides email verification and offers a direct Spotify re
   assert.doesNotMatch($('#digest').textContent, /Sign in/);
   assert.match(root.innerHTML, /href="\/music-receipt\?source=spotify"/);
 });
+
+test('weekly Spotify receipt ranks available plays inside the rolling seven-day window', async () => {
+  const f = fixture('/music-receipt');
+  vm.runInContext(read('music-receipt.js'), f.context);
+  const spotify = f.window.AFRI_MUSIC_SOURCES.spotify;
+  const now = Date.parse('2026-11-23T12:00:00Z');
+  const event = (timestamp, title) => ({
+    played_at: timestamp, track: {id: title, name: title, artists: [{name: 'Tems'}]},
+  });
+  const repeat = event('2026-11-22T10:00:00Z', 'Free Mind');
+  const pages = [
+    {items: [repeat, event('2026-11-21T10:00:00Z', 'Free Mind')], next: 'more'},
+    {items: [repeat, event('2026-11-16T12:00:00Z', 'Higher'), event('2026-11-16T11:59:59Z', 'Older')], next: 'more'},
+  ];
+  spotify.request = async path => {
+    assert.match(path, /^\/me\/player\/recently-played\?limit=50&before=\d+$/);
+    return pages.shift();
+  };
+  const [tracks, artists] = await spotify.weeklyListening(now);
+  assert.deepEqual(Array.from(tracks, t => [t.title, t.plays]), [['Free Mind', 2], ['Higher', 1]]);
+  assert.equal(artists[0].plays, 3);
+  assert.equal(pages.length, 0);
+});
