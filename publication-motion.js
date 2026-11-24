@@ -5,7 +5,7 @@
  const selectors='[data-visual-reveal],.release-heading,.brief-section,.brief-edition,.watch-card,.publication-watch-grid>a,.index-route-grid>a,.pro-plans>article,.ranking-directory>a';
  const observer='IntersectionObserver' in window?new IntersectionObserver(entries=>entries.forEach(entry=>{
   if(entry.isIntersecting){entry.target.classList.add('is-shown');observer.unobserve(entry.target);pending.delete(entry.target);}
- }),{threshold:.08,rootMargin:'0px 0px -12px 0px'}):null;
+ }),{threshold:0,rootMargin:'0px 0px 160px 0px'}):null;
  function reveals(root){
   for(const old of pending)if(!old.isConnected){observer?.unobserve(old);pending.delete(old);}
   const groups=[...(root.matches?.(selectors)?[root]:[]),...root.querySelectorAll(selectors)];

@@ -1,0 +1,58 @@
+/* Site polish: loaded last on every page. Layout fixes from the November 2026 desktop/mobile review. */
+
+/* Hero: a plain-language line under the headline. */
+.orbit-head .orbit-lede{max-width:46ch;margin:-6px auto 18px;font:500 15px/1.5 Inter,Arial,sans-serif;letter-spacing:0;text-transform:none;color:#c9c9c0}
+/* Back-row orbit cards keep their photo but drop labels that would print over the cards in front. */
+.orbit-back .orbit-card small,.orbit-back .orbit-card b{opacity:0}
+.orbit-card small{font-size:11px}
+/* Keep the edition date clear of the fixed seasonal decoration. */
+.orbit-foot{padding-right:clamp(0px,6vw,72px)}
+
+/* Header: Sign in stays reachable between tablet and wide desktop. */
+@media(min-width:768px) and (max-width:1100px){
+ body[data-design=premium] .account-link{display:flex;align-items:center;min-height:40px;padding:8px 10px;font-size:11px}
+}
+
+/* Back to top: right-hand side, stacked above the seasonal decoration instead of over the content column. */
+@media(min-width:768px){
+ body[data-design=premium] #reader-to-top{left:auto!important;right:16px!important;bottom:clamp(96px,11vw,112px)!important}
+}
+
+/* Scroll reveals: shorter and without blur, so content is readable while scrolling. */
+:root{--stagger-dur:360ms;--stagger-blur:0px}
+
+/* Footer base line. */
+.edition-footer-base{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 24px;margin-top:28px;padding-top:18px;border-top:1px solid var(--af-border,#2b2b28);font-size:12px;line-height:1.6;color:var(--af-muted,#a4a49b)}
+footer .edition-footer-base :is(p,a){margin:0;font:400 12px/1.6 Inter,Arial,sans-serif!important;letter-spacing:0!important;text-transform:none!important;text-align:left!important}
+footer .edition-footer-base p{max-width:62ch}
+.edition-footer-base nav{display:flex;flex-wrap:wrap;gap:8px 20px}
+.edition-footer-base a{color:inherit;text-decoration:underline;text-underline-offset:4px}
+.edition-footer-base a:hover,.edition-footer-base a:focus-visible{color:var(--af-text,#f6f5ed)}
+
+/* Newsletter: a closed signup reads as unavailable rather than broken. */
+[data-signup-state=closed] form :is(input,button):disabled{opacity:.55;cursor:not-allowed}
+
+@media(max-width:767px){
+ .orbit-head .orbit-lede{font-size:13px;margin:-8px auto 14px;padding:0 8px}
+ body[data-design=premium] .orbit-head p:first-child{font-size:10px}
+
+ /* Chart movement: names and explanations get the full row width. */
+ body[data-design=premium] .movers-items>a{display:grid!important;grid-template-columns:minmax(0,1fr) auto;gap:4px 16px;align-items:start}
+ body[data-design=premium] .movers-items>a>.mover-avatar{display:none}
+ body[data-design=premium] .movers-items .mover-detail{display:grid;gap:4px;min-width:0}
+ body[data-design=premium] .movers-items>a>.movement{width:auto;min-width:48px;justify-content:center}
+ body[data-design=premium] .movers-items .mover-detail :is(strong,small){white-space:normal!important;overflow:visible!important;text-overflow:clip!important;max-width:none!important}
+
+ /* Floating controls sit above the tab bar and stay out of the reading column. */
+ #christmas-tree{display:none!important}
+ body[data-design=premium] #reader-to-top{width:40px;height:40px;min-width:40px;min-height:40px;left:auto!important;right:12px!important;bottom:calc(96px + env(safe-area-inset-bottom,0px))!important;opacity:.9}
+
+ /* Small labels stay at a readable size. */
+ .publication-overline{font-size:11px!important}
+ .publication-chart-list div>small{font-size:11px}
+ .edition-footer-base{font-size:13px}
+}
+
+@media(prefers-reduced-motion:reduce){
+ *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+}

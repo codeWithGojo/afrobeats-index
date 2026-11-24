@@ -35,6 +35,8 @@
     try {
       const settings = await config();
       if (!settings.signupConfigured) {
+        section.dataset.signupState='closed';
+        form.querySelectorAll('input,button').forEach(control=>{control.disabled=true;});
         show('Email signup opens soon. You can read the latest brief now.');
         return;
       }

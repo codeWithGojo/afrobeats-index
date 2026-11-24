@@ -3,3 +3,5 @@ PRODUCT.md
 docs/
 tests/
 database/
+ingest/
+.github/

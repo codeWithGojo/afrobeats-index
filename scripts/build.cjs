@@ -31,3 +31,6 @@ buildSync({entryPoints:["src/motion/index.tsx"],bundle:true,format:"iife",target
 
 // Focused Motion layer for liquid-glass feedback and ranking layout transitions.
 buildSync({entryPoints:["src/motion/Glass.tsx"],bundle:true,format:"iife",target:"es2022",outfile:"assets/glass-motion.js",minify:true,jsx:"automatic"});
+
+// Shared layout polish is linked last so it can correct earlier page styles.
+require("./inject-polish.cjs");

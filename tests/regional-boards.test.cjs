@@ -50,6 +50,6 @@ test("regional scope does not infer country from a genre or invent empty-board a
 
 test('regional board routes expose the correct metadata and reject prototype names',async()=>{
  const view=require('../api/view.js');
- for(const board of definitions){let html='',status=200;const response={setHeader(){},status(value){status=value;return this;},send(value){html=value;return this;}};await view({query:{path:'boards/'+board.id}},response);assert.equal(status,200);assert(html.includes('<title>'+board.name+' · Afri Index</title>'));}
+ for(const board of definitions){let html='',status=200;const response={setHeader(){},status(value){status=value;return this;},send(value){html=value;return this;}};await view({query:{path:'boards/'+board.id}},response);assert.equal(status,200);assert(html.includes('<title>'+board.name+' · AFR/INDEX</title>'));}
  let status=200;const response={setHeader(){},status(value){status=value;return this;},send(){return this;}};await view({query:{path:'boards/constructor'}},response);assert.equal(status,404);
 });

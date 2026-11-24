@@ -3,6 +3,18 @@
   "trailingSlash": false,
   "rewrites": [
     {
+      "source": "/favicon.ico",
+      "destination": "/assets/icon-192.png"
+    },
+    {
+      "source": "/apple-touch-icon.png",
+      "destination": "/assets/icon-192.png"
+    },
+    {
+      "source": "/apple-touch-icon-precomposed.png",
+      "destination": "/assets/icon-192.png"
+    },
+    {
       "source": "/touring/:path*",
       "destination": "/api/view?path=touring/:path*"
     },

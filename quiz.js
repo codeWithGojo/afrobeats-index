@@ -19,7 +19,7 @@
     return payload;
   }
   async function directory() {
-    document.title='Fan quizzes · Afri Index';
+    document.title='Fan quizzes · AFR/INDEX';
     try {
       const data=await fetchData('/api/quiz');
       const list = ['current','alltime'].includes(params.get('list')) ? params.get('list') : 'all';
@@ -36,7 +36,7 @@
   function renderStart() {
     clearArtworkTimer();state.imageRequest+=1;
     const bank=state.bank,artist=bank.artist;
-    document.title=`${artist.name} Fan Quiz · Afri Index`;
+    document.title=`${artist.name} Fan Quiz · AFR/INDEX`;
     const challenge = params.has('round');
     const target = Number(params.get('beat'));
     const challengeText = challenge ? `You’ve been challenged${Number.isFinite(target)&&target>=0&&target<=100 ? ` to beat ${target}%` : ''}. This link uses the same questions as your friend’s round.` : 'Songs, covers and career moments. How much do you remember?';

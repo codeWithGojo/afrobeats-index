@@ -18,7 +18,30 @@ const byName=new Map(data.artists.map(a=>[a.name.toLowerCase(),a.slug]));
 base=base.replace(/<img\b[^>]*>/g,tag=>{const name=tag.match(/alt="([^"]*)"/)?.[1]?.toLowerCase();const slug=byName.get(name);if(slug)tag=tag.replace(/src="[^"]*"/,`src="/artists/${slug}.webp"`);if(!/loading=/.test(tag))tag=tag.replace('<img','<img loading="lazy"');if(!/width=/.test(tag))tag=tag.replace('<img','<img width="400" height="400"');return tag;});
 const ids=Object.keys(routes);const full=base;
 function page(id){let html=full;for(const other of ids){if(other===id)continue;const part=element(html,other);if(part)html=html.slice(0,part.start)+html.slice(part.closeEnd);}html=html.replace(/<section class="index-hero"[\s\S]*?<\/section>/,'').replace(/<section class="discovery-promo"[\s\S]*?<\/section>/g,'');for(const key of ['home-signup','receipt-signup']){if(id==='receipt'&&key==='receipt-signup')continue;const part=element(html,key);if(part)html=html.slice(0,part.start)+html.slice(part.closeEnd);}html=html.replace('<body ',`<body data-route-tab="${id}" `).replace(new RegExp('(id="'+id+'" class=")'),`$1active `);if(id!=='current')html=html.replace(/<script id="current-chart-schema"[\s\S]*?<\/script>/,'');const part=element(html,id);if(part)html=html.slice(0,part.start)+part.outer.replace(/class="([^"]*tab-content[^"]*)"/,'class="$1 active"')+html.slice(part.closeEnd);html=html.replace(/href="(?!https?:|\/|#)([^"]+)"/g,'href="/$1"').replace(/src="(?!https?:|\/|data:)([^"]+)"/g,'src="/$1"');return html;}
-for(const [id,path]of Object.entries(routes)){const html=page(id).replace(/<title>[^<]*<\/title>/,`<title>${e(id==='vs'?'Compare':id==='underground'?'Artists to Watch':id)} · AFR/INDEX</title>`).replace(/<link rel="canonical"[^>]*>/,`<link rel="canonical" href="https://afrobeats-index.vercel.app${path}">`);fs.writeFileSync(path.slice(1)+'.html',html);}
+// Readable titles and route-specific descriptions for search results and link previews.
+const routeMeta={
+ current:['Current 50','The Current 50: this edition’s ranking of the artists shaping African music, with index scores, Spotify streams and chart movement.'],
+ alltime:['All-Time 50','The All-Time 50 compares African music careers across eras using nine weighted editorial factors. Streams are not included.'],
+ albums:['Most Streamed Albums','All-time Spotify numbers for landmark Afrobeats and African albums, with an editorial shortlist of the projects that defined the era.'],
+ networth:['Net Worth Index','Estimated net worth of leading African artists from public reports, with the main drivers behind each range. Estimates, not verified figures.'],
+ method:['Sources & Method','How AFR/INDEX scores artists: editorial factors, Spotify stream weighting, movement rules, datasets and observation dates.'],
+ underground:['Artists to Watch','Emerging African artists to watch, with a song to start with and the evidence behind each pick.'],
+ vs:['Compare Artists','Put two African artists side by side: index scores, daily and total Spotify streams, and chart positions.'],
+ receipt:['Music Receipt','Turn your favourite African artists into a shareable Music Receipt. Connect Spotify or pick artists from the index.'],
+ regions:['Regional Power Index','Explore the Current 50 by scene: Nigeria, Ghana, South Africa and Tanzania, ranked from the published Current scores.'],
+ yearly:['Releases by Year','African albums and songs by release year, from 2010 to 2026, ordered by matched Spotify totals.'],
+ artists:['Artist Archive','Profiles for every artist in the published Current 50: catalogue, career notes and sourced evidence.'],
+ discuss:['Discussion','Behind the positions: how records, radio and streaming shape the AFR/INDEX rankings.'],
+ news:['Artist News','Short, sourced updates on African artists. Every item links to a checkable source or an audit page.'],
+ top100:['Nigeria Top 100 Songs','The Nigeria Top 100 songs chart with movement and source dates.']
+};
+function describe(html,title,description){
+ const full=`${title} · AFR/INDEX`;
+ html=html.replace(/<title>[^<]*<\/title>/,`<title>${e(full)}</title>`).replace(/(<meta property="og:title" content=")[^"]*/,`$1${e(full)}`).replace(/(<meta name="twitter:title" content=")[^"]*/,`$1${e(full)}`);
+ if(description)html=html.replace(/(<meta name="description" content=")[^"]*/,`$1${e(description)}`).replace(/(<meta property="og:description" content=")[^"]*/,`$1${e(description)}`).replace(/(<meta name="twitter:description" content=")[^"]*/,`$1${e(description)}`);
+ return html;
+}
+for(const [id,path]of Object.entries(routes)){const [title,description]=routeMeta[id]||[id,''];const html=describe(page(id),title,description).replace(/<link rel="canonical"[^>]*>/,`<link rel="canonical" href="https://afrobeats-index.vercel.app${path}">`);fs.writeFileSync(path.slice(1)+'.html',html);}
 const hero=full.match(/<section class="index-hero"[\s\S]*?<\/section>/)?.[0]||'';const signup=element(full,'home-signup')?.outer||'';
 const exploreCards=[
  ['/current','01 / THE PRESENT','Current 50','Published scores, daily streams and movement in one view.','Open the chart'],
@@ -34,7 +57,7 @@ home=home.replace('</head>',`<link rel="stylesheet" href="/artist-desk.css"><lin
 home=home.replace('href="#current"','href="#main-content"').replace('Skip to the chart','Skip to content').replace('<main id="main-content">','<main id="main-content" tabindex="-1">');
 home=home.replace('href="?tab=method"','href="/method"');
 // Keep only scripts needed by the homepage; no hidden chart database.
-home=home.replace(/<script\b[^>]*src="[^"]*"[^>]*><\/script>/g,'').replace('</body>','<script src="/theme-init.js"></script><script src="/refinements.js" defer></script><script src="/discovery.js" defer></script><script src="/route-client.js" defer></script><script src="/assets/chart-orbit.js" defer></script><script src="/reader-model.js" defer></script><script src="/reader-tools.js" defer></script><script src="/artist-desk.js" defer></script><script defer src="/_vercel/insights/script.js"></script></body>');fs.writeFileSync('index.html',home.replace(/[ \t]+$/gm,''));
+home=home.replace(/<script\b[^>]*src="[^"]*"[^>]*><\/script>/g,'').replace('</body>','<script src="/theme-init.js"></script><script src="/refinements.js" defer></script><script src="/discovery.js" defer></script><script src="/route-client.js" defer></script><script src="/assets/chart-orbit.js" defer></script><script src="/reader-model.js" defer></script><script src="/reader-tools.js" defer></script><script src="/artist-desk.js" defer></script><script src="/install-app.js" defer></script><script defer src="/_vercel/insights/script.js"></script></body>');fs.writeFileSync('index.html',home.replace(/[ \t]+$/gm,''));
 // Retire the old file as well as redirecting its URL on Vercel.
 fs.writeFileSync('underground.html','<!doctype html><meta charset="utf-8"><meta http-equiv="refresh" content="0;url=/watch"><link rel="canonical" href="https://afrobeats-index.vercel.app/watch"><title>Artists to Watch</title><a href="/watch">Continue to Artists to Watch</a>');
 console.log('Rendered dedicated routes, SSR evidence and lean homepage.');

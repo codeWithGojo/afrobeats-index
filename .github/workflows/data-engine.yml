@@ -1,0 +1,94 @@
+# Scheduled data engine. Daily: collect sources into Supabase history (site unchanged).
+# Monday: run the existing refresh, test, publish the new edition and record it.
+# Without the Supabase secrets every run is a dry run that stores nothing.
+name: Data engine
+
+on:
+  schedule:
+    - cron: "0 5 * * 0,2-6"   # daily collection, 06:00 Lagos (Kworb updates about once a day)
+    - cron: "0 6 * * 1"       # Monday edition, 07:00 Lagos
+  workflow_dispatch:
+    inputs:
+      job:
+        description: Job to run
+        type: choice
+        options: [daily, collect, weekly, backfill]
+        default: daily
+      dry_run:
+        description: Dry run (collect and validate, store and publish nothing)
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data-engine
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+      SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+      PYTHON: python3
+      PYTHONUTF8: "1"
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          npm ci --no-audit --no-fund
+          pip install --quiet beautifulsoup4
+
+      - name: Choose job
+        id: plan
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            JOB="${{ inputs.job }}"; DRY="${{ inputs.dry_run }}"; TRIGGER=manual
+          elif [ "${{ github.event.schedule }}" = "0 6 * * 1" ]; then
+            JOB=weekly; DRY=false; TRIGGER=schedule
+          else
+            JOB=daily; DRY=false; TRIGGER=schedule
+          fi
+          if [ -z "$SUPABASE_URL" ] || [ -z "$SUPABASE_SERVICE_ROLE_KEY" ]; then DRY=true; fi
+          FLAGS="--trigger $TRIGGER"; if [ "$DRY" = "true" ]; then FLAGS="$FLAGS --dry-run"; fi
+          echo "job=$JOB" >> "$GITHUB_OUTPUT"; echo "dry=$DRY" >> "$GITHUB_OUTPUT"; echo "flags=$FLAGS" >> "$GITHUB_OUTPUT"
+          echo "Job: $JOB · dry run: $DRY"
+
+      - name: Collect into history
+        if: steps.plan.outputs.job != 'weekly'
+        run: node ingest/run.cjs --job ${{ steps.plan.outputs.job }} ${{ steps.plan.outputs.flags }}
+
+      - name: Refresh sources and build the edition
+        if: steps.plan.outputs.job == 'weekly'
+        run: npm run refresh:data
+
+      - name: Test before publishing
+        if: steps.plan.outputs.job == 'weekly'
+        run: npm test
+
+      - name: Record the edition in history
+        if: steps.plan.outputs.job == 'weekly'
+        run: node ingest/run.cjs --job weekly --skip-fetch ${{ steps.plan.outputs.flags }}
+
+      - name: Publish
+        if: steps.plan.outputs.job == 'weekly' && steps.plan.outputs.dry != 'true'
+        run: |
+          git config user.name "afri-index-data-engine[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A data assets *.html
+          if git diff --cached --quiet; then echo "No changes to publish."; exit 0; fi
+          git commit -m "Weekly edition $(date -u +%Y-%m-%d) (automated refresh)"
+          git push

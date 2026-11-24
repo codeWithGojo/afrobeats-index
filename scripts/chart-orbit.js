@@ -18,9 +18,10 @@ if(section){
         const depth=(Math.sin(angle)+1)/2;
         slot.style.transform='translate('+Math.cos(angle)*41+'%,'+(Math.sin(angle)*19+exit*8)+'%)';
         slot.style.zIndex=Math.round(depth*90);
-        slot.classList.toggle('orbit-back',depth<.25);
+        slot.classList.toggle('orbit-back',depth<.45);
         cards[i].style.transform='translate(-50%,-50%) scale('+((.62+.42*depth)*(.92+.08*enter))+')';
-        cards[i].style.opacity=(.45+.55*depth)*(.86+.14*enter);
+        const clear=depth<.5?1:Math.min(1,Math.max(0,(Math.abs(Math.cos(angle))-.2)/.3));
+        cards[i].style.opacity=(.45+.55*depth)*(.86+.14*enter)*clear;
       });
       if(!head.contains(document.activeElement)){
         head.style.transform='translateY('+(-exit*32)+'px) scale('+(.97+.03*enter)+')';
