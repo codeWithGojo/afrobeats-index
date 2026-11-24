@@ -43,6 +43,10 @@
       "destination": "/api/product?service=paystack-webhook"
     },
     {
+      "source": "/api/flutterwave-webhook",
+      "destination": "/api/product?service=flutterwave-webhook"
+    },
+    {
       "source": "/quiz",
       "destination": "/api/quiz-page"
     },

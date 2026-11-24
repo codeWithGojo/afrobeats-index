@@ -13,6 +13,7 @@ const services = {
   pro: require("../lib/product-pro.cjs"),
   newsletter: require("../lib/product-newsletter.cjs"),
   "paystack-webhook": require("../lib/product-paystack-webhook.cjs"),
+  "flutterwave-webhook": require("../lib/product-flutterwave-webhook.cjs"),
 };
 module.exports = async (req, res) => {
   const service = String(req.query.service || "");
@@ -195,11 +196,8 @@ module.exports = async (req, res) => {
       sponsors: require("../lib/commerce.cjs").activeSponsors(),
       affiliates: productConfig.affiliates,
       billing: {
-        configured: !!(
-          process.env.PAYSTACK_SECRET_KEY &&
-          process.env.AFRI_PRO_AMOUNT &&
-          process.env.SUPABASE_SERVICE_ROLE_KEY
-        ),
+        configured: require("../lib/payment-providers.cjs").billingConfigured(),
+        provider: require("../lib/payment-providers.cjs").activeProvider()?.id || null,
         currency: process.env.AFRI_BILLING_CURRENCY || "NGN",
         amount: Number(process.env.AFRI_PRO_AMOUNT) || null,
       },

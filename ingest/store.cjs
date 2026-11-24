@@ -68,8 +68,10 @@ class SupabaseStore{
     if(this.key.startsWith('eyJ'))headers.Authorization='Bearer '+this.key;
     if(prefer)headers.Prefer=prefer;
     const response=await fetchWithRetry(this.base+path,{fetchImpl:this.fetchImpl,timeoutMs:30000,init:{method,headers,body:body===undefined?undefined:JSON.stringify(body)}});
-    if(!response.ok)throw new Error(redact(`Supabase ${method} ${path.split('?')[0]} failed: HTTP ${response.status} ${(await response.text()).slice(0,300)}`));
-    return response.status===204?null:response.json();
+    const text=await response.text();
+    if(!response.ok)throw new Error(redact(`Supabase ${method} ${path.split('?')[0]} failed: HTTP ${response.status} ${text.slice(0,300)}`));
+    // return=minimal answers 201/204 with an empty body.
+    return text.trim()?JSON.parse(text):null;
   }
   async claimJob(job,period,trigger='schedule'){
     const row=await this.request('rpc/claim_ingestion_job',{method:'POST',body:{p_job:job,p_period:period,p_trigger:trigger}});

@@ -33,4 +33,5 @@ buildSync({entryPoints:["src/motion/index.tsx"],bundle:true,format:"iife",target
 buildSync({entryPoints:["src/motion/Glass.tsx"],bundle:true,format:"iife",target:"es2022",outfile:"assets/glass-motion.js",minify:true,jsx:"automatic"});
 
 // Shared layout polish is linked last so it can correct earlier page styles.
+require("./render-legal.cjs");
 require("./inject-polish.cjs");

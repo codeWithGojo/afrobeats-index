@@ -26,9 +26,12 @@ export async function renderFeature({
     newsletter: "The week, in your inbox.",
     api: "Build with the index.",
   };
+  // Paused until they have sourced data: hidden from navigation, explained if opened directly.
+  const paused = new Set(["summer", "signals"]);
   root.innerHTML = `<p class="kicker">AFR / INDEX · ${e(view)}</p><h1>${e(titles[view])}</h1><nav class="feature-nav" aria-label="Index tools">${Object.entries(
     titles,
   )
+    .filter(([id]) => !paused.has(id) || id === view)
     .map(
       ([id, title]) =>
         `<a href="/studio/${id}" ${id === view ? 'aria-current="page"' : ""}>${e(id === "api" ? "API" : id[0].toUpperCase() + id.slice(1))}</a>`,
@@ -53,6 +56,10 @@ export async function renderFeature({
     } catch {
       return false;
     }
+  }
+  if (paused.has(view)) {
+    root.innerHTML += `<section class="panel"><h2>Not available yet</h2><p>This page returns once it has enough sourced data to be useful. Nothing here is estimated in the meantime.</p><p><a href="/rankings">Explore the rankings</a></p></section>`;
+    return;
   }
   if (view === "predictions") {
     const round = await request("predictions");

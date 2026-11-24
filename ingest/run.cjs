@@ -56,7 +56,11 @@ async function runJob(args,{store,collect=runCollector,inputs=readInputs,now=new
   const claimed=await store.claimJob(args.job,period,args.trigger);
   if(!claimed)return {status:'skipped',job:args.job,period,reason:'This period already ran or is running.'};
   const stats={providers:{}};let failures=0;
-  const log=(provider,level,message,entity)=>store.log({job_id:claimed.id,provider:provider?PROVIDERS[provider].id:null,level,entity:entity||null,message});
+  // Logging must never take a run down with it; a failed log write goes to the console instead.
+  const log=async(provider,level,message,entity)=>{
+    try{await store.log({job_id:claimed.id,provider:provider?PROVIDERS[provider].id:null,level,entity:entity||null,message});}
+    catch(error){console.error(`Log write failed (${level}: ${redact(message)}): ${redact(error)}`);}
+  };
   for(const name of providers){
     const provider=PROVIDERS[name],result={status:'succeeded',fetched:false,rejected:0,tables:{}};stats.providers[name]=result;
     try{
@@ -78,11 +82,13 @@ async function runJob(args,{store,collect=runCollector,inputs=readInputs,now=new
       failures++;result.status='failed';result.error=redact(error);
       await log(name,'error',redact(error));
     }
-    await store.heartbeat(claimed.id);
+    try{await store.heartbeat(claimed.id);}catch(error){console.error('Heartbeat failed: '+redact(error));}
   }
   const statuses=Object.values(stats.providers).map(p=>p.status);
   const status=failures===providers.length?'failed':statuses.every(s=>s==='succeeded')?'succeeded':'partial';
-  await store.finishJob(claimed.id,status,stats,failures?`${failures} of ${providers.length} providers failed`:null);
+  // Always close the job so a retry is not blocked behind a run that looks like it is still going.
+  try{await store.finishJob(claimed.id,status,stats,failures?`${failures} of ${providers.length} providers failed`:null);}
+  catch(error){console.error('Could not record job result: '+redact(error));return {status:'failed',job:args.job,period,attempt:claimed.attempt,stats};}
   return {status,job:args.job,period,attempt:claimed.attempt,stats};
 }
 

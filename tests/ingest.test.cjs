@@ -120,7 +120,8 @@ test('the Supabase store claims through the database function and only ever inse
     if(url.includes('tracks?'))return response(200,JSON.stringify([{id:'t1',spotify_id:'0123456789abcdefghijkl'}]));
     if(url.includes('albums?'))return response(200,'[]');
     if(url.includes('select=id'))return response(200,'[{"id":1}]');
-    return response(204,'');
+    // Real PostgREST: POST with return=minimal is 201 with an empty body; PATCH is 204.
+    return response(init.method==='POST'?201:204,'');
   };
   const store=new SupabaseStore({url:'https://project.supabase.co',key:'k'.repeat(20),fetchImpl:fake});
   assert.equal(await store.claimJob('daily','2026-11-24'),null);
@@ -132,6 +133,44 @@ test('the Supabase store claims through the database function and only ever inse
   assert.ok(history.every(c=>c.method==='POST'&&c.prefer.startsWith('resolution=ignore-duplicates')));
   assert.ok(calls.find(c=>c.url.includes('track_stream_snapshots')).body.every(r=>r.track_id==='t1'&&r.job_id==='job-1'&&!('track_key' in r)));
   assert.throws(()=>new SupabaseStore({url:'',key:''}),/required/);
+});
+
+// Behaves like PostgREST: 201/204 with empty bodies for return=minimal, representation arrays otherwise.
+function postgrest({failLogs=false}={}){
+  const calls=[];let nextId=1;
+  const fetchImpl=async(url,init)=>{
+    const path=url.split('/rest/v1/')[1],body=init.body?JSON.parse(init.body):null,minimal=(init.headers.Prefer||'').includes('return=minimal');
+    calls.push({path,method:init.method,body});
+    if(path.startsWith('rpc/claim_ingestion_job'))return response(200,JSON.stringify({id:'job-1',status:'running',attempt:1}));
+    if(failLogs&&path.startsWith('ingestion_logs'))return response(500,'{"message":"log table unavailable"}');
+    if(init.method==='PATCH')return response(204,'');
+    if(minimal)return response(201,'');
+    const rows=(body||[]).map(row=>({id:nextId++,spotify_id:row.spotify_id}));
+    return response(201,JSON.stringify(rows));
+  };
+  return {calls,fetchImpl};
+}
+
+test('a full run against PostgREST-shaped responses stores history and closes the job',async()=>{
+  const {calls,fetchImpl}=postgrest();
+  const store=new SupabaseStore({url:'https://p.supabase.co',key:'sb_secret_abcdefghijklmnop',fetchImpl});
+  const result=await runJob(parseArgs(['--job','backfill','--period','b1']),{store,inputs});
+  assert.equal(result.status,'succeeded');
+  assert.equal(result.stats.providers.kworb.tables.track_stream_snapshots.inserted,2);
+  assert.equal(result.stats.providers.turntable.tables.chart_positions.inserted,1);
+  const finish=calls.filter(c=>c.method==='PATCH'&&c.path.startsWith('ingestion_jobs')).at(-1);
+  assert.equal(finish.body.status,'succeeded');assert.ok(finish.body.finished_at);
+});
+
+test('a broken log table cannot crash a run or leave the job open',async()=>{
+  const {calls,fetchImpl}=postgrest({failLogs:true});
+  const store=new SupabaseStore({url:'https://p.supabase.co',key:'sb_secret_abcdefghijklmnop',fetchImpl});
+  const original=console.error;console.error=()=>{};
+  try{
+    const result=await runJob(parseArgs(['--job','backfill','--period','b2']),{store,inputs});
+    assert.equal(result.status,'succeeded');
+  }finally{console.error=original;}
+  assert.ok(calls.some(c=>c.method==='PATCH'&&c.path.startsWith('ingestion_jobs')&&c.body.status==='succeeded'));
 });
 
 test('new sb_secret keys stay out of the Authorization header; legacy JWT keys keep it',async()=>{
