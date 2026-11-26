@@ -190,8 +190,10 @@ create table if not exists public.ranking_snapshots(
   breakdown jsonb,
   method_version text not null,
   observed_at timestamptz not null default now(),
+  job_id uuid references public.ingestion_jobs(id),
   unique(board,edition_date,artist_slug)
 );
+create index if not exists ranking_snapshots_job_id_idx on public.ranking_snapshots(job_id);
 create table if not exists public.regional_rankings(
   id bigint generated always as identity primary key,
   region text not null,

@@ -1,6 +1,6 @@
 # Automated data engine: audit and implementation plan
 
-Status, 24 Nov 2026: phase 1 is built and tested locally. Nothing is deployed, and no migration has been applied to production. Decisions taken: GitHub Actions as the scheduler; stream statistics collected daily, ranks published weekly.
+Status, 26 Nov 2026: phase 1 is running through GitHub Actions and its base migration is applied to Supabase. The 25 Nov daily run collected stream and chart snapshots; ranking history was partial because `ranking_snapshots` lacked the `job_id` field expected by the writer. The additive follow-up migration `database/automation_ranking_job_link.sql` repairs that schema gap. Daily snapshots are stored in Supabase; the visible ranking and its displayed dates publish weekly.
 
 ## Phase 1: what is built
 
@@ -8,6 +8,7 @@ Status, 24 Nov 2026: phase 1 is built and tested locally. Nothing is deployed, a
 | --- | --- |
 | Additive migration (14 tables, a history view, job-claim function, append-only triggers, RLS) | `database/automation.sql` |
 | Migration test on embedded Postgres | `scripts/test-automation-db.cjs` |
+| Follow-up migration: ranking snapshots linked to ingestion jobs | `database/automation_ranking_job_link.sql` |
 | HTTP with timeouts, exponential backoff and Retry-After | `ingest/http.cjs` |
 | Secret redaction for logs | `ingest/redact.cjs` |
 | Row validation | `ingest/validate.cjs` |
@@ -19,7 +20,7 @@ Status, 24 Nov 2026: phase 1 is built and tested locally. Nothing is deployed, a
 
 ### Runbook
 
-1. Apply `database/automation.sql` in the Supabase SQL editor. It is safe to run more than once.
+1. Apply `database/automation.sql` in the Supabase SQL editor. It is safe to run more than once. Apply each follow-up `database/automation_*.sql` migration once in order.
 2. In GitHub, open Settings → Secrets and variables → Actions, and add `SUPABASE_URL` and `SUPABASE_SERVICE_ROLE_KEY`. Without them every run is a dry run.
 3. Go to Actions → Data engine → Run workflow:
    1. Run `backfill` with dry run off, to import existing history.
