@@ -31,11 +31,14 @@ fs.writeFileSync('data/stream-counter.json',JSON.stringify({asOf:catalogue.asOf,
 
 const cards=[
   ['01','The present','Current 50','The artists leading the index, with scores and movement.','/current'],
-  ['02','The legacy','All-Time 50','Career rankings, shared placements and the records behind them.','/all-time'],
-  ['03','The numbers','Stream counter','Search songs, albums and artists. Compare totals and daily streams in a table.','/streams'],
-  ['04','This year','Biggest streams · 2026','2026 releases ranked by their reported Spotify totals. Songs and albums.','/streams?year=2026'],
-  ['05','TurnTable · weekly','Nigeria Top 100 songs','Official song positions, new entries, climbers and fallers.','/top100'],
-  ['06','TurnTable · weekly','Nigeria Top 100 albums','The official weekly albums chart, with all 100 positions.','/top100-albums']
+  ['02','Rising now','Heat 25','Ranked only by momentum: who is growing fastest against their own baseline.','/heat'],
+  ['03','The next 50','Current 100','The Current 50 plus ranks 51 to 100, with promotion watch around the line.','/current-100'],
+  ['04','Your rules','My Index','Grade artists on what you care about and build your own chart. See the fan-powered Community Index.','/my-index'],
+  ['05','The legacy','All-Time 50','Career rankings, shared placements and the records behind them.','/all-time'],
+  ['06','The numbers','Stream counter','Search songs, albums and artists. Compare totals and daily streams in a table.','/streams'],
+  ['07','This year','Biggest streams · 2026','2026 releases ranked by their reported Spotify totals. Songs and albums.','/streams?year=2026'],
+  ['08','TurnTable · weekly','Nigeria Top 100 songs','Official song positions, new entries, climbers and fallers.','/top100'],
+  ['09','TurnTable · weekly','Nigeria Top 100 albums','The official weekly albums chart, with all 100 positions.','/top100-albums']
 ];
 page('/rankings','Rankings','Current, All-Time, stream tables and TurnTable Top 100 songs and albums, in one place.',`${rankingNav('/rankings')}<section class="rankings-intro"><p class="index-eyebrow">THE INDEX / EVERY PERSPECTIVE</p><h1>Pick your chart.</h1><p>Who’s leading now. Who shaped the sound. What everyone’s playing.</p></section><section class="ranking-directory" aria-label="Ranking charts">${cards.map(([n,k,t,p,url])=>`<a href="${url}"><span class="directory-number">${n}</span><div><small>${e(k)}</small><h2>${e(t)}</h2><p>${e(p)}</p></div><span class="directory-arrow" aria-hidden="true">↗</span></a>`).join('')}</section><aside class="turntable-gateway"><div><span>13 official chart categories</span><h2>More sides of the sound.</h2><p>Artistes, producers, streaming, radio, emerging talent and the archives.</p></div><a href="/turntable">Explore TurnTable charts <b aria-hidden="true">→</b></a></aside><nav class="ranking-extra" aria-label="More ranking views"><a href="/touring">Touring Index</a><a href="/touring/vs-streaming">Touring vs Streaming</a><a href="/albums">All-time streamed albums ↗</a><a href="/regions">Regional rankings ↗</a><a href="/net-worth">Net Worth ↗</a><a href="/releases">Releases by year ↗</a></nav>`);
 
@@ -86,9 +89,10 @@ for(const file of fs.readdirSync('.').filter(name=>name.endsWith('.html'))){
   fs.writeFileSync(file,html);
 }
 let xml=fs.readFileSync('sitemap.xml','utf8');
-for(const path of ['/rankings','/streams','/top100-albums','/pro','/turntable',...turntableCategories.map(c=>'/turntable-'+c.slug)])if(!xml.includes(path+'</loc>'))xml=xml.replace('</urlset>',`<url><loc>https://afrobeats-index.vercel.app${path}</loc></url></urlset>`);
+for(const path of ['/rankings','/heat','/current-100','/streams','/top100-albums','/pro','/turntable',...turntableCategories.map(c=>'/turntable-'+c.slug)])if(!xml.includes(path+'</loc>'))xml=xml.replace('</urlset>',`<url><loc>https://afrobeats-index.vercel.app${path}</loc></url></urlset>`);
 fs.writeFileSync('sitemap.xml',xml);
 console.log('Rendered Rankings hub, both TurnTable Top 100 tables, stream lookup and Pro overview.');
+module.exports={page};
 
 for (const chart of [{...read('nigeria-top100'), slug: 'top100'}, ...songCharts]) {
   const missing = chart.rows.filter(([, title, artist]) => !recording(title, artist));

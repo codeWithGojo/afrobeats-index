@@ -1,0 +1,16 @@
+{
+ "note": "Media kit facts. Audience figures stay null until taken from Vercel Analytics for a stated date range; null shows as 'Shared on request'. Never estimate them.",
+ "contact": "imegufavour30@gmail.com",
+ "audience": {
+  "monthlyVisitors": null,
+  "monthlyPageViews": null,
+  "newsletterSubscribers": null,
+  "topCountries": null,
+  "period": null
+ },
+ "slots": [
+  {"id": "newsletter-header", "name": "Sunday brief header", "where": "Top of every Sunday brief email and the web issue at /newsletter.", "format": "Sponsor name, headline up to 90 characters, copy up to 240, button label up to 30, one HTTPS link, optional square logo (96 px, PNG or SVG).", "term": "Weekly"},
+  {"id": "watch-inline", "name": "Artists to Watch card", "where": "One card inside the Artists to Watch grid, after the third artist.", "format": "Same fields as above. Shown beside, never instead of, the watchlist.", "term": "Weekly or monthly"},
+  {"id": "board-presented-by", "name": "\"Presented by\" on Heat 25", "where": "A single line under the Heat 25 title: Presented by your brand.", "format": "Sponsor name and one HTTPS link.", "term": "Monthly"}
+ ]
+}

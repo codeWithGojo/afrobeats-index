@@ -1,0 +1,395 @@
+{
+ "note": "Per-artist accent colours extracted from each photo by scripts/artist-images.cjs. dark/light variants pass WCAG AA (4.5:1) on that theme's background and surface.",
+ "backgrounds": {
+  "dark": [
+   "#151d23",
+   "#0b1014"
+  ],
+  "light": [
+   "#ffffff",
+   "#f4f6f5"
+  ]
+ },
+ "artists": {
+  "9ice": {
+   "source": "#704229",
+   "dark": "#bc7148",
+   "light": "#704229"
+  },
+  "adekunle-gold": {
+   "source": "#541e2c",
+   "dark": "#c96580",
+   "light": "#541e2c"
+  },
+  "afro-b": {
+   "source": "#dfe21b",
+   "dark": "#dfe21b",
+   "light": "#73750e"
+  },
+  "amaarae": {
+   "source": "#1c3944",
+   "dark": "#458fa9",
+   "light": "#1c3944"
+  },
+  "asake": {
+   "source": null,
+   "dark": "#d9f24a",
+   "light": "#536600"
+  },
+  "ayra-starr": {
+   "source": "#b064b4",
+   "dark": "#b46bb7",
+   "light": "#a050a4"
+  },
+  "bella-shmurda": {
+   "source": "#6d6d32",
+   "dark": "#89893f",
+   "light": "#6d6d32"
+  },
+  "black-sherif": {
+   "source": null,
+   "dark": "#d9f24a",
+   "light": "#536600"
+  },
+  "blaqbonez": {
+   "source": "#8b5133",
+   "dark": "#bc704a",
+   "light": "#8b5133"
+  },
+  "bnxn": {
+   "source": "#548144",
+   "dark": "#5f924d",
+   "light": "#4f7b40"
+  },
+  "bracket": {
+   "source": "#5d850c",
+   "dark": "#67930e",
+   "light": "#577c0c"
+  },
+  "brymo": {
+   "source": "#4f2934",
+   "dark": "#b57085",
+   "light": "#4f2934"
+  },
+  "burna-boy": {
+   "source": "#543a2c",
+   "dark": "#ab7960",
+   "light": "#543a2c"
+  },
+  "chike": {
+   "source": "#945734",
+   "dark": "#bf7247",
+   "light": "#945734"
+  },
+  "ciza": {
+   "source": "#70381d",
+   "dark": "#cb6837",
+   "light": "#70381d"
+  },
+  "ckay": {
+   "source": "#92620c",
+   "dark": "#b3780f",
+   "light": "#92620c"
+  },
+  "d-banj": {
+   "source": "#488f7b",
+   "dark": "#49927e",
+   "light": "#3d7a69"
+  },
+  "darkoo": {
+   "source": null,
+   "dark": "#d9f24a",
+   "light": "#536600"
+  },
+  "davido": {
+   "source": "#c38842",
+   "dark": "#c38842",
+   "light": "#94652f"
+  },
+  "diamond-platnumz": {
+   "source": "#5b7cc1",
+   "dark": "#6685c5",
+   "light": "#496eba"
+  },
+  "don-jazzy": {
+   "source": "#89a8e5",
+   "dark": "#89a8e5",
+   "light": "#366bd3"
+  },
+  "fave": {
+   "source": "#e6cda2",
+   "dark": "#e6cda2",
+   "light": "#906927"
+  },
+  "fela-kuti": {
+   "source": null,
+   "dark": "#d9f24a",
+   "light": "#536600"
+  },
+  "fireboy-dml": {
+   "source": null,
+   "dark": "#d9f24a",
+   "light": "#536600"
+  },
+  "flavour": {
+   "source": "#ec9777",
+   "dark": "#ec9777",
+   "light": "#c0471a"
+  },
+  "focalistic": {
+   "source": "#5d18b8",
+   "dark": "#a169eb",
+   "light": "#5d18b8"
+  },
+  "fola": {
+   "source": null,
+   "dark": "#d9f24a",
+   "light": "#536600"
+  },
+  "fuse-odg": {
+   "source": "#633e27",
+   "dark": "#b77349",
+   "light": "#633e27"
+  },
+  "ice-prince": {
+   "source": "#bb3666",
+   "dark": "#d05e88",
+   "light": "#bb3666"
+  },
+  "jazzwrld": {
+   "source": "#754133",
+   "dark": "#b9735e",
+   "light": "#754133"
+  },
+  "joeboy": {
+   "source": "#4f2b14",
+   "dark": "#c86d34",
+   "light": "#4f2b14"
+  },
+  "khaid": {
+   "source": "#452f22",
+   "dark": "#ad7857",
+   "light": "#452f22"
+  },
+  "kidi": {
+   "source": "#bfd8e2",
+   "dark": "#bfd8e2",
+   "light": "#3f768b"
+  },
+  "king-promise": {
+   "source": null,
+   "dark": "#d9f24a",
+   "light": "#536600"
+  },
+  "king-sunny-ade": {
+   "source": "#6b3a13",
+   "dark": "#ca6d24",
+   "light": "#6b3a13"
+  },
+  "kizz-daniel": {
+   "source": "#a17742",
+   "dark": "#a87c45",
+   "light": "#8f693b"
+  },
+  "lagbaja": {
+   "source": "#d7c6ad",
+   "dark": "#d7c6ad",
+   "light": "#876a41"
+  },
+  "lojay": {
+   "source": "#b86f54",
+   "dark": "#ba7257",
+   "light": "#a45e44"
+  },
+  "mavo": {
+   "source": "#bb8874",
+   "dark": "#bb8874",
+   "light": "#9b634c"
+  },
+  "mayorkun": {
+   "source": "#0a6d24",
+   "dark": "#0e9b33",
+   "light": "#0a6d24"
+  },
+  "moliy": {
+   "source": "#b6775d",
+   "dark": "#b6775d",
+   "light": "#9e6147"
+  },
+  "mr-eazi": {
+   "source": "#552c1d",
+   "dark": "#c26d4e",
+   "light": "#552c1d"
+  },
+  "nonso-amadi": {
+   "source": null,
+   "dark": "#d9f24a",
+   "light": "#536600"
+  },
+  "odeal": {
+   "source": "#16317f",
+   "dark": "#5f82e3",
+   "light": "#16317f"
+  },
+  "odumodublvck": {
+   "source": "#187894",
+   "dark": "#1d91b3",
+   "light": "#187894"
+  },
+  "olamide": {
+   "source": "#27665f",
+   "dark": "#389289",
+   "light": "#27665f"
+  },
+  "olu-maintain": {
+   "source": "#1c3769",
+   "dark": "#5b85d2",
+   "light": "#1c3769"
+  },
+  "omah-lay": {
+   "source": "#89427e",
+   "dark": "#b76bab",
+   "light": "#89427e"
+  },
+  "oxlade": {
+   "source": "#970c29",
+   "dark": "#f04266",
+   "light": "#970c29"
+  },
+  "p-square": {
+   "source": "#199b3f",
+   "dark": "#199b3f",
+   "light": "#158034"
+  },
+  "phyno": {
+   "source": "#3aef7d",
+   "dark": "#3aef7d",
+   "light": "#0a8036"
+  },
+  "rema": {
+   "source": null,
+   "dark": "#d9f24a",
+   "light": "#536600"
+  },
+  "ruger": {
+   "source": "#5c451c",
+   "dark": "#a77d33",
+   "light": "#5c451c"
+  },
+  "runtown": {
+   "source": "#2f6279",
+   "dark": "#438cac",
+   "light": "#2f6279"
+  },
+  "sarkodie": {
+   "source": "#244454",
+   "dark": "#4a8dae",
+   "light": "#244454"
+  },
+  "sarz": {
+   "source": null,
+   "dark": "#d9f24a",
+   "light": "#536600"
+  },
+  "seyi-vibez": {
+   "source": "#a5470d",
+   "dark": "#de5f12",
+   "light": "#a5470d"
+  },
+  "shallipopi": {
+   "source": null,
+   "dark": "#d9f24a",
+   "light": "#536600"
+  },
+  "shatta-wale": {
+   "source": "#59372b",
+   "dark": "#b27661",
+   "light": "#59372b"
+  },
+  "shoday": {
+   "source": "#cfa153",
+   "dark": "#cfa153",
+   "light": "#8f6928"
+  },
+  "simi": {
+   "source": "#8a523f",
+   "dark": "#b5735c",
+   "light": "#8a523f"
+  },
+  "skales": {
+   "source": "#bfd5e8",
+   "dark": "#bfd5e8",
+   "light": "#3b75a6"
+  },
+  "stonebwoy": {
+   "source": null,
+   "dark": "#d9f24a",
+   "light": "#536600"
+  },
+  "styl-plus": {
+   "source": "#9b603e",
+   "dark": "#b8754e",
+   "light": "#9b603e"
+  },
+  "tekno": {
+   "source": "#d1b594",
+   "dark": "#d1b594",
+   "light": "#8f693d"
+  },
+  "tems": {
+   "source": "#6a3a1f",
+   "dark": "#c66e3e",
+   "light": "#6a3a1f"
+  },
+  "timaya": {
+   "source": "#c21f52",
+   "dark": "#e34f7e",
+   "light": "#c21f52"
+  },
+  "tiwa-savage": {
+   "source": "#98583d",
+   "dark": "#ba7254",
+   "light": "#98583d"
+  },
+  "tony-allen": {
+   "source": null,
+   "dark": "#d9f24a",
+   "light": "#536600"
+  },
+  "tyla": {
+   "source": "#514128",
+   "dark": "#a0804f",
+   "light": "#514128"
+  },
+  "uncle-waffles": {
+   "source": "#8b4d1a",
+   "dark": "#c76e26",
+   "light": "#8b4d1a"
+  },
+  "victony": {
+   "source": "#a05227",
+   "dark": "#cd6933",
+   "light": "#a05227"
+  },
+  "weird-mc": {
+   "source": "#4f3224",
+   "dark": "#b37658",
+   "light": "#4f3224"
+  },
+  "wizkid": {
+   "source": "#482210",
+   "dark": "#d2642f",
+   "light": "#482210"
+  },
+  "young-jonn": {
+   "source": "#096f1a",
+   "dark": "#0c9924",
+   "light": "#096f1a"
+  },
+  "zlatan": {
+   "source": "#774d3a",
+   "dark": "#b0775d",
+   "light": "#774d3a"
+  }
+ }
+}

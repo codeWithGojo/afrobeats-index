@@ -51,3 +51,9 @@ body[data-design=premium] .method-evidence{margin:20px 0 28px;padding:0;border:1
 .watch-card .watch-monogram.t-stagger-line{display:grid}.watch-card .watch-song.t-stagger-line{display:inline-flex}
 body[data-design=premium] .release-type-filters button[aria-pressed=true]{color:var(--af-bg)!important}
 @media(prefers-reduced-motion:reduce){.t-stagger-line{transition:none!important;opacity:1!important;transform:none!important;filter:none!important}.t-acc-panel,.t-acc-panel-inner,.t-acc-chevron{transition:none!important}.release-record,.release-wave b{animation:none!important}.archive-portrait img,.news-visual img{transition:none!important}}
+/* Current v2 formula: four inputs. */
+.editorial-score-visual-v2 .editorial-score-bar{grid-template-columns:35fr 25fr 25fr 15fr}
+.editorial-score-visual-v2 .editorial-score-bar span{justify-content:center;padding:5px;font-size:18px}
+.editorial-score-visual-v2 .editorial-score-bar span:nth-child(3){background:#c9d4f0}
+.editorial-score-visual-v2 .editorial-score-bar span:nth-child(4){background:#e4e9f7}
+.editorial-score-visual-v2 .editorial-score-key{display:grid;grid-template-columns:35fr 25fr 25fr 15fr;gap:6px}

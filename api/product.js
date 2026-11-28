@@ -12,6 +12,9 @@ const services = {
   watch: require("../lib/product-watch.cjs"),
   pro: require("../lib/product-pro.cjs"),
   newsletter: require("../lib/product-newsletter.cjs"),
+  stats: require("../lib/product-stats.cjs"),
+  sponsors: require("../lib/product-sponsors.cjs"),
+  events: require("../lib/product-events.cjs"),
   "paystack-webhook": require("../lib/product-paystack-webhook.cjs"),
   "flutterwave-webhook": require("../lib/product-flutterwave-webhook.cjs"),
 };

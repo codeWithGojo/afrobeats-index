@@ -15,9 +15,9 @@ test('all 50 cards use six complete sourced metrics and preserve their distinct 
  for(const artist of data.artists){
   const stats=card.model(artist.slug,data).stats;
   assert.deepEqual(stats.map(s=>s.key),['TOT','DAY','TRK','PRJ','STR','EDT']);
-  assert.deepEqual(stats.map(s=>s.value),[artist.totalSpotifyStreams,artist.dailySpotifyStreams,artist.trackedSongCount,artist.trackedAlbumCount,Math.round(artist.scoreBreakdown.streamsIndex*.99),Math.round(artist.scoreBreakdown.editorialContribution*10)/10]);
+  assert.deepEqual(stats.map(s=>s.value),[artist.totalSpotifyStreams,artist.dailySpotifyStreams,artist.trackedSongCount,artist.trackedAlbumCount,Math.round(artist.scoreBreakdown.streamsIndex*.99),Math.round(artist.scoreBreakdown.components.editorial*10)/10]);
   assert.ok(stats.every(s=>s.value!==null&&Number.isFinite(s.value)&&s.display!=='—'),artist.slug);
-  assert.ok(stats.find(s=>s.key==='STR').value<=99);assert.ok(stats.find(s=>s.key==='EDT').value<=83);
+  assert.ok(stats.find(s=>s.key==='STR').value<=99);assert.ok(stats.find(s=>s.key==='EDT').value<=100);
  }
  const fixture={artists:[{...data.artists.find(a=>a.slug==='fola'),totalSpotifyStreams:1100000000,dailySpotifyStreams:3250000,trackedSongCount:56,trackedAlbumCount:8}]};
  const fola=card.model('fola',fixture).stats;assert.equal(fola[0].display,'1.1B');assert.equal(fola[1].display,'3.25M');
@@ -55,7 +55,7 @@ test('Story and OG PNGs retain exact dimensions and the complete source labels',
   const svg=card.svg(artist.slug,data,{format,photo:photoFor(artist)}),png=render(svg);
   assert.equal(png.readUInt32BE(16),w);assert.equal(png.readUInt32BE(20),h);
   assert.ok(svg.includes('Editorial ranking'));assert.ok(svg.includes('/current/fola'));
-  for(const text of ['SPOTIFY STREAMS','DAILY SPOTIFY','TRACKED SONGS','TRACKED PROJECTS','STREAM INDEX','EDITORIAL POINTS'])assert.ok(svg.includes(text),text);
+  for(const text of ['SPOTIFY STREAMS','DAILY SPOTIFY','TRACKED SONGS','TRACKED PROJECTS','RECENT STREAMS','EDITORIAL SCORE'])assert.ok(svg.includes(text),text);
   assert.ok(!svg.includes('Component not published'));
  }
 });

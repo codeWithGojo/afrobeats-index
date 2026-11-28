@@ -1,0 +1,30 @@
+// Phase 8: sponsor slot placeholders (three fixed slots) and the /sponsor media kit. Idempotent.
+const fs=require('node:fs');
+const {page}=require('./render-rankings.cjs');
+const kit=JSON.parse(fs.readFileSync('data/sponsor-kit.json','utf8')),current=JSON.parse(fs.readFileSync('data/current.json','utf8'));
+const e=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const script='<script src="/sponsor-slots.js" defer></script>';
+function edit(file,fn){let html=fs.readFileSync(file,'utf8');html=html.replace(/<[a-z]+ data-sponsor-slot[^>]*><\/[a-z]+>/g,'').replace(script,'');html=fn(html);if(!html.includes(script))html=html.replace('</head>',script+'</head>');fs.writeFileSync(file,html);}
+
+// 1. Artists to Watch: one inline card after the third artist.
+edit('watch.html',html=>{let n=0;return html.replace(/<\/article>/g,m=>++n===3?m+'<aside data-sponsor-slot="watch-inline" class="watch-card" hidden></aside>':m);});
+// 2. "Presented by" on one board (Heat 25), under the title, outside the ranked table.
+edit('heat.html',html=>html.replace('<nav class="board-switch"','<p data-sponsor-slot="board-presented-by" data-board="heat" hidden></p><nav class="board-switch"'));
+// 3. Newsletter header (web issue). The email gets the same slot server-side.
+edit('newsletter.html',html=>html.replace('<section class="brief-section"','<aside data-sponsor-slot="newsletter-header" hidden></aside><section class="brief-section"'));
+
+// Media kit
+const a=kit.audience,fig=v=>v==null?'Shared on request':Number.isFinite(v)?Number(v).toLocaleString('en'):e(v);
+const body=`<section class="chart-table-page sponsor-page"><header class="ranking-page-head"><p class="index-eyebrow">SPONSOR AFR/INDEX</p><h1>Reach people who follow African music closely.</h1><p>Three fixed, clearly labelled placements. Your brand sits next to the charts, never inside them.</p></header>
+<section class="board-block"><h2>Audience</h2><dl class="sponsor-facts"><div><dt>Monthly visitors</dt><dd>${fig(a.monthlyVisitors)}</dd></div><div><dt>Monthly page views</dt><dd>${fig(a.monthlyPageViews)}</dd></div><div><dt>Sunday brief subscribers</dt><dd>${fig(a.newsletterSubscribers)}</dd></div><div><dt>Top countries</dt><dd>${a.topCountries?e(a.topCountries.join(', ')):'Shared on request'}</dd></div></dl><p class="board-note">${a.period?`Figures for ${e(a.period)}, from Vercel Web Analytics.`:'We share audited figures from our analytics with the date range when you ask. We do not publish estimates.'} Coverage: ${current.artists.length} artists ranked every week, the Current 100, Heat 25, the official TurnTable charts and personal stats.</p></section>
+<section class="board-block"><h2>Slots</h2><div class="sponsor-slots-grid">${kit.slots.map(s=>`<article><h3>${e(s.name)}</h3><p><strong>Where:</strong> ${e(s.where)}</p><p><strong>Format:</strong> ${e(s.format)}</p><p><strong>Term:</strong> ${e(s.term)} · Price on request</p></article>`).join('')}</div></section>
+<section class="board-block" id="policy"><h2>How sponsors work</h2><ul><li>Only these three slots. No sponsor content inside rankings, scores, movement explanations or artist profiles.</li><li>Every placement is labelled <strong>Sponsored</strong> with a short disclosure, and its link is marked as sponsored.</li><li>Sponsors cannot buy, change or preview a position on any chart.</li><li>Sponsor offers in the Sunday brief go only to readers who ticked the separate sponsor-offers box.</li><li>We report impressions and clicks per slot each week. We do not share reader data with sponsors.</li></ul></section>
+<section class="board-block"><h2>Get in touch</h2><p>Email <a href="mailto:${e(kit.contact)}">${e(kit.contact)}</a> or send the form. We reply within 3 working days.</p>
+<form id="sponsor-inquiry" class="sponsor-form"><label>Your name<input name="name" required minlength="2" maxlength="100" autocomplete="name"></label><label>Company<input name="company" maxlength="120" autocomplete="organization"></label><label>Email<input name="email" type="email" required autocomplete="email"></label>
+<fieldset><legend>Slots you are interested in</legend>${kit.slots.map(s=>`<label class="sponsor-check"><input type="checkbox" name="slots" value="${e(s.id)}"> ${e(s.name)}</label>`).join('')}</fieldset>
+<label>Budget (optional)<input name="budget" maxlength="60"></label><label>About the campaign<textarea name="message" required minlength="10" maxlength="2000" rows="4"></textarea></label><input name="website" tabindex="-1" autocomplete="off" class="sponsor-hp" aria-hidden="true">
+<label class="sponsor-check"><input type="checkbox" name="consent" required> Use these details to reply to my inquiry. <a href="/privacy">Privacy</a></label><button type="submit">Send inquiry</button><p id="sponsor-status" role="status" aria-live="polite"></p></form></section></section>
+<script>document.getElementById('sponsor-inquiry').addEventListener('submit',async ev=>{ev.preventDefault();const f=new FormData(ev.target),s=document.getElementById('sponsor-status');const body={name:f.get('name'),company:f.get('company'),email:f.get('email'),budget:f.get('budget'),message:f.get('message'),website:f.get('website'),slots:f.getAll('slots'),consent:f.get('consent')==='on'};s.textContent='Sending…';try{const r=await fetch('/api/product?service=sponsors&action=inquiry',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});const d=await r.json().catch(()=>({}));s.textContent=d.message||d.error||(r.ok?'Sent.':'Could not send. Please email us.');if(r.ok)ev.target.reset();}catch{s.textContent='Could not send. Please email us.';}});</script>`;
+page('/sponsor','Sponsor AFR/INDEX: media kit','Sponsor AFR/INDEX: three clearly labelled placements beside the African music charts, never inside them. Slots, formats and contact.',body);
+let xml=fs.readFileSync('sitemap.xml','utf8');if(!xml.includes('/sponsor</loc>'))xml=xml.replace('</urlset>','<url><loc>https://afrobeats-index.vercel.app/sponsor</loc></url></urlset>');fs.writeFileSync('sitemap.xml',xml);
+console.log('Rendered 3 sponsor slots and /sponsor.');

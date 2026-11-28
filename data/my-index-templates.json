@@ -1,0 +1,11 @@
+{
+ "note": "Seeded My Index templates so first-time users never see a blank page. Anyone can copy and remix them.",
+ "default": "balanced",
+ "templates": [
+  {"id": "balanced", "name": "Balanced", "description": "What you play, how they sound and how it feels.", "pool": "current", "metrics": [{"key": "streams", "weight": 40}, {"key": "vocals", "weight": 30}, {"key": "vibes", "weight": 30}]},
+  {"id": "lyrics-only", "name": "Lyrics Only", "description": "Pen first. Lyricism carries almost all the weight.", "pool": "current", "metrics": [{"key": "lyricism", "weight": 80}, {"key": "vocals", "weight": 10}, {"key": "replay", "weight": 10}]},
+  {"id": "live-performance", "name": "Live Performance", "description": "Who you would pay to see tonight.", "pool": "current", "metrics": [{"key": "live", "weight": 60}, {"key": "vocals", "weight": 20}, {"key": "vibes", "weight": 20}]},
+  {"id": "underrated-gems", "name": "Underrated Gems", "description": "Only artists outside the official top 20. Craft over numbers.", "pool": "outside-top-20", "metrics": [{"key": "innovation", "weight": 40}, {"key": "lyricism", "weight": 30}, {"key": "vibes", "weight": 30}]},
+  {"id": "the-greats", "name": "The Greats", "description": "Pro template: influence and staying power.", "pool": "current", "pro": true, "metrics": [{"key": "influence", "weight": 30}, {"key": "longevity", "weight": 25}, {"key": "vocals", "weight": 15}, {"key": "lyricism", "weight": 15}, {"key": "innovation", "weight": 15}]}
+ ]
+}

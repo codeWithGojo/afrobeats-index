@@ -1,4 +1,5 @@
 const fs=require('node:fs');
+require('./unbundle-css.cjs');
 fs.copyFileSync('templates/app.html','index.html');
 require('./sync-editorial.cjs');
 require('./sync-release-audit.cjs');
@@ -8,6 +9,9 @@ execFileSync(process.execPath,[path.join(path.dirname(require.resolve('tailwindc
 const {buildSync}=require('esbuild');
 require('./sync-streaming.cjs');
 require('./export-data.cjs');
+require('./build-boards.cjs');
+require('./build-roster.cjs');
+require('./build-history.cjs');
 require('./sync-player-cards.cjs');
 require('./render-current.cjs');
 require('./render-discovery.cjs');
@@ -17,6 +21,12 @@ require('./render-trust.cjs');
 require('./render-routes.cjs');
 require('./render-upcoming.cjs');
 require('./render-rankings.cjs');
+require('./render-boards.cjs');
+require('./render-stats.cjs');
+require('./render-my-index.cjs');
+require('./render-sponsors.cjs');
+require('./build-health.cjs');
+require('./render-health.cjs');
 require('./render-publishing.cjs');
 require('./render-visuals.cjs');
 require('./render-touring.cjs');
@@ -33,5 +43,8 @@ buildSync({entryPoints:["src/motion/index.tsx"],bundle:true,format:"iife",target
 buildSync({entryPoints:["src/motion/Glass.tsx"],bundle:true,format:"iife",target:"es2022",outfile:"assets/glass-motion.js",minify:true,jsx:"automatic"});
 
 // Shared layout polish is linked last so it can correct earlier page styles.
+require("./render-onboarding.cjs");
 require("./render-legal.cjs");
+require("./render-seo.cjs");
 require("./inject-polish.cjs");
+require("./bundle-css.cjs");

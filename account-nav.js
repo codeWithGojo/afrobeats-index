@@ -9,6 +9,10 @@
   window.addEventListener('afri:account-link-added', async () => {
     try { render(Boolean(await window.AfriAccount?.session())); } catch { /* Keep the default sign-in link available. */ }
   });
+  // Phase 10: visitors with no saved session never download the account bundle (about 50 KB).
+  // If storage is unavailable we cannot tell, so load it as before.
+  const mayHaveSession = (() => { try { return localStorage.getItem('afri-auth') !== null; } catch { return true; } })();
+  if (!mayHaveSession) { render(false); return; }
   try {
     await import('/assets/account.js');
     render(Boolean(await window.AfriAccount.session()));

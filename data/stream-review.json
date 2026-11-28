@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-22T23:28:17.015Z",
+  "generatedAt": "2026-11-28T07:56:37.498Z",
   "snapshot": "2026-11-22T23:20:22.903080+00:00",
   "policy": "Review flags only; no stream values or scores corrected. Comparing snapshots may expose changed coverage rather than errors.",
   "artists": [
@@ -48,11 +48,11 @@
       ]
     },
     {
-      "slug": "adekunle-gold",
-      "name": "Adekunle Gold",
-      "daily": 539217,
-      "total": 916870655,
-      "sourceUrl": "https://kworb.net/spotify/artist/2IK173RXLiCSQ8fhDlAb3s_songs.html",
+      "slug": "tiwa-savage",
+      "name": "Tiwa Savage",
+      "daily": 354629,
+      "total": 774026741,
+      "sourceUrl": "https://kworb.net/spotify/artist/1hNaHKp2Za5YdOAG0WnRbc_songs.html",
       "checkedAt": "2026-11-22T23:20:22.903080+00:00",
       "reasons": [
         "Lifetime total decreased since the previous snapshot (possible source coverage correction)"
@@ -70,11 +70,11 @@
       ]
     },
     {
-      "slug": "tiwa-savage",
-      "name": "Tiwa Savage",
-      "daily": 354629,
-      "total": 774026741,
-      "sourceUrl": "https://kworb.net/spotify/artist/1hNaHKp2Za5YdOAG0WnRbc_songs.html",
+      "slug": "adekunle-gold",
+      "name": "Adekunle Gold",
+      "daily": 539217,
+      "total": 916870655,
+      "sourceUrl": "https://kworb.net/spotify/artist/2IK173RXLiCSQ8fhDlAb3s_songs.html",
       "checkedAt": "2026-11-22T23:20:22.903080+00:00",
       "reasons": [
         "Lifetime total decreased since the previous snapshot (possible source coverage correction)"
@@ -89,6 +89,17 @@
       "checkedAt": "2026-11-22T23:20:22.903080+00:00",
       "reasons": [
         "Latest daily pace differs by over 4× from average growth between snapshots (check coverage and release spikes)"
+      ]
+    },
+    {
+      "slug": "focalistic",
+      "name": "Focalistic",
+      "daily": 358993,
+      "total": 306051126,
+      "sourceUrl": "https://kworb.net/spotify/artist/2GJMSZ7M3D0KyyKRhYgWju_songs.html",
+      "checkedAt": "2026-11-22T23:20:22.903080+00:00",
+      "reasons": [
+        "Lifetime total decreased since the previous snapshot (possible source coverage correction)"
       ]
     },
     {
@@ -130,17 +141,6 @@
       "daily": 201099,
       "total": 571867481,
       "sourceUrl": "https://kworb.net/spotify/artist/6IhG3Yxm3UW98jhyBvrIut_songs.html",
-      "checkedAt": "2026-11-22T23:20:22.903080+00:00",
-      "reasons": [
-        "Lifetime total decreased since the previous snapshot (possible source coverage correction)"
-      ]
-    },
-    {
-      "slug": "focalistic",
-      "name": "Focalistic",
-      "daily": 358993,
-      "total": 306051126,
-      "sourceUrl": "https://kworb.net/spotify/artist/2GJMSZ7M3D0KyyKRhYgWju_songs.html",
       "checkedAt": "2026-11-22T23:20:22.903080+00:00",
       "reasons": [
         "Lifetime total decreased since the previous snapshot (possible source coverage correction)"

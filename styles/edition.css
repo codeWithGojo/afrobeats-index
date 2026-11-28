@@ -1,4 +1,4 @@
-@font-face{font-family:"Index Condensed";src:url("/assets/fonts/barlow-condensed-800.woff2") format("woff2");font-weight:800;font-display:swap}
+
 :root{
   --index-ink:#0b0b0c;--index-paper:#f6f5ed;--index-lime:#d9f24a;
   --index-surface:var(--index-ink);--index-text:var(--index-paper);--index-muted:#b4b4ac;--index-line:#393936;

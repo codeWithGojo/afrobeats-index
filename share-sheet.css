@@ -1,0 +1,23 @@
+/* ShareSheet: bottom sheet on phones, centred panel on desktop. 44px targets. */
+.share-sheet{padding:0;border:0;background:transparent;max-width:none;max-height:none;margin:auto auto 0;width:100%;color:var(--af-text)}
+.share-sheet::backdrop{background:rgba(0,0,0,.55)}
+@media(min-width:768px){.share-sheet{margin:auto;width:520px}}
+.share-sheet-inner{display:grid;gap:12px;max-height:82vh;overflow:auto;padding:16px 16px calc(16px + env(safe-area-inset-bottom));border:1px solid var(--af-border);border-radius:16px 16px 0 0;background:var(--af-raised,var(--af-surface))}
+@media(min-width:768px){.share-sheet-inner{border-radius:16px}}
+.share-sheet header{display:flex;justify-content:space-between;align-items:center}.share-sheet h2{margin:0;font-size:18px}
+body[data-design=premium] .share-sheet button{min-height:44px;border:1px solid var(--af-border);border-radius:10px;background:var(--af-control-bg,var(--af-surface));color:var(--af-text);font:500 13px var(--af-font-body);cursor:pointer;padding:0 10px}
+.share-sheet button:active{transform:scale(.97)}
+body[data-design=premium] .share-sheet .share-close{width:44px;padding:0;font-size:22px;border:0;background:none}
+body[data-design=premium] .share-sheet .share-native{background:var(--af-accent);border-color:var(--af-accent);color:var(--af-bg);font-weight:600}
+.share-caption{margin:0;font-size:13px;color:var(--af-muted)}
+.share-preview img{display:block;max-height:220px;max-width:100%;margin:0 auto;border-radius:10px}
+.share-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+@media(min-width:768px){.share-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
+body[data-design=premium] .share-grid button{display:grid;justify-items:center;gap:4px;padding:8px 4px;height:auto;min-height:64px;line-height:1.2}
+.share-icon{width:22px;height:22px;border-radius:50%;background:var(--af-border)}
+.share-icon-whatsapp,.share-icon-whatsapp-status{background:#25d366}.share-icon-x{background:#f5f6ef}.share-icon-instagram{background:linear-gradient(45deg,#feda75,#d62976,#4f5bd5)}.share-icon-facebook{background:#1877f2}.share-icon-telegram{background:#2aabee}.share-icon-tiktok{background:#ff0050}.share-icon-snapchat{background:#fffc00}.share-icon-linkedin{background:#0a66c2}.share-icon-reddit{background:#ff4500}.share-icon-threads{background:#9aa3a8}.share-icon-email,.share-icon-sms{background:#8fd1ff}.share-icon-copy,.share-icon-download{background:var(--af-accent)}
+.share-open-button{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 16px;border:1px solid var(--af-border);border-radius:999px;background:none;color:var(--af-text);font:500 14px var(--af-font-body);cursor:pointer}
+.share-open-button:hover{border-color:var(--af-accent)}
+/* Override the site-wide dialog frame so the sheet sits flush at the bottom on phones. */
+body[data-design=premium] dialog.share-sheet{position:fixed;inset:auto 0 0 0;margin:0;padding:0!important;border:0!important;border-radius:0!important;background:transparent!important;box-shadow:none!important;width:100%!important;max-width:none!important;max-height:none!important;overflow:visible}
+@media(min-width:768px){body[data-design=premium] dialog.share-sheet{inset:0;margin:auto;width:520px!important;height:fit-content}}

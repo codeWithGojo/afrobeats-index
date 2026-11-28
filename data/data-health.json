@@ -1,0 +1,885 @@
+{
+ "generatedAt": "2026-11-28T07:56:38.366Z",
+ "thresholds": {
+  "note": "Datasets: see each row. Artist readings: warn after 14 days, critical after 35."
+ },
+ "summary": {
+  "ok": 65,
+  "warn": 33,
+  "critical": 16
+ },
+ "datasets": [
+  {
+   "name": "Current 50 edition",
+   "date": "2026-11-22",
+   "ageDays": 5,
+   "status": "ok",
+   "note": "Published weekly by the Monday job."
+  },
+  {
+   "name": "Nightly stream readings",
+   "date": "2026-11-28",
+   "ageDays": 0,
+   "status": "ok",
+   "note": "78 artists read, 0 failed."
+  },
+  {
+   "name": "TurnTable Nigeria Top 100",
+   "date": "2026-11-12",
+   "ageDays": 16,
+   "status": "warn",
+   "note": "Chart week end."
+  },
+  {
+   "name": "Release identities (Apple)",
+   "date": "2026-11-22",
+   "ageDays": 5,
+   "status": "ok",
+   "note": ""
+  },
+  {
+   "name": "Upcoming releases",
+   "date": "2026-11-19",
+   "ageDays": 8,
+   "status": "ok",
+   "note": ""
+  },
+  {
+   "name": "Current 100 candidates",
+   "date": "2026-11-27",
+   "ageDays": 0,
+   "status": "ok",
+   "note": "28 candidates, 1 excluded."
+  },
+  {
+   "name": "Artists to Watch",
+   "date": "2026-11-09",
+   "ageDays": 19,
+   "status": "ok",
+   "note": ""
+  },
+  {
+   "name": "Touring records",
+   "date": "2026-11-14",
+   "ageDays": 14,
+   "status": "ok",
+   "note": ""
+  }
+ ],
+ "artists": [
+  {
+   "slug": "zawadi-yamungu",
+   "name": "Zawadi Yamungu",
+   "board": "Current 100 candidate",
+   "reading": "2026-03-31",
+   "ageDays": 242,
+   "status": "critical"
+  },
+  {
+   "slug": "simmy",
+   "name": "Simmy",
+   "board": "Current 100 candidate",
+   "reading": "2026-06-06",
+   "ageDays": 175,
+   "status": "critical"
+  },
+  {
+   "slug": "lwah-ndlunkulu",
+   "name": "Lwah Ndlunkulu",
+   "board": "Current 100 candidate",
+   "reading": "2026-06-10",
+   "ageDays": 171,
+   "status": "critical"
+  },
+  {
+   "slug": "d-banj",
+   "name": "D’banj",
+   "board": "Current 100 candidate",
+   "reading": "2026-06-21",
+   "ageDays": 160,
+   "status": "critical"
+  },
+  {
+   "slug": "naledi-aphiwe",
+   "name": "Naledi Aphiwe",
+   "board": "Current 100 candidate",
+   "reading": "2026-06-22",
+   "ageDays": 159,
+   "status": "critical"
+  },
+  {
+   "slug": "nothando-hlophe",
+   "name": "Nothando Hlophe",
+   "board": "Current 100 candidate",
+   "reading": "2026-09-06",
+   "ageDays": 83,
+   "status": "critical"
+  },
+  {
+   "slug": "yemi-alade",
+   "name": "Yemi Alade",
+   "board": "Current 100 candidate",
+   "reading": "2026-09-06",
+   "ageDays": 83,
+   "status": "critical"
+  },
+  {
+   "slug": "kidi",
+   "name": "KiDi",
+   "board": "Current 100 candidate",
+   "reading": "2026-09-25",
+   "ageDays": 64,
+   "status": "critical"
+  },
+  {
+   "slug": "boohle",
+   "name": "Boohle",
+   "board": "Current 100 candidate",
+   "reading": "2026-09-26",
+   "ageDays": 63,
+   "status": "critical"
+  },
+  {
+   "slug": "nkosazana-daughter",
+   "name": "Nkosazana Daughter",
+   "board": "Current 100 candidate",
+   "reading": "2026-09-26",
+   "ageDays": 63,
+   "status": "critical"
+  },
+  {
+   "slug": "stonebwoy",
+   "name": "Stonebwoy",
+   "board": "Current 50",
+   "reading": "2026-10-05",
+   "ageDays": 54,
+   "status": "critical"
+  },
+  {
+   "slug": "king-promise",
+   "name": "King Promise",
+   "board": "Current 50",
+   "reading": "2026-10-16",
+   "ageDays": 43,
+   "status": "critical"
+  },
+  {
+   "slug": "shatta-wale",
+   "name": "Shatta Wale",
+   "board": "Current 50",
+   "reading": "2026-10-17",
+   "ageDays": 42,
+   "status": "critical"
+  },
+  {
+   "slug": "dj-zinhle",
+   "name": "DJ Zinhle",
+   "board": "Current 100 candidate",
+   "reading": "2026-10-17",
+   "ageDays": 42,
+   "status": "critical"
+  },
+  {
+   "slug": "ntencane",
+   "name": "Ntencane",
+   "board": "Current 100 candidate",
+   "reading": "2026-10-17",
+   "ageDays": 42,
+   "status": "critical"
+  },
+  {
+   "slug": "tyler-icu",
+   "name": "Tyler ICU",
+   "board": "Current 100 candidate",
+   "reading": "2026-10-17",
+   "ageDays": 42,
+   "status": "critical"
+  },
+  {
+   "slug": "uncle-waffles",
+   "name": "Uncle Waffles",
+   "board": "Current 50",
+   "reading": "2026-10-27",
+   "ageDays": 32,
+   "status": "warn"
+  },
+  {
+   "slug": "babalwa-m",
+   "name": "Babalwa M",
+   "board": "Current 100 candidate",
+   "reading": "2026-10-28",
+   "ageDays": 31,
+   "status": "warn"
+  },
+  {
+   "slug": "diamond-platnumz",
+   "name": "Diamond Platnumz",
+   "board": "Current 50",
+   "reading": "2026-11-06",
+   "ageDays": 22,
+   "status": "warn"
+  },
+  {
+   "slug": "ciza",
+   "name": "CIZA",
+   "board": "Current 50",
+   "reading": "2026-11-09",
+   "ageDays": 19,
+   "status": "warn"
+  },
+  {
+   "slug": "dlala-thukzin",
+   "name": "Dlala Thukzin",
+   "board": "Current 100 candidate",
+   "reading": "2026-11-17",
+   "ageDays": 11,
+   "status": "ok"
+  },
+  {
+   "slug": "kah-lo",
+   "name": "Kah-Lo",
+   "board": "Current 100 candidate",
+   "reading": "2026-11-17",
+   "ageDays": 11,
+   "status": "ok"
+  },
+  {
+   "slug": "sarz",
+   "name": "Sarz",
+   "board": "Current 50",
+   "reading": "2026-11-18",
+   "ageDays": 10,
+   "status": "ok"
+  },
+  {
+   "slug": "bella-shmurda",
+   "name": "Bella Shmurda",
+   "board": "Current 50",
+   "reading": "2026-11-18",
+   "ageDays": 10,
+   "status": "ok"
+  },
+  {
+   "slug": "adekunle-gold",
+   "name": "Adekunle Gold",
+   "board": "Current 50",
+   "reading": "2026-11-18",
+   "ageDays": 10,
+   "status": "ok"
+  },
+  {
+   "slug": "zinoleesky",
+   "name": "Zinoleesky",
+   "board": "Current 100 candidate",
+   "reading": "2026-11-18",
+   "ageDays": 10,
+   "status": "ok"
+  },
+  {
+   "slug": "txc",
+   "name": "TxC",
+   "board": "Current 100 candidate",
+   "reading": "2026-11-18",
+   "ageDays": 10,
+   "status": "ok"
+  },
+  {
+   "slug": "khaid",
+   "name": "Khaid",
+   "board": "Current 50",
+   "reading": "2026-11-19",
+   "ageDays": 9,
+   "status": "ok"
+  },
+  {
+   "slug": "oxlade",
+   "name": "Oxlade",
+   "board": "Current 50",
+   "reading": "2026-11-20",
+   "ageDays": 8,
+   "status": "ok"
+  },
+  {
+   "slug": "zlatan",
+   "name": "Zlatan",
+   "board": "Current 50",
+   "reading": "2026-11-20",
+   "ageDays": 8,
+   "status": "ok"
+  },
+  {
+   "slug": "joeboy",
+   "name": "Joeboy",
+   "board": "Current 50",
+   "reading": "2026-11-20",
+   "ageDays": 8,
+   "status": "ok"
+  },
+  {
+   "slug": "fave",
+   "name": "FAVE",
+   "board": "Current 50",
+   "reading": "2026-11-21",
+   "ageDays": 7,
+   "status": "ok"
+  },
+  {
+   "slug": "young-stunna",
+   "name": "Young Stunna",
+   "board": "Current 100 candidate",
+   "reading": "2026-11-21",
+   "ageDays": 7,
+   "status": "ok"
+  },
+  {
+   "slug": "sarkodie",
+   "name": "Sarkodie",
+   "board": "Current 100 candidate",
+   "reading": "2026-11-21",
+   "ageDays": 7,
+   "status": "ok"
+  },
+  {
+   "slug": "darkoo",
+   "name": "Darkoo",
+   "board": "Current 50",
+   "reading": "2026-11-22",
+   "ageDays": 6,
+   "status": "ok"
+  },
+  {
+   "slug": "phyno",
+   "name": "Phyno",
+   "board": "Current 50",
+   "reading": "2026-11-22",
+   "ageDays": 6,
+   "status": "ok"
+  },
+  {
+   "slug": "black-sherif",
+   "name": "Black Sherif",
+   "board": "Current 50",
+   "reading": "2026-11-22",
+   "ageDays": 6,
+   "status": "ok"
+  },
+  {
+   "slug": "ruger",
+   "name": "Ruger",
+   "board": "Current 50",
+   "reading": "2026-11-23",
+   "ageDays": 5,
+   "status": "ok"
+  },
+  {
+   "slug": "olamide",
+   "name": "Olamide",
+   "board": "Current 50",
+   "reading": "2026-11-23",
+   "ageDays": 5,
+   "status": "ok"
+  },
+  {
+   "slug": "young-jonn",
+   "name": "Young Jonn",
+   "board": "Current 50",
+   "reading": "2026-11-23",
+   "ageDays": 5,
+   "status": "ok"
+  },
+  {
+   "slug": "odeal",
+   "name": "Odeal",
+   "board": "Current 50",
+   "reading": "2026-11-23",
+   "ageDays": 5,
+   "status": "ok"
+  },
+  {
+   "slug": "moliy",
+   "name": "MOLIY",
+   "board": "Current 50",
+   "reading": "2026-11-24",
+   "ageDays": 4,
+   "status": "ok"
+  },
+  {
+   "slug": "seyi-vibez",
+   "name": "Seyi Vibez",
+   "board": "Current 50",
+   "reading": "2026-11-24",
+   "ageDays": 4,
+   "status": "ok"
+  },
+  {
+   "slug": "mavo",
+   "name": "Mavo",
+   "board": "Current 50",
+   "reading": "2026-11-24",
+   "ageDays": 4,
+   "status": "ok"
+  },
+  {
+   "slug": "kizz-daniel",
+   "name": "Kizz Daniel",
+   "board": "Current 50",
+   "reading": "2026-11-24",
+   "ageDays": 4,
+   "status": "ok"
+  },
+  {
+   "slug": "jazzwrld",
+   "name": "JAZZWRLD",
+   "board": "Current 50",
+   "reading": "2026-11-24",
+   "ageDays": 4,
+   "status": "ok"
+  },
+  {
+   "slug": "shallipopi",
+   "name": "Shallipopi",
+   "board": "Current 50",
+   "reading": "2026-11-24",
+   "ageDays": 4,
+   "status": "ok"
+  },
+  {
+   "slug": "sjava",
+   "name": "Sjava",
+   "board": "Current 100 candidate",
+   "reading": "2026-11-24",
+   "ageDays": 4,
+   "status": "ok"
+  },
+  {
+   "slug": "kabza-de-small",
+   "name": "Kabza De Small",
+   "board": "Current 100 candidate",
+   "reading": "2026-11-24",
+   "ageDays": 4,
+   "status": "ok"
+  },
+  {
+   "slug": "omah-lay",
+   "name": "OMAH LAY",
+   "board": "Current 50",
+   "reading": "2026-11-25",
+   "ageDays": 3,
+   "status": "ok"
+  },
+  {
+   "slug": "bnxn",
+   "name": "BNXN",
+   "board": "Current 50",
+   "reading": "2026-11-25",
+   "ageDays": 3,
+   "status": "ok"
+  },
+  {
+   "slug": "ayra-starr",
+   "name": "Ayra Starr",
+   "board": "Current 50",
+   "reading": "2026-11-25",
+   "ageDays": 3,
+   "status": "ok"
+  },
+  {
+   "slug": "amaarae",
+   "name": "Amaarae",
+   "board": "Current 50",
+   "reading": "2026-11-25",
+   "ageDays": 3,
+   "status": "ok"
+  },
+  {
+   "slug": "tiwa-savage",
+   "name": "Tiwa Savage",
+   "board": "Current 50",
+   "reading": "2026-11-25",
+   "ageDays": 3,
+   "status": "ok"
+  },
+  {
+   "slug": "shoday",
+   "name": "Shoday",
+   "board": "Current 50",
+   "reading": "2026-11-25",
+   "ageDays": 3,
+   "status": "ok"
+  },
+  {
+   "slug": "blaqbonez",
+   "name": "Blaqbonez",
+   "board": "Current 50",
+   "reading": "2026-11-25",
+   "ageDays": 3,
+   "status": "ok"
+  },
+  {
+   "slug": "lojay",
+   "name": "Lojay",
+   "board": "Current 50",
+   "reading": "2026-11-25",
+   "ageDays": 3,
+   "status": "ok"
+  },
+  {
+   "slug": "chike",
+   "name": "Chike",
+   "board": "Current 50",
+   "reading": "2026-11-25",
+   "ageDays": 3,
+   "status": "ok"
+  },
+  {
+   "slug": "tekno",
+   "name": "Tekno",
+   "board": "Current 50",
+   "reading": "2026-11-25",
+   "ageDays": 3,
+   "status": "ok"
+  },
+  {
+   "slug": "mayorkun",
+   "name": "Mayorkun",
+   "board": "Current 100 candidate",
+   "reading": "2026-11-25",
+   "ageDays": 3,
+   "status": "ok"
+  },
+  {
+   "slug": "zaylevelten",
+   "name": "Zaylevelten",
+   "board": "Current 100 candidate",
+   "reading": "2026-11-25",
+   "ageDays": 3,
+   "status": "ok"
+  },
+  {
+   "slug": "dj-maphorisa",
+   "name": "DJ Maphorisa",
+   "board": "Current 100 candidate",
+   "reading": "2026-11-25",
+   "ageDays": 3,
+   "status": "ok"
+  },
+  {
+   "slug": "davido",
+   "name": "Davido",
+   "board": "Current 50",
+   "reading": "2026-11-26",
+   "ageDays": 2,
+   "status": "ok"
+  },
+  {
+   "slug": "fireboy-dml",
+   "name": "Fireboy DML",
+   "board": "Current 50",
+   "reading": "2026-11-26",
+   "ageDays": 2,
+   "status": "ok"
+  },
+  {
+   "slug": "victony",
+   "name": "Victony",
+   "board": "Current 50",
+   "reading": "2026-11-26",
+   "ageDays": 2,
+   "status": "ok"
+  },
+  {
+   "slug": "ckay",
+   "name": "CKay",
+   "board": "Current 50",
+   "reading": "2026-11-26",
+   "ageDays": 2,
+   "status": "ok"
+  },
+  {
+   "slug": "odumodublvck",
+   "name": "ODUMODUBLVCK",
+   "board": "Current 50",
+   "reading": "2026-11-26",
+   "ageDays": 2,
+   "status": "ok"
+  },
+  {
+   "slug": "focalistic",
+   "name": "Focalistic",
+   "board": "Current 50",
+   "reading": "2026-11-26",
+   "ageDays": 2,
+   "status": "ok"
+  },
+  {
+   "slug": "zee-nxumalo",
+   "name": "Zee Nxumalo",
+   "board": "Current 100 candidate",
+   "reading": "2026-11-26",
+   "ageDays": 2,
+   "status": "ok"
+  },
+  {
+   "slug": "scotts-maphuma",
+   "name": "Scotts Maphuma",
+   "board": "Current 100 candidate",
+   "reading": "2026-11-26",
+   "ageDays": 2,
+   "status": "ok"
+  },
+  {
+   "slug": "rema",
+   "name": "Rema",
+   "board": "Current 50",
+   "reading": "2026-11-27",
+   "ageDays": 1,
+   "status": "ok"
+  },
+  {
+   "slug": "wizkid",
+   "name": "Wizkid",
+   "board": "Current 50",
+   "reading": "2026-11-27",
+   "ageDays": 1,
+   "status": "ok"
+  },
+  {
+   "slug": "asake",
+   "name": "Asake",
+   "board": "Current 50",
+   "reading": "2026-11-27",
+   "ageDays": 1,
+   "status": "ok"
+  },
+  {
+   "slug": "fola",
+   "name": "FOLA",
+   "board": "Current 50",
+   "reading": "2026-11-27",
+   "ageDays": 1,
+   "status": "ok"
+  },
+  {
+   "slug": "burna-boy",
+   "name": "Burna Boy",
+   "board": "Current 50",
+   "reading": "2026-11-27",
+   "ageDays": 1,
+   "status": "ok"
+  },
+  {
+   "slug": "tems",
+   "name": "Tems",
+   "board": "Current 50",
+   "reading": "2026-11-27",
+   "ageDays": 1,
+   "status": "ok"
+  },
+  {
+   "slug": "tyla",
+   "name": "Tyla",
+   "board": "Current 50",
+   "reading": "2026-11-27",
+   "ageDays": 1,
+   "status": "ok"
+  },
+  {
+   "slug": "dj-snake",
+   "name": "DJ Snake",
+   "board": "Current 100 candidate",
+   "reading": "2026-11-27",
+   "ageDays": 1,
+   "status": "ok"
+  }
+ ],
+ "missing": [
+  {
+   "kind": "Current 100 candidate",
+   "item": "DJ Zinhle",
+   "detail": "Missing: bio, editorialScore, reviewedAt, photo",
+   "severity": "warn"
+  },
+  {
+   "kind": "Current 100 candidate",
+   "item": "Young Stunna",
+   "detail": "Missing: bio, editorialScore, reviewedAt, photo",
+   "severity": "warn"
+  },
+  {
+   "kind": "Current 100 candidate",
+   "item": "Naledi Aphiwe",
+   "detail": "Missing: bio, editorialScore, reviewedAt, photo",
+   "severity": "warn"
+  },
+  {
+   "kind": "Current 100 candidate",
+   "item": "Sjava",
+   "detail": "Missing: bio, editorialScore, reviewedAt, photo",
+   "severity": "warn"
+  },
+  {
+   "kind": "Current 100 candidate",
+   "item": "Lwah Ndlunkulu",
+   "detail": "Missing: bio, editorialScore, reviewedAt, photo",
+   "severity": "warn"
+  },
+  {
+   "kind": "Current 100 candidate",
+   "item": "Zawadi Yamungu",
+   "detail": "Missing: bio, editorialScore, reviewedAt, photo",
+   "severity": "warn"
+  },
+  {
+   "kind": "Current 100 candidate",
+   "item": "Mayorkun",
+   "detail": "Missing: bio, editorialScore, reviewedAt, photo",
+   "severity": "warn"
+  },
+  {
+   "kind": "Current 100 candidate",
+   "item": "Zaylevelten",
+   "detail": "Missing: bio, editorialScore, reviewedAt, photo",
+   "severity": "warn"
+  },
+  {
+   "kind": "Current 100 candidate",
+   "item": "Ntencane",
+   "detail": "Missing: bio, editorialScore, reviewedAt, photo",
+   "severity": "warn"
+  },
+  {
+   "kind": "Current 100 candidate",
+   "item": "Boohle",
+   "detail": "Missing: bio, editorialScore, reviewedAt, photo",
+   "severity": "warn"
+  },
+  {
+   "kind": "Current 100 candidate",
+   "item": "Zinoleesky",
+   "detail": "Missing: bio, editorialScore, reviewedAt, photo",
+   "severity": "warn"
+  },
+  {
+   "kind": "Current 100 candidate",
+   "item": "Zee Nxumalo",
+   "detail": "Missing: bio, editorialScore, reviewedAt, photo",
+   "severity": "warn"
+  },
+  {
+   "kind": "Current 100 candidate",
+   "item": "Dlala Thukzin",
+   "detail": "Missing: bio, editorialScore, reviewedAt, photo",
+   "severity": "warn"
+  },
+  {
+   "kind": "Current 100 candidate",
+   "item": "Simmy",
+   "detail": "Missing: bio, editorialScore, reviewedAt, photo",
+   "severity": "warn"
+  },
+  {
+   "kind": "Current 100 candidate",
+   "item": "Nothando Hlophe",
+   "detail": "Missing: bio, editorialScore, reviewedAt, photo",
+   "severity": "warn"
+  },
+  {
+   "kind": "Current 100 candidate",
+   "item": "DJ Maphorisa",
+   "detail": "Missing: bio, editorialScore, reviewedAt, photo",
+   "severity": "warn"
+  },
+  {
+   "kind": "Current 100 candidate",
+   "item": "Kabza De Small",
+   "detail": "Missing: bio, editorialScore, reviewedAt, photo",
+   "severity": "warn"
+  },
+  {
+   "kind": "Current 100 candidate",
+   "item": "Nkosazana Daughter",
+   "detail": "Missing: bio, editorialScore, reviewedAt, photo",
+   "severity": "warn"
+  },
+  {
+   "kind": "Current 100 candidate",
+   "item": "Kah-Lo",
+   "detail": "Missing: bio, editorialScore, reviewedAt, photo",
+   "severity": "warn"
+  },
+  {
+   "kind": "Current 100 candidate",
+   "item": "Tyler ICU",
+   "detail": "Missing: bio, editorialScore, reviewedAt, photo",
+   "severity": "warn"
+  },
+  {
+   "kind": "Current 100 candidate",
+   "item": "Babalwa M",
+   "detail": "Missing: bio, editorialScore, reviewedAt, photo",
+   "severity": "warn"
+  },
+  {
+   "kind": "Current 100 candidate",
+   "item": "DJ Snake",
+   "detail": "Missing: bio, editorialScore, reviewedAt, photo",
+   "severity": "warn"
+  },
+  {
+   "kind": "Current 100 candidate",
+   "item": "TxC",
+   "detail": "Missing: bio, editorialScore, reviewedAt, photo",
+   "severity": "warn"
+  },
+  {
+   "kind": "Current 100 candidate",
+   "item": "Scotts Maphuma",
+   "detail": "Missing: bio, editorialScore, reviewedAt, photo",
+   "severity": "warn"
+  },
+  {
+   "kind": "Current 100 candidate",
+   "item": "D’banj",
+   "detail": "Missing: bio, editorialScore, reviewedAt, photo",
+   "severity": "warn"
+  },
+  {
+   "kind": "Current 100 candidate",
+   "item": "Yemi Alade",
+   "detail": "Missing: bio, editorialScore, reviewedAt, photo",
+   "severity": "warn"
+  },
+  {
+   "kind": "Current 100 candidate",
+   "item": "Sarkodie",
+   "detail": "Missing: bio, editorialScore, reviewedAt, photo",
+   "severity": "warn"
+  },
+  {
+   "kind": "Current 100 candidate",
+   "item": "KiDi",
+   "detail": "Missing: bio, editorialScore, reviewedAt, photo",
+   "severity": "warn"
+  },
+  {
+   "kind": "accent",
+   "item": "13 artists",
+   "detail": "Black and white photos use the site lime as accent: asake, black-sherif, darkoo, fela-kuti, fireboy-dml, fola, king-promise, nonso-amadi",
+   "severity": "info"
+  },
+  {
+   "kind": "media kit",
+   "item": "Audience figures",
+   "detail": "Shown as \"Shared on request\" until filled from analytics.",
+   "severity": "info"
+  }
+ ],
+ "runs": [
+  {
+   "job": "nightly-readings",
+   "at": "2026-11-28T07:52:17+00:00",
+   "ok": 78,
+   "failed": []
+  }
+ ]
+}

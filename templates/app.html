@@ -2416,13 +2416,23 @@ footer {
           </div>
           <p class="text-xs text-gray-500 mt-3">Streams excluded so the formula stays fair across generations.</p>
         </div>
-        <div>
-          <h3 class="font-semibold text-lg mb-3">Current: editorial + tracked streams</h3>
+        <div id="current-formula">
+          <h3 class="font-semibold text-lg mb-3">Current: what is happening now</h3>
           <div class="border-t text-sm">
-            <div class="flex justify-between py-2 border-b"><span>Locked editorial baseline, normalized</span><strong>83 points</strong></div>
-            <div class="flex justify-between py-2 border-b"><span>Comparable audio-stream index</span><strong>17 points</strong></div>
+            <div class="flex justify-between py-2 border-b"><span>Recent streams (last 28 days, log scale)</span><strong>35%</strong></div>
+            <div class="flex justify-between py-2 border-b"><span>Momentum (this week vs own 4-week baseline)</span><strong>25%</strong></div>
+            <div class="flex justify-between py-2 border-b"><span>Editorial (fades after 8 weeks)</span><strong>25%</strong></div>
+            <div class="flex justify-between py-2 border-b"><span>Activity (releases, charts, awards, live)</span><strong>15%</strong></div>
           </div>
-          <p class="text-xs text-gray-500 mt-3">Editorial points = 83 × the artist’s locked contribution / the largest contribution in the complete locked baseline. Stream points = 17 × comparable audio streams / the largest comparable total. Monthly listeners have no scoring weight. Current coverage is Spotify; unavailable providers are not estimated. YouTube views stay separate.</p>
+          <p class="text-xs text-gray-500 mt-3">Each input is scored 0 to 100. The Current score is the weighted average, so it is also out of 100.</p>
+          <details class="text-sm text-gray-700 mt-3"><summary class="font-semibold">The rules in plain language</summary>
+            <p class="mt-2"><strong>Recent streams.</strong> We read each artist’s daily Spotify streams from their Kworb ledger every week. The score uses the average daily reading from the last 28 days, not lifetime totals. A repeated reading means the source did not update, so it counts once. A log scale stops a giant catalogue crushing mid-size artists: 10,000 a day or less scores 0, the busiest artist scores 100, and every tenfold jump adds the same number of points.</p>
+            <p class="mt-2"><strong>Momentum.</strong> This week’s daily streams divided by the artist’s own average over the 4 weeks before. Level with their baseline scores 50. Double scores 100. Half scores 0. If the history has a gap, we use the latest 4 readings before this week, but only if the newest is no older than 8 weeks. With no usable baseline the artist scores a neutral 50, and the profile says so.</p>
+            <p class="mt-2"><strong>Editorial.</strong> The locked editorial score from 5 Oct 2026, scaled 0 to 100. Every artist has a review date. Full weight for 8 weeks. Between weeks 8 and 12 it fades toward the chart median until it keeps 40% of its spread, and it stays there until it is re-scored.</p>
+            <p class="mt-2"><strong>Activity.</strong> Dated, sourced events only. New release in the last 28 days: 40 points (56 days: 25, 90 days: 10). DJ mixes, remixes and edits do not count. TurnTable Nigeria Top 100: 30 for a top 10 entry, 20 for top 50, 10 for top 100, plus 5 for three or more entries. Award win in the last 120 days: 15, nomination: 8. A verified live date within 30 days: 10. Reviewed TikTok or Shazam spike: 10. Capped at 100.</p>
+            <p class="mt-2"><strong>Smoothing and the weekly cap.</strong> The published score is the average of this week and the earlier weekly editions from the last 28 days (up to 4). No artist moves more than 8 places from last week’s rank in one edition. When the cap holds someone, their profile shows where the score alone would place them.</p>
+            <p class="mt-2"><strong>What stays the same.</strong> Monthly listeners have no weight. Only Spotify has comparable coverage for all 50 artists today, so other platforms and YouTube views stay separate. The weight sandbox and any personal chart never change the official Current 50.</p>
+          </details>
         </div>
       </div>
       <div class="yearly-method mt-10">
@@ -2482,7 +2492,7 @@ footer {
 <script src="refresh-2026-09-28.js"></script>
 <script src="refresh-2026-10-05.js"></script>
 <script src="ranking-refresh-2026-10-05.js"></script>
-<script src="streaming-model.js"></script>
+<script src="trend-model.js"></script><script src="streaming-model.js"></script>
 <script src="streaming-snapshot.js"></script>
 <script src="recognition-audit-2026-09-28.js"></script>
 <script src="turntable-certifications.js"></script>

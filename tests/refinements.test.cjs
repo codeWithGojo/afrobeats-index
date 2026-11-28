@@ -5,10 +5,11 @@ const {scenario,mixCandidates}=require('../lib/board-engine.cjs');
 const data=require('../data/current.json');
 test('the default mix reproduces published scores and either slider extreme has an independent meaning',()=>{
  const before=JSON.stringify(data.artists),candidates=mixCandidates(data.artists);
- const standard=scenario(candidates,[83,17]);
- for(const a of standard)assert.ok(Math.abs(a.score-data.artists.find(x=>x.slug===a.slug).score)<.00001);
- assert.deepEqual(standard.map(a=>a.slug),data.artists.map(a=>a.slug));
- const editorial=scenario(candidates,[100,0]),audio=scenario(candidates,[0,100]);
+ // The sandbox ranks this week's raw inputs: it reproduces each raw score and the uncapped target order.
+ const w=data.artists[0].scoreBreakdown.weights,standard=scenario(candidates,[w.recentStreams,w.momentum,w.editorial,w.activity]);
+ for(const a of standard)assert.ok(Math.abs(a.score-data.artists.find(x=>x.slug===a.slug).scoreBreakdown.rawScore)<.00001);
+ assert.deepEqual(standard.map(a=>a.slug),[...data.artists].sort((a,b)=>a.scoreBreakdown.targetRank-b.scoreBreakdown.targetRank).map(a=>a.slug));
+ const editorial=scenario(candidates,[0,0,100,0]),audio=scenario(candidates,[100,0,0,0]);
  assert.notDeepEqual(editorial.map(a=>a.slug),audio.map(a=>a.slug));
  assert.equal(JSON.stringify(data.artists),before);
  assert.equal(mixCandidates([{scoreBreakdown:{}}])[0].components[0],null);

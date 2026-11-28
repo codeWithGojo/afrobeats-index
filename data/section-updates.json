@@ -2,12 +2,12 @@
   "current": {
     "label": "current",
     "updatedAt": "2026-11-22T23:20:22.903080+00:00",
-    "hash": "20b1484f6aaa0347acd3264761862073092d062e1892d6db465a36aef410711b",
+    "hash": "4d777dcbed95586ccdf798730df507f705d110b4bf11e946ddcf23058214d52f",
     "basis": "source snapshot"
   },
   "alltime": {
     "label": "All-Time",
-    "updatedAt": "2026-11-15T22:49:48.248Z",
+    "updatedAt": "2026-11-27T23:15:50.798Z",
     "hash": "627f3a99985b358f48eb5eb2af8b2e58d7e7fa07092a1cee6c96fc0b2dc3f805",
     "basis": "content revision"
   },
@@ -32,7 +32,7 @@
   "artists": {
     "label": "Artist Archive",
     "updatedAt": "2026-11-22T23:20:22.903080+00:00",
-    "hash": "591755785b0d3f73c3ba39e14ce5c3c63350ff9d40806e467f104a1512a88211",
+    "hash": "25d7823a4e7382405d3007ed31e04c8b8534bdecd62e9b5fab05a42d92f541e0",
     "basis": "source snapshot"
   },
   "vs": {
@@ -49,20 +49,20 @@
   },
   "discuss": {
     "label": "Discussion",
-    "updatedAt": "2026-10-26T13:03:03.233Z",
-    "hash": "14d1c9afc94342f268b02eb2b2f98e6232d0d8c0ec21f5a80cf21485a8d62485",
+    "updatedAt": "2026-11-27T23:15:50.814Z",
+    "hash": "28e735d5fcbcf7eda387062f9be90d9a2a25a6b89531809612c5816d47f97f8c",
     "basis": "content revision"
   },
   "method": {
     "label": "method",
-    "updatedAt": "2026-11-15T22:49:48.255Z",
-    "hash": "07357e9565003be76cd7d7307736b77cd368a5910d7a48ce08903572876f0d8b",
+    "updatedAt": "2026-11-27T23:15:50.817Z",
+    "hash": "a735a944c835760f5911a1a156abeb6df21c2cb596914a66cd7f5c041447731a",
     "basis": "content revision"
   },
   "receipt": {
     "label": "receipt",
     "updatedAt": "2026-11-22T23:20:22.903080+00:00",
-    "hash": "5911e171a4eeab7358ec523594ae19c0137057f0a2581dd46bd5b6c6f0550700",
+    "hash": "ac4cd078116c6db733b4565e14a9b972b3f4ee00e7125583dc9c4bdf94c6585d",
     "basis": "source snapshot"
   },
   "underground": {

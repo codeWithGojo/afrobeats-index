@@ -1,0 +1,4 @@
+/* Web fonts (Phase 10). Loaded by theme-init.js only when Lite mode is off, so Lite never downloads fonts. */
+@font-face{font-family:Inter;src:url('/assets/fonts/inter-latin.woff2') format('woff2');font-style:normal;font-weight:400 700;font-display:swap}
+@font-face{font-family:'Space Grotesk';src:url('/assets/fonts/space-grotesk-latin.woff2') format('woff2');font-style:normal;font-weight:500 700;font-display:swap}
+@font-face{font-family:"Index Condensed";src:url("/assets/fonts/barlow-condensed-800.woff2") format("woff2");font-weight:800;font-display:swap}

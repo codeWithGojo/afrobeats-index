@@ -53,3 +53,26 @@
     if (previous) prepare(event, new URL(previous).pathname, location.pathname);
   });
 })();
+
+// Lite mode (Phase 10). Decided before paint so heavy work is never started.
+// Preference: 'on' | 'off' | unset (auto). ?lite=1 or ?lite=0 sets it. Auto turns Lite on only for an
+// explicit data-saver or a 2G connection; weaker signals (3G, low memory, few cores, reduced motion) only
+// suggest it. Safari lacks most of these APIs, so every check is guarded and the toggle always works.
+(() => {
+  const root=document.documentElement,nav=typeof navigator==='undefined'?{}:navigator;
+  let pref=null;try{pref=localStorage.getItem('afri-lite');}catch{}
+  const q=typeof location!=='undefined'?new URLSearchParams(location.search).get('lite'):null;
+  if(q==='1'||q==='0'){pref=q==='1'?'on':'off';try{localStorage.setItem('afri-lite',pref);}catch{}}
+  const c=nav.connection||nav.mozConnection||nav.webkitConnection||null;
+  const type=String(c&&c.effectiveType||'');
+  const signals={saveData:!!(c&&c.saveData),slow:/^(slow-2g|2g)$/.test(type),threeG:type==='3g',lowMemory:typeof nav.deviceMemory==='number'&&nav.deviceMemory<=2,fewCores:typeof nav.hardwareConcurrency==='number'&&nav.hardwareConcurrency<=4,reducedMotion:!!(typeof window!=='undefined'&&window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches)};
+  const strong=signals.saveData||signals.slow,weak=signals.threeG||signals.lowMemory||(signals.fewCores&&signals.lowMemory)||signals.reducedMotion;
+  const on=pref==='on'||(pref!=='off'&&strong);
+  if(root&&root.classList)root.classList.toggle('lite',on);
+  if(typeof window!=='undefined')window.AfriLite={on,pref,signals,auto:!pref&&strong,suggest:!pref&&!strong&&weak,
+   set(v){try{v==null?localStorage.removeItem('afri-lite'):localStorage.setItem('afri-lite',v);}catch{}location.reload();}};
+  // Web fonts only outside Lite mode (Lite uses system fonts and never downloads font files).
+  if(!on&&typeof document!=='undefined'&&document.head&&document.createElement){const l=document.createElement('link');l.rel='stylesheet';l.href='/fonts.css';document.head.appendChild(l);}
+  // No cross-page view transitions in Lite mode.
+  if(on&&typeof addEventListener==='function')addEventListener('pagereveal',e=>{try{e.viewTransition&&e.viewTransition.skipTransition();}catch{}});
+})();
