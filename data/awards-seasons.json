@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-09",
+  "checkedAt": "2026-11-28",
   "seasons": [
     {
       "id": "grammys-2027",
@@ -8,8 +8,8 @@
       "date": "2027-02-07",
       "venue": "Crypto.com Arena",
       "city": "Los Angeles, USA",
-      "status": "Nominations on 16 Nov",
-      "source": "https://www.grammy.com/news/2027-grammys-show-air-date-nominations-announced/",
+      "status": "Nominees announced; final voting opens 10 Dec",
+      "source": "https://www.grammy.com/news/2027-grammys-full-nominations-full-winners-nominees-list/",
       "milestones": [
         [
           "2026-08-21",
@@ -98,7 +98,7 @@
       "endDate": "2027-04-11",
       "venue": null,
       "city": "Toronto, Canada",
-      "status": "Rescheduled",
+      "status": "Toronto finale rescheduled",
       "source": "https://theheadies.com/",
       "note": "The organiser’s latest notice moves the finale to 10–11 April 2027. Older October dates remain elsewhere on its website. Exact venue and ceremony schedule await confirmation.",
       "milestones": [
@@ -121,7 +121,7 @@
       "date": "2027-05-23",
       "venue": null,
       "city": "Lagos, Nigeria",
-      "status": "Entries open",
+      "status": "Entries open through 10 Jan 2027",
       "entryOpen": "2026-10-11",
       "entryClose": "2027-01-10",
       "source": "https://afrima.org/2026/09/25/10th-afrima-holds-may-18-23-2027-in-lagos-as-au-afrima-unveil-global-calendar-in-los-angelesentries-open-worldwide-october-11/",

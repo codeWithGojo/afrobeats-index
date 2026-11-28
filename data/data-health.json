@@ -1,18 +1,18 @@
 {
- "generatedAt": "2026-11-28T07:56:38.366Z",
+ "generatedAt": "2026-11-28T08:54:27.812Z",
  "thresholds": {
   "note": "Datasets: see each row. Artist readings: warn after 14 days, critical after 35."
  },
  "summary": {
-  "ok": 65,
-  "warn": 33,
+  "ok": 67,
+  "warn": 31,
   "critical": 16
  },
  "datasets": [
   {
    "name": "Current 50 edition",
-   "date": "2026-11-22",
-   "ageDays": 5,
+   "date": "2026-11-28",
+   "ageDays": 0,
    "status": "ok",
    "note": "Published weekly by the Monday job."
   },
@@ -25,15 +25,15 @@
   },
   {
    "name": "TurnTable Nigeria Top 100",
-   "date": "2026-11-12",
-   "ageDays": 16,
-   "status": "warn",
+   "date": "2026-11-19",
+   "ageDays": 9,
+   "status": "ok",
    "note": "Chart week end."
   },
   {
    "name": "Release identities (Apple)",
-   "date": "2026-11-22",
-   "ageDays": 5,
+   "date": "2026-11-28",
+   "ageDays": 0,
    "status": "ok",
    "note": ""
   },
@@ -46,7 +46,7 @@
   },
   {
    "name": "Current 100 candidates",
-   "date": "2026-11-27",
+   "date": "2026-11-28",
    "ageDays": 0,
    "status": "ok",
    "note": "28 candidates, 1 excluded."
@@ -204,14 +204,6 @@
    "status": "warn"
   },
   {
-   "slug": "babalwa-m",
-   "name": "Babalwa M",
-   "board": "Current 100 candidate",
-   "reading": "2026-10-28",
-   "ageDays": 31,
-   "status": "warn"
-  },
-  {
    "slug": "diamond-platnumz",
    "name": "Diamond Platnumz",
    "board": "Current 50",
@@ -244,16 +236,16 @@
    "status": "ok"
   },
   {
-   "slug": "sarz",
-   "name": "Sarz",
+   "slug": "bella-shmurda",
+   "name": "Bella Shmurda",
    "board": "Current 50",
    "reading": "2026-11-18",
    "ageDays": 10,
    "status": "ok"
   },
   {
-   "slug": "bella-shmurda",
-   "name": "Bella Shmurda",
+   "slug": "sarz",
+   "name": "Sarz",
    "board": "Current 50",
    "reading": "2026-11-18",
    "ageDays": 10,
@@ -292,14 +284,6 @@
    "status": "ok"
   },
   {
-   "slug": "oxlade",
-   "name": "Oxlade",
-   "board": "Current 50",
-   "reading": "2026-11-20",
-   "ageDays": 8,
-   "status": "ok"
-  },
-  {
    "slug": "zlatan",
    "name": "Zlatan",
    "board": "Current 50",
@@ -310,6 +294,14 @@
   {
    "slug": "joeboy",
    "name": "Joeboy",
+   "board": "Current 50",
+   "reading": "2026-11-20",
+   "ageDays": 8,
+   "status": "ok"
+  },
+  {
+   "slug": "oxlade",
+   "name": "Oxlade",
    "board": "Current 50",
    "reading": "2026-11-20",
    "ageDays": 8,
@@ -340,16 +332,16 @@
    "status": "ok"
   },
   {
-   "slug": "darkoo",
-   "name": "Darkoo",
+   "slug": "phyno",
+   "name": "Phyno",
    "board": "Current 50",
    "reading": "2026-11-22",
    "ageDays": 6,
    "status": "ok"
   },
   {
-   "slug": "phyno",
-   "name": "Phyno",
+   "slug": "darkoo",
+   "name": "Darkoo",
    "board": "Current 50",
    "reading": "2026-11-22",
    "ageDays": 6,
@@ -396,14 +388,6 @@
    "status": "ok"
   },
   {
-   "slug": "moliy",
-   "name": "MOLIY",
-   "board": "Current 50",
-   "reading": "2026-11-24",
-   "ageDays": 4,
-   "status": "ok"
-  },
-  {
    "slug": "seyi-vibez",
    "name": "Seyi Vibez",
    "board": "Current 50",
@@ -414,6 +398,14 @@
   {
    "slug": "mavo",
    "name": "Mavo",
+   "board": "Current 50",
+   "reading": "2026-11-24",
+   "ageDays": 4,
+   "status": "ok"
+  },
+  {
+   "slug": "moliy",
+   "name": "MOLIY",
    "board": "Current 50",
    "reading": "2026-11-24",
    "ageDays": 4,
@@ -460,14 +452,6 @@
    "status": "ok"
   },
   {
-   "slug": "omah-lay",
-   "name": "OMAH LAY",
-   "board": "Current 50",
-   "reading": "2026-11-25",
-   "ageDays": 3,
-   "status": "ok"
-  },
-  {
    "slug": "bnxn",
    "name": "BNXN",
    "board": "Current 50",
@@ -476,24 +460,16 @@
    "status": "ok"
   },
   {
+   "slug": "omah-lay",
+   "name": "OMAH LAY",
+   "board": "Current 50",
+   "reading": "2026-11-25",
+   "ageDays": 3,
+   "status": "ok"
+  },
+  {
    "slug": "ayra-starr",
    "name": "Ayra Starr",
-   "board": "Current 50",
-   "reading": "2026-11-25",
-   "ageDays": 3,
-   "status": "ok"
-  },
-  {
-   "slug": "amaarae",
-   "name": "Amaarae",
-   "board": "Current 50",
-   "reading": "2026-11-25",
-   "ageDays": 3,
-   "status": "ok"
-  },
-  {
-   "slug": "tiwa-savage",
-   "name": "Tiwa Savage",
    "board": "Current 50",
    "reading": "2026-11-25",
    "ageDays": 3,
@@ -510,6 +486,22 @@
   {
    "slug": "blaqbonez",
    "name": "Blaqbonez",
+   "board": "Current 50",
+   "reading": "2026-11-25",
+   "ageDays": 3,
+   "status": "ok"
+  },
+  {
+   "slug": "tiwa-savage",
+   "name": "Tiwa Savage",
+   "board": "Current 50",
+   "reading": "2026-11-25",
+   "ageDays": 3,
+   "status": "ok"
+  },
+  {
+   "slug": "amaarae",
+   "name": "Amaarae",
    "board": "Current 50",
    "reading": "2026-11-25",
    "ageDays": 3,
@@ -588,16 +580,16 @@
    "status": "ok"
   },
   {
-   "slug": "ckay",
-   "name": "CKay",
+   "slug": "odumodublvck",
+   "name": "ODUMODUBLVCK",
    "board": "Current 50",
    "reading": "2026-11-26",
    "ageDays": 2,
    "status": "ok"
   },
   {
-   "slug": "odumodublvck",
-   "name": "ODUMODUBLVCK",
+   "slug": "ckay",
+   "name": "CKay",
    "board": "Current 50",
    "reading": "2026-11-26",
    "ageDays": 2,
@@ -628,8 +620,24 @@
    "status": "ok"
   },
   {
+   "slug": "faouzia",
+   "name": "Faouzia",
+   "board": "Current 100 candidate",
+   "reading": "2026-11-26",
+   "ageDays": 2,
+   "status": "ok"
+  },
+  {
    "slug": "rema",
    "name": "Rema",
+   "board": "Current 50",
+   "reading": "2026-11-27",
+   "ageDays": 1,
+   "status": "ok"
+  },
+  {
+   "slug": "fola",
+   "name": "FOLA",
    "board": "Current 50",
    "reading": "2026-11-27",
    "ageDays": 1,
@@ -646,14 +654,6 @@
   {
    "slug": "asake",
    "name": "Asake",
-   "board": "Current 50",
-   "reading": "2026-11-27",
-   "ageDays": 1,
-   "status": "ok"
-  },
-  {
-   "slug": "fola",
-   "name": "FOLA",
    "board": "Current 50",
    "reading": "2026-11-27",
    "ageDays": 1,
@@ -743,12 +743,6 @@
   },
   {
    "kind": "Current 100 candidate",
-   "item": "Ntencane",
-   "detail": "Missing: bio, editorialScore, reviewedAt, photo",
-   "severity": "warn"
-  },
-  {
-   "kind": "Current 100 candidate",
    "item": "Boohle",
    "detail": "Missing: bio, editorialScore, reviewedAt, photo",
    "severity": "warn"
@@ -761,7 +755,7 @@
   },
   {
    "kind": "Current 100 candidate",
-   "item": "Zee Nxumalo",
+   "item": "Ntencane",
    "detail": "Missing: bio, editorialScore, reviewedAt, photo",
    "severity": "warn"
   },
@@ -773,19 +767,19 @@
   },
   {
    "kind": "Current 100 candidate",
-   "item": "Simmy",
-   "detail": "Missing: bio, editorialScore, reviewedAt, photo",
-   "severity": "warn"
-  },
-  {
-   "kind": "Current 100 candidate",
-   "item": "Nothando Hlophe",
-   "detail": "Missing: bio, editorialScore, reviewedAt, photo",
-   "severity": "warn"
-  },
-  {
-   "kind": "Current 100 candidate",
    "item": "DJ Maphorisa",
+   "detail": "Missing: bio, editorialScore, reviewedAt, photo",
+   "severity": "warn"
+  },
+  {
+   "kind": "Current 100 candidate",
+   "item": "Tyler ICU",
+   "detail": "Missing: bio, editorialScore, reviewedAt, photo",
+   "severity": "warn"
+  },
+  {
+   "kind": "Current 100 candidate",
+   "item": "Zee Nxumalo",
    "detail": "Missing: bio, editorialScore, reviewedAt, photo",
    "severity": "warn"
   },
@@ -803,19 +797,13 @@
   },
   {
    "kind": "Current 100 candidate",
+   "item": "Nothando Hlophe",
+   "detail": "Missing: bio, editorialScore, reviewedAt, photo",
+   "severity": "warn"
+  },
+  {
+   "kind": "Current 100 candidate",
    "item": "Kah-Lo",
-   "detail": "Missing: bio, editorialScore, reviewedAt, photo",
-   "severity": "warn"
-  },
-  {
-   "kind": "Current 100 candidate",
-   "item": "Tyler ICU",
-   "detail": "Missing: bio, editorialScore, reviewedAt, photo",
-   "severity": "warn"
-  },
-  {
-   "kind": "Current 100 candidate",
-   "item": "Babalwa M",
    "detail": "Missing: bio, editorialScore, reviewedAt, photo",
    "severity": "warn"
   },
@@ -834,6 +822,18 @@
   {
    "kind": "Current 100 candidate",
    "item": "Scotts Maphuma",
+   "detail": "Missing: bio, editorialScore, reviewedAt, photo",
+   "severity": "warn"
+  },
+  {
+   "kind": "Current 100 candidate",
+   "item": "Simmy",
+   "detail": "Missing: bio, editorialScore, reviewedAt, photo",
+   "severity": "warn"
+  },
+  {
+   "kind": "Current 100 candidate",
+   "item": "Faouzia",
    "detail": "Missing: bio, editorialScore, reviewedAt, photo",
    "severity": "warn"
   },

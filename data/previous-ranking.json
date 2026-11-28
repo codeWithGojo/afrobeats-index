@@ -1,1104 +1,4408 @@
 {
-  "asOf": "2026-11-15T22:42:05.314332+00:00",
+  "asOf": "2026-11-22T23:20:22.903080+00:00",
   "artists": [
-    {
-      "slug": "wizkid",
-      "name": "Wizkid",
-      "rank": 1,
-      "score": 94.704836,
-      "scoreBreakdown": {
-        "editorialContribution": 77.70483648032385,
-        "rawEditorialContribution": 81.51368589089539,
-        "editorialMaximum": 87.06840185755347,
-        "editorialWeight": 83,
-        "streamsIndex": 100,
-        "streamsScore": 100,
-        "streamWeight": 17,
-        "listenerWeight": 0,
-        "streamCoverage": [
-          "spotify"
-        ],
-        "previousScore": 94.704836,
-        "baselineDate": "2026-10-05",
-        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
-      }
-    },
-    {
-      "slug": "burna-boy",
-      "name": "Burna Boy",
-      "rank": 2,
-      "score": 92.771331,
-      "scoreBreakdown": {
-        "editorialContribution": 76.5995516824381,
-        "rawEditorialContribution": 80.35422346981875,
-        "editorialMaximum": 87.06840185755347,
-        "editorialWeight": 83,
-        "streamsIndex": 95.12811656803387,
-        "streamsScore": 95.12811656803387,
-        "streamWeight": 17,
-        "listenerWeight": 0,
-        "streamCoverage": [
-          "spotify"
-        ],
-        "previousScore": 92.760947,
-        "baselineDate": "2026-10-05",
-        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
-      }
-    },
     {
       "slug": "rema",
       "name": "Rema",
-      "rank": 3,
-      "score": 91.693456,
+      "rank": 1,
+      "score": 84.813084,
       "scoreBreakdown": {
-        "editorialContribution": 81.78768228139269,
+        "version": 2,
+        "method": "Weighted mean of recent streams (log scale), momentum, editorial (with review-date decay) and activity, averaged over recent editions, with a weekly movement cap",
+        "weights": {
+          "recentStreams": 35,
+          "momentum": 25,
+          "editorial": 25,
+          "activity": 15
+        },
+        "components": {
+          "recentStreams": 97.07228698958644,
+          "momentum": 62.81175807833252,
+          "editorial": 98.53937624264178,
+          "activity": 70
+        },
+        "points": {
+          "recentStreams": 33.975300446355256,
+          "momentum": 15.70293951958313,
+          "editorial": 24.634844060660445,
+          "activity": 10.5
+        },
+        "rawScore": 84.813084,
+        "smoothedEditions": 1,
+        "targetRank": 1,
+        "capped": false,
+        "maxMovePlaces": 8,
+        "recentStreams": {
+          "dailyAverage": 5495110,
+          "readings": 1,
+          "from": "2026-11-21",
+          "to": "2026-11-21",
+          "windowDays": 28,
+          "staleDays": 2,
+          "maximumDaily": 6646828,
+          "logFloorDaily": 10000
+        },
+        "momentum": {
+          "ratio": 1.194357853422188,
+          "available": true,
+          "basis": "latest-4-readings",
+          "thisWeek": 5495110,
+          "baseline": 4600890.75,
+          "baselineFrom": "2026-09-14",
+          "baselineTo": "2026-10-05"
+        },
+        "editorial": {
+          "score": 98.53937624264178,
+          "effective": 98.53937624264178,
+          "reviewedAt": "2026-10-05",
+          "ageDays": 49,
+          "factor": 1,
+          "median": 86.41346068181645,
+          "rawEditorialContribution": 85.79666009486992,
+          "editorialMaximum": 87.06840185755347
+        },
+        "activity": {
+          "score": 70,
+          "signals": [
+            {
+              "kind": "release",
+              "label": "New release: Bang Bang",
+              "points": 40,
+              "date": "2026-11-20",
+              "sourceUrl": "https://open.spotify.com/track/1lhxS1l7VGjmvKP0xRDPEc"
+            },
+            {
+              "kind": "chart",
+              "label": "2 TurnTable Top 100 entries, best #3",
+              "points": 30,
+              "date": "2026-11-12",
+              "sourceUrl": "https://www.turntablecharts.com/charts/1"
+            }
+          ]
+        },
+        "editorialContribution": 24.634844060660445,
+        "editorialWeight": 25,
+        "streamWeight": 35,
+        "listenerWeight": 0,
+        "streamsIndex": 97.07228698958644,
+        "streamCoverage": [
+          "spotify"
+        ],
         "rawEditorialContribution": 85.79666009486992,
         "editorialMaximum": 87.06840185755347,
-        "editorialWeight": 83,
-        "streamsIndex": 58.26925547008502,
-        "streamsScore": 58.26925547008502,
-        "streamWeight": 17,
-        "listenerWeight": 0,
-        "streamCoverage": [
-          "spotify"
-        ],
-        "previousScore": 91.691649,
         "baselineDate": "2026-10-05",
-        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
-      }
-    },
-    {
-      "slug": "tems",
-      "name": "Tems",
-      "rank": 4,
-      "score": 91.270006,
-      "scoreBreakdown": {
-        "editorialContribution": 82.02309483415452,
-        "rawEditorialContribution": 86.0436118387998,
-        "editorialMaximum": 87.06840185755347,
-        "editorialWeight": 83,
-        "streamsIndex": 54.39359576017039,
-        "streamsScore": 54.39359576017039,
-        "streamWeight": 17,
-        "listenerWeight": 0,
-        "streamCoverage": [
-          "spotify"
-        ],
-        "previousScore": 91.255078,
-        "baselineDate": "2026-10-05",
-        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
-      }
-    },
-    {
-      "slug": "tyla",
-      "name": "Tyla",
-      "rank": 5,
-      "score": 89.938636,
-      "scoreBreakdown": {
-        "editorialContribution": 82.75516804883088,
-        "rawEditorialContribution": 86.81156900560212,
-        "editorialMaximum": 87.06840185755347,
-        "editorialWeight": 83,
-        "streamsIndex": 42.255692898594255,
-        "streamsScore": 42.255692898594255,
-        "streamWeight": 17,
-        "listenerWeight": 0,
-        "streamCoverage": [
-          "spotify"
-        ],
-        "previousScore": 89.935463,
-        "baselineDate": "2026-10-05",
-        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
-      }
-    },
-    {
-      "slug": "asake",
-      "name": "Asake",
-      "rank": 6,
-      "score": 88.811097,
-      "scoreBreakdown": {
-        "editorialContribution": 82.10018290774526,
-        "rawEditorialContribution": 86.1244785300025,
-        "editorialMaximum": 87.06840185755347,
-        "editorialWeight": 83,
-        "streamsIndex": 39.475964929792696,
-        "streamsScore": 39.475964929792696,
-        "streamWeight": 17,
-        "listenerWeight": 0,
-        "streamCoverage": [
-          "spotify"
-        ],
-        "previousScore": 88.782579,
-        "baselineDate": "2026-10-05",
-        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
-      }
-    },
-    {
-      "slug": "ayra-starr",
-      "name": "Ayra Starr",
-      "rank": 7,
-      "score": 88.781706,
-      "scoreBreakdown": {
-        "editorialContribution": 82.8051082356997,
-        "rawEditorialContribution": 86.86395710510979,
-        "editorialMaximum": 87.06840185755347,
-        "editorialWeight": 83,
-        "streamsIndex": 35.15645563439565,
-        "streamsScore": 35.15645563439565,
-        "streamWeight": 17,
-        "listenerWeight": 0,
-        "streamCoverage": [
-          "spotify"
-        ],
-        "previousScore": 88.772428,
-        "baselineDate": "2026-10-05",
-        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
-      }
-    },
-    {
-      "slug": "davido",
-      "name": "Davido",
-      "rank": 8,
-      "score": 88.618351,
-      "scoreBreakdown": {
-        "editorialContribution": 83,
-        "rawEditorialContribution": 87.06840185755347,
-        "editorialMaximum": 87.06840185755347,
-        "editorialWeight": 83,
-        "streamsIndex": 33.04912446103751,
-        "streamsScore": 33.04912446103751,
-        "streamWeight": 17,
-        "listenerWeight": 0,
-        "streamCoverage": [
-          "spotify"
-        ],
-        "previousScore": 88.612749,
-        "baselineDate": "2026-10-05",
-        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
+        "previousScore": 91.693456
       }
     },
     {
       "slug": "omah-lay",
       "name": "OMAH LAY",
-      "rank": 9,
-      "score": 87.061696,
+      "rank": 2,
+      "score": 79.20379,
       "scoreBreakdown": {
-        "editorialContribution": 81.51992796734268,
-        "rawEditorialContribution": 85.51578129710127,
-        "editorialMaximum": 87.06840185755347,
-        "editorialWeight": 83,
-        "streamsIndex": 32.59863433478689,
-        "streamsScore": 32.59863433478689,
-        "streamWeight": 17,
+        "version": 2,
+        "method": "Weighted mean of recent streams (log scale), momentum, editorial (with review-date decay) and activity, averaged over recent editions, with a weekly movement cap",
+        "weights": {
+          "recentStreams": 35,
+          "momentum": 25,
+          "editorial": 25,
+          "activity": 15
+        },
+        "components": {
+          "recentStreams": 87.83814311674931,
+          "momentum": 59.6249783082351,
+          "editorial": 98.21678068354542,
+          "activity": 60
+        },
+        "points": {
+          "recentStreams": 30.743350090862258,
+          "momentum": 14.906244577058777,
+          "editorial": 24.554195170886356,
+          "activity": 9
+        },
+        "rawScore": 79.20379,
+        "smoothedEditions": 1,
+        "targetRank": 4,
+        "capped": true,
+        "maxMovePlaces": 8,
+        "recentStreams": {
+          "dailyAverage": 3015311,
+          "readings": 1,
+          "from": "2026-11-21",
+          "to": "2026-11-21",
+          "windowDays": 28,
+          "staleDays": 2,
+          "maximumDaily": 6646828,
+          "logFloorDaily": 10000
+        },
+        "momentum": {
+          "ratio": 1.1427418788661265,
+          "available": true,
+          "basis": "latest-4-readings",
+          "thisWeek": 3015311,
+          "baseline": 2638663.25,
+          "baselineFrom": "2026-09-14",
+          "baselineTo": "2026-10-05"
+        },
+        "editorial": {
+          "score": 98.21678068354542,
+          "effective": 98.21678068354542,
+          "reviewedAt": "2026-10-05",
+          "ageDays": 49,
+          "factor": 1,
+          "median": 86.41346068181645,
+          "rawEditorialContribution": 85.51578129710127,
+          "editorialMaximum": 87.06840185755347
+        },
+        "activity": {
+          "score": 60,
+          "signals": [
+            {
+              "kind": "release",
+              "label": "New release: CLARITY OF MIND (EXTENDED)",
+              "points": 40,
+              "date": "2026-10-30",
+              "sourceUrl": "https://open.spotify.com/album/54pgmzJXyjWZmGOzRkU9ud"
+            },
+            {
+              "kind": "chart",
+              "label": "2 TurnTable Top 100 entries, best #36",
+              "points": 20,
+              "date": "2026-11-12",
+              "sourceUrl": "https://www.turntablecharts.com/charts/1"
+            }
+          ]
+        },
+        "editorialContribution": 24.554195170886356,
+        "editorialWeight": 25,
+        "streamWeight": 35,
         "listenerWeight": 0,
+        "streamsIndex": 87.83814311674931,
         "streamCoverage": [
           "spotify"
         ],
-        "previousScore": 87.044723,
+        "rawEditorialContribution": 85.51578129710127,
+        "editorialMaximum": 87.06840185755347,
         "baselineDate": "2026-10-05",
-        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
+        "previousScore": 87.061696
       }
     },
     {
-      "slug": "ckay",
-      "name": "CKay",
-      "rank": 10,
-      "score": 85.787814,
+      "slug": "wizkid",
+      "name": "Wizkid",
+      "rank": 3,
+      "score": 78.020841,
       "scoreBreakdown": {
-        "editorialContribution": 81.31044487272695,
-        "rawEditorialContribution": 85.2960299927113,
-        "editorialMaximum": 87.06840185755347,
-        "editorialWeight": 83,
-        "streamsIndex": 26.337462725341894,
-        "streamsScore": 26.337462725341894,
-        "streamWeight": 17,
+        "version": 2,
+        "method": "Weighted mean of recent streams (log scale), momentum, editorial (with review-date decay) and activity, averaged over recent editions, with a weekly movement cap",
+        "weights": {
+          "recentStreams": 35,
+          "momentum": 25,
+          "editorial": 25,
+          "activity": 15
+        },
+        "components": {
+          "recentStreams": 97.75005631533551,
+          "momentum": 45.61300185000235,
+          "editorial": 93.62028491605282,
+          "activity": 60
+        },
+        "points": {
+          "recentStreams": 34.21251971036743,
+          "momentum": 11.403250462500587,
+          "editorial": 23.405071229013206,
+          "activity": 9
+        },
+        "rawScore": 78.020841,
+        "smoothedEditions": 1,
+        "targetRank": 5,
+        "capped": true,
+        "maxMovePlaces": 8,
+        "recentStreams": {
+          "dailyAverage": 5742582,
+          "readings": 1,
+          "from": "2026-11-21",
+          "to": "2026-11-21",
+          "windowDays": 28,
+          "staleDays": 2,
+          "maximumDaily": 6646828,
+          "logFloorDaily": 10000
+        },
+        "momentum": {
+          "ratio": 0.9409957009768928,
+          "available": true,
+          "basis": "latest-4-readings",
+          "thisWeek": 5742582,
+          "baseline": 6102665.5,
+          "baselineFrom": "2026-09-14",
+          "baselineTo": "2026-10-05"
+        },
+        "editorial": {
+          "score": 93.62028491605282,
+          "effective": 93.62028491605282,
+          "reviewedAt": "2026-10-05",
+          "ageDays": 49,
+          "factor": 1,
+          "median": 86.41346068181645,
+          "rawEditorialContribution": 81.51368589089539,
+          "editorialMaximum": 87.06840185755347
+        },
+        "activity": {
+          "score": 60,
+          "signals": [
+            {
+              "kind": "release",
+              "label": "New release: Feel Alright",
+              "points": 40,
+              "date": "2026-11-20",
+              "sourceUrl": "https://open.spotify.com/track/1ZxXUnXPNUBXVLDXY9rypW"
+            },
+            {
+              "kind": "chart",
+              "label": "1 TurnTable Top 100 entry, best #23",
+              "points": 20,
+              "date": "2026-11-12",
+              "sourceUrl": "https://www.turntablecharts.com/charts/1"
+            }
+          ]
+        },
+        "editorialContribution": 23.405071229013206,
+        "editorialWeight": 25,
+        "streamWeight": 35,
         "listenerWeight": 0,
+        "streamsIndex": 97.75005631533551,
         "streamCoverage": [
           "spotify"
         ],
-        "previousScore": 85.790472,
+        "rawEditorialContribution": 81.51368589089539,
+        "editorialMaximum": 87.06840185755347,
         "baselineDate": "2026-10-05",
-        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
+        "previousScore": 94.704836
+      }
+    },
+    {
+      "slug": "davido",
+      "name": "Davido",
+      "rank": 4,
+      "score": 77.213784,
+      "scoreBreakdown": {
+        "version": 2,
+        "method": "Weighted mean of recent streams (log scale), momentum, editorial (with review-date decay) and activity, averaged over recent editions, with a weekly movement cap",
+        "weights": {
+          "recentStreams": 35,
+          "momentum": 25,
+          "editorial": 25,
+          "activity": 15
+        },
+        "components": {
+          "recentStreams": 86.54846079116231,
+          "momentum": 42.68729264328275,
+          "editorial": 100,
+          "activity": 75
+        },
+        "points": {
+          "recentStreams": 30.291961276906807,
+          "momentum": 10.671823160820688,
+          "editorial": 25,
+          "activity": 11.25
+        },
+        "rawScore": 77.213784,
+        "smoothedEditions": 1,
+        "targetRank": 6,
+        "capped": true,
+        "maxMovePlaces": 8,
+        "recentStreams": {
+          "dailyAverage": 2772869,
+          "readings": 1,
+          "from": "2026-11-21",
+          "to": "2026-11-21",
+          "windowDays": 28,
+          "staleDays": 2,
+          "maximumDaily": 6646828,
+          "logFloorDaily": 10000
+        },
+        "momentum": {
+          "ratio": 0.9035935344551229,
+          "available": true,
+          "basis": "latest-4-readings",
+          "thisWeek": 2772869,
+          "baseline": 3068712.75,
+          "baselineFrom": "2026-09-14",
+          "baselineTo": "2026-10-05"
+        },
+        "editorial": {
+          "score": 100,
+          "effective": 100,
+          "reviewedAt": "2026-10-05",
+          "ageDays": 49,
+          "factor": 1,
+          "median": 86.41346068181645,
+          "rawEditorialContribution": 87.06840185755347,
+          "editorialMaximum": 87.06840185755347
+        },
+        "activity": {
+          "score": 75,
+          "signals": [
+            {
+              "kind": "release",
+              "label": "New release: PARTY",
+              "points": 40,
+              "date": "2026-11-05",
+              "sourceUrl": "https://open.spotify.com/track/4uyr0Cw61kDhk0JBJOfDAK"
+            },
+            {
+              "kind": "chart",
+              "label": "6 TurnTable Top 100 entries, best #8",
+              "points": 35,
+              "date": "2026-11-12",
+              "sourceUrl": "https://www.turntablecharts.com/charts/1"
+            }
+          ]
+        },
+        "editorialContribution": 25,
+        "editorialWeight": 25,
+        "streamWeight": 35,
+        "listenerWeight": 0,
+        "streamsIndex": 86.54846079116231,
+        "streamCoverage": [
+          "spotify"
+        ],
+        "rawEditorialContribution": 87.06840185755347,
+        "editorialMaximum": 87.06840185755347,
+        "baselineDate": "2026-10-05",
+        "previousScore": 88.618351
+      }
+    },
+    {
+      "slug": "asake",
+      "name": "Asake",
+      "rank": 5,
+      "score": 75.457353,
+      "scoreBreakdown": {
+        "version": 2,
+        "method": "Weighted mean of recent streams (log scale), momentum, editorial (with review-date decay) and activity, averaged over recent editions, with a weekly movement cap",
+        "weights": {
+          "recentStreams": 35,
+          "momentum": 25,
+          "editorial": 25,
+          "activity": 15
+        },
+        "components": {
+          "recentStreams": 96.28977790154822,
+          "momentum": 41.10784116623334,
+          "editorial": 98.91588302137984,
+          "activity": 45
+        },
+        "points": {
+          "recentStreams": 33.70142226554188,
+          "momentum": 10.276960291558334,
+          "editorial": 24.728970755344964,
+          "activity": 6.75
+        },
+        "rawScore": 75.457353,
+        "smoothedEditions": 1,
+        "targetRank": 7,
+        "capped": true,
+        "maxMovePlaces": 8,
+        "recentStreams": {
+          "dailyAverage": 5222629,
+          "readings": 1,
+          "from": "2026-11-21",
+          "to": "2026-11-21",
+          "windowDays": 28,
+          "staleDays": 2,
+          "maximumDaily": 6646828,
+          "logFloorDaily": 10000
+        },
+        "momentum": {
+          "ratio": 0.8840236206631122,
+          "available": true,
+          "basis": "latest-4-readings",
+          "thisWeek": 5222629,
+          "baseline": 5907793.5,
+          "baselineFrom": "2026-09-14",
+          "baselineTo": "2026-10-05"
+        },
+        "editorial": {
+          "score": 98.91588302137984,
+          "effective": 98.91588302137984,
+          "reviewedAt": "2026-10-05",
+          "ageDays": 49,
+          "factor": 1,
+          "median": 86.41346068181645,
+          "rawEditorialContribution": 86.1244785300025,
+          "editorialMaximum": 87.06840185755347
+        },
+        "activity": {
+          "score": 45,
+          "signals": [
+            {
+              "kind": "release",
+              "label": "New release: IKEBE 3000",
+              "points": 10,
+              "date": "2026-09-23",
+              "sourceUrl": "https://open.spotify.com/track/6AtTuFf3UXFFaCVglNwCGw"
+            },
+            {
+              "kind": "chart",
+              "label": "10 TurnTable Top 100 entries, best #7",
+              "points": 35,
+              "date": "2026-11-12",
+              "sourceUrl": "https://www.turntablecharts.com/charts/1"
+            }
+          ]
+        },
+        "editorialContribution": 24.728970755344964,
+        "editorialWeight": 25,
+        "streamWeight": 35,
+        "listenerWeight": 0,
+        "streamsIndex": 96.28977790154822,
+        "streamCoverage": [
+          "spotify"
+        ],
+        "rawEditorialContribution": 86.1244785300025,
+        "editorialMaximum": 87.06840185755347,
+        "baselineDate": "2026-10-05",
+        "previousScore": 88.811097
+      }
+    },
+    {
+      "slug": "bnxn",
+      "name": "BNXN",
+      "rank": 6,
+      "score": 79.804639,
+      "scoreBreakdown": {
+        "version": 2,
+        "method": "Weighted mean of recent streams (log scale), momentum, editorial (with review-date decay) and activity, averaged over recent editions, with a weekly movement cap",
+        "weights": {
+          "recentStreams": 35,
+          "momentum": 25,
+          "editorial": 25,
+          "activity": 15
+        },
+        "components": {
+          "recentStreams": 86.58466882572034,
+          "momentum": 66.18104116332776,
+          "editorial": 95.81897767578948,
+          "activity": 60
+        },
+        "points": {
+          "recentStreams": 30.30463408900212,
+          "momentum": 16.54526029083194,
+          "editorial": 23.95474441894737,
+          "activity": 9
+        },
+        "rawScore": 79.804639,
+        "smoothedEditions": 1,
+        "targetRank": 3,
+        "capped": true,
+        "maxMovePlaces": 8,
+        "recentStreams": {
+          "dailyAverage": 2779402,
+          "readings": 1,
+          "from": "2026-11-21",
+          "to": "2026-11-21",
+          "windowDays": 28,
+          "staleDays": 2,
+          "maximumDaily": 6646828,
+          "logFloorDaily": 10000
+        },
+        "momentum": {
+          "ratio": 1.2514674981260532,
+          "available": true,
+          "basis": "latest-4-readings",
+          "thisWeek": 2779402,
+          "baseline": 2220914.25,
+          "baselineFrom": "2026-09-14",
+          "baselineTo": "2026-10-05"
+        },
+        "editorial": {
+          "score": 95.81897767578948,
+          "effective": 95.81897767578948,
+          "reviewedAt": "2026-10-05",
+          "ageDays": 49,
+          "factor": 1,
+          "median": 86.41346068181645,
+          "rawEditorialContribution": 83.42805253855585,
+          "editorialMaximum": 87.06840185755347
+        },
+        "activity": {
+          "score": 60,
+          "signals": [
+            {
+              "kind": "release",
+              "label": "New release: my type",
+              "points": 25,
+              "date": "2026-10-08",
+              "sourceUrl": "https://open.spotify.com/track/0g6eU8UIg61lsD1zjlYdaT"
+            },
+            {
+              "kind": "chart",
+              "label": "8 TurnTable Top 100 entries, best #4",
+              "points": 35,
+              "date": "2026-11-12",
+              "sourceUrl": "https://www.turntablecharts.com/charts/1"
+            }
+          ]
+        },
+        "editorialContribution": 23.95474441894737,
+        "editorialWeight": 25,
+        "streamWeight": 35,
+        "listenerWeight": 0,
+        "streamsIndex": 86.58466882572034,
+        "streamCoverage": [
+          "spotify"
+        ],
+        "rawEditorialContribution": 83.42805253855585,
+        "editorialMaximum": 87.06840185755347,
+        "baselineDate": "2026-10-05",
+        "previousScore": 82.841515
+      }
+    },
+    {
+      "slug": "moliy",
+      "name": "MOLIY",
+      "rank": 7,
+      "score": 75.391865,
+      "scoreBreakdown": {
+        "version": 2,
+        "method": "Weighted mean of recent streams (log scale), momentum, editorial (with review-date decay) and activity, averaged over recent editions, with a weekly movement cap",
+        "weights": {
+          "recentStreams": 35,
+          "momentum": 25,
+          "editorial": 25,
+          "activity": 15
+        },
+        "components": {
+          "recentStreams": 72.68865246497748,
+          "momentum": 75.78733489412585,
+          "editorial": 97.01601292493598,
+          "activity": 45
+        },
+        "points": {
+          "recentStreams": 25.441028362742117,
+          "momentum": 18.946833723531462,
+          "editorial": 24.254003231233995,
+          "activity": 6.75
+        },
+        "rawScore": 75.391865,
+        "smoothedEditions": 1,
+        "targetRank": 8,
+        "capped": true,
+        "maxMovePlaces": 8,
+        "recentStreams": {
+          "dailyAverage": 1126472,
+          "readings": 1,
+          "from": "2026-11-13",
+          "to": "2026-11-13",
+          "windowDays": 28,
+          "staleDays": 10,
+          "maximumDaily": 6646828,
+          "logFloorDaily": 10000
+        },
+        "momentum": {
+          "ratio": 1.4297339378599212,
+          "available": true,
+          "basis": "latest-4-readings",
+          "thisWeek": 1126472,
+          "baseline": 787889.25,
+          "baselineFrom": "2026-08-31",
+          "baselineTo": "2026-09-28"
+        },
+        "editorial": {
+          "score": 97.01601292493598,
+          "effective": 97.01601292493598,
+          "reviewedAt": "2026-10-05",
+          "ageDays": 49,
+          "factor": 1,
+          "median": 86.41346068181645,
+          "rawEditorialContribution": 84.47029199965928,
+          "editorialMaximum": 87.06840185755347
+        },
+        "activity": {
+          "score": 45,
+          "signals": [
+            {
+              "kind": "release",
+              "label": "New release: Comfort",
+              "points": 25,
+              "date": "2026-10-02",
+              "sourceUrl": "https://open.spotify.com/track/3QFhAWy6waNB7igaBsLfoK"
+            },
+            {
+              "kind": "chart",
+              "label": "1 TurnTable Top 100 entry, best #22",
+              "points": 20,
+              "date": "2026-11-12",
+              "sourceUrl": "https://www.turntablecharts.com/charts/1"
+            }
+          ]
+        },
+        "editorialContribution": 24.254003231233995,
+        "editorialWeight": 25,
+        "streamWeight": 35,
+        "listenerWeight": 0,
+        "streamsIndex": 72.68865246497748,
+        "streamCoverage": [
+          "spotify"
+        ],
+        "rawEditorialContribution": 84.47029199965928,
+        "editorialMaximum": 87.06840185755347,
+        "baselineDate": "2026-10-05",
+        "previousScore": 83.451842
+      }
+    },
+    {
+      "slug": "fola",
+      "name": "FOLA",
+      "rank": 8,
+      "score": 82.181996,
+      "scoreBreakdown": {
+        "version": 2,
+        "method": "Weighted mean of recent streams (log scale), momentum, editorial (with review-date decay) and activity, averaged over recent editions, with a weekly movement cap",
+        "weights": {
+          "recentStreams": 35,
+          "momentum": 25,
+          "editorial": 25,
+          "activity": 15
+        },
+        "components": {
+          "recentStreams": 87.13244572764926,
+          "momentum": 75.3393022144771,
+          "editorial": 95.40325955753974,
+          "activity": 60
+        },
+        "points": {
+          "recentStreams": 30.496356004677242,
+          "momentum": 18.834825553619275,
+          "editorial": 23.85081488938494,
+          "activity": 9
+        },
+        "rawScore": 82.181996,
+        "smoothedEditions": 1,
+        "targetRank": 2,
+        "capped": true,
+        "maxMovePlaces": 8,
+        "recentStreams": {
+          "dailyAverage": 2880136,
+          "readings": 1,
+          "from": "2026-11-21",
+          "to": "2026-11-21",
+          "windowDays": 28,
+          "staleDays": 2,
+          "maximumDaily": 6646828,
+          "logFloorDaily": 10000
+        },
+        "momentum": {
+          "ratio": 1.4208813068826731,
+          "available": true,
+          "basis": "latest-4-readings",
+          "thisWeek": 2880136,
+          "baseline": 2027006.75,
+          "baselineFrom": "2026-09-14",
+          "baselineTo": "2026-10-05"
+        },
+        "editorial": {
+          "score": 95.40325955753974,
+          "effective": 95.40325955753974,
+          "reviewedAt": "2026-10-05",
+          "ageDays": 49,
+          "factor": 1,
+          "median": 86.41346068181645,
+          "rawEditorialContribution": 83.0660934167635,
+          "editorialMaximum": 87.06840185755347
+        },
+        "activity": {
+          "score": 60,
+          "signals": [
+            {
+              "kind": "release",
+              "label": "New release: how many?",
+              "points": 25,
+              "date": "2026-10-09",
+              "sourceUrl": "https://open.spotify.com/track/4JC6rbQK8OSxKnuh1r9ScU"
+            },
+            {
+              "kind": "chart",
+              "label": "14 TurnTable Top 100 entries, best #2",
+              "points": 35,
+              "date": "2026-11-12",
+              "sourceUrl": "https://www.turntablecharts.com/charts/1"
+            }
+          ]
+        },
+        "editorialContribution": 23.85081488938494,
+        "editorialWeight": 25,
+        "streamWeight": 35,
+        "listenerWeight": 0,
+        "streamsIndex": 87.13244572764926,
+        "streamCoverage": [
+          "spotify"
+        ],
+        "rawEditorialContribution": 83.0660934167635,
+        "editorialMaximum": 87.06840185755347,
+        "baselineDate": "2026-10-05",
+        "previousScore": 80.827505
+      }
+    },
+    {
+      "slug": "seyi-vibez",
+      "name": "Seyi Vibez",
+      "rank": 9,
+      "score": 73.600277,
+      "scoreBreakdown": {
+        "version": 2,
+        "method": "Weighted mean of recent streams (log scale), momentum, editorial (with review-date decay) and activity, averaged over recent editions, with a weekly movement cap",
+        "weights": {
+          "recentStreams": 35,
+          "momentum": 25,
+          "editorial": 25,
+          "activity": 15
+        },
+        "components": {
+          "recentStreams": 87.64388140714033,
+          "momentum": 31.279370098949148,
+          "editorial": 95.42030535979806,
+          "activity": 75
+        },
+        "points": {
+          "recentStreams": 30.675358492499115,
+          "momentum": 7.819842524737287,
+          "editorial": 23.855076339949516,
+          "activity": 11.25
+        },
+        "rawScore": 73.600277,
+        "smoothedEditions": 1,
+        "targetRank": 10,
+        "capped": true,
+        "maxMovePlaces": 8,
+        "recentStreams": {
+          "dailyAverage": 2977480,
+          "readings": 1,
+          "from": "2026-11-20",
+          "to": "2026-11-20",
+          "windowDays": 28,
+          "staleDays": 3,
+          "maximumDaily": 6646828,
+          "logFloorDaily": 10000
+        },
+        "momentum": {
+          "ratio": 0.7714194368431879,
+          "available": true,
+          "basis": "latest-4-readings",
+          "thisWeek": 2977480,
+          "baseline": 3859742,
+          "baselineFrom": "2026-09-14",
+          "baselineTo": "2026-10-05"
+        },
+        "editorial": {
+          "score": 95.42030535979806,
+          "effective": 95.42030535979806,
+          "reviewedAt": "2026-10-05",
+          "ageDays": 49,
+          "factor": 1,
+          "median": 86.41346068181645,
+          "rawEditorialContribution": 83.08093492437362,
+          "editorialMaximum": 87.06840185755347
+        },
+        "activity": {
+          "score": 75,
+          "signals": [
+            {
+              "kind": "release",
+              "label": "New release: Ndu ka Aku",
+              "points": 40,
+              "date": "2026-10-29",
+              "sourceUrl": "https://open.spotify.com/track/5lElgpZdAd2UtOmuxXV3mT"
+            },
+            {
+              "kind": "chart",
+              "label": "11 TurnTable Top 100 entries, best #6",
+              "points": 35,
+              "date": "2026-11-12",
+              "sourceUrl": "https://www.turntablecharts.com/charts/1"
+            }
+          ]
+        },
+        "editorialContribution": 23.855076339949516,
+        "editorialWeight": 25,
+        "streamWeight": 35,
+        "listenerWeight": 0,
+        "streamsIndex": 87.64388140714033,
+        "streamCoverage": [
+          "spotify"
+        ],
+        "rawEditorialContribution": 83.08093492437362,
+        "editorialMaximum": 87.06840185755347,
+        "baselineDate": "2026-10-05",
+        "previousScore": 82.237058
+      }
+    },
+    {
+      "slug": "burna-boy",
+      "name": "Burna Boy",
+      "rank": 10,
+      "score": 71.901873,
+      "scoreBreakdown": {
+        "version": 2,
+        "method": "Weighted mean of recent streams (log scale), momentum, editorial (with review-date decay) and activity, averaged over recent editions, with a weekly movement cap",
+        "weights": {
+          "recentStreams": 35,
+          "momentum": 25,
+          "editorial": 25,
+          "activity": 15
+        },
+        "components": {
+          "recentStreams": 100,
+          "momentum": 55.31887644863023,
+          "editorial": 92.28861648486519,
+          "activity": 0
+        },
+        "points": {
+          "recentStreams": 35,
+          "momentum": 13.829719112157557,
+          "editorial": 23.072154121216293,
+          "activity": 0
+        },
+        "rawScore": 71.901873,
+        "smoothedEditions": 1,
+        "targetRank": 12,
+        "capped": true,
+        "maxMovePlaces": 8,
+        "recentStreams": {
+          "dailyAverage": 6646828,
+          "readings": 1,
+          "from": "2026-11-21",
+          "to": "2026-11-21",
+          "windowDays": 28,
+          "staleDays": 2,
+          "maximumDaily": 6646828,
+          "logFloorDaily": 10000
+        },
+        "momentum": {
+          "ratio": 1.0765217955348456,
+          "available": true,
+          "basis": "latest-4-readings",
+          "thisWeek": 6646828,
+          "baseline": 6174355.25,
+          "baselineFrom": "2026-09-14",
+          "baselineTo": "2026-10-05"
+        },
+        "editorial": {
+          "score": 92.28861648486519,
+          "effective": 92.28861648486519,
+          "reviewedAt": "2026-10-05",
+          "ageDays": 49,
+          "factor": 1,
+          "median": 86.41346068181645,
+          "rawEditorialContribution": 80.35422346981875,
+          "editorialMaximum": 87.06840185755347
+        },
+        "activity": {
+          "score": 0,
+          "signals": []
+        },
+        "editorialContribution": 23.072154121216293,
+        "editorialWeight": 25,
+        "streamWeight": 35,
+        "listenerWeight": 0,
+        "streamsIndex": 100,
+        "streamCoverage": [
+          "spotify"
+        ],
+        "rawEditorialContribution": 80.35422346981875,
+        "editorialMaximum": 87.06840185755347,
+        "baselineDate": "2026-10-05",
+        "previousScore": 92.771331
       }
     },
     {
       "slug": "fireboy-dml",
       "name": "Fireboy DML",
       "rank": 11,
-      "score": 85.075583,
+      "score": 72.930986,
       "scoreBreakdown": {
-        "editorialContribution": 81.13755933700966,
+        "version": 2,
+        "method": "Weighted mean of recent streams (log scale), momentum, editorial (with review-date decay) and activity, averaged over recent editions, with a weekly movement cap",
+        "weights": {
+          "recentStreams": 35,
+          "momentum": 25,
+          "editorial": 25,
+          "activity": 15
+        },
+        "components": {
+          "recentStreams": 77.63995017512411,
+          "momentum": 55.271917947911035,
+          "editorial": 97.75609558675862,
+          "activity": 50
+        },
+        "points": {
+          "recentStreams": 27.173982561293442,
+          "momentum": 13.817979486977759,
+          "editorial": 24.439023896689655,
+          "activity": 7.5
+        },
+        "rawScore": 72.930986,
+        "smoothedEditions": 1,
+        "targetRank": 11,
+        "capped": false,
+        "maxMovePlaces": 8,
+        "recentStreams": {
+          "dailyAverage": 1554091,
+          "readings": 1,
+          "from": "2026-11-18",
+          "to": "2026-11-18",
+          "windowDays": 28,
+          "staleDays": 5,
+          "maximumDaily": 6646828,
+          "logFloorDaily": 10000
+        },
+        "momentum": {
+          "ratio": 1.075821226149786,
+          "available": true,
+          "basis": "latest-4-readings",
+          "thisWeek": 1554091,
+          "baseline": 1444562.5,
+          "baselineFrom": "2026-09-14",
+          "baselineTo": "2026-10-05"
+        },
+        "editorial": {
+          "score": 97.75609558675862,
+          "effective": 97.75609558675862,
+          "reviewedAt": "2026-10-05",
+          "ageDays": 49,
+          "factor": 1,
+          "median": 86.41346068181645,
+          "rawEditorialContribution": 85.11467014573309,
+          "editorialMaximum": 87.06840185755347
+        },
+        "activity": {
+          "score": 50,
+          "signals": [
+            {
+              "kind": "release",
+              "label": "New release: I Believe",
+              "points": 40,
+              "date": "2026-10-29",
+              "sourceUrl": "https://open.spotify.com/track/7DEWq5N9XkxwAzJwwknyeN"
+            },
+            {
+              "kind": "chart",
+              "label": "1 TurnTable Top 100 entry, best #51",
+              "points": 10,
+              "date": "2026-11-12",
+              "sourceUrl": "https://www.turntablecharts.com/charts/1"
+            }
+          ]
+        },
+        "editorialContribution": 24.439023896689655,
+        "editorialWeight": 25,
+        "streamWeight": 35,
+        "listenerWeight": 0,
+        "streamsIndex": 77.63995017512411,
+        "streamCoverage": [
+          "spotify"
+        ],
         "rawEditorialContribution": 85.11467014573309,
         "editorialMaximum": 87.06840185755347,
-        "editorialWeight": 83,
-        "streamsIndex": 23.164842272136422,
-        "streamsScore": 23.164842272136422,
-        "streamWeight": 17,
-        "listenerWeight": 0,
-        "streamCoverage": [
-          "spotify"
-        ],
-        "previousScore": 85.068196,
         "baselineDate": "2026-10-05",
-        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
+        "previousScore": 85.075583
       }
     },
     {
-      "slug": "victony",
-      "name": "Victony",
+      "slug": "tems",
+      "name": "Tems",
       "rank": 12,
-      "score": 83.778696,
+      "score": 68.208923,
       "scoreBreakdown": {
-        "editorialContribution": 81.49001949238621,
-        "rawEditorialContribution": 85.48440680172226,
-        "editorialMaximum": 87.06840185755347,
-        "editorialWeight": 83,
-        "streamsIndex": 13.462801432757407,
-        "streamsScore": 13.462801432757407,
-        "streamWeight": 17,
+        "version": 2,
+        "method": "Weighted mean of recent streams (log scale), momentum, editorial (with review-date decay) and activity, averaged over recent editions, with a weekly movement cap",
+        "weights": {
+          "recentStreams": 35,
+          "momentum": 25,
+          "editorial": 25,
+          "activity": 15
+        },
+        "components": {
+          "recentStreams": 95.24381304299918,
+          "momentum": 40.671347223666515,
+          "editorial": 98.82300582428256,
+          "activity": 0
+        },
+        "points": {
+          "recentStreams": 33.33533456504971,
+          "momentum": 10.167836805916629,
+          "editorial": 24.70575145607064,
+          "activity": 0
+        },
+        "rawScore": 68.208923,
+        "smoothedEditions": 1,
+        "targetRank": 18,
+        "capped": true,
+        "maxMovePlaces": 8,
+        "recentStreams": {
+          "dailyAverage": 4879391,
+          "readings": 1,
+          "from": "2026-11-21",
+          "to": "2026-11-21",
+          "windowDays": 28,
+          "staleDays": 2,
+          "maximumDaily": 6646828,
+          "logFloorDaily": 10000
+        },
+        "momentum": {
+          "ratio": 0.8786904653426798,
+          "available": true,
+          "basis": "latest-4-readings",
+          "thisWeek": 4879391,
+          "baseline": 5553026,
+          "baselineFrom": "2026-09-14",
+          "baselineTo": "2026-10-05"
+        },
+        "editorial": {
+          "score": 98.82300582428256,
+          "effective": 98.82300582428256,
+          "reviewedAt": "2026-10-05",
+          "ageDays": 49,
+          "factor": 1,
+          "median": 86.41346068181645,
+          "rawEditorialContribution": 86.0436118387998,
+          "editorialMaximum": 87.06840185755347
+        },
+        "activity": {
+          "score": 0,
+          "signals": []
+        },
+        "editorialContribution": 24.70575145607064,
+        "editorialWeight": 25,
+        "streamWeight": 35,
         "listenerWeight": 0,
+        "streamsIndex": 95.24381304299918,
         "streamCoverage": [
           "spotify"
         ],
-        "previousScore": 83.765739,
+        "rawEditorialContribution": 86.0436118387998,
+        "editorialMaximum": 87.06840185755347,
         "baselineDate": "2026-10-05",
-        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
+        "previousScore": 91.270006
       }
     },
     {
-      "slug": "moliy",
-      "name": "MOLIY",
+      "slug": "tyla",
+      "name": "Tyla",
       "rank": 13,
-      "score": 83.451842,
+      "score": 66.025744,
       "scoreBreakdown": {
-        "editorialContribution": 80.52329072769687,
-        "rawEditorialContribution": 84.47029199965928,
-        "editorialMaximum": 87.06840185755347,
-        "editorialWeight": 83,
-        "streamsIndex": 17.226770755622567,
-        "streamsScore": 17.226770755622567,
-        "streamWeight": 17,
+        "version": 2,
+        "method": "Weighted mean of recent streams (log scale), momentum, editorial (with review-date decay) and activity, averaged over recent editions, with a weekly movement cap",
+        "weights": {
+          "recentStreams": 35,
+          "momentum": 25,
+          "editorial": 25,
+          "activity": 15
+        },
+        "components": {
+          "recentStreams": 87.54566436770318,
+          "momentum": 41.83402386415296,
+          "editorial": 99.70502174557937,
+          "activity": 0
+        },
+        "points": {
+          "recentStreams": 30.640982528696114,
+          "momentum": 10.45850596603824,
+          "editorial": 24.926255436394843,
+          "activity": 0
+        },
+        "rawScore": 66.025744,
+        "smoothedEditions": 1,
+        "targetRank": 24,
+        "capped": true,
+        "maxMovePlaces": 8,
+        "recentStreams": {
+          "dailyAverage": 2958534,
+          "readings": 1,
+          "from": "2026-11-21",
+          "to": "2026-11-21",
+          "windowDays": 28,
+          "staleDays": 2,
+          "maximumDaily": 6646828,
+          "logFloorDaily": 10000
+        },
+        "momentum": {
+          "ratio": 0.8929680592150091,
+          "available": true,
+          "basis": "latest-4-readings",
+          "thisWeek": 2958534,
+          "baseline": 3313146.5,
+          "baselineFrom": "2026-09-14",
+          "baselineTo": "2026-10-05"
+        },
+        "editorial": {
+          "score": 99.70502174557937,
+          "effective": 99.70502174557937,
+          "reviewedAt": "2026-10-05",
+          "ageDays": 49,
+          "factor": 1,
+          "median": 86.41346068181645,
+          "rawEditorialContribution": 86.81156900560212,
+          "editorialMaximum": 87.06840185755347
+        },
+        "activity": {
+          "score": 0,
+          "signals": []
+        },
+        "editorialContribution": 24.926255436394843,
+        "editorialWeight": 25,
+        "streamWeight": 35,
         "listenerWeight": 0,
+        "streamsIndex": 87.54566436770318,
         "streamCoverage": [
           "spotify"
         ],
-        "previousScore": 83.444628,
+        "rawEditorialContribution": 86.81156900560212,
+        "editorialMaximum": 87.06840185755347,
         "baselineDate": "2026-10-05",
-        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
+        "previousScore": 89.938636
       }
     },
     {
-      "slug": "bnxn",
-      "name": "BNXN",
+      "slug": "ayra-starr",
+      "name": "Ayra Starr",
       "rank": 14,
-      "score": 82.841515,
+      "score": 71.343823,
       "scoreBreakdown": {
-        "editorialContribution": 79.52975147090528,
-        "rawEditorialContribution": 83.42805253855585,
-        "editorialMaximum": 87.06840185755347,
-        "editorialWeight": 83,
-        "streamsIndex": 19.480963857111718,
-        "streamsScore": 19.480963857111718,
-        "streamWeight": 17,
+        "version": 2,
+        "method": "Weighted mean of recent streams (log scale), momentum, editorial (with review-date decay) and activity, averaged over recent editions, with a weekly movement cap",
+        "weights": {
+          "recentStreams": 35,
+          "momentum": 25,
+          "editorial": 25,
+          "activity": 15
+        },
+        "components": {
+          "recentStreams": 89.64363665725796,
+          "momentum": 45.109010989646926,
+          "editorial": 99.76519064542133,
+          "activity": 25
+        },
+        "points": {
+          "recentStreams": 31.375272830040284,
+          "momentum": 11.27725274741173,
+          "editorial": 24.941297661355335,
+          "activity": 3.75
+        },
+        "rawScore": 71.343823,
+        "smoothedEditions": 1,
+        "targetRank": 13,
+        "capped": true,
+        "maxMovePlaces": 8,
+        "recentStreams": {
+          "dailyAverage": 3390738,
+          "readings": 1,
+          "from": "2026-11-21",
+          "to": "2026-11-21",
+          "windowDays": 28,
+          "staleDays": 2,
+          "maximumDaily": 6646828,
+          "logFloorDaily": 10000
+        },
+        "momentum": {
+          "ratio": 0.9344440692630611,
+          "available": true,
+          "basis": "latest-4-readings",
+          "thisWeek": 3390738,
+          "baseline": 3628615.25,
+          "baselineFrom": "2026-09-14",
+          "baselineTo": "2026-10-05"
+        },
+        "editorial": {
+          "score": 99.76519064542133,
+          "effective": 99.76519064542133,
+          "reviewedAt": "2026-10-05",
+          "ageDays": 49,
+          "factor": 1,
+          "median": 86.41346068181645,
+          "rawEditorialContribution": 86.86395710510979,
+          "editorialMaximum": 87.06840185755347
+        },
+        "activity": {
+          "score": 25,
+          "signals": [
+            {
+              "kind": "chart",
+              "label": "4 TurnTable Top 100 entries, best #29",
+              "points": 25,
+              "date": "2026-11-12",
+              "sourceUrl": "https://www.turntablecharts.com/charts/1"
+            }
+          ]
+        },
+        "editorialContribution": 24.941297661355335,
+        "editorialWeight": 25,
+        "streamWeight": 35,
         "listenerWeight": 0,
+        "streamsIndex": 89.64363665725796,
         "streamCoverage": [
           "spotify"
         ],
-        "previousScore": 82.825789,
-        "baselineDate": "2026-10-05",
-        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
-      }
-    },
-    {
-      "slug": "seyi-vibez",
-      "name": "Seyi Vibez",
-      "rank": 15,
-      "score": 82.237058,
-      "scoreBreakdown": {
-        "editorialContribution": 79.1988534486324,
-        "rawEditorialContribution": 83.08093492437362,
+        "rawEditorialContribution": 86.86395710510979,
         "editorialMaximum": 87.06840185755347,
-        "editorialWeight": 83,
-        "streamsIndex": 17.871791660938044,
-        "streamsScore": 17.871791660938044,
-        "streamWeight": 17,
-        "listenerWeight": 0,
-        "streamCoverage": [
-          "spotify"
-        ],
-        "previousScore": 82.22416,
         "baselineDate": "2026-10-05",
-        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
-      }
-    },
-    {
-      "slug": "fola",
-      "name": "FOLA",
-      "rank": 16,
-      "score": 80.827505,
-      "scoreBreakdown": {
-        "editorialContribution": 79.184705432758,
-        "rawEditorialContribution": 83.0660934167635,
-        "editorialMaximum": 87.06840185755347,
-        "editorialWeight": 83,
-        "streamsIndex": 9.663527184223723,
-        "streamsScore": 9.663527184223723,
-        "streamWeight": 17,
-        "listenerWeight": 0,
-        "streamCoverage": [
-          "spotify"
-        ],
-        "previousScore": 80.805769,
-        "baselineDate": "2026-10-05",
-        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
-      }
-    },
-    {
-      "slug": "ruger",
-      "name": "Ruger",
-      "rank": 17,
-      "score": 79.961191,
-      "scoreBreakdown": {
-        "editorialContribution": 78.17087614065152,
-        "rawEditorialContribution": 82.00256936591909,
-        "editorialMaximum": 87.06840185755347,
-        "editorialWeight": 83,
-        "streamsIndex": 10.531262295404572,
-        "streamsScore": 10.531262295404572,
-        "streamWeight": 17,
-        "listenerWeight": 0,
-        "streamCoverage": [
-          "spotify"
-        ],
-        "previousScore": 79.957301,
-        "baselineDate": "2026-10-05",
-        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
+        "previousScore": 88.781706
       }
     },
     {
       "slug": "mavo",
       "name": "Mavo",
-      "rank": 18,
-      "score": 79.118408,
+      "rank": 15,
+      "score": 69.269811,
       "scoreBreakdown": {
-        "editorialContribution": 77.9092983300959,
+        "version": 2,
+        "method": "Weighted mean of recent streams (log scale), momentum, editorial (with review-date decay) and activity, averaged over recent editions, with a weekly movement cap",
+        "weights": {
+          "recentStreams": 35,
+          "momentum": 25,
+          "editorial": 25,
+          "activity": 15
+        },
+        "components": {
+          "recentStreams": 78.30564122674538,
+          "momentum": 37.58472123761673,
+          "editorial": 93.86662449409144,
+          "activity": 60
+        },
+        "points": {
+          "recentStreams": 27.406974429360886,
+          "momentum": 9.396180309404183,
+          "editorial": 23.466656123522863,
+          "activity": 9
+        },
+        "rawScore": 69.269811,
+        "smoothedEditions": 1,
+        "targetRank": 15,
+        "capped": false,
+        "maxMovePlaces": 8,
+        "recentStreams": {
+          "dailyAverage": 1622805,
+          "readings": 1,
+          "from": "2026-11-17",
+          "to": "2026-11-17",
+          "windowDays": 28,
+          "staleDays": 6,
+          "maximumDaily": 6646828,
+          "logFloorDaily": 10000
+        },
+        "momentum": {
+          "ratio": 0.8418846163024633,
+          "available": true,
+          "basis": "latest-4-readings",
+          "thisWeek": 1622805,
+          "baseline": 1927586,
+          "baselineFrom": "2026-09-14",
+          "baselineTo": "2026-10-05"
+        },
+        "editorial": {
+          "score": 93.86662449409144,
+          "effective": 93.86662449409144,
+          "reviewedAt": "2026-10-05",
+          "ageDays": 49,
+          "factor": 1,
+          "median": 86.41346068181645,
+          "rawEditorialContribution": 81.72816982463625,
+          "editorialMaximum": 87.06840185755347
+        },
+        "activity": {
+          "score": 60,
+          "signals": [
+            {
+              "kind": "release",
+              "label": "New release: inbox",
+              "points": 40,
+              "date": "2026-11-20",
+              "sourceUrl": "https://music.apple.com/ng/album/inbox/6835518617?i=6835518618&uo=4"
+            },
+            {
+              "kind": "chart",
+              "label": "2 TurnTable Top 100 entries, best #19",
+              "points": 20,
+              "date": "2026-11-12",
+              "sourceUrl": "https://www.turntablecharts.com/charts/1"
+            }
+          ]
+        },
+        "editorialContribution": 23.466656123522863,
+        "editorialWeight": 25,
+        "streamWeight": 35,
+        "listenerWeight": 0,
+        "streamsIndex": 78.30564122674538,
+        "streamCoverage": [
+          "spotify"
+        ],
         "rawEditorialContribution": 81.72816982463625,
         "editorialMaximum": 87.06840185755347,
-        "editorialWeight": 83,
-        "streamsIndex": 7.112407864719002,
-        "streamsScore": 7.112407864719002,
-        "streamWeight": 17,
-        "listenerWeight": 0,
-        "streamCoverage": [
-          "spotify"
-        ],
-        "previousScore": 79.104808,
         "baselineDate": "2026-10-05",
-        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
+        "previousScore": 79.118408
       }
     },
     {
-      "slug": "kizz-daniel",
-      "name": "Kizz Daniel",
-      "rank": 19,
-      "score": 77.957142,
+      "slug": "ruger",
+      "name": "Ruger",
+      "rank": 16,
+      "score": 68.628605,
       "scoreBreakdown": {
-        "editorialContribution": 75.46250709339382,
-        "rawEditorialContribution": 79.1614444913987,
-        "editorialMaximum": 87.06840185755347,
-        "editorialWeight": 83,
-        "streamsIndex": 14.674320622099849,
-        "streamsScore": 14.674320622099849,
-        "streamWeight": 17,
+        "version": 2,
+        "method": "Weighted mean of recent streams (log scale), momentum, editorial (with review-date decay) and activity, averaged over recent editions, with a weekly movement cap",
+        "weights": {
+          "recentStreams": 35,
+          "momentum": 25,
+          "editorial": 25,
+          "activity": 15
+        },
+        "components": {
+          "recentStreams": 69.62823871220925,
+          "momentum": 58.85310782105921,
+          "editorial": 94.18177848271266,
+          "activity": 40
+        },
+        "points": {
+          "recentStreams": 24.36988354927324,
+          "momentum": 14.713276955264803,
+          "editorial": 23.545444620678165,
+          "activity": 6
+        },
+        "rawScore": 68.628605,
+        "smoothedEditions": 1,
+        "targetRank": 16,
+        "capped": false,
+        "maxMovePlaces": 8,
+        "recentStreams": {
+          "dailyAverage": 923287,
+          "readings": 1,
+          "from": "2026-11-16",
+          "to": "2026-11-16",
+          "windowDays": 28,
+          "staleDays": 7,
+          "maximumDaily": 6646828,
+          "logFloorDaily": 10000
+        },
+        "momentum": {
+          "ratio": 1.1305792754419124,
+          "available": true,
+          "basis": "latest-4-readings",
+          "thisWeek": 923287,
+          "baseline": 816649.5,
+          "baselineFrom": "2026-09-14",
+          "baselineTo": "2026-10-05"
+        },
+        "editorial": {
+          "score": 94.18177848271266,
+          "effective": 94.18177848271266,
+          "reviewedAt": "2026-10-05",
+          "ageDays": 49,
+          "factor": 1,
+          "median": 86.41346068181645,
+          "rawEditorialContribution": 82.00256936591909,
+          "editorialMaximum": 87.06840185755347
+        },
+        "activity": {
+          "score": 40,
+          "signals": [
+            {
+              "kind": "release",
+              "label": "New release: DRTY",
+              "points": 40,
+              "date": "2026-11-11",
+              "sourceUrl": "https://open.spotify.com/track/4v908d71nMHw4sRRx5YTZQ"
+            }
+          ]
+        },
+        "editorialContribution": 23.545444620678165,
+        "editorialWeight": 25,
+        "streamWeight": 35,
         "listenerWeight": 0,
+        "streamsIndex": 69.62823871220925,
         "streamCoverage": [
           "spotify"
         ],
-        "previousScore": 77.964334,
+        "rawEditorialContribution": 82.00256936591909,
+        "editorialMaximum": 87.06840185755347,
         "baselineDate": "2026-10-05",
-        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
+        "previousScore": 79.961191
       }
     },
     {
-      "slug": "odeal",
-      "name": "Odeal",
-      "rank": 20,
-      "score": 77.883628,
+      "slug": "victony",
+      "name": "Victony",
+      "rank": 17,
+      "score": 68.528079,
       "scoreBreakdown": {
-        "editorialContribution": 76.80996776154217,
-        "rawEditorialContribution": 80.57495349069495,
-        "editorialMaximum": 87.06840185755347,
-        "editorialWeight": 83,
-        "streamsIndex": 6.315648445506026,
-        "streamsScore": 6.315648445506026,
-        "streamWeight": 17,
+        "version": 2,
+        "method": "Weighted mean of recent streams (log scale), momentum, editorial (with review-date decay) and activity, averaged over recent editions, with a weekly movement cap",
+        "weights": {
+          "recentStreams": 35,
+          "momentum": 25,
+          "editorial": 25,
+          "activity": 15
+        },
+        "components": {
+          "recentStreams": 79.1524467380546,
+          "momentum": 50.11814610944944,
+          "editorial": 98.18074637636892,
+          "activity": 25
+        },
+        "points": {
+          "recentStreams": 27.703356358319112,
+          "momentum": 12.52953652736236,
+          "editorial": 24.54518659409223,
+          "activity": 3.75
+        },
+        "rawScore": 68.528079,
+        "smoothedEditions": 1,
+        "targetRank": 17,
+        "capped": false,
+        "maxMovePlaces": 8,
+        "recentStreams": {
+          "dailyAverage": 1714622,
+          "readings": 1,
+          "from": "2026-11-18",
+          "to": "2026-11-18",
+          "windowDays": 28,
+          "staleDays": 5,
+          "maximumDaily": 6646828,
+          "logFloorDaily": 10000
+        },
+        "momentum": {
+          "ratio": 1.001639194866738,
+          "available": true,
+          "basis": "latest-4-readings",
+          "thisWeek": 1714622,
+          "baseline": 1711816,
+          "baselineFrom": "2026-09-14",
+          "baselineTo": "2026-10-05"
+        },
+        "editorial": {
+          "score": 98.18074637636892,
+          "effective": 98.18074637636892,
+          "reviewedAt": "2026-10-05",
+          "ageDays": 49,
+          "factor": 1,
+          "median": 86.41346068181645,
+          "rawEditorialContribution": 85.48440680172226,
+          "editorialMaximum": 87.06840185755347
+        },
+        "activity": {
+          "score": 25,
+          "signals": [
+            {
+              "kind": "chart",
+              "label": "3 TurnTable Top 100 entries, best #13",
+              "points": 25,
+              "date": "2026-11-12",
+              "sourceUrl": "https://www.turntablecharts.com/charts/1"
+            }
+          ]
+        },
+        "editorialContribution": 24.54518659409223,
+        "editorialWeight": 25,
+        "streamWeight": 35,
         "listenerWeight": 0,
+        "streamsIndex": 79.1524467380546,
         "streamCoverage": [
           "spotify"
         ],
-        "previousScore": 77.886723,
+        "rawEditorialContribution": 85.48440680172226,
+        "editorialMaximum": 87.06840185755347,
         "baselineDate": "2026-10-05",
-        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
+        "previousScore": 83.778696
+      }
+    },
+    {
+      "slug": "ckay",
+      "name": "CKay",
+      "rank": 18,
+      "score": 64.452783,
+      "scoreBreakdown": {
+        "version": 2,
+        "method": "Weighted mean of recent streams (log scale), momentum, editorial (with review-date decay) and activity, averaged over recent editions, with a weekly movement cap",
+        "weights": {
+          "recentStreams": 35,
+          "momentum": 25,
+          "editorial": 25,
+          "activity": 15
+        },
+        "components": {
+          "recentStreams": 73.86314452064498,
+          "momentum": 50.43833746654101,
+          "editorial": 97.96439141292403,
+          "activity": 10
+        },
+        "points": {
+          "recentStreams": 25.852100582225745,
+          "momentum": 12.609584366635252,
+          "editorial": 24.491097853231008,
+          "activity": 1.5
+        },
+        "rawScore": 64.452783,
+        "smoothedEditions": 1,
+        "targetRank": 27,
+        "capped": true,
+        "maxMovePlaces": 8,
+        "recentStreams": {
+          "dailyAverage": 1215827,
+          "readings": 1,
+          "from": "2026-11-21",
+          "to": "2026-11-21",
+          "windowDays": 28,
+          "staleDays": 2,
+          "maximumDaily": 6646828,
+          "logFloorDaily": 10000
+        },
+        "momentum": {
+          "ratio": 1.0060951478584854,
+          "available": true,
+          "basis": "latest-4-readings",
+          "thisWeek": 1215827,
+          "baseline": 1208461.25,
+          "baselineFrom": "2026-09-14",
+          "baselineTo": "2026-10-05"
+        },
+        "editorial": {
+          "score": 97.96439141292403,
+          "effective": 97.96439141292403,
+          "reviewedAt": "2026-10-05",
+          "ageDays": 49,
+          "factor": 1,
+          "median": 86.41346068181645,
+          "rawEditorialContribution": 85.2960299927113,
+          "editorialMaximum": 87.06840185755347
+        },
+        "activity": {
+          "score": 10,
+          "signals": [
+            {
+              "kind": "release",
+              "label": "New release: AFRICAN GIRLS",
+              "points": 10,
+              "date": "2026-09-04",
+              "sourceUrl": "https://open.spotify.com/track/0vx439nNtjz91IRVKOsyYx"
+            }
+          ]
+        },
+        "editorialContribution": 24.491097853231008,
+        "editorialWeight": 25,
+        "streamWeight": 35,
+        "listenerWeight": 0,
+        "streamsIndex": 73.86314452064498,
+        "streamCoverage": [
+          "spotify"
+        ],
+        "rawEditorialContribution": 85.2960299927113,
+        "editorialMaximum": 87.06840185755347,
+        "baselineDate": "2026-10-05",
+        "previousScore": 85.787814
       }
     },
     {
       "slug": "olamide",
       "name": "Olamide",
-      "rank": 21,
-      "score": 77.048392,
+      "rank": 19,
+      "score": 67.826986,
       "scoreBreakdown": {
-        "editorialContribution": 74.8093660157421,
+        "version": 2,
+        "method": "Weighted mean of recent streams (log scale), momentum, editorial (with review-date decay) and activity, averaged over recent editions, with a weekly movement cap",
+        "weights": {
+          "recentStreams": 35,
+          "momentum": 25,
+          "editorial": 25,
+          "activity": 15
+        },
+        "components": {
+          "recentStreams": 70.76307973985845,
+          "momentum": 55.1078647388001,
+          "editorial": 90.13176628402664,
+          "activity": 45
+        },
+        "points": {
+          "recentStreams": 24.76707790895046,
+          "momentum": 13.776966184700024,
+          "editorial": 22.53294157100666,
+          "activity": 6.75
+        },
+        "rawScore": 67.826986,
+        "smoothedEditions": 1,
+        "targetRank": 19,
+        "capped": false,
+        "maxMovePlaces": 8,
+        "recentStreams": {
+          "dailyAverage": 993960,
+          "readings": 1,
+          "from": "2026-11-16",
+          "to": "2026-11-16",
+          "windowDays": 28,
+          "staleDays": 7,
+          "maximumDaily": 6646828,
+          "logFloorDaily": 10000
+        },
+        "momentum": {
+          "ratio": 1.0733773086572607,
+          "available": true,
+          "basis": "latest-4-readings",
+          "thisWeek": 993960,
+          "baseline": 926011.75,
+          "baselineFrom": "2026-09-14",
+          "baselineTo": "2026-10-05"
+        },
+        "editorial": {
+          "score": 90.13176628402664,
+          "effective": 90.13176628402664,
+          "reviewedAt": "2026-10-05",
+          "ageDays": 49,
+          "factor": 1,
+          "median": 86.41346068181645,
+          "rawEditorialContribution": 78.4762884694872,
+          "editorialMaximum": 87.06840185755347
+        },
+        "activity": {
+          "score": 45,
+          "signals": [
+            {
+              "kind": "release",
+              "label": "New release: Burukutu",
+              "points": 25,
+              "date": "2026-10-21",
+              "sourceUrl": "https://open.spotify.com/track/4vwzDIuXLtdevmmjPtnemz"
+            },
+            {
+              "kind": "chart",
+              "label": "1 TurnTable Top 100 entry, best #39",
+              "points": 20,
+              "date": "2026-11-12",
+              "sourceUrl": "https://www.turntablecharts.com/charts/1"
+            }
+          ]
+        },
+        "editorialContribution": 22.53294157100666,
+        "editorialWeight": 25,
+        "streamWeight": 35,
+        "listenerWeight": 0,
+        "streamsIndex": 70.76307973985845,
+        "streamCoverage": [
+          "spotify"
+        ],
         "rawEditorialContribution": 78.4762884694872,
         "editorialMaximum": 87.06840185755347,
-        "editorialWeight": 83,
-        "streamsIndex": 13.17074323700502,
-        "streamsScore": 13.17074323700502,
-        "streamWeight": 17,
-        "listenerWeight": 0,
-        "streamCoverage": [
-          "spotify"
-        ],
-        "previousScore": 77.0451,
         "baselineDate": "2026-10-05",
-        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
-      }
-    },
-    {
-      "slug": "odumodublvck",
-      "name": "ODUMODUBLVCK",
-      "rank": 22,
-      "score": 76.261273,
-      "scoreBreakdown": {
-        "editorialContribution": 74.22721308407168,
-        "rawEditorialContribution": 77.86560021168921,
-        "editorialMaximum": 87.06840185755347,
-        "editorialWeight": 83,
-        "streamsIndex": 11.965056088997477,
-        "streamsScore": 11.965056088997477,
-        "streamWeight": 17,
-        "listenerWeight": 0,
-        "streamCoverage": [
-          "spotify"
-        ],
-        "previousScore": 76.246985,
-        "baselineDate": "2026-10-05",
-        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
-      }
-    },
-    {
-      "slug": "sarz",
-      "name": "Sarz",
-      "rank": 23,
-      "score": 74.949515,
-      "scoreBreakdown": {
-        "editorialContribution": 73.73633801112537,
-        "rawEditorialContribution": 77.35066396936215,
-        "editorialMaximum": 87.06840185755347,
-        "editorialWeight": 83,
-        "streamsIndex": 7.136338076432945,
-        "streamsScore": 7.136338076432945,
-        "streamWeight": 17,
-        "listenerWeight": 0,
-        "streamCoverage": [
-          "spotify"
-        ],
-        "previousScore": 74.953013,
-        "baselineDate": "2026-10-05",
-        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
-      }
-    },
-    {
-      "slug": "amaarae",
-      "name": "Amaarae",
-      "rank": 24,
-      "score": 74.524774,
-      "scoreBreakdown": {
-        "editorialContribution": 72.50014609739941,
-        "rawEditorialContribution": 76.05387777276756,
-        "editorialMaximum": 87.06840185755347,
-        "editorialWeight": 83,
-        "streamsIndex": 11.90957606470464,
-        "streamsScore": 11.90957606470464,
-        "streamWeight": 17,
-        "listenerWeight": 0,
-        "streamCoverage": [
-          "spotify"
-        ],
-        "previousScore": 74.530611,
-        "baselineDate": "2026-10-05",
-        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
+        "previousScore": 77.048392
       }
     },
     {
       "slug": "young-jonn",
       "name": "Young Jonn",
-      "rank": 25,
-      "score": 73.706747,
+      "rank": 20,
+      "score": 67.516532,
       "scoreBreakdown": {
-        "editorialContribution": 71.95206208436153,
+        "version": 2,
+        "method": "Weighted mean of recent streams (log scale), momentum, editorial (with review-date decay) and activity, averaged over recent editions, with a weekly movement cap",
+        "weights": {
+          "recentStreams": 35,
+          "momentum": 25,
+          "editorial": 25,
+          "activity": 15
+        },
+        "components": {
+          "recentStreams": 74.8231788351455,
+          "momentum": 57.62444635080848,
+          "editorial": 86.68923142694159,
+          "activity": 35
+        },
+        "points": {
+          "recentStreams": 26.18811259230092,
+          "momentum": 14.40611158770212,
+          "editorial": 21.672307856735397,
+          "activity": 5.25
+        },
+        "rawScore": 67.516532,
+        "smoothedEditions": 1,
+        "targetRank": 21,
+        "capped": true,
+        "maxMovePlaces": 8,
+        "recentStreams": {
+          "dailyAverage": 1294106,
+          "readings": 1,
+          "from": "2026-11-16",
+          "to": "2026-11-16",
+          "windowDays": 28,
+          "staleDays": 7,
+          "maximumDaily": 6646828,
+          "logFloorDaily": 10000
+        },
+        "momentum": {
+          "ratio": 1.1114853454201044,
+          "available": true,
+          "basis": "latest-4-readings",
+          "thisWeek": 1294106,
+          "baseline": 1164303.25,
+          "baselineFrom": "2026-09-14",
+          "baselineTo": "2026-10-05"
+        },
+        "editorial": {
+          "score": 86.68923142694159,
+          "effective": 86.68923142694159,
+          "reviewedAt": "2026-10-05",
+          "ageDays": 49,
+          "factor": 1,
+          "median": 86.41346068181645,
+          "rawEditorialContribution": 75.47892838603404,
+          "editorialMaximum": 87.06840185755347
+        },
+        "activity": {
+          "score": 35,
+          "signals": [
+            {
+              "kind": "release",
+              "label": "New release: Glass in the Air",
+              "points": 10,
+              "date": "2026-09-25",
+              "sourceUrl": "https://open.spotify.com/track/12TeKAlLlK2fi2rYf2aeZv"
+            },
+            {
+              "kind": "chart",
+              "label": "6 TurnTable Top 100 entries, best #26",
+              "points": 25,
+              "date": "2026-11-12",
+              "sourceUrl": "https://www.turntablecharts.com/charts/1"
+            }
+          ]
+        },
+        "editorialContribution": 21.672307856735397,
+        "editorialWeight": 25,
+        "streamWeight": 35,
+        "listenerWeight": 0,
+        "streamsIndex": 74.8231788351455,
+        "streamCoverage": [
+          "spotify"
+        ],
         "rawEditorialContribution": 75.47892838603404,
         "editorialMaximum": 87.06840185755347,
-        "editorialWeight": 83,
-        "streamsIndex": 10.321677257567274,
-        "streamsScore": 10.321677257567274,
-        "streamWeight": 17,
-        "listenerWeight": 0,
-        "streamCoverage": [
-          "spotify"
-        ],
-        "previousScore": 73.700685,
         "baselineDate": "2026-10-05",
-        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
+        "previousScore": 73.706747
       }
     },
     {
-      "slug": "adekunle-gold",
-      "name": "Adekunle Gold",
+      "slug": "odeal",
+      "name": "Odeal",
+      "rank": 21,
+      "score": 66.702601,
+      "scoreBreakdown": {
+        "version": 2,
+        "method": "Weighted mean of recent streams (log scale), momentum, editorial (with review-date decay) and activity, averaged over recent editions, with a weekly movement cap",
+        "weights": {
+          "recentStreams": 35,
+          "momentum": 25,
+          "editorial": 25,
+          "activity": 15
+        },
+        "components": {
+          "recentStreams": 70.21487261993795,
+          "momentum": 51.967453648078845,
+          "editorial": 92.54212983318335,
+          "activity": 40
+        },
+        "points": {
+          "recentStreams": 24.57520541697828,
+          "momentum": 12.991863412019711,
+          "editorial": 23.135532458295838,
+          "activity": 6
+        },
+        "rawScore": 66.702601,
+        "smoothedEditions": 1,
+        "targetRank": 22,
+        "capped": true,
+        "maxMovePlaces": 8,
+        "recentStreams": {
+          "dailyAverage": 959169,
+          "readings": 1,
+          "from": "2026-11-16",
+          "to": "2026-11-16",
+          "windowDays": 28,
+          "staleDays": 7,
+          "maximumDaily": 6646828,
+          "logFloorDaily": 10000
+        },
+        "momentum": {
+          "ratio": 1.0276500584178798,
+          "available": true,
+          "basis": "latest-4-readings",
+          "thisWeek": 959169,
+          "baseline": 933361.5,
+          "baselineFrom": "2026-08-24",
+          "baselineTo": "2026-10-05"
+        },
+        "editorial": {
+          "score": 92.54212983318335,
+          "effective": 92.54212983318335,
+          "reviewedAt": "2026-10-05",
+          "ageDays": 49,
+          "factor": 1,
+          "median": 86.41346068181645,
+          "rawEditorialContribution": 80.57495349069495,
+          "editorialMaximum": 87.06840185755347
+        },
+        "activity": {
+          "score": 40,
+          "signals": [
+            {
+              "kind": "release",
+              "label": "New release: Lo Life",
+              "points": 40,
+              "date": "2026-11-13",
+              "sourceUrl": "https://music.apple.com/ng/album/lo-life/6831225584?i=6831225772&uo=4"
+            }
+          ]
+        },
+        "editorialContribution": 23.135532458295838,
+        "editorialWeight": 25,
+        "streamWeight": 35,
+        "listenerWeight": 0,
+        "streamsIndex": 70.21487261993795,
+        "streamCoverage": [
+          "spotify"
+        ],
+        "rawEditorialContribution": 80.57495349069495,
+        "editorialMaximum": 87.06840185755347,
+        "baselineDate": "2026-10-05",
+        "previousScore": 77.883628
+      }
+    },
+    {
+      "slug": "amaarae",
+      "name": "Amaarae",
+      "rank": 22,
+      "score": 66.422202,
+      "scoreBreakdown": {
+        "version": 2,
+        "method": "Weighted mean of recent streams (log scale), momentum, editorial (with review-date decay) and activity, averaged over recent editions, with a weekly movement cap",
+        "weights": {
+          "recentStreams": 35,
+          "momentum": 25,
+          "editorial": 25,
+          "activity": 15
+        },
+        "components": {
+          "recentStreams": 66.72672833158994,
+          "momentum": 84.92181389368298,
+          "editorial": 87.34957361132457,
+          "activity": 0
+        },
+        "points": {
+          "recentStreams": 23.354354916056476,
+          "momentum": 21.230453473420745,
+          "editorial": 21.837393402831143,
+          "activity": 0
+        },
+        "rawScore": 66.422202,
+        "smoothedEditions": 1,
+        "targetRank": 23,
+        "capped": true,
+        "maxMovePlaces": 8,
+        "recentStreams": {
+          "dailyAverage": 764607,
+          "readings": 1,
+          "from": "2026-11-18",
+          "to": "2026-11-18",
+          "windowDays": 28,
+          "staleDays": 5,
+          "maximumDaily": 6646828,
+          "logFloorDaily": 10000
+        },
+        "momentum": {
+          "ratio": 1.6227449627929804,
+          "available": true,
+          "basis": "latest-4-readings",
+          "thisWeek": 764607,
+          "baseline": 471181.25,
+          "baselineFrom": "2026-08-31",
+          "baselineTo": "2026-10-05"
+        },
+        "editorial": {
+          "score": 87.34957361132457,
+          "effective": 87.34957361132457,
+          "reviewedAt": "2026-10-05",
+          "ageDays": 49,
+          "factor": 1,
+          "median": 86.41346068181645,
+          "rawEditorialContribution": 76.05387777276756,
+          "editorialMaximum": 87.06840185755347
+        },
+        "activity": {
+          "score": 0,
+          "signals": []
+        },
+        "editorialContribution": 21.837393402831143,
+        "editorialWeight": 25,
+        "streamWeight": 35,
+        "listenerWeight": 0,
+        "streamsIndex": 66.72672833158994,
+        "streamCoverage": [
+          "spotify"
+        ],
+        "rawEditorialContribution": 76.05387777276756,
+        "editorialMaximum": 87.06840185755347,
+        "baselineDate": "2026-10-05",
+        "previousScore": 74.524774
+      }
+    },
+    {
+      "slug": "odumodublvck",
+      "name": "ODUMODUBLVCK",
+      "rank": 23,
+      "score": 64.973534,
+      "scoreBreakdown": {
+        "version": 2,
+        "method": "Weighted mean of recent streams (log scale), momentum, editorial (with review-date decay) and activity, averaged over recent editions, with a weekly movement cap",
+        "weights": {
+          "recentStreams": 35,
+          "momentum": 25,
+          "editorial": 25,
+          "activity": 15
+        },
+        "components": {
+          "recentStreams": 72.84403982927631,
+          "momentum": 47.48210183542352,
+          "editorial": 89.43037720972494,
+          "activity": 35
+        },
+        "points": {
+          "recentStreams": 25.495413940246706,
+          "momentum": 11.87052545885588,
+          "editorial": 22.357594302431234,
+          "activity": 5.25
+        },
+        "rawScore": 64.973534,
+        "smoothedEditions": 1,
+        "targetRank": 25,
+        "capped": true,
+        "maxMovePlaces": 8,
+        "recentStreams": {
+          "dailyAverage": 1137906,
+          "readings": 1,
+          "from": "2026-11-19",
+          "to": "2026-11-19",
+          "windowDays": 28,
+          "staleDays": 4,
+          "maximumDaily": 6646828,
+          "logFloorDaily": 10000
+        },
+        "momentum": {
+          "ratio": 0.9656966893301644,
+          "available": true,
+          "basis": "latest-4-readings",
+          "thisWeek": 1137906,
+          "baseline": 1178326.5,
+          "baselineFrom": "2026-09-14",
+          "baselineTo": "2026-10-05"
+        },
+        "editorial": {
+          "score": 89.43037720972494,
+          "effective": 89.43037720972494,
+          "reviewedAt": "2026-10-05",
+          "ageDays": 49,
+          "factor": 1,
+          "median": 86.41346068181645,
+          "rawEditorialContribution": 77.86560021168921,
+          "editorialMaximum": 87.06840185755347
+        },
+        "activity": {
+          "score": 35,
+          "signals": [
+            {
+              "kind": "release",
+              "label": "New release: Salt",
+              "points": 25,
+              "date": "2026-10-21",
+              "sourceUrl": "https://open.spotify.com/track/5HzwwlPfwcqDr04WWmfseI"
+            },
+            {
+              "kind": "chart",
+              "label": "1 TurnTable Top 100 entry, best #96",
+              "points": 10,
+              "date": "2026-11-12",
+              "sourceUrl": "https://www.turntablecharts.com/charts/1"
+            }
+          ]
+        },
+        "editorialContribution": 22.357594302431234,
+        "editorialWeight": 25,
+        "streamWeight": 35,
+        "listenerWeight": 0,
+        "streamsIndex": 72.84403982927631,
+        "streamCoverage": [
+          "spotify"
+        ],
+        "rawEditorialContribution": 77.86560021168921,
+        "editorialMaximum": 87.06840185755347,
+        "baselineDate": "2026-10-05",
+        "previousScore": 76.261273
+      }
+    },
+    {
+      "slug": "kizz-daniel",
+      "name": "Kizz Daniel",
+      "rank": 24,
+      "score": 62.354473,
+      "scoreBreakdown": {
+        "version": 2,
+        "method": "Weighted mean of recent streams (log scale), momentum, editorial (with review-date decay) and activity, averaged over recent editions, with a weekly movement cap",
+        "weights": {
+          "recentStreams": 35,
+          "momentum": 25,
+          "editorial": 25,
+          "activity": 15
+        },
+        "components": {
+          "recentStreams": 67.48726681091954,
+          "momentum": 46.017034219885566,
+          "editorial": 90.91868324505279,
+          "activity": 30
+        },
+        "points": {
+          "recentStreams": 23.620543383821836,
+          "momentum": 11.504258554971392,
+          "editorial": 22.7296708112632,
+          "activity": 4.5
+        },
+        "rawScore": 62.354473,
+        "smoothedEditions": 1,
+        "targetRank": 28,
+        "capped": true,
+        "maxMovePlaces": 8,
+        "recentStreams": {
+          "dailyAverage": 803351,
+          "readings": 1,
+          "from": "2026-11-16",
+          "to": "2026-11-16",
+          "windowDays": 28,
+          "staleDays": 7,
+          "maximumDaily": 6646828,
+          "logFloorDaily": 10000
+        },
+        "momentum": {
+          "ratio": 0.9462810793492242,
+          "available": true,
+          "basis": "latest-4-readings",
+          "thisWeek": 803351,
+          "baseline": 848956,
+          "baselineFrom": "2026-09-07",
+          "baselineTo": "2026-10-05"
+        },
+        "editorial": {
+          "score": 90.91868324505279,
+          "effective": 90.91868324505279,
+          "reviewedAt": "2026-10-05",
+          "ageDays": 49,
+          "factor": 1,
+          "median": 86.41346068181645,
+          "rawEditorialContribution": 79.1614444913987,
+          "editorialMaximum": 87.06840185755347
+        },
+        "activity": {
+          "score": 30,
+          "signals": [
+            {
+              "kind": "release",
+              "label": "New release: Owo Oluwa (feat. Young Jonn, Krizbeatz & Wave Choir)",
+              "points": 10,
+              "date": "2026-09-15",
+              "sourceUrl": "https://open.spotify.com/track/1l1y5S87c7TB1SQeqYPXQ8"
+            },
+            {
+              "kind": "chart",
+              "label": "1 TurnTable Top 100 entry, best #27",
+              "points": 20,
+              "date": "2026-11-12",
+              "sourceUrl": "https://www.turntablecharts.com/charts/1"
+            }
+          ]
+        },
+        "editorialContribution": 22.7296708112632,
+        "editorialWeight": 25,
+        "streamWeight": 35,
+        "listenerWeight": 0,
+        "streamsIndex": 67.48726681091954,
+        "streamCoverage": [
+          "spotify"
+        ],
+        "rawEditorialContribution": 79.1614444913987,
+        "editorialMaximum": 87.06840185755347,
+        "baselineDate": "2026-10-05",
+        "previousScore": 77.957142
+      }
+    },
+    {
+      "slug": "sarz",
+      "name": "Sarz",
+      "rank": 25,
+      "score": 62.072331,
+      "scoreBreakdown": {
+        "version": 2,
+        "method": "Weighted mean of recent streams (log scale), momentum, editorial (with review-date decay) and activity, averaged over recent editions, with a weekly movement cap",
+        "weights": {
+          "recentStreams": 35,
+          "momentum": 25,
+          "editorial": 25,
+          "activity": 15
+        },
+        "components": {
+          "recentStreams": 67.5031361178591,
+          "momentum": 46.945971932294654,
+          "editorial": 88.83896145918719,
+          "activity": 30
+        },
+        "points": {
+          "recentStreams": 23.626097641250684,
+          "momentum": 11.736492983073664,
+          "editorial": 22.209740364796797,
+          "activity": 4.5
+        },
+        "rawScore": 62.072331,
+        "smoothedEditions": 1,
+        "targetRank": 29,
+        "capped": true,
+        "maxMovePlaces": 8,
+        "recentStreams": {
+          "dailyAverage": 804180,
+          "readings": 1,
+          "from": "2026-11-18",
+          "to": "2026-11-18",
+          "windowDays": 28,
+          "staleDays": 5,
+          "maximumDaily": 6646828,
+          "logFloorDaily": 10000
+        },
+        "momentum": {
+          "ratio": 0.9585459109556406,
+          "available": true,
+          "basis": "latest-4-readings",
+          "thisWeek": 804180,
+          "baseline": 838958.25,
+          "baselineFrom": "2026-08-31",
+          "baselineTo": "2026-10-05"
+        },
+        "editorial": {
+          "score": 88.83896145918719,
+          "effective": 88.83896145918719,
+          "reviewedAt": "2026-10-05",
+          "ageDays": 49,
+          "factor": 1,
+          "median": 86.41346068181645,
+          "rawEditorialContribution": 77.35066396936215,
+          "editorialMaximum": 87.06840185755347
+        },
+        "activity": {
+          "score": 30,
+          "signals": [
+            {
+              "kind": "chart",
+              "label": "1 TurnTable Top 100 entry, best #10",
+              "points": 30,
+              "date": "2026-11-12",
+              "sourceUrl": "https://www.turntablecharts.com/charts/1"
+            }
+          ]
+        },
+        "editorialContribution": 22.209740364796797,
+        "editorialWeight": 25,
+        "streamWeight": 35,
+        "listenerWeight": 0,
+        "streamsIndex": 67.5031361178591,
+        "streamCoverage": [
+          "spotify"
+        ],
+        "rawEditorialContribution": 77.35066396936215,
+        "editorialMaximum": 87.06840185755347,
+        "baselineDate": "2026-10-05",
+        "previousScore": 74.949515
+      }
+    },
+    {
+      "slug": "tiwa-savage",
+      "name": "Tiwa Savage",
       "rank": 26,
-      "score": 72.823712,
+      "score": 61.10347,
       "scoreBreakdown": {
-        "editorialContribution": 71.49428264745377,
-        "rawEditorialContribution": 74.99871002489178,
-        "editorialMaximum": 87.06840185755347,
-        "editorialWeight": 83,
-        "streamsIndex": 7.82017209771602,
-        "streamsScore": 7.82017209771602,
-        "streamWeight": 17,
+        "version": 2,
+        "method": "Weighted mean of recent streams (log scale), momentum, editorial (with review-date decay) and activity, averaged over recent editions, with a weekly movement cap",
+        "weights": {
+          "recentStreams": 35,
+          "momentum": 25,
+          "editorial": 25,
+          "activity": 15
+        },
+        "components": {
+          "recentStreams": 54.90563022262974,
+          "momentum": 43.84933178692415,
+          "editorial": 81.69666697358795,
+          "activity": 70
+        },
+        "points": {
+          "recentStreams": 19.216970577920407,
+          "momentum": 10.962332946731037,
+          "editorial": 20.424166743396988,
+          "activity": 10.5
+        },
+        "rawScore": 61.10347,
+        "smoothedEditions": 1,
+        "targetRank": 31,
+        "capped": true,
+        "maxMovePlaces": 8,
+        "recentStreams": {
+          "dailyAverage": 354629,
+          "readings": 1,
+          "from": "2026-11-13",
+          "to": "2026-11-13",
+          "windowDays": 28,
+          "staleDays": 10,
+          "maximumDaily": 6646828,
+          "logFloorDaily": 10000
+        },
+        "momentum": {
+          "ratio": 0.9182676559807454,
+          "available": true,
+          "basis": "latest-4-readings",
+          "thisWeek": 354629,
+          "baseline": 386193.5,
+          "baselineFrom": "2026-08-24",
+          "baselineTo": "2026-09-28"
+        },
+        "editorial": {
+          "score": 81.69666697358795,
+          "effective": 81.69666697358795,
+          "reviewedAt": "2026-10-05",
+          "ageDays": 49,
+          "factor": 1,
+          "median": 86.41346068181645,
+          "rawEditorialContribution": 71.13198230479072,
+          "editorialMaximum": 87.06840185755347
+        },
+        "activity": {
+          "score": 70,
+          "signals": [
+            {
+              "kind": "release",
+              "label": "New release: African Baddie",
+              "points": 40,
+              "date": "2026-10-30",
+              "sourceUrl": "https://open.spotify.com/track/6j6BUfZgqVTq7edXZuq4mG"
+            },
+            {
+              "kind": "chart",
+              "label": "1 TurnTable Top 100 entry, best #5",
+              "points": 30,
+              "date": "2026-11-12",
+              "sourceUrl": "https://www.turntablecharts.com/charts/1"
+            }
+          ]
+        },
+        "editorialContribution": 20.424166743396988,
+        "editorialWeight": 25,
+        "streamWeight": 35,
         "listenerWeight": 0,
+        "streamsIndex": 54.90563022262974,
         "streamCoverage": [
           "spotify"
         ],
-        "previousScore": 72.827545,
+        "rawEditorialContribution": 71.13198230479072,
+        "editorialMaximum": 87.06840185755347,
         "baselineDate": "2026-10-05",
-        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
+        "previousScore": 68.919501
       }
     },
     {
-      "slug": "shallipopi",
-      "name": "Shallipopi",
+      "slug": "jazzwrld",
+      "name": "JAZZWRLD",
       "rank": 27,
-      "score": 72.096056,
+      "score": 60.780825,
       "scoreBreakdown": {
-        "editorialContribution": 70.66361582055343,
-        "rawEditorialContribution": 74.12732649363517,
-        "editorialMaximum": 87.06840185755347,
-        "editorialWeight": 83,
-        "streamsIndex": 8.426116816918,
-        "streamsScore": 8.426116816918,
-        "streamWeight": 17,
+        "version": 2,
+        "method": "Weighted mean of recent streams (log scale), momentum, editorial (with review-date decay) and activity, averaged over recent editions, with a weekly movement cap",
+        "weights": {
+          "recentStreams": 35,
+          "momentum": 25,
+          "editorial": 25,
+          "activity": 15
+        },
+        "components": {
+          "recentStreams": 65.40800658363253,
+          "momentum": 41.52188800703231,
+          "editorial": 80.03020475575067,
+          "activity": 50
+        },
+        "points": {
+          "recentStreams": 22.892802304271385,
+          "momentum": 10.380472001758077,
+          "editorial": 20.00755118893767,
+          "activity": 7.5
+        },
+        "rawScore": 60.780825,
+        "smoothedEditions": 1,
+        "targetRank": 32,
+        "capped": true,
+        "maxMovePlaces": 8,
+        "recentStreams": {
+          "dailyAverage": 701804,
+          "readings": 1,
+          "from": "2026-11-14",
+          "to": "2026-11-14",
+          "windowDays": 28,
+          "staleDays": 9,
+          "maximumDaily": 6646828,
+          "logFloorDaily": 10000
+        },
+        "momentum": {
+          "ratio": 0.8891124255857176,
+          "available": true,
+          "basis": "latest-4-readings",
+          "thisWeek": 701804,
+          "baseline": 789331,
+          "baselineFrom": "2026-08-31",
+          "baselineTo": "2026-09-28"
+        },
+        "editorial": {
+          "score": 80.03020475575067,
+          "effective": 80.03020475575067,
+          "reviewedAt": "2026-10-05",
+          "ageDays": 49,
+          "factor": 1,
+          "median": 86.41346068181645,
+          "rawEditorialContribution": 69.68102028415986,
+          "editorialMaximum": 87.06840185755347
+        },
+        "activity": {
+          "score": 50,
+          "signals": [
+            {
+              "kind": "release",
+              "label": "New release: Imvula",
+              "points": 40,
+              "date": "2026-11-13",
+              "sourceUrl": "https://music.apple.com/ng/album/imvula/6827167350?i=6827167368&uo=4"
+            },
+            {
+              "kind": "chart",
+              "label": "2 TurnTable Top 100 entries, best #51",
+              "points": 10,
+              "date": "2026-11-12",
+              "sourceUrl": "https://www.turntablecharts.com/charts/1"
+            }
+          ]
+        },
+        "editorialContribution": 20.00755118893767,
+        "editorialWeight": 25,
+        "streamWeight": 35,
         "listenerWeight": 0,
+        "streamsIndex": 65.40800658363253,
         "streamCoverage": [
           "spotify"
         ],
-        "previousScore": 72.089355,
+        "rawEditorialContribution": 69.68102028415986,
+        "editorialMaximum": 87.06840185755347,
         "baselineDate": "2026-10-05",
-        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
+        "previousScore": 67.145453
       }
     },
     {
       "slug": "oxlade",
       "name": "Oxlade",
       "rank": 28,
-      "score": 71.216093,
+      "score": 60.203156,
       "scoreBreakdown": {
-        "editorialContribution": 69.77444359671132,
+        "version": 2,
+        "method": "Weighted mean of recent streams (log scale), momentum, editorial (with review-date decay) and activity, averaged over recent editions, with a weekly movement cap",
+        "weights": {
+          "recentStreams": 35,
+          "momentum": 25,
+          "editorial": 25,
+          "activity": 15
+        },
+        "components": {
+          "recentStreams": 57.83977837188099,
+          "momentum": 51.77133958439139,
+          "editorial": 84.06559469483291,
+          "activity": 40
+        },
+        "points": {
+          "recentStreams": 20.243922430158346,
+          "momentum": 12.942834896097848,
+          "editorial": 21.016398673708228,
+          "activity": 6
+        },
+        "rawScore": 60.203156,
+        "smoothedEditions": 1,
+        "targetRank": 33,
+        "capped": true,
+        "maxMovePlaces": 8,
+        "recentStreams": {
+          "dailyAverage": 429135,
+          "readings": 1,
+          "from": "2026-11-20",
+          "to": "2026-11-20",
+          "windowDays": 28,
+          "staleDays": 3,
+          "maximumDaily": 6646828,
+          "logFloorDaily": 10000
+        },
+        "momentum": {
+          "ratio": 1.024859961955983,
+          "available": true,
+          "basis": "latest-4-readings",
+          "thisWeek": 429135,
+          "baseline": 418725.5,
+          "baselineFrom": "2026-08-31",
+          "baselineTo": "2026-10-05"
+        },
+        "editorial": {
+          "score": 84.06559469483291,
+          "effective": 84.06559469483291,
+          "reviewedAt": "2026-10-05",
+          "ageDays": 49,
+          "factor": 1,
+          "median": 86.41346068181645,
+          "rawEditorialContribution": 73.19456981283928,
+          "editorialMaximum": 87.06840185755347
+        },
+        "activity": {
+          "score": 40,
+          "signals": [
+            {
+              "kind": "release",
+              "label": "New release: Magret",
+              "points": 40,
+              "date": "2026-10-29",
+              "sourceUrl": "https://open.spotify.com/track/0p127B9Tdb5ZQbmjqq0Evt"
+            }
+          ]
+        },
+        "editorialContribution": 21.016398673708228,
+        "editorialWeight": 25,
+        "streamWeight": 35,
+        "listenerWeight": 0,
+        "streamsIndex": 57.83977837188099,
+        "streamCoverage": [
+          "spotify"
+        ],
         "rawEditorialContribution": 73.19456981283928,
         "editorialMaximum": 87.06840185755347,
-        "editorialWeight": 83,
-        "streamsIndex": 8.480288305813863,
-        "streamsScore": 8.480288305813863,
-        "streamWeight": 17,
-        "listenerWeight": 0,
-        "streamCoverage": [
-          "spotify"
-        ],
-        "previousScore": 71.221378,
         "baselineDate": "2026-10-05",
-        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
-      }
-    },
-    {
-      "slug": "fave",
-      "name": "FAVE",
-      "rank": 29,
-      "score": 70.180442,
-      "scoreBreakdown": {
-        "editorialContribution": 69.32597558008979,
-        "rawEditorialContribution": 72.72411928884574,
-        "editorialMaximum": 87.06840185755347,
-        "editorialWeight": 83,
-        "streamsIndex": 5.0262746810308006,
-        "streamsScore": 5.0262746810308006,
-        "streamWeight": 17,
-        "listenerWeight": 0,
-        "streamCoverage": [
-          "spotify"
-        ],
-        "previousScore": 70.182906,
-        "baselineDate": "2026-10-05",
-        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
-      }
-    },
-    {
-      "slug": "joeboy",
-      "name": "Joeboy",
-      "rank": 30,
-      "score": 69.618971,
-      "scoreBreakdown": {
-        "editorialContribution": 68.38730444924875,
-        "rawEditorialContribution": 71.73943741857885,
-        "editorialMaximum": 87.06840185755347,
-        "editorialWeight": 83,
-        "streamsIndex": 7.245099559556291,
-        "streamsScore": 7.245099559556291,
-        "streamWeight": 17,
-        "listenerWeight": 0,
-        "streamCoverage": [
-          "spotify"
-        ],
-        "previousScore": 69.615898,
-        "baselineDate": "2026-10-05",
-        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
-      }
-    },
-    {
-      "slug": "tiwa-savage",
-      "name": "Tiwa Savage",
-      "rank": 31,
-      "score": 68.919501,
-      "scoreBreakdown": {
-        "editorialContribution": 67.808233588078,
-        "rawEditorialContribution": 71.13198230479072,
-        "editorialMaximum": 87.06840185755347,
-        "editorialWeight": 83,
-        "streamsIndex": 6.536864452111291,
-        "streamsScore": 6.536864452111291,
-        "streamWeight": 17,
-        "listenerWeight": 0,
-        "streamCoverage": [
-          "spotify"
-        ],
-        "previousScore": 68.91592,
-        "baselineDate": "2026-10-05",
-        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
-      }
-    },
-    {
-      "slug": "lojay",
-      "name": "Lojay",
-      "rank": 32,
-      "score": 68.009669,
-      "scoreBreakdown": {
-        "editorialContribution": 66.88001863885377,
-        "rawEditorialContribution": 70.1582691456432,
-        "editorialMaximum": 87.06840185755347,
-        "editorialWeight": 83,
-        "streamsIndex": 6.645003307738449,
-        "streamsScore": 6.645003307738449,
-        "streamWeight": 17,
-        "listenerWeight": 0,
-        "streamCoverage": [
-          "spotify"
-        ],
-        "previousScore": 68.006919,
-        "baselineDate": "2026-10-05",
-        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
-      }
-    },
-    {
-      "slug": "jazzwrld",
-      "name": "JAZZWRLD",
-      "rank": 33,
-      "score": 67.145453,
-      "scoreBreakdown": {
-        "editorialContribution": 66.42506994727304,
-        "rawEditorialContribution": 69.68102028415986,
-        "editorialMaximum": 87.06840185755347,
-        "editorialWeight": 83,
-        "streamsIndex": 4.237548579546574,
-        "streamsScore": 4.237548579546574,
-        "streamWeight": 17,
-        "listenerWeight": 0,
-        "streamCoverage": [
-          "spotify"
-        ],
-        "previousScore": 67.137461,
-        "baselineDate": "2026-10-05",
-        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
-      }
-    },
-    {
-      "slug": "darkoo",
-      "name": "Darkoo",
-      "rank": 34,
-      "score": 66.436715,
-      "scoreBreakdown": {
-        "editorialContribution": 65.09009644368922,
-        "rawEditorialContribution": 68.28061053139814,
-        "editorialMaximum": 87.06840185755347,
-        "editorialWeight": 83,
-        "streamsIndex": 7.921283137850082,
-        "streamsScore": 7.921283137850082,
-        "streamWeight": 17,
-        "listenerWeight": 0,
-        "streamCoverage": [
-          "spotify"
-        ],
-        "previousScore": 66.433546,
-        "baselineDate": "2026-10-05",
-        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
-      }
-    },
-    {
-      "slug": "black-sherif",
-      "name": "Black Sherif",
-      "rank": 35,
-      "score": 65.895308,
-      "scoreBreakdown": {
-        "editorialContribution": 64.66957596559743,
-        "rawEditorialContribution": 67.83947744735202,
-        "editorialMaximum": 87.06840185755347,
-        "editorialWeight": 83,
-        "streamsIndex": 7.210189712041705,
-        "streamsScore": 7.210189712041705,
-        "streamWeight": 17,
-        "listenerWeight": 0,
-        "streamCoverage": [
-          "spotify"
-        ],
-        "previousScore": 65.888886,
-        "baselineDate": "2026-10-05",
-        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
-      }
-    },
-    {
-      "slug": "ciza",
-      "name": "CIZA",
-      "rank": 36,
-      "score": 64.735994,
-      "scoreBreakdown": {
-        "editorialContribution": 64.53406363160511,
-        "rawEditorialContribution": 67.69732272021109,
-        "editorialMaximum": 87.06840185755347,
-        "editorialWeight": 83,
-        "streamsIndex": 1.1878228186965503,
-        "streamsScore": 1.1878228186965503,
-        "streamWeight": 17,
-        "listenerWeight": 0,
-        "streamCoverage": [
-          "spotify"
-        ],
-        "previousScore": 64.733691,
-        "baselineDate": "2026-10-05",
-        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
+        "previousScore": 71.216093
       }
     },
     {
       "slug": "shoday",
       "name": "Shoday",
-      "rank": 37,
-      "score": 64.008336,
+      "rank": 29,
+      "score": 64.942009,
       "scoreBreakdown": {
-        "editorialContribution": 63.570489467827706,
-        "rawEditorialContribution": 66.68651714778545,
-        "editorialMaximum": 87.06840185755347,
-        "editorialWeight": 83,
-        "streamsIndex": 2.5755673698105066,
-        "streamsScore": 2.5755673698105066,
-        "streamWeight": 17,
+        "version": 2,
+        "method": "Weighted mean of recent streams (log scale), momentum, editorial (with review-date decay) and activity, averaged over recent editions, with a weekly movement cap",
+        "weights": {
+          "recentStreams": 35,
+          "momentum": 25,
+          "editorial": 25,
+          "activity": 15
+        },
+        "components": {
+          "recentStreams": 59.5630377156182,
+          "momentum": 57.788830949765455,
+          "editorial": 76.59095116605747,
+          "activity": 70
+        },
+        "points": {
+          "recentStreams": 20.84706320046637,
+          "momentum": 14.447207737441364,
+          "editorial": 19.147737791514366,
+          "activity": 10.5
+        },
+        "rawScore": 64.942009,
+        "smoothedEditions": 1,
+        "targetRank": 26,
+        "capped": true,
+        "maxMovePlaces": 8,
+        "recentStreams": {
+          "dailyAverage": 479993,
+          "readings": 1,
+          "from": "2026-11-13",
+          "to": "2026-11-13",
+          "windowDays": 28,
+          "staleDays": 10,
+          "maximumDaily": 6646828,
+          "logFloorDaily": 10000
+        },
+        "momentum": {
+          "ratio": 1.1140211469827284,
+          "available": true,
+          "basis": "latest-4-readings",
+          "thisWeek": 479993,
+          "baseline": 430865.25,
+          "baselineFrom": "2026-08-24",
+          "baselineTo": "2026-09-28"
+        },
+        "editorial": {
+          "score": 76.59095116605747,
+          "effective": 76.59095116605747,
+          "reviewedAt": "2026-10-05",
+          "ageDays": 49,
+          "factor": 1,
+          "median": 86.41346068181645,
+          "rawEditorialContribution": 66.68651714778545,
+          "editorialMaximum": 87.06840185755347
+        },
+        "activity": {
+          "score": 70,
+          "signals": [
+            {
+              "kind": "release",
+              "label": "New release: WHITE LAMBO",
+              "points": 40,
+              "date": "2026-11-18",
+              "sourceUrl": "https://music.apple.com/ng/album/white-lambo/6827187813?i=6827188027&uo=4"
+            },
+            {
+              "kind": "chart",
+              "label": "2 TurnTable Top 100 entries, best #1",
+              "points": 30,
+              "date": "2026-11-12",
+              "sourceUrl": "https://www.turntablecharts.com/charts/1"
+            }
+          ]
+        },
+        "editorialContribution": 19.147737791514366,
+        "editorialWeight": 25,
+        "streamWeight": 35,
         "listenerWeight": 0,
+        "streamsIndex": 59.5630377156182,
         "streamCoverage": [
           "spotify"
         ],
-        "previousScore": 63.99289,
+        "rawEditorialContribution": 66.68651714778545,
+        "editorialMaximum": 87.06840185755347,
         "baselineDate": "2026-10-05",
-        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
+        "previousScore": 64.008336
       }
     },
     {
-      "slug": "king-promise",
-      "name": "King Promise",
-      "rank": 38,
-      "score": 63.436003,
+      "slug": "shallipopi",
+      "name": "Shallipopi",
+      "rank": 30,
+      "score": 60.071725,
       "scoreBreakdown": {
-        "editorialContribution": 62.71635734050215,
-        "rawEditorialContribution": 65.7905181200574,
-        "editorialMaximum": 87.06840185755347,
-        "editorialWeight": 83,
-        "streamsIndex": 4.233212161664573,
-        "streamsScore": 4.233212161664573,
-        "streamWeight": 17,
+        "version": 2,
+        "method": "Weighted mean of recent streams (log scale), momentum, editorial (with review-date decay) and activity, averaged over recent editions, with a weekly movement cap",
+        "weights": {
+          "recentStreams": 35,
+          "momentum": 25,
+          "editorial": 25,
+          "activity": 15
+        },
+        "components": {
+          "recentStreams": 66.43782226278113,
+          "momentum": 62.13706180244702,
+          "editorial": 85.13688653078727,
+          "activity": 0
+        },
+        "points": {
+          "recentStreams": 23.253237791973394,
+          "momentum": 15.534265450611755,
+          "editorial": 21.284221632696816,
+          "activity": 0
+        },
+        "rawScore": 60.071725,
+        "smoothedEditions": 1,
+        "targetRank": 34,
+        "capped": true,
+        "maxMovePlaces": 8,
+        "recentStreams": {
+          "dailyAverage": 750384,
+          "readings": 1,
+          "from": "2026-11-14",
+          "to": "2026-11-14",
+          "windowDays": 28,
+          "staleDays": 9,
+          "maximumDaily": 6646828,
+          "logFloorDaily": 10000
+        },
+        "momentum": {
+          "ratio": 1.183238775233452,
+          "available": true,
+          "basis": "latest-4-readings",
+          "thisWeek": 750384,
+          "baseline": 634178,
+          "baselineFrom": "2026-08-31",
+          "baselineTo": "2026-09-28"
+        },
+        "editorial": {
+          "score": 85.13688653078727,
+          "effective": 85.13688653078727,
+          "reviewedAt": "2026-10-05",
+          "ageDays": 49,
+          "factor": 1,
+          "median": 86.41346068181645,
+          "rawEditorialContribution": 74.12732649363517,
+          "editorialMaximum": 87.06840185755347
+        },
+        "activity": {
+          "score": 0,
+          "signals": []
+        },
+        "editorialContribution": 21.284221632696816,
+        "editorialWeight": 25,
+        "streamWeight": 35,
         "listenerWeight": 0,
+        "streamsIndex": 66.43782226278113,
         "streamCoverage": [
           "spotify"
         ],
-        "previousScore": 63.438078,
+        "rawEditorialContribution": 74.12732649363517,
+        "editorialMaximum": 87.06840185755347,
         "baselineDate": "2026-10-05",
-        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
+        "previousScore": 72.096056
       }
     },
     {
       "slug": "zlatan",
       "name": "Zlatan",
-      "rank": 39,
-      "score": 62.710179,
+      "rank": 31,
+      "score": 74.307011,
       "scoreBreakdown": {
-        "editorialContribution": 61.65577051525198,
-        "rawEditorialContribution": 64.67794462721754,
-        "editorialMaximum": 87.06840185755347,
-        "editorialWeight": 83,
-        "streamsIndex": 6.20240244825418,
-        "streamsScore": 6.20240244825418,
-        "streamWeight": 17,
+        "version": 2,
+        "method": "Weighted mean of recent streams (log scale), momentum, editorial (with review-date decay) and activity, averaged over recent editions, with a weekly movement cap",
+        "weights": {
+          "recentStreams": 35,
+          "momentum": 25,
+          "editorial": 25,
+          "activity": 15
+        },
+        "components": {
+          "recentStreams": 76.49916803055149,
+          "momentum": 70.84514667251507,
+          "editorial": 74.28406086174937,
+          "activity": 75
+        },
+        "points": {
+          "recentStreams": 26.774708810693017,
+          "momentum": 17.711286668128768,
+          "editorial": 18.571015215437342,
+          "activity": 11.25
+        },
+        "rawScore": 74.307011,
+        "smoothedEditions": 1,
+        "targetRank": 9,
+        "capped": true,
+        "maxMovePlaces": 8,
+        "recentStreams": {
+          "dailyAverage": 1443034,
+          "readings": 1,
+          "from": "2026-11-20",
+          "to": "2026-11-20",
+          "windowDays": 28,
+          "staleDays": 3,
+          "maximumDaily": 6646828,
+          "logFloorDaily": 10000
+        },
+        "momentum": {
+          "ratio": 1.3350584756637434,
+          "available": true,
+          "basis": "latest-4-readings",
+          "thisWeek": 1443034,
+          "baseline": 1080877,
+          "baselineFrom": "2026-08-31",
+          "baselineTo": "2026-10-05"
+        },
+        "editorial": {
+          "score": 74.28406086174937,
+          "effective": 74.28406086174937,
+          "reviewedAt": "2026-10-05",
+          "ageDays": 49,
+          "factor": 1,
+          "median": 86.41346068181645,
+          "rawEditorialContribution": 64.67794462721754,
+          "editorialMaximum": 87.06840185755347
+        },
+        "activity": {
+          "score": 75,
+          "signals": [
+            {
+              "kind": "release",
+              "label": "New release: INFERNO",
+              "points": 40,
+              "date": "2026-10-29",
+              "sourceUrl": "https://open.spotify.com/track/3FCIOA44iYIDsjDNeXthc1"
+            },
+            {
+              "kind": "chart",
+              "label": "3 TurnTable Top 100 entries, best #1",
+              "points": 35,
+              "date": "2026-11-12",
+              "sourceUrl": "https://www.turntablecharts.com/charts/1"
+            }
+          ]
+        },
+        "editorialContribution": 18.571015215437342,
+        "editorialWeight": 25,
+        "streamWeight": 35,
         "listenerWeight": 0,
+        "streamsIndex": 76.49916803055149,
         "streamCoverage": [
           "spotify"
         ],
-        "previousScore": 62.690204,
+        "rawEditorialContribution": 64.67794462721754,
+        "editorialMaximum": 87.06840185755347,
         "baselineDate": "2026-10-05",
-        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
+        "previousScore": 62.710179
       }
     },
     {
       "slug": "bella-shmurda",
       "name": "Bella Shmurda",
-      "rank": 40,
-      "score": 61.944025,
+      "rank": 32,
+      "score": 61.836884,
       "scoreBreakdown": {
-        "editorialContribution": 60.869751730577214,
-        "rawEditorialContribution": 63.85339764635431,
-        "editorialMaximum": 87.06840185755347,
-        "editorialWeight": 83,
-        "streamsIndex": 6.319251611306248,
-        "streamsScore": 6.319251611306248,
-        "streamWeight": 17,
+        "version": 2,
+        "method": "Weighted mean of recent streams (log scale), momentum, editorial (with review-date decay) and activity, averaged over recent editions, with a weekly movement cap",
+        "weights": {
+          "recentStreams": 35,
+          "momentum": 25,
+          "editorial": 25,
+          "activity": 15
+        },
+        "components": {
+          "recentStreams": 68.15337796371297,
+          "momentum": 60.595754774183845,
+          "editorial": 73.33705027780387,
+          "activity": 30
+        },
+        "points": {
+          "recentStreams": 23.853682287299538,
+          "momentum": 15.148938693545961,
+          "editorial": 18.334262569450967,
+          "activity": 4.5
+        },
+        "rawScore": 61.836884,
+        "smoothedEditions": 1,
+        "targetRank": 30,
+        "capped": true,
+        "maxMovePlaces": 8,
+        "recentStreams": {
+          "dailyAverage": 838894,
+          "readings": 1,
+          "from": "2026-11-18",
+          "to": "2026-11-18",
+          "windowDays": 28,
+          "staleDays": 5,
+          "maximumDaily": 6646828,
+          "logFloorDaily": 10000
+        },
+        "momentum": {
+          "ratio": 1.1582246411328012,
+          "available": true,
+          "basis": "latest-4-readings",
+          "thisWeek": 838894,
+          "baseline": 724293,
+          "baselineFrom": "2026-08-31",
+          "baselineTo": "2026-10-05"
+        },
+        "editorial": {
+          "score": 73.33705027780387,
+          "effective": 73.33705027780387,
+          "reviewedAt": "2026-10-05",
+          "ageDays": 49,
+          "factor": 1,
+          "median": 86.41346068181645,
+          "rawEditorialContribution": 63.85339764635431,
+          "editorialMaximum": 87.06840185755347
+        },
+        "activity": {
+          "score": 30,
+          "signals": [
+            {
+              "kind": "release",
+              "label": "New release: it's over",
+              "points": 10,
+              "date": "2026-09-11",
+              "sourceUrl": "https://music.apple.com/ng/album/its-over/6810267024?i=6810267607&uo=4"
+            },
+            {
+              "kind": "chart",
+              "label": "2 TurnTable Top 100 entries, best #20",
+              "points": 20,
+              "date": "2026-11-12",
+              "sourceUrl": "https://www.turntablecharts.com/charts/1"
+            }
+          ]
+        },
+        "editorialContribution": 18.334262569450967,
+        "editorialWeight": 25,
+        "streamWeight": 35,
         "listenerWeight": 0,
+        "streamsIndex": 68.15337796371297,
         "streamCoverage": [
           "spotify"
         ],
-        "previousScore": 61.947122,
+        "rawEditorialContribution": 63.85339764635431,
+        "editorialMaximum": 87.06840185755347,
         "baselineDate": "2026-10-05",
-        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
+        "previousScore": 61.944025
       }
     },
     {
       "slug": "blaqbonez",
       "name": "Blaqbonez",
-      "rank": 41,
-      "score": 60.94599,
+      "rank": 33,
+      "score": 69.434033,
       "scoreBreakdown": {
-        "editorialContribution": 60.25898167870848,
+        "version": 2,
+        "method": "Weighted mean of recent streams (log scale), momentum, editorial (with review-date decay) and activity, averaged over recent editions, with a weekly movement cap",
+        "weights": {
+          "recentStreams": 35,
+          "momentum": 25,
+          "editorial": 25,
+          "activity": 15
+        },
+        "components": {
+          "recentStreams": 72.18218949189009,
+          "momentum": 74.07988527119916,
+          "editorial": 72.60118274543191,
+          "activity": 50
+        },
+        "points": {
+          "recentStreams": 25.263766322161526,
+          "momentum": 18.51997131779979,
+          "editorial": 18.15029568635798,
+          "activity": 7.5
+        },
+        "rawScore": 69.434033,
+        "smoothedEditions": 1,
+        "targetRank": 14,
+        "capped": true,
+        "maxMovePlaces": 8,
+        "recentStreams": {
+          "dailyAverage": 1089996,
+          "readings": 1,
+          "from": "2026-11-18",
+          "to": "2026-11-18",
+          "windowDays": 28,
+          "staleDays": 5,
+          "maximumDaily": 6646828,
+          "logFloorDaily": 10000
+        },
+        "momentum": {
+          "ratio": 1.396289123860587,
+          "available": true,
+          "basis": "latest-4-readings",
+          "thisWeek": 1089996,
+          "baseline": 780637.75,
+          "baselineFrom": "2026-09-14",
+          "baselineTo": "2026-10-05"
+        },
+        "editorial": {
+          "score": 72.60118274543191,
+          "effective": 72.60118274543191,
+          "reviewedAt": "2026-10-05",
+          "ageDays": 49,
+          "factor": 1,
+          "median": 86.41346068181645,
+          "rawEditorialContribution": 63.212689546129425,
+          "editorialMaximum": 87.06840185755347
+        },
+        "activity": {
+          "score": 50,
+          "signals": [
+            {
+              "kind": "release",
+              "label": "New release: CA$H OUT",
+              "points": 25,
+              "date": "2026-10-16",
+              "sourceUrl": "https://open.spotify.com/track/0wPfrIdkJq1w6oQX3h6mdi"
+            },
+            {
+              "kind": "chart",
+              "label": "3 TurnTable Top 100 entries, best #15",
+              "points": 25,
+              "date": "2026-11-12",
+              "sourceUrl": "https://www.turntablecharts.com/charts/1"
+            }
+          ]
+        },
+        "editorialContribution": 18.15029568635798,
+        "editorialWeight": 25,
+        "streamWeight": 35,
+        "listenerWeight": 0,
+        "streamsIndex": 72.18218949189009,
+        "streamCoverage": [
+          "spotify"
+        ],
         "rawEditorialContribution": 63.212689546129425,
         "editorialMaximum": 87.06840185755347,
-        "editorialWeight": 83,
-        "streamsIndex": 4.041224084350179,
-        "streamsScore": 4.041224084350179,
-        "streamWeight": 17,
-        "listenerWeight": 0,
-        "streamCoverage": [
-          "spotify"
-        ],
-        "previousScore": 60.936316,
         "baselineDate": "2026-10-05",
-        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
+        "previousScore": 60.94599
       }
     },
     {
-      "slug": "khaid",
-      "name": "Khaid",
-      "rank": 42,
-      "score": 60.090068,
+      "slug": "adekunle-gold",
+      "name": "Adekunle Gold",
+      "rank": 34,
+      "score": 55.333103,
       "scoreBreakdown": {
-        "editorialContribution": 59.638411361460264,
-        "rawEditorialContribution": 62.56170080199644,
-        "editorialMaximum": 87.06840185755347,
-        "editorialWeight": 83,
-        "streamsIndex": 2.6568062093572626,
-        "streamsScore": 2.6568062093572626,
-        "streamWeight": 17,
+        "version": 2,
+        "method": "Weighted mean of recent streams (log scale), momentum, editorial (with review-date decay) and activity, averaged over recent editions, with a weekly movement cap",
+        "weights": {
+          "recentStreams": 35,
+          "momentum": 25,
+          "editorial": 25,
+          "activity": 15
+        },
+        "components": {
+          "recentStreams": 61.35317494562372,
+          "momentum": 43.30027861422496,
+          "editorial": 86.1376899366913,
+          "activity": 10
+        },
+        "points": {
+          "recentStreams": 21.473611230968302,
+          "momentum": 10.825069653556238,
+          "editorial": 21.534422484172822,
+          "activity": 1.5
+        },
+        "rawScore": 55.333103,
+        "smoothedEditions": 1,
+        "targetRank": 41,
+        "capped": true,
+        "maxMovePlaces": 8,
+        "recentStreams": {
+          "dailyAverage": 539217,
+          "readings": 1,
+          "from": "2026-11-18",
+          "to": "2026-11-18",
+          "windowDays": 28,
+          "staleDays": 5,
+          "maximumDaily": 6646828,
+          "logFloorDaily": 10000
+        },
+        "momentum": {
+          "ratio": 0.9113048004661164,
+          "available": true,
+          "basis": "latest-4-readings",
+          "thisWeek": 539217,
+          "baseline": 591697.75,
+          "baselineFrom": "2026-08-31",
+          "baselineTo": "2026-10-05"
+        },
+        "editorial": {
+          "score": 86.1376899366913,
+          "effective": 86.1376899366913,
+          "reviewedAt": "2026-10-05",
+          "ageDays": 49,
+          "factor": 1,
+          "median": 86.41346068181645,
+          "rawEditorialContribution": 74.99871002489178,
+          "editorialMaximum": 87.06840185755347
+        },
+        "activity": {
+          "score": 10,
+          "signals": [
+            {
+              "kind": "release",
+              "label": "New release: Fuji Orchestra (Live From The Royal Festival Hall, London, 2025)",
+              "points": 10,
+              "date": "2026-08-27",
+              "sourceUrl": "https://open.spotify.com/album/2YWSixOAlHshcKWIHPrPQA"
+            }
+          ]
+        },
+        "editorialContribution": 21.534422484172822,
+        "editorialWeight": 25,
+        "streamWeight": 35,
         "listenerWeight": 0,
+        "streamsIndex": 61.35317494562372,
         "streamCoverage": [
           "spotify"
         ],
-        "previousScore": 60.091371,
+        "rawEditorialContribution": 74.99871002489178,
+        "editorialMaximum": 87.06840185755347,
         "baselineDate": "2026-10-05",
-        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
+        "previousScore": 72.823712
       }
     },
     {
-      "slug": "chike",
-      "name": "Chike",
-      "rank": 43,
-      "score": 59.494101,
+      "slug": "joeboy",
+      "name": "Joeboy",
+      "rank": 35,
+      "score": 60.030449,
       "scoreBreakdown": {
-        "editorialContribution": 58.89234487445463,
-        "rawEditorialContribution": 61.77906445617645,
-        "editorialMaximum": 87.06840185755347,
-        "editorialWeight": 83,
-        "streamsIndex": 3.53973910666624,
-        "streamsScore": 3.53973910666624,
-        "streamWeight": 17,
+        "version": 2,
+        "method": "Weighted mean of recent streams (log scale), momentum, editorial (with review-date decay) and activity, averaged over recent editions, with a weekly movement cap",
+        "weights": {
+          "recentStreams": 35,
+          "momentum": 25,
+          "editorial": 25,
+          "activity": 15
+        },
+        "components": {
+          "recentStreams": 59.96306547893684,
+          "momentum": 49.77916181516026,
+          "editorial": 82.39434270993824,
+          "activity": 40
+        },
+        "points": {
+          "recentStreams": 20.98707291762789,
+          "momentum": 12.444790453790064,
+          "editorial": 20.59858567748456,
+          "activity": 6
+        },
+        "rawScore": 60.030449,
+        "smoothedEditions": 1,
+        "targetRank": 35,
+        "capped": false,
+        "maxMovePlaces": 8,
+        "recentStreams": {
+          "dailyAverage": 492636,
+          "readings": 1,
+          "from": "2026-11-20",
+          "to": "2026-11-20",
+          "windowDays": 28,
+          "staleDays": 3,
+          "maximumDaily": 6646828,
+          "logFloorDaily": 10000
+        },
+        "momentum": {
+          "ratio": 0.9969432142087418,
+          "available": true,
+          "basis": "latest-4-readings",
+          "thisWeek": 492636,
+          "baseline": 494146.5,
+          "baselineFrom": "2026-08-31",
+          "baselineTo": "2026-10-05"
+        },
+        "editorial": {
+          "score": 82.39434270993824,
+          "effective": 82.39434270993824,
+          "reviewedAt": "2026-10-05",
+          "ageDays": 49,
+          "factor": 1,
+          "median": 86.41346068181645,
+          "rawEditorialContribution": 71.73943741857885,
+          "editorialMaximum": 87.06840185755347
+        },
+        "activity": {
+          "score": 40,
+          "signals": [
+            {
+              "kind": "release",
+              "label": "New release: Pretty Girls",
+              "points": 40,
+              "date": "2026-11-06",
+              "sourceUrl": "https://open.spotify.com/track/59DqgKpSKsyCc2VE8h1SvD"
+            }
+          ]
+        },
+        "editorialContribution": 20.59858567748456,
+        "editorialWeight": 25,
+        "streamWeight": 35,
         "listenerWeight": 0,
+        "streamsIndex": 59.96306547893684,
         "streamCoverage": [
           "spotify"
         ],
-        "previousScore": 59.495835,
+        "rawEditorialContribution": 71.73943741857885,
+        "editorialMaximum": 87.06840185755347,
         "baselineDate": "2026-10-05",
-        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
+        "previousScore": 69.618971
       }
     },
     {
-      "slug": "diamond-platnumz",
-      "name": "Diamond Platnumz",
-      "rank": 44,
-      "score": 58.633171,
+      "slug": "lojay",
+      "name": "Lojay",
+      "rank": 36,
+      "score": 58.011595,
       "scoreBreakdown": {
-        "editorialContribution": 58.14153146417803,
-        "rawEditorialContribution": 60.991448507670384,
-        "editorialMaximum": 87.06840185755347,
-        "editorialWeight": 83,
-        "streamsIndex": 2.8919977689030216,
-        "streamsScore": 2.8919977689030216,
-        "streamWeight": 17,
+        "version": 2,
+        "method": "Weighted mean of recent streams (log scale), momentum, editorial (with review-date decay) and activity, averaged over recent editions, with a weekly movement cap",
+        "weights": {
+          "recentStreams": 35,
+          "momentum": 25,
+          "editorial": 25,
+          "activity": 15
+        },
+        "components": {
+          "recentStreams": 55.548706126923435,
+          "momentum": 49.69985655392541,
+          "editorial": 80.57833570946238,
+          "activity": 40
+        },
+        "points": {
+          "recentStreams": 19.442047144423203,
+          "momentum": 12.424964138481352,
+          "editorial": 20.144583927365595,
+          "activity": 6
+        },
+        "rawScore": 58.011595,
+        "smoothedEditions": 1,
+        "targetRank": 36,
+        "capped": false,
+        "maxMovePlaces": 8,
+        "recentStreams": {
+          "dailyAverage": 369765,
+          "readings": 1,
+          "from": "2026-11-14",
+          "to": "2026-11-14",
+          "windowDays": 28,
+          "staleDays": 9,
+          "maximumDaily": 6646828,
+          "logFloorDaily": 10000
+        },
+        "momentum": {
+          "ratio": 0.9958477727647019,
+          "available": true,
+          "basis": "latest-4-readings",
+          "thisWeek": 369765,
+          "baseline": 371306.75,
+          "baselineFrom": "2026-08-24",
+          "baselineTo": "2026-09-28"
+        },
+        "editorial": {
+          "score": 80.57833570946238,
+          "effective": 80.57833570946238,
+          "reviewedAt": "2026-10-05",
+          "ageDays": 49,
+          "factor": 1,
+          "median": 86.41346068181645,
+          "rawEditorialContribution": 70.1582691456432,
+          "editorialMaximum": 87.06840185755347
+        },
+        "activity": {
+          "score": 40,
+          "signals": [
+            {
+              "kind": "release",
+              "label": "New release: Bom Bom",
+              "points": 40,
+              "date": "2026-10-29",
+              "sourceUrl": "https://open.spotify.com/track/3h4VCeu1SRNsfI12qTqGfM"
+            }
+          ]
+        },
+        "editorialContribution": 20.144583927365595,
+        "editorialWeight": 25,
+        "streamWeight": 35,
         "listenerWeight": 0,
+        "streamsIndex": 55.548706126923435,
         "streamCoverage": [
           "spotify"
         ],
-        "previousScore": 58.634588,
+        "rawEditorialContribution": 70.1582691456432,
+        "editorialMaximum": 87.06840185755347,
         "baselineDate": "2026-10-05",
-        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
+        "previousScore": 68.009669
       }
     },
     {
-      "slug": "tekno",
-      "name": "Tekno",
-      "rank": 45,
-      "score": 57.942687,
+      "slug": "fave",
+      "name": "FAVE",
+      "rank": 37,
+      "score": 56.940928,
       "scoreBreakdown": {
-        "editorialContribution": 57.12165874913003,
-        "rawEditorialContribution": 59.921584804087814,
-        "editorialMaximum": 87.06840185755347,
-        "editorialWeight": 83,
-        "streamsIndex": 4.829575013180752,
-        "streamsScore": 4.829575013180752,
-        "streamWeight": 17,
+        "version": 2,
+        "method": "Weighted mean of recent streams (log scale), momentum, editorial (with review-date decay) and activity, averaged over recent editions, with a weekly movement cap",
+        "weights": {
+          "recentStreams": 35,
+          "momentum": 25,
+          "editorial": 25,
+          "activity": 15
+        },
+        "components": {
+          "recentStreams": 56.18663217309223,
+          "momentum": 41.5771539007662,
+          "editorial": 83.52527178324071,
+          "activity": 40
+        },
+        "points": {
+          "recentStreams": 19.665321260582278,
+          "momentum": 10.39428847519155,
+          "editorial": 20.881317945810178,
+          "activity": 6
+        },
+        "rawScore": 56.940928,
+        "smoothedEditions": 1,
+        "targetRank": 39,
+        "capped": true,
+        "maxMovePlaces": 8,
+        "recentStreams": {
+          "dailyAverage": 385418,
+          "readings": 1,
+          "from": "2026-11-21",
+          "to": "2026-11-21",
+          "windowDays": 28,
+          "staleDays": 2,
+          "maximumDaily": 6646828,
+          "logFloorDaily": 10000
+        },
+        "momentum": {
+          "ratio": 0.8897938782777729,
+          "available": true,
+          "basis": "latest-4-readings",
+          "thisWeek": 385418,
+          "baseline": 433154.25,
+          "baselineFrom": "2026-08-24",
+          "baselineTo": "2026-09-28"
+        },
+        "editorial": {
+          "score": 83.52527178324071,
+          "effective": 83.52527178324071,
+          "reviewedAt": "2026-10-05",
+          "ageDays": 49,
+          "factor": 1,
+          "median": 86.41346068181645,
+          "rawEditorialContribution": 72.72411928884574,
+          "editorialMaximum": 87.06840185755347
+        },
+        "activity": {
+          "score": 40,
+          "signals": [
+            {
+              "kind": "release",
+              "label": "New release: Sundown",
+              "points": 40,
+              "date": "2026-11-20",
+              "sourceUrl": "https://music.apple.com/ng/album/sundown/6836069556?i=6836069587&uo=4"
+            }
+          ]
+        },
+        "editorialContribution": 20.881317945810178,
+        "editorialWeight": 25,
+        "streamWeight": 35,
         "listenerWeight": 0,
+        "streamsIndex": 56.18663217309223,
         "streamCoverage": [
           "spotify"
         ],
-        "previousScore": 57.941608,
+        "rawEditorialContribution": 72.72411928884574,
+        "editorialMaximum": 87.06840185755347,
         "baselineDate": "2026-10-05",
-        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
+        "previousScore": 70.180442
+      }
+    },
+    {
+      "slug": "darkoo",
+      "name": "Darkoo",
+      "rank": 38,
+      "score": 57.702575,
+      "scoreBreakdown": {
+        "version": 2,
+        "method": "Weighted mean of recent streams (log scale), momentum, editorial (with review-date decay) and activity, averaged over recent editions, with a weekly movement cap",
+        "weights": {
+          "recentStreams": 35,
+          "momentum": 25,
+          "editorial": 25,
+          "activity": 15
+        },
+        "components": {
+          "recentStreams": 58.39688891616078,
+          "momentum": 49.632851857567466,
+          "editorial": 78.42180294420389,
+          "activity": 35
+        },
+        "points": {
+          "recentStreams": 20.43891112065627,
+          "momentum": 12.408212964391867,
+          "editorial": 19.605450736050972,
+          "activity": 5.25
+        },
+        "rawScore": 57.702575,
+        "smoothedEditions": 1,
+        "targetRank": 37,
+        "capped": true,
+        "maxMovePlaces": 8,
+        "recentStreams": {
+          "dailyAverage": 444958,
+          "readings": 1,
+          "from": "2026-11-12",
+          "to": "2026-11-12",
+          "windowDays": 28,
+          "staleDays": 11,
+          "maximumDaily": 6646828,
+          "logFloorDaily": 10000
+        },
+        "momentum": {
+          "ratio": 0.9949231768547845,
+          "available": true,
+          "basis": "latest-4-readings",
+          "thisWeek": 444958,
+          "baseline": 447228.5,
+          "baselineFrom": "2026-08-31",
+          "baselineTo": "2026-10-05"
+        },
+        "editorial": {
+          "score": 78.42180294420389,
+          "effective": 78.42180294420389,
+          "reviewedAt": "2026-10-05",
+          "ageDays": 49,
+          "factor": 1,
+          "median": 86.41346068181645,
+          "rawEditorialContribution": 68.28061053139814,
+          "editorialMaximum": 87.06840185755347
+        },
+        "activity": {
+          "score": 35,
+          "signals": [
+            {
+              "kind": "release",
+              "label": "New release: hold u down",
+              "points": 25,
+              "date": "2026-10-08",
+              "sourceUrl": "https://music.apple.com/ng/album/hold-u-down/6810267024?i=6810267598&uo=4"
+            },
+            {
+              "kind": "chart",
+              "label": "1 TurnTable Top 100 entry, best #69",
+              "points": 10,
+              "date": "2026-11-12",
+              "sourceUrl": "https://www.turntablecharts.com/charts/1"
+            }
+          ]
+        },
+        "editorialContribution": 19.605450736050972,
+        "editorialWeight": 25,
+        "streamWeight": 35,
+        "listenerWeight": 0,
+        "streamsIndex": 58.39688891616078,
+        "streamCoverage": [
+          "spotify"
+        ],
+        "rawEditorialContribution": 68.28061053139814,
+        "editorialMaximum": 87.06840185755347,
+        "baselineDate": "2026-10-05",
+        "previousScore": 66.436715
       }
     },
     {
       "slug": "focalistic",
       "name": "Focalistic",
-      "rank": 46,
-      "score": 56.949368,
+      "rank": 39,
+      "score": 57.307292,
       "scoreBreakdown": {
-        "editorialContribution": 56.5099720926244,
+        "version": 2,
+        "method": "Weighted mean of recent streams (log scale), momentum, editorial (with review-date decay) and activity, averaged over recent editions, with a weekly movement cap",
+        "weights": {
+          "recentStreams": 35,
+          "momentum": 25,
+          "editorial": 25,
+          "activity": 15
+        },
+        "components": {
+          "recentStreams": 55.09381507961311,
+          "momentum": 69.01352431929571,
+          "editorial": 68.0843037260535,
+          "activity": 25
+        },
+        "points": {
+          "recentStreams": 19.28283527786459,
+          "momentum": 17.253381079823928,
+          "editorial": 17.021075931513376,
+          "activity": 3.75
+        },
+        "rawScore": 57.307292,
+        "smoothedEditions": 1,
+        "targetRank": 38,
+        "capped": true,
+        "maxMovePlaces": 8,
+        "recentStreams": {
+          "dailyAverage": 358993,
+          "readings": 1,
+          "from": "2026-11-09",
+          "to": "2026-11-09",
+          "windowDays": 28,
+          "staleDays": 14,
+          "maximumDaily": 6646828,
+          "logFloorDaily": 10000
+        },
+        "momentum": {
+          "ratio": 1.3015858628341044,
+          "available": true,
+          "basis": "latest-4-readings",
+          "thisWeek": 358993,
+          "baseline": 275812,
+          "baselineFrom": "2026-08-24",
+          "baselineTo": "2026-09-28"
+        },
+        "editorial": {
+          "score": 68.0843037260535,
+          "effective": 68.0843037260535,
+          "reviewedAt": "2026-10-05",
+          "ageDays": 49,
+          "factor": 1,
+          "median": 86.41346068181645,
+          "rawEditorialContribution": 59.27991517011751,
+          "editorialMaximum": 87.06840185755347
+        },
+        "activity": {
+          "score": 25,
+          "signals": [
+            {
+              "kind": "release",
+              "label": "New release: UMLENZE (feat. Focalistic & Djy Vino)",
+              "points": 25,
+              "date": "2026-10-20",
+              "sourceUrl": "https://open.spotify.com/track/3ectGXgNDCo7eoxEmuK6ls"
+            }
+          ]
+        },
+        "editorialContribution": 17.021075931513376,
+        "editorialWeight": 25,
+        "streamWeight": 35,
+        "listenerWeight": 0,
+        "streamsIndex": 55.09381507961311,
+        "streamCoverage": [
+          "spotify"
+        ],
         "rawEditorialContribution": 59.27991517011751,
         "editorialMaximum": 87.06840185755347,
-        "editorialWeight": 83,
-        "streamsIndex": 2.5846842494011892,
-        "streamsScore": 2.5846842494011892,
-        "streamWeight": 17,
-        "listenerWeight": 0,
-        "streamCoverage": [
-          "spotify"
-        ],
-        "previousScore": 56.943403,
         "baselineDate": "2026-10-05",
-        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
-      }
-    },
-    {
-      "slug": "uncle-waffles",
-      "name": "Uncle Waffles",
-      "rank": 47,
-      "score": 56.292342,
-      "scoreBreakdown": {
-        "editorialContribution": 55.96855605510512,
-        "rawEditorialContribution": 58.7119606023241,
-        "editorialMaximum": 87.06840185755347,
-        "editorialWeight": 83,
-        "streamsIndex": 1.9046229158136367,
-        "streamsScore": 1.9046229158136367,
-        "streamWeight": 17,
-        "listenerWeight": 0,
-        "streamCoverage": [
-          "spotify"
-        ],
-        "previousScore": 56.293275,
-        "baselineDate": "2026-10-05",
-        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
+        "previousScore": 56.949368
       }
     },
     {
       "slug": "phyno",
       "name": "Phyno",
-      "rank": 48,
-      "score": 55.598367,
+      "rank": 40,
+      "score": 67.619344,
       "scoreBreakdown": {
-        "editorialContribution": 55.07226570413922,
-        "rawEditorialContribution": 57.77173688595124,
-        "editorialMaximum": 87.06840185755347,
-        "editorialWeight": 83,
-        "streamsIndex": 3.094714024117767,
-        "streamsScore": 3.094714024117767,
-        "streamWeight": 17,
+        "version": 2,
+        "method": "Weighted mean of recent streams (log scale), momentum, editorial (with review-date decay) and activity, averaged over recent editions, with a weekly movement cap",
+        "weights": {
+          "recentStreams": 35,
+          "momentum": 25,
+          "editorial": 25,
+          "activity": 15
+        },
+        "components": {
+          "recentStreams": 63.48549916232624,
+          "momentum": 79.24554830436702,
+          "editorial": 66.35212735438459,
+          "activity": 60
+        },
+        "points": {
+          "recentStreams": 22.219924706814187,
+          "momentum": 19.811387076091755,
+          "editorial": 16.588031838596148,
+          "activity": 9
+        },
+        "rawScore": 67.619344,
+        "smoothedEditions": 1,
+        "targetRank": 20,
+        "capped": true,
+        "maxMovePlaces": 8,
+        "recentStreams": {
+          "dailyAverage": 619371,
+          "readings": 1,
+          "from": "2026-11-12",
+          "to": "2026-11-12",
+          "windowDays": 28,
+          "staleDays": 11,
+          "maximumDaily": 6646828,
+          "logFloorDaily": 10000
+        },
+        "momentum": {
+          "ratio": 1.4999464193277896,
+          "available": true,
+          "basis": "latest-4-readings",
+          "thisWeek": 619371,
+          "baseline": 412928.75,
+          "baselineFrom": "2026-09-07",
+          "baselineTo": "2026-10-05"
+        },
+        "editorial": {
+          "score": 66.35212735438459,
+          "effective": 66.35212735438459,
+          "reviewedAt": "2026-10-05",
+          "ageDays": 49,
+          "factor": 1,
+          "median": 86.41346068181645,
+          "rawEditorialContribution": 57.77173688595124,
+          "editorialMaximum": 87.06840185755347
+        },
+        "activity": {
+          "score": 60,
+          "signals": [
+            {
+              "kind": "release",
+              "label": "New release: Beautiful",
+              "points": 40,
+              "date": "2026-10-29",
+              "sourceUrl": "https://open.spotify.com/track/0LTBw6a2vM1IvNCrj236bq"
+            },
+            {
+              "kind": "chart",
+              "label": "2 TurnTable Top 100 entries, best #21",
+              "points": 20,
+              "date": "2026-11-12",
+              "sourceUrl": "https://www.turntablecharts.com/charts/1"
+            }
+          ]
+        },
+        "editorialContribution": 16.588031838596148,
+        "editorialWeight": 25,
+        "streamWeight": 35,
         "listenerWeight": 0,
+        "streamsIndex": 63.48549916232624,
         "streamCoverage": [
           "spotify"
         ],
-        "previousScore": 55.588281,
+        "rawEditorialContribution": 57.77173688595124,
+        "editorialMaximum": 87.06840185755347,
         "baselineDate": "2026-10-05",
-        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
+        "previousScore": 55.598367
+      }
+    },
+    {
+      "slug": "king-promise",
+      "name": "King Promise",
+      "rank": 41,
+      "score": 55.853781,
+      "scoreBreakdown": {
+        "version": 2,
+        "method": "Weighted mean of recent streams (log scale), momentum, editorial (with review-date decay) and activity, averaged over recent editions, with a weekly movement cap",
+        "weights": {
+          "recentStreams": 35,
+          "momentum": 25,
+          "editorial": 25,
+          "activity": 15
+        },
+        "components": {
+          "recentStreams": 46.239933342780844,
+          "momentum": 47.117341552835654,
+          "editorial": 75.56187631385801,
+          "activity": 60
+        },
+        "points": {
+          "recentStreams": 16.183976669973294,
+          "momentum": 11.779335388208914,
+          "editorial": 18.890469078464502,
+          "activity": 9
+        },
+        "rawScore": 55.853781,
+        "smoothedEditions": 1,
+        "targetRank": 40,
+        "capped": true,
+        "maxMovePlaces": 8,
+        "recentStreams": {
+          "dailyAverage": 201918,
+          "readings": 2,
+          "from": "2026-09-21",
+          "to": "2026-10-16",
+          "windowDays": 28,
+          "staleDays": 38,
+          "maximumDaily": 6646828,
+          "logFloorDaily": 10000
+        },
+        "momentum": {
+          "ratio": 0.9608258234928527,
+          "available": true,
+          "basis": "prior-4-weeks",
+          "thisWeek": 197884,
+          "baseline": 205952,
+          "baselineFrom": "2026-09-21",
+          "baselineTo": "2026-09-21"
+        },
+        "editorial": {
+          "score": 75.56187631385801,
+          "effective": 75.56187631385801,
+          "reviewedAt": "2026-10-05",
+          "ageDays": 49,
+          "factor": 1,
+          "median": 86.41346068181645,
+          "rawEditorialContribution": 65.7905181200574,
+          "editorialMaximum": 87.06840185755347
+        },
+        "activity": {
+          "score": 60,
+          "signals": [
+            {
+              "kind": "release",
+              "label": "New release: HOLIDAY",
+              "points": 40,
+              "date": "2026-11-05",
+              "sourceUrl": "https://music.apple.com/ng/album/holiday/6825863696?i=6825864433&uo=4"
+            },
+            {
+              "kind": "chart",
+              "label": "1 TurnTable Top 100 entry, best #37",
+              "points": 20,
+              "date": "2026-11-12",
+              "sourceUrl": "https://www.turntablecharts.com/charts/1"
+            }
+          ]
+        },
+        "editorialContribution": 18.890469078464502,
+        "editorialWeight": 25,
+        "streamWeight": 35,
+        "listenerWeight": 0,
+        "streamsIndex": 46.239933342780844,
+        "streamCoverage": [
+          "spotify"
+        ],
+        "rawEditorialContribution": 65.7905181200574,
+        "editorialMaximum": 87.06840185755347,
+        "baselineDate": "2026-10-05",
+        "previousScore": 63.436003
+      }
+    },
+    {
+      "slug": "black-sherif",
+      "name": "Black Sherif",
+      "rank": 42,
+      "score": 54.724526,
+      "scoreBreakdown": {
+        "version": 2,
+        "method": "Weighted mean of recent streams (log scale), momentum, editorial (with review-date decay) and activity, averaged over recent editions, with a weekly movement cap",
+        "weights": {
+          "recentStreams": 35,
+          "momentum": 25,
+          "editorial": 25,
+          "activity": 15
+        },
+        "components": {
+          "recentStreams": 63.86939334519385,
+          "momentum": 45.565803279138215,
+          "editorial": 77.91515176578004,
+          "activity": 10
+        },
+        "points": {
+          "recentStreams": 22.354287670817847,
+          "momentum": 11.391450819784554,
+          "editorial": 19.47878794144501,
+          "activity": 1.5
+        },
+        "rawScore": 54.724526,
+        "smoothedEditions": 1,
+        "targetRank": 42,
+        "capped": false,
+        "maxMovePlaces": 8,
+        "recentStreams": {
+          "dailyAverage": 635019,
+          "readings": 1,
+          "from": "2026-11-12",
+          "to": "2026-11-12",
+          "windowDays": 28,
+          "staleDays": 11,
+          "maximumDaily": 6646828,
+          "logFloorDaily": 10000
+        },
+        "momentum": {
+          "ratio": 0.9403801984068807,
+          "available": true,
+          "basis": "latest-4-readings",
+          "thisWeek": 635019,
+          "baseline": 675279,
+          "baselineFrom": "2026-09-07",
+          "baselineTo": "2026-10-05"
+        },
+        "editorial": {
+          "score": 77.91515176578004,
+          "effective": 77.91515176578004,
+          "reviewedAt": "2026-10-05",
+          "ageDays": 49,
+          "factor": 1,
+          "median": 86.41346068181645,
+          "rawEditorialContribution": 67.83947744735202,
+          "editorialMaximum": 87.06840185755347
+        },
+        "activity": {
+          "score": 10,
+          "signals": [
+            {
+              "kind": "release",
+              "label": "New release: Expresso",
+              "points": 10,
+              "date": "2026-09-03",
+              "sourceUrl": "https://open.spotify.com/track/5nhV4QHczBZnuPn5AEkGNq"
+            }
+          ]
+        },
+        "editorialContribution": 19.47878794144501,
+        "editorialWeight": 25,
+        "streamWeight": 35,
+        "listenerWeight": 0,
+        "streamsIndex": 63.86939334519385,
+        "streamCoverage": [
+          "spotify"
+        ],
+        "rawEditorialContribution": 67.83947744735202,
+        "editorialMaximum": 87.06840185755347,
+        "baselineDate": "2026-10-05",
+        "previousScore": 65.895308
+      }
+    },
+    {
+      "slug": "khaid",
+      "name": "Khaid",
+      "rank": 43,
+      "score": 53.34413,
+      "scoreBreakdown": {
+        "version": 2,
+        "method": "Weighted mean of recent streams (log scale), momentum, editorial (with review-date decay) and activity, averaged over recent editions, with a weekly movement cap",
+        "weights": {
+          "recentStreams": 35,
+          "momentum": 25,
+          "editorial": 25,
+          "activity": 15
+        },
+        "components": {
+          "recentStreams": 52.501566473429904,
+          "momentum": 44.020818549093086,
+          "editorial": 71.85350766440996,
+          "activity": 40
+        },
+        "points": {
+          "recentStreams": 18.375548265700466,
+          "momentum": 11.005204637273271,
+          "editorial": 17.96337691610249,
+          "activity": 6
+        },
+        "rawScore": 53.34413,
+        "smoothedEditions": 1,
+        "targetRank": 43,
+        "capped": false,
+        "maxMovePlaces": 8,
+        "recentStreams": {
+          "dailyAverage": 303331,
+          "readings": 1,
+          "from": "2026-11-19",
+          "to": "2026-11-19",
+          "windowDays": 28,
+          "staleDays": 4,
+          "maximumDaily": 6646828,
+          "logFloorDaily": 10000
+        },
+        "momentum": {
+          "ratio": 0.9204532609709896,
+          "available": true,
+          "basis": "latest-4-readings",
+          "thisWeek": 303331,
+          "baseline": 329545.25,
+          "baselineFrom": "2026-08-24",
+          "baselineTo": "2026-09-28"
+        },
+        "editorial": {
+          "score": 71.85350766440996,
+          "effective": 71.85350766440996,
+          "reviewedAt": "2026-10-05",
+          "ageDays": 49,
+          "factor": 1,
+          "median": 86.41346068181645,
+          "rawEditorialContribution": 62.56170080199644,
+          "editorialMaximum": 87.06840185755347
+        },
+        "activity": {
+          "score": 40,
+          "signals": [
+            {
+              "kind": "release",
+              "label": "New release: Yasin",
+              "points": 40,
+              "date": "2026-11-20",
+              "sourceUrl": "https://open.spotify.com/track/1D4K1ZjVcVTO7nretlnoUl"
+            }
+          ]
+        },
+        "editorialContribution": 17.96337691610249,
+        "editorialWeight": 25,
+        "streamWeight": 35,
+        "listenerWeight": 0,
+        "streamsIndex": 52.501566473429904,
+        "streamCoverage": [
+          "spotify"
+        ],
+        "rawEditorialContribution": 62.56170080199644,
+        "editorialMaximum": 87.06840185755347,
+        "baselineDate": "2026-10-05",
+        "previousScore": 60.090068
+      }
+    },
+    {
+      "slug": "ciza",
+      "name": "CIZA",
+      "rank": 44,
+      "score": 50.74761,
+      "scoreBreakdown": {
+        "version": 2,
+        "method": "Weighted mean of recent streams (log scale), momentum, editorial (with review-date decay) and activity, averaged over recent editions, with a weekly movement cap",
+        "weights": {
+          "recentStreams": 35,
+          "momentum": 25,
+          "editorial": 25,
+          "activity": 15
+        },
+        "components": {
+          "recentStreams": 42.08434237639342,
+          "momentum": 42.32047745634205,
+          "editorial": 77.75188389350014,
+          "activity": 40
+        },
+        "points": {
+          "recentStreams": 14.729519831737697,
+          "momentum": 10.580119364085512,
+          "editorial": 19.437970973375034,
+          "activity": 6
+        },
+        "rawScore": 50.74761,
+        "smoothedEditions": 1,
+        "targetRank": 45,
+        "capped": true,
+        "maxMovePlaces": 8,
+        "recentStreams": {
+          "dailyAverage": 154127,
+          "readings": 1,
+          "from": "2026-11-09",
+          "to": "2026-11-09",
+          "windowDays": 28,
+          "staleDays": 14,
+          "maximumDaily": 6646828,
+          "logFloorDaily": 10000
+        },
+        "momentum": {
+          "ratio": 0.8990102994766414,
+          "available": true,
+          "basis": "latest-4-readings",
+          "thisWeek": 154127,
+          "baseline": 171440.75,
+          "baselineFrom": "2026-08-24",
+          "baselineTo": "2026-09-28"
+        },
+        "editorial": {
+          "score": 77.75188389350014,
+          "effective": 77.75188389350014,
+          "reviewedAt": "2026-10-05",
+          "ageDays": 49,
+          "factor": 1,
+          "median": 86.41346068181645,
+          "rawEditorialContribution": 67.69732272021109,
+          "editorialMaximum": 87.06840185755347
+        },
+        "activity": {
+          "score": 40,
+          "signals": [
+            {
+              "kind": "release",
+              "label": "New release: Lala Ngedwa (feat. Smilo, DJ Lesa & Tony Duardo)",
+              "points": 40,
+              "date": "2026-11-06",
+              "sourceUrl": "https://music.apple.com/ng/album/lala-ngedwa-feat-smilo-dj-lesa-tony-duardo/6825054818?i=6825054970&uo=4"
+            }
+          ]
+        },
+        "editorialContribution": 19.437970973375034,
+        "editorialWeight": 25,
+        "streamWeight": 35,
+        "listenerWeight": 0,
+        "streamsIndex": 42.08434237639342,
+        "streamCoverage": [
+          "spotify"
+        ],
+        "rawEditorialContribution": 67.69732272021109,
+        "editorialMaximum": 87.06840185755347,
+        "baselineDate": "2026-10-05",
+        "previousScore": 64.735994
+      }
+    },
+    {
+      "slug": "chike",
+      "name": "Chike",
+      "rank": 45,
+      "score": 52.245506,
+      "scoreBreakdown": {
+        "version": 2,
+        "method": "Weighted mean of recent streams (log scale), momentum, editorial (with review-date decay) and activity, averaged over recent editions, with a weekly movement cap",
+        "weights": {
+          "recentStreams": 35,
+          "momentum": 25,
+          "editorial": 25,
+          "activity": 15
+        },
+        "components": {
+          "recentStreams": 49.28400690388733,
+          "momentum": 45.02978253341796,
+          "editorial": 70.954632378861,
+          "activity": 40
+        },
+        "points": {
+          "recentStreams": 17.249402416360564,
+          "momentum": 11.25744563335449,
+          "editorial": 17.73865809471525,
+          "activity": 6
+        },
+        "rawScore": 52.245506,
+        "smoothedEditions": 1,
+        "targetRank": 44,
+        "capped": true,
+        "maxMovePlaces": 8,
+        "recentStreams": {
+          "dailyAverage": 246092,
+          "readings": 1,
+          "from": "2026-11-02",
+          "to": "2026-11-02",
+          "windowDays": 28,
+          "staleDays": 21,
+          "maximumDaily": 6646828,
+          "logFloorDaily": 10000
+        },
+        "momentum": {
+          "ratio": 0.9334182957450521,
+          "available": true,
+          "basis": "latest-4-readings",
+          "thisWeek": 246092,
+          "baseline": 263646,
+          "baselineFrom": "2026-08-24",
+          "baselineTo": "2026-09-28"
+        },
+        "editorial": {
+          "score": 70.954632378861,
+          "effective": 70.954632378861,
+          "reviewedAt": "2026-10-05",
+          "ageDays": 49,
+          "factor": 1,
+          "median": 86.41346068181645,
+          "rawEditorialContribution": 61.77906445617645,
+          "editorialMaximum": 87.06840185755347
+        },
+        "activity": {
+          "score": 40,
+          "signals": [
+            {
+              "kind": "release",
+              "label": "New release: Love Is Important",
+              "points": 40,
+              "date": "2026-11-06",
+              "sourceUrl": "https://music.apple.com/ng/album/love-is-important/6823051654?i=6823051656&uo=4"
+            }
+          ]
+        },
+        "editorialContribution": 17.73865809471525,
+        "editorialWeight": 25,
+        "streamWeight": 35,
+        "listenerWeight": 0,
+        "streamsIndex": 49.28400690388733,
+        "streamCoverage": [
+          "spotify"
+        ],
+        "rawEditorialContribution": 61.77906445617645,
+        "editorialMaximum": 87.06840185755347,
+        "baselineDate": "2026-10-05",
+        "previousScore": 59.494101
+      }
+    },
+    {
+      "slug": "diamond-platnumz",
+      "name": "Diamond Platnumz",
+      "rank": 46,
+      "score": 47.087562,
+      "scoreBreakdown": {
+        "version": 2,
+        "method": "Weighted mean of recent streams (log scale), momentum, editorial (with review-date decay) and activity, averaged over recent editions, with a weekly movement cap",
+        "weights": {
+          "recentStreams": 35,
+          "momentum": 25,
+          "editorial": 25,
+          "activity": 15
+        },
+        "components": {
+          "recentStreams": 46.17494969706452,
+          "momentum": 47.655282229341054,
+          "editorial": 70.05003790864824,
+          "activity": 10
+        },
+        "points": {
+          "recentStreams": 16.161232393972583,
+          "momentum": 11.913820557335264,
+          "editorial": 17.51250947716206,
+          "activity": 1.5
+        },
+        "rawScore": 47.087562,
+        "smoothedEditions": 1,
+        "targetRank": 46,
+        "capped": false,
+        "maxMovePlaces": 8,
+        "recentStreams": {
+          "dailyAverage": 201067,
+          "readings": 1,
+          "from": "2026-11-06",
+          "to": "2026-11-06",
+          "windowDays": 28,
+          "staleDays": 17,
+          "maximumDaily": 6646828,
+          "logFloorDaily": 10000
+        },
+        "momentum": {
+          "ratio": 0.9680179095854797,
+          "available": true,
+          "basis": "prior-4-weeks",
+          "thisWeek": 201067,
+          "baseline": 207710,
+          "baselineFrom": "2026-10-05",
+          "baselineTo": "2026-10-05"
+        },
+        "editorial": {
+          "score": 70.05003790864824,
+          "effective": 70.05003790864824,
+          "reviewedAt": "2026-10-05",
+          "ageDays": 49,
+          "factor": 1,
+          "median": 86.41346068181645,
+          "rawEditorialContribution": 60.991448507670384,
+          "editorialMaximum": 87.06840185755347
+        },
+        "activity": {
+          "score": 10,
+          "signals": [
+            {
+              "kind": "release",
+              "label": "New release: Nikumbuke",
+              "points": 10,
+              "date": "2026-09-24",
+              "sourceUrl": "https://open.spotify.com/track/1KfQkotQJ73JT93plHOxTh"
+            }
+          ]
+        },
+        "editorialContribution": 17.51250947716206,
+        "editorialWeight": 25,
+        "streamWeight": 35,
+        "listenerWeight": 0,
+        "streamsIndex": 46.17494969706452,
+        "streamCoverage": [
+          "spotify"
+        ],
+        "rawEditorialContribution": 60.991448507670384,
+        "editorialMaximum": 87.06840185755347,
+        "baselineDate": "2026-10-05",
+        "previousScore": 58.633171
+      }
+    },
+    {
+      "slug": "tekno",
+      "name": "Tekno",
+      "rank": 47,
+      "score": 45.256135,
+      "scoreBreakdown": {
+        "version": 2,
+        "method": "Weighted mean of recent streams (log scale), momentum, editorial (with review-date decay) and activity, averaged over recent editions, with a weekly movement cap",
+        "weights": {
+          "recentStreams": 35,
+          "momentum": 25,
+          "editorial": 25,
+          "activity": 15
+        },
+        "components": {
+          "recentStreams": 46.17739823803627,
+          "momentum": 47.554906578775636,
+          "editorial": 68.82127560136149,
+          "activity": 0
+        },
+        "points": {
+          "recentStreams": 16.162089383312694,
+          "momentum": 11.888726644693909,
+          "editorial": 17.205318900340373,
+          "activity": 0
+        },
+        "rawScore": 45.256135,
+        "smoothedEditions": 1,
+        "targetRank": 47,
+        "capped": false,
+        "maxMovePlaces": 8,
+        "recentStreams": {
+          "dailyAverage": 201099,
+          "readings": 1,
+          "from": "2026-11-09",
+          "to": "2026-11-09",
+          "windowDays": 28,
+          "staleDays": 14,
+          "maximumDaily": 6646828,
+          "logFloorDaily": 10000
+        },
+        "momentum": {
+          "ratio": 0.9666718474852466,
+          "available": true,
+          "basis": "latest-4-readings",
+          "thisWeek": 201099,
+          "baseline": 208032.33333333334,
+          "baselineFrom": "2026-08-24",
+          "baselineTo": "2026-09-28"
+        },
+        "editorial": {
+          "score": 68.82127560136149,
+          "effective": 68.82127560136149,
+          "reviewedAt": "2026-10-05",
+          "ageDays": 49,
+          "factor": 1,
+          "median": 86.41346068181645,
+          "rawEditorialContribution": 59.921584804087814,
+          "editorialMaximum": 87.06840185755347
+        },
+        "activity": {
+          "score": 0,
+          "signals": []
+        },
+        "editorialContribution": 17.205318900340373,
+        "editorialWeight": 25,
+        "streamWeight": 35,
+        "listenerWeight": 0,
+        "streamsIndex": 46.17739823803627,
+        "streamCoverage": [
+          "spotify"
+        ],
+        "rawEditorialContribution": 59.921584804087814,
+        "editorialMaximum": 87.06840185755347,
+        "baselineDate": "2026-10-05",
+        "previousScore": 57.942687
       }
     },
     {
       "slug": "shatta-wale",
       "name": "Shatta Wale",
-      "rank": 49,
-      "score": 54.74993,
+      "rank": 48,
+      "score": 44.100404,
       "scoreBreakdown": {
-        "editorialContribution": 54.30692646314063,
-        "rawEditorialContribution": 56.96888309567871,
-        "editorialMaximum": 87.06840185755347,
-        "editorialWeight": 83,
-        "streamsIndex": 2.6059042812246,
-        "streamsScore": 2.6059042812246,
-        "streamWeight": 17,
+        "version": 2,
+        "method": "Weighted mean of recent streams (log scale), momentum, editorial (with review-date decay) and activity, averaged over recent editions, with a weekly movement cap",
+        "weights": {
+          "recentStreams": 35,
+          "momentum": 25,
+          "editorial": 25,
+          "activity": 15
+        },
+        "components": {
+          "recentStreams": 43.84891175064704,
+          "momentum": 49.58310611476147,
+          "editorial": 65.43003188330196,
+          "activity": 0
+        },
+        "points": {
+          "recentStreams": 15.347119112726464,
+          "momentum": 12.395776528690368,
+          "editorial": 16.35750797082549,
+          "activity": 0
+        },
+        "rawScore": 44.100404,
+        "smoothedEditions": 1,
+        "targetRank": 48,
+        "capped": false,
+        "maxMovePlaces": 8,
+        "recentStreams": {
+          "dailyAverage": 172856.5,
+          "readings": 2,
+          "from": "2026-09-21",
+          "to": "2026-10-17",
+          "windowDays": 28,
+          "staleDays": 37,
+          "maximumDaily": 6646828,
+          "logFloorDaily": 10000
+        },
+        "momentum": {
+          "ratio": 0.9942372920464247,
+          "available": true,
+          "basis": "prior-4-weeks",
+          "thisWeek": 172357,
+          "baseline": 173356,
+          "baselineFrom": "2026-09-21",
+          "baselineTo": "2026-09-21"
+        },
+        "editorial": {
+          "score": 65.43003188330196,
+          "effective": 65.43003188330196,
+          "reviewedAt": "2026-10-05",
+          "ageDays": 49,
+          "factor": 1,
+          "median": 86.41346068181645,
+          "rawEditorialContribution": 56.96888309567871,
+          "editorialMaximum": 87.06840185755347
+        },
+        "activity": {
+          "score": 0,
+          "signals": []
+        },
+        "editorialContribution": 16.35750797082549,
+        "editorialWeight": 25,
+        "streamWeight": 35,
         "listenerWeight": 0,
+        "streamsIndex": 43.84891175064704,
         "streamCoverage": [
           "spotify"
         ],
-        "previousScore": 54.751207,
+        "rawEditorialContribution": 56.96888309567871,
+        "editorialMaximum": 87.06840185755347,
         "baselineDate": "2026-10-05",
-        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
+        "previousScore": 54.74993
       }
     },
     {
       "slug": "stonebwoy",
       "name": "Stonebwoy",
-      "rank": 50,
-      "score": 53.946546,
+      "rank": 49,
+      "score": 43.889831,
       "scoreBreakdown": {
-        "editorialContribution": 53.71171679195357,
-        "rawEditorialContribution": 56.344498097601395,
-        "editorialMaximum": 87.06840185755347,
-        "editorialWeight": 83,
-        "streamsIndex": 1.3813474114589142,
-        "streamsScore": 1.3813474114589142,
-        "streamWeight": 17,
+        "version": 2,
+        "method": "Weighted mean of recent streams (log scale), momentum, editorial (with review-date decay) and activity, averaged over recent editions, with a weekly movement cap",
+        "weights": {
+          "recentStreams": 35,
+          "momentum": 25,
+          "editorial": 25,
+          "activity": 15
+        },
+        "components": {
+          "recentStreams": 34.83838755461294,
+          "momentum": 47.07266908464243,
+          "editorial": 64.71291179753442,
+          "activity": 25
+        },
+        "points": {
+          "recentStreams": 12.19343564411453,
+          "momentum": 11.768167271160607,
+          "editorial": 16.178227949383604,
+          "activity": 3.75
+        },
+        "rawScore": 43.889831,
+        "smoothedEditions": 1,
+        "targetRank": 49,
+        "capped": false,
+        "maxMovePlaces": 8,
+        "recentStreams": {
+          "dailyAverage": 96239.5,
+          "readings": 2,
+          "from": "2026-09-07",
+          "to": "2026-09-28",
+          "windowDays": 28,
+          "staleDays": 56,
+          "maximumDaily": 6646828,
+          "logFloorDaily": 10000
+        },
+        "momentum": {
+          "ratio": 0.9602309760469284,
+          "available": true,
+          "basis": "prior-4-weeks",
+          "thisWeek": 94287,
+          "baseline": 98192,
+          "baselineFrom": "2026-09-07",
+          "baselineTo": "2026-09-07"
+        },
+        "editorial": {
+          "score": 64.71291179753442,
+          "effective": 64.71291179753442,
+          "reviewedAt": "2026-10-05",
+          "ageDays": 49,
+          "factor": 1,
+          "median": 86.41346068181645,
+          "rawEditorialContribution": 56.344498097601395,
+          "editorialMaximum": 87.06840185755347
+        },
+        "activity": {
+          "score": 25,
+          "signals": [
+            {
+              "kind": "release",
+              "label": "New release: History",
+              "points": 25,
+              "date": "2026-10-02",
+              "sourceUrl": "https://music.apple.com/ng/album/history/6820218949?i=6820218950&uo=4"
+            }
+          ]
+        },
+        "editorialContribution": 16.178227949383604,
+        "editorialWeight": 25,
+        "streamWeight": 35,
         "listenerWeight": 0,
+        "streamsIndex": 34.83838755461294,
         "streamCoverage": [
           "spotify"
         ],
-        "previousScore": 53.947223,
+        "rawEditorialContribution": 56.344498097601395,
+        "editorialMaximum": 87.06840185755347,
         "baselineDate": "2026-10-05",
-        "method": "83 × (locked editorial contribution / locked editorial maximum) + 17% × comparable tracked audio-stream index"
+        "previousScore": 53.946546
+      }
+    },
+    {
+      "slug": "uncle-waffles",
+      "name": "Uncle Waffles",
+      "rank": 50,
+      "score": 43.282643,
+      "scoreBreakdown": {
+        "version": 2,
+        "method": "Weighted mean of recent streams (log scale), momentum, editorial (with review-date decay) and activity, averaged over recent editions, with a weekly movement cap",
+        "weights": {
+          "recentStreams": 35,
+          "momentum": 25,
+          "editorial": 25,
+          "activity": 15
+        },
+        "components": {
+          "recentStreams": 43.53449154450187,
+          "momentum": 44.75028908806271,
+          "editorial": 67.4319952471146,
+          "activity": 0
+        },
+        "points": {
+          "recentStreams": 15.237072040575654,
+          "momentum": 11.187572272015677,
+          "editorial": 16.85799881177865,
+          "activity": 0
+        },
+        "rawScore": 43.282643,
+        "smoothedEditions": 1,
+        "targetRank": 50,
+        "capped": false,
+        "maxMovePlaces": 8,
+        "recentStreams": {
+          "dailyAverage": 169360,
+          "readings": 1,
+          "from": "2026-10-27",
+          "to": "2026-10-27",
+          "windowDays": 28,
+          "staleDays": 27,
+          "maximumDaily": 6646828,
+          "logFloorDaily": 10000
+        },
+        "momentum": {
+          "ratio": 0.9298086689176206,
+          "available": true,
+          "basis": "prior-4-weeks",
+          "thisWeek": 169360,
+          "baseline": 182145,
+          "baselineFrom": "2026-09-28",
+          "baselineTo": "2026-09-28"
+        },
+        "editorial": {
+          "score": 67.4319952471146,
+          "effective": 67.4319952471146,
+          "reviewedAt": "2026-10-05",
+          "ageDays": 49,
+          "factor": 1,
+          "median": 86.41346068181645,
+          "rawEditorialContribution": 58.7119606023241,
+          "editorialMaximum": 87.06840185755347
+        },
+        "activity": {
+          "score": 0,
+          "signals": []
+        },
+        "editorialContribution": 16.85799881177865,
+        "editorialWeight": 25,
+        "streamWeight": 35,
+        "listenerWeight": 0,
+        "streamsIndex": 43.53449154450187,
+        "streamCoverage": [
+          "spotify"
+        ],
+        "rawEditorialContribution": 58.7119606023241,
+        "editorialMaximum": 87.06840185755347,
+        "baselineDate": "2026-10-05",
+        "previousScore": 56.292342
       }
     }
   ]

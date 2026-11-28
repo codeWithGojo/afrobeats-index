@@ -1,8 +1,8 @@
 {
   "current": {
     "label": "current",
-    "updatedAt": "2026-11-22T23:20:22.903080+00:00",
-    "hash": "4d777dcbed95586ccdf798730df507f705d110b4bf11e946ddcf23058214d52f",
+    "updatedAt": "2026-11-28T08:32:09.022018+00:00",
+    "hash": "777accf0fb8b8f0946421a2820843d57718b5a24dc41c1dd58426cd133252a2b",
     "basis": "source snapshot"
   },
   "alltime": {
@@ -13,31 +13,31 @@
   },
   "regions": {
     "label": "Regional Power Index",
-    "updatedAt": "2026-11-22T23:20:22.903080+00:00",
+    "updatedAt": "2026-11-28T08:32:09.022018+00:00",
     "hash": "b46b8c3ec614b1234d300a06699ce8273141f51bf33ff1d4e6dbaee74d678f43",
     "basis": "source snapshot"
   },
   "albums": {
     "label": "albums",
-    "updatedAt": "2026-11-22T23:20:22.903080+00:00",
+    "updatedAt": "2026-11-28T08:32:09.022018+00:00",
     "hash": "e3bc2cd2b2b69bb3e37370f361071b843647e9ae7d09281a8d1d0ee8ccf0b894",
     "basis": "source snapshot"
   },
   "yearly": {
     "label": "Release lists",
-    "updatedAt": "2026-11-22T23:20:22.903080+00:00",
+    "updatedAt": "2026-11-28T08:32:09.022018+00:00",
     "hash": "e6a725598008b881ecd4fdfacc5cbd4dacbad343303a3c7a05dcf5b7ddc92183",
     "basis": "source snapshot"
   },
   "artists": {
     "label": "Artist Archive",
-    "updatedAt": "2026-11-22T23:20:22.903080+00:00",
-    "hash": "25d7823a4e7382405d3007ed31e04c8b8534bdecd62e9b5fab05a42d92f541e0",
+    "updatedAt": "2026-11-28T08:32:09.022018+00:00",
+    "hash": "201b0acd993d8efee193810cb3297aa875eae46f9a391f1f5625ecc4e49187f5",
     "basis": "source snapshot"
   },
   "vs": {
     "label": "Head to Head",
-    "updatedAt": "2026-11-22T23:20:22.903080+00:00",
+    "updatedAt": "2026-11-28T08:32:09.022018+00:00",
     "hash": "658327f5fc08a8cc9221d2a8b40b16b55684825e255a011fb6fb09d130363d0b",
     "basis": "source snapshot"
   },
@@ -61,7 +61,7 @@
   },
   "receipt": {
     "label": "receipt",
-    "updatedAt": "2026-11-22T23:20:22.903080+00:00",
+    "updatedAt": "2026-11-28T08:32:09.022018+00:00",
     "hash": "ac4cd078116c6db733b4565e14a9b972b3f4ee00e7125583dc9c4bdf94c6585d",
     "basis": "source snapshot"
   },
@@ -85,7 +85,7 @@
   },
   "top100": {
     "label": "top100",
-    "updatedAt": "2026-11-22T23:20:20.597585+00:00",
+    "updatedAt": "2026-11-28T08:32:05.515021+00:00",
     "hash": "3422eb9e9f9e19587b5a1ef618b4da75d953e5b21d922b0a1f55f44902da8421",
     "basis": "source snapshot"
   },
@@ -97,7 +97,7 @@
   },
   "certifications": {
     "label": "Certifications",
-    "updatedAt": "2026-11-09T16:40:00.000Z",
+    "updatedAt": "2026-11-28T08:40:00.000Z",
     "hash": "e831beb04c008e58eea5cdccffa998e50b33f96a4c90f70731ff3618904d9fa0",
     "basis": "source snapshot"
   }
