@@ -1,29 +1,29 @@
 {
-  "updatedAt": "2026-11-22T23:27:15.111Z",
+  "updatedAt": "2026-11-28T08:54:16.295Z",
   "timezone": "Africa/Lagos",
   "scope": "Edition update. Source observation dates and official chart periods remain separate.",
   "datasets": {
     "streaming": {
-      "checkedAt": "2026-11-22T23:20:22.903080+00:00",
+      "checkedAt": "2026-11-28T08:32:09.022018+00:00",
       "status": "refreshed",
       "artists": 50,
       "ledgersRefreshed": 100,
       "ledgersRetained": 0,
       "sourceStart": "2026-09-28",
-      "sourceEnd": "2026-11-21"
+      "sourceEnd": "2026-11-27"
     },
     "turntableSongs": {
-      "checkedAt": "2026-11-22T23:20:20.597585+00:00",
+      "checkedAt": "2026-11-28T08:32:05.515021+00:00",
       "status": "checked",
-      "weekStart": "2026-11-06",
-      "weekEnd": "2026-11-12",
+      "weekStart": "2026-11-13",
+      "weekEnd": "2026-11-19",
       "sourceUrl": "https://www.turntablecharts.com/charts/1"
     },
     "turntableAlbums": {
-      "checkedAt": "2026-11-22T23:20:22.370536+00:00",
+      "checkedAt": "2026-11-28T08:32:07.967437+00:00",
       "status": "checked",
-      "weekStart": "2026-11-06",
-      "weekEnd": "2026-11-12",
+      "weekStart": "2026-11-13",
+      "weekEnd": "2026-11-19",
       "sourceUrl": "https://www.turntablecharts.com/charts/2"
     },
     "upcoming": {
@@ -37,31 +37,31 @@
       "latestArticle": "2026-11-07"
     },
     "turntableCategories": {
-      "checkedAt": "2026-11-15T22:48:21.077156+00:00",
+      "checkedAt": "2026-11-28T08:39:32.499537+00:00",
       "status": "checked",
       "categories": 11,
       "note": "Each category preserves its own publisher period; year-end and TV charts remain archives."
     },
     "releaseIdentities": {
-      "checkedAt": "2026-11-22T23:23:20.838038+00:00",
+      "checkedAt": "2026-11-28T08:35:59.254099+00:00",
       "status": "refreshed",
       "artists": 50
     },
     "awardsCalendar": {
-      "checkedAt": "2026-11-09",
+      "checkedAt": "2026-11-28",
       "status": "checked",
       "seasons": 3
     },
     "biographies": {
-      "checkedAt": "2026-11-15",
+      "checkedAt": "2026-11-28",
       "status": "partial",
       "rechecked": 42,
       "note": "Unavailable or ambiguous biographies retain their previous evidence dates."
     },
     "certifications": {
-      "checkedAt": "2026-11-09",
+      "checkedAt": "2026-11-28T08:40:00.000Z",
       "status": "partial",
-      "note": "512 TurnTable matches revalidated; Ayra Starr’s Rush added from RIAA (Platinum, 5 Nov). RIAA and Music Canada recent registers checked; BPI returned 404 and SNEP 403. Other certificate dates remain unchanged."
+      "note": "TurnTable register checked; five recent Music Canada certification rows added across six Wizkid/Burna Boy artist-record associations. RIAA recent rows were checked; BPI returned 404, and the SNEP page was reachable without returned roster matches. Publisher certification dates remain separate from check dates."
     },
     "discovery": {
       "checkedAt": "2026-11-09",

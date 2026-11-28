@@ -6,6 +6,8 @@ vm.runInContext(fs.readFileSync('assets/inline-03.js','utf8'),c);
 for(const file of ['assets/inline-04.js','assets/inline-11.js','assets/inline-12.js','refresh-2026-09-14.js','refresh-2026-09-21.js','refresh-2026-09-28.js','refresh-2026-10-05.js','ranking-refresh-2026-10-05.js','recognition-audit-2026-09-28.js','turntable-certifications.js','certification-refresh-2026-10-05.js'])vm.runInContext(fs.readFileSync(file,'utf8'),c);
 c.window.AfriStreaming=require('../streaming-model.js');
 vm.runInContext(fs.readFileSync('certification-refresh-2026-11-09.js','utf8'),c);
+vm.runInContext(fs.readFileSync('certification-refresh-2026-11-28.js','utf8'),c);
+vm.runInContext(fs.readFileSync('award-refresh-2026-11-28.js','utf8'),c);
 vm.runInContext(fs.readFileSync('streaming-snapshot.js','utf8'),c);
 const date=state.artists.map(a=>a.statsLastUpdatedAt).filter(Boolean).sort().at(-1);
 // Derived artifact only: source remains the existing artist database.
@@ -29,7 +31,7 @@ data.featureCredits=require('../lib/board-engine.cjs').featureCredits(data.artis
 data.editorialNews=JSON.parse(fs.readFileSync('data/editorial-news.json','utf8'));
 data.events=fs.existsSync('data/editorial-events.json')?JSON.parse(fs.readFileSync('data/editorial-events.json','utf8')):[];
 const eventKeys=new Set(data.events.map(x=>[x.artist_slug,x.title,x.details?.year,x.details?.work,x.details?.result].join('|').toLowerCase()));
-for(const [slug,records] of Object.entries(data.awards))for(const r of records){const x={artist_slug:slug,kind:r.result==='nominee'?'nomination':'award',title:r.name+' · '+r.category,event_date:null,details:{body:r.name,year:r.year,work:r.work,result:r.result,metric:'Awards'},source_url:r.sourceUrl,verified_at:r.lastVerifiedAt};const key=[slug,x.title,r.year,r.work,r.result].join('|').toLowerCase();if(!eventKeys.has(key)){data.events.push(x);eventKeys.add(key);}}
+ for(const [slug,records] of Object.entries(data.awards))for(const r of records){const x={artist_slug:slug,kind:r.result==='nominee'?'nomination':'award',title:r.name+' · '+r.category,event_date:r.eventDate||null,details:{body:r.name,year:r.year,work:r.work,result:r.result,announcedDate:r.announcedDate||null,ceremonyDate:r.ceremonyDate||null,metric:'Awards',weight:8},source_url:r.sourceUrl,verified_at:r.lastVerifiedAt};const key=[slug,x.title,r.year,r.work,r.result].join('|').toLowerCase();if(!eventKeys.has(key)){data.events.push(x);eventKeys.add(key);}}
 data.productionCredits=fs.existsSync('data/production-credits.json')?JSON.parse(fs.readFileSync('data/production-credits.json','utf8')):[];
 data.artists=data.artists.map(require('../artist-taxonomy.js').normalize);
 fs.mkdirSync('data',{recursive:true});fs.writeFileSync('data/current.json',JSON.stringify(data));

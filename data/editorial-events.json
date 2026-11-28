@@ -509,5 +509,100 @@
     },
     "source_url": "https://www.ticketmaster.com/asake-tickets/artist/3025951",
     "verified_at": "2026-09-07T00:00:00Z"
+  },
+  {
+    "artist_slug": "asake",
+    "kind": "nomination",
+    "title": "Grammy Awards · Best African Music Performance",
+    "event_date": "2026-11-16",
+    "details": {
+      "body": "Grammy Awards",
+      "year": 2027,
+      "work": "Gratitude",
+      "result": "nominee",
+      "category": "Best African Music Performance",
+      "announcedDate": "2026-11-16",
+      "ceremonyDate": "2027-02-07",
+      "metric": "Awards",
+      "weight": 8
+    },
+    "source_url": "https://www.grammy.com/news/2027-grammys-full-nominations-full-winners-nominees-list/",
+    "verified_at": "2026-11-28T08:40:00Z"
+  },
+  {
+    "artist_slug": "ayra-starr",
+    "kind": "nomination",
+    "title": "Grammy Awards · Best African Music Performance",
+    "event_date": "2026-11-16",
+    "details": {
+      "body": "Grammy Awards",
+      "year": 2027,
+      "work": "Aye Kan (Are You Coming Back?)",
+      "result": "nominee",
+      "category": "Best African Music Performance",
+      "announcedDate": "2026-11-16",
+      "ceremonyDate": "2027-02-07",
+      "metric": "Awards",
+      "weight": 8
+    },
+    "source_url": "https://www.grammy.com/news/2027-grammys-full-nominations-full-winners-nominees-list/",
+    "verified_at": "2026-11-28T08:40:00Z"
+  },
+  {
+    "artist_slug": "tems",
+    "kind": "nomination",
+    "title": "Grammy Awards · Best African Music Performance",
+    "event_date": "2026-11-16",
+    "details": {
+      "body": "Grammy Awards",
+      "year": 2027,
+      "work": "Big Daddy",
+      "result": "nominee",
+      "category": "Best African Music Performance",
+      "announcedDate": "2026-11-16",
+      "ceremonyDate": "2027-02-07",
+      "metric": "Awards",
+      "weight": 8
+    },
+    "source_url": "https://www.grammy.com/news/2027-grammys-full-nominations-full-winners-nominees-list/",
+    "verified_at": "2026-11-28T08:40:00Z"
+  },
+  {
+    "artist_slug": "wizkid",
+    "kind": "nomination",
+    "title": "Grammy Awards · Best African Music Performance",
+    "event_date": "2026-11-16",
+    "details": {
+      "body": "Grammy Awards",
+      "year": 2027,
+      "work": "Jogodo",
+      "result": "nominee",
+      "category": "Best African Music Performance",
+      "announcedDate": "2026-11-16",
+      "ceremonyDate": "2027-02-07",
+      "metric": "Awards",
+      "weight": 8
+    },
+    "source_url": "https://www.grammy.com/news/2027-grammys-full-nominations-full-winners-nominees-list/",
+    "verified_at": "2026-11-28T08:40:00Z"
+  },
+  {
+    "artist_slug": "asake",
+    "kind": "nomination",
+    "title": "Grammy Awards · Best African Music Performance",
+    "event_date": "2026-11-16",
+    "details": {
+      "body": "Grammy Awards",
+      "year": 2027,
+      "work": "Jogodo",
+      "result": "nominee",
+      "category": "Best African Music Performance",
+      "announcedDate": "2026-11-16",
+      "ceremonyDate": "2027-02-07",
+      "metric": "Awards",
+      "weight": 8
+    },
+    "source_url": "https://www.grammy.com/news/2027-grammys-full-nominations-full-winners-nominees-list/",
+    "verified_at": "2026-11-28T08:40:00Z"
   }
 ]

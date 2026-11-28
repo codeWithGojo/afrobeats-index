@@ -10,7 +10,7 @@ const fresh=ledgers.filter(x=>x.status!=='retained_last_good'&&x.rows.length&&x.
 if(!fresh.length)throw Error('No source ledgers refreshed; keep the published edition.');
 for(const chart of [songs,albums])if(dateKey(chart.checkedAt)!==today||chart.rows.length!==100)throw Error('Recheck both official charts before publishing a new edition.');
 const sourceDates=[...new Set(ledgers.map(x=>x.source_date).filter(Boolean))].sort();
-const awards=read('awards-seasons'),bios=read('artist-evidence'),identities=read('release-identities'),categories=read('turntable-categories');
+const awards=read('awards-seasons'),bios=read('artist-evidence'),identities=read('release-identities'),categories=read('turntable-categories'),current=read('current');
 const edition={
   updatedAt:new Date().toISOString(),
   timezone:'Africa/Lagos',
@@ -25,7 +25,7 @@ const edition={
     releaseIdentities:{checkedAt:identities.checkedAt,status:Object.values(identities.artists).every(a=>a.status==='refreshed')?'refreshed':'partial',artists:Object.values(identities.artists).filter(a=>a.status==='refreshed').length},
     awardsCalendar:{checkedAt:awards.checkedAt,status:'checked',seasons:awards.seasons.length},
     biographies:{checkedAt:today,status:'partial',rechecked:bios.filter(a=>a.evidence?.biography?.checked_at===today).length,note:'Unavailable or ambiguous biographies retain their previous evidence dates.'},
-    certifications:{checkedAt:'2026-11-09',status:'partial',note:'512 TurnTable matches revalidated; Ayra Starr’s Rush added from RIAA (Platinum, 5 Nov). RIAA and Music Canada recent registers checked; BPI returned 404 and SNEP 403. Other certificate dates remain unchanged.'},
+    certifications:{checkedAt:current.meta.certificationsLastAttemptAt||current.meta.certificationsCheckedAt||null,status:'partial',note:'TurnTable register checked; five recent Music Canada certification rows added across six Wizkid/Burna Boy artist-record associations. RIAA recent rows were checked; BPI returned 404, and the SNEP page was reachable without returned roster matches. Publisher certification dates remain separate from check dates.'},
     discovery:{checkedAt:read('watch-artists').updatedAt,status:'reviewed',note:'The FADER source rechecked; discovery order is retained and unresolved profiles stay marked.'},
     editorial:{status:'retained',note:'All-Time placements, locked editorial contributions, historical award results and financial estimates retain their original evidence dates. New certification checks are described separately.'}
   }
