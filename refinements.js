@@ -42,7 +42,7 @@
     });
     import('/account-nav.js').catch(()=>{});
     // The homepage has its own chart motion and no sortable React list.
-    if(document.querySelector('.orbit'))return;
+    if(document.querySelector('.orbit')||document.documentElement.classList.contains('lite'))return; // Lite mode skips the 100 KB motion layer.
     const script=document.createElement('script');script.src='/assets/glass-motion.js';script.defer=true;document.head.append(script);
   };
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});else init();

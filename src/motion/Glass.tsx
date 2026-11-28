@@ -30,7 +30,8 @@ const observer=new IntersectionObserver(entries=>{
       animate(0,value,{duration:.8,ease:'easeOut',onUpdate:n=>{el.textContent=n.toFixed(digits);},onComplete:()=>{el.textContent=raw;}});
     });
     target.querySelectorAll<HTMLElement>('.current-score>i,.score-track>span,.compare-bar>span').forEach(el=>{
-      el.style.transformOrigin='left';animate(el,{scaleX:[0,1]},{duration:.7,delay:.1,ease:'easeOut'});
+      // Compare bars grow outward from the centre; other bars fill from the left.
+      el.style.transformOrigin=el.closest('.compare-bar')?'center':'left';animate(el,{scaleX:[0,1]},{duration:.7,delay:.1,ease:'easeOut'});
     });
   });
 },{threshold:.06});
@@ -46,7 +47,7 @@ function init(){
   document.addEventListener('pointerover',event=>{const el=closest(event);if(!el||reduced.matches||event.pointerType!=='mouse'||el.contains(event.relatedTarget as Node))return;play(el,el.matches('.current-row')?1.008:1.035,el.matches('.hero-artist,.certification-card')?-5:0);});
   document.addEventListener('pointerout',event=>{const el=closest(event);if(el&&!reduced.matches&&!el.contains(event.relatedTarget as Node))play(el,1);});
   let pressed:HTMLElement|null=null;
-  document.addEventListener('pointerdown',event=>{pressed=closest(event);if(pressed&&!reduced.matches)play(pressed,.96);});
+  document.addEventListener('pointerdown',event=>{pressed=closest(event);if(pressed&&!reduced.matches)play(pressed,.97);});
   document.addEventListener('pointerup',()=>{if(pressed&&!reduced.matches)play(pressed,1);pressed=null;});
   document.addEventListener('pointercancel',()=>{if(pressed)play(pressed,1);pressed=null;});
   document.querySelectorAll<HTMLElement>('.hero-artist').forEach(card=>{

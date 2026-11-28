@@ -1,0 +1,145 @@
+/* Phase 6 UI layer. Short motion (under 300ms) except the hero and reveals; all of it off for reduced motion
+   and Lite mode (html.lite). Colour states are checked for WCAG AA in tests/ui-contrast.test.cjs. */
+:root{--ui-fast:180ms;--ui-mid:280ms;--ui-ease:cubic-bezier(.2,.8,.2,1);
+ --grad-a:#d9f24a;--grad-b:#f4ffb8;--rank-weight:600;--weight-shift:0}
+html[data-theme=light]{--grad-a:#536600;--grad-b:#3b4a00;--weight-shift:50}
+@media(prefers-color-scheme:light){html:not([data-theme=dark]){--grad-a:#536600;--grad-b:#3b4a00;--weight-shift:50}}
+
+/* Route transitions (same-origin navigations in supporting browsers). */
+@view-transition{navigation:auto}
+::view-transition-old(root),::view-transition-new(root){animation-duration:200ms;animation-timing-function:var(--ui-ease)}
+
+/* Sticky header shrinks on scroll; a lime underline slides between primary tabs. */
+body[data-design=premium] .app-header-inner{transition:height var(--ui-mid) var(--ui-ease)}
+html.is-scrolled body[data-design=premium] .app-header-inner{height:60px}
+.app-primary{position:relative}
+.nav-indicator{position:absolute;left:0;bottom:6px;height:2px;width:0;border-radius:2px;background:var(--af-accent);opacity:0;pointer-events:none;transition:transform var(--ui-mid) var(--ui-ease),width var(--ui-mid) var(--ui-ease),opacity var(--ui-fast)}
+
+/* Buttons press to .97. */
+body[data-design=premium] :is(button,.button,[role=button]):not(:disabled):active{transform:scale(.97)}
+body[data-design=premium] :is(button,.button,[role=button]){transition:transform 120ms var(--ui-ease)}
+
+/* One-time pulse on movement arrows. */
+.pulse-once.movement-up,.pulse-once.rank-movement-up{animation:pulse-up 280ms var(--ui-ease) 1}
+.pulse-once.movement-down,.pulse-once.rank-movement-down{animation:pulse-down 280ms var(--ui-ease) 1}
+@keyframes pulse-up{40%{transform:scale(1.18);filter:drop-shadow(0 0 6px #d9f24a)}}
+@keyframes pulse-down{40%{transform:scale(1.18);filter:drop-shadow(0 0 6px #f68a94)}}
+
+/* Chart rows: slight lift on hover, weight by rank, sparkline in Stream details. */
+body[data-design=premium] .current-row{transition:transform var(--ui-fast) var(--ui-ease),box-shadow var(--ui-fast) var(--ui-ease)}
+@media(hover:hover) and (pointer:fine){body[data-design=premium] .current-row:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(0,0,0,.18)}}
+body[data-design=premium] .current-row .current-rank{font-weight:min(700,calc(var(--rank-weight) + var(--weight-shift)))!important}
+.afri-spark{color:var(--af-accent);vertical-align:middle}
+html[data-theme=light] .afri-spark{color:#536600}
+.afri-spark-line{display:flex;align-items:center;gap:8px;margin-top:6px}.afri-spark-line small{font-size:11px;color:var(--af-muted)}
+.afri-preview{position:absolute;z-index:80;width:240px;display:grid;gap:6px;padding:12px;border:1px solid var(--af-border);border-radius:10px;background:var(--af-raised,var(--af-surface));color:var(--af-text);font-size:12px;box-shadow:0 14px 34px rgba(0,0,0,.35);opacity:0;transform:translateY(4px);pointer-events:none;transition:opacity var(--ui-fast),transform var(--ui-fast) var(--ui-ease)}
+.afri-preview.is-on{opacity:1;transform:none}.afri-preview b{font-weight:600}.afri-preview small{color:var(--af-muted)}
+.afri-preview-spark{display:flex;align-items:center;gap:8px}.afri-preview-flag{color:var(--af-muted)}
+
+/* Colour-reactive type: hero headline and top-3 rank numbers. Solid colour first, gradient where supported. */
+#orbit-title,.index-heading h1,.hero-photo-rank,.current-row:is([data-rank="1"],[data-rank="2"],[data-rank="3"]) .current-rank{color:var(--grad-a)}
+#orbit-title{color:var(--af-text)}
+@supports ((-webkit-background-clip:text) or (background-clip:text)){
+ /* The gradient properties are !important so no theme rule can remove the gradient while the text is
+    transparent (that hid the top-3 ranks in the light theme). `color` stays solid as a fallback. */
+ html:not(.lite) :is(#orbit-title,.index-heading h1,.hero-photo-rank,.current-row:is([data-rank="1"],[data-rank="2"],[data-rank="3"]) .current-rank){background-image:linear-gradient(100deg,var(--grad-a) 0%,var(--grad-b) 45%,var(--grad-a) 90%)!important;background-size:220% 100%!important;background-repeat:no-repeat!important;-webkit-background-clip:text!important;background-clip:text!important;-webkit-text-fill-color:transparent;animation:type-flow 7s linear infinite}
+ html:not(.lite) #orbit-title{background-image:linear-gradient(100deg,var(--af-text) 0%,var(--af-text) 38%,var(--grad-a) 55%,var(--af-text) 72%,var(--af-text) 100%)!important}
+}
+@keyframes type-flow{to{background-position:-220% 0}}
+
+/* Variable weight: headings gain weight on hover. */
+main :is(h2,.ranking-page-head h1){transition:font-weight var(--ui-fast) var(--ui-ease)}
+@media(hover:hover){main h2:hover{font-weight:700}}
+
+/* Top 3: slow foil shine. */
+:is(.hero-artist-1,.hero-artist-2,.hero-artist-3),.current-row:is([data-rank="1"],[data-rank="2"],[data-rank="3"]){position:relative;overflow:hidden}
+:is(.hero-artist-1,.hero-artist-2,.hero-artist-3)::after,.current-row:is([data-rank="1"],[data-rank="2"],[data-rank="3"])::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(115deg,transparent 35%,rgba(255,255,255,.14) 48%,rgba(217,242,74,.12) 52%,transparent 65%);background-size:250% 100%;mix-blend-mode:screen;animation:foil 6s ease-in-out infinite}
+@keyframes foil{0%,55%{background-position:150% 0}100%{background-position:-100% 0}}
+
+/* Compare: bars sit centred and grow outward; each row's winner glows lime. */
+.compare-bar{display:flex;justify-content:center}.compare-bar>span{margin-inline:auto}
+.compare-stat.is-winner strong{color:var(--af-accent,#d9f24a);text-shadow:0 0 14px rgba(217,242,74,.45)}
+.compare-stat.is-winner .compare-bar>span{background:var(--af-accent,#d9f24a)!important;box-shadow:0 0 14px rgba(217,242,74,.5)}
+html[data-theme=light] .compare-stat.is-winner strong{color:#536600;text-shadow:none}
+
+/* Per-artist accent (from the photo; AA-checked per theme). */
+.has-artist-accent{--artist-accent:var(--artist-accent-dark)}
+html[data-theme=light] .has-artist-accent{--artist-accent:var(--artist-accent-light)}
+.has-artist-accent :is(h1,.artist-dialog-copy>h2),.has-artist-accent .score-breakdown-v2>span:last-child strong,.has-artist-accent .afri-spark{color:var(--artist-accent)}
+.has-artist-accent .afri-spark{color:var(--artist-accent)}
+.artist-spark{display:flex;align-items:center;gap:10px;margin:4px 0 12px}.artist-spark small{font-size:12px;color:var(--af-muted)}
+
+/* Blur-up placeholders. */
+img.is-blurring{filter:blur(8px);transition:filter 300ms var(--ui-ease)}
+img[data-blur]{transition:filter 300ms var(--ui-ease)}
+
+/* Toasts and confetti. */
+.afri-toasts{position:fixed;z-index:200;left:50%;bottom:calc(104px + env(safe-area-inset-bottom));transform:translateX(-50%);display:grid;gap:8px;pointer-events:none;width:min(92vw,420px)}
+@media(min-width:768px){.afri-toasts{bottom:28px}}
+.afri-toast{margin:0;padding:12px 16px;border-radius:10px;background:var(--af-text);color:var(--af-bg);font:500 14px var(--af-font-body);box-shadow:0 10px 30px rgba(0,0,0,.3);animation:toast-in var(--ui-fast) var(--ui-ease)}
+.afri-toast.is-leaving{opacity:0;transform:translateY(6px);transition:all 200ms}
+@keyframes toast-in{from{opacity:0;transform:translateY(8px)}}
+.afri-confetti{position:fixed;z-index:210;width:7px;height:10px;border-radius:2px;pointer-events:none;animation:confetti 860ms cubic-bezier(.2,.7,.3,1) forwards}
+@keyframes confetti{to{transform:translate(var(--dx),calc(var(--dy) + 140px)) rotate(var(--r));opacity:0}}
+
+/* Reduced motion and Lite mode: no decorative motion. */
+@media(prefers-reduced-motion:reduce){
+ @view-transition{navigation:none}
+ *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+}
+html.lite :is(#orbit-title,.index-heading h1,.hero-photo-rank,.current-rank),html.lite *::after{animation:none!important}
+html.lite .afri-confetti{display:none}
+/* Music Receipt: line-by-line print, tear-off edge, drag reorder, sound toggle. */
+.receipt-tear{-webkit-mask:linear-gradient(#000 0 0) top/100% calc(100% - 9px) no-repeat,conic-gradient(from -45deg at 50% 100%,#0000,#000 1deg 89deg,#0000 90deg) bottom/18px 9px repeat-x;mask:linear-gradient(#000 0 0) top/100% calc(100% - 9px) no-repeat,conic-gradient(from -45deg at 50% 100%,#0000,#000 1deg 89deg,#0000 90deg) bottom/18px 9px repeat-x}
+.receipt-tear.is-printing{animation:receipt-print 1.2s steps(var(--print-steps,18),end) 1}
+@keyframes receipt-print{from{clip-path:inset(0 0 100% 0)}to{clip-path:inset(0 0 0 0)}}
+.receipt-sound{display:inline-flex;align-items:center;gap:8px;min-height:44px;font-size:13px;color:var(--af-muted);cursor:pointer}
+.receipt-sound input{width:20px;height:20px;accent-color:var(--af-accent)}
+.selected-artists .artist-token{touch-action:none;cursor:grab}
+.selected-artists .artist-token.is-dragging{cursor:grabbing;outline:2px solid var(--af-accent);outline-offset:2px}
+.selected-artists .artist-token:focus-visible{outline:2px solid var(--af-accent);outline-offset:2px}
+/* Sponsor slots (Phase 8): clearly labelled, visually separate from editorial content. */
+.sponsor-label{display:inline-block;margin:0;font:600 11px/1.3 var(--af-font-body);letter-spacing:.08em;text-transform:uppercase;color:var(--af-muted)}
+.sponsor-card{display:grid;gap:10px;align-content:start;height:100%;padding:16px;border:1px dashed var(--af-border);border-radius:12px;background:var(--af-surface)}
+.sponsor-card h2{margin:0;font-size:18px}.sponsor-card p{margin:0}
+.sponsor-cta{display:inline-flex;align-items:center;min-height:44px;padding:0 14px;border:1px solid var(--af-border);border-radius:8px;color:var(--af-text);text-decoration:none;width:max-content}
+.sponsor-disclosure{font-size:11px;color:var(--af-muted)}
+.sponsor-slot-board-presented-by{margin:0;font-size:13px;color:var(--af-muted)}.sponsor-slot-board-presented-by a{color:var(--af-text)}
+.sponsor-slot-newsletter-header{display:grid;gap:8px;padding:14px;border:1px dashed var(--af-border);border-radius:12px;margin:12px 0}
+.sponsor-page .sponsor-facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin:0}.sponsor-facts dt{font-size:12px;color:var(--af-muted)}.sponsor-facts dd{margin:4px 0 0;font:600 18px var(--af-font-display)}
+.sponsor-slots-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}.sponsor-slots-grid article{padding:14px;border:1px solid var(--af-border);border-radius:10px}.sponsor-slots-grid h3{margin:0 0 6px;font-size:16px}.sponsor-slots-grid p{margin:4px 0;font-size:13px}
+.sponsor-form{display:grid;gap:12px;max-width:560px}.sponsor-form label{display:grid;gap:6px;font-size:13px;color:var(--af-muted)}
+.sponsor-form input:not([type=checkbox]),.sponsor-form textarea{min-height:44px;padding:10px 12px;border:1px solid var(--af-border);border-radius:8px;background:var(--af-control-bg,var(--af-bg));color:var(--af-text);font:400 15px var(--af-font-body);width:100%;box-sizing:border-box}
+.sponsor-form fieldset{border:0;padding:0;margin:0;display:grid;gap:6px}.sponsor-form legend{font-size:13px;color:var(--af-muted);margin-bottom:4px}
+.sponsor-form .sponsor-check{display:flex;gap:10px;align-items:flex-start;color:var(--af-text)}.sponsor-check input{width:22px;height:22px;accent-color:var(--af-accent)}
+body[data-design=premium] .sponsor-form button{min-height:44px;padding:0 18px;border:1px solid var(--af-accent);border-radius:8px;background:var(--af-accent);color:var(--af-bg);font-weight:600;cursor:pointer;width:max-content}
+.sponsor-hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+.watch-card>.sponsor-card{border:0;padding:0;background:none}
+.trust-footer>p>a,.trust-footer .publication-source-link a,.onboard-footer-link a{display:inline-flex;align-items:center;min-height:44px}
+/* All-Time badges: keep the intended black text on lime (a global rule overrode it). */
+body[data-design=premium] .bg-\[\#d4ff00\].text-black{color:#000!important}
+/* Lite mode (Phase 10): system fonts, no decorative motion, no heavy effects. */
+html.lite *,html.lite *::before,html.lite *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+html.lite,html.lite *,html.lite *::before,html.lite *::after{font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif!important}
+html.lite :is(.orbit-light,.afri-preview,.afri-confetti){display:none!important}
+html.lite :is(.hero-artist-1,.hero-artist-2,.hero-artist-3,.current-row)::after{content:none!important}
+html.lite :is(#orbit-title,.index-heading h1,.hero-photo-rank,.current-rank){background:none!important;-webkit-text-fill-color:currentColor!important}
+html.lite .app-topbar{backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+.lite-toggle{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:0 0 8px;font-size:12px;color:var(--af-muted)}
+body[data-design=premium] .lite-toggle button{min-height:44px;padding:0 14px;border:1px solid var(--af-border);border-radius:999px;background:none;color:var(--af-text);cursor:pointer;font-size:13px}
+.lite-toggle button[aria-pressed=true]{border-color:var(--af-accent)}
+.lite-suggest{position:fixed;z-index:150;left:12px;right:12px;bottom:calc(100px + env(safe-area-inset-bottom));display:flex;flex-wrap:wrap;gap:8px;align-items:center;padding:12px;border:1px solid var(--af-border);border-radius:12px;background:var(--af-raised,var(--af-surface));color:var(--af-text);box-shadow:0 12px 30px rgba(0,0,0,.35)}
+@media(min-width:768px){.lite-suggest{left:auto;right:24px;bottom:24px;max-width:420px}}
+.lite-suggest p{margin:0;flex:1 1 100%;font-size:14px}
+body[data-design=premium] .lite-suggest button{min-height:44px;padding:0 14px;border:1px solid var(--af-border);border-radius:8px;background:none;color:var(--af-text);cursor:pointer}
+body[data-design=premium] .lite-suggest button[data-lite-set]{background:var(--af-accent);border-color:var(--af-accent);color:var(--af-bg);font-weight:600}
+/* Lite mode fonts: point every font variable at system fonts so no web font is ever requested. */
+html.lite,html.lite body,html.lite body[data-design=premium],html.lite :root{--af-font-body:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif!important;--af-font-display:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif!important;--index-display:"Arial Narrow",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif!important;--heading-font:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif!important}
+html.lite body[data-design=premium] footer .edition-footer-base :is(p,a){font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif!important}
+/* Phase 10: below-the-fold homepage sections render only when scrolled near (less layout on first load). */
+body[data-design=premium] main>:is(.receipt-teaser,.upcoming-preview,.artist-desk,.home-route-links,.publication-watch,.afri-signup){content-visibility:auto;contain-intrinsic-size:auto 900px}
+/* Data health (admin). */
+.health-badge{display:inline-block;padding:2px 8px;border-radius:999px;font-size:11px;font-weight:600;text-transform:uppercase;border:1px solid var(--af-border)}
+.health-ok{color:var(--af-accent)}.health-warn{color:#e6c35c}.health-critical,.health-missing{color:#f68a94}.health-info{color:var(--af-muted)}
+html[data-theme=light] .health-ok{color:#536600}html[data-theme=light] .health-warn{color:#7a5a00}html[data-theme=light] :is(.health-critical,.health-missing){color:#b62441}
+.health-list{margin:0;padding-left:20px;display:grid;gap:10px;font-size:14px}.health-list small{color:var(--af-muted)}

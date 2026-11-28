@@ -1,0 +1,45 @@
+/* /stats dashboard. Mobile first; tap targets at least 44px; tokens from the premium theme. */
+.stats-page{display:grid;gap:20px}
+.stats-app{display:grid;gap:18px}
+.stats-app button,.stats-app input[type=submit]{min-height:44px;padding:0 16px;border:1px solid var(--af-border);border-radius:8px;background:var(--af-control-bg,var(--af-surface));color:var(--af-text);font:500 14px var(--af-font-body);cursor:pointer}
+.stats-app button:active{transform:scale(.97)}
+.stats-app button[aria-pressed=true]{border-color:var(--af-accent);box-shadow:inset 0 -2px 0 var(--af-accent)}
+.stats-app input:not([type=checkbox]):not([type=file]){min-height:44px;padding:0 12px;border:1px solid var(--af-border);border-radius:8px;background:var(--af-control-bg,var(--af-bg));color:var(--af-text);font:400 15px var(--af-font-body);width:100%;box-sizing:border-box}
+.stats-app label{display:grid;gap:6px;font-size:13px;color:var(--af-muted)}
+.stats-app .stats-check{display:flex;gap:10px;align-items:flex-start;color:var(--af-text);line-height:1.5}
+.stats-check input{width:22px;height:22px;flex:none;margin-top:1px;accent-color:var(--af-accent)}
+.stats-consent{padding:14px;border:1px solid var(--af-border);border-radius:10px;background:var(--af-surface)}
+.stats-providers{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin-top:12px}
+.stats-provider,.stats-panel{display:grid;gap:10px;align-content:start;padding:16px;border:1px solid var(--af-border);border-radius:10px;background:var(--af-surface);min-width:0}
+.stats-provider h3,.stats-panel h2,.stats-panel h3{margin:0;font-size:17px}
+.stats-provider form,.stats-waitlist{display:grid;gap:10px}
+.stats-badge{display:inline-block;margin-left:6px;padding:2px 7px;border:1px solid var(--af-border);border-radius:999px;font-size:10px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--af-muted);vertical-align:middle}
+.stats-muted{color:var(--af-muted);font-size:13px;margin:0}
+.stats-warning{padding:10px 12px;border-left:3px solid #f68a94;background:var(--af-bg);font-size:13px;margin:0}
+#stats-status{min-height:20px;margin:0;font-size:14px}#stats-status[data-kind=error]{color:#f68a94}
+html[data-theme=light] #stats-status[data-kind=error]{color:#b62441}
+.stats-ranges{display:flex;flex-wrap:wrap;gap:8px}
+.stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+.stats-wide{grid-column:1/-1}
+.stats-list{margin:0;padding-left:22px;display:grid;gap:8px}
+.stats-list li{font-size:14px;line-height:1.35}.stats-list small{display:block;color:var(--af-muted);font-size:12px}
+.stats-list a{color:var(--af-text)}
+.stats-big{font:600 22px/1.2 var(--af-font-display);margin:0}
+.stats-bars{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.stats-bars li{display:grid;grid-template-columns:minmax(90px,38%) 1fr 40px;gap:8px;align-items:center;font-size:13px}
+.stats-bars i{display:block;height:8px;border-radius:4px;background:linear-gradient(90deg,var(--af-accent) var(--w),var(--af-border) var(--w))}
+.stats-bars b{font-weight:500;text-align:right;font-variant-numeric:tabular-nums}
+.stats-clock figcaption{font-size:13px;color:var(--af-muted);margin-bottom:8px}
+.stats-clock div{display:grid;grid-template-columns:repeat(24,1fr);gap:2px;align-items:end;height:90px}
+.stats-clock span{display:grid;grid-template-rows:1fr auto;height:100%}
+.stats-clock i{align-self:end;height:var(--h);min-height:2px;background:var(--af-accent);border-radius:2px 2px 0 0}
+.stats-clock small{font-size:9px;color:var(--af-muted);height:12px}
+.stats-wrapped{padding:16px;border-radius:10px;border:1px solid var(--af-accent)}
+.stats-inline{display:grid;gap:10px;margin-bottom:12px}
+.stats-file input{min-height:44px}
+.stats-danger{border-color:#f68a94!important}
+.stats-skeleton{display:grid;gap:12px}.stats-skeleton span{height:84px;border-radius:10px;background:var(--af-surface);animation:stats-pulse 1.2s ease-in-out infinite alternate}
+@keyframes stats-pulse{to{opacity:.55}}
+@media(prefers-reduced-motion:reduce){.stats-skeleton span{animation:none}.stats-app button:active{transform:none}}
+.stats-entry-link{margin:6px 0 0;font-size:14px}
+body[data-design=premium] .stats-app button[aria-pressed=true]{border-color:var(--af-accent)!important;box-shadow:inset 0 -2px 0 var(--af-accent)!important}

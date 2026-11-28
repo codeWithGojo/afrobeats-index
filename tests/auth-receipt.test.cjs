@@ -147,6 +147,8 @@ test('header and saved-receipt links reflect the current session and later sign-
   const links = [makeLink({}), makeLink({accountLabel: 'My saved receipts', signedOutLabel: 'Sign in / My saved receipts'})];
   f.context.document.querySelectorAll = () => links;
   f.window.AfriAccount = {session: async () => ({user: {id: 'fixture-user'}})};
+  // A signed-in browser has the Supabase session stored under afri-auth (account-nav skips the bundle otherwise).
+  f.context.localStorage = {getItem: key => key === 'afri-auth' ? '{"access_token":"fixture"}' : null};
   const source = read('account-nav.js').replace("await import('/assets/account.js');", '');
   await vm.runInContext(source, f.context);
   assert.equal(links[0].textContent, 'My board');

@@ -72,3 +72,21 @@ body[data-design=premium] .legal-related{margin-top:48px;padding-top:18px;border
 @media(prefers-reduced-motion:reduce){
  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
 }
+/* Chart movement: Rising and Falling columns (v2 movers strip). */
+body[data-design=premium] .movers-items{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:22px 28px;align-items:start}
+.movers-items .movers-group{display:grid;gap:14px;align-content:start;min-width:0}
+.movers-items .movers-group-title{margin:0;font:700 11px/1.2 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--af-muted)}
+.movers-items .movers-group>a{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 16px;align-items:start;min-height:44px;min-width:0;text-decoration:none;color:inherit}
+.movers-items .movers-group>a>.mover-avatar{display:none}
+.movers-items .movers-group .mover-detail{display:grid;gap:4px;min-width:0}
+.movers-items .movers-group .mover-detail :is(strong,small){white-space:normal;overflow:visible}
+.movers-items .movers-group .mover-reason{font-size:11px;line-height:1.55;color:var(--af-muted);white-space:normal}
+.movers-items .movers-group>a>.movement{min-width:48px;justify-content:center}
+@media(max-width:767px){body[data-design=premium] .movers-items{grid-template-columns:1fr!important;gap:18px}}
+/* Artist profile: Current v2 score breakdown. */
+.score-breakdown.score-breakdown-v2{grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
+.score-breakdown-v2>span{display:flex;flex-direction:column;gap:6px;min-width:0}
+.score-breakdown-v2 em{font-style:normal;font-size:11px;line-height:1.45;color:var(--af-muted,#6b7280);overflow-wrap:anywhere}
+.activity-signals{margin:4px 0 12px}.activity-signals summary{min-height:44px;display:flex;align-items:center;cursor:pointer}
+.activity-signals ul{margin:0;padding-left:18px;display:grid;gap:6px;font-size:13px}
+.score-breakdown-v2>span{padding:12px 0;border-top:1px solid var(--af-border,rgba(127,127,127,.25))}

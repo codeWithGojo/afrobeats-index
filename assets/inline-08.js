@@ -73,7 +73,7 @@
     root.innerHTML = `<p><a href="/boards">Naija, Ghana, South Africa & East Africa boards ↗</a></p><div class="region-tabs" role="tablist">${available.map((region, index) => `<button type="button" class="region-tab${index === 0 ? " is-active" : ""}" data-region="${escapeHtml(region)}">${escapeHtml(region)}</button>`).join("")}</div><div class="regional-list"></div>`;
     const list = root.querySelector(".regional-list");
     const paint = (region) => {
-      const artists = state.artists.filter((artist) => regionFor(artist.country) === region).sort((a, b) => b.score - a.score);
+      const artists = state.artists.filter((artist) => regionFor(artist.country) === region).sort((a, b) => a.rank - b.rank);
       list.innerHTML = artists.map((artist, index) => `<button class="regional-row" type="button" data-artist-slug="${escapeHtml(artist.slug)}"><span class="regional-rank">${String(index + 1).padStart(2, "0")}</span><span class="regional-person"><img src="${escapeHtml(artist.imageFallback || artist.image || "")}" data-fallback-src="${escapeHtml(artist.imageFallback || "")}" alt="Portrait of ${escapeHtml(artist.name)}" loading="lazy" decoding="async"><span><strong>${escapeHtml(artist.name)}</strong><small>${escapeHtml(artist.country)} · global #${artist.rank}</small></span></span><span class="regional-metrics"><strong>${compact(artist.dailySpotifyStreams)}</strong><small>daily Spotify streams</small></span><span class="regional-score">${Number(artist.score).toFixed(1)}</span></button>`).join("") || `<p class="tour-empty">No Current 50 artists are assigned to this region yet.</p>`;
     };
     paint(available[0]);
@@ -139,7 +139,9 @@
   }
 
   function renderSpotlight(state) {
-    const item = state.spotlight;
+    // Retired in v2 Phase 8: sponsor content may not appear inside rankings. Sponsors use the three fixed slots.
+    return;
+    const item = state.spotlight; // eslint-disable-line no-unreachable
     const section = document.getElementById("current");
     if (!item?.active || !section || section.querySelector(".sponsored-spotlight")) return;
     const now = Date.now();
@@ -327,12 +329,25 @@
       <div class="performance-item"><div><strong><a class="live-source-link" href="${escapeHtml(item.sourceUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(item.name)} ↗</a></strong><small>${escapeHtml(item.venueOrFestival)} · ${escapeHtml(item.year)}</small></div><div class="performance-metric">${escapeHtml(item.metric)}</div></div>`).join("")}</div>` : `<p class="tour-empty">No performance has been added without a defensible attendance, view-count or cultural-significance source. This record remains editable from the maintenance desk.</p>`}</section>`;
   }
 
+  // Current score breakdown. v2 shows the four inputs, their dates and any weekly cap; v1 keeps the old two-part view.
+  function scoreBreakdownV2(artist){
+    const b=artist.scoreBreakdown||{},n=(v,d=1)=>Number.isFinite(Number(v))?Number(v).toFixed(d):'n/a';
+    if(b.version!==2)return `<div class="score-breakdown"><span><small>Published editorial contribution</small><strong>${n(b.editorialContribution,2)}</strong></span><span><small>Audio-stream index × 17%</small><strong>${n((b.streamsIndex||0)*.17,2)}</strong></span><span><small>Current score</small><strong>${n(artist.score,2)}</strong></span></div>`;
+    const w=b.weights,rs=b.recentStreams||{},m=b.momentum||{},ed=b.editorial||{},act=b.activity||{};
+    const momentumNote=m.available?`${m.ratio>=1?'+':'−'}${Math.abs((m.ratio-1)*100).toFixed(0)}% this week vs baseline ${escapeHtml(m.baselineFrom)} to ${escapeHtml(m.baselineTo)}`:'No baseline yet, scored neutral (50)';
+    const editorialNote=`Reviewed ${escapeHtml(ed.reviewedAt)}${ed.factor<1?` · weight now ${Math.round(ed.factor*100)}% (due for review)`:' · full weight'}`;
+    const recentNote=`${compact(rs.dailyAverage)} a day, ${rs.readings} reading${rs.readings===1?'':'s'} to ${escapeHtml(rs.to||'n/a')}${rs.staleDays>7?` · source ${rs.staleDays} days old`:''}`;
+    const signals=(act.signals||[]).map(x=>`<li>${escapeHtml(x.label)} · ${escapeHtml(x.date)} · +${x.points}${x.sourceUrl?` <a href="${escapeHtml(x.sourceUrl)}" target="_blank" rel="noopener noreferrer">Source ↗</a>`:''}</li>`).join('')||'<li>No dated release, chart entry, award or live date in the window.</li>';
+    const row=(label,weight,score,points,note)=>`<span><small>${label} · ${weight}%</small><strong>${n(points)}</strong><em>${n(score,0)}/100 · ${note}</em></span>`;
+    return `<div class="score-breakdown score-breakdown-v2">${row('Recent streams',w.recentStreams,b.components.recentStreams,b.points.recentStreams,recentNote)}${row('Momentum',w.momentum,b.components.momentum,b.points.momentum,momentumNote)}${row('Editorial',w.editorial,b.components.editorial,b.points.editorial,editorialNote)}${row('Activity',w.activity,b.components.activity,b.points.activity,(act.signals||[]).length+' signal'+((act.signals||[]).length===1?'':'s'))}<span><small>Current score</small><strong>${n(artist.score,2)}</strong><em>${b.smoothedEditions>1?`Average of ${b.smoothedEditions} weekly editions`:'First v2 edition, no average yet'}${b.capped?` · ${b.maxMovePlaces}-place weekly cap applied, score alone points to #${b.targetRank}`:''}</em></span></div><details class="activity-signals"><summary>Activity signals</summary><ul>${signals}</ul></details><p class="platform-note"><a href="/method#current-formula">How the Current score works →</a></p>`;
+  }
+
   function platformStreamSection(artist) {
     const streaming = artist.streaming || {};
     const observations = streaming.observations || {};
     const sources = window.AfriStreaming;
     const coverage = (artist.scoreBreakdown?.streamCoverage || []).map(p => sources?.labels[p] || p).join(' + ');
-    return `<section class="streaming-evidence"><div class="live-section-head"><div><p>One artist · connected platforms</p><h3>Across the platforms</h3></div><p>Audio streams · 17% of Current</p></div><div class="platform-stream-grid">${(sources?.platforms || ['spotify','appleMusic','audiomack','boomplay','youtube']).map(p => { const o = observations[p]; return `<article><small>${escapeHtml(sources?.labels[p] || p)} ${p === 'youtube' ? 'views' : 'streams'}</small><strong>${o ? compact(o.value) : 'Unavailable'}</strong><span>${o ? 'Tracked catalogue · lifetime' : 'No sourced count connected'}</span>${o ? `<em>Publisher ${escapeHtml(o.sourceDate || 'date unavailable')} · checked ${escapeHtml(dateLabel(o.observedAt))}</em><a href="${escapeHtml(o.sourceUrl)}" target="_blank" rel="noopener noreferrer">Source ↗</a>` : ''}</article>`; }).join('')}</div><p class="platform-note">${escapeHtml(coverage || 'No comparable coverage')} supplies the ranking input for every artist. Other sourced audio counts can join the tracked total; video views stay separate. Unavailable counts never become zero.</p><div class="score-breakdown"><span><small>Published editorial contribution</small><strong>${Number(artist.scoreBreakdown?.editorialContribution || 0).toFixed(2)}</strong></span><span><small>Audio-stream index × 17%</small><strong>${Number((artist.scoreBreakdown?.streamsIndex || 0) * .17).toFixed(2)}</strong></span><span><small>Current score</small><strong>${Number(artist.score).toFixed(2)}</strong></span></div></section>`;
+    return `<section class="streaming-evidence"><div class="live-section-head"><div><p>One artist · connected platforms</p><h3>Across the platforms</h3></div><p>${artist.scoreBreakdown?.version===2?"Recent streams · "+artist.scoreBreakdown.weights.recentStreams+"% of Current":"Audio streams · 17% of Current"}</p></div><div class="platform-stream-grid">${(sources?.platforms || ['spotify','appleMusic','audiomack','boomplay','youtube']).map(p => { const o = observations[p]; return `<article><small>${escapeHtml(sources?.labels[p] || p)} ${p === 'youtube' ? 'views' : 'streams'}</small><strong>${o ? compact(o.value) : 'Unavailable'}</strong><span>${o ? 'Tracked catalogue · lifetime' : 'No sourced count connected'}</span>${o ? `<em>Publisher ${escapeHtml(o.sourceDate || 'date unavailable')} · checked ${escapeHtml(dateLabel(o.observedAt))}</em><a href="${escapeHtml(o.sourceUrl)}" target="_blank" rel="noopener noreferrer">Source ↗</a>` : ''}</article>`; }).join('')}</div><p class="platform-note">${escapeHtml(coverage || 'No comparable coverage')} supplies the ranking input for every artist. Other sourced audio counts can join the tracked total; video views stay separate. Unavailable counts never become zero.</p>${scoreBreakdownV2(artist)}</section>`;
   }
 
   function albumLedger(artist) {

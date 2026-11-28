@@ -8,6 +8,8 @@ const archive=JSON.parse(fs.readFileSync(root+'/data/current-editions.json','utf
 archive[published.asOf.slice(0,10)]=Object.fromEntries(published.artists.map(a=>[a.slug,[a.rank,a.score]]));
 fs.writeFileSync(root+'/data/current-editions.json',JSON.stringify(archive)+'\n');
 for(const script of ['scripts/research/refresh-turntable.py','scripts/research/audit-2026-releases.py','scripts/research/refresh-release-identities.py','scripts/research/compile-2026-releases.py','scripts/research/refresh-turntable-categories.py','scripts/research/artist-bios.py'])execFileSync(python,[script],{cwd:root,stdio:'inherit'});
+// Current 100 extension candidates. A failed collection keeps last week's candidates.
+try{execFileSync(python,['-I','scripts/research/collect-extension.py'],{cwd:root,stdio:'inherit'});}catch(error){console.warn('Extension candidates retained last-good data:',error.message);}
 const checked=JSON.parse(fs.readFileSync(root+'/data/releases-2026-sources.json','utf8')).checked_at;
 const dateKey=value=>new Intl.DateTimeFormat('en-CA',{timeZone:'Africa/Lagos',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date(value));
 if(dateKey(published.asOf)!==dateKey(checked))fs.writeFileSync(root+'/data/previous-ranking.json',JSON.stringify({asOf:published.asOf,artists:published.artists.map(({slug,name,rank,score,scoreBreakdown})=>({slug,name,rank,score,scoreBreakdown}))},null,2)+'\n');

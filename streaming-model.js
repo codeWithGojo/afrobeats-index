@@ -10,7 +10,38 @@
   const video=platforms.filter(p=>valid(observations[p])&&observations[p].metric==='video_views');
   return {audioStreams:audio.length?audio.reduce((n,p)=>n+observations[p].value,0):null,videoViews:video.length?video.reduce((n,p)=>n+observations[p].value,0):null,coverage:audio,videoCoverage:video,available:audio.length,possible:4,complete:audio.length===4,label:'Tracked audio streams',observations};
  }
- function apply(state,baseline,extras={artists:{},recordings:{},albums:{}},previous=null){
+ const trendModel=()=>typeof module==='object'&&module.exports?require('./trend-model.js'):(typeof window==='object'?window:globalThis).AfriTrend;
+ const round=v=>Number(v.toFixed(6));
+ // v2: recent streams, momentum, decaying editorial and activity. Only used when trend inputs are supplied.
+ function applyTrend(state,baseline,trend,previous,editorialMaximum){
+  const T=trendModel();if(!T)throw Error('trend-model.js must load before streaming-model.js');
+  const asOf=trend.asOf||state.meta?.lastRefreshAttemptAt;
+  const previousArtists=new Map((previous?.artists||[]).map(a=>[a.slug,a]));
+  for(const a of state.artists){const b=baseline[a.slug];if(!b)throw Error('Missing published baseline: '+a.slug);const prior=previousArtists.get(a.slug);a.previousRank=previous?(prior?.rank??null):b.rank;}
+  const editorial=Object.fromEntries(state.artists.map(a=>{const b=baseline[a.slug],r=trend.editorial?.[a.slug]||{};return [a.slug,{score:Number.isFinite(r.score)?r.score:100*b.editorialContribution/editorialMaximum,reviewedAt:r.reviewedAt||trend.editorialReviewedAt||'2026-10-05'}];}));
+  const result=T.score(state.artists,{history:trend.history,editorial,activity:trend.activity,scoreHistory:trend.scoreHistory,config:trend.config},asOf);
+  const w=result.config.weights,total=w.recentStreams+w.momentum+w.editorial+w.activity;
+  for(const r of result.rows){
+   const a=r.a,prior=previousArtists.get(a.slug),b=baseline[a.slug];
+   const points=Object.fromEntries(Object.entries(r.parts).map(([k,v])=>[k,v*w[k]/total]));
+   a.rank=r.rank;a.score=round(r.smoothed);
+   a.scoreBreakdown={version:2,method:'Weighted mean of recent streams (log scale), momentum, editorial (with review-date decay) and activity, averaged over recent editions, with a weekly movement cap',
+    weights:{...w},components:r.parts,points,rawScore:round(r.raw),smoothedEditions:r.smoothedEditions,targetRank:r.targetRank,capped:r.capped,maxMovePlaces:result.config.maxMovePlaces,
+    recentStreams:{dailyAverage:r.pace.value,readings:r.pace.readings,from:r.pace.from,to:r.pace.to,windowDays:result.config.recentWindowDays,staleDays:r.at.staleDays,maximumDaily:result.maxPace,logFloorDaily:result.config.logFloorDaily},
+    momentum:{ratio:r.mom.ratio,available:r.mom.available,basis:r.mom.basis,thisWeek:r.mom.thisWeek,baseline:r.mom.baseline??null,baselineFrom:r.mom.baselineFrom,baselineTo:r.mom.baselineTo},
+    editorial:{score:r.ed.score,effective:r.parts.editorial,reviewedAt:r.ed.reviewedAt,ageDays:r.decay.ageDays==null?null:Math.round(r.decay.ageDays),factor:r.decay.factor,median:result.editorialMedian,rawEditorialContribution:b.editorialContribution,editorialMaximum},
+    activity:{score:r.act.score,signals:r.act.signals},
+    // Compatibility fields read by existing views and tests.
+    editorialContribution:points.editorial,editorialWeight:w.editorial,streamWeight:w.recentStreams,listenerWeight:0,streamsIndex:r.parts.recentStreams,streamCoverage:['spotify'],rawEditorialContribution:b.editorialContribution,editorialMaximum,baselineDate:'2026-10-05',previousScore:prior?.score??b.score};
+   const pb=prior?.scoreBreakdown;
+   a.movementBasis={date:previous?.asOf||'2026-10-05',previousScore:prior?.score??b.score,previousVersion:pb?.version||1,previousPoints:pb?.version===2?pb.points:null,previousStreamPoints:pb?.version===2?pb.points.recentStreams:(pb?.streamsIndex==null?null:pb.streamsIndex*.17),previousEditorialPoints:pb?.editorialContribution??null};
+  }
+  state.artists.sort((x,y)=>x.rank-y.rank);
+  state.meta.rankingMethod={version:2,weights:{...w},recentWindowDays:result.config.recentWindowDays,momentum:{weekDays:result.config.momentumWeekDays,baselineDays:result.config.momentumBaselineDays,maxBaselineAgeDays:result.config.momentumMaxBaselineAgeDays,capRatio:result.config.momentumCapRatio},logFloorDaily:result.config.logFloorDaily,editorialDecay:{fullDays:result.config.editorialFullDays,endDays:result.config.editorialDecayEndDays,floor:result.config.editorialFloor},smoothing:{days:result.config.smoothingDays,maxEditions:result.config.smoothingMaxEditions,priorEditions:result.smoothingEditions},maxMovePlaces:result.config.maxMovePlaces,rankingPlatforms:['spotify'],editorialWeight:w.editorial,streamWeight:w.recentStreams,listenerWeight:0,tieBreak:'Previous published rank, then artist slug',baselineDate:'2026-10-05',asOf};
+  state.meta.rankingUpdatedAt=state.meta.lastRefreshAttemptAt||state.meta.streamsUpdatedAt;
+  return state;
+ }
+ function apply(state,baseline,extras={artists:{},recordings:{},albums:{}},previous=null,trend=null){
   const previousArtists=new Map((previous?.artists||[]).map(a=>[a.slug,a]));
   const editorialMaximum=Math.max(...Object.values(baseline).map(b=>b.editorialContribution));
   if(!Number.isFinite(editorialMaximum)||editorialMaximum<=0)throw Error('Invalid editorial baseline');
@@ -23,6 +54,7 @@
   }
   // Use identical provider coverage for every candidate. Partial totals remain visible,
   // but cannot reward an artist just because their other-platform data was available.
+  if(trend)return applyTrend(state,baseline,trend,previous,editorialMaximum);
   const rankingPlatforms=platforms.filter(p=>p!=='youtube'&&state.artists.every(a=>valid(a.streaming.observations[p])&&a.streaming.observations[p].metric==='audio_streams'));
   const values=state.artists.map(a=>rankingPlatforms.length?rankingPlatforms.reduce((n,p)=>n+a.streaming.observations[p].value,0):null);
   const maximum=Math.max(0,...values.filter(Number.isFinite));
@@ -55,5 +87,5 @@
   }
   return [...records.values()];
  }
- return {apply,catalogue,summary,measurement,platforms,labels};
+ return {apply,applyTrend,catalogue,summary,measurement,platforms,labels};
 });

@@ -71,6 +71,27 @@ jobs:
         if: steps.plan.outputs.job != 'weekly'
         run: node ingest/run.cjs --job ${{ steps.plan.outputs.job }} ${{ steps.plan.outputs.flags }}
 
+      # Nightly readings (v2 Phase 11): one Kworb reading per artist, so momentum gets a real daily
+      # 4-week baseline. The official Current 50 is still published only by the Monday job.
+      - name: Nightly stream readings
+        if: steps.plan.outputs.job == 'daily'
+        run: python3 -I scripts/research/collect-daily-readings.py
+
+      - name: Test before publishing nightly readings
+        if: steps.plan.outputs.job == 'daily'
+        run: npm test
+
+      - name: Publish nightly readings
+        if: steps.plan.outputs.job == 'daily' && steps.plan.outputs.dry != 'true'
+        run: |
+          node scripts/build-health.cjs
+          git config user.name "afri-index-data-engine[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/stream-history.json data/refresh-runs.json data/data-health.json
+          if git diff --cached --quiet; then echo "No new readings."; exit 0; fi
+          git commit -m "Nightly readings $(date -u +%Y-%m-%d) (automated)"
+          git push
+
       - name: Refresh sources and build the edition
         if: steps.plan.outputs.job == 'weekly'
         run: npm run refresh:data

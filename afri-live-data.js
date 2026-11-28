@@ -157,7 +157,7 @@
     root.innerHTML = `<div class="region-tabs" role="tablist">${available.map((region, index) => `<button type="button" class="region-tab${index === 0 ? " is-active" : ""}" data-region="${escapeHtml(region)}">${escapeHtml(region)}</button>`).join("")}</div><div class="regional-list"></div>`;
     const list = root.querySelector(".regional-list");
     const paint = (region) => {
-      const artists = state.artists.filter((artist) => regionFor(artist.country) === region).sort((a, b) => b.score - a.score);
+      const artists = state.artists.filter((artist) => regionFor(artist.country) === region).sort((a, b) => a.rank - b.rank);
       list.innerHTML = artists.map((artist, index) => `<button class="regional-row" type="button" data-artist-slug="${escapeHtml(artist.slug)}"><span class="regional-rank">${String(index + 1).padStart(2, "0")}</span><span class="regional-person"><img src="${escapeHtml(artist.image)}" alt="" loading="lazy"><span><strong>${escapeHtml(artist.name)}</strong><small>${escapeHtml(artist.country)} · global #${artist.rank}</small></span></span><span class="regional-metrics"><strong>${compact(artist.monthlyListeners)}</strong><small>monthly listeners</small></span><span class="regional-score">${Number(artist.score).toFixed(1)}</span></button>`).join("") || `<p class="tour-empty">No Current 50 artists are assigned to this region yet.</p>`;
     };
     paint(available[0]);
@@ -222,7 +222,9 @@
   }
 
   function renderSpotlight(state) {
-    const item = state.spotlight;
+    // Retired in v2 Phase 8: sponsor content may not appear inside rankings. Sponsors use the three fixed slots.
+    return;
+    const item = state.spotlight; // eslint-disable-line no-unreachable
     const section = document.getElementById("current");
     if (!item?.active || !section || section.querySelector(".sponsored-spotlight")) return;
     const now = Date.now();

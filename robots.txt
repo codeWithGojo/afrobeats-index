@@ -1,4 +1,9 @@
 User-agent: *
 Allow: /
+Allow: /api/card
+Disallow: /api/
+Disallow: /account
+Disallow: /studio/api
+Disallow: /data-health
 
 Sitemap: https://afrobeats-index.vercel.app/sitemap.xml

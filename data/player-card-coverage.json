@@ -5,8 +5,56 @@
   "statsPolicy": "Total and daily Spotify streams, tracked songs and projects, stream index /99 and editorial contribution /83. Unpublished individual editorial factors are not inferred.",
   "artists": [
     {
+      "slug": "rema",
+      "photo": "artists/rema.jpg",
+      "photoAvailable": true,
+      "missing": []
+    },
+    {
+      "slug": "omah-lay",
+      "photo": "artists/omah-lay.jpg",
+      "photoAvailable": true,
+      "missing": []
+    },
+    {
       "slug": "wizkid",
       "photo": "artists/wizkid.jpg",
+      "photoAvailable": true,
+      "missing": []
+    },
+    {
+      "slug": "davido",
+      "photo": "davido.jpg",
+      "photoAvailable": true,
+      "missing": []
+    },
+    {
+      "slug": "asake",
+      "photo": "artists/asake.jpg",
+      "photoAvailable": true,
+      "missing": []
+    },
+    {
+      "slug": "bnxn",
+      "photo": "artists/bnxn.jpg",
+      "photoAvailable": true,
+      "missing": []
+    },
+    {
+      "slug": "moliy",
+      "photo": "artists/moliy.jpg",
+      "photoAvailable": true,
+      "missing": []
+    },
+    {
+      "slug": "fola",
+      "photo": "artists/fola.jpg",
+      "photoAvailable": true,
+      "missing": []
+    },
+    {
+      "slug": "seyi-vibez",
+      "photo": "artists/seyi-vibez.jpg",
       "photoAvailable": true,
       "missing": []
     },
@@ -17,8 +65,8 @@
       "missing": []
     },
     {
-      "slug": "rema",
-      "photo": "artists/rema.jpg",
+      "slug": "fireboy-dml",
+      "photo": "artists/fireboy-dml.jpg",
       "photoAvailable": true,
       "missing": []
     },
@@ -35,74 +83,8 @@
       "missing": []
     },
     {
-      "slug": "asake",
-      "photo": "artists/asake.jpg",
-      "photoAvailable": true,
-      "missing": []
-    },
-    {
       "slug": "ayra-starr",
       "photo": "artists/ayra-starr.jpg",
-      "photoAvailable": true,
-      "missing": []
-    },
-    {
-      "slug": "davido",
-      "photo": "davido.jpg",
-      "photoAvailable": true,
-      "missing": []
-    },
-    {
-      "slug": "omah-lay",
-      "photo": "artists/omah-lay.jpg",
-      "photoAvailable": true,
-      "missing": []
-    },
-    {
-      "slug": "ckay",
-      "photo": "artists/ckay.jpg",
-      "photoAvailable": true,
-      "missing": []
-    },
-    {
-      "slug": "fireboy-dml",
-      "photo": "artists/fireboy-dml.jpg",
-      "photoAvailable": true,
-      "missing": []
-    },
-    {
-      "slug": "victony",
-      "photo": "artists/victony.jpg",
-      "photoAvailable": true,
-      "missing": []
-    },
-    {
-      "slug": "moliy",
-      "photo": "artists/moliy.jpg",
-      "photoAvailable": true,
-      "missing": []
-    },
-    {
-      "slug": "bnxn",
-      "photo": "artists/bnxn.jpg",
-      "photoAvailable": true,
-      "missing": []
-    },
-    {
-      "slug": "seyi-vibez",
-      "photo": "artists/seyi-vibez.jpg",
-      "photoAvailable": true,
-      "missing": []
-    },
-    {
-      "slug": "fola",
-      "photo": "artists/fola.jpg",
-      "photoAvailable": true,
-      "missing": []
-    },
-    {
-      "slug": "ruger",
-      "photo": "artists/ruger.jpg",
       "photoAvailable": true,
       "missing": []
     },
@@ -113,14 +95,20 @@
       "missing": []
     },
     {
-      "slug": "kizz-daniel",
-      "photo": "artists/kizz-daniel.jpg",
+      "slug": "ruger",
+      "photo": "artists/ruger.jpg",
       "photoAvailable": true,
       "missing": []
     },
     {
-      "slug": "odeal",
-      "photo": "artists/odeal.jpg",
+      "slug": "victony",
+      "photo": "artists/victony.jpg",
+      "photoAvailable": true,
+      "missing": []
+    },
+    {
+      "slug": "ckay",
+      "photo": "artists/ckay.jpg",
       "photoAvailable": true,
       "missing": []
     },
@@ -131,8 +119,14 @@
       "missing": []
     },
     {
-      "slug": "odumodublvck",
-      "photo": "artists/odumodublvck.jpg",
+      "slug": "young-jonn",
+      "photo": "artists/young-jonn.jpg",
+      "photoAvailable": true,
+      "missing": []
+    },
+    {
+      "slug": "odeal",
+      "photo": "artists/odeal.jpg",
       "photoAvailable": true,
       "missing": []
     },
@@ -143,44 +137,20 @@
       "missing": []
     },
     {
+      "slug": "odumodublvck",
+      "photo": "artists/odumodublvck.jpg",
+      "photoAvailable": true,
+      "missing": []
+    },
+    {
+      "slug": "kizz-daniel",
+      "photo": "artists/kizz-daniel.jpg",
+      "photoAvailable": true,
+      "missing": []
+    },
+    {
       "slug": "sarz",
       "photo": "artists/sarz.jpg",
-      "photoAvailable": true,
-      "missing": []
-    },
-    {
-      "slug": "young-jonn",
-      "photo": "artists/young-jonn.jpg",
-      "photoAvailable": true,
-      "missing": []
-    },
-    {
-      "slug": "adekunle-gold",
-      "photo": "artists/adekunle-gold.jpg",
-      "photoAvailable": true,
-      "missing": []
-    },
-    {
-      "slug": "shallipopi",
-      "photo": "artists/shallipopi.jpg",
-      "photoAvailable": true,
-      "missing": []
-    },
-    {
-      "slug": "oxlade",
-      "photo": "artists/oxlade.jpg",
-      "photoAvailable": true,
-      "missing": []
-    },
-    {
-      "slug": "fave",
-      "photo": "artists/fave.jpg",
-      "photoAvailable": true,
-      "missing": []
-    },
-    {
-      "slug": "joeboy",
-      "photo": "artists/joeboy.jpg",
       "photoAvailable": true,
       "missing": []
     },
@@ -191,32 +161,14 @@
       "missing": []
     },
     {
-      "slug": "lojay",
-      "photo": "artists/lojay.jpg",
-      "photoAvailable": true,
-      "missing": []
-    },
-    {
       "slug": "jazzwrld",
       "photo": "artists/jazzwrld.jpg",
       "photoAvailable": true,
       "missing": []
     },
     {
-      "slug": "darkoo",
-      "photo": "artists/darkoo.jpg",
-      "photoAvailable": true,
-      "missing": []
-    },
-    {
-      "slug": "black-sherif",
-      "photo": "artists/black-sherif.jpg",
-      "photoAvailable": true,
-      "missing": []
-    },
-    {
-      "slug": "ciza",
-      "photo": "artists/ciza.jpg",
+      "slug": "oxlade",
+      "photo": "artists/oxlade.jpg",
       "photoAvailable": true,
       "missing": []
     },
@@ -227,8 +179,8 @@
       "missing": []
     },
     {
-      "slug": "king-promise",
-      "photo": "artists/king-promise.jpg",
+      "slug": "shallipopi",
+      "photo": "artists/shallipopi.jpg",
       "photoAvailable": true,
       "missing": []
     },
@@ -251,8 +203,68 @@
       "missing": []
     },
     {
+      "slug": "adekunle-gold",
+      "photo": "artists/adekunle-gold.jpg",
+      "photoAvailable": true,
+      "missing": []
+    },
+    {
+      "slug": "joeboy",
+      "photo": "artists/joeboy.jpg",
+      "photoAvailable": true,
+      "missing": []
+    },
+    {
+      "slug": "lojay",
+      "photo": "artists/lojay.jpg",
+      "photoAvailable": true,
+      "missing": []
+    },
+    {
+      "slug": "fave",
+      "photo": "artists/fave.jpg",
+      "photoAvailable": true,
+      "missing": []
+    },
+    {
+      "slug": "darkoo",
+      "photo": "artists/darkoo.jpg",
+      "photoAvailable": true,
+      "missing": []
+    },
+    {
+      "slug": "focalistic",
+      "photo": "artists/focalistic.jpg",
+      "photoAvailable": true,
+      "missing": []
+    },
+    {
+      "slug": "phyno",
+      "photo": "artists/phyno.jpg",
+      "photoAvailable": true,
+      "missing": []
+    },
+    {
+      "slug": "king-promise",
+      "photo": "artists/king-promise.jpg",
+      "photoAvailable": true,
+      "missing": []
+    },
+    {
+      "slug": "black-sherif",
+      "photo": "artists/black-sherif.jpg",
+      "photoAvailable": true,
+      "missing": []
+    },
+    {
       "slug": "khaid",
       "photo": "artists/khaid.jpg",
+      "photoAvailable": true,
+      "missing": []
+    },
+    {
+      "slug": "ciza",
+      "photo": "artists/ciza.jpg",
       "photoAvailable": true,
       "missing": []
     },
@@ -275,24 +287,6 @@
       "missing": []
     },
     {
-      "slug": "focalistic",
-      "photo": "artists/focalistic.jpg",
-      "photoAvailable": true,
-      "missing": []
-    },
-    {
-      "slug": "uncle-waffles",
-      "photo": "artists/uncle-waffles.jpg",
-      "photoAvailable": true,
-      "missing": []
-    },
-    {
-      "slug": "phyno",
-      "photo": "artists/phyno.jpg",
-      "photoAvailable": true,
-      "missing": []
-    },
-    {
       "slug": "shatta-wale",
       "photo": "artists/shatta-wale.jpg",
       "photoAvailable": true,
@@ -301,6 +295,12 @@
     {
       "slug": "stonebwoy",
       "photo": "artists/stonebwoy.jpg",
+      "photoAvailable": true,
+      "missing": []
+    },
+    {
+      "slug": "uncle-waffles",
+      "photo": "artists/uncle-waffles.jpg",
       "photoAvailable": true,
       "missing": []
     }

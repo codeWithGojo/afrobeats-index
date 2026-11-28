@@ -19,9 +19,27 @@
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
+    },
+    {
+      "src": "/assets/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ],
   "shortcuts": [
+    {
+      "name": "Current 50",
+      "url": "/current"
+    },
+    {
+      "name": "Heat 25",
+      "url": "/heat"
+    },
+    {
+      "name": "My Index",
+      "url": "/my-index"
+    },
     {
       "name": "Offline edition",
       "url": "/offline.html"
@@ -30,5 +48,13 @@
       "name": "My board",
       "url": "/studio/board"
     }
-  ]
+  ],
+  "description": "The weekly ranking of the artists shaping African music, with a source behind every number.",
+  "categories": [
+    "music",
+    "entertainment",
+    "news"
+  ],
+  "lang": "en",
+  "orientation": "portrait"
 }

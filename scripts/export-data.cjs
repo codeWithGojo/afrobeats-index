@@ -33,3 +33,5 @@ for(const [slug,records] of Object.entries(data.awards))for(const r of records){
 data.productionCredits=fs.existsSync('data/production-credits.json')?JSON.parse(fs.readFileSync('data/production-credits.json','utf8')):[];
 data.artists=data.artists.map(require('../artist-taxonomy.js').normalize);
 fs.mkdirSync('data',{recursive:true});fs.writeFileSync('data/current.json',JSON.stringify(data));
+// Raw v2 scores per edition feed next week's 4-week smoothing average.
+if(data.artists.every(a=>a.scoreBreakdown?.version===2)){const file='data/score-history.json',h=JSON.parse(fs.readFileSync(file,'utf8'));const key=String(state.meta.lastRefreshAttemptAt||date).slice(0,10);h.editions={...h.editions,[key]:Object.fromEntries(data.artists.map(a=>[a.slug,a.scoreBreakdown.rawScore]))};const keep=Object.keys(h.editions).sort().slice(-12);h.editions=Object.fromEntries(keep.map(k=>[k,h.editions[k]]));fs.writeFileSync(file,JSON.stringify(h,null,1));}

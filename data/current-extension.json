@@ -1,0 +1,1566 @@
+{
+ "note": "Current 100 extension candidates. Collected by scripts/research/collect-extension.py. Editors complete bio, bioSource, editorialScore (0-100), reviewedAt, image (webp) and imageCredit; until then the artist ranks as provisional.",
+ "checkedAt": "2026-11-27T23:36:08+00:00",
+ "pool": [
+  {
+   "chart": "NG",
+   "url": "https://kworb.net/spotify/country/ng_weekly.html",
+   "date": "2026-11-26",
+   "artists": 104
+  },
+  {
+   "chart": "ZA",
+   "url": "https://kworb.net/spotify/country/za_weekly.html",
+   "date": "2026-11-19",
+   "artists": 333
+  }
+ ],
+ "candidates": [
+  {
+   "slug": "dj-zinhle",
+   "name": "DJ Zinhle",
+   "spotifyId": "4z9NtIRj7d5cohzOjprqxW",
+   "country": "South Africa",
+   "countryCodes": [
+    "ZA"
+   ],
+   "identity": {
+    "wikidata": "http://www.wikidata.org/entity/Q52149543",
+    "wikipedia": "https://en.wikipedia.org/wiki/DJ_Zinhle",
+    "description": "South African DJ and producer",
+    "match": "name",
+    "checkedAt": "2026-11-27T23:36:08+00:00"
+   },
+   "photoSource": "http://commons.wikimedia.org/wiki/Special:FilePath/Zinhle%20dj.jpg",
+   "image": null,
+   "imageCredit": null,
+   "allTime": null,
+   "bio": null,
+   "bioSource": null,
+   "editorialScore": null,
+   "reviewedAt": null,
+   "charts": [
+    {
+     "chart": "Spotify weekly ZA (via Kworb)",
+     "best": 1,
+     "entries": 3,
+     "date": "2026-11-19",
+     "sourceUrl": "https://kworb.net/spotify/country/za_weekly.html"
+    }
+   ],
+   "streams": {
+    "url": "https://kworb.net/spotify/artist/4z9NtIRj7d5cohzOjprqxW_songs.html",
+    "source_date": "2026-10-17",
+    "total": 56003871,
+    "daily": 121250,
+    "count": 29
+   },
+   "addedAt": "2026-11-27"
+  },
+  {
+   "slug": "young-stunna",
+   "name": "Young Stunna",
+   "spotifyId": "6WQFTzqYHmh8Ph2X0L0QLQ",
+   "country": "South Africa",
+   "countryCodes": [
+    "ZA"
+   ],
+   "identity": {
+    "wikidata": "http://www.wikidata.org/entity/Q109981068",
+    "wikipedia": "https://en.wikipedia.org/wiki/Young_Stunna",
+    "description": "South African singer",
+    "match": "name",
+    "checkedAt": "2026-11-27T23:36:08+00:00"
+   },
+   "photoSource": null,
+   "image": null,
+   "imageCredit": null,
+   "allTime": null,
+   "bio": null,
+   "bioSource": null,
+   "editorialScore": null,
+   "reviewedAt": null,
+   "charts": [
+    {
+     "chart": "Spotify weekly ZA (via Kworb)",
+     "best": 1,
+     "entries": 6,
+     "date": "2026-11-19",
+     "sourceUrl": "https://kworb.net/spotify/country/za_weekly.html"
+    }
+   ],
+   "streams": {
+    "url": "https://kworb.net/spotify/artist/6WQFTzqYHmh8Ph2X0L0QLQ_songs.html",
+    "source_date": "2026-11-21",
+    "total": 402042496,
+    "daily": 590509,
+    "count": 87
+   },
+   "addedAt": "2026-11-27"
+  },
+  {
+   "slug": "naledi-aphiwe",
+   "name": "Naledi Aphiwe",
+   "spotifyId": "6zInR2bva7iaRKxeB5AjqN",
+   "country": "South Africa",
+   "countryCodes": [
+    "ZA"
+   ],
+   "identity": {
+    "wikidata": "http://www.wikidata.org/entity/Q124658789",
+    "wikipedia": "https://en.wikipedia.org/wiki/Naledi_Aphiwe",
+    "description": "South African internet celebrity and singer",
+    "match": "name",
+    "checkedAt": "2026-11-27T23:36:08+00:00"
+   },
+   "photoSource": null,
+   "image": null,
+   "imageCredit": null,
+   "allTime": null,
+   "bio": null,
+   "bioSource": null,
+   "editorialScore": null,
+   "reviewedAt": null,
+   "charts": [
+    {
+     "chart": "Spotify weekly ZA (via Kworb)",
+     "best": 4,
+     "entries": 1,
+     "date": "2026-11-19",
+     "sourceUrl": "https://kworb.net/spotify/country/za_weekly.html"
+    }
+   ],
+   "streams": {
+    "url": "https://kworb.net/spotify/artist/6zInR2bva7iaRKxeB5AjqN_songs.html",
+    "source_date": "2026-06-22",
+    "total": 84984651,
+    "daily": 95759,
+    "count": 24
+   },
+   "addedAt": "2026-11-27"
+  },
+  {
+   "slug": "sjava",
+   "name": "Sjava",
+   "spotifyId": "4RfOLIFy2xEmlWzXEVmLJn",
+   "country": "South Africa",
+   "countryCodes": [
+    "ZA"
+   ],
+   "identity": {
+    "wikidata": "http://www.wikidata.org/entity/Q47308060",
+    "wikipedia": "https://en.wikipedia.org/wiki/Sjava",
+    "description": "South African singer, rapper and actor",
+    "match": "name",
+    "checkedAt": "2026-11-27T23:36:08+00:00"
+   },
+   "photoSource": null,
+   "image": null,
+   "imageCredit": null,
+   "allTime": null,
+   "bio": null,
+   "bioSource": null,
+   "editorialScore": null,
+   "reviewedAt": null,
+   "charts": [
+    {
+     "chart": "Spotify weekly ZA (via Kworb)",
+     "best": 6,
+     "entries": 2,
+     "date": "2026-11-19",
+     "sourceUrl": "https://kworb.net/spotify/country/za_weekly.html"
+    }
+   ],
+   "streams": {
+    "url": "https://kworb.net/spotify/artist/4RfOLIFy2xEmlWzXEVmLJn_songs.html",
+    "source_date": "2026-11-24",
+    "total": 453390749,
+    "daily": 403467,
+    "count": 136
+   },
+   "addedAt": "2026-11-27"
+  },
+  {
+   "slug": "lwah-ndlunkulu",
+   "name": "Lwah Ndlunkulu",
+   "spotifyId": "2h9NlcdGxIEnnh5aQuSeZ1",
+   "country": "South Africa",
+   "countryCodes": [
+    "ZA"
+   ],
+   "identity": {
+    "wikidata": "http://www.wikidata.org/entity/Q121505783",
+    "wikipedia": "https://en.wikipedia.org/wiki/Lwah_Ndlunkulu",
+    "description": "musical artist",
+    "match": "name",
+    "checkedAt": "2026-11-27T23:36:08+00:00"
+   },
+   "photoSource": null,
+   "image": null,
+   "imageCredit": null,
+   "allTime": null,
+   "bio": null,
+   "bioSource": null,
+   "editorialScore": null,
+   "reviewedAt": null,
+   "charts": [
+    {
+     "chart": "Spotify weekly ZA (via Kworb)",
+     "best": 8,
+     "entries": 1,
+     "date": "2026-11-19",
+     "sourceUrl": "https://kworb.net/spotify/country/za_weekly.html"
+    }
+   ],
+   "streams": {
+    "url": "https://kworb.net/spotify/artist/2h9NlcdGxIEnnh5aQuSeZ1_songs.html",
+    "source_date": "2026-06-10",
+    "total": 119852064,
+    "daily": 59436,
+    "count": 46
+   },
+   "addedAt": "2026-11-27"
+  },
+  {
+   "slug": "zawadi-yamungu",
+   "name": "Zawadi Yamungu",
+   "spotifyId": "1cfkRhGxegzAt8KlgVF0vl",
+   "country": "South Africa",
+   "countryCodes": [
+    "ZA"
+   ],
+   "identity": {
+    "wikidata": "http://www.wikidata.org/entity/Q139797959",
+    "wikipedia": null,
+    "description": null,
+    "match": "spotify-id",
+    "checkedAt": "2026-11-27T23:36:08+00:00"
+   },
+   "photoSource": null,
+   "image": null,
+   "imageCredit": null,
+   "allTime": null,
+   "bio": null,
+   "bioSource": null,
+   "editorialScore": null,
+   "reviewedAt": null,
+   "charts": [
+    {
+     "chart": "Spotify weekly ZA (via Kworb)",
+     "best": 14,
+     "entries": 2,
+     "date": "2026-11-19",
+     "sourceUrl": "https://kworb.net/spotify/country/za_weekly.html"
+    }
+   ],
+   "streams": {
+    "url": "https://kworb.net/spotify/artist/1cfkRhGxegzAt8KlgVF0vl_songs.html",
+    "source_date": "2026-03-31",
+    "total": 12004425,
+    "daily": 10107,
+    "count": 10
+   },
+   "addedAt": "2026-11-27"
+  },
+  {
+   "slug": "mayorkun",
+   "name": "Mayorkun",
+   "spotifyId": "3DNCUaKdMZcMVJIS7yTskd",
+   "country": "Nigeria",
+   "countryCodes": [
+    "NG"
+   ],
+   "identity": {
+    "wikidata": "http://www.wikidata.org/entity/Q59655841",
+    "wikipedia": "https://en.wikipedia.org/wiki/Mayorkun",
+    "description": "Nigerian Singer, Songwriter and pianist",
+    "match": "name",
+    "checkedAt": "2026-11-27T23:36:08+00:00"
+   },
+   "photoSource": "http://commons.wikimedia.org/wiki/Special:FilePath/Mayorkun%20Photo.jpeg",
+   "image": null,
+   "imageCredit": null,
+   "allTime": null,
+   "bio": null,
+   "bioSource": null,
+   "editorialScore": null,
+   "reviewedAt": null,
+   "charts": [
+    {
+     "chart": "Spotify weekly NG (via Kworb)",
+     "best": 15,
+     "entries": 1,
+     "date": "2026-11-26",
+     "sourceUrl": "https://kworb.net/spotify/country/ng_weekly.html"
+    }
+   ],
+   "streams": {
+    "url": "https://kworb.net/spotify/artist/3DNCUaKdMZcMVJIS7yTskd_songs.html",
+    "source_date": "2026-11-25",
+    "total": 398869990,
+    "daily": 482494,
+    "count": 70
+   },
+   "addedAt": "2026-11-27"
+  },
+  {
+   "slug": "zaylevelten",
+   "name": "Zaylevelten",
+   "spotifyId": "6eEW31SqGa8zKe3ibfTCdH",
+   "country": "Nigeria",
+   "countryCodes": [
+    "NG"
+   ],
+   "identity": {
+    "wikidata": "http://www.wikidata.org/entity/Q141626166",
+    "wikipedia": "https://en.wikipedia.org/wiki/Zaylevelten",
+    "description": "Nigerian singer (born 2003)",
+    "match": "name",
+    "checkedAt": "2026-11-27T23:36:08+00:00"
+   },
+   "photoSource": null,
+   "image": null,
+   "imageCredit": null,
+   "allTime": null,
+   "bio": null,
+   "bioSource": null,
+   "editorialScore": null,
+   "reviewedAt": null,
+   "charts": [
+    {
+     "chart": "Spotify weekly NG (via Kworb)",
+     "best": 19,
+     "entries": 2,
+     "date": "2026-11-26",
+     "sourceUrl": "https://kworb.net/spotify/country/ng_weekly.html"
+    }
+   ],
+   "streams": {
+    "url": "https://kworb.net/spotify/artist/6eEW31SqGa8zKe3ibfTCdH_songs.html",
+    "source_date": "2026-11-25",
+    "total": 138763176,
+    "daily": 356614,
+    "count": 42
+   },
+   "addedAt": "2026-11-27"
+  },
+  {
+   "slug": "ntencane",
+   "name": "Ntencane",
+   "spotifyId": "3PKVcK4wKrfPi7qDz1odsV",
+   "country": "South Africa",
+   "countryCodes": [
+    "ZA"
+   ],
+   "identity": {
+    "wikidata": "http://www.wikidata.org/entity/Q141322852",
+    "wikipedia": null,
+    "description": "Singer",
+    "match": "name",
+    "checkedAt": "2026-11-27T23:36:08+00:00"
+   },
+   "photoSource": null,
+   "image": null,
+   "imageCredit": null,
+   "allTime": null,
+   "bio": null,
+   "bioSource": null,
+   "editorialScore": null,
+   "reviewedAt": null,
+   "charts": [
+    {
+     "chart": "Spotify weekly ZA (via Kworb)",
+     "best": 20,
+     "entries": 2,
+     "date": "2026-11-19",
+     "sourceUrl": "https://kworb.net/spotify/country/za_weekly.html"
+    }
+   ],
+   "streams": {
+    "url": "https://kworb.net/spotify/artist/3PKVcK4wKrfPi7qDz1odsV_songs.html",
+    "source_date": "2026-10-17",
+    "total": 75319990,
+    "daily": 118002,
+    "count": 80
+   },
+   "addedAt": "2026-11-27"
+  },
+  {
+   "slug": "boohle",
+   "name": "Boohle",
+   "spotifyId": "6fHE8xZBCxzwer9DIbOmv4",
+   "country": "South Africa",
+   "countryCodes": [
+    "ZA"
+   ],
+   "identity": {
+    "wikidata": "http://www.wikidata.org/entity/Q110027000",
+    "wikipedia": "https://en.wikipedia.org/wiki/Boohle",
+    "description": "South African singer",
+    "match": "name",
+    "checkedAt": "2026-11-27T23:36:08+00:00"
+   },
+   "photoSource": null,
+   "image": null,
+   "imageCredit": null,
+   "allTime": null,
+   "bio": null,
+   "bioSource": null,
+   "editorialScore": null,
+   "reviewedAt": null,
+   "charts": [
+    {
+     "chart": "Spotify weekly ZA (via Kworb)",
+     "best": 22,
+     "entries": 2,
+     "date": "2026-11-19",
+     "sourceUrl": "https://kworb.net/spotify/country/za_weekly.html"
+    }
+   ],
+   "streams": {
+    "url": "https://kworb.net/spotify/artist/6fHE8xZBCxzwer9DIbOmv4_songs.html",
+    "source_date": "2026-09-26",
+    "total": 179490182,
+    "daily": 205302,
+    "count": 51
+   },
+   "addedAt": "2026-11-27"
+  },
+  {
+   "slug": "zinoleesky",
+   "name": "Zinoleesky",
+   "spotifyId": "6Kp3KWPiVgi33DkJqo9T4g",
+   "country": "Nigeria",
+   "countryCodes": [
+    "NG"
+   ],
+   "identity": {
+    "wikidata": "http://www.wikidata.org/entity/Q108181101",
+    "wikipedia": "https://en.wikipedia.org/wiki/Zinoleesky",
+    "description": "Nigerian singer-songwriter and rapper",
+    "match": "spotify-id",
+    "checkedAt": "2026-11-27T23:36:08+00:00"
+   },
+   "photoSource": null,
+   "image": null,
+   "imageCredit": null,
+   "allTime": null,
+   "bio": null,
+   "bioSource": null,
+   "editorialScore": null,
+   "reviewedAt": null,
+   "charts": [
+    {
+     "chart": "Spotify weekly NG (via Kworb)",
+     "best": 25,
+     "entries": 3,
+     "date": "2026-11-26",
+     "sourceUrl": "https://kworb.net/spotify/country/ng_weekly.html"
+    }
+   ],
+   "streams": {
+    "url": "https://kworb.net/spotify/artist/6Kp3KWPiVgi33DkJqo9T4g_songs.html",
+    "source_date": "2026-11-18",
+    "total": 611337896,
+    "daily": 672184,
+    "count": 63
+   },
+   "addedAt": "2026-11-27"
+  },
+  {
+   "slug": "zee-nxumalo",
+   "name": "Zee Nxumalo",
+   "spotifyId": "5m5lgddffBHA2pv0m5E2Ro",
+   "country": "Eswatini / South Africa",
+   "countryCodes": [
+    "SZ",
+    "ZA"
+   ],
+   "identity": {
+    "wikidata": "http://www.wikidata.org/entity/Q128694020",
+    "wikipedia": "https://en.wikipedia.org/wiki/Zee_Nxumalo",
+    "description": "Swati-South African singer and songwriter",
+    "match": "name",
+    "checkedAt": "2026-11-27T23:36:08+00:00"
+   },
+   "photoSource": null,
+   "image": null,
+   "imageCredit": null,
+   "allTime": null,
+   "bio": null,
+   "bioSource": null,
+   "editorialScore": null,
+   "reviewedAt": null,
+   "charts": [
+    {
+     "chart": "Spotify weekly ZA (via Kworb)",
+     "best": 25,
+     "entries": 3,
+     "date": "2026-11-19",
+     "sourceUrl": "https://kworb.net/spotify/country/za_weekly.html"
+    }
+   ],
+   "streams": {
+    "url": "https://kworb.net/spotify/artist/5m5lgddffBHA2pv0m5E2Ro_songs.html",
+    "source_date": "2026-11-26",
+    "total": 298954889,
+    "daily": 267899,
+    "count": 59
+   },
+   "addedAt": "2026-11-27"
+  },
+  {
+   "slug": "dlala-thukzin",
+   "name": "Dlala Thukzin",
+   "spotifyId": "5kmceQl1Y7lveTVbcy5ycD",
+   "country": "South Africa",
+   "countryCodes": [
+    "ZA"
+   ],
+   "identity": {
+    "wikidata": "http://www.wikidata.org/entity/Q112247417",
+    "wikipedia": "https://en.wikipedia.org/wiki/Dlala_Thukzin",
+    "description": "South African Dance Music Producer",
+    "match": "name",
+    "checkedAt": "2026-11-27T23:36:08+00:00"
+   },
+   "photoSource": null,
+   "image": null,
+   "imageCredit": null,
+   "allTime": null,
+   "bio": null,
+   "bioSource": null,
+   "editorialScore": null,
+   "reviewedAt": null,
+   "charts": [
+    {
+     "chart": "Spotify weekly ZA (via Kworb)",
+     "best": 25,
+     "entries": 5,
+     "date": "2026-11-19",
+     "sourceUrl": "https://kworb.net/spotify/country/za_weekly.html"
+    }
+   ],
+   "streams": {
+    "url": "https://kworb.net/spotify/artist/5kmceQl1Y7lveTVbcy5ycD_songs.html",
+    "source_date": "2026-11-17",
+    "total": 322258225,
+    "daily": 478252,
+    "count": 97
+   },
+   "addedAt": "2026-11-27"
+  },
+  {
+   "slug": "simmy",
+   "name": "Simmy",
+   "spotifyId": "3MjlXVCfmLdY9QQ2GCd7iA",
+   "country": "South Africa",
+   "countryCodes": [
+    "ZA"
+   ],
+   "identity": {
+    "wikidata": "http://www.wikidata.org/entity/Q99237224",
+    "wikipedia": "https://en.wikipedia.org/wiki/Simmy",
+    "description": "South African singer-songwriter",
+    "match": "spotify-id",
+    "checkedAt": "2026-11-27T23:36:08+00:00"
+   },
+   "photoSource": "http://commons.wikimedia.org/wiki/Special:FilePath/Simmy.png",
+   "image": null,
+   "imageCredit": null,
+   "allTime": null,
+   "bio": null,
+   "bioSource": null,
+   "editorialScore": null,
+   "reviewedAt": null,
+   "charts": [
+    {
+     "chart": "Spotify weekly ZA (via Kworb)",
+     "best": 30,
+     "entries": 1,
+     "date": "2026-11-19",
+     "sourceUrl": "https://kworb.net/spotify/country/za_weekly.html"
+    }
+   ],
+   "streams": {
+    "url": "https://kworb.net/spotify/artist/3MjlXVCfmLdY9QQ2GCd7iA_songs.html",
+    "source_date": "2026-06-06",
+    "total": 111324684,
+    "daily": 112204,
+    "count": 63
+   },
+   "addedAt": "2026-11-27"
+  },
+  {
+   "slug": "nothando-hlophe",
+   "name": "Nothando Hlophe",
+   "spotifyId": "252fChrCEm5fhuaMTnowg9",
+   "country": "Eswatini",
+   "countryCodes": [
+    "SZ"
+   ],
+   "identity": {
+    "wikidata": "http://www.wikidata.org/entity/Q120869065",
+    "wikipedia": "https://en.wikipedia.org/wiki/Nothando_Hlophe",
+    "description": "Swazi gospel singer",
+    "match": "name",
+    "checkedAt": "2026-11-27T23:36:08+00:00"
+   },
+   "photoSource": null,
+   "image": null,
+   "imageCredit": null,
+   "allTime": null,
+   "bio": null,
+   "bioSource": null,
+   "editorialScore": null,
+   "reviewedAt": null,
+   "charts": [
+    {
+     "chart": "Spotify weekly ZA (via Kworb)",
+     "best": 34,
+     "entries": 2,
+     "date": "2026-11-19",
+     "sourceUrl": "https://kworb.net/spotify/country/za_weekly.html"
+    }
+   ],
+   "streams": {
+    "url": "https://kworb.net/spotify/artist/252fChrCEm5fhuaMTnowg9_songs.html",
+    "source_date": "2026-09-06",
+    "total": 25827819,
+    "daily": 55129,
+    "count": 21
+   },
+   "addedAt": "2026-11-27"
+  },
+  {
+   "slug": "dj-maphorisa",
+   "name": "DJ Maphorisa",
+   "spotifyId": "0mMqD2uqwvCjFvlzo6ayGi",
+   "country": "South Africa",
+   "countryCodes": [
+    "ZA"
+   ],
+   "identity": {
+    "wikidata": "http://www.wikidata.org/entity/Q25706797",
+    "wikipedia": "https://en.wikipedia.org/wiki/DJ_Maphorisa",
+    "description": "South African record producer, DJ, musician",
+    "match": "spotify-id",
+    "checkedAt": "2026-11-27T23:36:08+00:00"
+   },
+   "photoSource": null,
+   "image": null,
+   "imageCredit": null,
+   "allTime": null,
+   "bio": null,
+   "bioSource": null,
+   "editorialScore": null,
+   "reviewedAt": null,
+   "charts": [
+    {
+     "chart": "Spotify weekly NG (via Kworb)",
+     "best": 61,
+     "entries": 1,
+     "date": "2026-11-26",
+     "sourceUrl": "https://kworb.net/spotify/country/ng_weekly.html"
+    },
+    {
+     "chart": "Spotify weekly ZA (via Kworb)",
+     "best": 37,
+     "entries": 6,
+     "date": "2026-11-19",
+     "sourceUrl": "https://kworb.net/spotify/country/za_weekly.html"
+    }
+   ],
+   "streams": {
+    "url": "https://kworb.net/spotify/artist/0mMqD2uqwvCjFvlzo6ayGi_songs.html",
+    "source_date": "2026-11-25",
+    "total": 1222834484,
+    "daily": 931993,
+    "count": 311
+   },
+   "addedAt": "2026-11-27"
+  },
+  {
+   "slug": "kabza-de-small",
+   "name": "Kabza De Small",
+   "spotifyId": "1bNjWBFWsAAzZSR59lRdpR",
+   "country": "South Africa",
+   "countryCodes": [
+    "ZA"
+   ],
+   "identity": {
+    "wikidata": "http://www.wikidata.org/entity/Q77297835",
+    "wikipedia": "https://en.wikipedia.org/wiki/Kabza_de_Small",
+    "description": "South African producer and DJ (born 1992)",
+    "match": "spotify-id",
+    "checkedAt": "2026-11-27T23:36:08+00:00"
+   },
+   "photoSource": null,
+   "image": null,
+   "imageCredit": null,
+   "allTime": null,
+   "bio": null,
+   "bioSource": null,
+   "editorialScore": null,
+   "reviewedAt": null,
+   "charts": [
+    {
+     "chart": "Spotify weekly ZA (via Kworb)",
+     "best": 37,
+     "entries": 9,
+     "date": "2026-11-19",
+     "sourceUrl": "https://kworb.net/spotify/country/za_weekly.html"
+    }
+   ],
+   "streams": {
+    "url": "https://kworb.net/spotify/artist/1bNjWBFWsAAzZSR59lRdpR_songs.html",
+    "source_date": "2026-11-24",
+    "total": 937441007,
+    "daily": 806093,
+    "count": 332
+   },
+   "addedAt": "2026-11-27"
+  },
+  {
+   "slug": "nkosazana-daughter",
+   "name": "Nkosazana Daughter",
+   "spotifyId": "4AnNB3lPD0Sv7ziKVHqI66",
+   "country": "South Africa",
+   "countryCodes": [
+    "ZA"
+   ],
+   "identity": {
+    "wikidata": "http://www.wikidata.org/entity/Q118719877",
+    "wikipedia": "https://en.wikipedia.org/wiki/Nkosazana_Daughter",
+    "description": "Musical artist",
+    "match": "name",
+    "checkedAt": "2026-11-27T23:36:08+00:00"
+   },
+   "photoSource": "http://commons.wikimedia.org/wiki/Special:FilePath/Nkosazana%20Daughter%20at%20SXSW%202025%2002.jpg",
+   "image": null,
+   "imageCredit": null,
+   "allTime": null,
+   "bio": null,
+   "bioSource": null,
+   "editorialScore": null,
+   "reviewedAt": null,
+   "charts": [
+    {
+     "chart": "Spotify weekly ZA (via Kworb)",
+     "best": 37,
+     "entries": 3,
+     "date": "2026-11-19",
+     "sourceUrl": "https://kworb.net/spotify/country/za_weekly.html"
+    }
+   ],
+   "streams": {
+    "url": "https://kworb.net/spotify/artist/4AnNB3lPD0Sv7ziKVHqI66_songs.html",
+    "source_date": "2026-09-26",
+    "total": 341025705,
+    "daily": 272793,
+    "count": 85
+   },
+   "addedAt": "2026-11-27"
+  },
+  {
+   "slug": "kah-lo",
+   "name": "Kah-Lo",
+   "spotifyId": "59iOp415oyqGlBHyAhu4z3",
+   "country": "Nigeria",
+   "countryCodes": [
+    "NG"
+   ],
+   "identity": {
+    "wikidata": "http://www.wikidata.org/entity/Q23541014",
+    "wikipedia": "https://en.wikipedia.org/wiki/Kah-Lo",
+    "description": "Nigerian singer-songwriter",
+    "match": "spotify-id",
+    "checkedAt": "2026-11-27T23:36:08+00:00"
+   },
+   "photoSource": null,
+   "image": null,
+   "imageCredit": null,
+   "allTime": null,
+   "bio": null,
+   "bioSource": null,
+   "editorialScore": null,
+   "reviewedAt": null,
+   "charts": [
+    {
+     "chart": "Spotify weekly NG (via Kworb)",
+     "best": 50,
+     "entries": 1,
+     "date": "2026-11-26",
+     "sourceUrl": "https://kworb.net/spotify/country/ng_weekly.html"
+    }
+   ],
+   "streams": {
+    "url": "https://kworb.net/spotify/artist/59iOp415oyqGlBHyAhu4z3_songs.html",
+    "source_date": "2026-11-17",
+    "total": 713530061,
+    "daily": 346947,
+    "count": 52
+   },
+   "addedAt": "2026-11-27"
+  },
+  {
+   "slug": "tyler-icu",
+   "name": "Tyler ICU",
+   "spotifyId": "2oIQCM7hRZI9tS5b9S8rj4",
+   "country": "South Africa",
+   "countryCodes": [
+    "ZA"
+   ],
+   "identity": {
+    "wikidata": "http://www.wikidata.org/entity/Q121820034",
+    "wikipedia": "https://en.wikipedia.org/wiki/Tyler_ICU",
+    "description": "South African record producer",
+    "match": "spotify-id",
+    "checkedAt": "2026-11-27T23:36:08+00:00"
+   },
+   "photoSource": null,
+   "image": null,
+   "imageCredit": null,
+   "allTime": null,
+   "bio": null,
+   "bioSource": null,
+   "editorialScore": null,
+   "reviewedAt": null,
+   "charts": [
+    {
+     "chart": "Spotify weekly ZA (via Kworb)",
+     "best": 51,
+     "entries": 1,
+     "date": "2026-11-19",
+     "sourceUrl": "https://kworb.net/spotify/country/za_weekly.html"
+    }
+   ],
+   "streams": {
+    "url": "https://kworb.net/spotify/artist/2oIQCM7hRZI9tS5b9S8rj4_songs.html",
+    "source_date": "2026-10-17",
+    "total": 376113012,
+    "daily": 241135,
+    "count": 71
+   },
+   "addedAt": "2026-11-27"
+  },
+  {
+   "slug": "babalwa-m",
+   "name": "Babalwa M",
+   "spotifyId": "0dUHzfa2msKEpMevzsdwqG",
+   "country": "South Africa",
+   "countryCodes": [
+    "ZA"
+   ],
+   "identity": {
+    "wikidata": "http://www.wikidata.org/entity/Q131118725",
+    "wikipedia": "https://en.wikipedia.org/wiki/Babalwa_M",
+    "description": "South African singer-songwriter",
+    "match": "name",
+    "checkedAt": "2026-11-27T23:36:08+00:00"
+   },
+   "photoSource": null,
+   "image": null,
+   "imageCredit": null,
+   "allTime": null,
+   "bio": null,
+   "bioSource": null,
+   "editorialScore": null,
+   "reviewedAt": null,
+   "charts": [
+    {
+     "chart": "Spotify weekly ZA (via Kworb)",
+     "best": 57,
+     "entries": 2,
+     "date": "2026-11-19",
+     "sourceUrl": "https://kworb.net/spotify/country/za_weekly.html"
+    }
+   ],
+   "streams": {
+    "url": "https://kworb.net/spotify/artist/0dUHzfa2msKEpMevzsdwqG_songs.html",
+    "source_date": "2026-10-28",
+    "total": 354449131,
+    "daily": 288194,
+    "count": 88
+   },
+   "addedAt": "2026-11-27"
+  },
+  {
+   "slug": "dj-snake",
+   "name": "DJ Snake",
+   "spotifyId": "540vIaP2JwjQb9dm3aArA4",
+   "country": "Algeria",
+   "countryCodes": [
+    "DZ"
+   ],
+   "identity": {
+    "wikidata": "http://www.wikidata.org/entity/Q16728588",
+    "wikipedia": "https://en.wikipedia.org/wiki/DJ_Snake",
+    "description": "French record producer (born 1986)",
+    "match": "spotify-id",
+    "checkedAt": "2026-11-27T23:36:08+00:00"
+   },
+   "photoSource": "http://commons.wikimedia.org/wiki/Special:FilePath/DJS-Presskit05%20%28cropped%29.jpg",
+   "image": null,
+   "imageCredit": null,
+   "allTime": null,
+   "bio": null,
+   "bioSource": null,
+   "editorialScore": null,
+   "reviewedAt": null,
+   "charts": [
+    {
+     "chart": "Spotify weekly NG (via Kworb)",
+     "best": 59,
+     "entries": 1,
+     "date": "2026-11-26",
+     "sourceUrl": "https://kworb.net/spotify/country/ng_weekly.html"
+    }
+   ],
+   "streams": {
+    "url": "https://kworb.net/spotify/artist/540vIaP2JwjQb9dm3aArA4_songs.html",
+    "source_date": "2026-11-26",
+    "total": 16503537296,
+    "daily": 4439649,
+    "count": 228
+   },
+   "addedAt": "2026-11-27"
+  },
+  {
+   "slug": "txc",
+   "name": "TxC",
+   "spotifyId": "25j9xL1MTyuycuB2xy2Q9g",
+   "country": "South Africa",
+   "countryCodes": [
+    "ZA"
+   ],
+   "identity": {
+    "wikidata": "http://www.wikidata.org/entity/Q132159183",
+    "wikipedia": "https://en.wikipedia.org/wiki/TxC",
+    "description": "South African DJ and record production duo",
+    "match": "spotify-id",
+    "checkedAt": "2026-11-27T23:36:08+00:00"
+   },
+   "photoSource": null,
+   "image": null,
+   "imageCredit": null,
+   "allTime": null,
+   "bio": null,
+   "bioSource": null,
+   "editorialScore": null,
+   "reviewedAt": null,
+   "charts": [
+    {
+     "chart": "Spotify weekly NG (via Kworb)",
+     "best": 60,
+     "entries": 1,
+     "date": "2026-11-26",
+     "sourceUrl": "https://kworb.net/spotify/country/ng_weekly.html"
+    }
+   ],
+   "streams": {
+    "url": "https://kworb.net/spotify/artist/25j9xL1MTyuycuB2xy2Q9g_songs.html",
+    "source_date": "2026-11-18",
+    "total": 128391291,
+    "daily": 216780,
+    "count": 27
+   },
+   "addedAt": "2026-11-27"
+  },
+  {
+   "slug": "scotts-maphuma",
+   "name": "Scotts Maphuma",
+   "spotifyId": "3S4T8XtipStwl34odXn1YS",
+   "country": "South Africa",
+   "countryCodes": [
+    "ZA"
+   ],
+   "identity": {
+    "wikidata": "http://www.wikidata.org/entity/Q131459047",
+    "wikipedia": null,
+    "description": "South African musician",
+    "match": "spotify-id",
+    "checkedAt": "2026-11-27T23:36:08+00:00"
+   },
+   "photoSource": null,
+   "image": null,
+   "imageCredit": null,
+   "allTime": null,
+   "bio": null,
+   "bioSource": null,
+   "editorialScore": null,
+   "reviewedAt": null,
+   "charts": [
+    {
+     "chart": "Spotify weekly NG (via Kworb)",
+     "best": 60,
+     "entries": 1,
+     "date": "2026-11-26",
+     "sourceUrl": "https://kworb.net/spotify/country/ng_weekly.html"
+    }
+   ],
+   "streams": {
+    "url": "https://kworb.net/spotify/artist/3S4T8XtipStwl34odXn1YS_songs.html",
+    "source_date": "2026-11-26",
+    "total": 383063775,
+    "daily": 375799,
+    "count": 98
+   },
+   "addedAt": "2026-11-27"
+  },
+  {
+   "slug": "d-banj",
+   "name": "D’banj",
+   "spotifyId": "5RCdjio4ASMQ8CFaSuAl6C",
+   "country": "Nigeria",
+   "countryCodes": [
+    "NG"
+   ],
+   "identity": {
+    "wikidata": "http://www.wikidata.org/entity/Q944365",
+    "wikipedia": "https://en.wikipedia.org/wiki/D%27banj",
+    "description": "Nigerian singer",
+    "match": "spotify-id",
+    "checkedAt": "2026-11-27T23:36:08+00:00"
+   },
+   "photoSource": "http://commons.wikimedia.org/wiki/Special:FilePath/D%27banjawards.jpg",
+   "image": "/artists/d-banj.jpg",
+   "imageCredit": "Existing All-Time portrait; see data/alltime-portrait-sources.json",
+   "allTime": {
+    "rank": 7,
+    "blurb": "Oliver Twist. Mo’ Hits era. First true global push."
+   },
+   "bio": null,
+   "bioSource": null,
+   "editorialScore": null,
+   "reviewedAt": null,
+   "charts": [],
+   "streams": {
+    "url": "https://kworb.net/spotify/artist/5RCdjio4ASMQ8CFaSuAl6C_songs.html",
+    "source_date": "2026-06-21",
+    "total": 132333751,
+    "daily": 54623,
+    "count": 52
+   },
+   "addedAt": "2026-11-27"
+  },
+  {
+   "slug": "yemi-alade",
+   "name": "Yemi Alade",
+   "spotifyId": "7fKO99ryLDo8VocdtVvwZW",
+   "country": "Nigeria",
+   "countryCodes": [
+    "NG"
+   ],
+   "identity": {
+    "wikidata": "http://www.wikidata.org/entity/Q18016138",
+    "wikipedia": "https://en.wikipedia.org/wiki/Yemi_Alade",
+    "description": "Nigerian singer and songwriter",
+    "match": "spotify-id",
+    "checkedAt": "2026-11-27T23:36:08+00:00"
+   },
+   "photoSource": "http://commons.wikimedia.org/wiki/Special:FilePath/Yemi%20Alade%20studio%20portrait.jpg",
+   "image": "yemialade.jpg",
+   "imageCredit": "Existing All-Time portrait; see data/alltime-portrait-sources.json",
+   "allTime": {
+    "rank": 14,
+    "blurb": "Johnny. Africa’s biggest female touring act for years."
+   },
+   "bio": null,
+   "bioSource": null,
+   "editorialScore": null,
+   "reviewedAt": null,
+   "charts": [],
+   "streams": {
+    "url": "https://kworb.net/spotify/artist/7fKO99ryLDo8VocdtVvwZW_songs.html",
+    "source_date": "2026-09-06",
+    "total": 320387064,
+    "daily": 71920,
+    "count": 127
+   },
+   "addedAt": "2026-11-27"
+  },
+  {
+   "slug": "sarkodie",
+   "name": "Sarkodie",
+   "spotifyId": "01DTVE3KmoPogPZaOvMqO8",
+   "country": "Ghana",
+   "countryCodes": [
+    "GH"
+   ],
+   "identity": {
+    "wikidata": "http://www.wikidata.org/entity/Q7424230",
+    "wikipedia": "https://en.wikipedia.org/wiki/Sarkodie_(rapper)",
+    "description": "Ghanaian rapper, songwriter, and entrepreneur",
+    "match": "spotify-id",
+    "checkedAt": "2026-11-27T23:36:08+00:00"
+   },
+   "photoSource": "http://commons.wikimedia.org/wiki/Special:FilePath/Sarkodie-1%20%28cropped%29.jpg",
+   "image": "/artists/sarkodie.jpg",
+   "imageCredit": "Existing All-Time portrait; see data/alltime-portrait-sources.json",
+   "allTime": {
+    "rank": 22,
+    "blurb": "Technical excellence and longevity."
+   },
+   "bio": null,
+   "bioSource": null,
+   "editorialScore": null,
+   "reviewedAt": null,
+   "charts": [],
+   "streams": {
+    "url": "https://kworb.net/spotify/artist/01DTVE3KmoPogPZaOvMqO8_songs.html",
+    "source_date": "2026-11-21",
+    "total": 315744602,
+    "daily": 245094,
+    "count": 163
+   },
+   "addedAt": "2026-11-27"
+  },
+  {
+   "slug": "kidi",
+   "name": "KiDi",
+   "spotifyId": "14PimM6ohO2gYftuwTam9V",
+   "country": "Ghana",
+   "countryCodes": [
+    "GH"
+   ],
+   "identity": {
+    "wikidata": "http://www.wikidata.org/entity/Q52802465",
+    "wikipedia": "https://en.wikipedia.org/wiki/KiDi",
+    "description": "Ghanaian musician",
+    "match": "spotify-id",
+    "checkedAt": "2026-11-27T23:36:08+00:00"
+   },
+   "photoSource": "http://commons.wikimedia.org/wiki/Special:FilePath/Kidi%20at%203%20Music%20Awards%2022%2045.jpg",
+   "image": "/artists/kidi.jpg",
+   "imageCredit": "Existing All-Time portrait; see data/alltime-portrait-sources.json",
+   "allTime": {
+    "rank": 40,
+    "blurb": "Ghana-Nigeria crossover appeal."
+   },
+   "bio": null,
+   "bioSource": null,
+   "editorialScore": null,
+   "reviewedAt": null,
+   "charts": [],
+   "streams": {
+    "url": "https://kworb.net/spotify/artist/14PimM6ohO2gYftuwTam9V_songs.html",
+    "source_date": "2026-09-25",
+    "total": 253506583,
+    "daily": 101571,
+    "count": 59
+   },
+   "addedAt": "2026-11-27"
+  }
+ ],
+ "unmatched": [
+  {
+   "spotifyId": "7dkktKLtIZD6f77dYdNYrG",
+   "name": "Nayvee Womculo",
+   "reason": "no unique Wikidata musician for this Spotify ID or name"
+  },
+  {
+   "spotifyId": "3XpBO9TZxfQtfKXg8guWYI",
+   "name": "Kidd Carder",
+   "reason": "no unique Wikidata musician for this Spotify ID or name"
+  },
+  {
+   "spotifyId": "16Sxr5Kd5KJIUXTUVtmVOV",
+   "name": "Mshinwemali",
+   "reason": "no unique Wikidata musician for this Spotify ID or name"
+  },
+  {
+   "spotifyId": "7a3R5VMZYPhutTAMipMBAc",
+   "name": "Sne Ntuli",
+   "reason": "no unique Wikidata musician for this Spotify ID or name"
+  },
+  {
+   "spotifyId": "0FbbF0rKiD7zN90OMJqCn7",
+   "name": "G-Jealous",
+   "reason": "no unique Wikidata musician for this Spotify ID or name"
+  },
+  {
+   "spotifyId": "2cvAWNKeSNVAfSZqAQIIS3",
+   "name": "Mzukulu",
+   "reason": "no unique Wikidata musician for this Spotify ID or name"
+  },
+  {
+   "spotifyId": "5ywjxFhmhHGQBsK3DundNf",
+   "name": "Peruzzi",
+   "reason": "no unique Wikidata musician for this Spotify ID or name"
+  },
+  {
+   "spotifyId": "6Wqpl1YTjgy5TiTluzFzjx",
+   "name": "Tman Xpress",
+   "reason": "no unique Wikidata musician for this Spotify ID or name"
+  },
+  {
+   "spotifyId": "5MJ5f1XKD9yu7aWfG8OGjz",
+   "name": "Mellow & Sleazy",
+   "reason": "no unique Wikidata musician for this Spotify ID or name"
+  },
+  {
+   "spotifyId": "1g6DVpTS6w8meqwY8QGy1L",
+   "name": "Thatohatsi",
+   "reason": "no unique Wikidata musician for this Spotify ID or name"
+  },
+  {
+   "spotifyId": "1rz8BeoVHWRTcj2253dM85",
+   "name": "Shaunmusiq",
+   "reason": "no unique Wikidata musician for this Spotify ID or name"
+  },
+  {
+   "spotifyId": "5mcQQWaTilvZ99xmDg9LCU",
+   "name": "Nkeshemba",
+   "reason": "no unique Wikidata musician for this Spotify ID or name"
+  },
+  {
+   "spotifyId": "5csAaiFcC1qKkVPgUJfXID",
+   "name": "Zulu Queens",
+   "reason": "no unique Wikidata musician for this Spotify ID or name"
+  },
+  {
+   "spotifyId": "5kwZB1xNLgB3lln1JGS2B9",
+   "name": "MaWhoo",
+   "reason": "no unique Wikidata musician for this Spotify ID or name"
+  },
+  {
+   "spotifyId": "1UwTwoC4T1i6vzwsQgIWB0",
+   "name": "Feza",
+   "reason": "no unique Wikidata musician for this Spotify ID or name"
+  },
+  {
+   "spotifyId": "6os1temnovzJIEGRUmn3fG",
+   "name": "BNYX®",
+   "reason": "no unique Wikidata musician for this Spotify ID or name"
+  },
+  {
+   "spotifyId": "6AmSiS6uXD734FEQmoRAMx",
+   "name": "DJ Lace",
+   "reason": "no unique Wikidata musician for this Spotify ID or name"
+  },
+  {
+   "spotifyId": "5e20FnH1vyHXZId8SMW4H8",
+   "name": "FunkTone",
+   "reason": "no unique Wikidata musician for this Spotify ID or name"
+  },
+  {
+   "spotifyId": "6d55WqAPu5RQ3HDxdYsPwo",
+   "name": "Thobani White",
+   "reason": "no unique Wikidata musician for this Spotify ID or name"
+  },
+  {
+   "spotifyId": "7qW54SKGCLpQmny8mOL9wT",
+   "name": "Empro",
+   "reason": "no unique Wikidata musician for this Spotify ID or name"
+  },
+  {
+   "spotifyId": "09CY8fzqhZHR7rQAULoreI",
+   "name": "Mlindo The Vocalist",
+   "reason": "no unique Wikidata musician for this Spotify ID or name"
+  },
+  {
+   "spotifyId": "2ckRDcWI4kPdGiPZxEPJrx",
+   "name": "OmaThwala",
+   "reason": "no unique Wikidata musician for this Spotify ID or name"
+  },
+  {
+   "spotifyId": "7kkwrJM6H7ShVr1Y3yL8Ba",
+   "name": "Bello B",
+   "reason": "no unique Wikidata musician for this Spotify ID or name"
+  },
+  {
+   "spotifyId": "5M9mFjVaPT2T1HFYFFSoCt",
+   "name": "Dladla Mshunqisi",
+   "reason": "no unique Wikidata musician for this Spotify ID or name"
+  },
+  {
+   "spotifyId": "7n1VXY4vWXPLpnRc5JEvlv",
+   "name": "Anathii Deejay",
+   "reason": "no unique Wikidata musician for this Spotify ID or name"
+  },
+  {
+   "spotifyId": "24E2bMgdorxkyVL5iQgaM7",
+   "name": "FROSTIYANO",
+   "reason": "no unique Wikidata musician for this Spotify ID or name"
+  },
+  {
+   "spotifyId": "5ktaq0WEJHPcb5xo7uq105",
+   "name": "Darque",
+   "reason": "no unique Wikidata musician for this Spotify ID or name"
+  },
+  {
+   "spotifyId": "1cwvUNi7IRMN3zisgyKTzM",
+   "name": "Atmos Blaq",
+   "reason": "no unique Wikidata musician for this Spotify ID or name"
+  },
+  {
+   "spotifyId": "2J9OgoroujUr9FiiT40sqc",
+   "name": "Tycoon",
+   "reason": "no unique Wikidata musician for this Spotify ID or name"
+  },
+  {
+   "spotifyId": "6gmMSMt9vm3YYJ5JoBG5my",
+   "name": "Soulful Disciple",
+   "reason": "no unique Wikidata musician for this Spotify ID or name"
+  },
+  {
+   "spotifyId": "04YRKHV66wdlYt3hQ92HRZ",
+   "name": "SIHAYO",
+   "reason": "no unique Wikidata musician for this Spotify ID or name"
+  },
+  {
+   "spotifyId": "6OtlecLaA62XUdzRZDSeBz",
+   "name": "Shenge Wasehlalankosi",
+   "reason": "no unique Wikidata musician for this Spotify ID or name"
+  },
+  {
+   "spotifyId": "5Vtw3RlGD3Sq9dIVzhhvsO",
+   "name": "Mihlali The Guy",
+   "reason": "no unique Wikidata musician for this Spotify ID or name"
+  },
+  {
+   "spotifyId": "2GuftRtL7ZIB4dRuJx644M",
+   "name": "Dankie Boi",
+   "reason": "no unique Wikidata musician for this Spotify ID or name"
+  },
+  {
+   "spotifyId": "5R02jdPgCA1tFILr67znle",
+   "name": "Mr Thela",
+   "reason": "no unique Wikidata musician for this Spotify ID or name"
+  },
+  {
+   "spotifyId": "5ZU2z8HnE8qlUdBpUoCkMr",
+   "name": "Cairo CPT",
+   "reason": "no unique Wikidata musician for this Spotify ID or name"
+  },
+  {
+   "spotifyId": "5zvuXUYTvZczhbPG9HZRYI",
+   "name": "Sino Msolo",
+   "reason": "no unique Wikidata musician for this Spotify ID or name"
+  },
+  {
+   "spotifyId": "6y5EP3L2WblCQsc8iuGeP9",
+   "name": "Konke",
+   "reason": "no unique Wikidata musician for this Spotify ID or name"
+  },
+  {
+   "spotifyId": "3I2EdUYrhKmG2ghjrSPojl",
+   "name": "Abefe",
+   "reason": "no unique Wikidata musician for this Spotify ID or name"
+  },
+  {
+   "spotifyId": "58JKLeDfIeeOYujvF1UMQS",
+   "name": "Muyeez",
+   "reason": "no unique Wikidata musician for this Spotify ID or name"
+  },
+  {
+   "spotifyId": "1MSTGFMPxpZD05uY1EnD5w",
+   "name": "Mahostela 97",
+   "reason": "no unique Wikidata musician for this Spotify ID or name"
+  },
+  {
+   "spotifyId": "0UDlBvCj6BwV8uYLf8zzKS",
+   "name": "Royal MusiQ",
+   "reason": "no unique Wikidata musician for this Spotify ID or name"
+  },
+  {
+   "spotifyId": "7zlPsI1JA3iBmLOZIlLRQ7",
+   "name": "Sami'Kay",
+   "reason": "no unique Wikidata musician for this Spotify ID or name"
+  },
+  {
+   "spotifyId": "097avcLSXeGUxB4yg58Qom",
+   "name": "Rox Roberson",
+   "reason": "no unique Wikidata musician for this Spotify ID or name"
+  },
+  {
+   "spotifyId": "7ch05S0MB1zfGB50F7PRCL",
+   "name": "Misokuhle",
+   "reason": "no unique Wikidata musician for this Spotify ID or name"
+  },
+  {
+   "spotifyId": "46R9PUVbIOMjSUtMsQZbQq",
+   "name": "Sam Deep",
+   "reason": "no unique Wikidata musician for this Spotify ID or name"
+  },
+  {
+   "spotifyId": "7kIugQ8wJXbh4k72hgMuyK",
+   "name": "Nia Pearl",
+   "reason": "no unique Wikidata musician for this Spotify ID or name"
+  },
+  {
+   "spotifyId": "3NzhVoa20crNtp1p4zE8um",
+   "name": "Mano",
+   "reason": "no Wikidata item with an African country"
+  },
+  {
+   "spotifyId": "0rkl0hmiFT3sfcRFm7gzHi",
+   "name": "W4DE",
+   "reason": "no unique Wikidata musician for this Spotify ID or name"
+  },
+  {
+   "spotifyId": "3CyKLwlqtYmQxNt4cWflKx",
+   "name": "scottyolorin",
+   "reason": "no unique Wikidata musician for this Spotify ID or name"
+  },
+  {
+   "spotifyId": "69FMBSIEqfCYBg5xqWdDQV",
+   "name": "Optimist Music ZA",
+   "reason": "no unique Wikidata musician for this Spotify ID or name"
+  },
+  {
+   "spotifyId": "4v7teU7vW1QTe4GPPCSLD3",
+   "name": "Benzoo",
+   "reason": "no unique Wikidata musician for this Spotify ID or name"
+  },
+  {
+   "spotifyId": "1nVEvn7RMNxj27rn0WE13E",
+   "name": "Mr JazziQ",
+   "reason": "no unique Wikidata musician for this Spotify ID or name"
+  },
+  {
+   "spotifyId": "1raznef8uIDK0SAlPabb86",
+   "name": "Funky Qla",
+   "reason": "no unique Wikidata musician for this Spotify ID or name"
+  },
+  {
+   "spotifyId": "6wq5brCC7NSFUDJ8rL0fcF",
+   "name": "Inkos'yamagcokama",
+   "reason": "no unique Wikidata musician for this Spotify ID or name"
+  },
+  {
+   "spotifyId": "2zMD4U9OQAR3xuq6cjer8p",
+   "name": "Calvin Fallo",
+   "reason": "no unique Wikidata musician for this Spotify ID or name"
+  },
+  {
+   "spotifyId": "2GOfe0DJ3DguIIisSvb7R0",
+   "name": "Isitha sama ex",
+   "reason": "no unique Wikidata musician for this Spotify ID or name"
+  },
+  {
+   "spotifyId": "3TAuv0wVtWx12GLfYwKR3N",
+   "name": "KaMaphanga",
+   "reason": "no unique Wikidata musician for this Spotify ID or name"
+  },
+  {
+   "spotifyId": "6zUtuBYmxb5cxAiEIQGLJf",
+   "name": "Skillz",
+   "reason": "no unique Wikidata musician for this Spotify ID or name"
+  },
+  {
+   "spotifyId": "1dllQgzSDUNbXbtk5INbhj",
+   "name": "Zeh McGeba",
+   "reason": "no unique Wikidata musician for this Spotify ID or name"
+  },
+  {
+   "spotifyId": "4jhZ5khxnhWSQyH9GM9WZZ",
+   "name": "Culture Motion",
+   "reason": "no unique Wikidata musician for this Spotify ID or name"
+  },
+  {
+   "spotifyId": "73BxSTlHA75wmlJ4yPxaBc",
+   "name": "Pro-Tee",
+   "reason": "no unique Wikidata musician for this Spotify ID or name"
+  },
+  {
+   "spotifyId": "0121YCqriy1eZhzFjZFCjg",
+   "name": "Skopoloti",
+   "reason": "no unique Wikidata musician for this Spotify ID or name"
+  },
+  {
+   "spotifyId": "4s71T1xXbURAEiIiRs8psm",
+   "name": "Malebuli",
+   "reason": "no unique Wikidata musician for this Spotify ID or name"
+  },
+  {
+   "spotifyId": "4uU1zWazhI0nkPCl4B0CkZ",
+   "name": "Zamambo Mkhize",
+   "reason": "no unique Wikidata musician for this Spotify ID or name"
+  },
+  {
+   "spotifyId": "61xku7ieEjLJZY2o3IUXac",
+   "name": "Umfana weKhansela",
+   "reason": "no unique Wikidata musician for this Spotify ID or name"
+  },
+  {
+   "spotifyId": "6jUYsFkr46ErYnMV82HgQ8",
+   "name": "MK Productions",
+   "reason": "no unique Wikidata musician for this Spotify ID or name"
+  },
+  {
+   "spotifyId": "42UXAwhimj87O57qHgAHAv",
+   "name": "Blaqseed",
+   "reason": "no unique Wikidata musician for this Spotify ID or name"
+  },
+  {
+   "spotifyId": "6lFcggGAwriultjU0Ziyny",
+   "name": "Skhanga",
+   "reason": "no unique Wikidata musician for this Spotify ID or name"
+  },
+  {
+   "spotifyId": "7oVlOtZDfQOK6P7SwL8yFD",
+   "name": "KaMaphanga",
+   "reason": "no unique Wikidata musician for this Spotify ID or name"
+  },
+  {
+   "spotifyId": "5BYHmKHh5t2hoKjBPc1pTV",
+   "name": "Yolokazi",
+   "reason": "no unique Wikidata musician for this Spotify ID or name"
+  },
+  {
+   "spotifyId": "15o7qdDTBzs6xWRUYUtZc1",
+   "name": "Grand Theft Auto VI",
+   "reason": "no Wikidata item with an African country"
+  },
+  {
+   "spotifyId": "5QsdUm4JfKqNnFEplkhV1i",
+   "name": "Xduppy",
+   "reason": "no unique Wikidata musician for this Spotify ID or name"
+  },
+  {
+   "spotifyId": "4bQehldM97MVpqKISNhZzV",
+   "name": "Njabulo Langa",
+   "reason": "no unique Wikidata musician for this Spotify ID or name"
+  },
+  {
+   "spotifyId": "2rD7mKcV2fhMpn4M56sDFA",
+   "name": "Mjikelo",
+   "reason": "no unique Wikidata musician for this Spotify ID or name"
+  },
+  {
+   "spotifyId": "6Ip8FS7vWT1uKkJSweANQK",
+   "name": "Dave",
+   "reason": "no Wikidata item with an African country"
+  },
+  {
+   "spotifyId": "5afMmKIQumBXjSdEpTzS0Q",
+   "name": "MENZI MUSIC",
+   "reason": "no unique Wikidata musician for this Spotify ID or name"
+  },
+  {
+   "spotifyId": "2h2oLC9oYSV4kYoAnHQHhd",
+   "name": "UMnotho",
+   "reason": "no unique Wikidata musician for this Spotify ID or name"
+  },
+  {
+   "spotifyId": "7cHTggdS9DqKE9oP1FTuZS",
+   "name": "Mjabulisi",
+   "reason": "no unique Wikidata musician for this Spotify ID or name"
+  },
+  {
+   "spotifyId": "6ly70lDRQATSZLN2ptpEbL",
+   "name": "Duncan",
+   "reason": "no unique Wikidata musician for this Spotify ID or name"
+  }
+ ],
+ "manual": [],
+ "excluded": [
+  {
+   "spotifyId": "540vIaP2JwjQb9dm3aArA4",
+   "name": "DJ Snake",
+   "reason": "Wikidata lists Algerian citizenship but describes a French producer. Excluded until an editor decides."
+  }
+ ]
+}

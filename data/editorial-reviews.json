@@ -1,0 +1,156 @@
+{
+ "note": "Editorial review dates. score is optional (0 to 100); when absent the locked 5 Oct 2026 editorial contribution is used. Re-scoring an artist means setting a new score and reviewedAt.",
+ "defaultReviewedAt": "2026-10-05",
+ "artists": {
+  "burna-boy": {
+   "reviewedAt": "2026-10-05"
+  },
+  "tems": {
+   "reviewedAt": "2026-10-05"
+  },
+  "rema": {
+   "reviewedAt": "2026-10-05"
+  },
+  "tyla": {
+   "reviewedAt": "2026-10-05"
+  },
+  "wizkid": {
+   "reviewedAt": "2026-10-05"
+  },
+  "ayra-starr": {
+   "reviewedAt": "2026-10-05"
+  },
+  "davido": {
+   "reviewedAt": "2026-10-05"
+  },
+  "asake": {
+   "reviewedAt": "2026-10-05"
+  },
+  "omah-lay": {
+   "reviewedAt": "2026-10-05"
+  },
+  "ckay": {
+   "reviewedAt": "2026-10-05"
+  },
+  "fireboy-dml": {
+   "reviewedAt": "2026-10-05"
+  },
+  "victony": {
+   "reviewedAt": "2026-10-05"
+  },
+  "moliy": {
+   "reviewedAt": "2026-10-05"
+  },
+  "bnxn": {
+   "reviewedAt": "2026-10-05"
+  },
+  "seyi-vibez": {
+   "reviewedAt": "2026-10-05"
+  },
+  "fola": {
+   "reviewedAt": "2026-10-05"
+  },
+  "ruger": {
+   "reviewedAt": "2026-10-05"
+  },
+  "mavo": {
+   "reviewedAt": "2026-10-05"
+  },
+  "odeal": {
+   "reviewedAt": "2026-10-05"
+  },
+  "kizz-daniel": {
+   "reviewedAt": "2026-10-05"
+  },
+  "olamide": {
+   "reviewedAt": "2026-10-05"
+  },
+  "odumodublvck": {
+   "reviewedAt": "2026-10-05"
+  },
+  "sarz": {
+   "reviewedAt": "2026-10-05"
+  },
+  "amaarae": {
+   "reviewedAt": "2026-10-05"
+  },
+  "young-jonn": {
+   "reviewedAt": "2026-10-05"
+  },
+  "adekunle-gold": {
+   "reviewedAt": "2026-10-05"
+  },
+  "shallipopi": {
+   "reviewedAt": "2026-10-05"
+  },
+  "oxlade": {
+   "reviewedAt": "2026-10-05"
+  },
+  "fave": {
+   "reviewedAt": "2026-10-05"
+  },
+  "joeboy": {
+   "reviewedAt": "2026-10-05"
+  },
+  "tiwa-savage": {
+   "reviewedAt": "2026-10-05"
+  },
+  "lojay": {
+   "reviewedAt": "2026-10-05"
+  },
+  "jazzwrld": {
+   "reviewedAt": "2026-10-05"
+  },
+  "darkoo": {
+   "reviewedAt": "2026-10-05"
+  },
+  "black-sherif": {
+   "reviewedAt": "2026-10-05"
+  },
+  "ciza": {
+   "reviewedAt": "2026-10-05"
+  },
+  "shoday": {
+   "reviewedAt": "2026-10-05"
+  },
+  "king-promise": {
+   "reviewedAt": "2026-10-05"
+  },
+  "zlatan": {
+   "reviewedAt": "2026-10-05"
+  },
+  "bella-shmurda": {
+   "reviewedAt": "2026-10-05"
+  },
+  "blaqbonez": {
+   "reviewedAt": "2026-10-05"
+  },
+  "khaid": {
+   "reviewedAt": "2026-10-05"
+  },
+  "chike": {
+   "reviewedAt": "2026-10-05"
+  },
+  "diamond-platnumz": {
+   "reviewedAt": "2026-10-05"
+  },
+  "tekno": {
+   "reviewedAt": "2026-10-05"
+  },
+  "focalistic": {
+   "reviewedAt": "2026-10-05"
+  },
+  "uncle-waffles": {
+   "reviewedAt": "2026-10-05"
+  },
+  "phyno": {
+   "reviewedAt": "2026-10-05"
+  },
+  "shatta-wale": {
+   "reviewedAt": "2026-10-05"
+  },
+  "stonebwoy": {
+   "reviewedAt": "2026-10-05"
+  }
+ }
+}
